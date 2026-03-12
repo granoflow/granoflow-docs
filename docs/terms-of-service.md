@@ -1,172 +1,129 @@
-# Granoflow Terms of Service
+# Granoflow 服务条款
 
-**Last Updated: December 17, 2025**
+**最后更新日期：2026-03-12**
 
-Welcome to Granoflow (“the App”, “we”, or “us”).
-Please read these Terms of Service (“Terms”) carefully before using the App.
-By accessing, downloading, registering for, or using Granoflow, you agree to be bound by these Terms.
+欢迎使用 Granoflow。
 
----
+在访问、下载、安装、注册或使用 Granoflow 应用、配套的 `account-hub` 登录与计费页面，以及我们提供的相关账号、同步、订阅与支持服务之前，请先阅读本服务条款。您一旦使用本服务，即表示您已阅读、理解并同意受本条款约束。
 
-## 1. Nature of the Service
+## 1. 服务性质
 
-Granoflow is a personal task, project, goal, and life management application designed to help users record, plan, and reflect on their activities.
+Granoflow 是一款面向个人任务、项目、里程碑、回顾、专注计时与个人管理场景的工具型产品。
 
-The App is provided solely as a **personal management tool** and **does not constitute**:
+Granoflow 仅作为个人管理与信息整理工具提供，不构成医疗建议、心理治疗、法律意见、投资建议或任何结果承诺。您基于本服务作出的决定及后果，由您自行负责。
 
-* medical advice;
-* psychological therapy or counseling; or
-* professional advice or guaranteed outcomes of any kind.
+## 2. 服务提供方式
 
-Any decisions made based on the use of the App, and any consequences arising therefrom, are solely the responsibility of the user.
+Granoflow 采用本地优先设计，并在部分场景下提供账号、云同步、云端附件、购买恢复、订阅校验和网页登录/计费中枢等在线能力。
 
----
+我们会持续迭代产品功能、界面、登录方式、购买入口和服务形态，但不承诺任何功能永久不变、永久免费或永久持续可用。某些能力可能因平台限制、监管要求、第三方服务调整或我们的运营安排而被调整、暂停或下线。
 
-## 2. Service Provision
+本服务按“现状”提供。在适用法律允许的范围内，我们不保证服务绝对不中断、绝对无错误，也不保证所有历史数据可永久保留。
 
-Granoflow is provided on an **“as is”** basis.
+## 3. 账户、登录与安全
 
-We may update, modify, or adjust the App’s features, interface, or service methods from time to time without prior notice.
-While we will take reasonable measures to maintain service stability where feasible, **we do not guarantee uninterrupted availability, error-free operation, or permanent continuity of the service**.
+部分功能需要您登录账号后才能使用。您应对自己的登录邮箱、第三方身份账号、设备和会话安全负责。
 
-Certain features of the App may rely on **third-party services** (such as authentication, messaging, or infrastructure services).
-The availability and stability of such features may be affected by the performance of those third-party service providers.
+若您发现账号被未经授权使用、设备丢失或存在其他安全风险，应尽快通过官方联系方式通知我们，并及时采取改密、退出登录或移除设备等措施。
 
----
+Granoflow 在不同平台上开放的登录方式可能不同。具体以应用界面或 `account-hub` 页面当时实际展示的入口为准。
 
-## 3. Accounts and Authentication (If Applicable)
+## 4. 用户内容与许可
 
-### 3.1 Account Creation
+您在 Granoflow 中创建、输入、导入、同步或上传的内容，包括任务、项目、里程碑、文本记录、附件及其他个人管理数据，其权利原则上仍归您所有。
 
-Some features of the App may require account registration through third-party authentication providers (such as Google, Apple, or Microsoft).
+为提供本服务，您授予我们一项有限的、非独占的、不可转让的使用许可，仅用于以下目的：
 
-### 3.2 Account Security
+- 存储、传输、同步、备份、恢复或展示您主动要求我们处理的内容
+- 维持账号、购买、订阅、设备与支持服务
+- 排查故障、处理安全事件和执行合规义务
 
-You are responsible for safeguarding your login credentials and for all activities conducted under your account.
-If you become aware of any unauthorized use of your account, please contact us promptly.
+除为提供本服务所必需的情形外，我们不会主张对您内容的额外权利。
 
----
+## 5. 免费能力、付费权益与云资源
 
-## 4. User Content and Data Rights
+Granoflow 可能同时提供免费能力与付费权益。免费能力通常以本地功能为主；某些在线能力、云端能力、附加存储或跨设备能力可能需要有效的账号状态、有效订阅或其他付费条件。
 
-### 4.1 Ownership of User Content
+当前产品中，`Granoflow Pro` 属于核心付费权益名称之一。不同平台上的购买与管理路径可能不同：
 
-All content created, entered, or uploaded by you in the App (including but not limited to text, tasks, projects, and attachments) remains your property.
+- 移动平台可能通过应用商店内购完成
+- 部分桌面场景可能通过受控网页结算或订阅管理入口完成
 
-### 4.2 License to Use
+您理解并同意：
 
-For the purpose of operating and providing the App, you grant us a **limited, non-exclusive, non-transferable license** to use such content solely as necessary to deliver the relevant services.
+- 一次性购买、终身权益或历史权益名称，指向的是在产品持续运营期间内对相应功能的使用资格，不当然等于永久免费服务器资源、永久云存储或永久在线同步服务
+- 与服务器资源相关的能力会产生持续成本，我们有权基于运营需要调整其价格、结构、配额、可购资格与交付方式
+- 若与服务器资源相关的付费状态失效并持续超过合理宽限期，我们可对相应云端数据进行清理、归档、降配或停止继续保留
 
----
+在当前规则下，如与服务器资源相关的付费状态停止后超过 **90 天** 仍未恢复，我们有权清理相应服务器侧数据，包括云端内容或附件。此类清理不当然撤销您已合法取得的功能使用资格，但历史云端数据可能无法恢复。
 
-## 5. Free Features and Paid Services
+我们强烈建议您始终自行保留重要内容的本地备份或独立备份。
 
-### 5.1 Free Features
+## 6. 第三方服务
 
-Free users may access basic features of Granoflow.
-Free features are primarily local-only and **do not include cloud synchronization, server storage, or other services that require ongoing network resources**.
+Granoflow 的部分能力依赖第三方服务，包括但不限于：
 
-We make no guarantees regarding the continued availability or retention of data associated with free features.
+- 身份验证服务
+- 应用商店与支付服务
+- 云基础设施与对象存储
+- 崩溃诊断与性能监测服务
 
-### 5.2 Paid Services and Subscriptions
+第三方服务的可用性、规则变化、计费方式、审核结果和账号限制，可能影响本服务的部分能力。因第三方服务异常、限制、下线、政策变化或不可抗力造成的功能受限、中断或数据风险，我们会尽合理努力降低影响，但不对第三方服务本身作出保证。
 
-Granoflow may offer paid features or subscription plans, including but not limited to monthly, annual, and lifetime access options.
+## 7. 合理使用
 
-* **Lifetime access** refers to the right to use the purchased features **for the duration of the App’s normal operation**;
-* Lifetime access **does not imply free or perpetual server resources or data storage**.
+您不得利用本服务从事以下行为：
 
-Certain services may require ongoing data maintenance or infrastructure costs.
+- 违反适用法律法规
+- 侵犯他人合法权益、隐私权或知识产权
+- 上传恶意代码、批量滥用接口或干扰服务稳定性
+- 规避认证、计费、配额或访问控制机制
+- 使用本服务从事欺诈、骚扰、非法传播或其他不当行为
 
-### 5.3 Data Maintenance and Cleanup
+若我们合理认为您存在上述行为，有权采取限制访问、暂停服务、移除相关内容、冻结云能力或终止账号等措施。
 
-If a user discontinues payment for services related to server resources for more than **90 days**,
-we reserve the right to remove server-stored data (including, but not limited to, attachments or cloud content).
+## 8. 通知与沟通
 
-Such data removal **does not affect the user’s acquired feature usage rights**.
-Users may resume use of their purchased features upon meeting the applicable conditions again.
+为提供服务，我们可能通过应用内提示、网站提示或电子邮件向您发送必要通知，包括但不限于：
 
----
+- 登录、身份验证与安全提醒
+- 购买、订阅、退款、配额和数据清理通知
+- 服务条款、隐私政策或重大功能变更通知
+- 必要的运维、合规和服务状态通知
 
-## 6. Research and Study Participation (If Applicable)
+除非您另行明确同意，我们不会仅凭本条款向您发送营销性质的电子邮件。
 
-We may occasionally invite users to participate in voluntary research or study activities.
+## 9. 研究与反馈
 
-* Participation is entirely voluntary;
-* Declining participation will not affect access to the App’s core features or user rights;
-* Research data will be handled in accordance with applicable privacy disclosures and will not be linked to user account identities.
+我们可能邀请您自愿参加研究、访谈、测试或问卷。是否参与完全由您决定，拒绝参与不会影响您正常使用 Granoflow 的基础权利。
 
-Specific research arrangements will be explained separately at the time of invitation.
+您提交的产品反馈、问题报告或改进建议，可被我们用于修复问题、优化产品与规划路线，但不因此转移您对原始内容依法享有的权利。
 
----
+## 10. 责任限制
 
-## 7. Notifications and Content Delivery
+在适用法律允许的最大范围内：
 
-The App may send users service-related notifications, including but not limited to:
+- 对于因服务中断、第三方服务异常、数据丢失、数据损坏、设备故障、网络故障、误操作或不可抗力导致的间接损失、附带损失、后果性损失或利润损失，我们不承担责任
+- 我们对您就相关付费服务承担的累计责任总额，不超过您就该相关服务实际支付的金额
+- 对于免费功能，我们在法律允许范围内不承担金钱赔偿责任
 
-* application updates;
-* service status notices;
-* usage tips or links to publicly accessible third-party content (such as experience articles or community discussions).
+本条不排除任何依法不得排除或限制的责任。
 
-Such notifications are provided **for informational purposes only** and **do not constitute advice, guidance, or professional opinions**, nor do they represent our views.
+## 11. 条款变更与服务调整
 
-Users may disable such notifications through system settings.
+我们可以根据法律要求、产品演进、运营安排或第三方依赖变化更新本条款。
 
-### 7.1 Email Communications
+如更新会对您的重要权利产生实质影响，我们会以合理方式通知您。若您在更新生效后继续使用本服务，视为您接受更新后的条款。
 
-In the course of providing Granoflow services, we may send you **necessary service-related emails**, including but not limited to:
+如因商业调整、监管要求、第三方依赖变化或不可抗力导致全部或部分服务停止，我们会尽合理努力提前说明，但不保证一定能够逐一通知到每位用户。
 
-* registration, login, or identity verification emails;
-* account security or unusual activity alerts;
-* notifications related to data processing, data cleanup, or account status;
-* notices of material changes to these Terms or our Privacy Policy.
+## 12. 适用法律与联系方式
 
-These emails are sent **solely for service fulfillment, security, and legal compliance purposes** and **do not constitute marketing or promotional communications**.
+本条款的订立、效力、解释与争议解决，适用香港特别行政区法律。
 
-Unless you explicitly provide separate consent, we will not send marketing emails or subscription-based content.
-You may manage or disable non-essential communications through in-app settings or methods provided in the emails.
+如您对本条款有疑问，可通过以下方式联系我们：
 
----
+- 邮箱：<granoflow@anz.tv>
+- Issues：[https://github.com/granoflow/granoflow-docs/issues](https://github.com/granoflow/granoflow-docs/issues)
 
-## 8. Acceptable Use
-
-You agree not to use Granoflow for any unlawful or prohibited activities, including but not limited to:
-
-* violating applicable laws or regulations;
-* infringing the lawful rights of others;
-* uploading malicious code or abusing system resources;
-* interfering with or disrupting the normal operation of the App.
-
-We reserve the right to restrict or terminate access in response to violations.
-
----
-
-## 9. Limitation of Liability
-
-To the maximum extent permitted by applicable law:
-
-* we shall not be liable for any indirect, incidental, or consequential damages arising from service interruptions, data loss, or use of the App;
-* our total liability shall be limited to the amount actually paid by you for the relevant services, if any.
-
----
-
-## 10. Changes to These Terms
-
-We may update these Terms from time to time.
-If changes materially affect your rights, we will provide reasonable notice.
-
-If the service is discontinued due to force majeure, business adjustments, or other reasonable causes, we will make reasonable efforts to notify users in advance.
-
----
-
-## 11. Contact Information
-
-If you have any questions or concerns regarding these Terms, please contact us at:
-
-📧 **[granoflow@anz.tv](mailto:granoflow@anz.tv)**
-🌐 [https://github.com/granoflow/granoflow-docs/issues](https://github.com/granoflow/granoflow-docs/issues)
-
----
-
-These Terms are governed by and construed in accordance with the laws of the **Hong Kong Special Administrative Region**.
-
-**Maintained by: A New Zero Innovations Limited (Hong Kong)**
+**维护者：A New Zero Innovations Limited（香港）**

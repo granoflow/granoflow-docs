@@ -1,170 +1,151 @@
-# Granoflow 隐私政策
+# Granoflow Privacy Policy
 
-**最后更新日期：2026-03-12**
+**Last Updated: March 18, 2026**
 
-本隐私政策适用于 Granoflow 应用、本应用配套的 `account-hub` 登录与计费页面，以及我们为账号、同步、订阅与支持服务所提供的相关在线能力（以下合称“本服务”）。
+This Privacy Policy applies to the Granoflow application, the associated `account-hub` login and billing pages, and the online capabilities we provide for account management, synchronization, subscriptions, and support services (collectively, the "Services").
 
-Granoflow 由 **A New Zero Innovations Limited（香港）** 维护和运营。
+Granoflow is maintained and operated by **A New Zero Innovations Limited (Hong Kong)**.
 
-Granoflow 采用本地优先设计。默认情况下，您的任务与个人管理数据优先保存在您的设备本地；只有在您主动登录、启用云能力或使用付费功能时，才会发生相应的在线数据处理。
+Granoflow is **local-first by design**. By default, your tasks and personal management data are stored locally on your device. Online data processing only occurs when you explicitly sign in, enable cloud features, or use paid functionality.
 
-## 1. 适用范围
+## 1. Scope
 
-本政策说明我们会收集哪些信息、如何使用这些信息、在什么情况下共享这些信息，以及您可如何管理自己的数据与隐私选择。
+This policy describes what information we collect, how we use it, the circumstances under which we share it, and how you can manage your data and privacy choices.
 
-本政策不适用于第三方网站、应用商店、支付服务或身份提供方的独立处理行为。若您通过 Granoflow 使用第三方服务，该第三方将按照其自己的隐私政策处理相关信息。
+This policy does not apply to the independent practices of third-party websites, app stores, payment processors, or identity providers. If you use third-party services through Granoflow, those third parties will process your information according to their own privacy policies.
 
-## 2. 我们可能处理的信息
+## 2. Information We May Process
 
-### 2.1 账户与身份信息
+### 2.1 Account and Identity Information
+When you register, log in, or recover an account, we may process basic information including:
+- Email address
+- Display name, nickname, or avatar
+- Basic authentication identifiers returned by third-party identity providers
+- Necessary metadata related to login, sessions, device registration, and security verification
 
-当您注册、登录或恢复账号时，我们可能处理以下基础信息：
+The login methods supported by Granoflow may change across platforms and versions. Please refer to the options currently displayed in the application interface.
 
-- 电子邮箱地址
-- 显示名称、昵称或头像
-- 第三方身份服务返回的基础认证标识
-- 与登录、会话、设备登记、异常登录校验相关的必要元数据
+### 2.2 Content You Create in the App
+Granoflow is primarily used for recording and organizing personal tasks, projects, milestones, reviews, domain configurations, and attachments. Content you create, import, sync, or back up may include:
+- Tasks, projects, milestones, tags, domains, and notes
+- Review logs, focus timer records, preferences, and local configurations
+- Images, documents, or other attachments you choose to add
 
-Granoflow 当前支持的登录方式会随平台和版本变化而调整。具体以应用界面当时实际展示的入口为准。
+**By default, this content remains on your local device.**
 
-### 2.2 您在应用中创建的内容
+When you explicitly enable account features, cloud sync, cloud attachments, or related online services, the system processes this data according to our security design. For data that enters the cloud, Granoflow aims to encrypt it on the device side before upload, limiting server-side processing to what is strictly necessary to provide sync, recovery, storage, and account functions.
 
-Granoflow 主要用于个人任务、项目、里程碑、回顾、领域配置、附件及其他个人管理内容的记录与整理。您在应用中创建、导入、同步或备份的内容，可能包括：
+### 2.3 Diagnostic and Operational Information
+To improve stability and troubleshooting efficiency, we may process diagnostic information with your permission, such as:
+- Crash logs and stack traces
+- App version, device platform, OS version, page routes, and basic operational status
+- Anonymized technical information related to error localization
 
-- 任务、项目、里程碑、标签、领域和值得记录的文本内容
-- 回顾记录、专注计时记录、偏好设置与本地配置
-- 您主动添加的图片、文档或其他附件
+We currently use Firebase Crashlytics for certain diagnostic capabilities. We do not use this information for advertising targeting or cross-app profiling.
 
-默认情况下，这些内容首先存放在您的本地设备。
+### 2.4 Purchase, Entitlement, and Quota Information
+When you purchase or restore paid features, we may process information related to order status, subscription validity, entitlements, storage quotas, and refund status. This information may come from app stores, payment providers, RevenueCat, or our own billing hub.
 
-当您主动启用账号、云同步、云端附件或相关在线功能时，系统会按当前产品安全设计处理这些数据。对于需要进入云端的数据，Granoflow 当前设计目标是在设备侧完成加密后再上传，并将服务器侧处理限制在提供同步、恢复、存储和账号功能所必需的范围内。
+We do not directly store sensitive payment credentials such as full credit card numbers; the payment process is handled by app stores or third-party payment processors.
 
-### 2.3 诊断与运行信息
+### 2.5 Web Login and Billing Redirection Information
+When you use `account-hub` for web login, subscription management, or billing redirections, we may process:
+- URL parameters related to the login flow, payment flow, error descriptions, and redirection results
+- One-time identifiers and security metadata required for anti-replay, cache control, and session verification
+- Browser language, basic access logs, and troubleshooting information
 
-为了提升稳定性与排障效率，在您允许的情况下，我们可能处理与应用运行有关的诊断信息，例如：
+This information is used solely to complete the login, billing, and redirection cycles.
 
-- 崩溃日志与异常堆栈
-- 应用版本、设备平台、系统版本、页面路由与基础运行状态
-- 与错误定位有关的匿名化技术信息
+### 2.6 Research and Survey Information
+If you explicitly consent to participate in research, interviews, or surveys, we may process the feedback and materials you voluntarily provide. If a specific activity requires additional processing, we will inform you separately before it begins.
 
-当前产品使用 Firebase Crashlytics 处理部分诊断能力。我们不会将这些信息用于广告定向或跨应用画像。
+### 2.7 AI Assistant Information
+Granoflow currently provides interactive capabilities designed to work with third-party AI services, rather than a self-hosted AI service.
 
-### 2.4 购买、权益与存储配额相关信息
+When you use these features, Granoflow may perform content organization, rule-based redaction, placeholder replacement, or data restoration locally on your device to assist your interaction with third-party AI services.
 
-当您购买或恢复付费权益时，我们可能处理与订单状态、订阅有效性、权益投影、存储配额和退款状态相关的信息。该类信息可能来自应用商店、支付服务商、RevenueCat 或我们自己的计费中枢。
+Terms, aliases, statuses, or sync policies related to AI redaction may be synced or backed up as part of your long-term user data, depending on your settings.
 
-我们不会直接保存完整支付卡号等敏感支付凭据；相关支付过程通常由应用商店或第三方支付服务商处理。
+## 3. How We Use This Information
 
-### 2.5 网页登录与计费跳转信息
+We use the information only for the following purposes:
+- Providing login, authentication, session maintenance, device registration, and account security
+- Providing cloud sync, cloud attachments, recovery, backup, and cross-device access
+- Providing paid entitlements, subscription verification, storage quotas, and purchase restoration
+- Providing web login, billing redirection, and app callback capabilities for desktop platforms
+- Providing auxiliary interaction, content organization, and optional redaction for use with third-party AI services
+- Maintaining product stability, troubleshooting, analyzing performance, and improving the user experience
+- Responding to your support requests, handling compliance matters, and sending necessary service notifications
+- Organizing research and survey activities when you have explicitly consented
 
-当您通过 `account-hub` 完成网页登录、订阅管理、桌面端受控结算跳转或回跳 App 时，我们可能处理：
+We do not sell your personal information to third parties, nor do we use your application content for advertising targeting or commercial data trading.
 
-- URL 中与登录流程、支付流程、错误说明和回跳结果相关的参数
-- 防重放、防缓存与会话校验所需的一次性标识和安全元数据
-- 浏览器语言、基础访问日志与故障排查信息
+## 4. Data Storage and Security
 
-这些信息仅用于完成登录、计费和回跳链路本身。
+We take reasonable technical and organizational measures to protect your data, including but not limited to:
+- Local-first storage
+- Protecting business content that enters the cloud using our current security design
+- Separating account metadata, entitlement status, and business content based on the principle of least privilege
+- Implementing controlled verification and anti-abuse measures for login redirections, callbacks, and billing entries
 
-### 2.6 研究与调研信息
+But, no networked system can guarantee absolute security. You are responsible for protecting your own device, email, login status, and local backups.
 
-如果您明确同意参加研究、访谈或问卷，我们可能处理该次活动中您自愿提供的反馈与资料。若某次活动需要额外处理范围，我们会在活动开始前单独告知。
+## 5. Data Sharing and Disclosure
 
-### 2.7 AI 助手相关信息
+We share necessary information only in the following circumstances:
+- Sharing the minimum necessary information with service providers to provide authentication, cloud infrastructure, error diagnostics, payment processing, or subscription verification
+- When you use features designed to work with third-party AI services, sending the required content or metadata to those services as per the product design
+- Disclosure required by applicable law, regulatory requirements, judicial orders, or lawful requests from government authorities
+- Sharing with your explicit consent
+- Necessary data transfer in the event of a corporate reorganization, merger, asset transfer, or similar transaction, provided it complies with legal requirements
 
-当前，Granoflow 提供的是与第三方 AI 服务配合使用的辅助交互能力，而非自有 AI 托管服务。
+We require our service providers to process data only to the extent necessary to perform their contracted functions.
 
-当您主动使用相关功能时，Granoflow 可能根据当前产品设置在设备本地对特定业务字段执行内容整理、规则型脱敏、占位符替换、复制投递或回流还原，以协助您与第三方 AI 服务交互。
+For third-party AI services you choose to use, the storage, retention, training, moderation, and subsequent processing of content are governed by that third party’s own terms and privacy policy. Granoflow does not represent these capabilities as self-hosted AI services; integration paths and service models may change over time.
 
-与 AI 脱敏功能相关的词条、别名、状态或同步策略，可能作为用户长期数据的一部分，按照当前产品设置进入同步或备份范围。
+## 6. Data Retention
 
-## 3. 我们如何使用这些信息
+Retention periods vary by data type:
+- **Local data** is controlled by you. It is removed from the device when you delete the app, clear the local database, or remove backups.
+- **Account, device registration, subscription status, service logs, and compliance records** are retained for as long as necessary to fulfill their respective purposes.
+- **Cloud data** associated with ongoing server resources may be cleaned, archived, or deleted after extended periods of disuse, non-payment, or inactivity. Specific rules are governed by the then-current Terms of Service and in-app disclosures.
 
-我们仅在以下目的范围内使用相关信息：
+When you request account deletion or when we terminate a service, server-side information may be deleted immediately, delayed for deletion, retained in de-identified form, or purged after a set period, depending on technical implementation, legal obligations, dispute resolution, and backup cycles.
 
-- 提供登录、鉴权、会话维持、设备登记与账号安全能力
-- 提供云同步、云端附件、恢复、备份和跨设备访问能力
-- 提供付费权益、订阅校验、存储配额与购买恢复能力
-- 提供桌面端网页登录、计费跳转与应用回跳能力
-- 提供与第三方 AI 服务配合使用的辅助交互、内容整理与可选脱敏能力
-- 维护产品稳定性、排查故障、分析性能问题并改进体验
-- 响应您的支持请求、处理合规事务和必要的服务通知
-- 在您明确同意时组织研究与调研活动
+Deleting your account generally does not automatically delete data stored on your local device, exported files, system backups, third-party app store records, third-party identity provider records, or content you have already sent to third-party AI services.
 
-我们不会将您的个人信息出售给第三方，也不会将您的应用内容用于广告定向或商业数据交易。
+## 7. Processing Location and Cross-Border Transfer
 
-## 4. 数据存储与安全
+Depending on the features used, your location, and our service providers, your information may be processed, stored, or transferred in different countries or regions. We take reasonable measures to protect information during cross-border transfers as required by applicable law.
 
-我们采取合理的技术与组织措施保护数据安全，包括但不限于：
+## 8. Your Rights and Choices
 
-- 本地优先存储
-- 对进入云端的业务内容采用当前产品安全设计进行保护
-- 将账号元数据、权益状态与业务内容按最小必要原则分离处理
-- 对登录跳转、回调与计费入口实施受控校验与防滥用措施
+To the extent permitted by applicable law, you may:
+- Access, update, or correct your account information
+- Disable cloud sync or log out
+- Request the deletion of your account and associated server-side data
+- Disable optional diagnostic collection via system or app settings
+- Export, back up, or delete your local data
+- Withdraw consent for research and survey activities
 
-尽管如此，任何联网系统都无法承诺绝对安全。您也应妥善保护自己的设备、邮箱、登录状态与本地备份。
+Some data on specific platforms can also be managed through mechanisms provided by app stores, payment services, or identity providers.
 
-## 5. 数据共享与披露
+## 9. Minors
 
-我们仅会在以下情况下共享必要信息：
+Granoflow is not specifically designed for children under the age of 13. If a minor uses the Services, they should do so with the necessary consent, guidance, and supervision of a guardian as required by law. If we become aware that we have processed personal information of a minor requiring special protection without proper consent, we will take appropriate action.
 
-- 为提供身份验证、云基础设施、错误诊断、支付处理或订阅校验而向必要服务提供方共享最小范围信息
-- 当您主动使用与第三方 AI 服务配合的相关功能时，按当前产品设计向相关第三方服务发送实现该功能所需的内容或元数据
-- 根据适用法律、监管要求、司法命令或政府机关的合法要求进行披露
-- 在获得您明确同意的前提下进行共享
-- 在公司重组、并购、资产转让或类似交易中，于符合法律要求的前提下进行必要的数据转移
+Granoflow is a personal management and reflection tool and does not provide medical, psychological, or other professional advice.
 
-我们要求相关服务提供方仅在实现其受托功能所必需的范围内处理数据。
+## 10. Policy Updates
 
-对于您主动选择使用的第三方 AI 服务，其对相关内容的存储、保留、训练、审查和后续处理方式，由该第三方根据其适用条款和隐私政策负责。当前产品形态下，Granoflow 并不把该类能力表述为自有 AI 托管服务；但相关处理路径、集成方式和服务形态可能随版本、平台、地区或功能升级而变化。
+We may update this policy to reflect product changes, legal requirements, or operational needs. If an update significantly affects your rights, we will provide reasonable notice via in-app prompts, web notifications, or email.
 
-## 6. 数据保留
+For AI capabilities, third-party integrations, or other rapidly evolving features, we may provide supplemental disclosures via feature pages, settings, or FAQs. These supplements form part of our data processing disclosures.
 
-不同类型数据的保留期限可能不同：
+## 11. Contact Us
 
-- 本地数据通常由您自行控制，删除应用、清空本地库或移除备份后，相应数据将不再由本设备保留
-- 账户、设备登记、订阅状态、服务日志和合规记录会在实现相应目的所需期间内保留
-- 与持续服务器资源相关的云端数据，可能在长期停用、长期欠费或长期不活跃后被清理、归档或删除；具体规则以当时有效的服务条款、应用内说明与购买页披露为准
+If you have questions about this policy, please contact us at:
+- Email: <granoflow@anz.tv>
+- Issues: [https://github.com/granoflow/granoflow-docs/issues](https://github.com/granoflow/granoflow-docs/issues)
 
-当您申请删除账户或我们按适用规则关闭相关服务能力时，服务器侧账户信息、设备登记、同步数据、云端附件、订阅关联记录及其他相关数据，可能根据技术实现、法律义务、争议处理、审计留存和备份轮转周期，立即删除、延迟删除、去标识化保留或在一定期间后彻底清除。
-
-删除账户通常不会自动删除您已保留在本地设备、导出文件、系统备份、第三方应用商店记录、第三方身份服务记录或您已主动发送至第三方 AI 服务中的内容。
-
-## 7. 处理地点与跨境处理
-
-根据您所使用的功能、所在地、第三方服务商分布和当前产品部署方式，相关信息可能在不同国家或地区被我们或必要的服务提供方处理、存储、备份或传输。
-
-当发生跨境传输或跨司法辖区处理时，我们会在适用法律要求的范围内采取合理措施保护相关信息。
-
-## 8. 您的权利与选择
-
-在适用法律允许的范围内，您可以：
-
-- 访问、更新或更正账户信息
-- 关闭云同步或退出登录
-- 申请删除账户及与之关联的服务器侧数据
-- 通过系统设置或应用设置关闭可选的诊断信息收集
-- 自行导出、备份或删除本地数据
-- 撤回对研究与调研活动的同意
-
-不同平台上的部分数据也可通过应用商店、支付服务或身份服务提供方提供的机制进行管理。
-
-## 9. 未成年人
-
-Granoflow 不是面向未满 13 周岁儿童专门设计的服务。若未成年人使用本服务，应由其监护人在适用法律要求下提供必要同意、指导和监督。若我们在适用法律框架下明确知悉我们处理了需特别保护的未成年人个人信息，我们会采取相应措施。
-
-Granoflow 仅是个人管理与反思工具，不提供医疗、心理治疗或其他专业建议。
-
-## 10. 政策更新
-
-我们可能根据产品变化、法律要求或运营需要更新本政策。如更新对您的权利产生重大影响，我们会通过应用内提示、网页通知或电子邮件作出合理通知。
-
-对于 AI 相关能力、第三方集成功能、支付能力或其他高变化功能，我们也可能通过功能页说明、设置页提示、结算页披露、FAQ 或其他产品内 notice 提供补充说明；在不与本政策冲突的前提下，该等补充说明可作为相关功能的数据处理披露的一部分。
-
-## 11. 联系方式
-
-如您对本政策有疑问，可通过以下方式联系我们：
-
-- 邮箱：<granoflow@anz.tv>
-- Issues：[https://github.com/granoflow/granoflow-docs/issues](https://github.com/granoflow/granoflow-docs/issues)
-
-**维护者：A New Zero Innovations Limited（香港）**
+**Operator: A New Zero Innovations Limited (Hong Kong)**

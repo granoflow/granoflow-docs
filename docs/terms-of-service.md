@@ -1,161 +1,151 @@
-# Granoflow 服务条款
+# Granoflow Terms of Service
 
-**最后更新日期：2026-03-12**
+**Last Updated: March 18, 2026**
 
-欢迎使用 Granoflow。
+Welcome to Granoflow.
 
-在访问、下载、安装、注册或使用 Granoflow 应用、配套的 `account-hub` 登录与计费页面，以及我们提供的相关账号、同步、订阅与支持服务之前，请先阅读本服务条款。您一旦使用本服务，即表示您已阅读、理解并同意受本条款约束。
+Please read these Terms of Service carefully before accessing, downloading, installing, registering for, or using the Granoflow application, the associated `account-hub` login and billing pages, and our related account, synchronization, subscription, and support services (collectively, the "Services"). By using the Services, you acknowledge that you have read, understood, and agree to be bound by these Terms.
 
-## 1. 服务性质
+## 1. Nature of the Services
 
-Granoflow 是一款面向个人任务、项目、里程碑、回顾、专注计时与个人管理场景的工具型产品。
+Granoflow is a productivity tool designed for personal tasks, projects, milestones, reviews, focus timing, and personal management.
 
-Granoflow 仅作为个人管理与信息整理工具提供，不构成医疗建议、心理治疗、法律意见、投资建议或任何结果承诺。您基于本服务作出的决定及后果，由您自行负责。
+Granoflow is provided solely as a tool for personal management and information organization. It does not constitute medical advice, psychological therapy, legal advice, investment advice, or a guarantee of any specific outcome. You are solely responsible for any decisions made and the consequences thereof based on your use of the Services.
 
-## 2. 服务提供方式
+## 2. Service Provision
 
-Granoflow 采用本地优先设计，并在部分场景下提供账号、云同步、云端附件、购买恢复、订阅校验和网页登录/计费中枢等在线能力。
+Granoflow is **local-first by design**. We provide optional online capabilities in certain scenarios, including account management, cloud synchronization, cloud attachments, purchase restoration, subscription verification, and a web-based login/billing hub.
 
-我们会持续迭代产品功能、界面、登录方式、购买入口和服务形态，但不承诺任何功能永久不变、永久免费或永久持续可用。某些能力可能因平台限制、监管要求、第三方服务调整或我们的运营安排而被调整、暂停或下线。
+We continuously iterate on product features, interfaces, login methods, purchase entries, and service models. We do not guarantee that any specific feature will remain unchanged, remain free, or be permanently available. Certain capabilities may be adjusted, suspended, or discontinued due to platform restrictions, regulatory requirements, changes in third-party services, or our own operational decisions.
 
-本服务按“现状”提供。在适用法律允许的范围内，我们不保证服务绝对不中断、绝对无错误，也不保证所有历史数据可永久保留。
+The Services are provided on an **"AS IS"** and **"AS AVAILABLE"** basis. To the extent permitted by applicable law, we do not warrant that the Services will be uninterrupted or error-free, nor do we guarantee the permanent retention of all historical data.
 
-## 3. 账户、登录与安全
+## 3. Accounts, Login, and Security
 
-部分功能需要您登录账号后才能使用。您应对自己的登录邮箱、第三方身份账号、设备和会话安全负责。
+Certain features require you to sign in to an account. You are responsible for maintaining the security of your login email, third-party identity accounts, devices, and sessions.
 
-若您发现账号被未经授权使用、设备丢失或存在其他安全风险，应尽快通过官方联系方式通知我们，并及时采取改密、退出登录或移除设备等措施。
+If you discover unauthorized use of your account, loss of a device, or other security risks, you should notify us immediately through our official contact channels and take prompt action, such as changing your password, logging out, or removing the affected device.
 
-Granoflow 在不同平台上开放的登录方式可能不同。具体以应用界面或 `account-hub` 页面当时实际展示的入口为准。
+Login methods may vary by platform. Please refer to the options currently displayed in the application interface or on the `account-hub` pages.
 
-## 4. 用户内容与许可
+## 4. User Content and License
 
-您在 Granoflow 中创建、输入、导入、同步或上传的内容，包括任务、项目、里程碑、文本记录、附件及其他个人管理数据，其权利原则上仍归您所有。
+You retain ownership of all content you create, input, import, sync, or upload within Granoflow, including tasks, projects, milestones, text records, attachments, and other personal management data.
 
-为提供本服务，您授予我们一项有限的、非独占的、不可转让的使用许可，仅用于以下目的：
+To provide the Services, you grant us a limited, non-exclusive, non-transferable license to:
+- Store, transmit, synchronize, back up, recover, or display content that you explicitly request us to process.
+- Maintain account, purchase, subscription, device, and support services.
+- Troubleshoot issues, handle security incidents, and fulfill compliance obligations.
 
-- 存储、传输、同步、备份、恢复或展示您主动要求我们处理的内容
-- 维持账号、购买、订阅、设备与支持服务
-- 排查故障、处理安全事件和执行合规义务
+We do not claim any additional rights to your content beyond what is strictly necessary to provide the Services.
 
-除为提供本服务所必需的情形外，我们不会主张对您内容的额外权利。
+## 5. Free Features, Paid Entitlements, and Cloud Resources
 
-## 5. 免费能力、付费权益与云资源
+Granoflow may offer both free features and paid entitlements. Free features are primarily local. Certain online capabilities, cloud features, additional storage, or cross-device functionality may require a valid account status, an active subscription, or other payment conditions.
 
-Granoflow 可能同时提供免费能力与付费权益。免费能力通常以本地功能为主；某些在线能力、云端能力、附加存储或跨设备能力可能需要有效的账号状态、有效订阅或其他付费条件。
+`Granoflow Pro` is one of our core paid entitlements. Purchase and management paths may differ by platform:
+- Mobile platforms typically use in-app purchases via app stores.
+- Certain desktop scenarios may use controlled web-based billing or subscription management entries.
 
-当前产品中，`Granoflow Pro` 属于核心付费权益名称之一。不同平台上的购买与管理路径可能不同：
+You understand and agree that:
+- One-time purchases, lifetime entitlements, or legacy entitlement names grant you the right to use the corresponding features during the period of the product's continued operation. They do not automatically entitle you to permanent free server resources, permanent cloud storage, or permanent online synchronization services.
+- Capabilities involving server resources incur ongoing costs. We reserve the right to adjust pricing, structures, quotas, eligibility, and delivery methods based on operational needs.
+- If a paid status associated with server resources expires and remains inactive beyond a reasonable grace period, we may clean, archive, downgrade, or stop retaining the corresponding cloud data.
 
-- 移动平台可能通过应用商店内购完成
-- 部分桌面场景可能通过受控网页结算或订阅管理入口完成
+Under current rules, if a paid status associated with server resources has ceased for more than **90 days** without restoration, we reserve the right to purge the corresponding server-side data, including cloud content and attachments. Such a purge does not revoke your legally acquired right to use the features, but historical cloud data may be unrecoverable.
 
-您理解并同意：
+**We strongly recommend that you always maintain your own local or independent backups of important content.**
 
-- 一次性购买、终身权益或历史权益名称，指向的是在产品持续运营期间内对相应功能的使用资格，不当然等于永久免费服务器资源、永久云存储或永久在线同步服务
-- 与服务器资源相关的能力会产生持续成本，我们有权基于运营需要调整其价格、结构、配额、可购资格与交付方式
-- 若与服务器资源相关的付费状态失效并持续超过合理宽限期，我们可对相应云端数据进行清理、归档、降配或停止继续保留
+## 6. Third-Party Services
 
-在当前规则下，如与服务器资源相关的付费状态停止后超过 **90 天** 仍未恢复，我们有权清理相应服务器侧数据，包括云端内容或附件。此类清理不当然撤销您已合法取得的功能使用资格，但历史云端数据可能无法恢复。
+Certain capabilities of Granoflow rely on third-party services, including but not limited to:
+- Authentication services
+- App stores and payment processors
+- Cloud infrastructure and object storage
+- Crash diagnostics and performance monitoring services
 
-我们强烈建议您始终自行保留重要内容的本地备份或独立备份。
+The availability, rule changes, billing models, review outcomes, and account restrictions of these third parties may affect certain capabilities of the Services. While we will make reasonable efforts to mitigate the impact of third-party service issues, policy changes, or force majeure, we do not provide warranties for third-party services themselves.
 
-## 6. 第三方服务
+### 6.1 AI Assistant and Third-Party AI Services
+Granoflow provides interactive capabilities designed to work with third-party AI services, rather than a self-hosted AI service.
 
-Granoflow 的部分能力依赖第三方服务，包括但不限于：
+These features may include local content organization, optional redaction, data delivery, structured result ingestion, or other capabilities to assist your interaction with third-party AI services. These features are intended solely to help you initiate and manage the interaction process and do not constitute our provision, operation, or control of any third-party AI service.
 
-- 身份验证服务
-- 应用商店与支付服务
-- 云基础设施与对象存储
-- 崩溃诊断与性能监测服务
+AI-based automatic recognition, rule-based redaction, placeholder replacement, and data restoration are auxiliary features. We do not guarantee that they will be complete, accurate, or error-free across all content, scenarios, languages, or formats. You must exercise your own judgment when providing content to third-party AI services and independently verify any results before adopting, importing, or relying on them.
 
-第三方服务的可用性、规则变化、计费方式、审核结果和账号限制，可能影响本服务的部分能力。因第三方服务异常、限制、下线、政策变化或不可抗力造成的功能受限、中断或数据风险，我们会尽合理努力降低影响，但不对第三方服务本身作出保证。
+We make no warranties regarding the availability, accuracy, confidentiality, compliance, data retention, or training policies of third-party AI services. You evaluate and assume all risks and consequences arising from your use of third-party AI services, your chosen settings, or the content returned by such services.
 
-### 6.1 AI 助手与第三方 AI 服务
+## 7. Acceptable Use
 
-当前，Granoflow 提供的是与第三方 AI 服务配合使用的辅助交互能力，而非自有 AI 托管服务。
+You may not use the Services to:
+- Violate any applicable laws or regulations.
+- Infringe upon the legal rights, privacy, or intellectual property of others.
+- Upload malicious code, abuse APIs in bulk, or interfere with the stability of the Services.
+- Circumvent authentication, billing, quota, or access control mechanisms.
+- Engage in fraud, harassment, illegal distribution, or other improper conduct.
 
-相关功能可能包括本地内容整理、可选脱敏、复制投递、结构化结果回流或其他用于协助用户与第三方 AI 服务交互的能力。该等功能仅用于辅助用户发起和管理交互流程，不构成我们对任何第三方 AI 服务的提供、运营或控制。
+If we reasonably believe you have engaged in such behavior, we reserve the right to restrict access, suspend services, remove content, freeze cloud capabilities, or terminate your account.
 
-AI 自动识别、规则型脱敏、占位符替换和回流还原均属于辅助功能，不保证在所有内容、场景、语言或格式下都完整、准确、无遗漏或无误。用户应自行判断是否向第三方 AI 服务提供相关内容，并在采纳、导入或依赖 AI 返回结果前自行复核。
+## 8. Account Restrictions, Suspension, and Termination
 
-对于第三方 AI 服务的可用性、准确性、保密性、合规性、内容保留、训练政策或其他处理方式，我们不作保证。因用户主动使用第三方 AI 服务、选择相关设置，或第三方 AI 服务返回内容所产生的风险和后果，由用户自行评估并承担。
+To the extent permitted by applicable law, we may restrict, suspend, downgrade, freeze, delete associated cloud data, or terminate your account for all or part of the Services based on the level of risk and impact, if:
+- You violate these Terms, applicable laws, or specific feature rules.
+- You present a security risk, engage in abuse or abnormal automated access, show signs of fraud, or significantly impact service stability.
+- A paid status associated with server resources has been inactive for an extended period or no longer meets the service conditions.
+- We need to adjust capabilities due to technical migration, service discontinuation, changes in third-party dependencies, compliance requirements, or operational arrangements.
 
-## 7. 合理使用
+Where reasonably practicable, we will provide notice, an opportunity to cure, a data export window, or other transitional arrangements. However, we may take immediate action in cases involving security, fraud, legal risk, or emergency situations.
 
-您不得利用本服务从事以下行为：
+## 9. Notifications and Communication
 
-- 违反适用法律法规
-- 侵犯他人合法权益、隐私权或知识产权
-- 上传恶意代码、批量滥用接口或干扰服务稳定性
-- 规避认证、计费、配额或访问控制机制
-- 使用本服务从事欺诈、骚扰、非法传播或其他不当行为
+To provide the Services, we may send you necessary notifications via in-app prompts, website notices, or email, including but not limited to:
+- Login, authentication, and security alerts.
+- Purchase, subscription, refund, quota, and data cleanup notices.
+- Updates to these Terms, the Privacy Policy, or major feature changes.
+- Necessary maintenance, compliance, and service status updates.
 
-若我们合理认为您存在上述行为，有权采取限制访问、暂停服务、移除相关内容、冻结云能力或终止账号等措施。
+Unless you provide separate explicit consent, we will not send you marketing emails based solely on these Terms.
 
-## 8. 账号限制、暂停与终止
+For AI capabilities, third-party integrations, or other rapidly evolving features, we may provide supplemental rules, restrictions, or risk disclosures via feature pages, settings, FAQs, or other in-app notices. These supplements form part of the agreement for those specific features.
 
-在适用法律允许的范围内，如发生以下情形，我们可根据风险和影响程度，对全部或部分服务采取限制、暂停、降级、冻结、删除相关云端数据或终止账号等措施：
+## 10. Research and Feedback
 
-- 您违反本条款、适用法律或相关功能规则
-- 您存在安全风险、滥用行为、异常自动化访问、欺诈迹象或对服务稳定性造成明显影响
-- 与服务器资源相关的付费状态长期失效、长期不活跃或不再满足相应服务条件
-- 我们基于技术迁移、服务下线、第三方依赖变化、合规要求或运营安排需要调整相关能力
+We may invite you to voluntarily participate in research, interviews, testing, or surveys. Participation is entirely optional and will not affect your basic rights to use Granoflow.
 
-在合理可行的情况下，我们会根据具体情形提供通知、整改机会、数据导出窗口或其他过渡安排；但在涉及安全、欺诈、违法风险或紧急处置时，我们也可能先行采取措施。
+Any product feedback, bug reports, or improvement suggestions you submit may be used by us to fix issues, optimize the product, and plan our roadmap, without transferring your legal rights to the original content.
 
-## 9. 通知与沟通
+## 11. Limitation of Liability
 
-为提供服务，我们可能通过应用内提示、网站提示或电子邮件向您发送必要通知，包括但不限于：
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
+- WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR LOSS OF PROFITS ARISING FROM SERVICE INTERRUPTIONS, THIRD-PARTY SERVICE ISSUES, DATA LOSS, DATA CORRUPTION, DEVICE FAILURE, NETWORK FAILURE, USER ERROR, OR FORCE MAJEURE.
+- WE PROVIDE NO GUARANTEE OF OUTCOME REGARDING LOSSES, LEAKS, MISIDENTIFICATIONS, OR ERRONEOUS DATA WRITES RESULTING FROM INCOMPLETE AI RECOGNITION, IMPROPER REDACTION CONFIGURATION, ALTERATION OF PLACEHOLDERS BY THIRD PARTIES, INGESTION ERRORS, OR ABNORMAL PROCESSING BY THIRD-PARTY AI SERVICES.
+- OUR TOTAL AGGREGATE LIABILITY FOR ANY PAID SERVICES SHALL NOT EXCEED THE AMOUNT YOU ACTUALLY PAID FOR THE SPECIFIC SERVICE IN QUESTION.
+- FOR FREE FEATURES, WE SHALL HAVE NO MONETARY LIABILITY TO THE EXTENT PERMITTED BY LAW.
 
-- 登录、身份验证与安全提醒
-- 购买、订阅、退款、配额和数据清理通知
-- 服务条款、隐私政策或重大功能变更通知
-- 必要的运维、合规和服务状态通知
+THIS SECTION DOES NOT EXCLUDE ANY LIABILITY THAT CANNOT BE EXCLUDED OR LIMITED UNDER APPLICABLE LAW.
 
-除非您另行明确同意，我们不会仅凭本条款向您发送营销性质的电子邮件。
+## 12. Changes to Terms and Service Adjustments
 
-对于 AI 相关能力、第三方集成功能、支付能力或其他高变化功能，我们也可能通过功能页说明、设置页提示、结算页披露、FAQ 或其他产品内 notice 提供补充规则、限制条件或风险说明；在不与本条款冲突的前提下，该等补充说明可构成对相关功能的补充约定。
+We may update these Terms to reflect legal requirements, product evolution, operational arrangements, or changes in third-party dependencies.
 
-## 10. 研究与反馈
+If an update materially affects your significant rights, we will notify you by reasonable means. Your continued use of the Services after an update becomes effective constitutes your acceptance of the revised Terms.
 
-我们可能邀请您自愿参加研究、访谈、测试或问卷。是否参与完全由您决定，拒绝参与不会影响您正常使用 Granoflow 的基础权利。
+Integration paths and service models for AI-related capabilities may change over time. We may update descriptions, terms, or privacy disclosures as new AI service models are introduced.
 
-您提交的产品反馈、问题报告或改进建议，可被我们用于修复问题、优化产品与规划路线，但不因此转移您对原始内容依法享有的权利。
+If all or part of the Services are discontinued due to business adjustments, regulatory requirements, or force majeure, we will make reasonable efforts to provide advance notice but do not guarantee individual notification to every user.
 
-## 11. 责任限制
+## 13. Account Deletion and Data Impact
 
-在适用法律允许的最大范围内：
+Upon account deletion, cessation of subscription, extended inactivity, or our termination of services, server-side data associated with the account (including device registrations, sync data, cloud attachments, and entitlement records) may be deleted immediately, delayed for deletion, retained in de-identified form, or purged after a set period, depending on technical implementation, backup cycles, compliance obligations, and audit requirements.
 
-- 对于因服务中断、第三方服务异常、数据丢失、数据损坏、设备故障、网络故障、误操作或不可抗力导致的间接损失、附带损失、后果性损失或利润损失，我们不承担责任
-- 对于因 AI 辅助功能识别不完整、脱敏配置不当、占位符被第三方服务改写、回流导入错误或第三方 AI 服务处理结果异常所导致的损失、泄露、误判或误写入，我们在适用法律允许范围内不作结果保证
-- 我们对您就相关付费服务承担的累计责任总额，不超过您就该相关服务实际支付的金额
-- 对于免费功能，我们在法律允许范围内不承担金钱赔偿责任
+Account deletion or service termination generally does not automatically delete data stored on your local device, exported files, system backups, third-party app stores, third-party identity providers, or third-party AI services.
 
-本条不排除任何依法不得排除或限制的责任。
+## 14. Governing Law and Contact
 
-## 12. 条款变更与服务调整
+These Terms and any disputes arising out of or related to them shall be governed by the laws of the **Hong Kong Special Administrative Region**.
 
-我们可以根据法律要求、产品演进、运营安排或第三方依赖变化更新本条款。
+If you have questions about these Terms, please contact us at:
+- Email: <granoflow@anz.tv>
+- Issues: [https://github.com/granoflow/granoflow-docs/issues](https://github.com/granoflow/granoflow-docs/issues)
 
-如更新会对您的重要权利产生实质影响，我们会以合理方式通知您。若您在更新生效后继续使用本服务，视为您接受更新后的条款。
-
-当前 AI 相关能力的处理路径、集成方式和服务形态也可能随版本、平台、地区或功能升级而变化；如未来上线新的 AI 服务形态，我们可根据产品实际情况更新相关说明、条款或隐私披露。
-
-如因商业调整、监管要求、第三方依赖变化或不可抗力导致全部或部分服务停止，我们会尽合理努力提前说明，但不保证一定能够逐一通知到每位用户。
-
-## 13. 账户删除与数据影响
-
-您删除账户、停止订阅、长期不活跃或我们按规则终止相关服务后，Granoflow 侧与该账号关联的服务器端数据、设备登记、同步数据、云端附件、权益状态和相关记录，可能根据技术实现、备份轮转、合规义务、争议处理和审计要求立即删除、延迟删除、去标识化保留或在一定期间后彻底清除。
-
-账户删除或服务终止通常不会自动删除您已保存在本地设备、导出文件、系统备份、第三方应用商店、第三方身份服务或第三方 AI 服务中的内容或记录。
-
-## 14. 适用法律与联系方式
-
-本条款的订立、效力、解释与争议解决，适用香港特别行政区法律。
-
-如您对本条款有疑问，可通过以下方式联系我们：
-
-- 邮箱：<granoflow@anz.tv>
-- Issues：[https://github.com/granoflow/granoflow-docs/issues](https://github.com/granoflow/granoflow-docs/issues)
-
-**维护者：A New Zero Innovations Limited（香港）**
+**Operator: A New Zero Innovations Limited (Hong Kong)**

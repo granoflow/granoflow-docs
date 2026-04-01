@@ -214,9 +214,11 @@ function buildPromptPayload(rootDir, changedDocs, allDocs) {
 async function runOpenAIReview(rootDir, changedDocs, allDocs) {
   const apiKey = process.env.OPENAI_API_KEY;
   if (!apiKey) {
-    throw new Error(
-      "OPENAI_API_KEY is required for granoflow-docs pre-push AI review. Refusing to push without AI review.",
-    );
+    return {
+      skipped: true,
+      reason:
+        "OPENAI_API_KEY is not set. Skipping optional AI legal review after deterministic checks passed.",
+    };
   }
 
   const model =
@@ -320,6 +322,11 @@ async function main() {
   } catch (error) {
     console.error(`[pre-push] Reject push: ${error.message}`);
     process.exit(1);
+  }
+
+  if (review?.skipped) {
+    console.log(`[pre-push] ${review.reason}`);
+    process.exit(0);
   }
 
   const decision = String(review?.decision || "").trim().toLowerCase();

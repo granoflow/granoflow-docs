@@ -1,6 +1,6 @@
 # Granoflow Terms of Service
 
-**Last Updated: March 18, 2026**
+**Last Updated: April 01, 2026**
 
 Welcome to Granoflow.
 
@@ -67,7 +67,7 @@ Certain capabilities of Granoflow rely on third-party services, including but no
 The availability, rule changes, billing models, review outcomes, and account restrictions of these third parties may affect certain capabilities of the Services. While we will make reasonable efforts to mitigate the impact of third-party service issues, policy changes, or force majeure, we do not provide warranties for third-party services themselves.
 
 ### 6.1 AI Assistant and Third-Party AI Services
-Granoflow provides interactive capabilities designed to work with third-party AI services, rather than a self-hosted AI service.
+Granoflow provides interactive capabilities designed to work with third-party AI services, rather than operating as a third-party model host or managed AI service.
 
 These features may include local content organization, optional redaction, data delivery, structured result ingestion, or other capabilities to assist your interaction with third-party AI services. These features are intended solely to help you initiate and manage the interaction process and do not constitute our provision, operation, or control of any third-party AI service.
 
@@ -136,7 +136,9 @@ If all or part of the Services are discontinued due to business adjustments, reg
 
 ## 13. Account Deletion and Data Impact
 
-Upon account deletion, cessation of subscription, extended inactivity, or our termination of services, server-side data associated with the account (including device registrations, sync data, cloud attachments, and entitlement records) may be deleted immediately, delayed for deletion, retained in de-identified form, or purged after a set period, depending on technical implementation, backup cycles, compliance obligations, and audit requirements.
+If you request account deletion, the request currently enters a **30-day cooling-off period** before final server-side deletion is completed. During that period, account-connected features may be restricted, pending deletion status may be shown when you sign in, and you may be able to cancel the deletion request before it is finalized.
+
+Upon account deletion completion, cessation of subscription, extended inactivity, or our termination of services, server-side data associated with the account (including device registrations, sync data, cloud attachments, and entitlement records) may then be deleted, delayed for deletion, retained in de-identified form, or purged after a further set period, depending on technical implementation, backup cycles, compliance obligations, and audit requirements.
 
 Account deletion or service termination generally does not automatically delete data stored on your local device, exported files, system backups, third-party app stores, third-party identity providers, or third-party AI services.
 
@@ -145,7 +147,7 @@ Account deletion or service termination generally does not automatically delete 
 These Terms and any disputes arising out of or related to them shall be governed by the laws of the **Hong Kong Special Administrative Region**.
 
 If you have questions about these Terms, please contact us at:
-- Email: <granoflow@anz.tv>
+- Email: [granoflow@anz.tv](mailto:granoflow@anz.tv)
 - Issues: [https://github.com/granoflow/granoflow-docs/issues](https://github.com/granoflow/granoflow-docs/issues)
 
 **Operator: A New Zero Innovations Limited (Hong Kong)**

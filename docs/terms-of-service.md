@@ -1,10 +1,10 @@
 # Granoflow Terms of Service
 
-**Last Updated: April 01, 2026**
+**Last Updated: April 30, 2026**
 
 Welcome to Granoflow.
 
-Please read these Terms of Service carefully before accessing, downloading, installing, registering for, or using the Granoflow application, the associated `account-hub` login and billing pages, and our related account, synchronization, subscription, and support services (collectively, the "Services"). By using the Services, you acknowledge that you have read, understood, and agree to be bound by these Terms.
+Please read these Terms of Service carefully before accessing, downloading, installing, registering for, or using the Granoflow Android application, the associated `account-hub` login and billing pages, and our related account, synchronization, subscription, and support services (collectively, the "Services"). By using the Services, you acknowledge that you have read, understood, and agree to be bound by these Terms.
 
 ## 1. Nature of the Services
 
@@ -19,6 +19,14 @@ Granoflow is **local-first by design**. We provide optional online capabilities 
 We continuously iterate on product features, interfaces, login methods, purchase entries, and service models. We do not guarantee that any specific feature will remain unchanged, remain free, or be permanently available. Certain capabilities may be adjusted, suspended, or discontinued due to platform restrictions, regulatory requirements, changes in third-party services, or our own operational decisions.
 
 The Services are provided on an **"AS IS"** and **"AS AVAILABLE"** basis. To the extent permitted by applicable law, we do not warrant that the Services will be uninterrupted or error-free, nor do we guarantee the permanent retention of all historical data.
+
+### 2.1 Android and Google Play Distribution
+
+If you download or obtain Granoflow through Google Play, Google Play's applicable terms, payment rules, refund processes, and account requirements also apply to that download, purchase, subscription, renewal, cancellation, refund, or store-managed entitlement.
+
+Subject to these Terms and the applicable Google Play terms, we grant you a limited, revocable, non-exclusive, non-transferable license to install and use Granoflow on Android devices that you own or control, solely for your personal productivity and information organization.
+
+Google is not responsible for providing Granoflow's account, synchronization, cloud attachment, AI-assistance, support, or other Granoflow-operated services. Questions about Granoflow features, account data, cloud resources, and support should be directed to us through the contact channels below.
 
 ## 3. Accounts, Login, and Security
 
@@ -44,13 +52,14 @@ We do not claim any additional rights to your content beyond what is strictly ne
 Granoflow may offer both free features and paid entitlements. Free features are primarily local. Certain online capabilities, cloud features, additional storage, or cross-device functionality may require a valid account status, an active subscription, or other payment conditions.
 
 `Granoflow Pro` is one of our core paid entitlements. Purchase and management paths may differ by platform:
-- Mobile platforms typically use in-app purchases via app stores.
+- Android purchases and subscriptions are typically made, renewed, cancelled, refunded, and managed through Google Play or Google Payments.
 - Certain desktop scenarios may use controlled web-based billing or subscription management entries.
 
 You understand and agree that:
 - One-time purchases, lifetime entitlements, or legacy entitlement names grant you the right to use the corresponding features during the period of the product's continued operation. They do not automatically entitle you to permanent free server resources, permanent cloud storage, or permanent online synchronization services.
 - Capabilities involving server resources incur ongoing costs. We reserve the right to adjust pricing, structures, quotas, eligibility, and delivery methods based on operational needs.
 - If a paid status associated with server resources expires and remains inactive beyond a reasonable grace period, we may clean, archive, downgrade, or stop retaining the corresponding cloud data.
+- For Google Play purchases, cancellation and refund eligibility are handled under the applicable Google Play and Google Payments rules, except where applicable law gives you additional rights.
 
 Under current rules, if a paid status associated with server resources has ceased for more than **90 days** without restoration, we reserve the right to purge the corresponding server-side data, including cloud content and attachments. Such a purge does not revoke your legally acquired right to use the features, but historical cloud data may be unrecoverable.
 
@@ -60,7 +69,7 @@ Under current rules, if a paid status associated with server resources has cease
 
 Certain capabilities of Granoflow rely on third-party services, including but not limited to:
 - Authentication services
-- App stores and payment processors
+- Google Play, Google Payments, app stores, and payment processors
 - Cloud infrastructure and object storage
 - Crash diagnostics and performance monitoring services
 

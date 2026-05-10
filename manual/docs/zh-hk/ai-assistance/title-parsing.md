@@ -14,7 +14,7 @@ translationReview:
 從對應 AI 功能入口開始：標題解析發生在寫任務標題時，剪貼板助手從剪貼板內容整理入口開始，其他頁面用於先理解邊界。
 
 <!-- manual-screenshot:id=ai-title-parsing-quick-add -->
-![AI 如何輔助整理標題 界面截圖](../../../screenshots/manual/zh-hk/ai-title-parsing-quick-add.png)
+![AI 如何輔助整理標題 界面截圖](../../../screenshots/zh-hk/ai-title-parsing-quick-add.png)
 
 ## 怎麼操作
 

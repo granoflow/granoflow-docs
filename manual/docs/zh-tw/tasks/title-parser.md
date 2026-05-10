@@ -14,7 +14,7 @@ translationReview:
 在新建任務或編輯標題時直接輸入自然語言。`#` 用來提示標籤，`@` 用來提示專案，`~` 用來提示提醒時間，日期詞會進入待確認狀態。
 
 <!-- manual-screenshot:id=tasks-title-parser-confirmation -->
-![用自然語言寫任務 介面截圖](../../../screenshots/manual/zh-tw/tasks-title-parser-confirmation.png)
+![用自然語言寫任務 介面截圖](../../../screenshots/zh-tw/tasks-title-parser-confirmation.png)
 
 ## 怎麼操作
 

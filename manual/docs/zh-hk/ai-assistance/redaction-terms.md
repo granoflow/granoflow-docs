@@ -23,7 +23,7 @@ translationReview:
 新增詞條時，需要填寫敏感詞本身和脫敏代號。代號建議保持容易識別的佔位形式，例如客戶、項目或公司對應的短代號，這樣 AI 回答裡更容易保留原樣。
 
 <!-- manual-screenshot:id=ai-redaction-terms-settings -->
-![脫敏詞界面截图](../../../screenshots/manual/zh-hk/ai-redaction-terms-settings.png)
+![脫敏詞界面截图](../../../screenshots/zh-hk/ai-redaction-terms-settings.png)
 
 編輯時通常只能改代號，不能把一個舊詞條直接改成另一個敏感詞。刪除詞條會刪除這組詞與代號的映射；之後新的 AI 請求不會再按這組映射替換。
 

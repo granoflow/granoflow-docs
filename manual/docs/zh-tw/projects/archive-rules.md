@@ -14,7 +14,7 @@ translationReview:
 從專案頁進入。專案適合承載持續一段時間的目標，里程碑負責階段，任務負責具體行動。
 
 <!-- manual-screenshot:id=projects-archive-menu -->
-![專案完成與封存 介面截圖](../../../screenshots/manual/zh-tw/projects-archive-menu.png)
+![專案完成與封存 介面截圖](../../../screenshots/zh-tw/projects-archive-menu.png)
 
 ## 怎麼操作
 

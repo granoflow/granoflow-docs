@@ -31,7 +31,7 @@ AI 在 GranoFlow 里是辅助整理工具，不是自动代理。它可以降低
 会员专属设置中的 Helper 助手提示词，会影响你向外部 AI 咨询 GranoFlow 页面时的默认提问方式。保存后，GranoFlow 会把这段提示词和当前页面说明一起准备给外部 AI。
 
 <!-- manual-screenshot:id=ai-helper-prompt-settings -->
-![AI 辅助概览界面截图](../../screenshots/manual/zh-cn/ai-helper-prompt-settings.png)
+![AI 辅助概览界面截图](../../screenshots/zh-cn/ai-helper-prompt-settings.png)
 
 这个设置只改变提问表达，不会让外部 AI 自动理解全部本地上下文，也不会保证 AI 一定保留、删除或正确处理你提供的信息。发送前仍要检查内容范围，必要时先使用 AI 数据发送和脱敏词设置。
 

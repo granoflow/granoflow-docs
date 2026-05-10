@@ -10,7 +10,7 @@ description: "查看和管理过往记录，理解记录如何和日期、任务
 从回顾页进入。先选择日期或当天回顾，再根据页面提示查看任务、填写记录或调整价值观提示。
 
 <!-- manual-screenshot:id=review-journal-records-section -->
-![记录与历史 界面截图](../../screenshots/manual/zh-cn/review-journal-records-section.png)
+![记录与历史 界面截图](../../screenshots/zh-cn/review-journal-records-section.png)
 
 ## 怎么操作
 

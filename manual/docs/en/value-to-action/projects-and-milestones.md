@@ -47,7 +47,7 @@ A good project should answer:
 > How far does this need to go before this stage is complete?
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![Project detail with milestones and staged tasks](../../../screenshots/manual/en/projects-milestones-detail.png)
+![Project detail with milestones and staged tasks](../../../screenshots/en/projects-milestones-detail.png)
 
 ## When to Create a Project
 

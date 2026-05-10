@@ -47,7 +47,7 @@ description: "理解如何用項目和里程碑承接長期方向，把價值觀
 > 完成到甚麼程度，才算這一階段結束？
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![項目詳情中的里程碑和任務階段](../../../screenshots/manual/zh-hk/projects-milestones-detail.png)
+![項目詳情中的里程碑和任務階段](../../../screenshots/zh-hk/projects-milestones-detail.png)
 
 ## 甚麼時候需要建立項目
 

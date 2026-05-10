@@ -24,7 +24,7 @@ translationReview:
 最穩妥的做法是：先在舊裝置上確認資料還在，再拿到同步密鑰，然後再操作新裝置。
 
 <!-- manual-screenshot:id=data-new-device-sync-old-device-key -->
-![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/manual/zh-tw/data-new-device-sync-old-device-key.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-old-device-key.png)
 
 ## 空裝置同步
 
@@ -39,13 +39,13 @@ translationReview:
 7. 回到任務、專案、回顧等頁面，確認雲端資料已經出現在新裝置上。
 
 <!-- manual-screenshot:id=data-new-device-sync-enter-key -->
-![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/manual/zh-tw/data-new-device-sync-enter-key.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-enter-key.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-join-existing -->
-![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/manual/zh-tw/data-new-device-sync-join-existing.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-join-existing.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-restored-data -->
-![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/manual/zh-tw/data-new-device-sync-restored-data.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-restored-data.png)
 
 完成後，這台裝置就加入了原來的雲端同步。之後你在任一裝置上產生的新變化，會按一般多裝置同步繼續上傳和下載。
 
@@ -64,7 +64,7 @@ translationReview:
 有時 GranoFlow 會發現：目前裝置和雲端屬於同一個賬號，但這台裝置還未加入目前雲端同步。頁面會讓你在「同步資料到雲端」「清空本地資料」和「取消」之間選擇。
 
 <!-- manual-screenshot:id=data-sync-device-join -->
-![在新裝置同步既有雲端資料界面截图](../../../screenshots/manual/zh-tw/data-sync-device-join.png)
+![在新裝置同步既有雲端資料界面截图](../../../screenshots/zh-tw/data-sync-device-join.png)
 
 這個頁面通常在同步入口、資料管理頁或頂部同步狀態提示中出現。它不是一般同步按鈕，而是一次資料來源選擇。
 
@@ -79,7 +79,7 @@ translationReview:
 如果賬號裡已經有雲端歷史資料，GranoFlow 可能先顯示雲端資料概覽。它會展示雲端裡大致有多少任務、專案、里程碑、附件、最近更新時間和資料時間跨度，幫你判斷這份雲端資料是不是你要找的。
 
 <!-- manual-screenshot:id=data-cloud-data-overview -->
-![在新裝置同步既有雲端資料界面截图](../../../screenshots/manual/zh-tw/data-cloud-data-overview.png)
+![在新裝置同步既有雲端資料界面截图](../../../screenshots/zh-tw/data-cloud-data-overview.png)
 
 這個頁面常見於已登入賬號的同步入口，尤其是目前裝置還未啟用上傳能力、但雲端已經有可下載歷史資料時。它的主動作是「下載雲端資料」；在部分可上傳而風險更高的場景裡，頁面也可能出現「清空雲端資料」。
 
@@ -94,7 +94,7 @@ translationReview:
 如果你在新裝置上已經新增過任務、專案、回顧，或者給任務上傳過圖片，再去同步既有雲端資料，情況會變複雜。這時本機和雲端都可能有資料，GranoFlow 需要先判斷你想保留哪一份。
 
 <!-- manual-screenshot:id=data-new-device-sync-local-image-task -->
-![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/manual/zh-tw/data-new-device-sync-local-image-task.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-local-image-task.png)
 
 先做這幾件事：
 
@@ -106,7 +106,7 @@ translationReview:
 接下來根據頁面出現的選擇判斷：
 
 <!-- manual-screenshot:id=data-new-device-sync-local-data-choice -->
-![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/manual/zh-tw/data-new-device-sync-local-data-choice.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-local-data-choice.png)
 
 - 如果你只想把雲端資料同步到這台裝置，選擇偏向「使用雲端資料」或「清空本地資料」的路徑。這樣做會讓這台裝置改用雲端資料，本機剛新增但還沒同步成功的內容可能不會保留。
 - 如果你確實要以這台裝置為準，才選擇「同步資料到雲端」或「重建雲端同步」。這類操作會讓雲端改用目前裝置的資料，影響其他裝置後續同步，不能當成一般下載按鈕使用。

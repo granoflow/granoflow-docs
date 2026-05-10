@@ -23,7 +23,7 @@ translationReview:
 賬號入口用於註冊、登入、退出、查看賬號狀態，以及把目前裝置接入同一個賬號體系。
 
 <!-- manual-screenshot:id=interface-settings-account-data-entrypoints -->
-![賬號、同步與資料入口 介面截圖](../../../screenshots/manual/zh-tw/interface-settings-account-data-entrypoints.png)
+![賬號、同步與資料入口 介面截圖](../../../screenshots/zh-tw/interface-settings-account-data-entrypoints.png)
 
 登入後才能購買或恢復 GranoFlow Pro 權益，啟用需要賬號的雲同步能力，並進入與賬號有關的個人化配置。閱讀 [賬號總覽](/manual/zh-tw/account/overview/) 查看賬號能做什麼；閱讀 [裝置管理](/manual/zh-tw/account/device-management/) 理解目前裝置和其他裝置的關係。
 

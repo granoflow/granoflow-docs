@@ -16,7 +16,7 @@ translationReview:
 從介面頂部、側欄或系統匣相關入口進入通知頁。頁面會重新整理通知列表，並用未讀狀態提示哪些訊息仍未處理。
 
 <!-- manual-screenshot:id=interface-notifications-main -->
-![通知界面截图](../../../screenshots/manual/zh-tw/interface-notifications-main.png)
+![通知界面截图](../../../screenshots/zh-tw/interface-notifications-main.png)
 
 有未讀通知時，可以逐條開啟，也可以使用「全部標記為已讀」。這只會改變通知的已讀狀態，不代表通知提到的問題已經解決。
 

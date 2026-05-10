@@ -14,7 +14,7 @@ translationReview:
 可以從底部 `+`、收集箱、今日任務列表或已有任務詳情進入。快速記下時只需要標題；需要整理時再補日期、專案、標籤、提醒或拆解步驟。
 
 <!-- manual-screenshot:id=tasks-create-edit-dialog -->
-![建立與編輯任務 介面截圖](../../../screenshots/manual/zh-tw/tasks-create-edit-dialog.png)
+![建立與編輯任務 介面截圖](../../../screenshots/zh-tw/tasks-create-edit-dialog.png)
 
 ## 怎麼操作
 

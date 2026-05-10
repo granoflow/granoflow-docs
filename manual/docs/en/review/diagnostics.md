@@ -19,7 +19,7 @@ Open time invested stages, daily behavior tags, or heatmap thresholds from membe
 Time invested stages show different status copy based on the day's invested time. You can adjust stage breakpoints and messages so the review page matches your own rhythm better.
 
 <!-- manual-screenshot:id=review-diagnostic-state-settings -->
-![Diagnostics and heatmaps screen](../../../screenshots/manual/en/review-diagnostic-state-settings.png)
+![Diagnostics and heatmaps screen](../../../screenshots/en/review-diagnostic-state-settings.png)
 
 Stage copy only affects display and interpretation. It does not change tasks and does not judge whether you worked hard enough.
 
@@ -28,7 +28,7 @@ Stage copy only affects display and interpretation. It does not change tasks and
 Daily behavior tags may appear based on task count, time invested, quadrant distribution, pause count, selected energy state, or deep focus duration. You can adjust some tag names and trigger thresholds.
 
 <!-- manual-screenshot:id=review-diagnostic-anomaly-settings -->
-![Diagnostics and heatmaps screen](../../../screenshots/manual/en/review-diagnostic-anomaly-settings.png)
+![Diagnostics and heatmaps screen](../../../screenshots/en/review-diagnostic-anomaly-settings.png)
 
 These tags are for noticing patterns, not for diagnosis. A threshold that is too low may make tags appear too often; a threshold that is too high may hide useful hints.
 
@@ -37,7 +37,7 @@ These tags are for noticing patterns, not for diagnosis. A threshold that is too
 Heatmap thresholds decide how different invested-time ranges map to colors in calendar or statistics heatmaps. Changing thresholds may change the color distribution, but it does not change historical task data.
 
 <!-- manual-screenshot:id=review-heatmap-threshold-settings -->
-![Diagnostics and heatmaps screen](../../../screenshots/manual/en/review-heatmap-threshold-settings.png)
+![Diagnostics and heatmaps screen](../../../screenshots/en/review-heatmap-threshold-settings.png)
 
 If the page offers automatic recalculation, it only suggests better color bands from existing monthly data. Before accepting the suggestion, check whether those colors match the rhythm you want to observe.
 

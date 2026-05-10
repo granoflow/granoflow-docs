@@ -10,7 +10,7 @@ description: "把任务挂到项目或里程碑下，理解任务在项目视图
 从项目页进入。项目适合承载持续一段时间的目标，里程碑负责阶段，任务负责具体行动。
 
 <!-- manual-screenshot:id=projects-link-tasks-drag -->
-![把任务连接到项目 界面截图](../../screenshots/manual/zh-cn/projects-link-tasks-drag.png)
+![把任务连接到项目 界面截图](../../screenshots/zh-cn/projects-link-tasks-drag.png)
 
 ## 怎么操作
 

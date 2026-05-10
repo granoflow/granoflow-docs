@@ -14,7 +14,7 @@ translationReview:
 從官網或可信下載入口安裝桌面端，首次打開後再登入賬號或進入本地數據。桌面端和網頁版共享核心概念，但窗口、托盤和離線體驗不同。
 
 <!-- manual-screenshot:id=desktop-tray-window-behavior -->
-![系統托盤與窗口 界面截圖](../../../screenshots/manual/zh-hk/desktop-tray-window-behavior.png)
+![系統托盤與窗口 界面截圖](../../../screenshots/zh-hk/desktop-tray-window-behavior.png)
 
 ## 怎麼操作
 

@@ -10,7 +10,7 @@ description: "从底部加号、收集箱或任务详情开始创建和修改任
 可以从底部 `+`、收集箱、今日任务列表或已有任务详情进入。快速记下时只需要标题；需要整理时再补日期、项目、标签、提醒或拆解步骤。
 
 <!-- manual-screenshot:id=tasks-create-edit-dialog -->
-![创建与编辑任务 界面截图](../../screenshots/manual/zh-cn/tasks-create-edit-dialog.png)
+![创建与编辑任务 界面截图](../../screenshots/zh-cn/tasks-create-edit-dialog.png)
 
 ## 怎么操作
 

@@ -14,7 +14,7 @@ translationReview:
 從項目頁進入。項目適合承載持續一段時間的目標，里程碑負責階段，任務負責具體行動。
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![管理里程碑 界面截圖](../../../screenshots/manual/zh-hk/projects-milestones-detail.png)
+![管理里程碑 界面截圖](../../../screenshots/zh-hk/projects-milestones-detail.png)
 
 ## 怎麼操作
 

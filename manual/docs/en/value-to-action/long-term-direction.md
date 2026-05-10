@@ -131,7 +131,7 @@ Values are not better because there are more of them. They are better when they 
 The Domains page is for maintaining long-term directions and values. It is not a category system you must complete all at once. You can open domain management from first-use guidance, the sidebar management entry, or related settings, then add, edit, or remove a few values for each domain.
 
 <!-- manual-screenshot:id=value-domains-management -->
-![Set the Long-Term Direction First screen](../../../screenshots/manual/en/value-domains-management.png)
+![Set the Long-Term Direction First screen](../../../screenshots/en/value-domains-management.png)
 
 Each domain has its own values list. The page provides questions for the domain so you can write a full sentence about “how I want to act,” instead of only writing an abstract word. When the current available value limit is reached, organize existing values before adding more.
 

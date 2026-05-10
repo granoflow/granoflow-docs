@@ -14,7 +14,7 @@ translationReview:
 從對應 AI 功能入口開始：標題解析發生在寫任務標題時，剪貼簿助手從剪貼簿內容整理入口開始，其他頁面用於先理解邊界。
 
 <!-- manual-screenshot:id=ai-clipboard-assistant-settings -->
-![AI 助理與剪貼簿 介面截圖](../../../screenshots/manual/zh-tw/ai-clipboard-assistant-settings.png)
+![AI 助理與剪貼簿 介面截圖](../../../screenshots/zh-tw/ai-clipboard-assistant-settings.png)
 
 ## 怎麼操作
 

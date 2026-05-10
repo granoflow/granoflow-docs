@@ -30,7 +30,7 @@ GranoFlow 的 AI 功能會把你主動發起的相關文本整理成請求，再
 AI 脫敏設置包含總開關、電話號碼識別地區和類別預設策略。它適合在你經常把任務、回顧或整理材料交給外部 AI 前使用。
 
 <!-- manual-screenshot:id=ai-redaction-settings -->
-![哪些內容可能會提供給 AI界面截图](../../../screenshots/manual/zh-hk/ai-redaction-settings.png)
+![哪些內容可能會提供給 AI界面截图](../../../screenshots/zh-hk/ai-redaction-settings.png)
 
 - 總開關關閉時，GranoFlow 不會在發送前執行這套脫敏替換。
 - 類別預設策略影響自動發現後預設是「脫敏」還是「允許」。常見類別包括電郵、電話、連結、賬號提及、標籤、令牌、IP、路徑和金額等。

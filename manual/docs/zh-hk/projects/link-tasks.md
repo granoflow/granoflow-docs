@@ -14,7 +14,7 @@ translationReview:
 從項目頁進入。項目適合承載持續一段時間的目標，里程碑負責階段，任務負責具體行動。
 
 <!-- manual-screenshot:id=projects-link-tasks-drag -->
-![把任務連接到項目 界面截圖](../../../screenshots/manual/zh-hk/projects-link-tasks-drag.png)
+![把任務連接到項目 界面截圖](../../../screenshots/zh-hk/projects-link-tasks-drag.png)
 
 ## 怎麼操作
 

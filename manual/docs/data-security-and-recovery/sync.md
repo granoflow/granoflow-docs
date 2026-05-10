@@ -10,7 +10,7 @@ description: "了解同步会把哪些状态带到其他设备，以及网络、
 从设置里的数据、安全、同步、备份或账号相关入口开始。先判断你要处理的是日常同步、设备迁移、误删恢复，还是账号删除。
 
 <!-- manual-screenshot:id=data-sync-status-main -->
-![多端同步 界面截图](../../screenshots/manual/zh-cn/data-sync-status-main.png)
+![多端同步 界面截图](../../screenshots/zh-cn/data-sync-status-main.png)
 
 ## 怎么操作
 

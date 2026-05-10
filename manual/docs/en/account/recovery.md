@@ -17,7 +17,7 @@ It is not account deletion, sign-out, restore purchases, or data recovery. It on
 Use the account recovery link from the sign-in or account area. The page asks for the email you want to recover, then starts the request.
 
 <!-- manual-screenshot:id=account-recovery-main -->
-![Account recovery screen](../../../screenshots/manual/en/account-recovery-main.png)
+![Account recovery screen](../../../screenshots/en/account-recovery-main.png)
 
 Before starting, confirm:
 

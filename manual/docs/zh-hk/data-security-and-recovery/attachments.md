@@ -14,10 +14,10 @@ translationReview:
 從設置裡的數據、安全、同步、備份或賬號相關入口開始。先判斷你要處理的是日常同步、設備遷移、誤刪恢復，還是賬號刪除。
 
 <!-- manual-screenshot:id=data-attachments-clear-detail -->
-![附件與圖片界面截图](../../../screenshots/manual/zh-hk/data-attachments-clear-detail.png)
+![附件與圖片界面截图](../../../screenshots/zh-hk/data-attachments-clear-detail.png)
 
 <!-- manual-screenshot:id=data-attachments-clear-entry -->
-![附件與圖片 界面截圖](../../../screenshots/manual/zh-hk/data-attachments-clear-entry.png)
+![附件與圖片 界面截圖](../../../screenshots/zh-hk/data-attachments-clear-entry.png)
 
 ## 怎麼操作
 

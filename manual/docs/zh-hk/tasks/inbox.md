@@ -17,7 +17,7 @@ translationReview:
 點擊導覽列裏的 **+** 按鈕，寫下任務並儲存。
 
 <!-- manual-screenshot:id=tasks-inbox-main -->
-![收集箱 界面截圖](../../../screenshots/manual/zh-hk/tasks-inbox-main.png)
+![收集箱 界面截圖](../../../screenshots/zh-hk/tasks-inbox-main.png)
 
 你可以寫得很簡單，例如：
 

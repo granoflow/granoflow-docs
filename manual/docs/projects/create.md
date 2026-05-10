@@ -10,7 +10,7 @@ description: "创建一个项目，设置名称与基础信息，并理解空项
 从项目页进入。项目适合承载持续一段时间的目标，里程碑负责阶段，任务负责具体行动。
 
 <!-- manual-screenshot:id=projects-create-dialog -->
-![创建项目 界面截图](../../screenshots/manual/zh-cn/projects-create-dialog.png)
+![创建项目 界面截图](../../screenshots/zh-cn/projects-create-dialog.png)
 
 ## 怎么操作
 

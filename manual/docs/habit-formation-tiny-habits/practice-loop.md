@@ -35,7 +35,7 @@ description: "用 Tiny Habits 的微习惯思路，在 GranoFlow 中把习惯养
 在 GranoFlow 里写一个小到能开始的任务。
 
 <!-- manual-screenshot:id=interface-quick-add-main -->
-![快速添加中把想法写成任务](../../screenshots/manual/zh-cn/interface-quick-add-main.png)
+![快速添加中把想法写成任务](../../screenshots/zh-cn/interface-quick-add-main.png)
 
 不要写：
 

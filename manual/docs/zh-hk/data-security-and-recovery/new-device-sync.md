@@ -24,7 +24,7 @@ translationReview:
 最穩妥的做法是：先在舊設備上確認數據還在，再拿到同步密鑰，然後再操作新設備。
 
 <!-- manual-screenshot:id=data-new-device-sync-old-device-key -->
-![在新設備同步已有雲端數據 界面截圖](../../../screenshots/manual/zh-hk/data-new-device-sync-old-device-key.png)
+![在新設備同步已有雲端數據 界面截圖](../../../screenshots/zh-hk/data-new-device-sync-old-device-key.png)
 
 ## 空設備同步
 
@@ -39,13 +39,13 @@ translationReview:
 7. 回到任務、項目、回顧等頁面，確認雲端數據已經出現在新設備上。
 
 <!-- manual-screenshot:id=data-new-device-sync-enter-key -->
-![在新設備同步已有雲端數據 界面截圖](../../../screenshots/manual/zh-hk/data-new-device-sync-enter-key.png)
+![在新設備同步已有雲端數據 界面截圖](../../../screenshots/zh-hk/data-new-device-sync-enter-key.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-join-existing -->
-![在新設備同步已有雲端數據 界面截圖](../../../screenshots/manual/zh-hk/data-new-device-sync-join-existing.png)
+![在新設備同步已有雲端數據 界面截圖](../../../screenshots/zh-hk/data-new-device-sync-join-existing.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-restored-data -->
-![在新設備同步已有雲端數據 界面截圖](../../../screenshots/manual/zh-hk/data-new-device-sync-restored-data.png)
+![在新設備同步已有雲端數據 界面截圖](../../../screenshots/zh-hk/data-new-device-sync-restored-data.png)
 
 完成後，這部設備就加入了原來的雲端同步。之後你在任一設備上產生的新變化，會按普通多端同步繼續上傳和下載。
 
@@ -64,7 +64,7 @@ translationReview:
 有時 GranoFlow 會發現：目前設備和雲端屬於同一個賬號，但這部設備還未加入目前雲端同步。頁面會讓你在「同步數據到雲端」「清空本地數據」和「取消」之間選擇。
 
 <!-- manual-screenshot:id=data-sync-device-join -->
-![在新設備同步已有雲端數據界面截图](../../../screenshots/manual/zh-hk/data-sync-device-join.png)
+![在新設備同步已有雲端數據界面截图](../../../screenshots/zh-hk/data-sync-device-join.png)
 
 這個頁面通常在同步入口、數據管理頁或頂部同步狀態提示中出現。它不是普通同步按鈕，而是一次數據來源選擇。
 
@@ -79,7 +79,7 @@ translationReview:
 如果賬號裡已經有雲端歷史數據，GranoFlow 可能先顯示雲端數據概覽。它會展示雲端裡大致有多少任務、項目、里程碑、附件、最近更新時間和數據時間跨度，幫你判斷這份雲端數據是不是你要找的。
 
 <!-- manual-screenshot:id=data-cloud-data-overview -->
-![在新設備同步已有雲端數據界面截图](../../../screenshots/manual/zh-hk/data-cloud-data-overview.png)
+![在新設備同步已有雲端數據界面截图](../../../screenshots/zh-hk/data-cloud-data-overview.png)
 
 這個頁面常見於已登入賬號的同步入口，尤其是目前設備還未啟用上傳能力、但雲端已有可下載歷史數據時。它的主動作是「下載雲端數據」；在部分可上傳而風險更高的場景裡，頁面也可能出現「清空雲端數據」。
 
@@ -94,7 +94,7 @@ translationReview:
 如果你在新設備上已經添加過任務、項目、回顧，或者給任務上傳過圖片，再去同步已有雲端數據，情況會變複雜。這時本地和雲端都可能有數據，GranoFlow 需要先判斷你想保留哪一份。
 
 <!-- manual-screenshot:id=data-new-device-sync-local-image-task -->
-![在新設備同步已有雲端數據 界面截圖](../../../screenshots/manual/zh-hk/data-new-device-sync-local-image-task.png)
+![在新設備同步已有雲端數據 界面截圖](../../../screenshots/zh-hk/data-new-device-sync-local-image-task.png)
 
 先做這幾件事：
 
@@ -106,7 +106,7 @@ translationReview:
 接下來根據頁面出現的選擇判斷：
 
 <!-- manual-screenshot:id=data-new-device-sync-local-data-choice -->
-![在新設備同步已有雲端數據 界面截圖](../../../screenshots/manual/zh-hk/data-new-device-sync-local-data-choice.png)
+![在新設備同步已有雲端數據 界面截圖](../../../screenshots/zh-hk/data-new-device-sync-local-data-choice.png)
 
 - 如果你只想把雲端數據同步到這部設備，選擇偏向「使用雲端數據」或「清空本地數據」的路徑。這樣做會讓這部設備改用雲端數據，本機剛添加但還未同步成功的內容可能不會保留。
 - 如果你確實要以這部設備為準，才選擇「同步數據到雲端」或「重建雲端同步」。這類操作會讓雲端改用目前設備的數據，影響其他設備後續同步，不能當成普通下載按鈕使用。

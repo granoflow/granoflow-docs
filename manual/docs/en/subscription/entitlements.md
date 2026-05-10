@@ -31,7 +31,7 @@ Subscription affects available entitlements, but it does not change ownership of
 Member-only settings collect more advanced personalization features, such as AI redaction terms, the Helper prompt, review prompts, note templates, diagnostic settings, and heatmap thresholds. Some entries may be read-only, show an upgrade prompt, or block saving changes when the current account does not have access.
 
 <!-- manual-screenshot:id=subscription-vip-settings -->
-![Subscription entitlements screen](../../../screenshots/manual/en/subscription-vip-settings.png)
+![Subscription entitlements screen](../../../screenshots/en/subscription-vip-settings.png)
 
 These settings explain which entitlements you can use. They do not directly resolve sync conflicts, data recovery, or account recovery. For data safety, cloud keys, or syncing a new device into existing cloud data, use the relevant data safety pages.
 
@@ -40,7 +40,7 @@ These settings explain which entitlements you can use. They do not directly reso
 When you use a sync entry but the current account does not have an available entitlement, GranoFlow may show a sync membership notice. This page explains why sync requires membership and where to view or enable entitlements.
 
 <!-- manual-screenshot:id=subscription-sync-vip-upsell -->
-![Subscription entitlements screen](../../../screenshots/manual/en/subscription-sync-vip-upsell.png)
+![Subscription entitlements screen](../../../screenshots/en/subscription-sync-vip-upsell.png)
 
 Seeing the sync membership notice does not mean local data is lost, and it does not mean cloud recovery has already run. It is an entitlement prompt at the sync entry; the actual sync state still belongs to the sync page, account state, and data safety pages.
 

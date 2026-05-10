@@ -14,7 +14,7 @@ translationReview:
 打開任務詳情，在拆解或步驟區域添加子節點。適合處理需要多個動作才能完成的任務。
 
 <!-- manual-screenshot:id=tasks-breakdown-detail -->
-![拆解任務 界面截圖](../../../screenshots/manual/zh-hk/tasks-breakdown-detail.png)
+![拆解任務 界面截圖](../../../screenshots/zh-hk/tasks-breakdown-detail.png)
 
 ## 怎麼操作
 

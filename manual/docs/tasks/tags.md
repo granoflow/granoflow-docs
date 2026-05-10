@@ -10,7 +10,7 @@ description: "用标签给任务补充项目之外的分类，并了解创建、
 在任务详情或新建任务时打开标签选择器。已有标签会作为候选出现；需要新分类时再创建自定义标签。
 
 <!-- manual-screenshot:id=tasks-tags-management -->
-![标签 界面截图](../../screenshots/manual/zh-cn/tasks-tags-management.png)
+![标签 界面截图](../../screenshots/zh-cn/tasks-tags-management.png)
 
 ## 怎么操作
 

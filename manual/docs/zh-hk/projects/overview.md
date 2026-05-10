@@ -14,14 +14,14 @@ translationReview:
 從項目頁進入。項目適合承載持續一段時間的目標，里程碑負責階段，任務負責具體行動。
 
 <!-- manual-screenshot:id=projects-overview-main -->
-![項目概覽 界面截圖](../../../screenshots/manual/zh-hk/projects-overview-main.png)
+![項目概覽 界面截圖](../../../screenshots/zh-hk/projects-overview-main.png)
 
 ## 項目詳情裏看什麼
 
 進入項目詳情後，主要是在同一個項目裏查看階段、相關任務和附件線索。寬屏時，選中的任務可能出現在右側詳情區；窄屏時，任務詳情通常作為單獨頁面打開。
 
 <!-- manual-screenshot:id=projects-detail-main -->
-![項目概覽界面截图](../../../screenshots/manual/zh-hk/projects-detail-main.png)
+![項目概覽界面截图](../../../screenshots/zh-hk/projects-detail-main.png)
 
 項目詳情幫你把一段時間內相關的行動放在一起看。它不會自動整理項目結構，也不會替你判斷哪些任務應該屬於哪個里程碑；項目、里程碑和任務之間的連接仍需要你自己維護。
 

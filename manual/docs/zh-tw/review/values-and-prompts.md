@@ -14,23 +14,23 @@ translationReview:
 從回顧頁、設定頁或會員專屬設定進入。先選擇你要調整的是日回顧、週回顧、日記、領域價值觀、工作學習報告，還是分析與問卷。
 
 <!-- manual-screenshot:id=review-values-prompts-settings -->
-![價值觀與提示詞 介面截圖](../../../screenshots/manual/zh-tw/review-values-prompts-settings.png)
+![價值觀與提示詞 介面截圖](../../../screenshots/zh-tw/review-values-prompts-settings.png)
 
 ## Prompt 設定會影響什麼
 
 Prompt 設定用於整理「複製給外部 AI 或內部生成器的指令」。例如：
 
 <!-- manual-screenshot:id=review-weekly-review-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/manual/zh-tw/review-weekly-review-prompt-settings.png)
+![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-weekly-review-prompt-settings.png)
 
 <!-- manual-screenshot:id=review-daily-journal-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/manual/zh-tw/review-daily-journal-prompt-settings.png)
+![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-daily-journal-prompt-settings.png)
 
 <!-- manual-screenshot:id=review-domain-values-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/manual/zh-tw/review-domain-values-prompt-settings.png)
+![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-domain-values-prompt-settings.png)
 
 <!-- manual-screenshot:id=review-work-learning-report-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/manual/zh-tw/review-work-learning-report-prompt-settings.png)
+![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-work-learning-report-prompt-settings.png)
 
 - 日回顧改寫 Prompt：影響當天筆記被整理或改寫時的要求。
 - 週回顧 Prompt：影響一週記錄被總結時的提問方式。
@@ -45,7 +45,7 @@ Prompt 設定用於整理「複製給外部 AI 或內部生成器的指令」。
 分析與問卷設定用於控制回顧問卷的定稿時間等行為。它幫助你把當天記錄收束成相對穩定的結果，但不會判斷哪一天「好」或「不好」。
 
 <!-- manual-screenshot:id=review-questionnaire-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/manual/zh-tw/review-questionnaire-prompt-settings.png)
+![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-questionnaire-prompt-settings.png)
 
 領域價值觀設定用於把長期方向帶進回顧上下文。價值觀可以修改，也可以隨著實際記錄慢慢變清楚；它不是一次填完後永遠正確的分類表。
 

@@ -10,7 +10,7 @@ description: "完成注册或登录，并理解登录状态如何影响同步、
 从账号设置进入。账号用于登录身份、同步身份、设备列表和订阅识别；它不等于本地数据本身。
 
 <!-- manual-screenshot:id=account-sign-in-logged-out -->
-![注册与登录 界面截图](../../screenshots/manual/zh-cn/account-sign-in-logged-out.png)
+![注册与登录 界面截图](../../screenshots/zh-cn/account-sign-in-logged-out.png)
 
 ## 怎么操作
 

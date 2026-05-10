@@ -19,7 +19,7 @@ description: "了解设置页中的账号、同步、数据、订阅、AI 助手
 账号入口用于注册、登录、退出、查看账号状态，以及把当前设备接入同一个账号体系。
 
 <!-- manual-screenshot:id=interface-settings-account-data-entrypoints -->
-![账号、同步与数据入口 界面截图](../../screenshots/manual/zh-cn/interface-settings-account-data-entrypoints.png)
+![账号、同步与数据入口 界面截图](../../screenshots/zh-cn/interface-settings-account-data-entrypoints.png)
 
 登录后才能购买或恢复 GranoFlow Pro 权益，启用需要账号的云同步能力，并进入与账号有关的个性化配置。阅读 [账号总览](/manual/account/overview/) 查看账号能做什么；阅读 [设备管理](/manual/account/device-management/) 理解当前设备和其他设备的关系。
 

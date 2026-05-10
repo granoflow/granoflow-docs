@@ -31,7 +31,7 @@ translationReview:
 會員專屬設定集中放置更進階的個人化能力，例如 AI 脫敏詞、Helper 助手提示詞、回顧 Prompt、記錄模板、診斷配置和熱力圖閾值。部分入口在非會員狀態下可能只讀、顯示升級提示，或不能儲存修改。
 
 <!-- manual-screenshot:id=subscription-vip-settings -->
-![訂閱權益界面截图](../../../screenshots/manual/zh-tw/subscription-vip-settings.png)
+![訂閱權益界面截图](../../../screenshots/zh-tw/subscription-vip-settings.png)
 
 這些設定說明你能使用哪些權益，不直接解決具體同步衝突、資料恢復或賬號恢復問題。涉及資料安全、雲端金鑰或新裝置入雲時，請回到資料安全章節按對應流程處理。
 
@@ -40,7 +40,7 @@ translationReview:
 當你使用同步入口但目前賬號沒有可用權益時，GranoFlow 可能顯示同步會員說明頁。這個頁面解釋為什麼同步能力需要會員，以及可以從哪裡查看或開通權益。
 
 <!-- manual-screenshot:id=subscription-sync-vip-upsell -->
-![訂閱權益界面截图](../../../screenshots/manual/zh-tw/subscription-sync-vip-upsell.png)
+![訂閱權益界面截图](../../../screenshots/zh-tw/subscription-sync-vip-upsell.png)
 
 看到同步會員說明，不代表本地資料已經遺失，也不代表雲端恢復已經執行。它只是同步入口的權益門檻提示；真實同步狀態仍以同步頁、賬號狀態和資料安全相關頁面為準。
 

@@ -14,10 +14,10 @@ translationReview:
 從設定裡的資料、安全、同步、備份或帳號相關入口開始。先判斷你要處理的是日常同步、設備遷移、誤刪復原，還是帳號刪除。
 
 <!-- manual-screenshot:id=data-attachments-clear-detail -->
-![附件與圖片界面截图](../../../screenshots/manual/zh-tw/data-attachments-clear-detail.png)
+![附件與圖片界面截图](../../../screenshots/zh-tw/data-attachments-clear-detail.png)
 
 <!-- manual-screenshot:id=data-attachments-clear-entry -->
-![附件與圖片 介面截圖](../../../screenshots/manual/zh-tw/data-attachments-clear-entry.png)
+![附件與圖片 介面截圖](../../../screenshots/zh-tw/data-attachments-clear-entry.png)
 
 ## 怎麼操作
 

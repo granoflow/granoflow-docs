@@ -14,7 +14,7 @@ translationReview:
 在任務列表或詳情頁完成任務；在需要整理歷史內容時再使用封存或刪除。
 
 <!-- manual-screenshot:id=tasks-completed-archived-trash -->
-![完成、封存與保護規則 界面截圖](../../../screenshots/manual/zh-hk/tasks-completed-archived-trash.png)
+![完成、封存與保護規則 界面截圖](../../../screenshots/zh-hk/tasks-completed-archived-trash.png)
 
 ## 怎麼操作
 
@@ -23,10 +23,10 @@ translationReview:
 - 刪除前確認影響範圍；刪除比完成和封存更接近不可逆整理。
 
 <!-- manual-screenshot:id=tasks-archived-list -->
-![完成、封存與保護規則界面截图](../../../screenshots/manual/zh-hk/tasks-archived-list.png)
+![完成、封存與保護規則界面截图](../../../screenshots/zh-hk/tasks-archived-list.png)
 
 <!-- manual-screenshot:id=tasks-trash-list -->
-![完成、封存與保護規則界面截图](../../../screenshots/manual/zh-hk/tasks-trash-list.png)
+![完成、封存與保護規則界面截图](../../../screenshots/zh-hk/tasks-trash-list.png)
 
 ## 結果和邊界
 

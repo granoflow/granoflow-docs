@@ -10,7 +10,7 @@ description: "了解账号负责登录、同步身份、设备列表和订阅状
 从账号设置进入。账号用于登录身份、同步身份、设备列表和订阅识别；它不等于本地数据本身。
 
 <!-- manual-screenshot:id=account-overview-profile -->
-![账号总览 界面截图](../../screenshots/manual/zh-cn/account-overview-profile.png)
+![账号总览 界面截图](../../screenshots/zh-cn/account-overview-profile.png)
 
 ## 怎么操作
 

@@ -14,7 +14,7 @@ translationReview:
 從賬號設置進入。賬號用於登入身份、同步身份、設備列表和訂閱識別；它不等於本地數據本身。
 
 <!-- manual-screenshot:id=account-overview-profile -->
-![賬號總覽 界面截圖](../../../screenshots/manual/zh-hk/account-overview-profile.png)
+![賬號總覽 界面截圖](../../../screenshots/zh-hk/account-overview-profile.png)
 
 ## 怎麼操作
 

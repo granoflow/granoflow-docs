@@ -23,7 +23,7 @@ translationReview:
 外觀通常包含主題、字型大小和語言。
 
 <!-- manual-screenshot:id=interface-settings-overview-main -->
-![設定總覽 介面截圖](../../../screenshots/manual/zh-tw/interface-settings-overview-main.png)
+![設定總覽 介面截圖](../../../screenshots/zh-tw/interface-settings-overview-main.png)
 
 這些設定主要影響你在目前裝置上看到的介面。切換語言、改深色模式或調大字型，不會改寫任務、專案、標籤、回顧記錄，也不會改變 [多端同步](/manual/zh-tw/data-security-and-recovery/sync/) 中的資料含義。
 

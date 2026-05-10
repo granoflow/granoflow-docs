@@ -10,7 +10,7 @@ description: "了解桌面端在宽屏、窄屏和详情面板上的交互习惯
 从官网或可信下载入口安装桌面端，首次打开后再登录账号或进入本地数据。桌面端和网页版共享核心概念，但窗口、托盘和离线体验不同。
 
 <!-- manual-screenshot:id=desktop-visual-interaction-wide -->
-![桌面端界面习惯 界面截图](../../screenshots/manual/zh-cn/desktop-visual-interaction-wide.png)
+![桌面端界面习惯 界面截图](../../screenshots/zh-cn/desktop-visual-interaction-wide.png)
 
 ## 怎么操作
 

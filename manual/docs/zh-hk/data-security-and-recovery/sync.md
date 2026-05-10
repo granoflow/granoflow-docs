@@ -14,7 +14,7 @@ translationReview:
 從設置裡的數據、安全、同步、備份或賬號相關入口開始。先判斷你要處理的是日常同步、設備遷移、誤刪恢復，還是賬號刪除。
 
 <!-- manual-screenshot:id=data-sync-status-main -->
-![多端同步 界面截圖](../../../screenshots/manual/zh-hk/data-sync-status-main.png)
+![多端同步 界面截圖](../../../screenshots/zh-hk/data-sync-status-main.png)
 
 ## 怎麼操作
 

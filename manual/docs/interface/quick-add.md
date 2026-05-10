@@ -24,7 +24,7 @@ description: "快速添加用于快速记下一件事，并可同时设置日期
 桌面端输入框会提示 `#标签 @项目 ~提醒`。这些符号是快捷入口，不是必填项。
 
 <!-- manual-screenshot:id=interface-quick-add-main -->
-![快速添加 界面截图](../../screenshots/manual/zh-cn/interface-quick-add-main.png)
+![快速添加 界面截图](../../screenshots/zh-cn/interface-quick-add-main.png)
 
 - 输入 `#` 可以搜索标签。
 - 输入 `@` 可以搜索项目或里程碑。

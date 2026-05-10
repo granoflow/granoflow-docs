@@ -18,16 +18,16 @@ Open Review, Settings, or member-only settings. First decide whether you want to
 Prompt settings define the instructions copied to an external AI or used by a generator. For example:
 
 <!-- manual-screenshot:id=review-weekly-review-prompt-settings -->
-![Values and prompts screen](../../../screenshots/manual/en/review-weekly-review-prompt-settings.png)
+![Values and prompts screen](../../../screenshots/en/review-weekly-review-prompt-settings.png)
 
 <!-- manual-screenshot:id=review-daily-journal-prompt-settings -->
-![Values and prompts screen](../../../screenshots/manual/en/review-daily-journal-prompt-settings.png)
+![Values and prompts screen](../../../screenshots/en/review-daily-journal-prompt-settings.png)
 
 <!-- manual-screenshot:id=review-domain-values-prompt-settings -->
-![Values and prompts screen](../../../screenshots/manual/en/review-domain-values-prompt-settings.png)
+![Values and prompts screen](../../../screenshots/en/review-domain-values-prompt-settings.png)
 
 <!-- manual-screenshot:id=review-work-learning-report-prompt-settings -->
-![Values and prompts screen](../../../screenshots/manual/en/review-work-learning-report-prompt-settings.png)
+![Values and prompts screen](../../../screenshots/en/review-work-learning-report-prompt-settings.png)
 
 - Daily review rewrite prompt: affects requirements for organizing or rewriting the day’s note.
 - Weekly review prompt: affects how a week of records is summarized.
@@ -42,7 +42,7 @@ After you edit a prompt, later uses of the matching feature read the new text. E
 Analysis and questionnaire settings control behavior such as the cutoff time for finalizing a review questionnaire. They help close the day into a more stable record, but they do not judge whether the day was good or bad.
 
 <!-- manual-screenshot:id=review-questionnaire-prompt-settings -->
-![Values and prompts screen](../../../screenshots/manual/en/review-questionnaire-prompt-settings.png)
+![Values and prompts screen](../../../screenshots/en/review-questionnaire-prompt-settings.png)
 
 Domain values settings bring long-term direction into review context. Values can be edited and can become clearer as real records accumulate; they are not a classification table that must be completed once and remain correct forever.
 

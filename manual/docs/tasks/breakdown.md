@@ -10,7 +10,7 @@ description: "把复杂任务拆成可执行的小步骤，理解节点完成、
 打开任务详情，在拆解或步骤区域添加子节点。适合处理需要多个动作才能完成的任务。
 
 <!-- manual-screenshot:id=tasks-breakdown-detail -->
-![拆解任务 界面截图](../../screenshots/manual/zh-cn/tasks-breakdown-detail.png)
+![拆解任务 界面截图](../../screenshots/zh-cn/tasks-breakdown-detail.png)
 
 ## 怎么操作
 

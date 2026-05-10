@@ -10,23 +10,23 @@ description: "配置价值观和回顾提示，让日回顾更贴近你的判断
 从回顾页、设置页或会员专属设置进入。先选择你要调整的是日回顾、周回顾、日记、领域价值观、工作学习报告，还是分析与问卷。
 
 <!-- manual-screenshot:id=review-values-prompts-settings -->
-![价值观与提示词 界面截图](../../screenshots/manual/zh-cn/review-values-prompts-settings.png)
+![价值观与提示词 界面截图](../../screenshots/zh-cn/review-values-prompts-settings.png)
 
 ## Prompt 设置会影响什么
 
 Prompt 设置用于整理“复制给外部 AI 或内部生成器的指令”。例如：
 
 <!-- manual-screenshot:id=review-weekly-review-prompt-settings -->
-![价值观与提示词界面截图](../../screenshots/manual/zh-cn/review-weekly-review-prompt-settings.png)
+![价值观与提示词界面截图](../../screenshots/zh-cn/review-weekly-review-prompt-settings.png)
 
 <!-- manual-screenshot:id=review-daily-journal-prompt-settings -->
-![价值观与提示词界面截图](../../screenshots/manual/zh-cn/review-daily-journal-prompt-settings.png)
+![价值观与提示词界面截图](../../screenshots/zh-cn/review-daily-journal-prompt-settings.png)
 
 <!-- manual-screenshot:id=review-domain-values-prompt-settings -->
-![价值观与提示词界面截图](../../screenshots/manual/zh-cn/review-domain-values-prompt-settings.png)
+![价值观与提示词界面截图](../../screenshots/zh-cn/review-domain-values-prompt-settings.png)
 
 <!-- manual-screenshot:id=review-work-learning-report-prompt-settings -->
-![价值观与提示词界面截图](../../screenshots/manual/zh-cn/review-work-learning-report-prompt-settings.png)
+![价值观与提示词界面截图](../../screenshots/zh-cn/review-work-learning-report-prompt-settings.png)
 
 - 日回顾改写 Prompt：影响当天笔记被整理或改写时的要求。
 - 周回顾 Prompt：影响一周记录被总结时的提问方式。
@@ -41,7 +41,7 @@ Prompt 设置用于整理“复制给外部 AI 或内部生成器的指令”。
 分析与问卷设置用于控制回顾问卷的定稿时间等行为。它帮助你把当天记录收束成相对稳定的结果，但不会判断哪一天“好”或“不好”。
 
 <!-- manual-screenshot:id=review-questionnaire-prompt-settings -->
-![价值观与提示词界面截图](../../screenshots/manual/zh-cn/review-questionnaire-prompt-settings.png)
+![价值观与提示词界面截图](../../screenshots/zh-cn/review-questionnaire-prompt-settings.png)
 
 领域价值观设置用于把长期方向带进回顾上下文。价值观可以修改，也可以随着实际记录慢慢变清楚；它不是一次填完后永远正确的分类表。
 

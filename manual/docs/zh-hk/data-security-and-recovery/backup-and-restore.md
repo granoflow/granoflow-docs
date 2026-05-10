@@ -14,7 +14,7 @@ translationReview:
 從設置裡的數據、安全、同步、備份或賬號相關入口開始。先判斷你要處理的是日常同步、設備遷移、誤刪恢復，還是賬號刪除。
 
 <!-- manual-screenshot:id=data-backup-restore-management -->
-![備份與恢復 界面截圖](../../../screenshots/manual/zh-hk/data-backup-restore-management.png)
+![備份與恢復 界面截圖](../../../screenshots/zh-hk/data-backup-restore-management.png)
 
 ## 怎麼操作
 

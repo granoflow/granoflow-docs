@@ -10,7 +10,7 @@ description: "理解任务完成、归档、删除和恢复的区别，避免把
 在任务列表或详情页完成任务；在需要整理历史内容时再使用归档或删除。
 
 <!-- manual-screenshot:id=tasks-completed-archived-trash -->
-![完成、归档与保护规则 界面截图](../../screenshots/manual/zh-cn/tasks-completed-archived-trash.png)
+![完成、归档与保护规则 界面截图](../../screenshots/zh-cn/tasks-completed-archived-trash.png)
 
 ## 怎么操作
 
@@ -19,10 +19,10 @@ description: "理解任务完成、归档、删除和恢复的区别，避免把
 - 删除前确认影响范围；删除比完成和归档更接近不可逆整理。
 
 <!-- manual-screenshot:id=tasks-archived-list -->
-![完成、归档与保护规则界面截图](../../screenshots/manual/zh-cn/tasks-archived-list.png)
+![完成、归档与保护规则界面截图](../../screenshots/zh-cn/tasks-archived-list.png)
 
 <!-- manual-screenshot:id=tasks-trash-list -->
-![完成、归档与保护规则界面截图](../../screenshots/manual/zh-cn/tasks-trash-list.png)
+![完成、归档与保护规则界面截图](../../screenshots/zh-cn/tasks-trash-list.png)
 
 ## 结果和边界
 

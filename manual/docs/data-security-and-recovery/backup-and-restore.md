@@ -10,7 +10,7 @@ description: "使用备份降低误删、设备损坏或迁移时的风险，并
 从设置里的数据、安全、同步、备份或账号相关入口开始。先判断你要处理的是日常同步、设备迁移、误删恢复，还是账号删除。
 
 <!-- manual-screenshot:id=data-backup-restore-management -->
-![备份与恢复 界面截图](../../screenshots/manual/zh-cn/data-backup-restore-management.png)
+![备份与恢复 界面截图](../../screenshots/zh-cn/data-backup-restore-management.png)
 
 ## 怎么操作
 

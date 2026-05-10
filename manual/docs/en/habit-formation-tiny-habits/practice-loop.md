@@ -39,7 +39,7 @@ The direction can be ordinary. Habit formation often fails when the first versio
 Write a task in GranoFlow that is small enough to start.
 
 <!-- manual-screenshot:id=interface-quick-add-main -->
-![Quick add turning an idea into a task](../../../screenshots/manual/en/interface-quick-add-main.png)
+![Quick add turning an idea into a task](../../../screenshots/en/interface-quick-add-main.png)
 
 Instead of:
 

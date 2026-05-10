@@ -20,10 +20,10 @@ Complete tasks from a task list or detail page. Use archive or deletion when you
 - Confirm the impact before deleting. Deletion is closer to irreversible cleanup than completion or archive.
 
 <!-- manual-screenshot:id=tasks-archived-list -->
-![Completion, archive, and protection rules screen](../../../screenshots/manual/en/tasks-archived-list.png)
+![Completion, archive, and protection rules screen](../../../screenshots/en/tasks-archived-list.png)
 
 <!-- manual-screenshot:id=tasks-trash-list -->
-![Completion, archive, and protection rules screen](../../../screenshots/manual/en/tasks-trash-list.png)
+![Completion, archive, and protection rules screen](../../../screenshots/en/tasks-trash-list.png)
 
 ## Results And Boundaries
 

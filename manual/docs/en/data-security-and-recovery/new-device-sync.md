@@ -24,7 +24,7 @@ Check these 4 things first:
 The safest order is: confirm the data is still present on the old device, get the sync key, then work on the new device.
 
 <!-- manual-screenshot:id=data-new-device-sync-old-device-key -->
-![Record the cloud sync key on the old device](../../../screenshots/manual/en/data-new-device-sync-old-device-key.png)
+![Record the cloud sync key on the old device](../../../screenshots/en/data-new-device-sync-old-device-key.png)
 
 ## Syncing An Empty Device
 
@@ -39,13 +39,13 @@ An empty device means a fresh install, a reinstall, or a device where you have n
 7. Return to tasks, projects, reviews, and other pages to confirm that the cloud data appears on the new device.
 
 <!-- manual-screenshot:id=data-new-device-sync-enter-key -->
-![Enter the sync key from another device on the new device](../../../screenshots/manual/en/data-new-device-sync-enter-key.png)
+![Enter the sync key from another device on the new device](../../../screenshots/en/data-new-device-sync-enter-key.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-join-existing -->
-![Join existing cloud sync after entering the key](../../../screenshots/manual/en/data-new-device-sync-join-existing.png)
+![Join existing cloud sync after entering the key](../../../screenshots/en/data-new-device-sync-join-existing.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-restored-data -->
-![Cloud data restored on the new device](../../../screenshots/manual/en/data-new-device-sync-restored-data.png)
+![Cloud data restored on the new device](../../../screenshots/en/data-new-device-sync-restored-data.png)
 
 After this finishes, the device has joined the original cloud sync. Later changes from any device continue through normal multi-device sync.
 
@@ -64,7 +64,7 @@ If you see choices such as “Sync data to cloud,” “Rebuild cloud sync,” o
 Sometimes GranoFlow finds that the current device uses the same account, but has not joined the current cloud sync yet. The page asks you to choose between “Sync data to cloud,” “Clear local data,” and “Cancel.”
 
 <!-- manual-screenshot:id=data-sync-device-join -->
-![Sync Existing Cloud Data On A New Device screen](../../../screenshots/manual/en/data-sync-device-join.png)
+![Sync Existing Cloud Data On A New Device screen](../../../screenshots/en/data-sync-device-join.png)
 
 This page can appear from the sync entry, data management, or the sync status prompt. It is not a normal sync button; it is a one-time choice about which data source to keep.
 
@@ -79,7 +79,7 @@ None of these choices can guarantee recovery for local attachments that never up
 If the account already has cloud history, GranoFlow may show a cloud data overview first. It summarizes roughly how many tasks, projects, milestones, attachments, the last cloud update, and the data time span, so you can decide whether this is the cloud data you were looking for.
 
 <!-- manual-screenshot:id=data-cloud-data-overview -->
-![Sync Existing Cloud Data On A New Device screen](../../../screenshots/manual/en/data-cloud-data-overview.png)
+![Sync Existing Cloud Data On A New Device screen](../../../screenshots/en/data-cloud-data-overview.png)
 
 This page usually appears from the sync entry after sign-in, especially when the current device cannot upload yet but cloud history is available for download. Its main action is “Download cloud data”; in some upload-capable, higher-risk cases, it may also show “Clear cloud data.”
 
@@ -94,7 +94,7 @@ The overview can only help you identify the approximate scope of cloud history. 
 If you have already added tasks, projects, reviews, or uploaded an image to a task on the new device, syncing existing cloud data is more complex. Local and cloud may both contain data, so GranoFlow needs to determine which side you want to keep.
 
 <!-- manual-screenshot:id=data-new-device-sync-local-image-task -->
-![The new device already has a local task with an image](../../../screenshots/manual/en/data-new-device-sync-local-image-task.png)
+![The new device already has a local task with an image](../../../screenshots/en/data-new-device-sync-local-image-task.png)
 
 Do this first:
 
@@ -106,7 +106,7 @@ Do this first:
 Then decide based on what the page shows:
 
 <!-- manual-screenshot:id=data-new-device-sync-local-data-choice -->
-![Choose the data source when this device already has local data](../../../screenshots/manual/en/data-new-device-sync-local-data-choice.png)
+![Choose the data source when this device already has local data](../../../screenshots/en/data-new-device-sync-local-data-choice.png)
 
 - If you only want cloud data on this device, choose the path that uses cloud data or clears local data. This makes the device use cloud data, and newly added local content that has not synced successfully may not be kept.
 - Only choose “Sync data to cloud” or “Rebuild cloud sync” if this device is truly the source you want to keep. Those actions make cloud sync use this device's current data and affect other devices later.

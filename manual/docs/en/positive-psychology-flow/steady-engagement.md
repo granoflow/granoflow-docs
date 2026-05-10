@@ -60,7 +60,7 @@ If it is too vague, you do not know where to begin.
 If it can move forward in one focus session, flow conditions are easier to create.
 
 <!-- manual-screenshot:id=tasks-breakdown-detail -->
-![Task detail with breakdown steps](../../../screenshots/manual/en/tasks-breakdown-detail.png)
+![Task detail with breakdown steps](../../../screenshots/en/tasks-breakdown-detail.png)
 
 For example:
 
@@ -69,6 +69,8 @@ For example:
 Can become:
 
 > Draft the first version of the quick start section
+
+<!-- -->
 
 > Recover my health
 

@@ -14,7 +14,7 @@ Understand how attachments and images are saved with tasks or records, and their
 Start from Data, Security, Sync, Backup, or Account settings. First decide whether you are handling everyday sync, device migration, accidental deletion, or account deletion.
 
 <!-- manual-screenshot:id=data-attachments-clear-detail -->
-![Attachments and images screen](../../../screenshots/manual/en/data-attachments-clear-detail.png)
+![Attachments and images screen](../../../screenshots/en/data-attachments-clear-detail.png)
 
 ## How To Use It
 

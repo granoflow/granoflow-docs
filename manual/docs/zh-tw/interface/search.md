@@ -16,7 +16,7 @@ translationReview:
 從首頁或主介面的搜尋入口進入。開啟搜尋頁後，輸入足夠明確的關鍵字，再查看結果。
 
 <!-- manual-screenshot:id=interface-search-main -->
-![搜尋界面截图](../../../screenshots/manual/zh-tw/interface-search-main.png)
+![搜尋界面截图](../../../screenshots/zh-tw/interface-search-main.png)
 
 如果關鍵字太短，頁面會先提示你繼續輸入。沒有結果時，代表目前可搜尋範圍內沒有符合項目，不代表所有歷史資料、附件或已刪除內容都被逐項檢查過。
 

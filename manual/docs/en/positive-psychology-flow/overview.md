@@ -112,7 +112,7 @@ You can understand GranoFlow as six layers.
    Is this effort close to my values, and should I continue, adjust, or let go?
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
-![Progress page with task, project, and domain feedback](../../../screenshots/manual/en/interface-home-progress-main.png)
+![Progress page with task, project, and domain feedback](../../../screenshots/en/interface-home-progress-main.png)
 
 Positive psychology mainly helps you decide why something is worth engaging with.
 

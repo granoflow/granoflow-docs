@@ -12,7 +12,7 @@ translationReview:
 這個狀態不是錯誤，也不是統計頁沒有載入出來。它是在告訴你：GranoFlow 還沒有足夠內容產生你的個人進展看板，所以先給你一條最短路徑，把重要的事寫下來，再逐漸變成可以回顧的結構。
 
 <!-- manual-screenshot:id=interface-progress-onboarding-cold-start -->
-![進展頁的第一次使用引導 介面截圖](../../../screenshots/manual/zh-tw/interface-progress-onboarding-cold-start.png)
+![進展頁的第一次使用引導 介面截圖](../../../screenshots/zh-tw/interface-progress-onboarding-cold-start.png)
 
 ## 你會看到什麼
 

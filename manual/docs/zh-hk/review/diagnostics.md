@@ -19,7 +19,7 @@ translationReview:
 投入時間階段根據當天投入時長顯示不同狀態文案。你可以調整階段的時間節點和提示語，讓回顧頁面的狀態表達更貼近自己的節奏。
 
 <!-- manual-screenshot:id=review-diagnostic-state-settings -->
-![診斷與熱力圖界面截图](../../../screenshots/manual/zh-hk/review-diagnostic-state-settings.png)
+![診斷與熱力圖界面截图](../../../screenshots/zh-hk/review-diagnostic-state-settings.png)
 
 階段文案只影響展示和解釋，不會改變任務本身，也不會判斷你是否「夠努力」。
 
@@ -28,7 +28,7 @@ translationReview:
 每日行為標籤會根據任務數量、投入時間、象限分佈、暫停次數、精力選擇或深度專注時長等條件顯示提示。你可以調整部分標籤名稱和觸發閾值。
 
 <!-- manual-screenshot:id=review-diagnostic-anomaly-settings -->
-![診斷與熱力圖界面截图](../../../screenshots/manual/zh-hk/review-diagnostic-anomaly-settings.png)
+![診斷與熱力圖界面截图](../../../screenshots/zh-hk/review-diagnostic-anomaly-settings.png)
 
 這些標籤用於輔助發現模式，不是診斷結論。閾值太低可能讓標籤過於頻繁，閾值太高也可能讓有用提示消失。
 
@@ -37,7 +37,7 @@ translationReview:
 熱力圖閾值決定不同投入時長在日曆或統計熱力圖上如何分層顯示。調整閾值後，顏色分佈可能改變，但歷史任務數據本身不會因此改變。
 
 <!-- manual-screenshot:id=review-heatmap-threshold-settings -->
-![診斷與熱力圖界面截图](../../../screenshots/manual/zh-hk/review-heatmap-threshold-settings.png)
+![診斷與熱力圖界面截图](../../../screenshots/zh-hk/review-heatmap-threshold-settings.png)
 
 如果頁面提供自動重估，它只是根據已有月份數據建議更合適的分層。接受建議前，仍要確認這些顏色是否符合你想觀察的節奏。
 

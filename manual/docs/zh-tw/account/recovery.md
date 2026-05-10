@@ -17,7 +17,7 @@ translationReview:
 在登入入口或賬號相關頁面裡，找到賬號恢復連結。頁面會要求你填寫希望找回的電子郵件，然後開始恢復申請。
 
 <!-- manual-screenshot:id=account-recovery-main -->
-![賬號恢復界面截图](../../../screenshots/manual/zh-tw/account-recovery-main.png)
+![賬號恢復界面截图](../../../screenshots/zh-tw/account-recovery-main.png)
 
 開始前確認：
 

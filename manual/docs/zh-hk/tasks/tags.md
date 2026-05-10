@@ -14,7 +14,7 @@ translationReview:
 在任務詳情或新建任務時打開標籤選擇器。已有標籤會作為候選出現；需要新分類時再創建自定義標籤。
 
 <!-- manual-screenshot:id=tasks-tags-management -->
-![標籤 界面截圖](../../../screenshots/manual/zh-hk/tasks-tags-management.png)
+![標籤 界面截圖](../../../screenshots/zh-hk/tasks-tags-management.png)
 
 ## 怎麼操作
 

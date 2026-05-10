@@ -14,7 +14,7 @@ translationReview:
 從訂閱或賬號頁面查看當前權益。訂閱狀態以服務器返回的賬號訂閱狀態為準，本地顯示只用於當前界面反饋。
 
 <!-- manual-screenshot:id=subscription-overview-main -->
-![訂閱總覽 界面截圖](../../../screenshots/manual/zh-hk/subscription-overview-main.png)
+![訂閱總覽 界面截圖](../../../screenshots/zh-hk/subscription-overview-main.png)
 
 ## 怎麼操作
 

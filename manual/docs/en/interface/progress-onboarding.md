@@ -12,7 +12,7 @@ When you first open GranoFlow, or when local data has not yet formed tasks, proj
 This state is not an error, and it does not mean the statistics page failed to load. It means GranoFlow does not yet have enough content to build your personal progress dashboard, so it gives you the shortest path to write important things down and let them gradually become a structure you can review.
 
 <!-- manual-screenshot:id=interface-progress-onboarding-cold-start -->
-![Progress first-use guidance, with three starting actions on the left and four method messages on the right](../../../screenshots/manual/zh-cn/interface-progress-onboarding-cold-start.png)
+![Progress first-use guidance, with three starting actions on the left and four method messages on the right](../../../screenshots/zh-cn/interface-progress-onboarding-cold-start.png)
 
 ## What you see
 

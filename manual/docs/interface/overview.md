@@ -12,10 +12,10 @@ Granoflow 的主界面围绕一条使用流程展开：记录 → 整理 → 推
 底部导航包含四个主要入口：
 
 <!-- manual-screenshot:id=interface-root-route -->
-![界面总览界面截图](../../screenshots/manual/zh-cn/interface-root-route.png)
+![界面总览界面截图](../../screenshots/zh-cn/interface-root-route.png)
 
 <!-- manual-screenshot:id=interface-overview-navigation -->
-![界面总览 界面截图](../../screenshots/manual/zh-cn/interface-overview-navigation.png)
+![界面总览 界面截图](../../screenshots/zh-cn/interface-overview-navigation.png)
 
 - 进展：查看当前整体状态和近期动态。
 - 任务：查看和推进任务清单。

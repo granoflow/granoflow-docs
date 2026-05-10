@@ -10,7 +10,7 @@ description: "理解桌面端窗口、托盘和关闭行为，避免把隐藏到
 从官网或可信下载入口安装桌面端，首次打开后再登录账号或进入本地数据。桌面端和网页版共享核心概念，但窗口、托盘和离线体验不同。
 
 <!-- manual-screenshot:id=desktop-tray-window-behavior -->
-![系统托盘与窗口 界面截图](../../screenshots/manual/zh-cn/desktop-tray-window-behavior.png)
+![系统托盘与窗口 界面截图](../../screenshots/zh-cn/desktop-tray-window-behavior.png)
 
 ## 怎么操作
 

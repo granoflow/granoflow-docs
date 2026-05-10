@@ -17,7 +17,7 @@ translationReview:
 在登录入口或账号相关页面里，找到账号恢复链接。页面会要求你填写希望找回的邮箱，然后开始恢复申请。
 
 <!-- manual-screenshot:id=account-recovery-main -->
-![账号恢复界面截图](../../screenshots/manual/zh-cn/account-recovery-main.png)
+![账号恢复界面截图](../../screenshots/zh-cn/account-recovery-main.png)
 
 开始前确认：
 

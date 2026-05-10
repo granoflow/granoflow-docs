@@ -14,7 +14,7 @@ translationReview:
 從帳號設定進入。帳號用於登入身份、同步身份、設備列表和訂閱識別；它不等於本地資料本身。
 
 <!-- manual-screenshot:id=account-overview-profile -->
-![帳號總覽 介面截圖](../../../screenshots/manual/zh-tw/account-overview-profile.png)
+![帳號總覽 介面截圖](../../../screenshots/zh-tw/account-overview-profile.png)
 
 ## 怎麼操作
 

@@ -14,7 +14,7 @@ translationReview:
 從賬號設置進入。賬號用於登入身份、同步身份、設備列表和訂閱識別；它不等於本地數據本身。
 
 <!-- manual-screenshot:id=account-sign-in-logged-out -->
-![註冊與登入 界面截圖](../../../screenshots/manual/zh-hk/account-sign-in-logged-out.png)
+![註冊與登入 界面截圖](../../../screenshots/zh-hk/account-sign-in-logged-out.png)
 
 ## 怎麼操作
 

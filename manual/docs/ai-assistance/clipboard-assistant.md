@@ -10,7 +10,7 @@ description: "从剪贴板把零散内容整理成任务前，理解预览、确
 从对应 AI 功能入口开始：标题解析发生在写任务标题时，剪贴板助手从剪贴板内容整理入口开始，其他页面用于先理解边界。
 
 <!-- manual-screenshot:id=ai-clipboard-assistant-settings -->
-![AI 助手与剪贴板 界面截图](../../screenshots/manual/zh-cn/ai-clipboard-assistant-settings.png)
+![AI 助手与剪贴板 界面截图](../../screenshots/zh-cn/ai-clipboard-assistant-settings.png)
 
 ## 怎么操作
 

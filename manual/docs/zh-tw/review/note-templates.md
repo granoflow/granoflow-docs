@@ -20,10 +20,10 @@ translationReview:
 模板裡會出現變數範例。帶變數含義的內容會在生成草稿時替換成實際資料，例如日期、任務、回顧記錄或統計摘要。
 
 <!-- manual-screenshot:id=review-daily-note-template-settings -->
-![記錄模板界面截图](../../../screenshots/manual/zh-tw/review-daily-note-template-settings.png)
+![記錄模板界面截图](../../../screenshots/zh-tw/review-daily-note-template-settings.png)
 
 <!-- manual-screenshot:id=review-weekly-note-template-settings -->
-![記錄模板界面截图](../../../screenshots/manual/zh-tw/review-weekly-note-template-settings.png)
+![記錄模板界面截图](../../../screenshots/zh-tw/review-weekly-note-template-settings.png)
 
 你可以改寫普通文案、標題順序和提示語。不要把變數當成已經寫好的事實；如果某天沒有對應資料，生成結果可能為空、較短，或需要你手動補充。
 

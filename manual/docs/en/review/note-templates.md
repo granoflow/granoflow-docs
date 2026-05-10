@@ -20,10 +20,10 @@ The daily note template affects daily note drafts. The weekly summary template a
 Templates may include variable examples. Variable content is replaced with actual data when a draft is generated, such as dates, tasks, review records, or summary data.
 
 <!-- manual-screenshot:id=review-daily-note-template-settings -->
-![Note templates screen](../../../screenshots/manual/en/review-daily-note-template-settings.png)
+![Note templates screen](../../../screenshots/en/review-daily-note-template-settings.png)
 
 <!-- manual-screenshot:id=review-weekly-note-template-settings -->
-![Note templates screen](../../../screenshots/manual/en/review-weekly-note-template-settings.png)
+![Note templates screen](../../../screenshots/en/review-weekly-note-template-settings.png)
 
 You can edit ordinary text, heading order, and instructions. Do not treat variables as facts that already exist. If a day or week has no matching data, the generated result may be empty, shorter than expected, or require manual completion.
 

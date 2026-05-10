@@ -36,7 +36,7 @@ Writing something down only means you acknowledge that it is taking up your atte
 You can put a task into the inbox, or write today's state in Review. It does not need to be explained, categorized, or optimized yet. Recording it moves the mess from your head into a place where you can work through it slowly.
 
 <!-- manual-screenshot:id=tasks-inbox-main -->
-![Inbox with unorganized tasks waiting to be clarified](../../../screenshots/manual/en/tasks-inbox-main.png)
+![Inbox with unorganized tasks waiting to be clarified](../../../screenshots/en/tasks-inbox-main.png)
 
 Acceptance is not giving up.
 

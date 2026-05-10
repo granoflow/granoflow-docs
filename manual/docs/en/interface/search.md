@@ -16,7 +16,7 @@ Do not treat search as a full data audit, attachment text search, or permanent f
 Open search from the home or main interface search entry. After the search page opens, enter a keyword that is specific enough, then review the results.
 
 <!-- manual-screenshot:id=interface-search-main -->
-![Search screen](../../../screenshots/manual/en/interface-search-main.png)
+![Search screen](../../../screenshots/en/interface-search-main.png)
 
 If the keyword is too short, the page asks you to keep typing. If there are no results, it means no matching item was found in the current searchable scope. It does not mean all historical data, attachments, or deleted content have been checked one by one.
 

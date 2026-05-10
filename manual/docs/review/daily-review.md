@@ -14,7 +14,7 @@ translationReview:
 从回顾页进入。先选择日期或当天回顾，再根据页面提示查看任务、填写记录或调整价值观提示。
 
 <!-- manual-screenshot:id=review-daily-review-main -->
-![日回顾 界面截图](../../screenshots/manual/zh-cn/review-daily-review-main.png)
+![日回顾 界面截图](../../screenshots/zh-cn/review-daily-review-main.png)
 
 ## 怎么操作
 

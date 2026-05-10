@@ -23,7 +23,7 @@ Good candidates include client names, company names, project codenames, internal
 When adding a term, enter the sensitive term and its redaction token. Keep the token easy to recognize, such as a short client, project, or company placeholder, so AI responses are more likely to preserve it.
 
 <!-- manual-screenshot:id=ai-redaction-terms-settings -->
-![Redaction terms screen](../../../screenshots/manual/en/ai-redaction-terms-settings.png)
+![Redaction terms screen](../../../screenshots/en/ai-redaction-terms-settings.png)
 
 When editing, you usually change the token, not turn an old term into a different sensitive term. Deleting a term removes that mapping; future AI requests no longer replace text through that mapping.
 

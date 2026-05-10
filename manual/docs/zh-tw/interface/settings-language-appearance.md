@@ -21,7 +21,7 @@ translationReview:
 進入「設定」→「外觀」→「語言」，選擇你想使用的介面語言。
 
 <!-- manual-screenshot:id=interface-settings-language-appearance -->
-![語言、主題與字型 介面截圖](../../../screenshots/manual/zh-tw/interface-settings-language-appearance.png)
+![語言、主題與字型 介面截圖](../../../screenshots/zh-tw/interface-settings-language-appearance.png)
 
 語言切換只改變 App 的介面文案。它不會自動翻譯你自己寫過的任務標題、專案名稱、標籤、筆記或回顧內容。比如你把介面從中文切到英文，原來寫下的中文任務仍會保持中文。
 

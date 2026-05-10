@@ -14,7 +14,7 @@ translationReview:
 從專案頁進入。專案適合承載持續一段時間的目標，里程碑負責階段，任務負責具體行動。
 
 <!-- manual-screenshot:id=projects-link-tasks-drag -->
-![將任務連結到專案 介面截圖](../../../screenshots/manual/zh-tw/projects-link-tasks-drag.png)
+![將任務連結到專案 介面截圖](../../../screenshots/zh-tw/projects-link-tasks-drag.png)
 
 ## 怎麼操作
 

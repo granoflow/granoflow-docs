@@ -10,10 +10,10 @@ description: "了解附件和图片如何跟随任务或记录保存，以及它
 从设置里的数据、安全、同步、备份或账号相关入口开始。先判断你要处理的是日常同步、设备迁移、误删恢复，还是账号删除。
 
 <!-- manual-screenshot:id=data-attachments-clear-detail -->
-![附件与图片界面截图](../../screenshots/manual/zh-cn/data-attachments-clear-detail.png)
+![附件与图片界面截图](../../screenshots/zh-cn/data-attachments-clear-detail.png)
 
 <!-- manual-screenshot:id=data-attachments-clear-entry -->
-![附件与图片 界面截图](../../screenshots/manual/zh-cn/data-attachments-clear-entry.png)
+![附件与图片 界面截图](../../screenshots/zh-cn/data-attachments-clear-entry.png)
 
 ## 怎么操作
 

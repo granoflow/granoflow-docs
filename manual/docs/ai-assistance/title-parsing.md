@@ -10,7 +10,7 @@ description: "了解标题解析在什么时候工作，哪些内容会被识别
 从对应 AI 功能入口开始：标题解析发生在写任务标题时，剪贴板助手从剪贴板内容整理入口开始，其他页面用于先理解边界。
 
 <!-- manual-screenshot:id=ai-title-parsing-quick-add -->
-![AI 如何辅助整理标题 界面截图](../../screenshots/manual/zh-cn/ai-title-parsing-quick-add.png)
+![AI 如何辅助整理标题 界面截图](../../screenshots/zh-cn/ai-title-parsing-quick-add.png)
 
 ## 怎么操作
 

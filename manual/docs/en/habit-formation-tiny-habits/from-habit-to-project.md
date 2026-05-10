@@ -35,7 +35,7 @@ For example:
 If the action really will continue, create a project in GranoFlow. A project does not need to be large. It simply holds a direction that continues for a period of time.
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![Project detail with milestones and staged tasks](../../../screenshots/manual/en/projects-milestones-detail.png)
+![Project detail with milestones and staged tasks](../../../screenshots/en/projects-milestones-detail.png)
 
 ## Use milestones to reduce pressure
 

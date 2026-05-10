@@ -23,7 +23,7 @@ translationReview:
 計時器相關設置用於控制投入時間記錄時的本機反饋，例如是否播放提示音或如何提示狀態變化。
 
 <!-- manual-screenshot:id=interface-device-preferences-main -->
-![目前設備偏好 界面截圖](../../../screenshots/manual/zh-hk/interface-device-preferences-main.png)
+![目前設備偏好 界面截圖](../../../screenshots/zh-hk/interface-device-preferences-main.png)
 
 這些設置只影響你在目前設備上使用計時器的體驗。已經記錄下來的投入時間屬於業務記錄，和計時器聲音這類本機偏好不同。
 

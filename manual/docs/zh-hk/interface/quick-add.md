@@ -28,7 +28,7 @@ translationReview:
 桌面端輸入框會提示 `#標籤 @項目 ~提醒`。這些符號是快捷入口，不是必填項。
 
 <!-- manual-screenshot:id=interface-quick-add-main -->
-![快速添加 界面截圖](../../../screenshots/manual/zh-hk/interface-quick-add-main.png)
+![快速添加 界面截圖](../../../screenshots/zh-hk/interface-quick-add-main.png)
 
 - 輸入 `#` 可以搜尋標籤。
 - 輸入 `@` 可以搜尋項目或里程碑。

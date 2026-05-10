@@ -16,7 +16,7 @@ When the app starts, it opens the Progress page by default. Here you can see you
 The bottom navigation has four main entries:
 
 <!-- manual-screenshot:id=interface-root-route -->
-![Interface overview screen](../../../screenshots/manual/en/interface-root-route.png)
+![Interface overview screen](../../../screenshots/en/interface-root-route.png)
 
 - Progress: View your overall current status and recent activity.
 - Tasks: View and move through your task list.

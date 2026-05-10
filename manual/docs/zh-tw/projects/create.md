@@ -14,7 +14,7 @@ translationReview:
 從專案頁進入。專案適合承載持續一段時間的目標，里程碑負責階段，任務負責具體行動。
 
 <!-- manual-screenshot:id=projects-create-dialog -->
-![建立專案 介面截圖](../../../screenshots/manual/zh-tw/projects-create-dialog.png)
+![建立專案 介面截圖](../../../screenshots/zh-tw/projects-create-dialog.png)
 
 ## 怎麼操作
 

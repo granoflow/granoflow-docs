@@ -47,7 +47,7 @@ description: "理解如何用项目和里程碑承接长期方向，把价值观
 > 完成到什么程度，才算这一阶段结束？
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![项目详情中的里程碑和任务阶段](../../screenshots/manual/zh-cn/projects-milestones-detail.png)
+![项目详情中的里程碑和任务阶段](../../screenshots/zh-cn/projects-milestones-detail.png)
 
 ## 什么时候需要建立项目
 

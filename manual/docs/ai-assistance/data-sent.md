@@ -25,7 +25,7 @@ GranoFlow 的 AI 功能会把你主动发起的相关文本整理成请求，再
 AI 脱敏设置包含总开关、手机号识别地区和类别默认策略。它适合在你经常把任务、回顾或整理材料交给外部 AI 前使用。
 
 <!-- manual-screenshot:id=ai-redaction-settings -->
-![哪些内容可能会提供给 AI界面截图](../../screenshots/manual/zh-cn/ai-redaction-settings.png)
+![哪些内容可能会提供给 AI界面截图](../../screenshots/zh-cn/ai-redaction-settings.png)
 
 - 总开关关闭时，GranoFlow 不会在发送前执行这套脱敏替换。
 - 类别默认策略影响自动发现后默认是“脱敏”还是“允许”。常见类别包括邮箱、电话、链接、账号提及、标签、令牌、IP、路径和金额等。

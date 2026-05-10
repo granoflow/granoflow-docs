@@ -27,7 +27,7 @@ description: "查看订阅权益如何生效，并理解本地显示、服务器
 会员专属设置集中放置更高级的个性化能力，例如 AI 脱敏词、Helper 助手提示词、回顾 Prompt、记录模板、诊断配置和热力图阈值。部分入口在非会员状态下可能只读、显示升级提示，或不能保存修改。
 
 <!-- manual-screenshot:id=subscription-vip-settings -->
-![订阅权益界面截图](../../screenshots/manual/zh-cn/subscription-vip-settings.png)
+![订阅权益界面截图](../../screenshots/zh-cn/subscription-vip-settings.png)
 
 这些设置说明你能使用哪些权益，不直接解决具体同步冲突、数据恢复或账号恢复问题。涉及数据安全、云端密钥或新设备入云时，请回到数据安全章节按对应流程处理。
 
@@ -36,7 +36,7 @@ description: "查看订阅权益如何生效，并理解本地显示、服务器
 当你使用同步入口但当前账号没有可用权益时，GranoFlow 可能显示同步会员说明页。这个页面解释为什么同步能力需要会员，以及可以从哪里查看或开通权益。
 
 <!-- manual-screenshot:id=subscription-sync-vip-upsell -->
-![订阅权益界面截图](../../screenshots/manual/zh-cn/subscription-sync-vip-upsell.png)
+![订阅权益界面截图](../../screenshots/zh-cn/subscription-sync-vip-upsell.png)
 
 看到同步会员说明，不代表本地数据已经丢失，也不代表云端恢复已经执行。它只是同步入口的权益门槛提示；真实同步状态仍以同步页、账号状态和数据安全相关页面为准。
 

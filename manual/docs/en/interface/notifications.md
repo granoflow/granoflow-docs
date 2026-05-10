@@ -16,7 +16,7 @@ Do not rely on notifications alone to decide whether sync, subscription, system 
 Open notifications from the top area, sidebar, or related system tray entry. The page refreshes the notification list and marks which messages are still unread.
 
 <!-- manual-screenshot:id=interface-notifications-main -->
-![Notifications screen](../../../screenshots/manual/en/interface-notifications-main.png)
+![Notifications screen](../../../screenshots/en/interface-notifications-main.png)
 
 When there are unread notifications, you can open them one by one or mark all as read. This only changes the read state; it does not mean the issue mentioned by the notification has been resolved.
 

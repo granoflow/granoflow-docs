@@ -16,7 +16,7 @@ translationReview:
 頁面會顯示「今天」和「昨天」的簡要狀態，包括完成任務數、涉及項目數和專注時間。
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
-![進展 界面截圖](../../../screenshots/manual/zh-hk/interface-home-progress-main.png)
+![進展 界面截圖](../../../screenshots/zh-hk/interface-home-progress-main.png)
 
 點擊「今天」可以進入任務頁，繼續處理目前任務。
 

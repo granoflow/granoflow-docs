@@ -112,7 +112,7 @@ GranoFlow 更希望帮助你回答：
    它回答：这些投入是否接近我的价值观，下一步要继续、调整，还是放下？
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
-![进展页中的任务、项目和领域反馈](../../screenshots/manual/zh-cn/interface-home-progress-main.png)
+![进展页中的任务、项目和领域反馈](../../screenshots/zh-cn/interface-home-progress-main.png)
 
 积极心理学主要帮助你判断“为什么值得投入”。
 

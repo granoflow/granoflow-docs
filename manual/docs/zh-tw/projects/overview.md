@@ -14,14 +14,14 @@ translationReview:
 從專案頁進入。專案適合承載持續一段時間的目標，里程碑負責階段，任務負責具體行動。
 
 <!-- manual-screenshot:id=projects-overview-main -->
-![專案概覽 介面截圖](../../../screenshots/manual/zh-tw/projects-overview-main.png)
+![專案概覽 介面截圖](../../../screenshots/zh-tw/projects-overview-main.png)
 
 ## 專案詳情裡看什麼
 
 進入專案詳情後，主要是在同一個專案裡查看階段、相關任務和附件線索。寬螢幕時，選中的任務可能出現在右側詳情區；窄螢幕時，任務詳情通常作為單獨頁面開啟。
 
 <!-- manual-screenshot:id=projects-detail-main -->
-![專案概覽界面截图](../../../screenshots/manual/zh-tw/projects-detail-main.png)
+![專案概覽界面截图](../../../screenshots/zh-tw/projects-detail-main.png)
 
 專案詳情幫你把一段時間內相關的行動放在一起看。它不會自動整理專案結構，也不會替你判斷哪些任務應該屬於哪個里程碑；專案、里程碑和任務之間的連結仍需要你自己維護。
 

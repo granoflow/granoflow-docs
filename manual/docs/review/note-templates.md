@@ -16,10 +16,10 @@ description: "配置日记模板和周记模板，让每日笔记与每周小结
 模板里会出现变量示例。带变量含义的内容会在生成草稿时替换成实际数据，例如日期、任务、回顾记录或统计摘要。
 
 <!-- manual-screenshot:id=review-daily-note-template-settings -->
-![记录模板界面截图](../../screenshots/manual/zh-cn/review-daily-note-template-settings.png)
+![记录模板界面截图](../../screenshots/zh-cn/review-daily-note-template-settings.png)
 
 <!-- manual-screenshot:id=review-weekly-note-template-settings -->
-![记录模板界面截图](../../screenshots/manual/zh-cn/review-weekly-note-template-settings.png)
+![记录模板界面截图](../../screenshots/zh-cn/review-weekly-note-template-settings.png)
 
 编辑时可以改写普通文案、标题顺序和提示语。不要把变量当成已经写好的事实；如果某天没有对应数据，生成结果可能为空、较短，或需要你手动补充。
 

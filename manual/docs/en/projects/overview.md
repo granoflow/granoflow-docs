@@ -18,7 +18,7 @@ Open the Projects page. A project holds a goal over time, milestones describe st
 After you open project details, the main job is to view stages, related tasks, and attachment clues inside the same project. On wide screens, the selected task may appear in the right-side detail area; on narrow screens, task details usually open as their own page.
 
 <!-- manual-screenshot:id=projects-detail-main -->
-![Project overview screen](../../../screenshots/manual/en/projects-detail-main.png)
+![Project overview screen](../../../screenshots/en/projects-detail-main.png)
 
 Project details help you see related actions together over time. They do not automatically organize the project structure or decide which task belongs to which milestone. You still maintain the connections between projects, milestones, and tasks.
 

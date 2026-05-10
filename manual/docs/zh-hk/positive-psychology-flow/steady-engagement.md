@@ -60,7 +60,7 @@ description: "學習如何用微小行動、低阻力任務、項目容器和回
 如果任務能在一次專注中推進，心流條件就更容易出現。
 
 <!-- manual-screenshot:id=tasks-breakdown-detail -->
-![任務詳情中的拆解步驟](../../../screenshots/manual/zh-hk/tasks-breakdown-detail.png)
+![任務詳情中的拆解步驟](../../../screenshots/zh-hk/tasks-breakdown-detail.png)
 
 例如：
 
@@ -69,6 +69,8 @@ description: "學習如何用微小行動、低阻力任務、項目容器和回
 可以先變成：
 
 > 寫完「快速開始」這一節的第一版
+
+<!-- -->
 
 > 恢復健康
 

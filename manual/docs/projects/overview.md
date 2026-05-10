@@ -14,14 +14,14 @@ translationReview:
 从项目页进入。项目适合承载持续一段时间的目标，里程碑负责阶段，任务负责具体行动。
 
 <!-- manual-screenshot:id=projects-overview-main -->
-![项目概览 界面截图](../../screenshots/manual/zh-cn/projects-overview-main.png)
+![项目概览 界面截图](../../screenshots/zh-cn/projects-overview-main.png)
 
 ## 项目详情里看什么
 
 进入项目详情后，主要是在同一个项目里查看阶段、相关任务和附件线索。宽屏时，选中的任务可能出现在右侧详情区域；窄屏时，任务详情通常作为单独页面打开。
 
 <!-- manual-screenshot:id=projects-detail-main -->
-![项目概览界面截图](../../screenshots/manual/zh-cn/projects-detail-main.png)
+![项目概览界面截图](../../screenshots/zh-cn/projects-detail-main.png)
 
 项目详情帮助你把一段时间内相关的行动放在一起看。它不会自动整理项目结构，也不会替你判断哪些任务应该属于哪个里程碑；项目、里程碑和任务之间的连接仍需要你自己维护。
 

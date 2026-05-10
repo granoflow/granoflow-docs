@@ -16,10 +16,10 @@ GranoFlow 的主介面圍繞一條使用流程展開：記錄 → 整理 → 推
 底部導航包含四個主要入口：
 
 <!-- manual-screenshot:id=interface-root-route -->
-![介面總覽界面截图](../../../screenshots/manual/zh-hk/interface-root-route.png)
+![介面總覽界面截图](../../../screenshots/zh-hk/interface-root-route.png)
 
 <!-- manual-screenshot:id=interface-overview-navigation -->
-![介面總覽 界面截圖](../../../screenshots/manual/zh-hk/interface-overview-navigation.png)
+![介面總覽 界面截圖](../../../screenshots/zh-hk/interface-overview-navigation.png)
 
 - 進展：查看目前整體狀態和近期動態。
 - 任務：查看和推進任務清單。

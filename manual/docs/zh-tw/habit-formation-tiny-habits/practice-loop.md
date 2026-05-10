@@ -39,7 +39,7 @@ translationReview:
 在 GranoFlow 裡寫一個小到能開始的任務。
 
 <!-- manual-screenshot:id=interface-quick-add-main -->
-![快速新增中把想法寫成任務](../../../screenshots/manual/zh-tw/interface-quick-add-main.png)
+![快速新增中把想法寫成任務](../../../screenshots/zh-tw/interface-quick-add-main.png)
 
 不要寫：
 

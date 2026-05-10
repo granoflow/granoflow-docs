@@ -10,7 +10,7 @@ description: "理解订阅状态从哪里判断、它会解锁什么，以及为
 从订阅或账号页面查看当前权益。订阅状态以服务器返回的账号订阅状态为准，本地显示只用于当前界面反馈。
 
 <!-- manual-screenshot:id=subscription-overview-main -->
-![订阅总览 界面截图](../../screenshots/manual/zh-cn/subscription-overview-main.png)
+![订阅总览 界面截图](../../screenshots/zh-cn/subscription-overview-main.png)
 
 ## 怎么操作
 

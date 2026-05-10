@@ -112,7 +112,7 @@ GranoFlow 更希望幫你回答：
    它回答：這些投入是否接近我的價值觀，下一步要繼續、調整，還是放下？
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
-![進展頁中的任務、專案和領域回饋](../../../screenshots/manual/zh-tw/interface-home-progress-main.png)
+![進展頁中的任務、專案和領域回饋](../../../screenshots/zh-tw/interface-home-progress-main.png)
 
 正向心理學主要幫你判斷「為什麼值得投入」。
 

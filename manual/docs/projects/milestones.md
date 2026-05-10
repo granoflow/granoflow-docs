@@ -14,7 +14,7 @@ translationReview:
 从项目页进入。项目适合承载持续一段时间的目标，里程碑负责阶段，任务负责具体行动。
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![管理里程碑 界面截图](../../screenshots/manual/zh-cn/projects-milestones-detail.png)
+![管理里程碑 界面截图](../../screenshots/zh-cn/projects-milestones-detail.png)
 
 ## 怎么操作
 

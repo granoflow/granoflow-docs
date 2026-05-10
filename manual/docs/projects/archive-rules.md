@@ -10,7 +10,7 @@ description: "理解项目完成、归档、直接删除和保护规则，避免
 从项目页进入。项目适合承载持续一段时间的目标，里程碑负责阶段，任务负责具体行动。
 
 <!-- manual-screenshot:id=projects-archive-menu -->
-![项目完成与归档 界面截图](../../screenshots/manual/zh-cn/projects-archive-menu.png)
+![项目完成与归档 界面截图](../../screenshots/zh-cn/projects-archive-menu.png)
 
 ## 怎么操作
 

@@ -14,7 +14,7 @@ translationReview:
 從設定裡的資料、安全、同步、備份或帳號相關入口開始。先判斷你要處理的是日常同步、設備遷移、誤刪復原，還是帳號刪除。
 
 <!-- manual-screenshot:id=data-sync-status-main -->
-![多裝置同步 介面截圖](../../../screenshots/manual/zh-tw/data-sync-status-main.png)
+![多裝置同步 介面截圖](../../../screenshots/zh-tw/data-sync-status-main.png)
 
 ## 怎麼操作
 

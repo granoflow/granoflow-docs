@@ -12,7 +12,7 @@ description: "用搜索快速找到已有任务，并理解搜索结果能带你
 从首页或主界面的搜索入口进入。打开搜索页后，输入至少一段足够明确的关键词，再查看结果。
 
 <!-- manual-screenshot:id=interface-search-main -->
-![搜索界面截图](../../screenshots/manual/zh-cn/interface-search-main.png)
+![搜索界面截图](../../screenshots/zh-cn/interface-search-main.png)
 
 如果关键词太短，页面会先提示你继续输入。没有结果时，说明当前可搜索范围内没有匹配项，不代表所有历史数据、附件或已删除内容都被逐项检查过。
 

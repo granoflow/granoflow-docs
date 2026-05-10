@@ -30,7 +30,7 @@ It does not scan the entire local database, and it does not rewrite protocol fie
 AI redaction settings include the master switch, phone detection regions, and category defaults. Use them before you often send tasks, reviews, or organizing material to an external AI.
 
 <!-- manual-screenshot:id=ai-redaction-settings -->
-![What may be sent to AI screen](../../../screenshots/manual/en/ai-redaction-settings.png)
+![What may be sent to AI screen](../../../screenshots/en/ai-redaction-settings.png)
 
 - When the master switch is off, GranoFlow does not run this redaction replacement before sending.
 - Category defaults affect whether automatically discovered terms default to “Redact” or “No redact.” Common categories include email, phone, links, mentions, hashtags, tokens, IP addresses, paths, and money.

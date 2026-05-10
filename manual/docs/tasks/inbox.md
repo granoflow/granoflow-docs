@@ -13,7 +13,7 @@ description: "了解收集箱是什么、任务什么时候会出现在收集箱
 点击导航栏里的 **+** 按钮，写下任务并保存。
 
 <!-- manual-screenshot:id=tasks-inbox-main -->
-![收集箱 界面截图](../../screenshots/manual/zh-cn/tasks-inbox-main.png)
+![收集箱 界面截图](../../screenshots/zh-cn/tasks-inbox-main.png)
 
 你可以写得很简单，例如：
 

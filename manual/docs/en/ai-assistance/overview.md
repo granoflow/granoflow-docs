@@ -31,7 +31,7 @@ AI in GranoFlow is an assistant for organizing, not an autonomous agent. It can 
 The Helper prompt in member-only settings affects the default way you ask an external AI about GranoFlow pages. After you save it, GranoFlow prepares this prompt together with the current page context for the external AI.
 
 <!-- manual-screenshot:id=ai-helper-prompt-settings -->
-![AI assistance overview screen](../../../screenshots/manual/en/ai-helper-prompt-settings.png)
+![AI assistance overview screen](../../../screenshots/en/ai-helper-prompt-settings.png)
 
 This setting only changes the phrasing of your request. It does not make the external AI automatically understand all local context, and it does not guarantee that the AI will preserve, remove, or correctly handle the information you provide. Check the content scope before sending, and use AI data-sending and redaction settings when needed.
 

@@ -14,7 +14,7 @@ translationReview:
 從回顧頁進入。先選擇日期或當天回顧，再根據頁面提示查看任務、填寫記錄或調整價值觀提示。
 
 <!-- manual-screenshot:id=review-overview-main -->
-![回顧概覽 介面截圖](../../../screenshots/manual/zh-tw/review-overview-main.png)
+![回顧概覽 介面截圖](../../../screenshots/zh-tw/review-overview-main.png)
 
 ## 怎麼操作
 

@@ -1,6 +1,6 @@
 # Granoflow Privacy Policy
 
-**Last Updated: April 01, 2026**
+**Last Updated: May 10, 2026**
 
 This Privacy Policy applies to the Granoflow application, the `account-hub` login, account, subscription, and billing redirection pages, and the related online services we operate for account management, synchronization, cloud attachments, recovery, subscriptions, and support (collectively, the "Services").
 
@@ -55,16 +55,24 @@ When you use `account-hub` or related web flows, we may process:
 
 This information is used to complete the requested flow, protect the service, and diagnose failures.
 
-### 2.5 Diagnostics and Crash Information
-We currently use crash and diagnostic tooling, including **Firebase Crashlytics**, to help detect failures, investigate bugs, and improve stability.
+### 2.5 Diagnostics, Crash Reports, and Anonymous Usage Data
+We use crash and diagnostic tooling, including **Firebase Crashlytics**, to help detect failures, investigate bugs, and improve stability. We also use privacy-friendly anonymous usage analytics sent to Granoflow's own core API to understand whether core product flows are working.
 
 This may include:
 
 - Crash logs and stack traces
 - App version, platform, operating system version, current route, and basic runtime state
+- Anonymous product events such as first app open, app open, onboarding completed, first task created or completed, first review created, task created, task completed, review created, login started, login completed, and sync enabled
+- Low-sensitivity event properties such as source, entity type, whether a task has a project or attachment, duration bucket, platform, locale, app version, login state, subscription state, and tester flag
 - Limited technical context needed for troubleshooting and service integrity
 
-We do not use this diagnostic data for advertising targeting or cross-app profiling.
+For anonymous usage analytics, Granoflow uses a random UUID v4 installation identifier (`installation_id` / `anonymous_installation_id`) generated locally by the app. This identifier represents one app installation, not a real person. It may be lost when the app is uninstalled, and a new identifier may be generated when the app is reinstalled. Signing in does not replace this identifier with your email address, account ID, RevenueCat ID, or another directly identifying account identifier.
+
+We do **not** upload task content, project content, milestone content, review text, images, attachment content, attachment filenames, PDF content, AI export content, clipboard content, contacts, precise location, or keyboard input as part of crash reports or anonymous usage analytics.
+
+We do not read IDFA, IMEI, MAC address, serial number, system device fingerprints, or other hardware identifiers for product analytics. We do not request advertising tracking permission, do not do cross-app tracking, and do not use this diagnostic or analytics data for advertising targeting or advertising attribution.
+
+You can turn this off in the app at **Settings → Privacy & Diagnostics → Help improve Granoflow**. This setting controls both crash reporting and anonymous usage analytics.
 
 ### 2.6 Support, Surveys, and Research
 If you contact support or choose to participate in research, interviews, or surveys, we may process:
@@ -95,6 +103,7 @@ We process information to:
 - Operate `account-hub` login, callback, and billing redirection flows
 - Detect service abuse, protect account security, and maintain operational integrity
 - Investigate crashes, debug issues, and improve reliability
+- Understand whether anonymous users complete key product flows and where the product may be confusing
 - Respond to support requests, compliance requests, and service communications
 - Facilitate user-requested interactions with third-party AI services
 - Run research or surveys only when you choose to participate
@@ -147,6 +156,7 @@ We keep information for different periods depending on what it is and why it is 
 - **Account, security, device, and service operation records** are kept for as long as reasonably necessary to operate the Services, protect accounts, enforce terms, resolve disputes, and comply with law.
 - **Cloud-connected content and attachment records** are kept while the related feature or account remains active, and may later be deleted, archived, de-identified, or cleaned up according to our retention logic, backups, legal requirements, and service status.
 - **Support, billing, tax, anti-fraud, and compliance records** may be retained longer where reasonably necessary.
+- **Raw anonymous usage event records** are intended to be short-lived and used for aggregate product analysis; they should not be used to browse a single installation's full activity trail.
 
 If you request account deletion, your request currently enters a **30-day cooling-off period** before final server-side deletion is completed. During that period:
 
@@ -172,6 +182,7 @@ Depending on your location and applicable law, you may have the right to:
 - request a copy of certain information,
 - export or delete local data that remains under your control,
 - and stop using optional cloud or AI-related features.
+- turn off crash reporting and anonymous usage analytics in **Settings → Privacy & Diagnostics → Help improve Granoflow**.
 
 Some requests may require identity verification, and some rights may be limited by law, technical feasibility, security needs, or the rights of others.
 

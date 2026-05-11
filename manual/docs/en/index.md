@@ -7,7 +7,7 @@ translationReview:
   - product-frontend-design
 ---
 
-This manual helps you turn life into a sustainable personal growth system. Use it when you want to connect domains, values, projects, milestones, tasks, lightweight journaling, and review, while facing life with more acceptance and committed action.
+Granoflow is a personal growth system made of Todo lists and lightweight journaling. It does more than record tasks: it helps you find your own rhythm between external judgment and inner pressure. The design starts from a simple idea: reduce anxiety, reduce the risk of being pulled off course, and help you keep walking the path you truly want to take. As a new-generation productivity tool that deeply embraces AI, Granoflow already includes AI task parsing and thought-structuring features, with more AI-powered ways to use it coming over time.
 
 ## Start with a life system
 

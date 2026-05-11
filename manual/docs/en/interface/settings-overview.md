@@ -53,8 +53,6 @@ If you only run `granoflow help`, `granoflow version`, `granoflow status --json`
 
 Use System Redaction is enabled by default. When enabled, CLI output and future exports to external tools reuse GranoFlow’s existing redaction rules. To edit redaction terms, use Manage Redaction Settings on the page to open the existing redaction settings.
 
-CLI test helper entries are only for local automation and screenshot preparation. They require the running desktop app to receive the command, and they do not put cloud admin, subscription, notification, or test-account reset capabilities into regular user entry points.
-
 The CLI `export`, `import`, and `backup` commands also require the running desktop app to receive the command. Import, export, and backup commands read or write local data files; preview a backup restore before confirming it.
 
 ## Data and Recovery

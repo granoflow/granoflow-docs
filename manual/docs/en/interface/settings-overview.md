@@ -49,9 +49,11 @@ These entries open specific configuration or explanation pages. They do not mean
 
 Settings includes a Command Line Tool entry for managing Granoflow CLI installation, system redaction reuse, and token verification.
 
-If you only run `granoflow help` or `granoflow version` manually, you usually do not need extra setup. When external scripts or AI automation need to call Granoflow, you can enable token verification on this page and create up to 5 CLI tokens. The token value is shown only when it is created or regenerated, and it is not shown again after you close the dialog.
+If you only run `granoflow help`, `granoflow version`, `granoflow status --json`, or `granoflow open <route> --json` manually, you usually do not need extra setup. When external scripts or AI automation need to call Granoflow, you can enable token verification on this page and create up to 5 CLI tokens. The token value is shown only when it is created or regenerated, and it is not shown again after you close the dialog.
 
 Use System Redaction is enabled by default. When enabled, CLI output and future exports to external tools reuse GranoFlow’s existing redaction rules. To edit redaction terms, use Manage Redaction Settings on the page to open the existing redaction settings.
+
+CLI test helper entries are only for local automation and screenshot preparation. They require the running desktop app to receive the command, and they do not put cloud admin, subscription, notification, or test-account reset capabilities into regular user entry points.
 
 ## Data and Recovery
 

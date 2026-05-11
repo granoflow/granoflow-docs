@@ -52,9 +52,11 @@ translationReview:
 
 設置頁提供「命令行工具」入口，用於管理 GranoFlow CLI 的安裝狀態、系統脫敏復用和 Token 驗證。
 
-如果你只是手動使用 `granoflow help` 或 `granoflow version`，通常不需要額外設置。需要讓外部腳本或 AI 自動化調用 GranoFlow 時，可以在這個頁面開啟 Token 驗證並建立最多 5 個 CLI Token。Token 原文只會在建立或重新生成時顯示一次，關閉彈窗後不會再次顯示。
+如果你只是手動使用 `granoflow help`、`granoflow version`、`granoflow status --json` 或 `granoflow open <route> --json`，通常不需要額外設置。需要讓外部腳本或 AI 自動化調用 GranoFlow 時，可以在這個頁面開啟 Token 驗證並建立最多 5 個 CLI Token。Token 原文只會在建立或重新生成時顯示一次，關閉彈窗後不會再次顯示。
 
 「使用系統脫敏功能」預設開啟。開啟後，CLI 輸出以及未來匯出給外部工具的數據會復用 GranoFlow 現有脫敏規則；如需修改脫敏詞條，請從頁面裏的「管理脫敏設置」進入現有脫敏設置頁。
+
+CLI 的測試輔助入口只面向本機自動化和截圖準備。它們需要執行中的桌面 App 承接命令，不會把雲端管理員、訂閱、通知或測試賬號重置能力放進普通用戶入口。
 
 ## 數據與恢復
 

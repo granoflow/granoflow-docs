@@ -55,6 +55,8 @@ Use System Redaction is enabled by default. When enabled, CLI output and future 
 
 CLI test helper entries are only for local automation and screenshot preparation. They require the running desktop app to receive the command, and they do not put cloud admin, subscription, notification, or test-account reset capabilities into regular user entry points.
 
+The CLI `export`, `import`, and `backup` commands also require the running desktop app to receive the command. Import, export, and backup commands read or write local data files; preview a backup restore before confirming it.
+
 ## Data and Recovery
 
 Data and recovery entries are for import, export, backup, restore, attachments, or cleanup-related actions.

@@ -13,7 +13,7 @@ Settings pages:
 - [Language, theme, and font](/manual/en/interface/settings-language-appearance/)
 - [Device preferences](/manual/en/interface/device-preferences/)
 - [Account, sync, and data entry points](/manual/en/interface/settings-account-data-entrypoints/)
-- [Command Line Tool](/manual/en/interface/settings-overview/#command-line-tool)
+- [Command line tool](/manual/en/desktop/command-line-tool/)
 
 Settings is the central entry point in GranoFlow. It brings display experience, device preferences, account, sync, data, subscription, AI, and about information into one place, but each entry affects a different scope.
 
@@ -47,13 +47,13 @@ These entries open specific configuration or explanation pages. They do not mean
 
 ## Command Line Tool
 
-Settings includes a Command Line Tool entry for managing Granoflow CLI installation, system redaction reuse, and token verification.
+Settings includes a Command Line Tool entry for installing or repairing the `granoflow` command and confirming whether the current platform can use the CLI from a terminal.
 
-If you only run `granoflow help`, `granoflow version`, `granoflow status --json`, or `granoflow open <route> --json` manually, you usually do not need extra setup. When external scripts or AI automation need to call Granoflow, you can enable token verification on this page and create up to 5 CLI tokens. The token value is shown only when it is created or regenerated, and it is not shown again after you close the dialog.
+If you only run `granoflow help`, `granoflow version`, `granoflow status --json`, or `granoflow open <route> --json` manually, you usually do not need extra setup. When scripts or AI assistants need structured results, prefer `--json`.
 
-Use System Redaction is enabled by default. When enabled, CLI output and future exports to external tools reuse GranoFlow’s existing redaction rules. To edit redaction terms, use Manage Redaction Settings on the page to open the existing redaction settings.
+Business object commands include `task`, `project`, `milestone`, `tag`, `domain-value`, and `review`. These commands require the running desktop app to receive the request. If the app cannot be reached, the command returns `app_not_reachable` and does not bypass the app to read or write the local database directly.
 
-The CLI `export`, `import`, and `backup` commands also require the running desktop app to receive the command. Import, export, and backup commands read or write local data files; preview a backup restore before confirming it.
+The CLI `backup create` and `backup restore` commands also require the running desktop app. Preview a backup restore with `--preview` before importing anything with `--confirm`. See [Command line tool](/manual/en/desktop/command-line-tool/) for full examples.
 
 ## Data and Recovery
 
@@ -74,4 +74,4 @@ Research plans are low-frequency entries for users who actively choose to partic
 - To adjust display, read [Language, theme, and font](/manual/en/interface/settings-language-appearance/).
 - To understand local device switches, read [Device preferences](/manual/en/interface/device-preferences/).
 - To handle account, sync, or data entries, read [Account, sync, and data entry points](/manual/en/interface/settings-account-data-entrypoints/).
-- To let terminal commands, scripts, or AI automation call Granoflow, open Command Line Tool in Settings.
+- To let terminal commands, scripts, or AI assistants call Granoflow, read [Command line tool](/manual/en/desktop/command-line-tool/).

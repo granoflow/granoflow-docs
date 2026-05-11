@@ -13,6 +13,7 @@ translationReview:
 - [語言、主題與字體](/manual/zh-hk/interface/settings-language-appearance/)
 - [目前設備偏好](/manual/zh-hk/interface/device-preferences/)
 - [賬號、同步與數據入口](/manual/zh-hk/interface/settings-account-data-entrypoints/)
+- [命令行工具](/manual/zh-hk/interface/settings-overview/#命令行工具)
 
 設置頁是 GranoFlow 的統一入口。它把顯示體驗、目前設備偏好、賬號、同步、數據、訂閱、AI 和關於資訊放在一個地方，但每個入口影響的範圍並不一樣。
 
@@ -47,6 +48,14 @@ translationReview:
 
 這些入口是為了進入具體配置或說明頁面，不代表 AI 會自動修改你的記錄。涉及外部 AI 的流程，應先理解 [AI 輔助](/manual/zh-hk/ai-assistance/overview/) 和 [AI 助手與剪貼板](/manual/zh-hk/ai-assistance/clipboard-assistant/) 的邊界。
 
+## 命令行工具
+
+設置頁提供「命令行工具」入口，用於管理 GranoFlow CLI 的安裝狀態、系統脫敏復用和 Token 驗證。
+
+如果你只是手動使用 `granoflow help` 或 `granoflow version`，通常不需要額外設置。需要讓外部腳本或 AI 自動化調用 GranoFlow 時，可以在這個頁面開啟 Token 驗證並建立最多 5 個 CLI Token。Token 原文只會在建立或重新生成時顯示一次，關閉彈窗後不會再次顯示。
+
+「使用系統脫敏功能」預設開啟。開啟後，CLI 輸出以及未來匯出給外部工具的數據會復用 GranoFlow 現有脫敏規則；如需修改脫敏詞條，請從頁面裏的「管理脫敏設置」進入現有脫敏設置頁。
+
 ## 數據與恢復
 
 數據與恢復入口用於匯入、匯出、備份、恢復、附件或清理相關操作。
@@ -66,3 +75,4 @@ translationReview:
 - 想調整顯示效果，閱讀 [語言、主題與字體](/manual/zh-hk/interface/settings-language-appearance/)。
 - 想理解本機開關，閱讀 [目前設備偏好](/manual/zh-hk/interface/device-preferences/)。
 - 想處理賬號、同步或數據入口，閱讀 [賬號、同步與數據入口](/manual/zh-hk/interface/settings-account-data-entrypoints/)。
+- 想讓終端、腳本或 AI 自動化調用 GranoFlow，進入設置裏的「命令行工具」。

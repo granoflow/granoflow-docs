@@ -13,6 +13,7 @@ Settings pages:
 - [Language, theme, and font](/manual/en/interface/settings-language-appearance/)
 - [Device preferences](/manual/en/interface/device-preferences/)
 - [Account, sync, and data entry points](/manual/en/interface/settings-account-data-entrypoints/)
+- [Command Line Tool](/manual/en/interface/settings-overview/#command-line-tool)
 
 Settings is the central entry point in GranoFlow. It brings display experience, device preferences, account, sync, data, subscription, AI, and about information into one place, but each entry affects a different scope.
 
@@ -44,6 +45,14 @@ Settings may include entries for AI assistants, tag management, prompts, or revi
 
 These entries open specific configuration or explanation pages. They do not mean AI will automatically change your records. For flows that involve external AI tools, first understand the boundaries in [AI assistance](/manual/en/ai-assistance/overview/) and [AI assistant and clipboard](/manual/en/ai-assistance/clipboard-assistant/).
 
+## Command Line Tool
+
+Settings includes a Command Line Tool entry for managing Granoflow CLI installation, system redaction reuse, and token verification.
+
+If you only run `granoflow help` or `granoflow version` manually, you usually do not need extra setup. When external scripts or AI automation need to call Granoflow, you can enable token verification on this page and create up to 5 CLI tokens. The token value is shown only when it is created or regenerated, and it is not shown again after you close the dialog.
+
+Use System Redaction is enabled by default. When enabled, CLI output and future exports to external tools reuse GranoFlow’s existing redaction rules. To edit redaction terms, use Manage Redaction Settings on the page to open the existing redaction settings.
+
 ## Data and Recovery
 
 Data and recovery entries are for import, export, backup, restore, attachments, or cleanup-related actions.
@@ -63,3 +72,4 @@ Research plans are low-frequency entries for users who actively choose to partic
 - To adjust display, read [Language, theme, and font](/manual/en/interface/settings-language-appearance/).
 - To understand local device switches, read [Device preferences](/manual/en/interface/device-preferences/).
 - To handle account, sync, or data entries, read [Account, sync, and data entry points](/manual/en/interface/settings-account-data-entrypoints/).
+- To let terminal commands, scripts, or AI automation call Granoflow, open Command Line Tool in Settings.

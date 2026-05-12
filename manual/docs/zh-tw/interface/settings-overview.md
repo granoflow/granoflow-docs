@@ -52,6 +52,8 @@ translationReview:
 
 設定頁提供「命令列工具」入口，用於安裝或修復 `granoflow` 命令，並確認目前平台是否可以在終端機裡呼叫 CLI。
 
+這裡的 CLI 只面向使用者本機和正在執行的桌面 App，不包含開發、建置、雲端管理員、測試賬號或發布類命令。
+
 如果你只是手動使用 `granoflow help`、`granoflow version`、`granoflow status --json` 或 `granoflow open <route> --json`，通常不需要額外設定。需要讓腳本或 AI 助手讀取結構化結果時，優先使用 `--json`。
 
 業務物件命令包括 `task`、`project`、`milestone`、`tag`、`domain-value` 和 `review`。這些命令需要執行中的桌面 App 承接；App 無法連接時會返回 `app_not_reachable`，不會繞過 App 直接讀取或寫入本機資料庫。

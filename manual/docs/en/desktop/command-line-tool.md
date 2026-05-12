@@ -10,6 +10,8 @@ translationReview:
 
 The GranoFlow CLI is a command-line entry point for desktop users, scripts, and AI assistants. It is useful for reading or updating tasks, projects, milestones, tags, domain values, reviews, and for creating or restoring local backups.
 
+In this page, CLI means the `granoflow` command installed on a user's computer. It is not a development, build, or cloud-operations entry point, and it does not provide cloud admin, purchase-platform admin, test-account reset, cloud wipe, or release commands.
+
 ## Install And Check
 
 Install the desktop app first, then open the Command Line Tool page in settings to install or repair the `granoflow` command. Business commands require the desktop app to be running. The command sends the request to the app instead of opening your local database directly.

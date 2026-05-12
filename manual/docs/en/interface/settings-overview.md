@@ -49,6 +49,8 @@ These entries open specific configuration or explanation pages. They do not mean
 
 Settings includes a Command Line Tool entry for installing or repairing the `granoflow` command and confirming whether the current platform can use the CLI from a terminal.
 
+This CLI is only for the user's local computer and the running desktop app. It does not include development, build, cloud admin, test-account, or release commands.
+
 If you only run `granoflow help`, `granoflow version`, `granoflow status --json`, or `granoflow open <route> --json` manually, you usually do not need extra setup. When scripts or AI assistants need structured results, prefer `--json`.
 
 Business object commands include `task`, `project`, `milestone`, `tag`, `domain-value`, and `review`. These commands require the running desktop app to receive the request. If the app cannot be reached, the command returns `app_not_reachable` and does not bypass the app to read or write the local database directly.

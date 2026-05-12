@@ -52,11 +52,13 @@ translationReview:
 
 設置頁提供「命令行工具」入口，用於安裝或修復 `granoflow` 命令，並確認目前平台是否可以在終端機裡調用 CLI。
 
-這裡的 CLI 只面向用戶本機和正在運行的桌面 App，不包含開發、構建、雲端管理員、測試賬號或發佈類命令。
+這裡的 CLI 只面向用戶本機和正在運行的桌面 App，不包含開發、構建、雲端管理員、內部調試或發佈類命令。
 
-如果你只是手動使用 `granoflow help`、`granoflow version`、`granoflow status --json` 或 `granoflow open <route> --json`，通常不需要額外設置。需要讓腳本或 AI 助手讀取結構化結果時，優先使用 `--json`。
+如果你只是手動使用 `granoflow help`、`granoflow version`、`granoflow status --json`、`granoflow display get --json` 或 `granoflow open <route> --json`，通常不需要額外設置。需要讓腳本或 AI 助手讀取結構化結果時，優先使用 `--json`。
 
 業務對象命令包括 `task`、`project`、`milestone`、`tag`、`domain-value` 和 `review`。這些命令需要運行中的桌面 App 承接；App 無法連接時會返回 `app_not_reachable`，不會繞過 App 直接讀取或寫入本地數據庫。
+
+顯示偏好命令包括 `display language`、`display theme`、`display font-size` 和 `display reset`。它們同樣需要運行中的桌面 App，只會修改語言、主題、字體大小等顯示偏好，不會改變賬號、數據、同步或測試狀態。
 
 CLI 的 `backup create` 和 `backup restore` 也需要運行中的桌面 App 承接。備份恢復前應先使用 `--preview` 查看摘要，只有明確 `--confirm` 後才會導入。完整命令見 [命令行工具](/manual/zh-hk/desktop/command-line-tool/)。
 

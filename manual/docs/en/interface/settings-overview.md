@@ -51,9 +51,11 @@ Settings includes a Command Line Tool entry for installing or repairing the `gra
 
 This CLI is only for the user's local computer and the running desktop app. It does not include development, build, cloud admin, test-account, or release commands.
 
-If you only run `granoflow help`, `granoflow version`, `granoflow status --json`, or `granoflow open <route> --json` manually, you usually do not need extra setup. When scripts or AI assistants need structured results, prefer `--json`.
+If you only run `granoflow help`, `granoflow version`, `granoflow status --json`, `granoflow display get --json`, or `granoflow open <route> --json` manually, you usually do not need extra setup. When scripts or AI assistants need structured results, prefer `--json`.
 
 Business object commands include `task`, `project`, `milestone`, `tag`, `domain-value`, and `review`. These commands require the running desktop app to receive the request. If the app cannot be reached, the command returns `app_not_reachable` and does not bypass the app to read or write the local database directly.
+
+Display preference commands include `display language`, `display theme`, `display font-size`, and `display reset`. They also require the running desktop app, and they only change display preferences such as language, theme, and font size. They do not change account, data, sync, or test state.
 
 The CLI `backup create` and `backup restore` commands also require the running desktop app. Preview a backup restore with `--preview` before importing anything with `--confirm`. See [Command line tool](/manual/en/desktop/command-line-tool/) for full examples.
 

@@ -1,6 +1,6 @@
 ---
 title: "Command line tool"
-description: "Use the GranoFlow CLI on desktop to manage tasks, projects, milestones, tags, domain values, reviews, and local backups."
+description: "Use the GranoFlow CLI on desktop to manage display preferences, tasks, projects, milestones, tags, domain values, reviews, and local backups."
 translationSource: zh-CN
 translationReview:
   - manual-usefulness-review
@@ -8,7 +8,7 @@ translationReview:
   - plan-eng-review
 ---
 
-The GranoFlow CLI is a command-line entry point for desktop users, scripts, and AI assistants. It is useful for reading or updating tasks, projects, milestones, tags, domain values, reviews, and for creating or restoring local backups.
+The GranoFlow CLI is a command-line entry point for desktop users, scripts, and AI assistants. It is useful for adjusting display preferences, reading or updating tasks, projects, milestones, tags, domain values, reviews, and for creating or restoring local backups.
 
 In this page, CLI means the `granoflow` command installed on a user's computer. It is not a development, build, or cloud-operations entry point, and it does not provide cloud admin, purchase-platform admin, test-account reset, cloud wipe, or release commands.
 
@@ -22,9 +22,24 @@ Useful checks:
 granoflow help
 granoflow version --json
 granoflow status --json
+granoflow display get --json
 ```
 
 Every command supports `--json` for scripts and AI use. JSON mode outputs structured results only. If the app cannot be reached, the command returns the stable `app_not_reachable` error.
+
+## Display Preferences
+
+Display preference commands adjust the app interface language, appearance, and font size:
+
+```bash
+granoflow display get --json
+granoflow display language zh-CN --json
+granoflow display theme dark --json
+granoflow display font-size large --json
+granoflow display reset --json
+```
+
+`granoflow display language` changes the app interface language. `granoflow lang` only changes the CLI output language in the current terminal window. `display reset` only resets display preferences; it does not clear your account, tasks, projects, or local data.
 
 ## Business Objects
 

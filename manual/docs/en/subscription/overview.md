@@ -1,9 +1,11 @@
 ---
 title: "Subscription overview"
-description: "What subscription unlocks, what works without it — and why your purchase platform and signed-in account both matter."
+description: "You can try the full GranoFlow core without subscribing; membership mainly adds cloud sync and personalization."
 ---
 
-GranoFlow's core features — tasks, projects, journal, reviews — are free. A subscription unlocks advanced features: multi-device sync, AI assistance, and deeper personalization.
+You can start with GranoFlow's core system for free: tasks, projects, values, lightweight journaling, reviews, local data, and backups do not require a subscription. Use it to organize your work and life first, then decide whether membership is useful for your rhythm.
+
+Membership mainly adds two things: **multi-device cloud sync** and **personalization**. They make GranoFlow more convenient and more tailored to you, but they are not required to try the core workflow.
 
 ![Subscription overview](../../../screenshots/en/subscription-overview-main.png)
 
@@ -11,13 +13,13 @@ GranoFlow's core features — tasks, projects, journal, reviews — are free. A 
 
 | Feature | Free | Subscriber |
 |---------|------|------------|
-| Tasks, projects, journal | ✅ | ✅ |
-| Local storage (single device) | ✅ | ✅ |
+| Tasks, projects, values | ✅ | ✅ |
+| Journal, reviews, backups | ✅ | ✅ |
+| AI task parsing and thinking support | ✅ | ✅ |
 | Multi-device cloud sync | ❌ | ✅ |
-| AI title parsing | ❌ | ✅ |
-| AI redaction terms | ❌ | ✅ |
-| Custom review prompts | ❌ | ✅ |
-| Journal templates | ❌ | ✅ |
+| Personalization | ❌ | ✅ |
+
+In short: **the free version is enough for a serious trial and long-term single-device use; membership is for people who need device-to-device continuity or want the interface and details to fit them better.**
 
 ## Where to check your subscription status
 
@@ -40,4 +42,4 @@ Not automatically. See [Platform purchases and restore](/en/subscription/platfor
 
 Subscription controls which features you can use, not who owns your data.
 
-Even if your subscription lapses, your local task data stays intact and you can keep using all features that don't require a subscription.
+Even if your subscription lapses, your local tasks, projects, values, lightweight journal entries, and backups stay intact. You can keep using every free feature. Membership only makes that content easier to sync across devices and gives you more room to tailor the experience.

@@ -1,49 +1,47 @@
 ---
 title: "Subscription entitlements"
-description: "See how entitlements take effect, and understand the relationship between local display, server state, and purchase records."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "What subscriber features look like in the app, and how subscriber-only settings differ from the rest."
 ---
 
-See how entitlements take effect, and understand the relationship between local display, server state, and purchase records.
+Subscriber features are spread across GranoFlow — there's no single "subscriber area." Instead, you'll find them where they naturally live.
 
-## Where To Start
+![Subscription entitlements](../../../screenshots/en/subscription-vip-settings.png)
 
-Check the current entitlement from Subscription or Account. Subscription status should come from the server account state; local display is only the current UI feedback.
+## Subscriber-only features
 
-## How To Use It
+**Sync**
 
-- After purchase, stay signed in to the same account and wait for subscription state to refresh.
-- Use the restore entry for the platform where the purchase was made, and confirm the signed-in account is correct.
-- If entitlement does not appear, check platform, account, network, and purchase record before changing the subscription state.
+- Multi-device cloud sync
+- Sync history and status view
 
-## Results And Boundaries
+**AI assistance**
 
-Subscription affects available entitlements, but it does not change ownership of your task data. Purchase records, platform orders, and the GranoFlow account need to line up.
+- AI title parsing (recognizes dates, tags, reminders)
+- Clipboard assistant
+- Custom AI redaction terms
 
-- Purchases on one platform may not automatically transfer to another platform.
-- Payment card details are handled by the platform; GranoFlow does not store them as part of manual app operations.
+**Personalization**
 
-## Member-Only Settings
+- Custom review prompts
+- Journal templates
+- Helper prompt customization
+- Diagnostics configuration and heatmap threshold settings
 
-Member-only settings collect more advanced personalization features, such as AI redaction terms, the Helper prompt, review prompts, note templates, diagnostic settings, and heatmap thresholds. Some entries may be read-only, show an upgrade prompt, or block saving changes when the current account does not have access.
+## What happens when you're not subscribed
 
-<!-- manual-screenshot:id=subscription-vip-settings -->
-![Subscription entitlements screen](../../../screenshots/en/subscription-vip-settings.png)
+Most subscriber-only entries are still visible to free users, but:
 
-These settings explain which entitlements you can use. They do not directly resolve sync conflicts, data recovery, or account recovery. For data safety, cloud keys, or syncing a new device into existing cloud data, use the relevant data safety pages.
+- Tapping them shows an upgrade prompt
+- Some settings become read-only (changes can't be saved)
 
-## Sync Membership Notice
+This lets you explore what's available before deciding to subscribe.
 
-When you use a sync entry but the current account does not have an available entitlement, GranoFlow may show a sync membership notice. This page explains why sync requires membership and where to view or enable entitlements.
+## A note on sync entitlements
 
-<!-- manual-screenshot:id=subscription-sync-vip-upsell -->
-![Subscription entitlements screen](../../../screenshots/en/subscription-sync-vip-upsell.png)
+Sync is a subscriber feature. If your current account has no active entitlement, the sync entry will show a prompt to view or activate a subscription.
 
-Seeing the sync membership notice does not mean local data is lost, and it does not mean cloud recovery has already run. It is an entitlement prompt at the sync entry; the actual sync state still belongs to the sync page, account state, and data safety pages.
+Seeing the sync entitlement page **does not mean your local data has been lost**. Local data exists independently of sync entitlements.
 
-## Next Step
-
-If restore still fails, keep the platform order information and recheck the subscription account and platform purchase page.
+:::note[Entitlement status comes from the server]
+What the app displays for your subscription status is based on data from GranoFlow's servers. If the network is poor, it may temporarily show an incorrect state — refresh after a moment.
+:::

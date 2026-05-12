@@ -1,62 +1,32 @@
 ---
 title: "Progress"
-description: "Progress: Learn how GranoFlow's default home page helps you review what moved today, yesterday, this week, and this month."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Progress is GranoFlow's default home screen — not a stats dashboard, but a status board that answers: have I been moving forward lately?"
 ---
 
-Progress is GranoFlow's default home page. It helps you quickly see whether you have been moving steadily recently.
+When you open GranoFlow, you land on the Progress page.
 
-It is not just a statistics page. It is a current-state dashboard: you can see what you did today, what was left from yesterday, which projects moved forward this week and this month, and whether those actions are still connected to a longer-term direction.
+It is not a stress-inducing task list and not a metrics-heavy analytics screen. Think of it as a small mirror: what did I do today, what did yesterday leave behind, how far along are my current projects?
 
 ## Today and yesterday
 
-The page shows a brief status for Today and Yesterday, including completed tasks, involved projects, and focus time.
+The top of the page shows brief summaries for today and yesterday — tasks completed, projects touched, time invested.
 
-Click Today to open the task page and continue working on current tasks.  
-Click Yesterday to open the review for that date and see what you completed yesterday.
+![Progress page](../../../screenshots/en/interface-home-progress-main.png)
 
-## Project progress
+Tap "Today" to jump into the task list and keep going. Tap "Yesterday" to open yesterday's review and see what you finished.
 
-If you are moving projects forward, the Progress page shows key project cards.
+## Project progress cards
 
-A project card usually includes:
+If you are actively working on projects, the Progress page shows cards for them — so you can see where things stand without opening each project individually.
 
-- Project name
-- The milestone currently in focus
-- Task completion progress
-- The next tasks that need attention
+## The question it is trying to answer
 
-Click a project card to open the corresponding project details page.
+The real value of the Progress page is not giving you a tidy completion percentage — it is helping you answer:
 
-## Area value progress
+> Have I been steadily moving toward what I care about?
 
-If you recorded content related to longer-term directions in reviews, the Progress page displays those value items by area.
+If a domain has not shown up for several days, that signal might be worth a moment of reflection in your next review.
 
-This section is not for scoring or ranking. It helps you see whether recent actions are still connected to the directions you care about.
-
-## This week and this month
-
-The Progress page also summarizes movement this week and this month, including project count, completed tasks, and focus time.
-
-Click the weekly or monthly statistics to open the review page and see the fuller weekly review or calendar view.
-
-## Review entry
-
-When the day is close to ending, or when there has already been task progress for the day, the page may show a review entry.
-
-You can write today's review from here, or open the calendar to see what has accumulated over a longer period.
-
-## First use
-
-If you have not created tasks, projects, or area content yet, the Progress page shows onboarding guidance.
-
-You can start with three things:
-
-1. Create your first task.
-2. Create your first project.
-3. Edit an important area or value direction.
-
-After you complete these, the Progress page will gradually change from onboarding into your personal progress dashboard.
+:::note[Progress vs Review]
+Progress gives you a quick glance. Review is where the deeper thinking happens. They complement each other.
+:::

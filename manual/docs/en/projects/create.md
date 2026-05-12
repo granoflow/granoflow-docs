@@ -1,31 +1,43 @@
 ---
-title: "Create projects"
-description: "Create a project, set its basic information, and understand how empty projects, existing tasks, and later archiving relate."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "Create a project"
+description: "Creating a project takes a few seconds — give it a name and you are done. This page shows you the entry point, what you can set up, and when it makes sense to create one."
 ---
 
-Create a project, set its basic information, and understand how empty projects, existing tasks, and later archiving relate.
+Creating a project is fast: open the projects page, tap **+**, give it a name, done.
 
-## Where To Start
+## Where to start
 
-Open the Projects page. A project holds a goal over time, milestones describe stages, and tasks carry the actual actions.
+In the project list, tap the **+** button in the top-right corner. A creation dialog appears.
 
-## How To Use It
+![Create project dialog](../../../screenshots/en/projects-create-dialog.png)
 
-- Create or open a project, then check whether the name and goal are clear before linking tasks.
-- Add milestones for stages; create or move tasks for execution instead of putting every instruction into the project name.
-- Before completing or archiving a project, check whether active tasks or milestones still remain inside it.
+You can fill in:
 
-## Results And Boundaries
+- **Name** (required): make it descriptive — "Q3 product launch" beats "Project 1" every time
+- **Domain** (optional): assign the project to a life area like Work, Health, or Learning
+- **Due date** (optional): the overall target completion date for the project
 
-Projects change how tasks are organized, but they do not replace Today, tag filters, or daily review. A task can appear in a project and also appear in other views because of date or completion state.
+:::tip[A good name saves future headaches]
+The project name is the first thing you see when scanning your project list. A verb-plus-goal format works well: "Finish thesis" instead of "Thesis".
+:::
 
-- Empty projects can be deleted more directly; projects with tasks or milestones usually require you to handle the contents first.
-- Archiving a project organizes a long-running goal; it does not delete all related tasks.
+## Create empty vs tasks-first
 
-## Next Step
+Both approaches work — pick whichever fits how you think:
 
-Continue with creating projects, milestones, linking tasks, or archive rules depending on the action you need.
+| Approach | Best when |
+|----------|-----------|
+| Create project first, add tasks later | Planning phase — you want to build the structure first |
+| Capture tasks in inbox, then assign to project | Action phase — capture quickly, organize later |
+
+Either way, tasks end up in the project.
+
+## After creating the project
+
+The usual next steps are:
+
+1. Add milestones (optional) — if the goal has clear phases
+2. Link existing tasks to the project
+3. Create new tasks directly inside the project
+
+If you are not sure what to add yet, just close the project page. It will be there when you come back.

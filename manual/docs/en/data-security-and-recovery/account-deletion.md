@@ -1,31 +1,37 @@
 ---
 title: "Account deletion and data handling"
-description: "Before deleting an account, distinguish remote data, local data, and recovery possibilities instead of treating deletion as sign-out."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Deleting your account removes cloud data but does not automatically clear local copies on each device — understand the scope before acting."
 ---
 
-Before deleting an account, distinguish remote data, local data, and recovery possibilities instead of treating deletion as sign-out.
+Deleting your GranoFlow account is irreversible. Clarify a few things before you proceed.
 
-## Where To Start
+## What happens when you delete your account
 
-Start from Data, Security, Sync, Backup, or Account settings. First decide whether you are handling everyday sync, device migration, accidental deletion, or account deletion.
+| | After account deletion |
+|--|----------------------|
+| Cloud data | Permanently deleted after the grace period |
+| Local data on each device | **Not automatically removed** |
+| Subscription benefits | Expire with the account |
+| Can it be undone? | Only during the grace period |
 
-## How To Use It
+## Checklist before deleting
 
-- Check whether the data is visible on the current device first, then decide whether it needs to sync elsewhere.
-- Before encryption, recovery key, backup import, or account deletion actions, read the confirmation text and keep necessary credentials.
-- After the action, check current and other devices. For restore, prefer a clear backup file or restore entry point.
+- [ ] You no longer need cloud sync or cross-device sharing
+- [ ] If you want to keep your data, export a local backup first
+- [ ] If you have an active subscription, review the refund policy
+- [ ] If you use multiple devices, understand what data is on each
 
-## Results And Boundaries
+## Account deletion vs signing out
 
-GranoFlow follows a local-first approach: local availability is the base, while sync and backup extend it to multi-device and recovery scenarios. They complement each other but do not replace each other.
+- **Sign out**: disconnects this device from the account, local data stays, can sign back in anytime
+- **Delete account**: cancels the account, cloud data deleted after grace period, cannot be undone
 
-- Sync is not backup, and backup does not solve every account or key issue.
-- Encryption and recovery keys protect data, but recovery is limited if the key is lost or no usable backup remains.
+If you just want a break from GranoFlow, sign out. Account deletion is permanent.
 
-## Next Step
+## The grace period
 
-If you are unsure where to start, use the data and security overview, then return to the matching sync, backup, recovery key, or account page.
+After submitting a deletion request, there is usually a grace period (see the in-app notice for the exact duration). During this period, you can cancel the request to restore the account. After the grace period ends, deletion is irreversible.
+
+:::caution[Local data does not disappear automatically]
+After deleting your account, your local GranoFlow data on each device remains until you manually uninstall the app or clear app data. If you do not want it, remove it manually.
+:::

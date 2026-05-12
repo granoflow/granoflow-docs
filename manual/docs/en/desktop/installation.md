@@ -1,31 +1,36 @@
 ---
 title: "Desktop installation"
-description: "Install the desktop app and confirm system requirements, download source, and common first-open prompts."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Download and install the GranoFlow desktop app, and what to do if your system blocks it on first launch."
 ---
 
-Install the desktop app and confirm system requirements, download source, and common first-open prompts.
+The desktop app lets GranoFlow live on your computer so you can summon it with a shortcut at any moment — no need to open a browser tab.
 
-## Where To Start
+## Download and install
 
-Install from the official or trusted download entry, then sign in or open local data after first launch. Desktop shares the core concepts with the web app but differs in window, tray, and offline behavior.
+Get the installer from the [GranoFlow website](https://granoflow.com):
 
-## How To Use It
+- **macOS**: download the `.dmg` file, open it, and drag GranoFlow into Applications
+- **Windows**: download the `.exe` installer and follow the setup wizard
 
-- Follow system prompts during installation and first launch. If the system blocks the app, confirm the download source before proceeding.
-- Pay attention to closing the window, hiding to tray, and fully quitting so the app state is not misunderstood.
-- Offline, continue working with locally available content. When back online, check sync and update state.
+## macOS says "cannot be opened" — what to do
 
-## Results And Boundaries
+macOS may warn that GranoFlow is from an unidentified developer on first launch.
 
-Desktop is useful for staying close to tasks, but it still follows local-first, sync, and account boundaries. Tray, shortcut, and installation prompts can vary by operating system.
+Fix it:
 
-- Closing a window may not quit the app, especially on systems with tray support.
-- Offline availability does not mean every cloud state has finished syncing.
+1. Right-click the app in Finder → choose "Open"
+2. Click "Open" again to confirm
 
-## Next Step
+Or: System Settings → Privacy & Security → find the blocked GranoFlow entry → click "Open Anyway".
 
-If installation or launch fails, recheck the download source, app version, system permissions, and desktop installation steps.
+## Windows SmartScreen warning — what to do
+
+Click "More info" → "Run anyway".
+
+## After installation
+
+Sign in with your account. If you have existing cloud data, GranoFlow will start syncing automatically.
+
+:::note[Desktop and mobile share the same account]
+Same account, same cloud data — changes sync across all your devices automatically.
+:::

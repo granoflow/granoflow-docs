@@ -1,31 +1,57 @@
 ---
-title: "Create and edit tasks"
-description: "Create and edit tasks from the bottom plus button, the inbox, or task details, and understand where the task goes after saving."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "Creating and editing tasks"
+description: "Creating a task should take under five seconds. Write a title, save, done. This page explains every field and when you actually need it."
 ---
 
-Create and edit tasks from the bottom plus button, the inbox, or task details, and understand where the task goes after saving.
+One rule for adding a task: **write a title, hit save**. Everything else is optional — fill in the details when you need them.
 
-## Where To Start
+## Where to create a task
 
-Start from the bottom `+`, Inbox, today list, or an existing task detail page. Quick capture only needs a title; add date, project, tags, reminders, or breakdown steps when you are ready to organize it.
+| Entry point | Best for |
+| --- | --- |
+| Bottom **+** button | Quick capture anytime |
+| Input field in Inbox | When you are already organizing the inbox |
+| Inside a project or milestone | To assign the task directly |
+| Node inside an existing task | To break a big task into steps |
 
-## How To Use It
+## The task editing screen
 
-- Enter a title and save. The task appears in the list that matches the entry point; without a project or date, it usually stays in Inbox or the task list for later organization.
-- In task details, edit title, notes, date, project, tags, reminders, and subtasks. After saving, related views regroup the task by the new fields.
-- If it is only a temporary thought, saving the title is enough. GranoFlow's write rules protect the basic task state so unfinished tasks are not mistaken for archived content.
+![Create and edit task dialog](../../../screenshots/en/tasks-create-edit-dialog.png)
 
-## Results And Boundaries
+What each field does:
 
-After saving, the task appears by date, project, tag, and completion state. Editing those fields changes the same task's placement and visibility; it does not create a copy.
+| Field | Required? | What it does |
+| --- | --- | --- |
+| Title | ✅ Yes | The task name — be specific so it is easy to act on |
+| Description | Optional | Background notes, links, context |
+| Due date | Optional | Sets which day's task list it appears in |
+| Reminder | Optional | Sends a notification at the set time (cannot be in the past) |
+| Project | Optional | Moves the task out of the inbox into a project |
+| Milestone | Optional | Assigns the task to a specific phase within a project |
+| Tags | Optional | For filtering; a task can have multiple tags |
+| Nodes | Optional | Breaks the task into smaller steps |
 
-- Reminders cannot be set in the past.
-- Completion, archive, and deletion are different states; editing fields does not automatically complete a task.
+:::tip[Natural language input]
+In the title field, you can type `#tag`, `@date`, or `~reminder` and GranoFlow will parse them automatically. For example, `Finish report @tomorrow #work` will detect tomorrow's date and a "work" tag. See [Writing tasks in natural language](title-parser) for the full syntax.
+:::
 
-## Next Step
+## Where does the task go after saving?
 
-If the title already includes date, tag, or project hints, continue with "Write tasks in natural language".
+It depends on what you filled in:
+
+- **No date, no project** → Inbox
+- **Date set** → That day's task list
+- **Project assigned** → Inside the project
+- **Created inside a project page** → Automatically assigned to that project
+
+Editing a field does not create a new task — it changes where the same task lives.
+
+## Editing an existing task
+
+Tap any task to open its detail view. Change any field; the task auto-saves when you close the detail.
+
+:::caution[Note]
+Reminders cannot be set to a time in the past. If you try, the system will prompt you to pick a new time.
+:::
+
+Completing, archiving, and deleting are separate actions. Editing a task field does not automatically mark it complete.

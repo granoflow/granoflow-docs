@@ -1,31 +1,39 @@
 ---
 title: "Backup and restore"
-description: "Use backups to reduce risk from accidental deletion, device failure, or migration, and understand that restore does not replace everyday sync."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Backup is your last line of defense against accidental deletion, device failure, or migration — but it requires action on your part."
 ---
 
-Use backups to reduce risk from accidental deletion, device failure, or migration, and understand that restore does not replace everyday sync.
+Backup is your "undo" for situations sync cannot handle. But it is not automatic — you have to create it, and save it somewhere safe.
 
-## Where To Start
+![Backup and restore management screen](../../../screenshots/en/data-backup-restore-management.png)
 
-Start from Data, Security, Sync, Backup, or Account settings. First decide whether you are handling everyday sync, device migration, accidental deletion, or account deletion.
+## Backup vs sync
 
-## How To Use It
+| | Backup | Cloud sync |
+|--|--------|-----------|
+| Captures a point-in-time snapshot? | ✅ Yes | ❌ Only current state |
+| Recovers accidentally deleted tasks? | ✅ Yes, to the backup time | ❌ Deletion syncs everywhere |
+| Requires manual action? | ✅ Yes, export manually | Automatic, but no history |
 
-- Check whether the data is visible on the current device first, then decide whether it needs to sync elsewhere.
-- Before encryption, recovery key, backup import, or account deletion actions, read the confirmation text and keep necessary credentials.
-- After the action, check current and other devices. For restore, prefer a clear backup file or restore entry point.
+## When to create a backup
 
-## Results And Boundaries
+- Before upgrading to a major new App version
+- Before switching phones or reinstalling the OS
+- Before deleting a large batch of tasks or a whole project
+- After completing a major phase, if you want to preserve a snapshot
 
-GranoFlow follows a local-first approach: local availability is the base, while sync and backup extend it to multi-device and recovery scenarios. They complement each other but do not replace each other.
+## How to create a backup
 
-- Sync is not backup, and backup does not solve every account or key issue.
-- Encryption and recovery keys protect data, but recovery is limited if the key is lost or no usable backup remains.
+1. Open GranoFlow Settings → Data / Backup
+2. Choose Export backup
+3. Save the file somewhere you control (iCloud, local folder, computer…)
 
-## Next Step
+## How to restore from backup
 
-If you are unsure where to start, use the data and security overview, then return to the matching sync, backup, recovery key, or account page.
+1. Open GranoFlow Settings → Data / Backup
+2. Choose Import backup
+3. Select the backup file and import
+
+:::caution[Restoring overwrites current data]
+Importing a backup replaces your current device data with the backup snapshot. If you want to keep the current device's latest content, export a new backup first, then import the older one.
+:::

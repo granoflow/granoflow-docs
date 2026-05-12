@@ -1,70 +1,68 @@
 ---
 title: "Tasks overview"
-description: "Understand how tasks work in GranoFlow, where to find them, and how they connect to projects, milestones, and long-term domains."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-task-system
+description: "A task is the smallest unit of action in GranoFlow. Capture it first, organize it later — that is the core idea."
 ---
 
-GranoFlow's task system helps you turn scattered thoughts into clear next actions.
+A task is the specific thing you are going to do — from "call mum" to "finish chapter three draft." Anything that needs to happen can be a task.
 
-A task is the smallest action unit in GranoFlow. You can capture one thing first, then organize it later when its relationship to your projects, milestones, or long-term domains becomes clearer.
+The biggest difference from a plain to-do app is that tasks in GranoFlow can connect to projects, milestones, and domains — so you always know why a task matters, not just that it exists.
 
-## Task entry points
+But none of that is required. You can use tasks as a plain checklist and GranoFlow works fine that way too.
 
-You can add a task from the `+` button in the middle of the bottom bar.
+## How to add a task
 
-The quick add entry point is designed for capture first. Write down the clearest thing in front of you, then optionally set a date, project, milestone, and tags. You do not need to decide the full structure before saving the task.
+Fastest way: tap the **+** button in the middle of the bottom bar, type what you need to do, and save.
 
-If a task has no date and no project, it stays in the inbox first. After you assign it to a project, it leaves the inbox and appears in that project. This keeps the inbox closer to a place for items waiting to be organized, not a permanent folder.
+You do not need to figure out the project, due date, or tags right now. Capture first, organize later.
 
-You can also find tasks through the top-left menu:
+![Tasks overview interface](../../../screenshots/en/tasks-overview-main.png)
 
-- Inbox: Temporarily stores newly captured ideas and tasks before you organize them.
-- Task list: Shows the tasks you are actively moving forward.
-- Completed: Shows tasks you have already completed.
-- Archived: Stores tasks or related content that no longer need daily attention.
-- Trash: Shows deleted items waiting for handling.
+If a task has no due date and no project, it lands in the **Inbox**. Think of the Inbox as your pocket notes — safe for now, sort them out when you have time.
 
-## Tasks, projects, milestones, and domains
+The top-left menu shows every task view:
 
-Tasks are for concrete actions.
+| View | What it shows |
+| --- | --- |
+| Inbox | Tasks with no date or project yet |
+| Task list | Active, in-progress tasks |
+| Completed | Tasks you have finished |
+| Archived | Tasks you want to keep but not see daily |
+| Trash | Deleted tasks — still recoverable |
 
-Complex tasks can be broken down into smaller steps. You do not have to finish a large task all at once. You can make the next step clear first.
+## How tasks, projects, milestones, and domains relate
 
-Projects group related tasks around a goal or direction.
+Start with tasks. Add structure above them only when it helps:
 
-Milestones mark stage goals or meaningful progress points inside a project.
+```mermaid
+graph LR
+  A[Task] -->|belongs to| B[Milestone]
+  B -->|belongs to| C[Project]
+  C -->|filed under| D[Domain]
+```
 
-Domains describe long-term areas and values you care about, such as work, learning, relationships, health, or creative life.
+- **Task**: the specific thing you are doing — the basic unit
+- **Milestone**: a phase checkpoint inside a project (like "user testing done")
+- **Project**: a sustained goal over time (like "App launch")
+- **Domain**: a broad life area you care about (like "Work" or "Health")
 
-You do not need to build this structure all at once. Start from a task, then connect it upward only when the larger structure becomes useful.
+Not every task needs a project. Simple things can live as standalone tasks. Add structure where it actually helps.
 
-## Task status and daily use
+## Task statuses
 
-A task can stay in your active list while you are still working on it.
+| Status | When to use it |
+| --- | --- |
+| To-do | Not started yet |
+| In progress | Currently working on it (keep to one at a time) |
+| Completed | Done — records a completion time |
+| Archived | Keeping the record but not tracking it daily |
+| Trash | Deleted but not yet cleared |
 
-If you mark a task as in progress, the system tries to keep only one task in progress at a time, so multiple tasks do not compete for the same attention.
+:::tip[Focus tip]
+Marking a task as "in progress" signals that this is the thing you are working on now. GranoFlow tries to keep only one task in progress at a time — this is intentional. It is harder to be in a state of flow when ten things are simultaneously "in progress."
+:::
 
-When it is done, mark it as completed.
+## First time here?
 
-When it no longer needs daily attention but should still be kept, archive it. Archived tasks are closer to historical records, not daily tasks you keep editing.
+Tap **+**, write down the one thing you most want to get done today, and save it.
 
-If something was added too early or by mistake, you can delete it and later restore it or continue cleaning it up from Trash.
-
-## Layout on different screens
-
-On wide screens or in desktop mode, task-related views may appear with side navigation or a wider layout.
-
-On narrow screens or phones, you mainly work through the bottom navigation, the top-left menu, and the bottom `+` button.
-
-Visual details may differ across platforms, but the relationship between capture, task list, completion, archive, and review stays the same.
-
-## First-time use
-
-If this is your first time using the task system, tap the `+` in the middle of the bottom bar and write down one clear thing.
-
-After saving it, decide whether it is just a regular task or whether it belongs to a project, milestone, or long-term domain.
-
-Do not start by organizing everything. Start by capturing one real next action.
+That is enough. Explore other features as you need them.

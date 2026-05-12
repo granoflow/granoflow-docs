@@ -1,31 +1,46 @@
 ---
-title: "Link tasks to projects"
-description: "Link tasks to a project or milestone, and understand how they appear across project views, Today, and the inbox."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "Link tasks to a project"
+description: "Once a task is linked to a project, does it still show in Today? What is the difference between linking to a milestone vs just the project? Explained here."
 ---
 
-Link tasks to a project or milestone, and understand how they appear across project views, Today, and the inbox.
+A task can be linked to a project, and further linked to a specific milestone inside that project. Linking does not remove the task from other views — it will still appear in date-based views like Today and Calendar.
 
-## Where To Start
+## How to link
 
-Open the Projects page. A project holds a goal over time, milestones describe stages, and tasks carry the actual actions.
+**Option 1: from the task detail**
 
-## How To Use It
+Open the task and choose a project (and optionally a milestone) in the project field. This is the most common way.
 
-- Create or open a project, then check whether the name and goal are clear before linking tasks.
-- Add milestones for stages; create or move tasks for execution instead of putting every instruction into the project name.
-- Before completing or archiving a project, check whether active tasks or milestones still remain inside it.
+**Option 2: drag into the project**
 
-## Results And Boundaries
+In the project detail view, drag an existing task into a milestone.
 
-Projects change how tasks are organized, but they do not replace Today, tag filters, or daily review. A task can appear in a project and also appear in other views because of date or completion state.
+![Drag to link tasks to a project](../../../screenshots/en/projects-link-tasks-drag.png)
 
-- Empty projects can be deleted more directly; projects with tasks or milestones usually require you to handle the contents first.
-- Archiving a project organizes a long-running goal; it does not delete all related tasks.
+## Where a linked task appears
 
-## Next Step
+After linking to a project, the same task shows up in:
 
-Continue with creating projects, milestones, linking tasks, or archive rules depending on the action you need.
+| View | Behavior |
+|------|----------|
+| Project page | Listed under the milestone |
+| Today view | Still appears if the task is due today |
+| Calendar view | Shows by due date |
+| Inbox | **No longer appears** (tasks leave the inbox once linked to a project) |
+
+:::note[Inbox behavior]
+Only tasks with no due date, no project, and no milestone stay in the inbox. The moment you link a task to a project, it leaves the inbox automatically. This is expected.
+:::
+
+## Remove a task from a project
+
+Open the task detail and clear the project field. If the task also has no due date, it returns to the inbox.
+
+## Can a task belong to multiple projects?
+
+No. Each task belongs to exactly one project (and one milestone).
+
+If a task feels like it spans two projects, you have two options:
+
+1. Pick the project it belongs to most
+2. Split it into two tasks, one for each project

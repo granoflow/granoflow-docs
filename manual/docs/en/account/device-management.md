@@ -1,31 +1,33 @@
 ---
 title: "Device management"
-description: "View and manage signed-in devices, and understand the boundaries between device removal, sync identity, and local data."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "View which devices are signed in to your account, and understand what removing a device actually does — and does not do."
 ---
 
-View and manage signed-in devices, and understand the boundaries between device removal, sync identity, and local data.
+Device management shows you which devices are signed in to your GranoFlow account — your iPhone, iPad, Mac, and so on.
 
-## Where To Start
+## What removing a device means
 
-Open Account settings. The account handles sign-in identity, sync identity, device list, and subscription recognition; it is not the local data itself.
+Removing a device = **disconnecting your account from that device**.
 
-## How To Use It
+It does not mean:
 
-- After signing up or signing in, confirm that this is the account you want to use for sync and subscription recognition.
-- Use device management to review signed-in devices. Removing a device changes account association; it does not necessarily erase local data on that device.
-- Before sign-out, reset, or deletion actions, confirm whether you have a backup and whether remote data is affected.
+- ❌ Local data on that device gets deleted
+- ❌ Tasks on that device disappear
+- ❌ Your account gets canceled
 
-## Results And Boundaries
+The device simply needs to sign in again the next time GranoFlow opens.
 
-Account state affects sync, subscription, and device recognition. After switching accounts, remote state may look different while local data may still exist on the device.
+## When to remove a device
 
-- Signing out is not account deletion, and account deletion is not the same as clearing every local copy.
-- Dangerous actions usually require confirmation; stop first if the impact is unclear.
+- You switched phones and no longer use the old one
+- A borrowed device still has your account signed in
+- Your device list shows entries you do not recognize
 
-## Next Step
+## Checklist before removing
 
-If the issue is about subscription, continue with “Subscription overview”; if it is about local data, continue with “Backup and restore”.
+- [ ] Confirm the device's data has synced to the cloud, or you no longer need it
+- [ ] If the device is still in use, removing it pauses sync until it signs in again
+
+:::note[Device limits]
+Some membership plans limit how many devices can be signed in simultaneously. If you see a prompt, remove an older device first, then sign in on the new one.
+:::

@@ -1,31 +1,31 @@
 ---
 title: "System tray and window"
-description: "Understand desktop window, tray, and close behavior so hiding in the background is not mistaken for quitting."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Closing the window does not quit the app — understand how the desktop tray works to avoid confusion."
 ---
 
-Understand desktop window, tray, and close behavior so hiding in the background is not mistaken for quitting.
+One thing that surprises new desktop users: **closing the window is not the same as quitting the app**.
 
-## Where To Start
+![System tray and window behavior](../../../screenshots/en/desktop-tray-window-behavior.png)
 
-Install from the official or trusted download entry, then sign in or open local data after first launch. Desktop shares the core concepts with the web app but differs in window, tray, and offline behavior.
+## What happens when you close the window
 
-## How To Use It
+On macOS and Windows, clicking the close button (×) typically **hides the window**. GranoFlow keeps running in the background and continues syncing.
 
-- Follow system prompts during installation and first launch. If the system blocks the app, confirm the download source before proceeding.
-- Pay attention to closing the window, hiding to tray, and fully quitting so the app state is not misunderstood.
-- Offline, continue working with locally available content. When back online, check sync and update state.
+This is by design — it lets GranoFlow stay ready for instant recall.
 
-## Results And Boundaries
+## How to bring the window back
 
-Desktop is useful for staying close to tasks, but it still follows local-first, sync, and account boundaries. Tray, shortcut, and installation prompts can vary by operating system.
+- **macOS**: click the GranoFlow icon in the menu bar
+- **Windows**: click the GranoFlow icon in the system tray
+- **Any platform**: use your configured global shortcut
 
-- Closing a window may not quit the app, especially on systems with tray support.
-- Offline availability does not mean every cloud state has finished syncing.
+## How to actually quit the app
 
-## Next Step
+- **macOS**: right-click the Dock or menu bar icon → "Quit"
+- **Windows**: right-click the tray icon → "Exit"
 
-If installation or launch fails, recheck the download source, app version, system permissions, and desktop installation steps.
+Once quit, GranoFlow stops syncing in the background until you relaunch it.
+
+:::tip[Want closing the window to quit the app?]
+You can change this behavior in GranoFlow Preferences.
+:::

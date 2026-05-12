@@ -1,31 +1,40 @@
 ---
-title: "How AI helps parse titles"
-description: "Learn when title parsing works, what may be recognized as dates, tags, projects, or reminders, and how unconfirmed text is preserved."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "How AI helps organize titles"
+description: "When you type a task title, AI can recognize dates, tags, projects, and reminders — but it never changes your task without confirmation."
 ---
 
-Learn when title parsing works, what may be recognized as dates, tags, projects, or reminders, and how unconfirmed text is preserved.
+You type "Meeting with Sarah tomorrow 3pm #work" — and then have to manually set the due date, add the tag, and set the reminder. Everything was already in the title.
 
-## Where To Start
+Title parsing solves this.
 
-Start from the matching AI feature. Title parsing appears while writing task titles, the clipboard assistant starts from clipboard content, and the other pages explain boundaries before use.
+![Title parsing interface](../../../screenshots/en/ai-title-parsing-quick-add.png)
 
-## How To Use It
+## What title parsing recognizes
 
-- Provide only the text needed for the current task or clipboard operation.
-- Review AI recognition, cleanup, or rewrite suggestions. If task fields would change, you must confirm before anything is written.
-- Before confirmation, you can cancel, edit, or accept only part of a suggestion. Unconfirmed suggestions do not change tasks.
+GranoFlow analyzes your task title as you type, looking for:
 
-## Results And Boundaries
+- **Time expressions**: tomorrow, next Friday, March 15, 3pm…
+- **Tags**: #work #personal and similar hashtag patterns
+- **Project mentions**: automatically matches your existing project names
+- **Reminder triggers**: "remind me," "don't forget," and similar phrases
 
-AI in GranoFlow is an assistant for organizing, not an autonomous agent. It can reduce input and cleanup effort, but structure, privacy choices, and final writes remain yours.
+## What happens after recognition
 
-- Reading the manual does not automatically send local tasks to AI; text may enter processing only when you use an AI feature.
-- AI output may be incomplete or wrong for the context. Important tasks should follow the fields you confirmed.
+AI shows its findings as suggestions — **nothing writes automatically**. You can:
 
-## Next Step
+- ✅ Accept all suggestions
+- ✅ Accept only some (for example, just the tag but not the date)
+- ✅ Ignore all suggestions and keep typing normally
 
-If you are concerned about data scope, read “What may be sent to AI”; if you are concerned about accidental edits, read “Why changes need confirmation”.
+Suggestions that are not accepted have zero effect on the task.
+
+## When recognition is wrong
+
+AI recognition is rule-based and model-assisted — not 100% accurate. If something is misidentified:
+
+- Just ignore that suggestion — unaccepted suggestions do not write
+- Set the correct field manually in task details
+
+:::note[English date expressions work too]
+Writing "tomorrow 3pm" or "next Monday" in your title is also recognized — no need to use Chinese only.
+:::

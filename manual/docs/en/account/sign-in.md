@@ -1,31 +1,37 @@
 ---
 title: "Sign up and sign in"
-description: "Sign up or sign in, and understand how sign-in affects sync, devices, and subscription recognition."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Complete sign-up or sign in, and understand how your signed-in state affects sync, devices, and subscription recognition."
 ---
 
-Sign up or sign in, and understand how sign-in affects sync, devices, and subscription recognition.
+GranoFlow uses passwordless sign-in. No username-plus-password combo — just your email address and a verification link.
 
-## Where To Start
+![Sign-in screen](../../../screenshots/en/account-sign-in-logged-out.png)
 
-Open Account settings. The account handles sign-in identity, sync identity, device list, and subscription recognition; it is not the local data itself.
+## How to sign in
 
-## How To Use It
+1. Enter your email address
+2. Check your inbox for the verification email and click the link
+3. Return to GranoFlow — you are signed in
 
-- After signing up or signing in, confirm that this is the account you want to use for sync and subscription recognition.
-- Use device management to review signed-in devices. Removing a device changes account association; it does not necessarily erase local data on that device.
-- Before sign-out, reset, or deletion actions, confirm whether you have a backup and whether remote data is affected.
+No password to remember or forget.
 
-## Results And Boundaries
+## Why the same email matters
 
-Account state affects sync, subscription, and device recognition. After switching accounts, remote state may look different while local data may still exist on the device.
+Sync, device recognition, and subscription benefits are all tied to your account (your email address). If you sign in with `a@gmail.com` on your phone and `b@gmail.com` on your computer, those are **two separate accounts** — data does not sync between them.
 
-- Signing out is not account deletion, and account deletion is not the same as clearing every local copy.
-- Dangerous actions usually require confirmation; stop first if the impact is unclear.
+## Using GranoFlow without signing in
 
-## Next Step
+You can use GranoFlow without an account — tasks, journals, and all features work normally.  
+These features require sign-in:
 
-If the issue is about subscription, continue with “Subscription overview”; if it is about local data, continue with “Backup and restore”.
+- Cross-device sync
+- Subscription recognition
+- Encrypted cloud backup
+
+## What signing out does
+
+Signing out **does not delete any data on this device**. Your tasks, journals, and projects stay intact — you just need to sign in again next time.
+
+:::note[Cannot find the verification email?]
+Check your spam folder first. If 5 minutes have passed with no email, you can request a new one.
+:::

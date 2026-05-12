@@ -1,62 +1,35 @@
 ---
 title: "價值觀與提示詞"
-description: "調整回顧提問、Prompt 和問卷設定，讓日回顧、週回顧和相關草稿更貼近你的語言。"
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "調整回顧提示和價值觀設定，讓日記和回顧說「你自己的話」，而不是套通用範本。"
 ---
 
-這些設定改變回顧時如何提問和組織表達，不會替你自動判斷一天過得好不好。你可以用它們讓日回顧、週回顧、日記、領域價值觀、工作學習報告和問卷更貼近自己的語言。
+有沒有發現，每次做回顧，問題都一樣，答案越來越應付？
 
-## 從哪裡開始
+這套設定就是解決這個問題的——讓日回顧、週回顧、日記、價值觀提示都說「你的話」，而不是系統預設的通用格式。
 
-從回顧頁、設定頁或會員專屬設定進入。先選擇你要調整的是日回顧、週回顧、日記、領域價值觀、工作學習報告，還是分析與問卷。
+![價值觀與提示詞設定界面](../../../screenshots/zh-tw/review-values-prompts-settings.png)
 
-<!-- manual-screenshot:id=review-values-prompts-settings -->
-![價值觀與提示詞 介面截圖](../../../screenshots/zh-tw/review-values-prompts-settings.png)
+## Prompt 設定做什麼
 
-## Prompt 設定會影響什麼
+把它理解成「給 AI 助手的工作說明」。每種場景有獨立的 Prompt：
 
-Prompt 設定用於整理「複製給外部 AI 或內部生成器的指令」。例如：
+| 場景 | 截圖 | 影響什麼 |
+|------|------|----------|
+| 日回顧改寫 | ![](../../../screenshots/zh-tw/review-daily-journal-prompt-settings.png) | 當天筆記被整理時的要求 |
+| 週回顧 | ![](../../../screenshots/zh-tw/review-weekly-review-prompt-settings.png) | 一週記錄被總結時的方式 |
+| 領域價值觀 | ![](../../../screenshots/zh-tw/review-domain-values-prompt-settings.png) | 探索價值觀時給 AI 的問題 |
+| 工作學習報告 | ![](../../../screenshots/zh-tw/review-work-learning-report-prompt-settings.png) | 報告草稿的組織方式 |
 
-<!-- manual-screenshot:id=review-weekly-review-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-weekly-review-prompt-settings.png)
+改完 Prompt 之後，下次用對應功能時會讀取新文字。已有記錄和歷史總結不會自動重寫。
 
-<!-- manual-screenshot:id=review-daily-journal-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-daily-journal-prompt-settings.png)
+## 問卷與價值觀設定
 
-<!-- manual-screenshot:id=review-domain-values-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-domain-values-prompt-settings.png)
+![問卷設定界面](../../../screenshots/zh-tw/review-questionnaire-prompt-settings.png)
 
-<!-- manual-screenshot:id=review-work-learning-report-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-work-learning-report-prompt-settings.png)
+分析與問卷設定控制「回顧問卷什麼時候定稿」等行為，幫你把當天記錄收束成相對穩定的結果。
 
-- 日回顧改寫 Prompt：影響當天筆記被整理或改寫時的要求。
-- 週回顧 Prompt：影響一週記錄被總結時的提問方式。
-- 日記 Prompt：影響從當天筆記生成日記草稿時的表達要求。
-- 領域價值觀 Prompt：影響探索領域價值觀時給 AI 的提問。
-- 工作學習報告 Prompt：影響工作學習報告草稿的組織方式。
+領域價值觀設定把你的長期方向帶進回顧上下文。價值觀可以隨時修改，也可以隨著實際記錄慢慢變清楚。
 
-修改 Prompt 後，後續使用對應功能時會讀取新的文字。已經寫下的任務、記錄和歷史總結不會因為你改了 Prompt 自動重寫。
-
-## 問卷和價值觀設定
-
-分析與問卷設定用於控制回顧問卷的定稿時間等行為。它幫助你把當天記錄收束成相對穩定的結果，但不會判斷哪一天「好」或「不好」。
-
-<!-- manual-screenshot:id=review-questionnaire-prompt-settings -->
-![價值觀與提示詞界面截图](../../../screenshots/zh-tw/review-questionnaire-prompt-settings.png)
-
-領域價值觀設定用於把長期方向帶進回顧上下文。價值觀可以修改，也可以隨著實際記錄慢慢變清楚；它不是一次填完後永遠正確的分類表。
-
-## 結果和邊界
-
-這些設定會影響後續提示、草稿和問題組織方式，但不會直接改變任務、專案、里程碑或已有記錄。
-
-- Prompt 不能保證 AI 輸出準確、完整或適合直接採用。
-- 如果模板或 Prompt 需要插入目前筆記，保留頁面提示的插入點；刪除後可能需要恢復預設再儲存。
-- 會員狀態、登入狀態和目前平台可能影響哪些設定可編輯。
-
-## 下一步
-
-如果你要調整日記或週記成稿結構，繼續看「記錄模板」。如果你要理解診斷標籤和熱力圖閾值，繼續看「診斷與熱力圖」。
+:::tip[不知道從哪裡改起？]
+先從「日記 Prompt」開始——把你覺得好用的寫作習慣或記錄風格告訴 AI，效果最直接。
+:::

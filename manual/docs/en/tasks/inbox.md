@@ -1,104 +1,61 @@
 ---
 title: "Inbox"
-description: "Learn what the Inbox is, when tasks appear there, and why they may disappear after being organized."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "The inbox is your capture-first zone. Write it down, figure out where it belongs later — it is a temporary landing pad, not a permanent home."
 ---
 
-Inbox is where you put tasks that have not been organized yet.
+Something just popped into your head? Write it down. That is what the inbox is for.
 
-When something comes to mind, you do not need to decide immediately where it belongs.  
-Add it first, then organize it later.
+The inbox is a temporary holding area for tasks you have not yet decided where to put. Think of it as a buffer zone between "I just thought of something" and "I know exactly where this belongs." You can organize it later, when you have time.
 
-## Add a task to Inbox
+## How to add a task to the inbox
 
-Tap the **+** button in the navigation bar, write down the task, and save it.
+Tap **+** in the middle of the bottom navigation bar, type the task, save — it lands in the inbox.
 
-You can write something simple, such as:
+No date, no project, no tags needed. Keep it simple:
 
-- Contact the client tomorrow
-- Clean up course notes
-- Think about the homepage copy
-- Buy dental floss
-- Dinner with a friend this weekend
+![Inbox interface](../../../screenshots/en/tasks-inbox-main.png)
 
-It does not need to be perfect.  
-The first goal is to get it out of your head.
+- "Call the client tomorrow"
+- "Organize course notes"
+- "Buy floss"
+- "Weekend dinner with friends"
 
-## When should you use Inbox?
+The first step is just getting it out of your head. You can add details later.
 
-Use Inbox when you are not sure where a task belongs yet.
+## Why some tasks do not appear in the inbox
 
-Inbox is suitable for:
+The inbox only shows tasks with **no date, no project, and no milestone** that are in to-do or in-progress status.
 
-- A task you just remembered
-- A rough idea you may handle later
-- A request someone just gave you
-- A plan that is not clear enough yet
-- Something you do not want to forget
+| What you did when saving | Where the task went |
+| --- | --- |
+| Saved without choosing anything | Inbox ✅ |
+| Picked a due date | That day's task list |
+| Assigned it to a project | Inside that project |
+| Created it from within a project | Automatically assigned to that project |
 
-Do not spend too much time choosing a category when you add the task.  
-You can decide that later.
+A missing task is not lost — it already has a home. Check the task list or project pages.
 
-## Why doesn't a new task appear in Inbox?
+## Why tasks disappear from the inbox
 
-Inbox does not show every task.
+A task leaves the inbox the moment it gets a date, a project, is completed, archived, or deleted. Any of those things counts as "organized."
 
-A task usually appears in Inbox only when it has not been assigned to a date, project, or milestone.
+The inbox is not a folder. Once a task has a place, it belongs there instead.
 
-If you add a task with a clear place already selected, it may go directly there instead of staying in Inbox.
+:::note[Can not find your task?]
+Look in the task list (for tasks with dates) or the specific project page — that is where it went after you organized it.
+:::
 
-For example:
+## How to process the inbox
 
-- If you choose a date, the task appears in that date's task list.
-- If you add it to a project, it appears under that project.
-- If you add it to a milestone, it appears under that milestone.
-- If you create it while viewing a project or milestone, it may belong there automatically.
+You do not need to empty it every day, but do not let important things sit here too long. A quick daily scan at the start of the day works well:
 
-This does not mean the task was lost.  
-It means the task already has a place.
+1. Does this need to happen on a specific day? → Give it a due date
+2. Does it belong to a project? → Move it into that project
+3. Is it still worth doing? → If not, delete it
+4. Can it be done in under three minutes? → Just do it now
 
-## Why does a task disappear from Inbox?
+:::tip[A simple habit]
+Spend two minutes on the inbox each morning. Assign the important ones a date or project, leave the rest for now. You do not have to clear it completely.
+:::
 
-A task leaves Inbox when it is no longer an unorganized task.
-
-This can happen when you:
-
-- Assign it to a date
-- Move it into a project
-- Move it into a milestone
-- Complete it
-- Archive it
-- Delete it
-
-Inbox is not a permanent folder.  
-It is a temporary sorting area.
-
-Once a task has been organized, it moves out of Inbox and appears in the place where it now belongs.
-
-When Inbox Move Hints are on, GranoFlow only shows a success hint when a task leaves Inbox and the destination is not immediately visible on the current page, such as Today, a project, or a milestone. Completion, postponing, dragging, and other task actions that are already reflected on the page do not show success hints; error messages still appear.
-
-## Organize Inbox
-
-When you have time, open Inbox and process a few items.
-
-For each task, you can decide:
-
-- Should it be done on a specific date?
-- Does it belong to a project?
-- Is it part of a milestone?
-- Is it still worth keeping?
-- Can it be completed, archived, or deleted now?
-
-You do not need to clear Inbox every day.  
-Just make sure important things do not stay vague for too long.
-
-## A simple habit
-
-At the start of the day, check Inbox for anything important.
-
-At the end of the day, organize a few unclear items.
-
-Inbox works best when it is used as a landing place, not as a final storage place.
+This keeps the inbox a useful capture tool rather than an anxiety-inducing pile.

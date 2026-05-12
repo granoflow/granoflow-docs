@@ -1,31 +1,38 @@
 ---
 title: "Daily review"
-description: "Complete a daily review by recording what happened, how it felt, and what comes next, without turning it into streaks or scoring."
-translationSource: en
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "The daily review counts tasks by actual completion time, not due date. Tasks completed before 6 AM count as the previous day. Here is how the logic works and how to write your notes."
 ---
 
-Complete a daily review by recording what happened, how it felt, and what comes next, without turning it into streaks or scoring.
+The daily review is the most-used part of GranoFlow — a quick glance at what you got done today, a few sentences written, then done.
 
-## Where To Start
+![Daily review](../../../screenshots/en/review-daily-review-main.png)
 
-Open Review. Choose the date or today’s review, then inspect tasks, write notes, or adjust values prompts.
+## How tasks are counted
 
-## How To Use It
+The daily review counts by **actual completion time**, not due date.
 
-- Look at the day’s tasks and existing records first, then decide whether you are adding facts, feelings, or next steps.
-- Keep records short if that is enough. They are reflection material for you, not mandatory reports.
-- Values and prompts can be edited, and questions that do not fit the day can be skipped.
+This means:
+- Task due yesterday, completed today → appears in today's review
+- Task completed at 11:58 PM last night → appears in yesterday's review
+- Task completed at 1:00 AM this morning → **appears in yesterday's review** (tasks completed before 6 AM belong to the previous day)
 
-## Results And Boundaries
+The logic: if you are still working at 1 AM, that is "last night extended," not a new day starting.
 
-Review brings task history, records, and personal standards into one context. It helps you notice patterns, but it does not automatically change future tasks.
+## What to write
 
-- Review is not a streak system; missing a day does not invalidate tasks.
-- Records can relate to tasks, so deleting or changing tasks may reduce later review context.
+No fixed format. Write whatever feels right:
 
-## Next Step
+- What you completed and what you did not
+- What felt easy or hard
+- What you want to prioritize tomorrow
+- What your energy level was like
 
-To make review closer to your own standards, continue with “Values and prompts”.
+Three to five sentences is plenty. You do not have to answer every prompt.
+
+## Days with nothing completed
+
+If you did not finish any tasks on a given day, the daily review shows a quiet empty state — no shame graph, no "you didn't do anything today" message. The emptiness is just an honest record of that day.
+
+:::note[The audience is future you]
+Write the way that makes sense to you, not the way that looks good to someone else.
+:::

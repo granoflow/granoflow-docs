@@ -1,57 +1,37 @@
 ---
-title: "What may be sent to AI"
-description: "Understand what text may enter an external AI tool, and what AI redaction settings can and cannot guarantee."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+title: "What content may be sent to AI"
+description: "Normal use sends nothing to AI — only when you actively trigger an AI feature does relevant text enter the processing pipeline."
 ---
 
-GranoFlow AI features prepare the relevant text you explicitly send, then hand it to an external AI tool. Simply browsing tasks, projects, reviews, or manual pages does not automatically send local data to AI.
+The most important thing first: **browsing tasks, writing journals, and doing reviews do not send any data to AI.**
 
-## Where To Start
+Data enters the AI pipeline only when you actively trigger an AI feature, and only the text relevant to that specific operation.
 
-Judge the data scope from the AI feature you are using:
+![AI redaction settings](../../../screenshots/en/ai-redaction-settings.png)
 
-- While writing a task title, title parsing focuses on the title you are entering.
-- AI assistant and clipboard entry points first place the current content into the clipboard, then open the external AI tool.
-- Entry points with structured return only listen for clipboard results for a short time after you start AI from inside the app. General consultation assistants do not read the clipboard constantly.
-- AI redaction settings live in settings and control rule-based replacement and automatic discovery before sending.
+## What each feature sends
 
-## What Happens Before Sending
+| AI feature | What is sent |
+|-----------|-------------|
+| Title parsing | The task title you are currently typing |
+| Clipboard assistant | The text you copied to the clipboard |
+| Helper prompt | Current page description + your saved prompt |
+| Review AI organize | The specific review content you triggered organizing for |
 
-When you use an AI feature, GranoFlow prepares the fields needed for that feature. If AI redaction is enabled, it only checks the content fields that the feature marks as redactable, then replaces terms currently set to “Redact” with placeholder tokens.
+## AI redaction settings
 
-It does not scan the entire local database, and it does not rewrite protocol fields, assistant instructions, system rules, or content unrelated to the current feature.
+Three key settings:
 
-## AI Redaction Settings
+- **Master switch**: when off, GranoFlow performs no outbound redaction substitution
+- **Category defaults**: when auto-discovered, whether email, phone, links etc. default to "redacted" or "allowed"
+- **Phone region**: affects the recognition range for phone number patterns
 
-AI redaction settings include the master switch, phone detection regions, and category defaults. Use them before you often send tasks, reviews, or organizing material to an external AI.
+Auto-discovery is rule-based, not intelligent review. It may miss unusual formats and may misidentify ordinary numbers. **You still need to check content before sending.**
 
-<!-- manual-screenshot:id=ai-redaction-settings -->
-![What may be sent to AI screen](../../../screenshots/en/ai-redaction-settings.png)
+## Redaction terms
 
-- When the master switch is off, GranoFlow does not run this redaction replacement before sending.
-- Category defaults affect whether automatically discovered terms default to “Redact” or “No redact.” Common categories include email, phone, links, mentions, hashtags, tokens, IP addresses, paths, and money.
-- Phone regions affect phone-number detection. The wrong region may reduce detection or make ordinary numbers look like phone numbers.
+The word list you maintain in "Redaction terms" is applied automatically before content is sent. See the "Redaction terms" page for details.
 
-Redaction is a rule-based aid, not a security guarantee. It may miss unusually written sensitive information or flag non-sensitive text. Review the text before sending.
+## In one sentence
 
-## Redaction Terms
-
-If you have client names, company names, project codenames, or other fixed sensitive terms, maintain them on the “Redaction terms” page. Terms set to “Redact” are replaced with tokens in outbound content; on return, GranoFlow tries to restore those tokens only in allowed fields.
-
-The redaction terms page has its own guide: read “Redaction terms” before adding, deleting, allowing, or choosing visible versus encrypted cloud sync.
-
-## Results And Boundaries
-
-AI in GranoFlow is an organizing assistant, not an autonomous agent. It can reduce input and cleanup effort, but structure, privacy choices, and final writes remain yours.
-
-- AI output may be incomplete or wrong for the context. Important tasks should follow the fields you confirmed.
-- Unconfirmed suggestions do not change tasks or reviews for you.
-- Redaction terms and category rules only affect content GranoFlow prepares for external AI. They do not mean the external AI will correctly understand, protect, or delete that information.
-
-## Next Step
-
-If you are concerned about accidental edits, read “Why changes need confirmation.” If you want to maintain fixed sensitive terms, read “Redaction terms.”
+> GranoFlow's AI only touches your data when you take action. No background collection, no automatic upload — scope is limited to the current feature's relevant text.

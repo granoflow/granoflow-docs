@@ -1,31 +1,33 @@
 ---
 title: "AI assistant and clipboard"
-description: "Before turning clipboard content into tasks, understand preview, confirmation, and write-back boundaries."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Hand copied text to AI and let it organize into tasks — preview and confirm before anything is written."
 ---
 
-Before turning clipboard content into tasks, understand preview, confirmation, and write-back boundaries.
+You just finished a meeting. The notes are on your clipboard, full of action items scattered across paragraphs. The clipboard assistant turns that mess into a task list, which you review and confirm before writing.
 
-## Where To Start
+![Clipboard assistant settings](../../../screenshots/en/ai-clipboard-assistant-settings.png)
 
-Start from the matching AI feature. Title parsing appears while writing task titles, the clipboard assistant starts from clipboard content, and the other pages explain boundaries before use.
+## How to use it
 
-## How To Use It
+1. Copy the text you want to organize (meeting notes, email snippets, quick notes…)
+2. Open GranoFlow's clipboard assistant
+3. AI analyzes the content and extracts what it thinks are action items
+4. Review the preview and adjust as needed
+5. Confirm to write the tasks
 
-- Provide only the text needed for the current task or clipboard operation.
-- Review AI recognition, cleanup, or rewrite suggestions. If task fields would change, you must confirm before anything is written.
-- Before confirmation, you can cancel, edit, or accept only part of a suggestion. Unconfirmed suggestions do not change tasks.
+## What works well
 
-## Results And Boundaries
+- Action items from meeting notes
+- Follow-ups from emails
+- Commitments from chat conversations
+- Scattered to-dos from personal notes
 
-AI in GranoFlow is an assistant for organizing, not an autonomous agent. It can reduce input and cleanup effort, but structure, privacy choices, and final writes remain yours.
+## Things to watch out for
 
-- Reading the manual does not automatically send local tasks to AI; text may enter processing only when you use an AI feature.
-- AI output may be incomplete or wrong for the context. Important tasks should follow the fields you confirmed.
+- AI extracts what it "understands" as tasks — background context may be misread as a to-do
+- Always check the preview before confirming
+- Content is not sent anywhere in the background — only when you actively trigger the assistant
 
-## Next Step
-
-If you are concerned about data scope, read “What may be sent to AI”; if you are concerned about accidental edits, read “Why changes need confirmation”.
+:::tip[Want to limit what gets sent?]
+Delete irrelevant parts from your clipboard before triggering the assistant, so only the content you actually want organized gets processed.
+:::

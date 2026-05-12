@@ -1,37 +1,36 @@
 ---
 title: "AI limits and FAQ"
-description: "Use common questions to confirm AI capabilities, limits, confirmation behavior, and data boundaries."
-translationSource: en
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Quick answers to the most common questions about GranoFlow's AI features."
 ---
 
-Use common questions to confirm AI capabilities, limits, confirmation behavior, and data boundaries.
+## Will AI automatically change my tasks?
 
-## Where To Start
+**No.** All field changes require your explicit confirmation. Unconfirmed suggestions write nothing.
 
-Start from the matching AI feature. Title parsing appears while writing task titles, the clipboard assistant starts from clipboard content, and the other pages explain boundaries before use.
+## Does AI read my data in the background?
 
-## How To Use It
+**No.** Only when you actively trigger an AI feature does the relevant text enter the processing pipeline.
 
-- Provide only the text needed for the current task or clipboard operation.
-- Review AI recognition, cleanup, or rewrite suggestions. If task fields would change, you must confirm before anything is written.
-- Before confirmation, you can cancel, edit, or accept only part of a suggestion. Unconfirmed suggestions do not change tasks.
+## Which AI service receives my data?
 
-## Results And Boundaries
+It depends on the feature. GranoFlow calls external AI services. See "What content may be sent to AI" for specifics.
 
-AI in GranoFlow is an assistant for organizing, not an autonomous agent. It can reduce input and cleanup effort, but structure, privacy choices, and final writes remain yours.
+## Does redaction guarantee 100% security?
 
-- Reading the manual does not automatically send local tasks to AI; text may enter processing only when you use an AI feature.
-- AI output may be incomplete or wrong for the context. Important tasks should follow the fields you confirmed.
+**No.** Redaction is an aid. It may miss variant spellings, and GranoFlow cannot control how external AI handles content it has already received. Manually review important content before sending.
 
-## What Does the Helper Prompt Change?
+## What if AI misidentifies something?
 
-It changes the default way you ask an external AI for help. Use it to explain which angle the AI should take when discussing a GranoFlow page and how you want it to answer.
+Just do not accept that suggestion — dismissed suggestions have no effect. Then set the correct field manually in task details.
 
-It does not filter sensitive content for you, and it does not give the external AI complete, current, or always-correct product context. Before sending, check the page context, personal content, and redaction settings.
+## What does the Helper prompt do?
 
-## Next Step
+It shapes the default framing when you consult external AI via GranoFlow. Good for writing "how I want AI to interpret GranoFlow pages and answer my questions" — making responses more relevant to your workflow.
 
-If you are concerned about data scope, read “What may be sent to AI”; if you are concerned about accidental edits, read “Why changes need confirmation”.
+## Do AI features require internet?
+
+Yes. AI features depend on external services and cannot work offline.
+
+## What happens when there is no network or the AI service is unavailable?
+
+AI features will show a failure notice. Tasks, reviews, journals, and all core features continue working normally — GranoFlow's local-first design means the essentials never depend on network access.

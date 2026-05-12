@@ -1,37 +1,61 @@
 ---
-title: "Completion, archive, and protection rules"
-description: "Understand completion, archiving, deletion, and restore behavior so normal hiding or protection states are not mistaken for data loss."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "Completion, archive, and trash"
+description: "Task disappeared? Do not panic — it is probably completed, archived, or in the trash. These three states have different purposes."
 ---
 
-Understand completion, archiving, deletion, and restore behavior so normal hiding or protection states are not mistaken for data loss.
+A task not showing up in your list does not mean it is gone. GranoFlow has three places a task can be hiding:
 
-## Where To Start
+- **Completed**: you finished it, it moved to the completed view
+- **Archived**: you set it aside, but kept the record
+- **Trash**: you deleted it, but have not emptied the trash yet
 
-Complete tasks from a task list or detail page. Use archive or deletion when you are organizing historical content.
+Understanding these three keeps you from ever losing sleep over a "missing" task.
 
-## How To Use It
+## Completion
 
-- Marking a task complete removes it from active lists and moves it into completion-related statistics, review, or history.
-- Archive hides inactive tasks from everyday views while keeping them for history.
-- Confirm the impact before deleting. Deletion is closer to irreversible cleanup than completion or archive.
+When you finish something, mark it complete. It will:
 
-<!-- manual-screenshot:id=tasks-archived-list -->
-![Completion, archive, and protection rules screen](../../../screenshots/en/tasks-archived-list.png)
+- Leave the active task list
+- Record a completion timestamp (this is what daily review uses)
+- Appear in the "Completed" view and daily review stats
 
-<!-- manual-screenshot:id=tasks-trash-list -->
-![Completion, archive, and protection rules screen](../../../screenshots/en/tasks-trash-list.png)
+![Completed and archived task views](../../../screenshots/en/tasks-completed-archived-trash.png)
 
-## Results And Boundaries
+:::tip[Do not rush to delete completed tasks]
+Completed tasks are your daily review data. Seeing what you actually finished is often more satisfying than just crossing off a box.
+:::
 
-A task missing from the current list is not necessarily lost. It may be completed, archived, hidden by filters, or moved into a project, date, or tag view.
+## Archive
 
-- Completed tasks and archived tasks serve different purposes. Do not delete just to clear a list.
-- If a task contributes to review, statistics, or project history, deleting it reduces that context.
+Archive is for tasks you do not need to see daily but want to keep on record.
 
-## Next Step
+For example: old tasks from a finished project phase, something that expired but has historical value, content you do not want to see every day but might want to reference later.
 
-If you cannot find a task, first check filters, project, date, completion state, and archive state.
+![Archived task list](../../../screenshots/en/tasks-archived-list.png)
+
+Archive vs complete:
+- **Complete**: the task is genuinely done, it counts in your stats
+- **Archive**: just moves it off the active view — does not count as completed
+
+## Trash
+
+Deleted tasks go to the trash, where they can still be recovered.
+
+![Trash list](../../../screenshots/en/tasks-trash-list.png)
+
+:::caution[Think before emptying]
+Emptying the trash is permanent. If a task was part of a project or has review value, it is gone for good after that.
+:::
+
+## Task is missing — where to look
+
+Check in order:
+
+1. Is a filter hiding it? (e.g. showing only "today")
+2. Does it have a date? → Look in that day's task list
+3. Is it in a project? → Look in the project view
+4. Did you complete it? → Check the "Completed" view
+5. Did you archive it? → Check the "Archived" view
+6. Did you delete it? → Check the trash
+
+Ninety-nine percent of "missing" tasks are in one of those six places.

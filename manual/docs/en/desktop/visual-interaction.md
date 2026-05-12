@@ -1,31 +1,32 @@
 ---
 title: "Desktop interface habits"
-description: "Learn how the desktop app behaves on wide screens, narrow screens, and detail panes so task and statistics entry points are easy to find."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "The desktop app has more screen space — learn the widescreen layout and keyboard shortcuts to work faster."
 ---
 
-Learn how the desktop app behaves on wide screens, narrow screens, and detail panes so task and statistics entry points are easy to find.
+The desktop app's biggest advantage over mobile: a big screen. More space means you can see more context at once.
 
-## Where To Start
+![Desktop widescreen interface](../../../screenshots/en/desktop-visual-interaction-wide.png)
 
-Install from the official or trusted download entry, then sign in or open local data after first launch. Desktop shares the core concepts with the web app but differs in window, tray, and offline behavior.
+## Widescreen layout
 
-## How To Use It
+- **Left sidebar**: navigation — switch between views (Inbox, Projects, Review…)
+- **Center content area**: task list or current page
+- **Right detail panel** (on wide screens): click a task to expand details on the right, without navigating away
 
-- Follow system prompts during installation and first launch. If the system blocks the app, confirm the download source before proceeding.
-- Pay attention to closing the window, hiding to tray, and fully quitting so the app state is not misunderstood.
-- Offline, continue working with locally available content. When back online, check sync and update state.
+On narrow windows, the desktop app collapses to a layout similar to mobile.
 
-## Results And Boundaries
+## Keyboard first
 
-Desktop is useful for staying close to tasks, but it still follows local-first, sync, and account boundaries. Tray, shortcut, and installation prompts can vary by operating system.
+The desktop app supports extensive keyboard shortcuts:
 
-- Closing a window may not quit the app, especially on systems with tray support.
-- Offline availability does not mean every cloud state has finished syncing.
+- Quick-add task: global shortcut (configure in Preferences)
+- Navigate list: arrow keys
+- Complete task: shortcut shown on the task
 
-## Next Step
+## Drag to reorder
 
-If installation or launch fails, recheck the download source, app version, system permissions, and desktop installation steps.
+Drag tasks to reorder them, or drag them into different projects and time slots.
+
+:::tip[Configure your global shortcut]
+Set a global shortcut in GranoFlow Preferences so you can summon GranoFlow from any app, anytime.
+:::

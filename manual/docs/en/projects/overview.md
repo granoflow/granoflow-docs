@@ -1,40 +1,53 @@
 ---
-title: "Project overview"
-description: "Use projects to keep related tasks and milestones under one long-running goal, and understand what the project page can and cannot replace."
-translationSource: en
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "Projects overview"
+description: "A project is a container for a sustained goal — collect related tasks and milestones in one place so you can see at a glance how far along a big objective is."
 ---
 
-Use projects to keep related tasks and milestones under one long-running goal, and understand what the project page can and cannot replace.
+A task is one concrete thing to do. A project is a sustained goal.
 
-## Where To Start
+Think of moving house: buy boxes, pack the kitchen, call the moving company — those are tasks. "Moving house" as a whole is the project. Put all those tasks into one project and you can see at a glance how the move is progressing.
 
-Open the Projects page. A project holds a goal over time, milestones describe stages, and tasks carry the actual actions.
+## What you see in a project
 
-## What Project Details Show
+![Projects overview](../../../screenshots/en/projects-overview-main.png)
 
-After you open project details, the main job is to view stages, related tasks, and attachment clues inside the same project. On wide screens, the selected task may appear in the right-side detail area; on narrow screens, task details usually open as their own page.
+Inside a project you can see:
 
-<!-- manual-screenshot:id=projects-detail-main -->
-![Project overview screen](../../../screenshots/en/projects-detail-main.png)
+- All milestones (phases)
+- Tasks under each milestone
+- Overall completion progress
 
-Project details help you see related actions together over time. They do not automatically organize the project structure or decide which task belongs to which milestone. You still maintain the connections between projects, milestones, and tasks.
+![Project detail view](../../../screenshots/en/projects-detail-main.png)
 
-## How To Use It
+On a wide screen or desktop, clicking a task opens its detail on the right — no page jumping needed.
 
-- Create or open a project, then check whether the name and goal are clear before linking tasks.
-- Add milestones for stages; create or move tasks for execution instead of putting every instruction into the project name.
-- Before completing or archiving a project, check whether active tasks or milestones still remain inside it.
+## What projects can and cannot do
 
-## Results And Boundaries
+Projects **can**:
 
-Projects change how tasks are organized, but they do not replace Today, tag filters, or daily review. A task can appear in a project and also appear in other views because of date or completion state.
+- Keep related tasks in one view
+- Use milestones to mark phases
+- Track overall progress
 
-- Empty projects can be deleted more directly; projects with tasks or milestones usually require you to handle the contents first.
-- Archiving a project organizes a long-running goal; it does not delete all related tasks.
+Projects **cannot replace**:
 
-## Next Step
+- Today's schedule (due dates still control when something shows up as "today")
+- Tag filtering (tags work across projects)
+- Daily review (review tracks what you completed each day, not project progress)
 
-Continue with creating projects, milestones, linking tasks, or archive rules depending on the action you need.
+:::tip[When to create a project]
+If something will generate three or more related tasks and take more than a week, it is worth creating a project. If it is just one or two tasks, do them directly — no project needed.
+:::
+
+## Quick recap: the three-layer structure
+
+```mermaid
+graph TD
+  A[Project] --> B[Milestone 1]
+  A --> C[Milestone 2]
+  B --> D[Task A]
+  B --> E[Task B]
+  C --> F[Task C]
+```
+
+Use all three layers only when you need them. Simple goals can work with just a project and tasks — milestones are optional.

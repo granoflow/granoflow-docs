@@ -1,31 +1,32 @@
 ---
 title: "Offline use and updates"
-description: "Understand how offline use, online sync, and version updates relate in the desktop app."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "GranoFlow desktop works without internet — understand the boundaries of offline mode and how updates affect your data."
 ---
 
-Understand how offline use, online sync, and version updates relate in the desktop app.
+## What you can do offline
 
-## Where To Start
+Without network, the GranoFlow desktop app can still:
 
-Install from the official or trusted download entry, then sign in or open local data after first launch. Desktop shares the core concepts with the web app but differs in window, tray, and offline behavior.
+- View, add, and edit tasks
+- Write journal entries and reviews
+- Browse projects and milestones
 
-## How To Use It
+What you cannot do:
 
-- Follow system prompts during installation and first launch. If the system blocks the app, confirm the download source before proceeding.
-- Pay attention to closing the window, hiding to tray, and fully quitting so the app state is not misunderstood.
-- Offline, continue working with locally available content. When back online, check sync and update state.
+- Sync changes to other devices (happens automatically when reconnected)
+- Receive new changes from other devices
 
-## Results And Boundaries
+## After reconnecting
 
-Desktop is useful for staying close to tasks, but it still follows local-first, sync, and account boundaries. Tray, shortcut, and installation prompts can vary by operating system.
+GranoFlow automatically syncs any changes made offline. If multiple devices made changes while offline, GranoFlow merges them on reconnect.
 
-- Closing a window may not quit the app, especially on systems with tray support.
-- Offline availability does not mean every cloud state has finished syncing.
+## Version updates
 
-## Next Step
+GranoFlow will notify you when a new version is available.
 
-If installation or launch fails, recheck the download source, app version, system permissions, and desktop installation steps.
+- **If you skip the update**: you can keep using the current version, but new features and bug fixes will not be available
+- **Do updates delete my data?**: No. Updates only replace the app files — your local data and account settings are untouched
+
+:::note[Forced updates]
+If the server makes an incompatible change, GranoFlow may require an update before you can continue. This is rare, but it happens.
+:::

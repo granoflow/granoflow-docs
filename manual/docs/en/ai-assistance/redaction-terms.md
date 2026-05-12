@@ -1,51 +1,44 @@
 ---
 title: "Redaction terms"
-description: "Maintain sensitive terms that are replaced before sending to external AI, and understand redact, allow, visible cloud sync, and encrypted cloud sync."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+description: "Maintain a sensitive-word-to-placeholder mapping so GranoFlow automatically substitutes them before sending content to external AI."
 ---
 
-Redaction terms maintain mappings between fixed sensitive text and replacement tokens. When you use an AI feature, GranoFlow replaces terms set to “Redact” inside allowed content fields before handing the content to an external AI tool.
+Redaction terms work like a find-and-replace list: you define "Acme Corp" → "CLIENT_A", and every time GranoFlow sends content to external AI, it swaps "Acme Corp" for "CLIENT_A" first, then tries to restore the placeholder in the response.
 
-This page only affects content preparation for external AI and restoration on return. It does not delete original text from tasks, projects, reviews, or attachments.
+![Redaction terms settings](../../../screenshots/en/ai-redaction-terms-settings.png)
 
-## Where To Enter
+## What to add
 
-Open “Redaction terms” from AI-related settings. If the page shows a membership prompt, the current account may not be able to edit redaction terms; review existing terms according to the page state.
+- Client names, company names
+- Project codenames (internal nicknames)
+- Fixed email addresses, physical addresses
+- Contract amounts, account identifiers
+- Any term you use often but do not want sent directly to external AI
 
-Good candidates include client names, company names, project codenames, internal product names, fixed emails, fixed addresses, or other text you often do not want to send directly to external AI.
+## How to add a term
 
-## Adding And Editing Terms
+1. Go to AI settings → Redaction terms
+2. Add a term with its placeholder
+3. Use recognizable placeholders like `CLIENT_A` or `PROJECT_X`
+4. Save — it takes effect on the next AI trigger
 
-When adding a term, enter the sensitive term and its redaction token. Keep the token easy to recognize, such as a short client, project, or company placeholder, so AI responses are more likely to preserve it.
+## Redacted vs Allowed
 
-<!-- manual-screenshot:id=ai-redaction-terms-settings -->
-![Redaction terms screen](../../../screenshots/en/ai-redaction-terms-settings.png)
+Each term has two states:
 
-When editing, you usually change the token, not turn an old term into a different sensitive term. Deleting a term removes that mapping; future AI requests no longer replace text through that mapping.
+- **Redacted**: replaced with placeholder before sending; AI response tries to restore it
+- **Allowed**: no substitution applied (use when the term is not sensitive)
 
-## Redact, Allow, And Cloud State
+## Does this guarantee security?
 
-Each term has two separate choices:
+**No.** Redaction is an aid, not a security guarantee:
 
-- “Redact”: replace the term with its token before sending to AI, then try to restore it in allowed fields on return.
-- “No redact”: do not replace this term on outbound content, while keeping it as part of discovery and policy records.
-- “Visible” cloud sync: allowed terms may sync in visible form so multiple devices can share the policy.
-- “Encrypted” cloud sync: the original term syncs in encrypted form, which is better when you do not want the term text to be visible.
+- It may miss abbreviations or unusual spellings
+- It only processes the terms you have defined
+- GranoFlow cannot control how external AI handles content it has already received
 
-If a sensitive term should not be sent to external AI, keep it as “Redact.” Changing it to “No redact” leaves the original text in matching AI requests.
+Manually review important content before sending.
 
-## Automatic Discovery And Limits
-
-When AI redaction is enabled, GranoFlow can use category defaults to detect emails, phones, links, tokens, IP addresses, paths, money, and similar content, then add them to the term list or use them for the current replacement.
-
-Automatic discovery is rule-based help, not human review. It may miss variants, abbreviations, content in screenshots, or unusual writing, and it may flag ordinary text. Review the content before sending it to AI.
-
-Redaction and restoration only apply to content fields declared by the current feature. They do not scan the whole local database and cannot guarantee that the external AI will preserve tokens, understand them correctly, or delete information it has received.
-
-## Next Step
-
-To understand the overall data scope of AI features, read “What may be sent to AI.” If you are worried about AI results changing tasks, read “Why changes need confirmation.”
+:::tip[Members-only feature]
+Redaction terms are available to members. Non-members can view the interface but cannot customize it.
+:::

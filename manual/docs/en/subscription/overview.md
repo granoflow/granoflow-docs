@@ -1,31 +1,43 @@
 ---
 title: "Subscription overview"
-description: "Understand where subscription status comes from, what it unlocks, and why both purchase platform and signed-in account matter."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "What subscription unlocks, what works without it — and why your purchase platform and signed-in account both matter."
 ---
 
-Understand where subscription status comes from, what it unlocks, and why both purchase platform and signed-in account matter.
+GranoFlow's core features — tasks, projects, journal, reviews — are free. A subscription unlocks advanced features: multi-device sync, AI assistance, and deeper personalization.
 
-## Where To Start
+![Subscription overview](../../../screenshots/en/subscription-overview-main.png)
 
-Check the current entitlement from Subscription or Account. Subscription status should come from the server account state; local display is only the current UI feedback.
+## Free vs. subscriber — what's different
 
-## How To Use It
+| Feature | Free | Subscriber |
+|---------|------|------------|
+| Tasks, projects, journal | ✅ | ✅ |
+| Local storage (single device) | ✅ | ✅ |
+| Multi-device cloud sync | ❌ | ✅ |
+| AI title parsing | ❌ | ✅ |
+| AI redaction terms | ❌ | ✅ |
+| Custom review prompts | ❌ | ✅ |
+| Journal templates | ❌ | ✅ |
 
-- After purchase, stay signed in to the same account and wait for subscription state to refresh.
-- Use the restore entry for the platform where the purchase was made, and confirm the signed-in account is correct.
-- If entitlement does not appear, check platform, account, network, and purchase record before changing the subscription state.
+## Where to check your subscription status
 
-## Results And Boundaries
+Go to GranoFlow Settings → Account/Subscription to see your current plan.
 
-Subscription affects available entitlements, but it does not change ownership of your task data. Purchase records, platform orders, and the GranoFlow account need to line up.
+**Important**: Subscription status comes from the server, not from the app itself. If entitlements aren't showing, wait a moment for the state to refresh, or check your network and account.
 
-- Purchases on one platform may not automatically transfer to another platform.
-- Payment card details are handled by the platform; GranoFlow does not store them as part of manual app operations.
+## Most common questions
 
-## Next Step
+**I paid but nothing changed?**  
+Check: is the account you're signed into right now the same one you used when purchasing?
 
-If restore still fails, keep the platform order information and recheck the subscription account and platform purchase page.
+**Switched phones — where did my subscription go?**  
+Sign in with the same account on the new device, and entitlements will follow.
+
+**Can I share a purchase across iOS, Android, and macOS?**  
+Not automatically. See [Platform purchases and restore](/en/subscription/platforms-and-restore/).
+
+## Subscription vs. data — which matters more
+
+Subscription controls which features you can use, not who owns your data.
+
+Even if your subscription lapses, your local task data stays intact and you can keep using all features that don't require a subscription.

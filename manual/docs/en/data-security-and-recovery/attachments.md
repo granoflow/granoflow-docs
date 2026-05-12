@@ -1,34 +1,34 @@
 ---
 title: "Attachments and images"
-description: "Understand how attachments and images are saved with tasks or records, and their boundaries during sync, backup, and deletion."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Images and attachments are stored and synced separately from text tasks — knowing the difference helps you avoid accidental data loss."
 ---
 
-Understand how attachments and images are saved with tasks or records, and their boundaries during sync, backup, and deletion.
+When you attach an image to a task or review entry, it is saved alongside the task — but images have different storage and sync behavior from text.
 
-## Where To Start
+![Attachment management entry](../../../screenshots/en/data-attachments-clear-entry.png)
 
-Start from Data, Security, Sync, Backup, or Account settings. First decide whether you are handling everyday sync, device migration, accidental deletion, or account deletion.
+## Text vs images — how they differ
 
-<!-- manual-screenshot:id=data-attachments-clear-detail -->
-![Attachments and images screen](../../../screenshots/en/data-attachments-clear-detail.png)
+- **Text tasks**: small, sync fast, nearly real-time between device and cloud
+- **Image attachments**: large, sync slower, may still be uploading after the text already synced
 
-## How To Use It
+This means: you might see a task synced on another device while the image still shows a loading placeholder — that is normal.
 
-- Check whether the data is visible on the current device first, then decide whether it needs to sync elsewhere.
-- Before encryption, recovery key, backup import, or account deletion actions, read the confirmation text and keep necessary credentials.
-- After the action, check current and other devices. For restore, prefer a clear backup file or restore entry point.
+## Removing image attachments
 
-## Results And Boundaries
+![Attachment detail screen](../../../screenshots/en/data-attachments-clear-detail.png)
 
-GranoFlow follows a local-first approach: local availability is the base, while sync and backup extend it to multi-device and recovery scenarios. They complement each other but do not replace each other.
+Two levels of deletion:
 
-- Sync is not backup, and backup does not solve every account or key issue.
-- Encryption and recovery keys protect data, but recovery is limited if the key is lost or no usable backup remains.
+- **Remove from task**: breaks the link between the task and the image, but the local file may still exist on this device
+- **Clear attachment cache**: deletes the actual image files from this device, freeing storage
 
-## Next Step
+After clearing the cache, if the image was successfully uploaded to the cloud, it can be re-downloaded. If the image was never uploaded, clearing removes it permanently.
 
-If you are unsure where to start, use the data and security overview, then return to the matching sync, backup, recovery key, or account page.
+## Does backup include images?
+
+Local backups typically include only text data (tasks, projects, review records). **Image files may not be included**. Long-term image retention depends on cloud sync being active and successful.
+
+:::note[Images require network to upload]
+Images do not upload offline. If you attach a photo while underground, its cloud upload waits until the next time network is available.
+:::

@@ -1,31 +1,42 @@
 ---
 title: "Platform purchases and restore"
-description: "When buying or restoring across platforms, understand the restore entry point, limits, and cases where access cannot automatically transfer."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "How to buy on different platforms, restore a purchase, and what to do when cross-platform sharing doesn't work automatically."
 ---
 
-When buying or restoring across platforms, understand the restore entry point, limits, and cases where access cannot automatically transfer.
+GranoFlow subscriptions are available on iOS App Store, Android Google Play, and macOS App Store. Each platform processes purchases independently.
 
-## Where To Start
+## How to restore a purchase
 
-Check the current entitlement from Subscription or Account. Subscription status should come from the server account state; local display is only the current UI feedback.
+If you've already subscribed but switched devices or reinstalled the app and your entitlements disappeared:
 
-## How To Use It
+1. Confirm you're signed into the same account you used when purchasing
+2. Go to GranoFlow Settings → Subscription/Account → Restore purchases
+3. Wait for the platform to verify (may take a few seconds to a minute)
+4. Entitlements will update automatically once confirmed
 
-- After purchase, stay signed in to the same account and wait for subscription state to refresh.
-- Use the restore entry for the platform where the purchase was made, and confirm the signed-in account is correct.
-- If entitlement does not appear, check platform, account, network, and purchase record before changing the subscription state.
+## Can I share a purchase across platforms?
 
-## Results And Boundaries
+**No — cross-platform transfer is not automatic.** Here's why:
 
-Subscription affects available entitlements, but it does not change ownership of your task data. Purchase records, platform orders, and the GranoFlow account need to line up.
+- iOS purchases go through Apple App Store
+- Android purchases go through Google Play
+- macOS purchases go through Mac App Store
 
-- Purchases on one platform may not automatically transfer to another platform.
-- Payment card details are handled by the platform; GranoFlow does not store them as part of manual app operations.
+These are independent payment systems that don't share subscription state with each other.
 
-## Next Step
+**Your GranoFlow account, however, works across platforms.** If you subscribed on iOS and want to use GranoFlow on Android too, you'd need a separate purchase (or check your platform's refund policy).
 
-If restore still fails, keep the platform order information and recheck the subscription account and platform purchase page.
+## Troubleshooting restore failures
+
+Work through these in order:
+
+1. **Account mismatch**: Is the account you're signed into the same one you used to purchase?
+2. **Platform mismatch**: iOS purchases restore on iOS; they can't be restored on Android
+3. **Network**: Restoring a purchase requires a connection to the platform's servers
+4. **Expired subscription**: The subscription may have lapsed
+
+If everything above checks out and it still doesn't work, save your platform order information and contact GranoFlow support.
+
+:::note[GranoFlow doesn't store payment details]
+Card numbers, billing addresses, and other payment information are handled by Apple or Google — GranoFlow never stores them.
+:::

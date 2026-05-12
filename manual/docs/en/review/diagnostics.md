@@ -1,48 +1,34 @@
 ---
-title: "Diagnostics and heatmaps"
-description: "Understand how diagnostic stages, behavior tags, and heatmap thresholds affect review display, and what conclusions they cannot provide."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+title: "Diagnostics and heatmap"
+description: "Diagnostics and the heatmap help you see patterns in your time investment — but they are reference tools, not judgments of how hard you worked."
 ---
 
-Diagnostics and heatmap settings help explain how review and progress are displayed. They are not medical, psychological, performance, or financial assessments. They generate hints from records, time invested, and thresholds; final interpretation still depends on your real context.
+Diagnostics and the heatmap are tools for seeing your data — not for grading you.
 
-## Where To Enter
+## Time investment phases
 
-Open time invested stages, daily behavior tags, or heatmap thresholds from member-only settings. Some pages may be read-only or show an upgrade prompt when the current account does not have access.
+Based on how many focus hours you logged that day, GranoFlow shows different status phrases: "just getting started," "building momentum," "deep focus," and so on.
 
-## Time Invested Stages
+![Diagnostic state settings](../../../screenshots/en/review-diagnostic-state-settings.png)
 
-Time invested stages show different status copy based on the day's invested time. You can adjust stage breakpoints and messages so the review page matches your own rhythm better.
+These are orientation signals, not assessments. You can adjust the time thresholds and the phrasing in settings to match your own rhythm — for example, if "normal" for you is 4 hours, calibrate to that.
 
-<!-- manual-screenshot:id=review-diagnostic-state-settings -->
-![Diagnostics and heatmaps screen](../../../screenshots/en/review-diagnostic-state-settings.png)
+## Heatmap thresholds
 
-Stage copy only affects display and interpretation. It does not change tasks and does not judge whether you worked hard enough.
+The heatmap uses color intensity to show how much you invested each day, making rhythmic patterns immediately visible across weeks and months.
 
-## Daily Behavior Tags
+![Heatmap threshold settings](../../../screenshots/en/review-heatmap-threshold-settings.png)
 
-Daily behavior tags may appear based on task count, time invested, quadrant distribution, pause count, selected energy state, or deep focus duration. You can adjust some tag names and trigger thresholds.
+You can customize the color thresholds. If 2 hours is "active" for you, set the mid-range color there so the heatmap reflects your personal definition, not some generic standard.
 
-<!-- manual-screenshot:id=review-diagnostic-anomaly-settings -->
-![Diagnostics and heatmaps screen](../../../screenshots/en/review-diagnostic-anomaly-settings.png)
+## Anomaly detection
 
-These tags are for noticing patterns, not for diagnosis. A threshold that is too low may make tags appear too often; a threshold that is too high may hide useful hints.
+GranoFlow can detect anomaly signals in your review data — for example, a certain task type disappearing from the pattern for several days, or a significant shift in time investment.
 
-## Heatmap Thresholds
+![Diagnostic anomaly settings](../../../screenshots/en/review-diagnostic-anomaly-settings.png)
 
-Heatmap thresholds decide how different invested-time ranges map to colors in calendar or statistics heatmaps. Changing thresholds may change the color distribution, but it does not change historical task data.
+An anomaly is not "something is wrong." It is a data signal that you interpret: did your work rhythm change? Is something worth paying attention to?
 
-<!-- manual-screenshot:id=review-heatmap-threshold-settings -->
-![Diagnostics and heatmaps screen](../../../screenshots/en/review-heatmap-threshold-settings.png)
-
-If the page offers automatic recalculation, it only suggests better color bands from existing monthly data. Before accepting the suggestion, check whether those colors match the rhythm you want to observe.
-
-## Boundaries
-
-- Diagnostics, tags, and heatmaps only interpret records already in GranoFlow.
-- If records are incomplete, hints may also be incomplete.
-- They do not replace professional medical, psychological, performance, or financial judgment.
+:::note[These are references, not conclusions]
+Diagnostics and the heatmap generate prompts based on your records. The interpretation is always yours. They are not medical, psychological, performance, or financial assessments.
+:::

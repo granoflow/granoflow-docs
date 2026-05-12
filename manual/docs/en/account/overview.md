@@ -1,31 +1,35 @@
 ---
 title: "Account overview"
-description: "Understand that the account handles sign-in, sync identity, devices, and subscription state, but does not replace local backups."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Your account handles sign-in, sync identity, device list, and subscription status — but it is not the same as your local data."
 ---
 
-Understand that the account handles sign-in, sync identity, devices, and subscription state, but does not replace local backups.
+Many people mix up "account" and "data." They think deleting the account clears the data, or that signing up again will restore it.
 
-## Where To Start
+In GranoFlow, these are **two separate things**. Your account is a key. Your data is what is in the room.
 
-Open Account settings. The account handles sign-in identity, sync identity, device list, and subscription recognition; it is not the local data itself.
+![Account overview](../../../screenshots/en/account-overview-profile.png)
 
-## How To Use It
+## What your account handles
 
-- After signing up or signing in, confirm that this is the account you want to use for sync and subscription recognition.
-- Use device management to review signed-in devices. Removing a device changes account association; it does not necessarily erase local data on that device.
-- Before sign-out, reset, or deletion actions, confirm whether you have a backup and whether remote data is affected.
+- **Sign-in identity**: authenticates who you are across devices
+- **Sync**: cloud sync and recognition both depend on your account
+- **Device list**: tracks which devices have signed in
+- **Subscription recognition**: tells GranoFlow whether you are a member
 
-## Results And Boundaries
+## What your account does not handle
 
-Account state affects sync, subscription, and device recognition. After switching accounts, remote state may look different while local data may still exist on the device.
+- **Local data**: signing out does not delete data on this device
+- **Data backup**: your account is not a backup — encrypted data requires a separate recovery key
+- **Cross-account migration**: if you used the wrong account, data does not merge automatically
 
-- Signing out is not account deletion, and account deletion is not the same as clearing every local copy.
-- Dangerous actions usually require confirmation; stop first if the impact is unclear.
+## Think before acting
 
-## Next Step
+- Sign out ≠ delete account
+- Delete account ≠ wipe local data on every device
+- Reset ≠ restore data
 
-If the issue is about subscription, continue with “Subscription overview”; if it is about local data, continue with “Backup and restore”.
+When in doubt, stop and read the relevant page before continuing.
+
+:::tip[Subscription follows the account]
+Member benefits are tied to your account, not your device. If you sign in with different accounts on different devices, you may see different membership status.
+:::

@@ -1,31 +1,30 @@
 ---
-title: "Records and history"
-description: "View and manage past records, and understand how records relate to dates, tasks, and review content."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "Notes and history"
+description: "Notes are what you write during review — feelings, thoughts, next steps. This page explains how notes connect to tasks and dates, and how to browse your history."
 ---
 
-View and manage past records, and understand how records relate to dates, tasks, and review content.
+During a review, you can write notes alongside the task list — a sentence, a paragraph, whatever you want.
 
-## Where To Start
+These notes are tied to the date, so when you look back later, you can see not just what you completed that day, but also what you were thinking.
 
-Open Review. Choose the date or today’s review, then inspect tasks, write notes, or adjust values prompts.
+![Notes and history](../../../screenshots/en/review-journal-records-section.png)
 
-## How To Use It
+## What to write in notes
 
-- Look at the day’s tasks and existing records first, then decide whether you are adding facts, feelings, or next steps.
-- Keep records short if that is enough. They are reflection material for you, not mandatory reports.
-- Values and prompts can be edited, and questions that do not fit the day can be skipped.
+- How the day felt (productive, sluggish, unexpected, exhausting…)
+- Why something got done or did not
+- What you want to prioritize next
+- A fresh thought on a project
+- Any clue you would want to find when looking back
 
-## Results And Boundaries
+It is not a daily report and not a log. Write as much or as little as feels right — honest and brief usually beats complete and polished.
 
-Review brings task history, records, and personal standards into one context. It helps you notice patterns, but it does not automatically change future tasks.
+## Notes and tasks
 
-- Review is not a streak system; missing a day does not invalidate tasks.
-- Records can relate to tasks, so deleting or changing tasks may reduce later review context.
+Notes are tied to the date, not to specific tasks. If you write something on the day you completed a task, both will be visible when you review that date later.
 
-## Next Step
+Deleting or editing a task does **not** delete the note from that day. Notes and tasks are stored separately.
 
-To make review closer to your own standards, continue with “Values and prompts”.
+## Browsing history
+
+In the review page, switch to any past date to see that day's history. There is no limit on how far back you can go — if there is a note from that day, it is there.

@@ -1,31 +1,40 @@
 ---
-title: "Sign-out, reset, and dangerous actions"
-description: "Before signing out, resetting, or deleting, confirm the impact so irreversible actions are not treated like routine cleanup."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "Sign out, reset, and danger actions"
+description: "Sign out, reset data, delete account — three actions with completely different consequences. Know the difference before you tap."
 ---
 
-Before signing out, resetting, or deleting, confirm the impact so irreversible actions are not treated like routine cleanup.
+"Danger actions" sounds scary, but once you understand what each action actually does — and does not do — you will not get caught off guard.
 
-## Where To Start
+Three things are easy to confuse:
 
-Open Account settings. The account handles sign-in identity, sync identity, device list, and subscription recognition; it is not the local data itself.
+```
+Sign out ≠ Delete account ≠ Clear local data
+```
 
-## How To Use It
+## Sign out
 
-- After signing up or signing in, confirm that this is the account you want to use for sync and subscription recognition.
-- Use device management to review signed-in devices. Removing a device changes account association; it does not necessarily erase local data on that device.
-- Before sign-out, reset, or deletion actions, confirm whether you have a backup and whether remote data is affected.
+**Effect**: disconnects this device from your account; cloud sync pauses.  
+**No effect on**: tasks, journals, and projects on this device — **they stay intact**.  
+**Reversible**: sign in again to reconnect.
 
-## Results And Boundaries
+## Reset local data
 
-Account state affects sync, subscription, and device recognition. After switching accounts, remote state may look different while local data may still exist on the device.
+**Effect**: wipes all local data on this device (tasks, journals, settings, and so on).  
+**No effect on**: cloud data — it still exists and can be synced again after signing in.  
+**Irreversible**: local data deletion cannot be undone.
 
-- Signing out is not account deletion, and account deletion is not the same as clearing every local copy.
-- Dangerous actions usually require confirmation; stop first if the impact is unclear.
+## Delete account
 
-## Next Step
+**Effect**: cancels the account; cloud data and account associations are deleted (within a grace period).  
+**No effect on**: local copies on individual devices — those are not automatically wiped.  
+**Irreversible**: after the grace period, recovery is not possible.
 
-If the issue is about subscription, continue with “Subscription overview”; if it is about local data, continue with “Backup and restore”.
+## Recommended steps before acting
+
+1. Confirm you have a recent backup (see "Backup and restore")
+2. Confirm you have your encryption recovery key if end-to-end encryption is enabled
+3. If you are just switching devices, sign out is enough — no need to reset or delete
+
+:::caution[When in doubt, stop]
+If you are unsure whether an action deletes your data, stop and read the relevant documentation, or contact support.
+:::

@@ -1,31 +1,36 @@
 ---
 title: "Review overview"
-description: "Use review to bring completed tasks, notes, and values prompts together as a low-pressure reflection entry point."
-translationSource: en
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Review is GranoFlow's low-pressure reflection entry — not a check-in system, not a performance review. Just reconnecting what happened with what you care about."
 ---
 
-Use review to bring completed tasks, notes, and values prompts together as a low-pressure reflection entry point.
+For many people, "retrospective" sounds stressful — like you need to write something insightful and thorough, or you are slacking off.
 
-## Where To Start
+GranoFlow's review is different. Think of it as a lightweight journal assistant. You glance at what you completed today, write a couple of sentences, think about the next step, and close it. No scoring, no streak pressure, no guilt about skipping a day.
 
-Open Review. Choose the date or today’s review, then inspect tasks, write notes, or adjust values prompts.
+![Review overview](../../../screenshots/en/review-overview-main.png)
 
-## How To Use It
+## What is inside a review
 
-- Look at the day’s tasks and existing records first, then decide whether you are adding facts, feelings, or next steps.
-- Keep records short if that is enough. They are reflection material for you, not mandatory reports.
-- Values and prompts can be edited, and questions that do not fit the day can be skipped.
+- **What you completed today**: tracked by actual completion time, not due date
+- **Your notes**: feelings, thoughts, next steps — in your own words
+- **Values prompts**: gentle nudges to connect today's actions to your long-term direction
 
-## Results And Boundaries
+## How to do a review
 
-Review brings task history, records, and personal standards into one context. It helps you notice patterns, but it does not automatically change future tasks.
+1. Open the review page, pick a date (defaults to today)
+2. Glance at the completed tasks list
+3. Write a few sentences — even "tough day but finished the most important thing" counts
+4. Read the values prompts and reflect briefly
+5. Close it — done
 
-- Review is not a streak system; missing a day does not invalidate tasks.
-- Records can relate to tasks, so deleting or changing tasks may reduce later review context.
+You do not have to complete every step. Skipping a prompt is totally fine.
 
-## Next Step
+## What review is not
 
-To make review closer to your own standards, continue with “Values and prompts”.
+- Not a check-in system: missing days does not break anything
+- Not a performance report: no one is grading you
+- Not another place to add tasks: it is for digesting what already happened
+
+:::tip[The shortest review still has value]
+Even "Finished X today, will start Y tomorrow" accomplishes the core purpose.
+:::

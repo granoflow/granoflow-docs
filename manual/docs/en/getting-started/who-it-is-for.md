@@ -1,31 +1,34 @@
 ---
 title: "Who GranoFlow is for"
-description: "GranoFlow is for project-based workers, long-term learners, people with interrupted days, and anyone who values reflection and steady accumulation."
-translationSource: zh-CN
-translationReview:
-  - plan-ceo-review
-  - ux-writing
-  - product-frontend-design
+description: "If you want more than a to-do list — if your tasks connect to projects, long-term goals, and regular review — GranoFlow is built for you."
 ---
 
-GranoFlow is for people who want more than a place to capture tasks. You can start with it as a task manager, but its real value is helping tasks return to projects, milestones, and your own rhythm so repeated actions become a structure you can review.
+One-line version: **GranoFlow is for people whose tasks have bigger goals behind them.**
 
-## Project-based workers
+If you just need a shopping list or a quick reminder, your phone's built-in notes app may be all you need. But if your tasks sit inside projects, your projects connect to longer-term goals, and you regularly wonder "what am I actually making progress on?" — GranoFlow is designed exactly for that.
 
-Independent developers, designers, researchers, creators, and founders often need to handle tasks, milestones, and long-term direction at the same time. A scattered checklist is rarely enough to move that kind of work forward.
+## Project-driven workers
 
-## People learning or accumulating over time
+Independent developers, designers, researchers, creators, founders — these people share one thing: several things in flight at once, each with its own stages and goals.
 
-Exam prep, career changes, writing, language learning, and skill training all need more than a record of what happened today. You care whether this stretch of time is actually turning into accumulated progress. During life transitions, GranoFlow can also work as a structure tool that keeps context when you stop and restart.
+A plain to-do list grows longer and harder to prioritize. GranoFlow lets you attach tasks to projects and milestones, so when you open it you immediately see "what matters most right now."
 
-## People with complex, interrupted days
+## Long-term learners and builders
 
-Freelancers, small-team leads, and people carrying both family and work responsibilities need quick capture and a way to find the thread again after interruptions. GranoFlow helps tasks, projects, and milestones come back together when the day breaks apart.
+Studying for an exam, changing careers, learning a language, writing a book — these are pursuits where "I did a little today" feels invisible, but the accumulation over months is real.
+
+GranoFlow's review features help you pause and check in: am I actually making progress? Is the direction still right? Not to grade yourself, but to keep your sense of direction — like glancing up from the handlebars now and then.
+
+## People who get interrupted a lot
+
+Freelancers, small-team leads, people balancing family and work — the biggest pain point is returning after an interruption and losing the thread of "where was I?"
+
+GranoFlow's project and milestone structure is built for this. Even after a week away, you can open it and see how tasks connect to goals, without needing to reorganize from scratch.
 
 ## People who value reflection
 
-If you want to regularly review your choices, progress, and state, GranoFlow will be more valuable than a simple list tool. Daily review is not for scoring every day. It helps you see which actions are worth continuing and which directions need adjustment.
+If you already do regular retrospectives, GranoFlow gives you a better container for them. Daily review lets you record what you did and how you felt about it — not just checking off tasks, but understanding what you actually worked on and thought about.
 
-## When a simple Todo app is enough
-
-If all you need is a shopping list, a temporary reminder, or a minimal check-off tool, GranoFlow may feel too heavy. It becomes more valuable when you want life projects, values, milestones, and daily review to live in one personal planning system.
+:::note[When a simple to-do app is enough]
+If you mostly need "buy milk" and "pick up package" reminders, a lighter list tool is probably faster. GranoFlow earns its place when there are multiple layers behind the tasks.
+:::

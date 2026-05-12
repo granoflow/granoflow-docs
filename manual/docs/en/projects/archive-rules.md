@@ -1,31 +1,42 @@
 ---
-title: "Project completion and archive"
-description: "Understand project completion, archiving, direct deletion, and protection rules so projects with tasks or milestones are not removed by mistake."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "Complete and archive projects"
+description: "Done with a project? Complete, archive, and delete each mean different things — pick the wrong one and you might lose tasks unexpectedly. This page explains the differences."
 ---
 
-Understand project completion, archiving, direct deletion, and protection rules so projects with tasks or milestones are not removed by mistake.
+When a project is finished or no longer active, you have three options: complete, archive, or delete.
 
-## Where To Start
+They are different. Choosing the wrong one could accidentally remove tasks or milestones, so read this before tapping delete.
 
-Open the Projects page. A project holds a goal over time, milestones describe stages, and tasks carry the actual actions.
+## The three operations
 
-## How To Use It
+| Operation | What it means | What happens to tasks inside |
+|-----------|---------------|------------------------------|
+| **Complete** | Goal achieved | Tasks remain, can be reviewed |
+| **Archive** | Set aside, out of the active view | Tasks remain, can be restored |
+| **Delete** | Remove permanently | Depends on what is inside (see below) |
 
-- Create or open a project, then check whether the name and goal are clear before linking tasks.
-- Add milestones for stages; create or move tasks for execution instead of putting every instruction into the project name.
-- Before completing or archiving a project, check whether active tasks or milestones still remain inside it.
+## How to access these options
 
-## Results And Boundaries
+In the project detail page, open the menu in the top-right corner to find Complete, Archive, and Delete.
 
-Projects change how tasks are organized, but they do not replace Today, tag filters, or daily review. A task can appear in a project and also appear in other views because of date or completion state.
+![Project archive menu](../../../screenshots/en/projects-archive-menu.png)
 
-- Empty projects can be deleted more directly; projects with tasks or milestones usually require you to handle the contents first.
-- Archiving a project organizes a long-running goal; it does not delete all related tasks.
+## Deletion protection
 
-## Next Step
+If the project still has unfinished tasks or milestones, GranoFlow will not let you delete it outright. It will first ask you to decide what to do with the contents:
 
-Continue with creating projects, milestones, linking tasks, or archive rules depending on the action you need.
+- Move tasks to another project
+- Complete or archive the tasks inside
+- Confirm deletion (including all tasks)
+
+This guard exists to prevent accidental data loss from a quick, unintentional tap.
+
+:::tip[When in doubt, archive]
+If you are not sure whether you will need this project later, archive is far safer than delete. Archived projects can be restored anytime. Delete cannot be undone.
+:::
+
+## Complete vs archive — which to choose
+
+- Goal was **achieved**: choose "Complete" — it records a completion date for the project
+- Goal is **on hold** or you just do not want it cluttering your view: choose "Archive" — it does not mean success, just out of sight
+- Project is **no longer needed** and you want the content gone too: only then choose "Delete"

@@ -1,31 +1,47 @@
 ---
 title: "Tags"
-description: "Use tags to add classification beyond projects, and understand how creating, selecting, or deleting tags affects existing tasks."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Tags are horizontal labels across tasks — things like 'waiting', 'deep work', or 'low energy'. Use them alongside projects for a different angle on your task list."
 ---
 
-Use tags to add classification beyond projects, and understand how creating, selecting, or deleting tags affects existing tasks.
+Projects are vertical structure (which goal does this task belong to?). Tags are horizontal labels (what type of task is this?).
 
-## Where To Start
+For example, you might have a "Fitness app" project, but some tasks inside it are "waiting for a design file" and others are "blocked by third-party API" — those cross-cutting labels are exactly what tags are for.
 
-Open the tag selector while creating a task or editing task details. Existing tags appear as candidates; create a custom tag only when you need a reusable category.
+## How to add tags to a task
 
-## How To Use It
+Open a task detail or the new task screen, find the tags area, and tap to select or create tags.
 
-- Select one or more tags and save. The task appears in related tag filters.
-- Use clear names that you will reuse over time. Tags are not temporary notes; they work best for context, energy, domain, or handling method.
-- Before deleting a tag, confirm its impact. Deleting a tag removes it from tasks that use it; it does not delete those tasks.
+![Tags management screen](../../../screenshots/en/tasks-tags-management.png)
 
-## Results And Boundaries
+- Existing tags show up as candidates immediately
+- Do not see the right one? Type a new name and create it
+- A task can have multiple tags
 
-Tags are cross-cutting categories that supplement projects. A task can belong to a project and also carry multiple tags.
+## What to use tags for
 
-- Tag names should stay distinguishable. Duplicate or overlapping names make filtering harder.
-- Deleting a tag does not restore an earlier tag state.
+Tags work best for **cross-project, reusable** categories:
 
-## Next Step
+| Use case | Tag examples |
+| --- | --- |
+| Energy level / context | `low energy` `deep work` `quick task` |
+| Waiting status | `waiting on someone` `needs reply` `pending` |
+| Task type | `call` `creative` `admin` |
+| Temporary flags | `this week` `revisit later` |
 
-When a task belongs to a longer-term goal, continue with "Projects overview".
+Avoid duplicating project names as tags — if a task is already in a project, you do not need to tag it with the project name too.
+
+## What happens when you delete a tag
+
+Deleting a tag **does not** delete the tasks that use it. It only removes that label from those tasks.
+
+:::caution[Confirm before deleting]
+Deleting a tag is permanent. Make sure you no longer need the category before you remove it.
+:::
+
+## Keeping tags tidy
+
+Too many tags make filtering pointless. Periodically:
+
+- Merge tags with overlapping meaning
+- Delete tags nobody is using
+- Keep names short and clearly distinguishable

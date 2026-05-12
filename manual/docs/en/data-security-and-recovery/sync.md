@@ -1,35 +1,42 @@
 ---
-title: "Multi-device sync"
-description: "Understand what sync carries to other devices, and how to reason about network, account, and conflict situations."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+title: "Cross-device sync"
+description: "Sync brings changes from one device to all others signed in to the same account — but it is not a backup."
 ---
 
-Understand what sync carries to other devices, and how to reason about network, account, and conflict situations.
+Sync takes changes you make on one device and delivers them to every other device signed in to the same account.
 
-## Where To Start
+![Sync status screen](../../../screenshots/en/data-sync-status-main.png)
 
-Start from Data, Security, Sync, Backup, or Account settings. First decide whether you are handling everyday sync, device migration, accidental deletion, or account deletion.
+## What syncs, and what does not
 
-## How To Use It
+✅ What syncs:
 
-- Check whether the data is visible on the current device first, then decide whether it needs to sync elsewhere.
-- Before encryption, recovery key, backup import, or account deletion actions, read the confirmation text and keep necessary credentials.
-- After the action, check current and other devices. For restore, prefer a clear backup file or restore entry point.
+- Tasks (title, due date, tags, status…)
+- Projects and milestones
+- Review records
+- Images and attachments (when network allows)
 
-## Joining Existing Sync On A New Device
+⚠️ Sync is not a backup:
 
-If the cloud already has data and you are syncing it back to a new phone, new computer, or empty reinstall, read [Sync existing cloud data on a new device](/manual/en/data-security-and-recovery/new-device-sync/) first. That page separates the simple empty-device path from the higher-risk case where this device already has local data.
+- **Delete something and it deletes everywhere** — sync is bidirectional
+- **No version history** — sync does not remember "what things looked like 3 days ago"
+- **Images may lag** — text syncs first, images may follow later
 
-## Results And Boundaries
+## Common sync statuses
 
-GranoFlow follows a local-first approach: local availability is the base, while sync and backup extend it to multi-device and recovery scenarios. They complement each other but do not replace each other.
+| Status | Meaning |
+|--------|---------|
+| Syncing | Uploading or downloading changes |
+| Synced | This device matches the cloud |
+| Waiting | Changes queued, usually a network issue |
+| Error | Sync hit a problem — check account or encryption key |
 
-- Sync is not backup, and backup does not solve every account or key issue.
-- Encryption and recovery keys protect data, but recovery is limited if the key is lost or no usable backup remains.
+## Adding a new device to sync
 
-## Next Step
+If you installed GranoFlow on a new phone or reinstalled the app, you need the **cloud sync key** from your old device to join the existing cloud data.
 
-If you are unsure where to start, use the data and security overview, then return to the matching sync, backup, recovery key, or account page.
+See the full walkthrough → [Sync existing cloud data to a new device](/manual/data-security-and-recovery/new-device-sync/)
+
+:::caution[Sync does not replace backup]
+Export local backups regularly. Tasks you delete accidentally cannot be recovered through sync — the cloud deletes them too.
+:::

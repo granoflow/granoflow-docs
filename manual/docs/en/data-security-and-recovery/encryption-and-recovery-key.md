@@ -1,68 +1,56 @@
 ---
 title: "Encryption and recovery key"
-description: "Understand the difference between the encryption key, cloud sync key recovery, and cloud key takeover before choosing a data source."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+description: "GranoFlow encrypts your cloud data with an encryption key — it is not your login password, and if you lose it, the cloud data cannot be recovered."
 ---
 
-GranoFlow uses an encryption key to protect data that is synced or backed up. Signing in proves who you are; the encryption key determines whether this device can open existing encrypted cloud data.
+GranoFlow's cloud sync data is end-to-end encrypted. The encryption key is like a safe combination — **without it, even GranoFlow's servers cannot read your data**.
 
-If you are moving to a new device, reinstalling the app, restoring a backup, or seeing “Cloud sync settings need attention,” first confirm that your important data is still visible on the current device before continuing.
+But that also means: **if you lose the key, it is genuinely gone**.
 
-## Where To Enter
+![Encryption and recovery key screen](../../../screenshots/en/data-encryption-recovery-key.png)
 
-You may reach these pages from:
+## Key vs password — what is the difference
 
-- Data, security, sync, or backup settings.
-- A sync failure prompt, top sync status prompt, or recovery prompt in the cloud data overview.
-- “Replace local key with cloud key” in data management.
+| | Login (password or email link) | Encryption / sync key |
+|--|-------------------------------|----------------------|
+| What it does | Proves who you are | Opens encrypted cloud data |
+| If you forget | Request a new verification email | **Cannot be recovered** |
+| If you change it | Only affects sign-in | Affects whether you can access cloud data |
 
-These entry points all mean that this device and cloud sync are not aligned yet. They are not ordinary refresh buttons.
+## Where to find your key
 
-## Entering The Sync Key From Another Device
+In GranoFlow Settings → Data / Security / Sync, you can view and save the current cloud sync key for this device.
 
-When GranoFlow asks for the sync key from another device, it first checks whether that key can open the current cloud data. Before that check finishes, it does not save the entered key, clear local data, or start downloading cloud data.
+**Strongly recommended: write down the key or save it to your password manager.**
 
-After the check:
+## When you need the key on a new device
 
-- If cloud and local use the same data key, GranoFlow only updates sync settings on this device so it can continue with the same cloud data.
-- If cloud and local are different data sets, the page asks whether to keep local data, use cloud data, or cancel.
-- If the key format is wrong, the key is not for this cloud data, or the network is unavailable, recovery does not continue.
+When you:
 
-This path cannot guarantee recovery for a sync key you did not save. What can be recovered depends on what verifiable material still exists on this device, the old device, cloud data, or local backups.
+- Switch to a new phone or computer
+- Reinstall GranoFlow
+- See a "sync key mismatch" prompt
 
-## Checking This Device When You Do Not Have The Key
+GranoFlow asks for the sync key from your old device before it can access existing cloud data.
 
-In some cases, even if you forgot the cloud sync key, this device may still hold local material that can verify the cloud data. The page may show a secondary action such as “No key? Check this device.”
+## What happens after entering the key
 
-That first step only checks the device. If it passes, GranoFlow asks again before repairing only the cloud sync key. Confirming that repair does not upload this device's business data, clear cloud sync, or download cloud data.
+GranoFlow verifies whether the key can open the current cloud data:
 
-If the check fails, cloud data has no usable check record, or this device cannot read local encryption material, go back to entering the sync key, using a backup, or canceling until you can check the old device.
+- **Key matches, same data set** → connects to sync directly
+- **Key matches, but local device has new data** → shows a choice screen for which data to keep
+- **Key is wrong** → nothing changes, prompts you to try again
 
-## Replacing The Local Key With The Cloud Key
+## If you lost the key
 
-“Replace local key with cloud key” is for cases where this device has local data, but you decide it should use the cloud sync key. You usually reach it from data management or a key-mismatch prompt.
+Work through these in order:
 
-Before using it, confirm two things:
+1. **Is the old device available?** → Open GranoFlow on it, find and copy the key
+2. **Is it in your password manager?** → Check there
+3. **Old device exists but app will not open?** → Contact GranoFlow support
 
-1. The key you enter is the complete key for the current cloud sync data.
-2. You know whether the local data and attachments on this device still need to be kept.
+If none of the above apply, the encrypted cloud data may be unrecoverable. Local backups (if you have them) still work.
 
-If local and cloud actually use the same data key, GranoFlow only updates how this device is protected. If they differ, the page asks you to confirm a longer takeover flow: keep this device's data, protect it with the cloud key, process local attachments where possible, then rebuild cloud sync.
-
-This can take time, especially when the device has many attachments. Do not treat it as a normal sign-in or sync repair when you are unsure which data source should win.
-
-## Choosing A Source
-
-- To keep this device's data: before choosing “Rebuild cloud sync” or a similar path, confirm that the local tasks, projects, reviews, and attachments are the version you want to keep. Cloud sync will use this device's data afterward.
-- To use cloud data: before choosing “Use cloud data” or “Clear local data,” confirm that newly created local content can be discarded or has been saved elsewhere.
-- If you are unsure: cancel, then check the old device, cloud overview, and local backups first.
-
-Sync and key recovery cannot decide which data is more important for you, and they cannot guarantee that every unsynced attachment, old-device remnant, or encrypted cloud record without a saved key can be recovered.
-
-## Next Step
-
-If you are restoring existing cloud data on a new device, read “Sync existing cloud data on a new device.” If you have a local backup file, read “Backup and restore.”
+:::caution[Keys cannot be reset]
+Losing your encryption key means losing access to your cloud data. Save your key now — do not wait until you need it.
+:::

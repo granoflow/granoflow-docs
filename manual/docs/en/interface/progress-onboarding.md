@@ -1,51 +1,36 @@
 ---
 title: "First-use guidance on the Progress page"
-description: "Learn why GranoFlow shows four method messages and three starting actions on the Progress page when you have not created tasks, projects, or values yet."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
+description: "Just installed GranoFlow and the Progress page has no data — that is normal. Here is what you are seeing and the fastest way to get started."
 ---
 
-When you first open GranoFlow, or when local data has not yet formed tasks, projects, and values, the Progress page shows first-use guidance.
+The first time you open GranoFlow, the Progress page shows a guidance screen instead of statistics.
 
-This state is not an error, and it does not mean the statistics page failed to load. It means GranoFlow does not yet have enough content to build your personal progress dashboard, so it gives you the shortest path to write important things down and let them gradually become a structure you can review.
+This is not a bug. The app simply has no content yet to build your personal dashboard from, so it shows you the shortest path to writing your first thing down.
 
-<!-- manual-screenshot:id=interface-progress-onboarding-cold-start -->
-![Progress first-use guidance, with three starting actions on the left and four method messages on the right](../../../screenshots/zh-cn/interface-progress-onboarding-cold-start.png)
+![Progress page first-use guidance](../../../screenshots/en/interface-progress-onboarding-cold-start.png)
 
 ## What you see
 
-On a wide desktop or landscape window, the left side shows the headline "Build your life structure system" and three starting actions:
+On a wide screen or desktop, the page is split into two columns:
 
-1. Write down one task you need to do next.
-2. Create a project that is already moving.
-3. Write down one value you want to keep.
+- **Left**: three starter actions
+  1. Write down one task you need to do next
+  2. Create a project you are currently working on
+  3. Write down one value you want to keep
+- **Right**: a brief explanation of the GranoFlow philosophy
 
-The right side shows four method messages that explain how GranoFlow expects you to begin:
+## Where to start
 
-- First write down the values you want to keep.
-- Turn the life you want into projects.
-- Turn unfinished things into tasks.
-- Use review to turn the road behind you into real accumulation.
+There is no strict order — begin with whatever feels clearest right now:
 
-On narrower windows or portrait devices, the same content is arranged in one column, but the meaning stays the same.
+- Have a task in mind → start there
+- Have a project you are working on → create the project
+- Want to clarify your long-term direction → write a value
 
-## When it disappears
+:::tip[You do not need to fill everything in at once]
+Write one thing down and the Progress page will start showing real data. Structure grows with use — you do not have to build it all on day one.
+:::
 
-After you complete the starting actions, or after the app detects tasks, projects, a registered account, import history, or valid sync history, GranoFlow bypasses this first-use guidance.
+## When does the guidance disappear
 
-The next time you open Progress, you will see the data-backed state: what needs attention now, how to continue today, recent projects, values, weekly and monthly progress, and review entry points.
-
-## How it differs from the regular Progress page
-
-First-use guidance only helps you get started. It does not show the work queue, today's progress, or short feedback yet, because those cards need real task and project data to be meaningful.
-
-If you have already imported a backup or synced data but still see this state, local data may not have finished restoring, importing, or refreshing. Wait for that to complete, then check the Progress page again.
-
-## Related pages
-
-- [Progress](/manual/en/interface/home-progress/)
-- [Tasks overview](/manual/en/tasks/overview/)
-- [Projects and milestones overview](/manual/en/projects/overview/)
-- [Review overview](/manual/en/review/overview/)
+Once you have added at least one task, project, or value, the Progress page switches to the normal personal dashboard view. The guidance does not come back.

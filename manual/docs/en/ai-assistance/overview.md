@@ -1,40 +1,35 @@
 ---
 title: "AI assistance overview"
-description: "Understand that AI in GranoFlow assists with organization and suggestions, while important changes still require your confirmation."
-translationSource: en
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "GranoFlow's AI is an organizer assistant, not an autonomous agent — it suggests, you decide."
 ---
 
-Understand that AI in GranoFlow assists with organization and suggestions, while important changes still require your confirmation.
+A common concern about AI features: will it automatically change my tasks, or quietly send my data somewhere?
 
-## Where To Start
+GranoFlow's AI design principle is simple: **AI suggests, you confirm, nothing writes without confirmation**.
 
-Start from the matching AI feature. Title parsing appears while writing task titles, the clipboard assistant starts from clipboard content, and the other pages explain boundaries before use.
+![AI assistance settings](../../../screenshots/en/ai-helper-prompt-settings.png)
 
-## How To Use It
+## What AI can do in GranoFlow
 
-- Provide only the text needed for the current task or clipboard operation.
-- Review AI recognition, cleanup, or rewrite suggestions. If task fields would change, you must confirm before anything is written.
-- Before confirmation, you can cancel, edit, or accept only part of a suggestion. Unconfirmed suggestions do not change tasks.
+| Feature | What it does |
+|---------|-------------|
+| Title parsing | Recognizes dates, tags, reminders from task titles |
+| Clipboard assistant | Organizes copied text into a task list |
+| Helper prompt | Helps you consult external AI about GranoFlow pages |
+| AI redaction | Replaces sensitive words before sending to external AI |
 
-## Results And Boundaries
+## What AI will not do
 
-AI in GranoFlow is an assistant for organizing, not an autonomous agent. It can reduce input and cleanup effort, but structure, privacy choices, and final writes remain yours.
+- ❌ Will not automatically write tasks — all field changes require your confirmation
+- ❌ Will not silently read your data in the background
+- ❌ Cannot guarantee accuracy — results are suggestions, not facts
 
-- Reading the manual does not automatically send local tasks to AI; text may enter processing only when you use an AI feature.
-- AI output may be incomplete or wrong for the context. Important tasks should follow the fields you confirmed.
+## The basic data logic
 
-## Helper Prompt
+Normal use (browsing tasks, journaling, reviewing) **does not involve AI at all** — your data stays on device.
 
-The Helper prompt in member-only settings affects the default way you ask an external AI about GranoFlow pages. After you save it, GranoFlow prepares this prompt together with the current page context for the external AI.
+Only when you actively trigger an AI feature does the relevant text enter the AI processing pipeline. Redaction settings can replace sensitive words before anything is sent.
 
-<!-- manual-screenshot:id=ai-helper-prompt-settings -->
-![AI assistance overview screen](../../../screenshots/en/ai-helper-prompt-settings.png)
-
-This setting only changes the phrasing of your request. It does not make the external AI automatically understand all local context, and it does not guarantee that the AI will preserve, remove, or correctly handle the information you provide. Check the content scope before sending, and use AI data-sending and redaction settings when needed.
-
-## Next Step
-
-If you are concerned about data scope, read “What may be sent to AI”; if you are concerned about accidental edits, read “Why changes need confirmation”.
+:::tip[Want more control over your data?]
+Go to "AI redaction" settings to maintain a sensitive-word list, so GranoFlow automatically substitutes them before sending content to external AI.
+:::

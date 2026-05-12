@@ -1,5 +1,9 @@
-name: Sync frontend on docs release
+name: Sync frontend on docs update
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'manual/**'
   release:
     types: [published]
   workflow_dispatch:

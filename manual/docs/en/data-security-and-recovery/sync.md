@@ -25,11 +25,19 @@ Sync takes changes you make on one device and delivers them to every other devic
 ## Common sync statuses
 
 | Status | Meaning |
-|--------|---------|
+| --- | --- |
 | Syncing | Uploading or downloading changes |
 | Synced | This device matches the cloud |
 | Waiting | Changes queued, usually a network issue |
 | Error | Sync hit a problem — check account or encryption key |
+
+## Offline and service unavailable states
+
+GranoFlow's local data remains usable. You can still capture tasks, organize projects, write reviews, search, and export local backups.
+
+If you turn on Offline Mode, sync, sign-in, membership checks, and purchase restore are temporarily unavailable. When you tap those online features, the app will explain that the related service cannot be reached; turn Offline Mode off when you want to try again.
+
+If your device has internet but the sync service is temporarily unavailable, local use is not blocked. Data already on this device remains editable; changes that need upload or download can be synced later.
 
 ## Adding a new device to sync
 

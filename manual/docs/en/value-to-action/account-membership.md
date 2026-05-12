@@ -6,7 +6,7 @@ description: "Account, membership, subscription, entitlements — these four wor
 ## The four terms, clarified
 
 | Term | What it is |
-|------|-----------|
+| --- | --- |
 | **Account** | Your identity in GranoFlow — used for sync, recovery, and identification |
 | **Subscription** | Your purchase relationship with Apple or Google |
 | **Membership** | GranoFlow's label for your user tier (e.g. Pro) |
@@ -31,11 +31,13 @@ Log in to access: cloud sync, multi-device use, membership recognition, purchase
 
 > Local use answers "how do I organize now." Login answers "who does this data and these entitlements belong to."
 
+If Offline Mode is on, or the sign-in or purchase service is temporarily unreachable, local features still work. Sign-in, sync, entitlement refresh, and purchase restore can be retried later.
+
 ## Restore purchases
 
 After switching devices or reinstalling, if your membership is not showing, try "Restore purchases" — this asks the platform to re-check your purchase history and re-align it with your current account.
 
-Restore will not work if: the purchase was linked to a different GranoFlow account, or the subscription has been refunded or expired.
+Restore will not work if: the purchase was linked to a different GranoFlow account, or the subscription has been refunded or expired. If the purchase service is temporarily unavailable, GranoFlow will ask you to try again later and your local data is not affected.
 
 ## Why desktop might not show a buy button
 

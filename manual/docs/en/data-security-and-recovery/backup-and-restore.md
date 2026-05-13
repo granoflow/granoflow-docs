@@ -34,8 +34,6 @@ Create a backup before situations like these:
 4. Wait for the export to finish. Do not tap repeatedly or close the page while it is processing.
 5. Save the exported backup file somewhere you control, such as iCloud, a local folder, or your computer.
 
-![Backup or restore progress screen](../../../screenshots/en/data-backup-restore-progress.png)
-
 ## How to restore from backup
 
 1. Open GranoFlow Settings.

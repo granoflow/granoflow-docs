@@ -34,8 +34,6 @@ description: "备份是误删、设备损坏、迁移时的最后防线——但
 4. 等待导出完成，不要在处理中重复点击或关闭页面。
 5. 把导出的备份文件保存到你能控制的位置，例如 iCloud、本地文件夹或电脑。
 
-![备份或恢复进度界面](../../screenshots/zh-cn/data-backup-restore-progress.png)
-
 ## 怎么从备份恢复
 
 1. 打开 GranoFlow 设置。

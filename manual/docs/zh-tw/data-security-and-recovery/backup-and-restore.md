@@ -34,8 +34,6 @@ description: "備份是誤刪、設備損壞、遷移時的最後防線——但
 4. 等待匯出完成，處理期間不要重複點擊或關閉頁面。
 5. 把匯出的備份檔存到你能掌控的位置，例如 iCloud、本機資料夾或電腦。
 
-![備份或還原進度介面](../../../screenshots/zh-tw/data-backup-restore-progress.png)
-
 ## 怎麼從備份還原
 
 1. 打開 GranoFlow 設定。

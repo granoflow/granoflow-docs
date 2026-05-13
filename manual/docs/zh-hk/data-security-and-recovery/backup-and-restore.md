@@ -34,8 +34,6 @@ description: "備份係誤刪、設備損壞、遷移時的最後防線——但
 4. 等待導出完成，處理期間唔好重複點擊或者關閉頁面。
 5. 將導出嘅備份文件保存到你控制到嘅位置，例如 iCloud、本地文件夾或者電腦。
 
-![備份或恢復進度界面](../../../screenshots/zh-hk/data-backup-restore-progress.png)
-
 ## 點樣從備份恢復
 
 1. 打開 GranoFlow 設定。

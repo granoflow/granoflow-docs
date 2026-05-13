@@ -3,32 +3,32 @@ title: "Attachments and images"
 description: "Images and attachments are stored and synced separately from text tasks — knowing the difference helps you avoid accidental data loss."
 ---
 
-When you attach an image to a task or review entry, it is saved alongside the task — but images have different storage and sync behavior from text.
+If you are wondering whether images are saved safely with your tasks, remember this first: text tasks and image attachments are stored and synced separately. Text may appear on another device before the image finishes uploading; clearing local attachments only removes files from this device, and an image that was never uploaded cannot be recovered after it is cleared.
 
-![Attachment management entry](../../../screenshots/en/data-attachments-clear-entry.png)
+![Attachment management entry](../../../screenshots/en/interface-device-preferences-main.png)
 
-## Text vs images — how they differ
+## How text and images differ
 
-- **Text tasks**: small, sync fast, nearly real-time between device and cloud
-- **Image attachments**: large, sync slower, may still be uploading after the text already synced
+- **Text tasks**: small, quick to sync, and usually stay in sync between the device and cloud soon after changes
+- **Image attachments**: large, slower to sync, and may still be uploading after the text task has already synced
 
-This means: you might see a task synced on another device while the image still shows a loading placeholder — that is normal.
+So if a task appears on another device but the image is not visible yet, it does not necessarily mean the task was lost. Usually, keep the network stable and give the image more time to upload and download.
 
-## Removing image attachments
+## What removing image attachments means
 
 ![Attachment detail screen](../../../screenshots/en/data-attachments-clear-detail.png)
 
-Two levels of deletion:
+There are two different things you can do with image-related data:
 
-- **Remove from task**: breaks the link between the task and the image, but the local file may still exist on this device
-- **Clear attachment cache**: deletes the actual image files from this device, freeing storage
+- **Remove from task**: stops the task from being linked to that image; the local file may still remain on this device
+- **Clear attachment cache**: deletes attachment files stored on this device to free local storage
 
-After clearing the cache, if the image was successfully uploaded to the cloud, it can be re-downloaded. If the image was never uploaded, clearing removes it permanently.
+After you clear the attachment cache, an image can usually be downloaded again if it was already uploaded successfully to the cloud. But if the image was never uploaded successfully, clearing the local attachment removes the only available copy.
 
-## Does backup include images?
+## Do local backups include images?
 
-Local backups typically include only text data (tasks, projects, review records). **Image files may not be included**. Long-term image retention depends on cloud sync being active and successful.
+Local backups usually include only text data, such as tasks, projects, and review records. **Image files may not be included**. If you need images to be kept long term, the important thing is that cloud sync is working normally and the images have a chance to upload when network is available.
 
 :::note[Images require network to upload]
-Images do not upload offline. If you attach a photo while underground, its cloud upload waits until the next time network is available.
+Images do not upload offline. For example, if you attach a photo to a task while underground, that image will wait until the next time network is available before it continues uploading to the cloud.
 :::

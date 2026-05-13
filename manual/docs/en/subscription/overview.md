@@ -3,9 +3,9 @@ title: "Subscription overview"
 description: "You can try the full GranoFlow core without subscribing; membership mainly adds cloud sync and personalization."
 ---
 
-You can start with GranoFlow's core system for free: tasks, projects, values, lightweight journaling, reviews, local data, and backups do not require a subscription. Use it to organize your work and life first, then decide whether membership is useful for your rhythm.
+You do not need a subscription to use GranoFlow's core features: tasks, projects, values, lightweight journaling, reviews, local data, and backups are available for free. Membership is mainly for two needs: syncing across multiple devices, or using more personalization options.
 
-Membership mainly adds two things: **multi-device cloud sync** and **personalization**. They make GranoFlow more convenient and more tailored to you, but they are not required to try the core workflow.
+So when you first start using GranoFlow, you can use the free version to organize your work and life. After you know it fits your rhythm, you can decide whether membership is worth it.
 
 ![Subscription overview](../../../screenshots/en/subscription-overview-main.png)
 
@@ -19,27 +19,27 @@ Membership mainly adds two things: **multi-device cloud sync** and **personaliza
 | Multi-device cloud sync | ❌ | ✅ |
 | Personalization | ❌ | ✅ |
 
-In short: **the free version is enough for a serious trial and long-term single-device use; membership is for people who need device-to-device continuity or want the interface and details to fit them better.**
+In short: **the free version is enough for a serious trial, and it also works for long-term single-device use; membership is for people who need device-to-device continuity, or who want the interface, theme, and details to fit their habits better.**
 
 ## Where to check your subscription status
 
-Go to GranoFlow Settings → Account/Subscription to see your current plan.
+Open GranoFlow Settings, then go to Account/Subscription to see your current subscription status. This page usually also shows a Pro benefits summary, plus options to purchase or restore a purchase.
 
-**Important**: Subscription status comes from the server, not from the app itself. If entitlements aren't showing, wait a moment for the state to refresh, or check your network and account.
+**Important**: Subscription status comes from the server, not from the app deciding on its own. If you already paid but the benefits do not appear yet, wait a moment for the status to refresh; if nothing changes, check your network and the account you are signed into.
 
 ## Most common questions
 
-**I paid but nothing changed?**  
-Check: is the account you're signed into right now the same one you used when purchasing?
+**I paid, so why do I not have the benefits?**
+First check one thing: is the account you are signed into now the same account you used to purchase?
 
-**Switched phones — where did my subscription go?**  
-Sign in with the same account on the new device, and entitlements will follow.
+**I switched phones. Where did my subscription go?**
+Sign in with the same account, and the benefits usually come back with that account.
 
-**Can I share a purchase across iOS, Android, and macOS?**  
-Not automatically. See [Platform purchases and restore](/en/subscription/platforms-and-restore/).
+**Can purchases be shared across iOS, Android, and macOS?**
+Not always. See [Platform purchases and restore](/en/subscription/platforms-and-restore/).
 
 ## Subscription vs. data — which matters more
 
-Subscription controls which features you can use, not who owns your data.
+Subscription controls which features you can use. It does not decide who owns your data.
 
-Even if your subscription lapses, your local tasks, projects, values, lightweight journal entries, and backups stay intact. You can keep using every free feature. Membership only makes that content easier to sync across devices and gives you more room to tailor the experience.
+Even if your subscription expires, your local tasks, projects, values, lightweight journal entries, and backups remain in place, and you can keep using all free features. Membership only makes that content easier to sync across devices and gives you more room to tailor the interface and experience.

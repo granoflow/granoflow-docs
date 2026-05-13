@@ -1,34 +1,34 @@
 ---
 title: "Diagnostics and heatmap"
-description: "Diagnostics and the heatmap help you see patterns in your time investment — but they are reference tools, not judgments of how hard you worked."
+description: "Diagnostics and the heatmap help you see patterns in your time investment, but they are reference tools, not judgments of how hard you worked."
 ---
 
-Diagnostics and the heatmap are tools for seeing your data — not for grading you.
+If you want to understand whether your time investment has a pattern, start with diagnostics and the heatmap: they turn your records into status text, color levels, and anomaly prompts so you can review them, but they do not draw conclusions for you.
 
 ## Time investment phases
 
-Based on how many focus hours you logged that day, GranoFlow shows different status phrases: "just getting started," "building momentum," "deep focus," and so on.
+GranoFlow shows different phase labels based on the focus time you recorded for the day, such as “just getting started,” “building momentum,” or “deep focus.” These labels help you quickly understand roughly where that day sits.
 
 ![Diagnostic state settings](../../../screenshots/en/review-diagnostic-state-settings.png)
 
-These are orientation signals, not assessments. You can adjust the time thresholds and the phrasing in settings to match your own rhythm — for example, if "normal" for you is 4 hours, calibrate to that.
+You can adjust each phase’s time point and wording in settings. For example, if 2 hours is where you personally start to feel steady, set that phase to 2 hours. This changes the review display rules only. It does not change your historical records or judge whether you worked “hard enough.”
 
 ## Heatmap thresholds
 
-The heatmap uses color intensity to show how much you invested each day, making rhythmic patterns immediately visible across weeks and months.
+The heatmap uses color intensity to show how much time you invested each day. A darker color usually means more recorded time that day; a lighter color means less time or no record.
 
 ![Heatmap threshold settings](../../../screenshots/en/review-heatmap-threshold-settings.png)
 
-You can customize the color thresholds. If 2 hours is "active" for you, set the mid-range color there so the heatmap reflects your personal definition, not some generic standard.
+You can adjust the heatmap color thresholds. For example, if 2 hours per day is “normally active” for you, set that point as the middle color. Thresholds only change how colors are grouped. They do not modify the time data you already recorded.
 
 ## Anomaly detection
 
-GranoFlow can detect anomaly signals in your review data — for example, a certain task type disappearing from the pattern for several days, or a significant shift in time investment.
+GranoFlow can surface anomaly signals in your review data, such as a certain task type not appearing for several days, or your time investment shifting far from its usual range.
 
 ![Diagnostic anomaly settings](../../../screenshots/en/review-diagnostic-anomaly-settings.png)
 
-An anomaly is not "something is wrong." It is a data signal that you interpret: did your work rhythm change? Is something worth paying attention to?
+An anomaly prompt is not a conclusion, and it does not mean “something is wrong with you.” It is only a reminder to look back: did your work rhythm change? Did one type of work pause for a while? Or is there another reason that only you can interpret?
 
 :::note[These are references, not conclusions]
-Diagnostics and the heatmap generate prompts based on your records. The interpretation is always yours. They are not medical, psychological, performance, or financial assessments.
+Diagnostics and the heatmap generate prompts based only on your records. The final interpretation and judgment are always yours. They are not medical, psychological, performance, or financial assessments.
 :::

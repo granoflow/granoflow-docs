@@ -3,9 +3,9 @@ title: "Device preferences"
 description: "These settings only affect the current device. They do not sync to other devices — so after switching phones or computers, set them up again here."
 ---
 
-Device preferences control how GranoFlow behaves on this device, not your data.
+Use Device preferences when you want to change how GranoFlow feels on this device. These settings only affect the current device. They do not change your tasks, projects, or review data, and they do not automatically sync to other devices.
 
-Switch to a new device and these settings will not follow — you will need to set them up again there.
+After switching to a new phone, tablet, or computer, these preferences will not follow you. Check them again on the new device.
 
 ![Device preferences screen](../../../screenshots/en/interface-device-preferences-main.png)
 
@@ -13,22 +13,26 @@ Switch to a new device and these settings will not follow — you will need to s
 
 **Timer**
 
-Controls local feedback during focus sessions — sounds, status indicators. Affects the experience of using the timer, not the time-tracking data already recorded.
+Controls feedback on this device during focus sessions, such as sounds and status indicators.
+
+It only affects the timer experience. It does not change time-tracking data that has already been recorded.
 
 **App lock**
 
-Requires device-level authentication (Face ID / fingerprint / PIN) to open GranoFlow.
+When enabled, GranoFlow requires device-level authentication before opening, such as Face ID, fingerprint, or PIN.
 
-Useful on shared devices or when stepping away briefly. Note: app lock is not your account password and does not replace your recovery key or system security.
+This is useful on shared devices, or when you step away briefly and want to reduce the chance that someone can immediately view your content.
+
+Note: app lock is not your account password, and it does not replace an encryption key or system-level security settings.
 
 **Task reminder banners**
 
-Controls whether a lightweight task-reminder banner appears on this device.
+Controls whether lightweight task reminder banners appear on this device.
 
-Turning it off does not delete tasks or clear reminder times set on tasks. For cross-device reminder issues, also check this device's notification permissions.
+Turning banners off does not delete tasks or clear reminder times already set on tasks. If reminders behave differently across devices, also check this device's system notification permissions.
 
 **Inbox move notifications**
 
-Whether to show a brief success confirmation when a task moves out of the inbox.
+Controls whether GranoFlow shows a short success confirmation after a task is moved out of the inbox.
 
-Turning this off does not cancel the action or hide error messages — it just removes the "Done" success toast.
+Turning this off does not cancel the move action or hide error messages. It only removes the green "Done" success toast.

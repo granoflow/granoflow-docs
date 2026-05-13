@@ -3,29 +3,37 @@ title: "Why changes require confirmation"
 description: "AI suggestions never write directly to your tasks — confirmation is the key safeguard protecting your data."
 ---
 
-Some AI products automatically change things, and by the time you notice something is wrong, it is too late to undo cleanly. GranoFlow does not work that way.
+Changes require confirmation because GranoFlow wants you to check whether the AI understood correctly first. If you do not confirm, AI suggestions are not written to task fields.
 
 **Any AI suggestion that would change a task field requires your explicit confirmation before writing.**
 
 ## Why this design
 
-AI recognition is not 100% accurate. The same phrase can have multiple valid interpretations:
+AI does not understand your intent perfectly every time. The same phrase can have several meanings:
 
-- "Want to go for a run tomorrow" — is that a due date? A reminder? Just a thought?
-- "Before next Friday" — due date? Planned start time?
+- "Want to go for a run tomorrow" — tomorrow could be a due date, a reminder, or just part of the idea.
+- "Before next Friday" — this could be a due date or a planned start time.
 
-Without confirmation, a misinterpretation could silently change multiple fields. Confirmation lets you glance at "is this what AI understood?" before anything sticks.
+If AI changed tasks automatically, a wrong guess could write dates, tags, projects, or reminders into the task before you notice. Then you would need to check and fix those fields one by one.
+
+Confirmation has one simple job: before anything is written, you can see what AI is about to change.
 
 ## What the confirmation view shows
 
-- Fields AI identified (date, tags, project, reminder…)
-- The corresponding text in the original title (usually highlighted)
-- The ability to accept or dismiss each suggestion individually
+The confirmation view usually shows:
+
+- Fields identified by AI, such as date, tags, project, or reminder.
+- The matching text in the original title, usually highlighted.
+- A way to accept or ignore each suggestion separately.
+
+You do not have to accept everything at once. If one suggestion looks wrong, you can ignore just that item.
 
 ## If you do not confirm
 
-Nothing changes. The original title stays intact, and no task fields are modified. You can close the confirmation view and continue typing from scratch.
+If you do not confirm, nothing is written. The original title stays unchanged, and task fields are not modified.
+
+You can close the confirmation view, then type again or keep editing.
 
 :::note[Can you undo after confirming?]
-Once you accept AI suggestions, the fields are written. You can edit them manually in task details. GranoFlow does not have a dedicated "undo AI action" button, so reviewing before confirming matters.
+After you accept AI suggestions, the task fields are written. You can still edit those fields manually in task details. GranoFlow does not have a dedicated "undo AI action" button, so it is best to review before confirming.
 :::

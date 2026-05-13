@@ -7,6 +7,8 @@ translationReview:
   - product-frontend-design
 ---
 
+If you are not sure what a setting affects, first check its group: Appearance and Current Device usually only affect display and reminders on this device; Account, Sync, Data, Subscription, and AI entries take you to pages for more specific settings or explanations.
+
 Settings pages:
 
 - [Settings overview](/manual/en/interface/settings-overview/)
@@ -15,13 +17,14 @@ Settings pages:
 - [Account, sync, and data entry points](/manual/en/interface/settings-account-data-entrypoints/)
 - [Command line tool](/manual/en/desktop/command-line-tool/)
 
-Settings is the central entry point in GranoFlow. It brings display experience, device preferences, account, sync, data, subscription, AI, and about information into one place, but each entry affects a different scope.
-
-This page helps you decide whether a setting only changes how this device feels, or whether it opens account, data, or subscription-related pages.
+Settings is the central entry point in GranoFlow. It brings display experience, device preferences, account, sync, data, subscription, AI, and about information into one place, but each entry has a different scope.
 
 ## Appearance
 
 Appearance usually includes theme, font size, and language.
+
+<!-- manual-screenshot:id=interface-settings-overview-main -->
+![Settings overview interface screenshot](../../../screenshots/en/interface-settings-overview-main.png)
 
 These settings mainly affect what you see on the current device. Changing language, switching to dark mode, or increasing font size does not rewrite tasks, projects, tags, or review records, and it does not change the meaning of data in [multi-device sync](/manual/en/data-security-and-recovery/sync/).
 
@@ -31,7 +34,7 @@ If you only want to adjust reading and display, continue to [Language, theme, an
 
 Device preferences control how this device behaves, such as timer sound, app lock, task reminder banners, swipe action notifications, and overlap protection for focus time ranges.
 
-These options are closer to “how this device reminds me, protects me, and gives feedback.” They should not be understood as account-level business data or as a cross-device sync promise.
+You can think of these options as: how this device reminds me, protects me, and shows feedback. They should not be understood as account-level business data or as a cross-device sync promise.
 
 ## Account and Sync
 
@@ -49,13 +52,13 @@ These entries open specific configuration or explanation pages. They do not mean
 
 Settings includes a Command Line Tool entry for installing or repairing the `granoflow` command and confirming whether the current platform can use the CLI from a terminal.
 
-This CLI is only for the user's local computer and the running desktop app. It does not include development, build, cloud admin, test-account, or release commands.
+This CLI is only for the user's local computer and the running desktop app. It does not include development, build, cloud admin, internal debugging, or release commands.
 
 If you only run `granoflow help`, `granoflow version`, `granoflow status --json`, `granoflow display get --json`, or `granoflow open <route> --json` manually, you usually do not need extra setup. When scripts or AI assistants need structured results, prefer `--json`.
 
-Business object commands include `task`, `project`, `milestone`, `tag`, `domain-value`, and `review`. These commands require the running desktop app to receive the request. If the app cannot be reached, the command returns `app_not_reachable` and does not bypass the app to read or write the local database directly.
+To adjust app display preferences from the terminal, use `granoflow display language/theme/font-size/reset`. These commands only affect display experience. They do not clear account or business data.
 
-Display preference commands include `display language`, `display theme`, `display font-size`, and `display reset`. They also require the running desktop app, and they only change display preferences such as language, theme, and font size. They do not change account, data, sync, or test state.
+Business object commands include `task`, `project`, `milestone`, `tag`, `domain-value`, and `review`. These commands require the running desktop app to receive the request. If the app cannot be reached, the command returns `app_not_reachable` and does not bypass the app to read or write the local database directly.
 
 The CLI `backup create` and `backup restore` commands also require the running desktop app. Preview a backup restore with `--preview` before importing anything with `--confirm`. See [Command line tool](/manual/en/desktop/command-line-tool/) for full examples.
 
@@ -78,4 +81,4 @@ Research plans are low-frequency entries for users who actively choose to partic
 - To adjust display, read [Language, theme, and font](/manual/en/interface/settings-language-appearance/).
 - To understand local device switches, read [Device preferences](/manual/en/interface/device-preferences/).
 - To handle account, sync, or data entries, read [Account, sync, and data entry points](/manual/en/interface/settings-account-data-entrypoints/).
-- To let terminal commands, scripts, or AI assistants call Granoflow, read [Command line tool](/manual/en/desktop/command-line-tool/).
+- To let terminal commands, scripts, or AI assistants call GranoFlow, read [Command line tool](/manual/en/desktop/command-line-tool/).

@@ -1,36 +1,34 @@
 ---
-title: "价值观与提示词"
-description: "通过调整价值观和回顾提示，让日记和回顾更贴近你自己的语言和判断标准，而不是套模板。"
+title: 价值观与提示词
+description: 通过调整价值观和回顾提示，让日记和回顾更贴近你自己的语言和判断标准，而不是套模板。
 ---
 
-你有没有发现，每次做回顾，问题都一样，答案也越来越敷衍？
-
-这套设置就是解决这个问题的——让日回顾、周回顾、日记、价值观提示都说"你的话"，而不是系统默认的通用格式。
+如果你想让日记整理、周回顾和价值观探索更像你自己的表达，可以在这里修改对应的 Prompt 和价值观设置。它们会影响之后相关功能的提问、整理方式和草稿表达，但不会自动改写已经存在的任务、记录或历史总结。
 
 ![价值观与提示词设置界面](../../screenshots/zh-cn/review-values-prompts-settings.png)
 
 ## Prompt 设置做什么
 
-把它理解成"给 AI 助手的工作说明"。当你用 AI 功能整理日记、生成周总结、或者提取行动洞察时，AI 会照着这里的 Prompt 来理解你的偏好和要求。
+Prompt 可以理解成给 AI 助手看的工作说明。你使用 AI 功能整理日记、生成周总结、提取行动洞察时，系统会读取对应场景的 Prompt，用它来理解你希望采用的语气、重点和整理方式。
 
 每种场景有独立的 Prompt：
 
 | 场景 | 截图 | 影响什么 |
 |------|------|----------|
-| 日回顾改写 | ![](../../screenshots/zh-cn/review-daily-journal-prompt-settings.png) | 当天笔记被整理时的要求 |
-| 周回顾 | ![](../../screenshots/zh-cn/review-weekly-review-prompt-settings.png) | 一周记录被总结时的方式 |
-| 领域价值观 | ![](../../screenshots/zh-cn/review-domain-values-prompt-settings.png) | 探索价值观时给 AI 的问题 |
-| 工作学习报告 | ![](../../screenshots/zh-cn/review-work-learning-report-prompt-settings.png) | 报告草稿的组织方式 |
+| 日回顾改写 | ![](../../screenshots/zh-cn/review-daily-journal-prompt-settings.png) | 影响当天笔记被整理时的要求，例如保留什么重点、用什么表达方式。 |
+| 周回顾 | ![](../../screenshots/zh-cn/review-weekly-review-prompt-settings.png) | 影响一周记录被总结时的组织方式和表达风格。 |
+| 领域价值观 | ![](../../screenshots/zh-cn/review-domain-values-prompt-settings.png) | 影响探索价值观时提出的问题和整理角度，不会替你决定方向。 |
+| 工作学习报告 | ![](../../screenshots/zh-cn/review-work-learning-report-prompt-settings.png) | 影响报告草稿怎样组织内容和呈现重点。 |
 
-改完 Prompt 之后，下次用对应功能时会读取新文本。已经写下的任务、记录和历史总结不会自动重写。
+改完 Prompt 之后，下次使用对应功能时会读取新文本。已经写下的任务、记录和历史总结不会自动重写。
 
 ## 问卷与价值观设置
 
 ![问卷设置界面](../../screenshots/zh-cn/review-questionnaire-prompt-settings.png)
 
-分析与问卷设置控制"回顾问卷什么时候定稿"等行为，帮你把当天记录收束成相对稳定的结果。
+分析与问卷设置会影响回顾前后的提问，以及回顾问卷什么时候定稿等行为。它的作用是帮助你把当天记录收束成相对稳定的结果，不是判断你这一天好不好。
 
-领域价值观设置把你的长期方向带进回顾上下文。价值观可以随时修改，也可以随着实际记录慢慢变清楚——它不是填完一次就永远正确的分类表。
+领域价值观设置会把你的长期方向带进回顾上下文。价值观可以随时修改，也可以随着实际记录慢慢变清楚。它不是填完一次就永远正确的分类表。
 
 ## 这些设置的边界
 
@@ -39,5 +37,5 @@ description: "通过调整价值观和回顾提示，让日记和回顾更贴近
 - **会员限制**：部分设置是会员专属，非会员可以查看默认配置但无法自定义。
 
 :::tip[不知道从哪里改起？]
-先从"日记 Prompt"开始——把你觉得好用的写作习惯或记录风格告诉 AI，效果最直接。
+先从日记 Prompt 开始。把你觉得好用的写作习惯或记录风格告诉 AI，通常最容易看到变化。
 :::

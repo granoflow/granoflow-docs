@@ -3,11 +3,13 @@ title: "Subscription entitlements"
 description: "What subscriber features look like in the app, and how subscriber-only settings differ from the rest."
 ---
 
-Subscriber features are spread across GranoFlow — there's no single "subscriber area." Instead, you'll find them where they naturally live.
+If you want to know whether you can use a subscriber feature, check the feature’s own entry first: GranoFlow does not have one separate “subscriber area.” Subscriber entitlements appear where the related features live, such as sync, AI assistance, and personalization settings.
 
 ![Subscription entitlements](../../../screenshots/en/subscription-vip-settings.png)
 
 ## Subscriber-only features
+
+The following features require subscriber entitlements for full use.
 
 **Sync**
 
@@ -27,21 +29,23 @@ Subscriber features are spread across GranoFlow — there's no single "subscribe
 - Helper prompt customization
 - Diagnostics configuration and heatmap threshold settings
 
-## What happens when you're not subscribed
+## What happens when you are not subscribed
 
-Most subscriber-only entries are still visible to free users, but:
+Most subscriber-only entries are still visible when you are not subscribed. Seeing an entry does not mean you already have access to it.
 
-- Tapping them shows an upgrade prompt
-- Some settings become read-only (changes can't be saved)
+You may see two kinds of behavior:
 
-This lets you explore what's available before deciding to subscribe.
+- Tapping the entry shows an upgrade prompt.
+- Some settings can be viewed, but become read-only, so changes cannot be saved.
+
+This lets you see where the feature is and what settings may become available after subscribing.
 
 ## A note on sync entitlements
 
-Sync is a subscriber feature. If your current account has no active entitlement, the sync entry will show a prompt to view or activate a subscription.
+Sync is a subscriber feature. If your current account has no active entitlement, the sync entry will prompt you to view or activate a subscription.
 
-Seeing the sync entitlement page **does not mean your local data has been lost**. Local data exists independently of sync entitlements.
+Seeing the sync entitlement page **does not mean sync has started, and does not mean your local data has been lost**. Local data exists independently of sync entitlements.
 
 :::note[Entitlement status comes from the server]
-What the app displays for your subscription status is based on data from GranoFlow's servers. If the network is poor, it may temporarily show an incorrect state — refresh after a moment.
+What the app displays for your subscription status is based on account information returned by GranoFlow’s servers. If the network is poor, it may temporarily show an incorrect state. Refresh after a moment.
 :::

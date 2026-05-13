@@ -1,27 +1,23 @@
 ---
 title: "What is GranoFlow?"
-description: "Tasks, projects, habit formation, and daily review — all connected. GranoFlow is a local-first task manager designed for deep focus, helping you link everyday to-dos to what actually matters."
+description: "GranoFlow is a local-first personal planning app that keeps tasks, projects, milestones, reviews, and AI-assisted review in one structure."
 ---
 
-You can use GranoFlow as a simple Todo app — capture a task, check it off, move on. But it is closer to a structured life journal.
-
-Every task can connect to a project, and every project can tie back to an area you care about (like "health," "writing," or a side project). When you sit down for a daily or weekly review, you are not just looking at a crossed-out list — you are asking whether you have been moving in the direction you actually want.
-
-That is the real difference from an ordinary task manager.
+GranoFlow is a local-first personal planning app. You can start by using it like a Todo app: write down tasks, plan when to do them, and check them off. Later, you can connect those tasks to projects, milestones, values, and reviews, so you can see whether your daily work is moving something important forward.
 
 ## Tasks are just the entry point
 
-Want to capture something quickly? Open GranoFlow, type, done in seconds.
+The simplest way to use GranoFlow is this: when something comes to mind, add it as a task. You do not have to organize everything right away.
 
-When you have more time, decide which project it belongs to and when you want to do it. Think of it like dropping a receipt in your pocket — it is safe for now, you will sort it out later. GranoFlow does not push you to organize everything the moment you capture it.
-
-Tasks are the clues, projects are the containers, and your values give it all direction.
+When you have more time, you can decide which project the task belongs to, which milestone it relates to, and when you want to handle it. In GranoFlow, a task is not just an isolated item on a list. It is an entry point for putting everyday work back into a larger life structure.
 
 ## More than a to-do list
 
-Most to-do tools start and end with today. GranoFlow has more depth:
+A normal Todo tool usually answers one question: what do I need to do today?
 
-Here is how everything connects, from big goals down to daily tasks:
+GranoFlow helps you look one level deeper: which project does this task belong to? Which milestone is that project moving toward? Does this work connect to a direction you care about?
+
+Here is the common structure inside GranoFlow:
 
 ```mermaid
 graph TD
@@ -31,22 +27,22 @@ graph TD
   D --> E[Journal & Review]
 ```
 
-This means that even if you only finished three things in a week, you can see whether those three things actually moved you closer to your goals — instead of just knowing you were busy.
+This means that even if you only finish a few things in a week, you can look back and ask: did they only keep me busy, or did they move a project forward?
 
 ![GranoFlow main navigation overview](../../../screenshots/en/interface-overview-navigation.png)
 
 ## Review without the guilt trip
 
-GranoFlow has daily and weekly review built in, but it is not a streak tracker.
+GranoFlow is also a review tool. Daily reviews and weekly value notes are not there to create streak pressure or turn a pause into a failure.
 
-It is more like a light journal assistant — you note what happened, how it felt, what you want to do next, and then you close it. No shame, no pressure, no streak to break.
+You can use them to record what happened, what you were thinking, and what you want to adjust next. The point of review is to see the facts more clearly, not to blame yourself.
 
-## Your data stays with you
+## Keep your planning space private
 
-GranoFlow is local-first: your data lives on your device and works offline. Sync, backup, and encryption are controls you manage, not hidden background processes.
+GranoFlow follows a local-first product approach. Core records start on your device; sync, backup, and encryption each have clear boundaries.
 
-The AI features help you organize your review notes, but every decision stays yours.
+AI-assisted review can help you organize your thoughts, but it is only assistance. Whether to accept a suggestion, how to adjust, and what to do next are still your decisions.
 
 :::note[New here?]
-The only thing you need to know when you first open GranoFlow: tap **+** to add a task. Explore the rest when you feel like it.
+The first thing to know when you open GranoFlow: tap **+** to add a task. You can explore the rest when you actually need it.
 :::

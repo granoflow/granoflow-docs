@@ -3,7 +3,7 @@ title: "Cross-device sync"
 description: "Sync brings changes from one device to all others signed in to the same account — but it is not a backup."
 ---
 
-Sync takes changes you make on one device and delivers them to every other device signed in to the same account.
+Cross-device sync means this: when you add, change, or delete something on one device, GranoFlow tries to make the other devices signed in to the same account match that state. It helps you keep using GranoFlow across devices, but it is not a backup for recovering accidentally deleted content.
 
 ![Sync status screen](../../../screenshots/en/data-sync-status-main.png)
 
@@ -11,40 +11,40 @@ Sync takes changes you make on one device and delivers them to every other devic
 
 ✅ What syncs:
 
-- Tasks (title, due date, tags, status…)
+- Tasks, such as title, due date, tags, and status
 - Projects and milestones
 - Review records
-- Images and attachments (when network allows)
+- Images and attachments, when the network allows
 
-⚠️ Sync is not a backup:
+⚠️ The important part: sync is not a backup.
 
-- **Delete something and it deletes everywhere** — sync is bidirectional
-- **No version history** — sync does not remember "what things looked like 3 days ago"
-- **Images may lag** — text syncs first, images may follow later
+- **Delete something and it deletes everywhere**: sync is bidirectional, so deletion does not stay on just one device.
+- **No version history**: sync does not save “what things looked like 3 days ago.”
+- **Images may appear later**: text may finish syncing first, while images and attachments may follow later.
 
 ## Common sync statuses
 
 | Status | Meaning |
 | --- | --- |
-| Syncing | Uploading or downloading changes |
-| Synced | This device matches the cloud |
-| Waiting | Changes queued, usually a network issue |
-| Error | Sync hit a problem — check account or encryption key |
+| Syncing | Uploading or downloading changes. |
+| Synced | This device matches the cloud. |
+| Waiting | Changes are queued, usually because of the network. |
+| Error | Sync hit a problem, so check your account or key. |
 
 ## Offline and service unavailable states
 
-GranoFlow's local data remains usable. You can still capture tasks, organize projects, write reviews, search, and export local backups.
+If you temporarily have no network connection, GranoFlow’s local data remains usable. You can still capture tasks, organize projects, write reviews, search, and export local backups.
 
-If you turn on Offline Mode, sync, sign-in, membership checks, and purchase restore are temporarily unavailable. When you tap those online features, the app will explain that the related service cannot be reached; turn Offline Mode off when you want to try again.
+If you turn on Offline Mode, sync, sign-in, membership checks, and purchase restore are temporarily unavailable. When you tap those online features, the app will tell you that the related service cannot be reached; turn Offline Mode off and try again later.
 
-If your device has internet but the sync service is temporarily unavailable, local use is not blocked. Data already on this device remains editable; changes that need upload or download can be synced later.
+If your device has internet but the sync service is temporarily unavailable, the app will not block local use. Data already on this device remains editable; changes that need to upload to or download from the cloud can sync again later.
 
 ## Adding a new device to sync
 
-If you installed GranoFlow on a new phone or reinstalled the app, you need the **cloud sync key** from your old device to join the existing cloud data.
+If you get a new phone, or reinstall the app, and want to connect to your existing cloud data, you need the **cloud sync key** from your old device.
 
 See the full walkthrough → [Sync existing cloud data to a new device](/manual/data-security-and-recovery/new-device-sync/)
 
 :::caution[Sync does not replace backup]
-Export local backups regularly. Tasks you delete accidentally cannot be recovered through sync — the cloud deletes them too.
+Export local backups regularly. Tasks you delete accidentally cannot be recovered through sync, because the cloud and your other devices delete them too.
 :::

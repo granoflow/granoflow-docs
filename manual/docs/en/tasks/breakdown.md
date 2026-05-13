@@ -1,44 +1,42 @@
 ---
 title: "Breaking down tasks"
-description: "A task too big to start? Split it into small, doable steps. Complete them one at a time and the parent task takes care of itself."
+description: "A task too big to start? Split it into small steps and focus on the next one."
 ---
 
-Some tasks are really many actions dressed up as one — "write the whole report" is not a single action, it is a dozen actions glued together.
-
-That is what breakdown is for. Split a big task into nodes (sub-steps), complete them one at a time, and when they are all done the parent task is complete.
+If a task feels too big and you do not know where to start, open the task detail and split it into small actions in the steps or nodes area. Complete one node at a time; when all nodes are done, the parent task can be completed.
 
 ## How to break down a task
 
-Open the task detail and find the nodes or steps area. Tap to add the first sub-step.
+Open the task detail, find the steps or nodes area, and add the first sub-step.
 
 ![Task breakdown detail view](../../../screenshots/en/tasks-breakdown-detail.png)
 
-Write each node as one concrete action:
+Write each step or node as one action you can actually do. For example, “write the whole report” is too large, so you might split it into:
 
-- "Gather reference materials"
-- "Write outline"
-- "Write first paragraph of body"
-- "Revise"
-- "Send to colleague for sign-off"
+- “Gather reference materials”
+- “Write an outline”
+- “Write the first body paragraph”
+- “Revise”
+- “Send to a colleague for confirmation”
 
-You do not need to plan all steps upfront. Write the next one or two — that is enough to get started.
+You do not need to plan every step upfront. Write the next one or two steps you can do now, then add more later if needed.
 
 ## How nodes and the parent task relate
 
-- As nodes are completed, the parent task shows progress (e.g. "3 of 5 done")
+- When you complete nodes, the parent task progress updates, such as “3/5 done”
 - When all nodes are complete, the parent task can be marked complete
-- If you **add a new unfinished node**, the parent goes back to to-do — this is intentional, preventing a task from being closed while steps remain
+- If you **add a new unfinished node**, the parent task goes back to to-do; this is normal, because the system is reminding you that something is still unfinished
 
 :::tip[Avoid deep nesting]
-Nodes can have sub-nodes, but two levels is usually enough. If the structure is getting complicated, consider splitting into separate tasks or using milestones.
+Nodes can have sub-nodes, but avoid too many levels. Two levels is usually enough. If the structure becomes more complex, it is usually better to split it into separate tasks or project milestones.
 :::
 
 ## Breakdown vs milestones
 
 | Use nodes when | Use milestones when |
 | --- | --- |
-| The task finishes in hours or days | The goal takes weeks or months |
-| Steps are sequential and interdependent | Phases are relatively independent |
-| You want internal task progress | You want project-level phase tracking |
+| The task can be finished in hours or days | The goal takes weeks or months |
+| Steps depend on each other and happen in a fixed order | Phases are relatively independent |
+| You do not need to manage progress across tasks | You need to track progress at the project level |
 
-Short version: nodes answer "how do I do this?" — milestones answer "how far along is the project?"
+Short version: nodes answer “what is the next action?” Milestones answer “which stage is the project in?”

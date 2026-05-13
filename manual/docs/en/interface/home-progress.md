@@ -1,32 +1,38 @@
 ---
 title: "Progress"
-description: "Progress is GranoFlow's default home screen — not a stats dashboard, but a status board that answers: have I been moving forward lately?"
+description: "Progress is GranoFlow's default home screen for quickly checking today, yesterday, this week, this month, and project progress."
 ---
 
-When you open GranoFlow, you land on the Progress page.
+The Progress page helps you see, as soon as you open GranoFlow: what happened today, what yesterday left behind, whether you have been moving forward this week and this month, and where your active projects stand.
 
-It is not a stress-inducing task list and not a metrics-heavy analytics screen. Think of it as a small mirror: what did I do today, what did yesterday leave behind, how far along are my current projects?
+It is not a task list, and it is not an analytics report. Treat it as a home status board: glance at it first, then decide whether to continue today’s tasks or review yesterday.
 
 ## Today and yesterday
 
-The top of the page shows brief summaries for today and yesterday — tasks completed, projects touched, time invested.
+The top of the page shows brief summaries for today and yesterday. You can see how many tasks were completed, which projects were involved, and how much time was invested.
 
 ![Progress page](../../../screenshots/en/interface-home-progress-main.png)
 
-Tap "Today" to jump into the task list and keep going. Tap "Yesterday" to open yesterday's review and see what you finished.
+Tap "Today" to open the task page and continue working on current tasks. Tap "Yesterday" to open yesterday’s review and see what was completed that day.
+
+## This week and this month
+
+The Progress page also shows progress for this week and this month. The point is not to give you a stressful score or ranking, but to help you notice whether you have been taking steady action recently.
+
+If an area has not appeared for several days, you can think about it during review: was that part of the plan, or has it quietly been ignored?
 
 ## Project progress cards
 
-If you are actively working on projects, the Progress page shows cards for them — so you can see where things stand without opening each project individually.
+If you are working on projects, the Progress page shows related project cards. This lets you get a quick sense of which projects have moved recently without opening each project page one by one.
 
-## The question it is trying to answer
+## What it is useful for
 
-The real value of the Progress page is not giving you a tidy completion percentage — it is helping you answer:
+The Progress page is best for answering this question:
 
-> Have I been steadily moving toward what I care about?
+> Have I been steadily moving forward on the things I care about?
 
-If a domain has not shown up for several days, that signal might be worth a moment of reflection in your next review.
+If you only need a quick status check, the Progress page is enough. If you want to understand causes or adjust your plan, go to Review.
 
-:::note[Progress vs Review]
-Progress gives you a quick glance. Review is where the deeper thinking happens. They complement each other.
+:::note[Progress does not replace Review]
+Progress is for a quick glance. Review is where deeper thinking happens. They work better together.
 :::

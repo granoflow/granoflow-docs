@@ -1,26 +1,28 @@
 ---
 title: "Notifications"
-description: "The notifications page is GranoFlow's in-app inbox. Use it to review unread alerts — but for sync, subscription, or account issues, go to those feature pages directly."
+description: "The notifications page is GranoFlow's in-app inbox. You can review unread alerts, open related features, or mark notifications as read, but sync, subscription, and account status still need to be checked on their own feature pages."
 ---
 
-The notifications page is like GranoFlow's internal inbox — messages the app wants to tell you about live here.
+If you want to check alerts sent by GranoFlow inside the app, open the notifications page; you can review unread notifications, open the related area, or mark notifications as read.
 
 ![Notifications page](../../../screenshots/en/interface-notifications-main.png)
 
 ## What you can do here
 
-- Review unread messages (marked with an unread indicator)
-- Tap a notification to jump to the relevant section
-- Mark all as read
+You can use the notifications page to:
 
-## Notifications ≠ status confirmation
+- Review unread messages. Unread notifications have an unread indicator, so you can spot what you have not opened yet.
+- Tap a notification to jump to the related feature area.
+- Use “Mark all as read” to change unread notifications in the current list to read.
 
-"Mark all as read" only changes the read status of notifications. It does not mean the issues those notifications mentioned have been resolved.
+## Important: notifications are not status confirmation
 
-If you are troubleshooting sync, subscription entitlements, account status, or task reminders — go to the relevant feature page to see the actual current state. Notifications can point you there, but they cannot confirm the outcome.
+“Mark all as read” only means those notifications are no longer treated as unread messages. It does not fix the issue mentioned in a notification, and it does not mean the related status has returned to normal.
+
+If you are checking sync, subscription entitlements, account status, or task reminders, go back to the relevant feature page to view the current state. The notifications page can tell you that something happened, but it cannot replace the status shown on the feature page itself.
 
 ## Relationship with system notifications
 
-The notifications page shows **in-app messages**.
+The notifications page shows **in-app messages**, which means the notification list you see after opening GranoFlow.
 
-Whether system-level push notifications appear (like task reminder banners) depends on your device's notification permissions, background app limits, and network status. If task reminders are not showing up on time, check both the notification permissions in your device settings and whether Do Not Disturb is active.
+System-level push notifications, such as task reminder banners, also depend on system notification permissions, platform background limits, and network status. If task reminders are not appearing on time, check both whether system notification permission is enabled on your device and whether Do Not Disturb is active.

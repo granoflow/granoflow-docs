@@ -3,29 +3,29 @@ title: "Positive Psychology and Flow: Apply the Ideas in GranoFlow"
 description: "See how GranoFlow turns positive psychology and flow into tasks, projects, milestones, and review as a flow-friendly task manager."
 ---
 
-This chapter turns positive psychology and flow into practical GranoFlow steps: choose where to invest attention, tune task difficulty, keep feedback visible, and return after interruptions. It is for people who want a flow-friendly task manager for long-term goals.
+If you want to know how GranoFlow applies positive psychology and flow to everyday tasks, the answer is: use domains and values to explain why something matters, use projects, milestones, and tasks to make it startable, then use review to see feedback and return after interruptions.
 
-Positive psychology and flow are not decorative ideas inside GranoFlow.
+Positive psychology and flow are not decorative words in GranoFlow.
 
 They point to practical questions:
 
-- Why is this worth my time?
-- Can this be reduced to something I can start now?
-- Is the challenge too boring, too stressful, or just demanding enough?
-- After I finish, can I see feedback?
-- If I stop, can I return to the same direction?
+- Why should I spend time on this?
+- Can I start this now?
+- Is this task boring, stressful, or just challenging enough?
+- After I finish, can I see some feedback?
+- If I get interrupted, can I return to the same direction?
 
 GranoFlow does not guarantee flow, and it does not decide what a good life means for you.
 
-It gives those questions an operating structure:
+It gives you an operating path:
 
 > Domain → Values → Project → Milestone → Task → Review
 
-This path keeps positive psychology from becoming forced optimism, and keeps flow from becoming a command to focus harder.
+You can think of it this way: first know what matters to you, then turn it into one small thing you can do today.
 
 ## What Positive Psychology Does in GranoFlow
 
-Positive psychology is not about pretending everything is fine.
+Positive psychology is not forced happiness, and it is not pretending everything is fine.
 
 It asks how people build meaning, engagement, relationships, achievement, and growth in real life.
 
@@ -40,28 +40,28 @@ In GranoFlow, those ideas land in four places:
 
 For example, you may care about health.
 
-If that stays as a slogan, it will easily be crowded out by busy work.
+If that stays as a slogan, it can easily be crowded out by busy work.
 
 In GranoFlow, it can become:
 
-> Domain: Health  
-> Value: I want to care for my body over time instead of constantly draining it  
-> Project: Build a three-month basic exercise rhythm  
-> Milestone: Adapt during the first week  
-> Task: Stretch for 5 minutes  
+> Domain: Health
+> Value: I want to care for my body over time instead of constantly draining it
+> Project: Build a three-month basic exercise rhythm
+> Milestone: Adapt during the first week
+> Task: Stretch for 5 minutes
 > Review: The action was small, but the friction was low, so I can continue
 
 This is not about making life more complicated.
 
-It turns "what matters to me" into "what can I do today," then uses review to ask whether it is still worth continuing.
+It simply turns "what matters to me" into "what can I do today," then uses review to ask whether it is still worth continuing.
 
 ## What Flow Does in GranoFlow
 
-Flow usually appears inside specific action.
+Flow usually happens inside specific action.
 
-You do not enter flow directly with a life direction. You are more likely to enter it while writing a paragraph, debugging code, practicing a movement, or organizing material.
+You usually do not enter flow directly with a life direction. You are more likely to enter it while writing a paragraph, debugging code, practicing a movement, or organizing material.
 
-Flow needs certain conditions:
+Flow usually needs these conditions:
 
 | Flow condition | How GranoFlow supports it |
 | --- | --- |
@@ -79,37 +79,37 @@ A normal to-do list usually asks:
 
 GranoFlow helps you ask:
 
-> Which direction does this belong to?  
-> Which project does it move forward?  
-> Is the current stage too large?  
-> Is the next step clear enough?  
+> Which direction does this belong to?
+> Which project does it move forward?
+> Is the current stage too large?
+> Is the next step clear enough?
 > What feedback remains after I finish?
 
 These questions do not automatically create flow.
 
-They reduce ambiguity before action, making it easier to begin and more likely that stable engagement can appear once the action unfolds.
+But they reduce ambiguity before you start. It becomes easier to begin, and easier to stay engaged once the action unfolds.
 
 ## A Path from Theory to Features
 
 You can understand GranoFlow as six layers.
 
-1. **Domains provide meaning**  
-   Where does my time ultimately go?
+1. **Domains provide meaning**
+   They answer: where does my time ultimately go?
 
-2. **Values provide choice criteria**  
-   How do I want to act, beyond chasing external outcomes?
+2. **Values provide choice criteria**
+   They answer: how do I want to act, beyond chasing external outcomes?
 
-3. **Projects provide containers for engagement**  
-   What am I seriously working on during this period?
+3. **Projects provide containers for engagement**
+   They answer: what am I seriously working on during this period?
 
-4. **Milestones provide challenge gradients**  
-   Which stage comes first, and is the difficulty appropriate?
+4. **Milestones provide challenge gradients**
+   They answer: which stage comes first, and is the difficulty appropriate?
 
-5. **Tasks provide action entry points**  
-   What can I start now?
+5. **Tasks provide action entry points**
+   They answer: what can I start now?
 
-6. **Review provides feedback**  
-   Is this effort close to my values, and should I continue, adjust, or let go?
+6. **Review provides feedback**
+   It answers: is this effort close to my values, and should I continue, adjust, or let go?
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
 ![Progress page with task, project, and domain feedback](../../../screenshots/en/interface-home-progress-main.png)
@@ -160,9 +160,9 @@ Project:
 
 Milestones:
 
-> Choose the theme  
-> Write the script  
-> Generate the images  
+> Choose the theme
+> Write the script
+> Generate the images
 > Publish the first version
 
 Today's task:

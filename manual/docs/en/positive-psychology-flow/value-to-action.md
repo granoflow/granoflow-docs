@@ -3,23 +3,23 @@ title: "Turn Values into Engageable Tasks"
 description: "Use positive psychology and flow with GranoFlow to protect flow time, tune task difficulty, and turn long-term goals into reviewable action."
 ---
 
-This chapter turns positive psychology and flow into practical GranoFlow steps: choose where to invest attention, tune task difficulty, keep feedback visible, and return after interruptions. It is for people who want a flow-friendly task manager for long-term goals.
+If you know what you value but do not know what to do today, use GranoFlow to make a small path: Value → Project → Milestone → Task → Review. This keeps the value out of your head and turns it into one step you can start today.
 
 Values do not automatically become action.
 
 You may care about health and still not know what to do today.
 
-You may care about creation and still keep postponing writing.
+You may care about creating and keep stopping at “I’ll write later.”
 
-You may care about reliable delivery and still be blocked by vague tasks.
+You may care about reliable delivery and still get stuck behind vague tasks.
 
-GranoFlow turns values into an action path:
+The GranoFlow use case here is to put a value into an action path you can engage with:
 
 > Value → Project → Milestone → Task → Review
 
 ## Values Are Not Slogans
 
-Values and meaning in positive psychology only start to matter when they enter action.
+In positive psychology, values and meaning only affect your choices when they enter real life.
 
 Do not only write:
 
@@ -39,38 +39,38 @@ Write something like:
 
 The sentence does not need to be grand.
 
-It only needs to help you choose:
+It only needs to help you judge direction when you hesitate:
 
 - Is this close to a direction I value?
-- Am I only reacting to external pressure again?
+- Am I only dealing with external pressure again?
 - Is this project still worth continuing?
 
 ## Projects Are Commitment Containers
 
-Values are too large to act on directly.
+Values are usually too large to act on directly.
 
-You need a project to hold them.
+So you need a project to hold them.
 
 For example:
 
-> Value: Keep expressing and creating  
+> Value: Keep expressing and creating
 > Project: Finish the first set of GranoFlow comics
 
-A project turns "what matters" into "what I will work on during this period."
+A project turns “what I value” into “what I will move forward during this period.”
 
 From the flow perspective, a project is also an attention container.
 
-If everything matters at the same time, immersion is hard. A project gives a period of effort a boundary.
+If everything matters at the same time, immersion is hard. A project gives one period of effort a boundary.
 
 ## Milestones Adjust Challenge
 
-Large projects create anxiety.
+Large projects can create anxiety.
 
 Tasks that are too small can feel boring.
 
 Flow is more likely when challenge and ability are relatively matched.
 
-Milestones divide a project into stages so the challenge is not too distant.
+Milestones divide a project into stages so the challenge does not feel too far away.
 
 For example:
 
@@ -80,9 +80,9 @@ Project:
 
 Milestones:
 
-> Choose the theme  
-> Write the script  
-> Generate the images  
+> Choose the theme
+> Write the script
+> Generate the images
 > Publish the first version
 
 You do not need to face the whole project today.
@@ -93,7 +93,7 @@ You only need to know the current stage.
 
 Flow usually happens inside concrete action.
 
-So tasks need to be clear.
+So tasks need to be clear enough.
 
 Do not write:
 
@@ -109,7 +109,7 @@ Do not write:
 
 Write:
 
-> Watch a 10-minute tutorial and write 1 example
+> Watch a 10-minute tutorial and write down 1 example
 
 Do not write:
 
@@ -119,34 +119,34 @@ Write:
 
 > Write down the 3 most important things today
 
-A good task does not need to feel inspiring.
+A good task does not have to feel exciting.
 
-It needs to show how to begin.
+It only needs to show you how to begin.
 
 ## Review Decides Whether to Continue
 
-Values, projects, and tasks are not permanent once created.
+Values, projects, and tasks are not permanent after one setup.
 
 Real life gives feedback:
 
 - Some tasks are harder than expected
 - Some projects no longer matter
-- Some domains have been ignored for too long
-- Some small actions are slowly accumulating
+- Some areas have been ignored for too long
+- Some small actions are slow but starting to accumulate
 
 Review keeps that feedback.
 
 You can ask:
 
-- Which value did today's engagement approach?
-- Is this project still worth continuing?
+- Which value did today’s effort move toward?
+- Is the current project still worth continuing?
 - Is this milestone too large?
 - Is the task concrete enough?
 - Should the next step continue, shrink, or change direction?
 
-Then values do not stay as slogans.
+This keeps values from staying as slogans.
 
-And action does not become blind execution.
+It also keeps action from becoming blind execution.
 
 ## A Complete Example
 
@@ -162,7 +162,7 @@ Milestone:
 
 > Write the script
 
-Today's task:
+Today’s task:
 
 > Write one hook sentence for the first image
 

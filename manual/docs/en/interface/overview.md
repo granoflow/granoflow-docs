@@ -3,29 +3,31 @@ title: "Interface overview"
 description: "Four navigation tabs — Progress, Tasks, Review, Settings — plus a + button in the middle. That is the whole interface. 30 seconds to orientation."
 ---
 
-GranoFlow's main interface is intentionally minimal. You will not be overwhelmed by buttons.
+If you are trying to find where things are in GranoFlow, start with the four main entries: **Progress** shows status, **Tasks** is for your task list, **Review** is for retrospectives, **Settings** is for account, sync, data, AI assistance, appearance, and preferences; the **+** button is for quickly adding something.
 
-At the bottom (or left side on wide screens and desktop) are four tabs and a quick-add button — that is the entire navigation.
+GranoFlow's main interface is simple. On a phone in portrait mode, navigation is usually at the bottom. On wide screens or desktop, it may appear on the left. The position can change, but the entries are the same.
 
 ![Interface navigation overview](../../../screenshots/en/interface-overview-navigation.png)
 
 ![Root navigation](../../../screenshots/en/interface-root-route.png)
 
-## The four tabs
+## The four main entries
 
-| Tab | What you do here |
-|-----|-----------------|
-| **Progress** | Default home — see today's completions and project status at a glance |
-| **Tasks** | View and work through your task list |
-| **Review** | Daily review, weekly review, monthly calendar |
-| **Settings** | Account, sync, data, AI assistance, appearance and preferences |
+| Entry | What you do here |
+|------|--------------|
+| **Progress** | The default home screen. Use it to see what you completed today and roughly where each project stands. |
+| **Tasks** | View your task list and keep moving unfinished tasks forward. |
+| **Review** | Do daily reviews, weekly reviews, and view the monthly calendar. |
+| **Settings** | Manage account, sync, data, AI assistance, appearance, and preferences. |
 
 ## Quick add
 
 The **+** button in the center bottom is the quick-add entry.
 
-Tap it, write something down, optionally set a date, project, milestone and tags — or set nothing at all and sort it out later. It does not navigate away from where you are.
+When you think of something, tap **+** and write it down first. If needed, you can set a date, project, milestone, and tags at the same time. If you are not sure yet, leave them blank and organize it later.
+
+This entry does not take you to a completely separate page. It is there so you can quickly capture an idea or task from the current screen.
 
 :::tip[Cannot find a feature?]
-Check Settings first — most less-common features live there. The four main functions are directly accessible from the bottom tabs.
+Check **Settings** first. Less common but important areas such as account, sync, data, AI assistance, appearance, and preferences usually live there. For tasks, project progress, and reviews, switch directly from the main navigation.
 :::

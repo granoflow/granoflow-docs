@@ -1,57 +1,57 @@
 ---
 title: "Creating and editing tasks"
-description: "Creating a task should take under five seconds. Write a title, save, done. This page explains every field and when you actually need it."
+description: "To create a task, enter a title and save it. Dates, projects, tags, and other fields are optional; this page explains what each one does."
 ---
 
-One rule for adding a task: **write a title, hit save**. Everything else is optional — fill in the details when you need them.
+To create a task quickly, enter a title and save it. You can leave everything else blank at first, then come back later to add a date, assign a project, add tags, or break the task into steps.
 
 ## Where to create a task
 
 | Entry point | Best for |
 | --- | --- |
-| Bottom **+** button | Quick capture anytime |
-| Input field in Inbox | When you are already organizing the inbox |
-| Inside a project or milestone | To assign the task directly |
-| Node inside an existing task | To break a big task into steps |
+| Bottom **+** button | Capturing something immediately |
+| Input field in Inbox | Adding a task while organizing the inbox |
+| Inside a project or milestone | Creating a task that should belong to that project or phase |
+| Node inside an existing task | Breaking a large task into smaller steps |
 
 ## The task editing screen
 
 ![Create and edit task dialog](../../../screenshots/en/tasks-create-edit-dialog.png)
 
-What each field does:
+When you create or edit a task, you will see these fields. Only the title is required.
 
 | Field | Required? | What it does |
 | --- | --- | --- |
-| Title | ✅ Yes | The task name — be specific so it is easy to act on |
-| Description | Optional | Background notes, links, context |
-| Due date | Optional | Sets which day's task list it appears in |
-| Reminder | Optional | Sends a notification at the set time (cannot be in the past) |
-| Project | Optional | Moves the task out of the inbox into a project |
-| Milestone | Optional | Assigns the task to a specific phase within a project |
-| Tags | Optional | For filtering; a task can have multiple tags |
+| Title | ✅ Yes | The task name. The more specific it is, the easier it is to act on later |
+| Description | Optional | Stores background notes, links, or extra details |
+| Due date | Optional | Makes the task appear in that day's task list |
+| Reminder | Optional | Sends a notification at the selected time; it cannot be set in the past |
+| Project | Optional | Moves the task out of the inbox and into that project |
+| Milestone | Optional | Assigns the task to a phase within a project |
+| Tags | Optional | Helps you filter tasks; one task can have multiple tags |
 | Nodes | Optional | Breaks the task into smaller steps |
 
 :::tip[Natural language input]
-In the title field, you can type `#tag`, `@date`, or `~reminder` and GranoFlow will parse them automatically. For example, `Finish report @tomorrow #work` will detect tomorrow's date and a "work" tag. See [Writing tasks in natural language](title-parser) for the full syntax.
+In the title field, you can type `#tag`, `@date`, or `~reminder` and GranoFlow will parse them automatically. For example, `Finish report @tomorrow #work` will detect tomorrow's date and a “work” tag. See [Writing tasks in natural language](title-parser) for the full syntax.
 :::
 
 ## Where does the task go after saving?
 
-It depends on what you filled in:
+Where the task appears after saving depends on which fields you filled in:
 
 - **No date, no project** → Inbox
 - **Date set** → That day's task list
-- **Project assigned** → Inside the project
+- **Project assigned** → Inside that project
 - **Created inside a project page** → Automatically assigned to that project
 
-Editing a field does not create a new task — it changes where the same task lives.
+Changing the date, project, or milestone does not create another task. It only changes where the same task appears or belongs.
 
 ## Editing an existing task
 
-Tap any task to open its detail view. Change any field; the task auto-saves when you close the detail.
+Tap any task to open its detail view. Change the fields you need; the task auto-saves when you leave the detail view.
 
 :::caution[Note]
-Reminders cannot be set to a time in the past. If you try, the system will prompt you to pick a new time.
+Reminders cannot be set to a time in the past. If the reminder time you choose has already passed, the system will prompt you to pick a new one.
 :::
 
-Completing, archiving, and deleting are separate actions. Editing a task field does not automatically mark it complete.
+Completing, archiving, and deleting are separate actions. Filling in or changing task fields does not automatically mark the task complete.

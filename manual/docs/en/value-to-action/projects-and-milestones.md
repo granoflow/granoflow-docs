@@ -3,9 +3,9 @@ title: "Projects and Milestones: Turn Long-Term Directions into Stage Goals"
 description: "Use projects and milestones to hold long-term direction and break values-based goals into stages you can keep moving."
 ---
 
-This chapter turns ACT and The Happiness Trap into a GranoFlow practice: domains, values, projects, milestones, tasks, and review. Use it to turn long-term goals into one task you can start today, without making task management another source of anxiety.
+If you know what matters to you but do not know what to do today, create a project first, then break it into milestones and tasks. A project holds a goal you will keep moving over a period of time, a milestone marks the current stage, and a task writes down the next step you can take today.
 
-After you have domains and values, the next step is not to write a long list of tasks right away.
+After you have domains and values, do not rush into writing a long task list.
 
 First ask yourself:
 
@@ -30,7 +30,7 @@ For example:
 
 These all work well as projects.
 
-A project is not an abstract wish.
+A project should not be a large abstract wish.
 
 For example:
 
@@ -40,9 +40,9 @@ For example:
 - make the product better
 - become a better person
 
-These are too large and vague to be projects directly. They are closer to values, long-term directions, or questions that need to be broken down further.
+These are too large and vague. They are closer to values, long-term directions, or questions that still need to be broken down.
 
-A good project should answer:
+A good project should answer this question:
 
 > How far does this need to go before this stage is complete?
 
@@ -64,7 +64,7 @@ For example:
 
 These do not need projects.
 
-But if something has several of these qualities, it is a good candidate for a project:
+If something has these qualities, it is a good candidate for a project:
 
 - it takes several days or weeks
 - it needs multiple steps
@@ -72,13 +72,13 @@ But if something has several of these qualities, it is a good candidate for a pr
 - it needs materials, tasks, and stages to be organized
 - it is worth reviewing after completion
 
-For example, "write an article" may only be a task.  
+For example, "write an article" may only be a task.
 But "finish a series of articles" fits better as a project.
 
-"Run for 20 minutes" is a task.  
+"Run for 20 minutes" is a task.
 "Build a three-month running rhythm" is a project.
 
-"Fix a small bug" is a task.  
+"Fix a small bug" is a task.
 "Complete a version release" is a project.
 
 A project gives sustained effort a container.
@@ -95,7 +95,7 @@ For example, a project called:
 
 > Finish the current product version
 
-can be split into milestones:
+can be split into these milestones:
 
 - finish the core features
 - fix the main issues
@@ -116,7 +116,7 @@ can be split into:
 
 Milestones are not there to make projects more complicated.
 
-They split a large goal into smaller stages, so you do not need to face the whole project every day. You only need to know the current stage.
+They split a large goal into smaller stages. That way, you do not need to face the whole project every day. You only need to know which stage you are working on now.
 
 ## Small Projects May Not Need Milestones
 
@@ -179,7 +179,7 @@ You can split it into:
 
 The more specific a project is, the easier it is to move forward.
 
-If a project can never be completed, it is probably not a good project. It may need to become several projects, or move up into a domain and values.
+If a project can never be completed, it is usually not a good project. It may need to become several projects, or move up into a domain and values.
 
 ## Projects Need to Reach Tasks
 
@@ -201,11 +201,11 @@ Today's task:
 
 > Draft the "Projects and Milestones" chapter
 
-Now you are not facing a vague large goal every day. You know what to move forward today.
+Now you are not facing a vague large goal every day. You are facing a clear next step.
 
 If a project has no tasks under it, there are usually two possibilities:
 
-First, it is still only a wish and has not entered execution.  
+First, it is still only a wish and has not entered execution.
 Second, it is too vague and needs to be split into milestones or tasks.
 
 Projects in GranoFlow are not for collecting wishes. They should help you act.
@@ -239,16 +239,18 @@ Completing a project is not only closing a container. It also turns a period of 
 
 Not every project has to be completed.
 
-Some projects expire.  
-Some projects lose meaning.  
-Some projects start before you realize they are not important.  
+Some projects expire.
+Some projects lose meaning.
+Some projects start before you realize they are not important.
 Some projects were needed at the time, but are no longer needed.
 
 At that point, you can archive them or drop them.
 
 Dropping a project is not failure.
 
-The real question is not "Did I complete every project?" It is "Do I understand why this project is no longer worth continuing?"
+The real question is not "Did I complete every project?" It is:
+
+> Do I understand why this project is no longer worth continuing?
 
 For example:
 
@@ -274,16 +276,16 @@ Project:
 
 Milestones:
 
-> Finish the first 3 chapters  
-> Finish the core feature explanations  
-> Finish the data safety explanation  
+> Finish the first 3 chapters
+> Finish the core feature explanations
+> Finish the data safety explanation
 > Complete pre-release proofreading
 
 Tasks:
 
-> Write "Quick Start"  
-> Revise "Turn Values into Action"  
-> Add "Core Concepts"  
+> Write "Quick Start"
+> Revise "Turn Values into Action"
+> Add "Core Concepts"
 > Check terminology consistency
 
 Review:

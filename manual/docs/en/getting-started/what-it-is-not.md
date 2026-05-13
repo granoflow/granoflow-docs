@@ -3,44 +3,46 @@ title: "What GranoFlow is not"
 description: "GranoFlow is not a streak tracker, a habit game, or an AI that decides for you. It gives your tasks structure without the anxiety."
 ---
 
-Before you dive in, a few things to clear up — so you do not hit any surprises later.
+If you are wondering whether GranoFlow is right for you, start here: it is not a tool that forces you to finish something every day, and it is not an AI that makes decisions for you. It simply helps you organize tasks, projects, and reviews with more structure.
 
 ## Not a streak tracker
 
-GranoFlow has no streak counter.
+GranoFlow does not have streaks.
 
-Apps built around streaks say: you must do this today, thirty days in a row makes you a winner, and one missed day resets everything. That design tends to make you feel like a failure the moment life gets messy — a sick day, a busy week, an unexpected trip.
+Many check-in apps make every day feel mandatory. Do it for 30 days, and you win. Miss one day, and it can feel like everything before that was wasted. When life gets messy, such as illness, travel, or an unexpected interruption, that design can easily make you feel like you failed again.
 
-GranoFlow review does not ask "did you check in today?" It asks "what have you been paying attention to, and what do you think about it?" Gaps are normal. Just keep going.
+GranoFlow does not treat review that way. It does not ask, "Did you check in today?" It helps you see what you have been paying attention to, what you have done, and what you think about it. Gaps are normal. You can just continue.
 
-## Not a habit gamification app
+## Not a habit game
 
-There are no badges, leaderboards, or streak numbers. GranoFlow does not use game mechanics to make you feel like you must open it every day.
+GranoFlow does not give you badges, leaderboards, or streak numbers. It does not use game mechanics to push you to open it every day.
 
-If you rely on points and rewards to stay motivated, this app might feel unusually quiet — that is intentional. The design goal is to help you build a sustainable focus rhythm, not to create a new source of anxiety.
+If you usually rely on points, rewards, or rankings to stay motivated, this app may feel quiet, even a little boring. That is not an accident. GranoFlow is designed to help you build a steady focus rhythm, not create another source of pressure.
 
 ## Not an AI that makes decisions for you
 
-The AI features help you organize review notes and generate reflection prompts. They will not:
+The AI features in GranoFlow can help organize review notes and generate reflection prompts, but they do not take control of your life.
+
+They will not:
 
 - Silently edit your task records
-- Decide which projects matter most
+- Decide which project matters most
 - Set your values for you
 
-Every meaningful change needs your confirmation. AI is the assistant, not the manager.
+Meaningful changes need your confirmation. AI is the assistant, not the boss.
 
-## Not a team management tool
+## Not a company management tool
 
-GranoFlow is for individuals, not for teams, managers, or HR dashboards.
+GranoFlow is for personal use. It is not for teams, managers, or HR to monitor productivity.
 
-Your tasks and reviews are visible only to you. That is a design boundary, not a missing feature.
+Only you can see your tasks and reviews. That is a product boundary, not a missing admin dashboard.
 
-## Free to use for the essentials
+## Free for the essentials
 
-The core features are free indefinitely: tasks, projects, milestones, daily review — no item limits, no subscription required.
+GranoFlow's core features can be used for free long term, including tasks, projects, milestones, and daily review. There are no item limits, and you do not need to subscribe first.
 
-Paid plans unlock cloud sync and a few personalization features. If you only use one device, you may never need to pay.
+Paid plans mainly unlock cloud sync and a small number of personalization features. If you only use one device, you can use GranoFlow without paying.
 
 :::tip[Should you subscribe?]
-Start with the free version and see how it fits. When you find yourself thinking "I wish I could sync across my phone and computer," that is the right moment to consider upgrading — not before.
+Use the free version for a while first. When you actually find yourself thinking, "I want to sync between my phone and computer," that is the right time to consider paying.
 :::

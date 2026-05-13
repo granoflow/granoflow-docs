@@ -1,61 +1,63 @@
 ---
 title: "Completion, archive, and trash"
-description: "Task disappeared? Do not panic — it is probably completed, archived, or in the trash. These three states have different purposes."
+description: "Task disappeared? First check filters, dates, projects, Completed, Archived, and Trash; it usually just moved somewhere else."
 ---
 
-A task not showing up in your list does not mean it is gone. GranoFlow has three places a task can be hiding:
+If a task disappears from your list, do not assume it is lost. Most of the time, it is hidden by a filter, scheduled for a date, inside a project, completed, archived, or in the trash.
 
-- **Completed**: you finished it, it moved to the completed view
-- **Archived**: you set it aside, but kept the record
-- **Trash**: you deleted it, but have not emptied the trash yet
+In GranoFlow, these three states matter most when a task seems missing:
 
-Understanding these three keeps you from ever losing sleep over a "missing" task.
+- **Completed**: the task is done, and it appears in the completed view and daily review stats
+- **Archived**: you do not need to see it now, but you want to keep the record
+- **Trash**: the task was deleted, but the trash has not been emptied
 
 ## Completion
 
-When you finish something, mark it complete. It will:
+When you finish something, mark it complete. After that, the task will:
 
-- Leave the active task list
-- Record a completion timestamp (this is what daily review uses)
-- Appear in the "Completed" view and daily review stats
+- Leave the current task list
+- Record a completion time
+- Appear in the “Completed” view
+- Be used in daily review stats
 
 ![Completed and archived task views](../../../screenshots/en/tasks-completed-archived-trash.png)
 
-:::tip[Do not rush to delete completed tasks]
-Completed tasks are your daily review data. Seeing what you actually finished is often more satisfying than just crossing off a box.
+:::tip[Tip]
+If you still want to see the record in daily review, do not delete completed tasks casually. Completed tasks are not junk; they are your completion history.
 :::
 
 ## Archive
 
-Archive is for tasks you do not need to see daily but want to keep on record.
+Archive is for tasks you do not want to see every day, but may still need as a record later.
 
-For example: old tasks from a finished project phase, something that expired but has historical value, content you do not want to see every day but might want to reference later.
+For example: old tasks from a project, expired items that still have reference value, or anything you want out of the current list without deleting it.
 
 ![Archived task list](../../../screenshots/en/tasks-archived-list.png)
 
-Archive vs complete:
-- **Complete**: the task is genuinely done, it counts in your stats
-- **Archive**: just moves it off the active view — does not count as completed
+Archive and complete are not the same thing:
+
+- **Complete**: the task is actually done, and it counts in completion stats
+- **Archive**: the task is only moved out of the current view; it does not mean done, and it does not count as completed
 
 ## Trash
 
-Deleted tasks go to the trash, where they can still be recovered.
+After you delete a task, it goes to the trash. As long as the trash has not been emptied, you can still check it there.
 
 ![Trash list](../../../screenshots/en/tasks-trash-list.png)
 
 :::caution[Think before emptying]
-Emptying the trash is permanent. If a task was part of a project or has review value, it is gone for good after that.
+Manually emptying the trash is irreversible. If a task belonged to a project or still has review value, you will not be able to recover it from the trash after emptying it.
 :::
 
 ## Task is missing — where to look
 
-Check in order:
+Check in this order. It is usually the fastest way:
 
-1. Is a filter hiding it? (e.g. showing only "today")
-2. Does it have a date? → Look in that day's task list
-3. Is it in a project? → Look in the project view
-4. Did you complete it? → Check the "Completed" view
-5. Did you archive it? → Check the "Archived" view
-6. Did you delete it? → Check the trash
+1. Check whether a filter is hiding it, such as showing only “today” tasks.
+2. Think about whether it has a date. If it does, look in that day’s task list.
+3. Think about whether it belongs to a project. If it does, look in the project page.
+4. If it is already done, check the “Completed” view.
+5. If you wanted it out of the current list, it may be archived. Check the “Archived” view.
+6. If you deleted it, check the trash.
 
-Ninety-nine percent of "missing" tasks are in one of those six places.
+Most missing tasks are in one of these places.

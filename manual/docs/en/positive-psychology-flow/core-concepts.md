@@ -3,23 +3,21 @@ title: "Core Concepts: From Domains to Tasks"
 description: "Use positive psychology and flow with GranoFlow to protect flow time, tune task difficulty, and turn long-term goals into reviewable action."
 ---
 
-This chapter turns positive psychology and flow into practical GranoFlow steps: choose where to invest attention, tune task difficulty, keep feedback visible, and return after interruptions. It is for people who want a flow-friendly task manager for long-term goals.
+If you want to know how domains, values, projects, milestones, tasks, and reviews work in GranoFlow, start here: a domain shows where your time goes, values explain why the work matters, a project holds ongoing work, a milestone cuts the project into stages, a task lets you start now, and review turns finished work into feedback.
 
-This page is the concept index for the chapter.
+This page is the concept index for the chapter. It translates positive psychology and flow into simpler GranoFlow language.
 
-If you already understand the direction of positive psychology and flow, use this page to confirm what each GranoFlow concept does.
-
-Remember one path first:
+Remember this path first:
 
 > Domain → Values → Project → Milestone → Task → Review
 
-This is not a form you must complete at once.
+This is not a form you must complete all at once.
 
-It is a language for turning meaning into action, then action into feedback.
+Think of it as a way to organize work: see the meaning, turn it into action, then use review to get feedback.
 
-## Domain: The Life Direction Where Meaning Lives
+## Domain: Where Your Time Ultimately Goes
 
-A domain is a long-term direction that receives your time and attention.
+A domain is a long-term life direction that receives your time and attention.
 
 Common domains include:
 
@@ -36,19 +34,21 @@ For example:
 
 > Health
 
-That is a domain.
+This is a domain.
 
 But:
 
 > Run three times a week
 
-Is more like a task or habit arrangement.
+This is more like a task or habit arrangement.
 
-## Values: Criteria for Choice
+A simple test is: if it sounds like a long-term direction, it is probably a domain. If you can do it directly, it is usually not a domain.
 
-Values are not one-time goals.
+## Values: Criteria for Making Choices
 
-Goals can be completed. Values reappear.
+Values explain why you want to invest in something.
+
+They are not one-time goals. Goals can be completed. Values keep shaping your choices.
 
 For example:
 
@@ -64,7 +64,9 @@ In positive psychology, values connect action to meaning and growth.
 
 In GranoFlow, values help you judge which tasks and projects are closer to the person you want to become.
 
-## Project: A Container for Long-Term Engagement
+When you do not know what to do first, ask: which direction I care about does this move me toward?
+
+## Project: A Container for Ongoing Work
 
 A project is larger than a task and more concrete than a life goal.
 
@@ -86,11 +88,13 @@ A project answers:
 
 > What am I seriously moving forward during this period?
 
-## Milestone: A Stage That Adjusts Challenge
+If a task will still have another step after it is done, it may belong in a project.
+
+## Milestone: Cut a Large Project into Stages
 
 A milestone is a stage inside a project.
 
-It does not add complexity for its own sake. It cuts a large project into a more workable size.
+Its job is not to add complexity. Its job is to cut a large project into a more workable size.
 
 For example, a project called:
 
@@ -98,20 +102,22 @@ For example, a project called:
 
 Can be divided into:
 
-> Finish core features  
-> Fix major issues  
-> Prepare release material  
+> Finish core features
+> Fix major issues
+> Prepare release material
 > Submit for review
 
-In flow practice, milestones help adjust challenge.
+In flow practice, milestones help you adjust challenge.
 
-Goals that are too large create anxiety.
+Goals that are too large can create anxiety.
 
-Tasks that are too small become boring.
+Tasks that are too small can become boring.
 
-Milestones show which stage comes first.
+Milestones show which stage to finish first.
 
-## Task: A Clear Action Entry
+A simple test is: if the project feels too large and you do not know where to start, create a milestone first.
+
+## Task: An Action You Can Start Now
 
 A task is GranoFlow's basic action unit.
 
@@ -136,6 +142,8 @@ Weak tasks are often too large, too vague, or too close to wishes:
 
 These should usually become projects or values first, then be broken into tasks.
 
+A simple test is: if you still need to think for a long time before you know the first step, it is not a clear task yet.
+
 ## Review: Turn Action into Feedback
 
 Review is an important part of GranoFlow.
@@ -155,6 +163,8 @@ You can ask:
 In positive psychology, review helps you see growth and achievement.
 
 In flow practice, review provides feedback that makes the next action easier to start.
+
+A review does not need to be long. If it helps you see the next step, it is already useful.
 
 ## How They Connect
 
@@ -189,6 +199,8 @@ This path does two things:
 - Positive psychology: action connects to meaning, growth, and long-term direction
 - Flow: the task has a clear goal, suitable challenge, and visible feedback
 
+You do not need to write this much every time. The example only shows how the concepts connect.
+
 ## You Do Not Need Everything at First
 
 When you first use GranoFlow, you do not need to create every domain, value, project, and milestone immediately.
@@ -200,7 +212,7 @@ Use the simplest path:
 3. If the project grows, add milestones
 4. During review, slowly connect it to domains and values
 
-The structure grows over time.
+The structure grows over time. It does not need to be built on the first day.
 
 If it helps you see the next step, it is already working.
 

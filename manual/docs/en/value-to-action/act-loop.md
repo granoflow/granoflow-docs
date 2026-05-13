@@ -3,15 +3,17 @@ title: "ACT and The Happiness Trap: turning values into action"
 description: "GranoFlow draws on ACT (Acceptance and Commitment Therapy) — you do not need to eliminate anxiety first to move toward what you care about. This page explains how that thinking shows up in daily use."
 ---
 
-Most productivity tools assume you need to get your head straight before you start.
+This page answers a practical question: when you feel anxious, scattered, or not ready, how can you still use GranoFlow to move on what matters? The answer is: accept the current state first, write things down, then turn what you care about into one small step you can take today.
 
-Stop procrastinating first. Figure out your priorities first. Stabilize your life first. Then begin.
+Many task tools can make it feel as if you need to fix your state before you start.
 
-But that "perfect state" rarely arrives.
+For example, stop feeling anxious before working. Figure everything out before planning. Stabilize your life before changing anything.
 
-GranoFlow draws on **ACT (Acceptance and Commitment Therapy)**, made accessible to many readers by Russ Harris in *The Happiness Trap*: you do not have to eliminate anxiety and chaos before living a life that matters. You can act toward what you value while the imperfection is still there.
+Real life usually does not work that way. The perfectly ready day may never arrive.
 
-## The loop
+GranoFlow draws on **ACT (Acceptance and Commitment Therapy)**, made accessible to many readers by Russ Harris in *The Happiness Trap*: you do not have to eliminate anxiety and chaos before living a life that matters. You can act toward what you value while real-life imperfection is still there.
+
+## One loop: accept → values → action → review
 
 ```mermaid
 graph LR
@@ -22,44 +24,52 @@ graph LR
   E --> A
 ```
 
-You do not need to complete this loop every day. Sometimes you just write one thing down. Sometimes you just do one review. That counts.
+The loop means: acknowledge reality first, notice what you care about, choose a concrete action, then use review to keep the experience.
 
-## Accept: write it down, even if you have not figured it out
+You do not need to complete the whole loop every day. Sometimes you only write one thing down. Sometimes you only do one review. That still counts.
 
-The first step in GranoFlow is not getting into the perfect state — it is capturing whatever is occupying your attention.
+## Accept: write it down before you figure it out
 
-Drop it in the inbox. You do not need to explain why it is there yet.
+In GranoFlow, the first step is not getting yourself into a perfect state. It is writing down whatever is occupying your attention.
+
+Put it in the inbox. At this point, you do not need to explain why it belongs there, categorize it, rank it, or make a full plan.
 
 ![Inbox](../../../screenshots/en/tasks-inbox-main.png)
 
-Acceptance is not giving up. It is: I acknowledge things are the way they are right now, and I start from here.
+If the screenshot does not load, the idea is still simple: find the inbox and capture the thing that is taking up space in your head.
+
+Acceptance is not giving up. It means: I acknowledge that this is the situation right now, and I start from here.
 
 ## Values: who do you want to be
 
-Tasks answer "what do I need to do." Values answer "who do I want to become."
+Tasks answer “what do I need to do.” Values answer “who do I want to be.”
 
-The most useful values are not grand declarations. They are ordinary and honest:
+The same workout can mean different things. One person may care about appearance, another about health, another about having more strength for the long run. The action is the same, but the value behind it can be completely different.
+
+You do not need a beautiful life motto. The most useful values are often ordinary:
 
 - I want to be a reliable person
-- I want to keep going even when things are hard
-- I want to create something, not just consume
+- I want to keep going when things are hard
+- I want to create something, not just consume life
 
-## Commit to action: turn direction into today's next step
+## Commit to action: turn direction into one step for today
 
-A value sitting in a notes app does nothing. It needs to become a project, milestones, and tasks.
+Writing down values is not enough. A value needs to land in projects, milestones, and tasks.
 
-"Be reliable" → Project: "Complete current product version" → Milestones → Tasks you can start today.
+For example, if you value “being reliable,” you might turn it into a project: “Complete the current product version.” That project can become milestones: “finish core features → test → release.” Each milestone can then become specific tasks you can move today.
 
-Committing to action does not mean "I can never stop." It means: even if I am not at my best, I am willing to take one concrete step toward what I care about.
+Committing to action does not mean “I can never stop again.” It means: even if I am not at my best, I am willing to take one concrete step toward what I care about.
 
 ## Interruptions are not failure
 
-Life interrupts. Illness, job changes, low energy — plans pause.
+Life interrupts. Illness, job changes, and low energy can all pause a plan.
 
-What matters is not "never stopping" — it is "being able to come back." No guilt, no catch-up. Just: what still matters? What is the smallest next step today?
+What matters is not “I never stopped.” What matters is “I can come back after stopping.”
+
+When you come back, you do not need to compensate for the past or blame yourself. Just ask two questions again: what project still matters now? What is the smallest step I can take today?
 
 ## GranoFlow's position
 
-GranoFlow is not a therapy tool and cannot replace professional help. It borrows the parts of ACT suited to daily life: accept reality, see values, commit to action, let review turn experience into growth.
+GranoFlow is not a therapy tool and cannot replace professional help. It only borrows the parts of ACT that fit daily life: accepting reality, seeing values, committing to action, and using review to keep what happened.
 
-The goal is not to make you a perpetually high-performing person. It is to help you keep moving toward what you actually care about, in real life.
+The goal is not to make you a permanently high-performing person. It is to help you keep moving toward what you actually care about, in real life.

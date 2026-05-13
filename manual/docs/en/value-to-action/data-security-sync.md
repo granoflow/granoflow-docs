@@ -1,58 +1,68 @@
 ---
 title: "Data security and sync"
-description: "Local-first, end-to-end encryption, and why your encryption key is not your password — understand these three things and your GranoFlow data will never disappear mysteriously."
+description: "Local-first, end-to-end encryption, and why your encryption key is not your password — understand these three things and your GranoFlow data will not disappear or become unreadable for mysterious reasons."
 ---
 
-GranoFlow stores tasks, projects, reviews, and values — personal stuff. Here are the concepts that actually matter, without the tech jargon.
+If you only want the practical answer: remember three things. Your GranoFlow data is saved on the device you are using first; when cloud sync is enabled, the cloud stores an encrypted copy; and your login password proves the account is yours, but your encryption key is what unlocks the data.
 
-## Local-first
+## What local-first means
 
-Local-first means your data lives on your device first. You do not need a network connection to capture tasks, organize projects, or read reviews.
+Local-first means GranoFlow saves your data on your device first. You can capture tasks, organize projects, and read reviews without staying online all the time.
 
-Enable cloud sync and GranoFlow uploads an encrypted copy to the cloud — for multi-device access and recovery after switching devices.
+If cloud sync is not enabled, your data mainly lives in the current device and workspace. Before switching devices or reinstalling, you need to make sure your backup and key are ready.
 
-> Local = your active workspace  
-> Cloud = an encrypted backup for syncing and recovery
+If cloud sync is enabled, GranoFlow uploads your data to the cloud. The cloud is used for syncing across devices and restoring data after you switch devices.
 
-## End-to-end encryption
+> Local = the workspace you are using now
+> Cloud = an encrypted copy for multi-device sync and recovery
 
-E2EE means data is encrypted before it leaves your device. The cloud stores ciphertext — GranoFlow's servers cannot read your task content.
+## What end-to-end encryption protects
 
-But encryption is not magic. When you use the app normally, it decrypts data locally so you can see and edit it. If your device is compromised or someone else has physical access and your unlock credentials, E2EE cannot help.
+End-to-end encryption (E2EE) means your data is encrypted before it leaves your device. The cloud stores ciphertext, and GranoFlow's servers cannot read your task content.
 
-So: lock your screen, save your key, and be careful what you copy to external services.
+But end-to-end encryption is not a complete shield against everything. When you use GranoFlow normally, the app has to decrypt data locally so it can show the content to you. If your device is controlled by malware, or someone else can unlock your device, E2EE cannot protect you from that.
 
-## Your encryption key is NOT your password
+You still need the basics: lock your screen, store your key carefully, and avoid copying private content into services you do not trust.
 
-This is the most common confusion:
+## Your key is not your login password
+
+This is the most common mix-up. Your password or email code proves the account belongs to you. Your encryption key unlocks your encrypted data.
 
 | | Purpose |
 |--|---------|
 | **Password / email code** | Proves the account belongs to you |
 | **Encryption key** | Unlocks your encrypted data |
 
-You can log in successfully and still be unable to open encrypted cloud data or backups if you do not have the key.
+So you may be able to log in successfully, but still be unable to open cloud data or backup files without the correct key.
 
-This is not GranoFlow being difficult — it is the basic trade-off of E2EE: if the server could unlock your data whenever you ask, it means the server could always read your content.
+This is not GranoFlow making things difficult. It is the basic boundary of end-to-end encryption: if the server could unlock your data whenever you asked, that would also mean the server could read your content.
 
-**Key storage tips:** Use a reliable password manager. Do not save it only as a screenshot on one device. Verify the key works before switching devices.
+**How to store your key:**
 
-## What happens if you lose your key
+- Save it in a reliable password manager
+- Do not keep it only as a screenshot on one device
+- Before switching devices, confirm the key works
 
-- Old device still works → you can continue using it or re-establish sync
-- Only encrypted cloud data, no key → the server cannot decrypt it for you
-- Backup file but wrong key → backup cannot be restored
+## What happens if you forget your key
+
+What happens depends on what you still have access to.
+
+- Old device can still open the data: you can keep using it or set up sync again
+- Only encrypted cloud data, no key: the server cannot decrypt it for you
+- Backup file, but not the key used when the backup was created: the backup cannot be restored
 
 > Login gets you back into your account. The key gets you back into your data. They are not interchangeable.
 
 ## Before switching devices
 
-1. Old device can still open GranoFlow
-2. Cloud sync is current, or you have exported a recent backup
-3. You know the encryption key for your current data
+Before switching devices, check these three things on the old device:
 
-Then: log in with the same account on the new device → enter the key when prompted → restore or sync.
+1. The old device can still open GranoFlow
+2. Cloud sync is current, or you have exported the latest backup
+3. You know the key for the current data
 
-:::caution[Empty device is not a data source]
-When syncing for the first time on a new device, do not treat the empty device as the "source of truth" — that would overwrite your existing cloud data.
+After that, log in with the same account on the new device, enter the key when prompted, then restore or sync your data.
+
+:::caution[An empty device is not a data source]
+When syncing for the first time on a new device, do not treat a device with no data as the "new starting point" for the cloud. This may overwrite your old data.
 :::

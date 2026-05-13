@@ -3,19 +3,17 @@ title: "Quick Start: Run the First Practice in 5 Minutes"
 description: "Complete a 5-minute GranoFlow practice from positive psychology to flow conditions: capture, connect values, turn them into a task, complete, and review."
 ---
 
-This chapter turns positive psychology and flow into practical GranoFlow steps: choose where to invest attention, tune task difficulty, keep feedback visible, and return after interruptions. It is for people who want a flow-friendly task manager for long-term goals.
+If you want to start using GranoFlow right away, you do not need to learn the theory first: capture one real thing, ask why it is worth doing, turn it into a small task you can start now, mark it complete when finished, and spend 1 minute reviewing it at the end of the day.
 
-You do not need to understand all the theory before using this chapter.
-
-Start with a 5-minute loop:
+This is the smallest loop this chapter walks you through:
 
 > Capture one thing → Connect it to a value → Turn it into a task → Complete it → Review
 
-This is the smallest way to apply positive psychology and flow in GranoFlow.
+Positive psychology helps you answer: why is this worth engaging with?
 
-Positive psychology asks: why is this worth engaging with?
+Flow helps you answer: can this become clear, startable, and able to give feedback?
 
-Flow asks: can this become something clear enough to start, with visible feedback?
+For your first practice, one loop is enough. You do not need to build the whole system first.
 
 ## Step 1: Capture One Real Thing
 
@@ -31,9 +29,11 @@ It can be small:
 - Book a health check
 - Capture a thought that just appeared
 
-The point is not classification. The point is reducing friction.
+This step is not about sorting everything right away, and it does not need to be polished.
 
-When something stays only in your head, it takes up attention and emotion. Writing it down turns confusion into something you can handle.
+Its job is to move one thing out of your head and turn it into something you can handle.
+
+When something stays only in your head, it uses attention and emotion at the same time. Writing it down lowers the friction.
 
 If you do not know which project it belongs to yet, leave it in the inbox.
 
@@ -43,20 +43,20 @@ Do not rush to add many labels.
 
 Ask one question:
 
-> If I choose to spend time on this, what direction does it connect to?
+> If I choose to spend time on this, what direction that matters to me does it connect to?
 
 For example:
 
-> Reply to a client email  
+> Reply to a client email
 > Connects to: reliable delivery and taking collaboration seriously
 
-> Run for 20 minutes  
+> Run for 20 minutes
 > Connects to: caring for my body over time
 
-> Write product manual copy  
+> Write product manual copy
 > Connects to: continued expression and creation
 
-This brings the meaning side of positive psychology into GranoFlow.
+This step brings the “meaning” part of positive psychology into the specific thing you are handling.
 
 You do not need a perfect value statement. One honest sentence is enough.
 
@@ -68,7 +68,7 @@ If you wrote:
 
 > Make the manual good
 
-That is too large.
+That is too large. You may not know where to start right now.
 
 Change it to:
 
@@ -78,7 +78,7 @@ If you wrote:
 
 > Improve health
 
-That is too broad.
+That is too broad. It is more like a direction than an action you can do immediately.
 
 Change it to:
 
@@ -88,7 +88,7 @@ If you wrote:
 
 > Learn English
 
-That is too vague.
+That is too vague. You still do not know the exact next move.
 
 Change it to:
 
@@ -104,15 +104,15 @@ Choose the easiest task to start.
 
 After you finish it, mark it complete.
 
-Completion is not a score.
+Completion here is not a score.
 
-It gives GranoFlow a fact:
+It leaves GranoFlow with a fact:
 
 > This happened.
 
 That fact can later appear in review, progress, and long-term records.
 
-From the flow perspective, completion is also feedback. You can see that the action ended, and you can decide whether to continue, adjust, or let it go.
+From the flow perspective, completion is also feedback. You can see that the action ended, and you can decide whether to continue, adjust, or let it go for now.
 
 ## Step 5: Do a 1-Minute Review
 
@@ -140,13 +140,13 @@ Next, I will add the mapping between flow conditions and GranoFlow features.
 
 Review is not self-criticism.
 
-It turns action into feedback and connects feedback back to values.
+It turns action into feedback and connects that feedback back to values.
 
 ## You Do Not Need the Full Structure First
 
 You do not need to create every domain, value, project, and milestone on day one.
 
-Use this simpler order:
+Use this order first:
 
 1. Capture one thing
 2. Ask why it is worth engaging with
@@ -188,7 +188,7 @@ In the evening review, you write:
 
 That is one complete practice.
 
-It includes meaning, action, and feedback, plus the most important preconditions for flow: clarity, startability, and review.
+It includes meaning, action, and feedback, plus important preconditions for flow: clarity, startability, and review.
 
 ## Next
 

@@ -3,46 +3,53 @@ title: "AI assistance: organize your notes, not your life"
 description: "GranoFlow's AI feature is an organizer, not a decision-maker. It helps make your written records clearer — the judgment always stays with you."
 ---
 
-GranoFlow does not treat AI as someone who lives your life for you.
+If you want AI to help with your GranoFlow records, treat it as a text organizer: it can summarize, group, and spot patterns, but you still decide what to accept and what to do next.
 
-AI is well-suited to working with **content you have already written** — summarizing today's tasks into a daily log, spotting patterns in what keeps getting delayed, turning scattered notes into a weekly review.
+GranoFlow does not treat AI as someone who lives your life for you. AI is useful for working with **content you have already written**, such as turning today's tasks into a daily log, finding what keeps getting delayed, or organizing scattered notes into a weekly review.
 
-What AI cannot do: decide whether to abandon a project, judge whether a relationship is worth continuing, or choose your career path.
+But AI is not there to make life decisions for you. It cannot decide whether you should abandon a project, judge whether a relationship is worth continuing, or choose your career path.
 
-One principle:
+One principle matters most:
 
 > Your records are yours. AI only helps you organize them.
 
-## Why the "copy and confirm" approach
+## Why the “copy and confirm” flow exists
 
-GranoFlow does not silently push AI output into your tasks or reviews.
+GranoFlow does not write external AI responses straight into your tasks or reviews. You copy, read, and confirm the result yourself.
 
-The flow is:
+The flow works like this:
 
-1. GranoFlow prepares a prompt with your data
-2. You copy it to an external AI (ChatGPT, Claude, Gemini, etc.)
-3. AI generates a summary or suggestions
-4. You copy the result back
-5. GranoFlow recognizes the content
-6. **You confirm** before anything gets imported
+1. GranoFlow prepares a prompt.
+2. You copy the prompt to an external AI, such as ChatGPT, Claude, or Gemini.
+3. The external AI generates a summary or suggestions.
+4. You copy the AI result back into GranoFlow.
+5. GranoFlow recognizes the returned content.
+6. After you confirm it, the content is imported.
 
-One extra step — but the benefit is clear: your data does not get changed without you seeing it first.
+This adds one confirmation step, but the purpose is simple: your records are not changed before you have seen the result. That matters for personal journals, values, and reviews.
 
 ## What AI is good for
 
-| Use case | What AI can do |
-|----------|---------------|
-| Daily review | Summarize what you finished, suggest next steps |
-| Weekly review | Spot which projects moved, what keeps getting postponed |
-| Clarifying values | Draw out what you care about from your past experiences |
-| Writing reports | Turn GranoFlow records into daily/weekly status updates |
+| Use case | What AI can help with |
+|----------|----------------------|
+| Daily review | Summarize what you finished today and what comes next |
+| Weekly review | Find which projects moved forward and which tasks kept slipping |
+| Clarifying values | Pull out what you seem to care about from your own experiences |
+| Writing reports | Turn GranoFlow records into daily reports, weekly reports, or project updates |
 
-## Before you send content to an external AI
+AI can help you see patterns, but it cannot take responsibility for your choices.
 
-Check whether it includes: real names, emails, or addresses; other people's private information; company secrets; or diary content you do not want leaving your device.
+## Think before sending content to AI
 
-When in doubt, remove the sensitive parts, or send only a summary.
+Before you send content to an external AI, check whether it includes:
+
+- Real names, email addresses, phone numbers, or addresses
+- Other people's private information
+- Company secrets or unpublished business plans
+- Diary content you do not want to leave your device
+
+If you are unsure, remove the sensitive parts first, or send only a summary.
 
 :::note[AI is an organizer, not a judge]
-The best question to ask is not "what should I do?" — it is "based on my records, what are a few possible interpretations and next steps? I'll decide."
+A better question is not “What should I do?” but “Based on my records, list a few possible interpretations and next steps. I will decide.”
 :::

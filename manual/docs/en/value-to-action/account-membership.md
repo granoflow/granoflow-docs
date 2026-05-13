@@ -3,16 +3,18 @@ title: "Account and membership"
 description: "Account, membership, subscription, entitlements — these four words often get mixed up. Here is a plain-language breakdown of what each one means and how to debug problems."
 ---
 
+If your membership is not showing, check three things first: which GranoFlow account you are signed in to, whether the purchase was made through Apple or Google, and whether the subscription is still active. Account, subscription, membership, and entitlements are not the same thing. If one step does not line up, the result shown in the app may be wrong.
+
 ## The four terms, clarified
 
 | Term | What it is |
 | --- | --- |
-| **Account** | Your identity in GranoFlow — used for sync, recovery, and identification |
+| **Account** | Your identity in GranoFlow, used to tell which data and entitlements belong to you |
 | **Subscription** | Your purchase relationship with Apple or Google |
-| **Membership** | GranoFlow's label for your user tier (e.g. Pro) |
+| **Membership** | GranoFlow's label for your user tier, such as Pro |
 | **Entitlements** | The features your current account can actually use |
 
-The path looks like this:
+You can think of the flow like this:
 
 ```mermaid
 graph LR
@@ -21,36 +23,40 @@ graph LR
   C --> D[App unlocks features]
 ```
 
-"I tapped the buy button" does not automatically equal "my account has entitlements" — each step in the chain can fall out of alignment.
+So, "I tapped the buy button" does not automatically mean "my current account has entitlements." The platform purchase, purchase status, server sync, and app display all need to line up.
 
 ## Why log in at all
 
-GranoFlow's local features work without an account: capture tasks, organize projects, write reviews.
+You can use GranoFlow's local features without logging in, such as capturing tasks, organizing projects, and writing reviews.
 
-Log in to access: cloud sync, multi-device use, membership recognition, purchase restore, and account deletion.
+After you log in, GranoFlow can confirm who the data and entitlements belong to. These features usually require login and server confirmation: cloud sync, multi-device use, membership recognition, purchase restore, and account deletion.
 
-> Local use answers "how do I organize now." Login answers "who does this data and these entitlements belong to."
+> Local use answers "how do I record this now." Login answers "who do this data and these entitlements belong to."
 
-If Offline Mode is on, or the sign-in or purchase service is temporarily unreachable, local features still work. Sign-in, sync, entitlement refresh, and purchase restore can be retried later.
+If Offline Mode is on, or the sign-in or purchase service is temporarily unavailable, local features will not stop working. Sign-in, sync, entitlement checks, and purchase restore can be retried later.
 
 ## Restore purchases
 
-After switching devices or reinstalling, if your membership is not showing, try "Restore purchases" — this asks the platform to re-check your purchase history and re-align it with your current account.
+After switching devices or reinstalling the app, if your membership does not appear, try "Restore purchases." It asks Apple or Google to re-check your purchase history and then align it with the entitlements for the GranoFlow account currently signed in.
 
-Restore will not work if: the purchase was linked to a different GranoFlow account, or the subscription has been refunded or expired. If the purchase service is temporarily unavailable, GranoFlow will ask you to try again later and your local data is not affected.
+Restore purchases cannot fix every situation:
+
+- If the purchase is linked to another GranoFlow account, the current account will not automatically receive the entitlements
+- If the subscription has been refunded or has expired, restoring purchases will not reactivate the entitlements
+- If the purchase service is temporarily unavailable, the app will ask you to try again later, and your local data will not be affected
 
 ## Why desktop might not show a buy button
 
-Desktop versions (Windows/macOS/Linux) may not display a purchase entry to comply with platform distribution rules.
+Desktop versions, meaning Windows, macOS, and Linux, may not show a purchase entry because of platform distribution rules.
 
-This is not a missing feature. If you already have a membership, logging in on desktop will unlock the corresponding features. To purchase, use the iOS or Android version.
+This does not mean membership features are missing on desktop. If you already have a membership, sign in to the same GranoFlow account on desktop and the corresponding features will unlock normally. To buy a membership, use the iOS or Android version.
 
 ## Debugging checklist
 
-1. Which GranoFlow account am I logged in to?
-2. Which platform was the purchase made on (Apple / Google)?
-3. Is the subscription still active?
+1. Which GranoFlow account am I signed in to?
+2. Which platform was the purchase made on, Apple or Google?
+3. Is the current subscription still active?
 4. Has the app refreshed its entitlements?
 5. Have I mixed up different accounts?
 
-These five questions cover nearly every membership and entitlement issue.
+These questions cover most membership and entitlement issues.

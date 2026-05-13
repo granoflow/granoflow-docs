@@ -1,37 +1,37 @@
 ---
 title: "What content may be sent to AI"
-description: "Normal use sends nothing to AI — only when you actively trigger an AI feature does relevant text enter the processing pipeline."
+description: "Normal use does not send any data. Only when you actively use an AI feature does the text needed for that feature enter the flow."
 ---
 
-The most important thing first: **browsing tasks, writing journals, and doing reviews do not send any data to AI.**
-
-Data enters the AI pipeline only when you actively trigger an AI feature, and only the text relevant to that specific operation.
+If you are only browsing tasks, writing journals, or doing reviews, GranoFlow does not send that content to AI. Text may enter the AI processing flow only when you actively trigger an AI feature, and only the text related to that action is involved.
 
 ![AI redaction settings](../../../screenshots/en/ai-redaction-settings.png)
 
-## What each feature sends
+## What each feature may send
 
-| AI feature | What is sent |
-|-----------|-------------|
+| AI feature | Content that may be sent |
+|-----------|--------------------------|
 | Title parsing | The task title you are currently typing |
 | Clipboard assistant | The text you copied to the clipboard |
-| Helper prompt | Current page description + your saved prompt |
-| Review AI organize | The specific review content you triggered organizing for |
+| Helper prompt | The current page description + your saved prompt |
+| Review AI organize | The review content you triggered organizing for this time |
 
-## AI redaction settings
+## What AI redaction settings do
 
-Three key settings:
+AI redaction settings only affect replacement before content is sent. They do not mean AI automatically judges every piece of sensitive information.
 
-- **Master switch**: when off, GranoFlow performs no outbound redaction substitution
-- **Category defaults**: when auto-discovered, whether email, phone, links etc. default to "redacted" or "allowed"
-- **Phone region**: affects the recognition range for phone number patterns
+There are three key settings:
 
-Auto-discovery is rule-based, not intelligent review. It may miss unusual formats and may misidentify ordinary numbers. **You still need to check content before sending.**
+- **Master switch**: when off, GranoFlow does not perform outbound redaction replacement.
+- **Category defaults**: when the system finds emails, phone numbers, links, and similar content by rule, this decides whether the default is "redacted" or "allowed".
+- **Phone region**: affects the recognition range for phone number rules.
 
-## Redaction terms
+Auto-discovery is rule-based assistance, not intelligent review. It may miss unusual formats, and it may mistake ordinary numbers for sensitive content. **You still need to check before sending.**
 
-The word list you maintain in "Redaction terms" is applied automatically before content is sent. See the "Redaction terms" page for details.
+## What redaction terms do
+
+The word list you maintain in "Redaction terms" is automatically replaced before content is sent. See the "Redaction terms" page for details.
 
 ## In one sentence
 
-> GranoFlow's AI only touches your data when you take action. No background collection, no automatic upload — scope is limited to the current feature's relevant text.
+> GranoFlow's AI only involves your data when you actively trigger a feature. It does not collect in the background, does not upload automatically, and only sends text relevant to the current feature.

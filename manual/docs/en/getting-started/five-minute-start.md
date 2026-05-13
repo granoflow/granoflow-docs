@@ -1,17 +1,15 @@
 ---
 title: "5-minute start"
-description: "You do not need to set up a whole system first. Capture one task, do a quick review at the end of the day, and you are using GranoFlow."
+description: "Capture one task, connect it to a project if needed, then end the day with a small review."
 ---
 
-You do not need to spend two hours reading documentation before you start using GranoFlow.
+The fastest way to start using GranoFlow is to add one task, connect it to a project if that helps, and write a short review tonight. You do not need to build a whole system first.
 
-The shortest path is: **capture something → check in tonight → keep going tomorrow**. That is it. The rest of the features will make sense when you need them.
+## Step 1: Write down one task
 
-## Step 1: Write down the clearest thing in your head
+Open GranoFlow, tap **+**, and write the clearest thing in your head right now.
 
-Open GranoFlow, tap **+**, and type the first task that comes to mind.
-
-Do not worry about whether it is important or which project it belongs to — just capture it. GranoFlow has an Inbox where all new tasks land by default, ready to be sorted whenever you have time.
+Do not worry yet about whether it is important or which project it belongs to. The first step is only to capture it. New tasks land in the Inbox by default, so you can sort them later when you have time.
 
 ![Quick-add task panel](../../../screenshots/en/interface-quick-add-main.png)
 
@@ -19,21 +17,21 @@ Do not worry about whether it is important or which project it belongs to — ju
 On desktop, you can summon the quick-add panel with a global shortcut without switching to the GranoFlow window first. You can customize the shortcut in Settings.
 :::
 
-## Step 2 (optional): Connect it to a project
+## Step 2 (optional): Connect it to a project when needed
 
-If this task belongs to a bigger goal — "finish the thesis," "plan the move" — you can link it to a project in the task detail view.
+If this task belongs to a bigger direction, such as “finish the thesis” or “plan the move,” you can connect it to a project from the task detail view.
 
-Connecting it is optional. You can always do this later when the project structure starts to feel useful.
+This step is optional. You can leave the task in the Inbox first and organize it later, when the project structure actually helps.
 
-## Step 3: Do a quick review tonight
+## Step 3: Do a small review tonight
 
-At the end of the day, open GranoFlow, scan what you completed and what is still open, and write a line or two in the daily review:
+Before the day ends, open GranoFlow, look at what you completed and what is still open, then write one or two lines in the daily review:
 
 - What did I do today?
-- What is the one thing I most want to push forward tomorrow?
+- What is the one thing I most want to move forward tomorrow?
 
-No need to write an essay, no need to rate yourself, no need to do it every single day. This is just a brief glance at the road — not a stop, just a direction check.
+No long summary required. No score. No pressure to do it every single day. It is just a small way to connect today, tomorrow, and your longer-term goals.
 
 ---
 
-**You are using GranoFlow now.** Browse the rest of the documentation when you feel like exploring — no need to read it in order.
+**You have started using GranoFlow.** Read the rest of the documentation when you need it; you do not have to go in order.

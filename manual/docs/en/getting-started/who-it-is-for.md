@@ -3,32 +3,42 @@ title: "Who GranoFlow is for"
 description: "If you want more than a to-do list — if your tasks connect to projects, long-term goals, and regular review — GranoFlow is built for you."
 ---
 
+GranoFlow is for you if your tasks are not isolated errands, but parts of a project, a stage, or a long-term goal. It does more than help you remember “what to do today”; it helps you see what those tasks are actually moving forward.
+
 One-line version: **GranoFlow is for people whose tasks have bigger goals behind them.**
 
-If you just need a shopping list or a quick reminder, your phone's built-in notes app may be all you need. But if your tasks sit inside projects, your projects connect to longer-term goals, and you regularly wonder "what am I actually making progress on?" — GranoFlow is designed exactly for that.
+If you only need a shopping list, a quick reminder, or a few loose tasks, your phone’s built-in notes app or a simple list tool may be enough. GranoFlow fits better when you have multiple projects, each with its own stages and goals, and you want to open the app later and quickly remember “what should I keep moving forward now?”
 
 ## Project-driven workers
 
-Independent developers, designers, researchers, creators, founders — these people share one thing: several things in flight at once, each with its own stages and goals.
+If you are an independent developer, designer, researcher, creator, founder, or anyone who often handles several work streams at once, GranoFlow may be a good fit.
 
-A plain to-do list grows longer and harder to prioritize. GranoFlow lets you attach tasks to projects and milestones, so when you open it you immediately see "what matters most right now."
+The hard part in this kind of work is usually not “do I have tasks?” It is that once there are too many tasks, it becomes hard to tell which ones matter more. A plain to-do list keeps growing until it becomes just a pile of things to do.
+
+GranoFlow lets you place tasks under projects and milestones. That means you see not only the task name, but also which project it belongs to and which stage goal it supports. When you come back after an interruption, it is easier to pick up the thread.
 
 ## Long-term learners and builders
 
-Studying for an exam, changing careers, learning a language, writing a book — these are pursuits where "I did a little today" feels invisible, but the accumulation over months is real.
+If you are studying for an exam, changing careers, learning a language, building a skill, writing a book, or doing anything that takes sustained effort, GranoFlow can also help.
 
-GranoFlow's review features help you pause and check in: am I actually making progress? Is the direction still right? Not to grade yourself, but to keep your sense of direction — like glancing up from the handlebars now and then.
+These efforts have one thing in common: doing a little today may not look like much, but doing it for weeks or months starts to add up. The problem is that it is easy to lose your sense of direction along the way.
+
+GranoFlow’s review features help you pause regularly and ask: have I actually been building something up? Is the direction still right? You do not need to treat it as a grading tool. It is more like a place that reminds you to look up and check the road.
 
 ## People who get interrupted a lot
 
-Freelancers, small-team leads, people balancing family and work — the biggest pain point is returning after an interruption and losing the thread of "where was I?"
+If meetings, family, clients, or sudden issues often interrupt your work, GranoFlow can help.
 
-GranoFlow's project and milestone structure is built for this. Even after a week away, you can open it and see how tasks connect to goals, without needing to reorganize from scratch.
+After an interruption, the hardest part is often not starting work again. It is remembering “where was I?” and “why did this matter?” If everything lives in one simple list, getting back into context takes more effort.
+
+GranoFlow organizes tasks with projects and milestones. Even if you step away for a week, you can open it again and see how tasks connect to goals, without reorganizing everything from scratch.
 
 ## People who value reflection
 
-If you already do regular retrospectives, GranoFlow gives you a better container for them. Daily review lets you record what you did and how you felt about it — not just checking off tasks, but understanding what you actually worked on and thought about.
+If you already do regular retrospectives, GranoFlow can give you a clearer place to keep them.
+
+Daily review is not just for checking off tasks. You can use it to record what you did, how it felt, and what problems you noticed. Over time, it helps you understand what you have actually been moving forward, instead of only seeing a list of completed and unfinished tasks.
 
 :::note[When a simple to-do app is enough]
-If you mostly need "buy milk" and "pick up package" reminders, a lighter list tool is probably faster. GranoFlow earns its place when there are multiple layers behind the tasks.
+If you mainly need reminders like “buy milk” or “pick up package,” a simple list tool may be lighter. GranoFlow becomes more useful when your tasks have projects, stages, goals, or review needs behind them.
 :::

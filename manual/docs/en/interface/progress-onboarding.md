@@ -3,34 +3,37 @@ title: "First-use guidance on the Progress page"
 description: "Just installed GranoFlow and the Progress page has no data — that is normal. Here is what you are seeing and the fastest way to get started."
 ---
 
-The first time you open GranoFlow, the Progress page shows a guidance screen instead of statistics.
+If you just opened GranoFlow and the Progress page shows first-use guidance instead of statistics, that is normal: you have not added any tasks, projects, or values yet, so GranoFlow does not have enough content to build your personal dashboard.
 
-This is not a bug. The app simply has no content yet to build your personal dashboard from, so it shows you the shortest path to writing your first thing down.
+This is not a bug, and the page has not failed to load. The guidance is helping you take the first step: write down one thing that is clear to you right now.
 
-![Progress page first-use guidance](../../../screenshots/en/interface-progress-onboarding-cold-start.png)
+<!-- manual-screenshot:id=interface-progress-onboarding-cold-start -->
+![First-use guidance on the Progress page screen capture](../../../screenshots/en/interface-progress-onboarding-cold-start.png)
 
 ## What you see
 
-On a wide screen or desktop, the page is split into two columns:
+On a wide screen or desktop, the Progress page usually has two columns:
 
 - **Left**: three starter actions
   1. Write down one task you need to do next
   2. Create a project you are currently working on
   3. Write down one value you want to keep
-- **Right**: a brief explanation of the GranoFlow philosophy
+- **Right**: a few lines explaining how GranoFlow is meant to be used
+
+If the screenshot does not load, you can still understand the page from the text above: this is not a results page. It is a starting page asking whether you want to begin with a task, a project, or a value.
 
 ## Where to start
 
-There is no strict order — begin with whatever feels clearest right now:
+The three starter actions do not have a fixed order. Choose the one that is easiest to write right now:
 
-- Have a task in mind → start there
-- Have a project you are working on → create the project
-- Want to clarify your long-term direction → write a value
+- If you have a next task in mind, write the task first.
+- If you are already working on something larger, create the project first.
+- If you want to clarify your long-term direction, write one value first.
 
 :::tip[You do not need to fill everything in at once]
-Write one thing down and the Progress page will start showing real data. Structure grows with use — you do not have to build it all on day one.
+Writing down one thing is enough to begin. You do not need to fill in all tasks, projects, and values on day one; your structure can grow as you keep using GranoFlow.
 :::
 
-## When does the guidance disappear
+## When the guidance disappears
 
-Once you have added at least one task, project, or value, the Progress page switches to the normal personal dashboard view. The guidance does not come back.
+Once you have added a task, created a project, or written a value, the Progress page switches to the normal personal dashboard view. After that, this first-use guidance is no longer shown.

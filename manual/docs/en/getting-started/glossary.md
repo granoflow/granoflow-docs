@@ -3,9 +3,9 @@ title: "Key concepts"
 description: "A plain-language guide to every term GranoFlow uses — domains, projects, milestones, tasks, inbox, and more."
 ---
 
-Do not know what a word means? This page covers everything, two or three sentences at a time.
+If you see a term in GranoFlow and do not know what it means, use this page to check what it is, where it is used, and how it connects to the rest of the app.
 
-Here is how everything relates to each other:
+The main structure is simple: domains contain values and projects, projects contain milestones, milestones contain tasks, and tasks can contain nodes. Inbox tasks can later be organized into a project or milestone.
 
 ```mermaid
 graph TD
@@ -23,45 +23,45 @@ graph TD
 
 ### Domain
 
-Domains are the broad areas of your life — things like "Work," "Health," "Family," or "Learning."
+A domain is a broad area of your life, such as "Work," "Health," "Family," or "Learning."
 
-Domains do not hold tasks directly. Think of them as zones on a map: projects belong to a domain, and in review you can see where your time and energy actually went.
+It is not a task folder, and tasks do not live directly inside it. Think of it as an area on your life map: projects belong to a domain, and reviews show where your effort has been going.
 
 ### Values
 
-A value is a long-term standard you hold for a domain — for example, "In work: only do things that have real impact."
+A value is a long-term standard you want to follow inside a domain, such as "At work, only do things that have real impact."
 
-Values are not tasks and cannot be completed. Their role is to give you something to compare your actions against during review.
+It is not a task, cannot be completed, and does not check anything off automatically. Its job is to help you ask, during review, whether your actions matched your own standards.
 
 ### Project
 
-A project is a container for a goal you are working toward over time, like "Apartment move," "Finish dissertation," or "App v2."
+A project is a container for a goal that takes time to move forward, such as "Move apartment," "Finish dissertation," or "Build App v2."
 
-Tasks live inside projects. Inbox tasks disappear from the inbox the moment you assign them to a project. Projects can be archived or completed, but the system will prompt you to handle any active tasks underneath them first.
+Tasks can belong to projects. Once an inbox task is assigned to a project, it automatically leaves the inbox. Projects can be archived or completed; if there are still active tasks inside, the system asks you what to do with them first.
 
 ### Milestone
 
-A milestone is a phase within a project — a checkpoint that breaks a big goal into trackable stages, like "First draft done" or "Testing passed."
+A milestone is a stage inside a project. It breaks a large project into smaller checkpoints, such as "First draft done," "Testing passed," or "Launch."
 
-Tasks inside a milestone must all be finished before the milestone can be closed. This keeps you from ever feeling like you are walking down an endless road.
+A milestone can contain tasks. It can be closed only after its tasks are complete. This gives long projects clear stages instead of making them feel like one endless piece of work.
 
 ### Task
 
-A task is the basic unit of action in GranoFlow — the specific thing you are going to do.
+A task is the basic unit of action in GranoFlow: the specific thing you are going to do.
 
-A task can have a title, due date, reminder, tags, project, milestone, description, and status. Statuses include: to-do, in progress, completed, archived, and trash. Completion records the exact time it was finished.
+A task can have a title, due date, reminder, tags, project, milestone, and description. Task statuses include to-do, in progress, completed, archived, and trash. Completing a task records a completion time; uncompleting it clears that time.
 
 ### Node
 
-A node is a step inside a task — useful when one task is actually several things.
+A node is a sub-step inside a task, used to break down a complicated task.
 
-For example, the task "File taxes" might have nodes "Gather receipts," "Fill out form," and "Submit." When all nodes are complete the parent task completes automatically. Adding an unfinished node brings the parent back to to-do.
+For example, the task "File taxes" could have nodes like "Gather receipts," "Fill out form," and "Submit." When all nodes are complete, the parent task completes automatically. If you add a new unfinished node, the parent task returns to to-do.
 
 ### Inbox
 
-The inbox is a holding area for tasks that have not been scheduled or assigned yet.
+The inbox is a temporary place for tasks you want to capture now and organize later.
 
-Only tasks with no due date, no project, and no milestone appear in the inbox. Give a task a date or assign it to a project and it leaves automatically. Think of the inbox as a note stuffed in your pocket — safe for now, sort it out later.
+Only tasks with no due date, no project, no milestone, and a status of to-do or in progress appear in the inbox. Once you add a date or assign the task to a project, it leaves the inbox automatically. Think of it like a note in your pocket: put it there first, sort it out later.
 
 ---
 
@@ -69,39 +69,39 @@ Only tasks with no due date, no project, and no milestone appear in the inbox. G
 
 ### Planning
 
-Planning means turning a vague idea into something with a date, project, or both.
+Planning means turning a vague idea into an actionable task with a date, a project, or at least clearer details.
 
-You can plan in quick-add, in the inbox, or in task detail. The `#` `@` `~` shortcuts in the input field are shortcuts, not auto-saves — everything needs your confirmation.
+You can plan from quick-add, inbox cleanup, or task details. The `#` `@` `~` shortcuts in the input field are shortcuts, but anything that writes data still needs your confirmation.
 
 ### Execution
 
-Execution means actually doing the task. You can use focus timing, pinned tasks, or background sound alongside it.
+Execution means doing the task itself.
 
-When a task is completed, GranoFlow first closes any open focus sessions, then records the completion time — keeping review stats clean.
+You can use it with focus timing, pinned tasks, or background sound. When a task is completed, GranoFlow first closes related focus sessions, then records the completion time, so review data does not get confused by messy time ranges.
 
 ### Completion
 
-Completion records a timestamp on the task.
+Completion means the task is done and a completion time is recorded.
 
-Daily review uses this timestamp, not the due date. Tasks finished before 3 AM count toward the previous calendar day.
+Daily review uses the day the task was actually completed, not its due date. If you complete a task before 3 AM, it still counts as completed "yesterday."
 
 ### Archive
 
-Archiving means sealing something away — it leaves your active views but stays accessible.
+Archiving means the item is sealed away from current work views, while its record is still kept for later reference.
 
-Projects, milestones, and tasks can all be archived. If there are active tasks underneath, the system asks how you want to handle them first.
+Projects, milestones, and tasks can all be archived. If there are active tasks underneath, the system asks you what to do with them first.
 
 ### Daily review
 
-Daily review is a page that shows everything you actually completed on a given day, by completion time.
+Daily review is the page for seeing what you actually completed on a given day.
 
-Days with nothing completed show a quiet empty state — no guilt graphs.
+It counts by completion time, not due date. If nothing was completed that day, the page shows a quiet empty state instead of a stressful empty chart.
 
 ### Retrospective
 
-A retrospective is a longer-range look at your input, progress, and patterns — weekly, monthly, or across a project.
+A retrospective is a longer look at your effort, progress, and patterns.
 
-The goal is not counting completions. It is understanding where you invested your attention and whether that matches your priorities.
+You can do this in weekly review, monthly detail, and similar views. The point is not just how many tasks you finished; it is whether you worked on what mattered and whether your effort was balanced.
 
 ---
 
@@ -109,21 +109,21 @@ The goal is not counting completions. It is understanding where you invested you
 
 ### AI assistant
 
-The AI assistant is the external tool you choose — ChatGPT, Claude, Gemini, DeepSeek, or any other.
+The AI assistant is the external AI tool you choose, such as ChatGPT, Claude, Gemini, or DeepSeek.
 
-GranoFlow does not embed an AI that silently edits your data. It prepares a prompt, copies it to your clipboard, and opens your chosen AI.
+GranoFlow does not include a hidden AI that silently edits your data. It prepares a prompt, copies it to your clipboard, and opens the AI tool you selected.
 
 ### Prompt
 
-A prompt is the instruction text GranoFlow sends to your AI, describing what it should ask, organize, and return.
+A prompt is the instruction text GranoFlow gives to the external AI. It tells the AI what to ask, what to organize, and what format to return.
 
-You can edit templates. Blank or broken templates cannot be saved.
+You can edit prompt templates, but the system blocks blank or broken templates from being saved.
 
 ### Clipboard return
 
-Clipboard return is the flow for bringing AI-generated results back into GranoFlow.
+Clipboard return is the process of copying AI-generated results back into GranoFlow.
 
-AI output is never written silently. You copy the result back, GranoFlow identifies the format and shows a confirmation, and import only happens if you approve. Content you have already imported or declined will not prompt you again.
+AI replies are not written into your tasks automatically. After you copy the result back, GranoFlow identifies the format and shows a confirmation. The content is imported only after you approve it. Content you already declined or imported will not keep popping up.
 
 ---
 
@@ -131,39 +131,39 @@ AI output is never written silently. You copy the result back, GranoFlow identif
 
 ### Local-first
 
-Local-first means GranoFlow's core data lives on your device — offline use works normally.
+Local-first means GranoFlow's core data is stored on your device first, so the app can work without relying on a server.
 
-Data only enters encryption when it leaves the device (backup, cloud sync).
+You can capture tasks, organize them, and review them offline. Data enters the encryption flow only when it leaves the device, such as during backup or cloud sync.
 
 ### Cloud sync
 
-Cloud sync keeps your devices aligned. Before syncing, the system checks your account, membership, and encryption key.
+Cloud sync aligns your local data with cloud data so different devices can show the same content.
 
-If anything does not match, syncing is paused with guidance — not silently overwritten.
+Before syncing, the system checks whether the account, membership status, and encryption key match. If something does not match, it pauses and guides you to confirm instead of silently overwriting data.
 
 ### End-to-end encryption (E2EE)
 
-End-to-end encryption means data is encrypted before it leaves your device. The server stores ciphertext only and cannot read your tasks.
+End-to-end encryption means data is encrypted before it leaves your device, and the server stores ciphertext.
 
-Local use prioritizes speed. Backup and cloud upload go through the encryption process.
+This means GranoFlow's server cannot read your task content. Local search and everyday use prioritize speed; backup and cloud upload go through the encryption process.
 
 ### Encryption key
 
-The encryption key is the credential that unlocks your encrypted backup and cloud data. It is **not** your login password.
+The encryption key is the credential that unlocks encrypted backups and cloud data. It is **not** your login password.
 
-If you lose the key, your encrypted data cannot be recovered — not even by GranoFlow support.
+The key matters. If you lose it, old backups or matching encrypted cloud data cannot be unlocked. GranoFlow reminds you several times to save the key, but the server cannot recover a lost key for you.
 
 ### Backup and restore
 
-Backup exports everything to a `.flow.grano` file, protected by your encryption key.
+Backup exports all data on the device into a `.flow.grano` file protected by your encryption key.
 
-Restore imports that file back into GranoFlow, requiring the same key. If attachments were not fully downloaded at backup time, they may be missing.
+Restore imports that backup file back into GranoFlow and requires the key used when the backup was created. If attachments were not fully downloaded at backup time, the backup may not contain complete attachments.
 
 ### App lock
 
-App lock adds a local authentication step (Face ID, fingerprint, or PIN) when you open GranoFlow.
+App lock adds a local authentication step when you open the app, such as Face ID, fingerprint, or PIN.
 
-It reduces the risk of someone briefly picking up your device and reading your notes. It does not protect against a fully compromised device.
+It reduces the risk of someone briefly picking up your device and reading your content. It is not complete protection; if the device itself is compromised, app lock cannot stop that.
 
 ---
 
@@ -171,15 +171,15 @@ It reduces the risk of someone briefly picking up your device and reading your n
 
 ### Account
 
-Your account handles sign-in, sync, device management, and subscription recognition. Sign-in uses email verification codes.
+Your account is used for sign-in, sync, subscription recognition, and account recovery.
 
-You can use local features without signing in, but the cloud sync entry point will prompt you to sign in first.
+The main sign-in method is currently email verification codes. You can use local features without signing in, but cloud sync will guide you to sign in first.
 
 ### Membership and entitlements
 
-Membership (Pro or Angel Member) means you have paid for core benefits. Entitlements are confirmed by the server, not the client.
+Membership, including Pro or Angel Member, means you have purchased official benefits.
 
-They affect cloud sync, storage quota, and attachment download. A subscription linked to a different account does not automatically apply to your current one.
+Entitlements are confirmed by the server, not decided by the client. They affect cloud sync, storage quota, attachment re-download, and related features. If a subscription is linked to another account, the current account does not automatically receive those entitlements.
 
 ---
 
@@ -187,12 +187,18 @@ They affect cloud sync, storage quota, and attachment download. A subscription l
 
 ### Desktop vs mobile
 
-Desktop (Windows / macOS / Linux) is better for extended organizing, project management, and review. Mobile (iOS / Android) is better for quick capture and on-the-go access.
+Desktop, meaning Windows, macOS, and Linux, is better for longer organizing sessions, project management, and review.
+
+Mobile, meaning iOS and Android, is better for quick capture and on-the-go use.
 
 ### System tray
 
-On desktop, closing the window may just hide GranoFlow to the tray — focus timers keep running. To fully quit, use the tray menu.
+On desktop, closing the window may only hide GranoFlow to the system tray, while it keeps running in the background.
+
+In that case, focus timers keep running. To fully quit, choose "Quit" from the tray menu.
 
 ### Sidebar mode
 
-Desktop can run as a narrow sidebar docked to the edge of your screen, visible alongside whatever else you are working on.
+On desktop, GranoFlow can become a narrow window docked to the edge of your screen.
+
+This lets you check or tick off tasks while working on something else.

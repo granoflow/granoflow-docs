@@ -3,15 +3,15 @@ title: "Manage milestones"
 description: "Milestones are phase markers inside a project. They break a big goal into visible progress chunks so you always know where you stand."
 ---
 
-Milestones are like road signs on a long journey — knowing the next stop makes the trip feel manageable.
+If you want to split a large project into clear phases, add milestones to the project. Milestones group related tasks under each phase, so you can see where the project is now and what needs to be delivered next.
 
-A project with dozens of tasks and no structure is hard to read. Add milestones and the tasks group themselves by phase, making progress immediately visible.
+Without milestones, a project with many tasks can feel like one long to-do list. With milestones, you can group work by outcomes such as “First draft done”, “Testing passed”, or “Live”, making progress easier to understand.
 
 ## Add a milestone
 
-In the project detail page, tap "Add milestone" and enter a name.
+On the project detail page, tap “Add milestone”, then enter a milestone name.
 
-Name milestones after the result you want to reach, not the phase number: "First draft done", "Testing passed", "Live" — not "Phase 1".
+Use a name that describes the result of the phase, such as “First draft done”, “Testing passed”, or “Live”. Avoid names like “Phase 1” or “Phase 2” when possible, because they do not explain what the phase is meant to finish.
 
 ![Milestone detail view](../../../screenshots/en/projects-milestones-detail.png)
 
@@ -19,26 +19,26 @@ Name milestones after the result you want to reach, not the phase number: "First
 
 | State | Meaning |
 |-------|---------|
-| In progress | Has unfinished tasks |
-| Completed | All tasks are marked complete |
-| Archived | Manually archived, hidden from the active view |
+| In progress | The milestone still has unfinished tasks |
+| Completed | All tasks in the milestone are complete |
+| Archived | You manually archived it, so it is collapsed from the current view |
 
-A milestone completes automatically when **all its tasks are marked complete**. Add a new unfinished task later and the milestone goes back to "In progress" automatically.
+A milestone is completed when **all tasks inside it are marked complete**. If you later add a new unfinished task to the milestone, it automatically goes back to “In progress”.
 
 ## Milestone ordering
 
-Milestones are displayed in the order you arrange them, and can be reordered by dragging.
+Milestones appear in the order you arrange them on the project detail page. You can drag milestones to reorder them.
 
-Typically sort chronologically — the earliest phase at the top, the final deliverable at the bottom. Reading top to bottom gives you your execution timeline.
+A common approach is to sort them by time: put the earliest phase at the top and the final delivery phase at the bottom. Then, reading from top to bottom shows the project’s execution order.
 
-## Deleting a milestone
+## Before deleting a milestone
 
-If the milestone still contains tasks, GranoFlow will ask you what to do with them first:
+Before deleting a milestone, if it still contains tasks, GranoFlow asks you how to handle those tasks:
 
-- Move tasks to another milestone
-- Leave tasks under the project (without a milestone)
-- Delete the tasks along with the milestone
+- Move the tasks to another milestone
+- Keep the tasks under the project, but without any milestone
+- Delete the tasks together with the milestone
 
 :::caution[Deleting a milestone does not auto-delete tasks]
-Unless you explicitly choose "also delete tasks", tasks that were under this milestone remain in the project — they just become unassigned to any milestone.
+Unless you explicitly choose “also delete tasks”, tasks that were under this milestone will not disappear. They are only removed from the milestone and still belong to the project.
 :::

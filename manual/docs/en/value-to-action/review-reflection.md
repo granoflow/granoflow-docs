@@ -3,13 +3,13 @@ title: "Review: Let Experiences Really Settle"
 description: "Use GranoFlow review to connect tasks, projects, and values so daily experience becomes feedback for long-term goals."
 ---
 
-This chapter turns ACT and The Happiness Trap into a GranoFlow practice: domains, values, projects, milestones, tasks, and review. Use it to turn long-term goals into one task you can start today, without making task management another source of anxiety.
+Review means pausing to ask: what did I do, what does it tell me, and what should I adjust next? In GranoFlow, you can look at tasks, projects, and values together, so each day becomes more than a list of completed items. It becomes feedback that helps you move closer to long-term goals.
 
 Writing down tasks reduces the load in your head.
 
 Completing tasks moves real things forward.
 
-Review helps those experiences become more than the past. It turns them into experience you can carry forward.
+Review turns experience into something you can carry forward.
 
 GranoFlow does not want you to only keep adding tasks, completing tasks, and clearing lists. The real value is being able to look at what already happened and see what you are moving toward, what you are moving away from, and what should change next.
 
@@ -21,18 +21,18 @@ Review is not about criticizing yourself.
 
 It is not asking:
 
-> Why was I not hardworking enough today?  
-> Why did I procrastinate again?  
+> Why was I not hardworking enough today?
+> Why did I procrastinate again?
 > Why did I not finish every plan?
 
-Questions like these easily turn review into pressure.
+These questions can easily turn review into pressure.
 
-GranoFlow suggests asking:
+Better questions are:
 
-> What actually happened today?  
-> What did I complete?  
-> Which actions moved closer to what I care about?  
-> What needs to be adjusted?  
+> What actually happened today?
+> What did I complete?
+> Which actions moved closer to what I care about?
+> What needs to be adjusted?
 > What is the next step?
 
 The purpose of review is not to judge yourself. It is to see reality clearly.
@@ -57,7 +57,7 @@ If you write this in review:
 
 Then it becomes experience.
 
-Completing a task tells you what you did.  
+Completing a task tells you what you did.
 Review tells you what it means.
 
 That is the value of review.
@@ -86,7 +86,7 @@ That is also a useful review.
 
 Completing many tasks does not always mean the day was valuable.
 
-Sometimes you finish ten small things, but they are all chores.  
+Sometimes you finish ten small things, but they are all chores.
 Sometimes you finish only one thing, but it truly moves a project forward.
 
 So during review, do not only look at the number.
@@ -125,8 +125,8 @@ At that point, the useful move is not self-blame. It is reorganizing.
 
 Life gets interrupted.
 
-You may not open GranoFlow for a few days.  
-A project may stop for several weeks.  
+You may not open GranoFlow for a few days.
+A project may stop for several weeks.
 Tasks you wrote earlier may have expired.
 
 Do not try to catch up on everything.
@@ -135,9 +135,9 @@ Do not try to fill in every missing day. That only adds pressure.
 
 A better approach is a short review:
 
-> What happened during this period?  
-> What no longer matters?  
-> Which projects are still worth continuing?  
+> What happened during this period?
+> What no longer matters?
+> Which projects are still worth continuing?
 > What is the smallest step I can restart with today?
 
 An interruption is not failure.
@@ -150,9 +150,9 @@ Review does not only help you continue.
 
 It also helps you let go.
 
-Some tasks no longer need to be done.  
-Some projects are no longer worth moving forward.  
-Some goals were only ideas from an earlier stage.  
+Some tasks no longer need to be done.
+Some projects are no longer worth moving forward.
+Some goals were only ideas from an earlier stage.
 Some plans sound correct, but do not fit your current life.
 
 Without review, they keep taking attention.
@@ -179,8 +179,8 @@ For example, you wrote:
 
 During review, ask:
 
-> Have I actually been delivering recently?  
-> Have I spent too much time preparing, hesitating, and revising repeatedly?  
+> Have I actually been delivering recently?
+> Have I spent too much time preparing, hesitating, and revising repeatedly?
 > What next step would move closer to "reliable delivery"?
 
 Another example:
@@ -189,8 +189,8 @@ Another example:
 
 During review, ask:
 
-> Have I left room for recovery recently?  
-> Do I only notice my body after something goes wrong?  
+> Have I left room for recovery recently?
+> Do I only notice my body after something goes wrong?
 > What small adjustment can I make tomorrow?
 
 Values provide direction. Review checks whether that direction is still happening in real life.

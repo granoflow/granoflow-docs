@@ -3,28 +3,32 @@ title: "Notes and history"
 description: "Notes are what you write during review — feelings, thoughts, next steps. This page explains how notes connect to tasks and dates, and how to browse your history."
 ---
 
-During a review, you can write notes alongside the task list — a sentence, a paragraph, whatever you want.
-
-These notes are tied to the date, so when you look back later, you can see not just what you completed that day, but also what you were thinking.
+Notes save what you wrote during a review for a specific day. You can write how the day felt, why tasks did or did not get done, or what you want to do first tomorrow; later, switch to that date to see the notes together with that day's tasks.
 
 ![Notes and history](../../../screenshots/en/review-journal-records-section.png)
 
 ## What to write in notes
 
-- How the day felt (productive, sluggish, unexpected, exhausting…)
-- Why something got done or did not
-- What you want to prioritize next
-- A fresh thought on a project
-- Any clue you would want to find when looking back
+Notes do not have a required format. You can write a little or a lot. Common things to write include:
 
-It is not a daily report and not a log. Write as much or as little as feels right — honest and brief usually beats complete and polished.
+- How the day felt, such as smooth, sluggish, unexpected, or tiring.
+- Why something got done, or why it did not.
+- What you want to prioritize tomorrow.
+- A new thought about a project.
+- Anything you may want to find again when looking back later.
+
+This is not a daily report or a full activity log. Short and honest is usually more useful than complete but forced.
 
 ## Notes and tasks
 
-Notes are tied to the date, not to specific tasks. If you write something on the day you completed a task, both will be visible when you review that date later.
+Notes are tied to the date, not directly to a specific task.
 
-Deleting or editing a task does **not** delete the note from that day. Notes and tasks are stored separately.
+If you write a note on the same day you complete a task, you can later review that date and see both the tasks from that day and what you wrote.
+
+Deleting or editing a task does **not** automatically delete the note for that date. Notes and tasks are stored separately.
 
 ## Browsing history
 
-In the review page, switch to any past date to see that day's history. There is no limit on how far back you can go — if there is a note from that day, it is there.
+On the review page, switch dates to view the history for that day.
+
+If a date has notes, you can find them by opening that date's review.

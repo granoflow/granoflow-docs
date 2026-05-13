@@ -1,37 +1,37 @@
 ---
 title: "Tasks overview"
-description: "A task is the smallest unit of action in GranoFlow. Capture it first, organize it later — that is the core idea."
+description: "A task is the smallest unit of action in GranoFlow. Capture it first, then decide where it belongs."
 ---
 
-A task is the specific thing you are going to do — from "call mum" to "finish chapter three draft." Anything that needs to happen can be a task.
+In GranoFlow, a task is one specific thing you need to do. You can tap the **+** button in the middle of the bottom bar, write it down, and save it; later, you can decide whether it belongs in a project, milestone, or domain.
 
-The biggest difference from a plain to-do app is that tasks in GranoFlow can connect to projects, milestones, and domains — so you always know why a task matters, not just that it exists.
+You can use GranoFlow as a simple task list. For example, “call mum” or “finish the chapter three draft” can both be tasks.
 
-But none of that is required. You can use tasks as a plain checklist and GranoFlow works fine that way too.
+GranoFlow also lets you connect tasks to projects, milestones, and domains. This helps when your work gets bigger: you can see not only what needs to be done, but also why it matters. But this is optional. For simple things, a standalone task is enough.
 
 ## How to add a task
 
-Fastest way: tap the **+** button in the middle of the bottom bar, type what you need to do, and save.
+The fastest way is: tap the **+** button in the middle of the bottom bar, enter the task, and save it.
 
-You do not need to figure out the project, due date, or tags right now. Capture first, organize later.
+You do not need to decide the project, date, or tags right now. Capture the task first, then organize it later.
 
 ![Tasks overview interface](../../../screenshots/en/tasks-overview-main.png)
 
-If a task has no due date and no project, it lands in the **Inbox**. Think of the Inbox as your pocket notes — safe for now, sort them out when you have time.
+If a task has no date and no project, it goes into the **Inbox** first. Think of the Inbox as a temporary note area: put things there first, then sort them out when you have time.
 
-The top-left menu shows every task view:
+The top-left menu contains these task views:
 
 | View | What it shows |
 | --- | --- |
 | Inbox | Tasks with no date or project yet |
-| Task list | Active, in-progress tasks |
+| Task list | Tasks currently being moved forward |
 | Completed | Tasks you have finished |
-| Archived | Tasks you want to keep but not see daily |
-| Trash | Deleted tasks — still recoverable |
+| Archived | Tasks you want to keep but do not need to review daily |
+| Trash | Deleted tasks that have not been cleared yet |
 
 ## How tasks, projects, milestones, and domains relate
 
-Start with tasks. Add structure above them only when it helps:
+You can start with tasks only. When things become more complex, add structure above them:
 
 ```mermaid
 graph LR
@@ -40,29 +40,29 @@ graph LR
   C -->|filed under| D[Domain]
 ```
 
-- **Task**: the specific thing you are doing — the basic unit
-- **Milestone**: a phase checkpoint inside a project (like "user testing done")
-- **Project**: a sustained goal over time (like "App launch")
-- **Domain**: a broad life area you care about (like "Work" or "Health")
+- **Task**: one specific thing to do, and the basic unit
+- **Milestone**: a stage inside a project, such as “finish user testing”
+- **Project**: a goal you work on over a period of time, such as “App launch”
+- **Domain**: a long-term area of life you care about, such as “Work” or “Health”
 
-Not every task needs a project. Simple things can live as standalone tasks. Add structure where it actually helps.
+Not every task needs a project. If something can be finished directly, just do it. Use projects, milestones, and domains for work that needs longer-term organization.
 
 ## Task statuses
 
 | Status | When to use it |
 | --- | --- |
-| To-do | Not started yet |
-| In progress | Currently working on it (keep to one at a time) |
-| Completed | Done — records a completion time |
-| Archived | Keeping the record but not tracking it daily |
-| Trash | Deleted but not yet cleared |
+| To-do | You have not started yet |
+| In progress | You are working on it now; it is best to keep only one at a time |
+| Completed | It is done, and GranoFlow records the completion time |
+| Archived | You no longer need to track it, but want to keep the record |
+| Trash | It has been deleted but not cleared yet |
 
 :::tip[Focus tip]
-Marking a task as "in progress" signals that this is the thing you are working on now. GranoFlow tries to keep only one task in progress at a time — this is intentional. It is harder to be in a state of flow when ten things are simultaneously "in progress."
+When you mark a task as “in progress,” GranoFlow tries to keep only one task in progress. This helps you keep your attention on the thing you are working on now.
 :::
 
 ## First time here?
 
-Tap **+**, write down the one thing you most want to get done today, and save it.
+Tap **+**, write down the one thing you most want to finish today, and save it.
 
-That is enough. Explore other features as you need them.
+That is enough. When you actually need more organization, you can start using projects, milestones, domains, archives, and the other task features.

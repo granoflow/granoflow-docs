@@ -3,35 +3,35 @@ title: "Account deletion and data handling"
 description: "Deleting your account removes cloud data but does not automatically clear local copies on each device — understand the scope before acting."
 ---
 
-Deleting your GranoFlow account is irreversible. Clarify a few things before you proceed.
+If you want to know what happens to your data after deleting your account, the answer is: cloud data is permanently deleted after the grace period, subscription benefits expire, but local GranoFlow data on each device does not disappear automatically. You need to handle local data yourself.
 
 ## What happens when you delete your account
 
-| | After account deletion |
-|--|----------------------|
+| Item | After account deletion |
+| --- | --- |
 | Cloud data | Permanently deleted after the grace period |
 | Local data on each device | **Not automatically removed** |
-| Subscription benefits | Expire with the account |
-| Can it be undone? | Only during the grace period |
+| Subscription benefits | Expire after the account is deleted |
+| Can it be undone? | Can be cancelled during the grace period; irreversible after that |
 
 ## Checklist before deleting
 
-- [ ] You no longer need cloud sync or cross-device sharing
+- [ ] Confirm you no longer need cloud sync or sharing across devices
 - [ ] If you want to keep your data, export a local backup first
-- [ ] If you have an active subscription, review the refund policy
-- [ ] If you use multiple devices, understand what data is on each
+- [ ] If you have an active subscription, review the refund policy first
+- [ ] If you use multiple devices, check what local data remains on each device
 
 ## Account deletion vs signing out
 
-- **Sign out**: disconnects this device from the account, local data stays, can sign back in anytime
-- **Delete account**: cancels the account, cloud data deleted after grace period, cannot be undone
+- **Sign out**: only disconnects this device from the account. Local data stays, and you can sign back in later.
+- **Delete account**: cancels the account. Cloud data is deleted after the grace period, and cannot be restored after the grace period ends.
 
-If you just want a break from GranoFlow, sign out. Account deletion is permanent.
+If you only want to stop using GranoFlow for a while, signing out is usually enough. Delete your account only when you are sure you no longer need this account or its cloud data.
 
 ## The grace period
 
-After submitting a deletion request, there is usually a grace period (see the in-app notice for the exact duration). During this period, you can cancel the request to restore the account. After the grace period ends, deletion is irreversible.
+After you submit an account deletion request, there is usually a grace period. Check the in-app notice for the exact duration. During the grace period, you can cancel the deletion request and restore the account to normal. After the grace period ends, deletion cannot be undone.
 
 :::caution[Local data does not disappear automatically]
-After deleting your account, your local GranoFlow data on each device remains until you manually uninstall the app or clear app data. If you do not want it, remove it manually.
+After deleting your account, your local GranoFlow data on each device remains until you manually uninstall the app or clear app data. If you do not want to keep this local data, remove it manually on each device.
 :::

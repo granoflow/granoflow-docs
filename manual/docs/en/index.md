@@ -7,23 +7,23 @@ translationReview:
   - product-frontend-design
 ---
 
-Granoflow is a personal growth system made of Todo lists and lightweight journaling. It does more than record tasks: it helps you find your own rhythm between external judgment and inner pressure. The design starts from a simple idea: reduce anxiety, reduce the risk of being pulled off course, and help you keep walking the path you truly want to take. As a new-generation productivity tool that deeply embraces AI, Granoflow already includes AI task parsing and thought-structuring features, with more AI-powered ways to use it coming over time.
+If you want to know how to use GranoFlow, this manual starts with the basics: write down what you need to do today, then place it into projects, domains, milestones, and reviews so it can become part of your life system. GranoFlow is not only a Todo list. It also includes lightweight journaling, so you can notice your rhythm, sources of pressure, and what matters to you. It already includes AI task parsing and thought-structuring features, with more AI-related ways to use it coming over time.
 
 ## Start with a life system
 
-If you are new, read Start in 5 minutes first. It shows how to capture one task, decide which project or life domain it belongs to, and end the day with a light review. That is the shortest path into GranoFlow: record today first, then gradually see your values, habits, and long-term direction.
+If you are new, read Start in 5 minutes first. You will learn three things: how to capture a task, how to decide which project or life domain it belongs to, and how to end the day with a light review. Start by recording today. You do not need to build the whole system at once. As your records grow, your values, habits, and long-term direction become easier to see.
 
 ## Use the manual for real decisions
 
-The manual answers practical questions: how to build domains and values, how to turn goals into projects, milestones, and tasks, how to use daily review and lightweight journals to notice behavior patterns, and how to grow habits and enter flow without adding anxiety. It also explains local-first vs cloud-first productivity apps, encryption boundaries, and AI-assisted reflection.
+Use this manual when you need to make a practical decision. For example: how to build domains and values, how to turn goals into projects, milestones, and tasks, how daily review and lightweight journaling can help you notice behavior patterns, and how to grow habits and enter flow without adding anxiety. The manual also explains the difference between local-first and cloud-first productivity tools, encryption boundaries, and the boundaries of AI-assisted reflection.
 
 ## Face life with ACT
 
-GranoFlow does not promise to make you your ideal self automatically. It offers a structure: accept reality as it is, notice what you truly value, commit to the next action, and place that action into projects, milestones, tasks, and review. The person you want to become is not a one-time setting. It is a direction that grows through recording, choosing, acting, and reflecting.
+GranoFlow does not promise to automatically turn you into your ideal self. It gives you a structure: accept reality first, notice what you truly value, commit to the next action, and place that action into projects, milestones, tasks, and review. The person you want to become is not the result of a one-time setting. It is a direction that grows through recording, choosing, acting, and reflecting.
 
 ## Ask AI with the manual
 
-If you want ChatGPT, Claude, Gemini, or another AI tool to help search the manual, ask it to read the manual URL for this language first, then put your question on the last line. This text works as a copyable starting prompt:
+If you want ChatGPT, Claude, Gemini, or another AI tool to help search the manual, ask it to read the manual URL for this language first, then put your question on the last line. You can copy and use this text:
 
 ```text
 Please read and answer my question based on the latest GranoFlow manual.
@@ -38,4 +38,4 @@ My question is: ...
 
 ## Where to go next
 
-Read What is GranoFlow if you need product positioning. Read Glossary and Projects if you want to build domains and values. Read Projects, Milestones, and Tasks if you want to turn intention into action. Read Review if you need lightweight journaling and reflection rhythm, and Data security if privacy or backup decisions matter.
+If you want product positioning first, read What is GranoFlow. If you want to build domains and values, start with Glossary and Projects. If you want to turn intentions into action, read Projects, Milestones, and Tasks. If you need lightweight journaling and a reflection rhythm, read Review. If privacy or backup decisions matter to you, read Data security.

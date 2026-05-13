@@ -1,43 +1,43 @@
 ---
 title: "Create a project"
-description: "Creating a project takes a few seconds — give it a name and you are done. This page shows you the entry point, what you can set up, and when it makes sense to create one."
+description: "Create a project when you want to manage a group of tasks together. This page explains where to create one, what to fill in, and what you can do next."
 ---
 
-Creating a project is fast: open the projects page, tap **+**, give it a name, done.
+If you want to manage a larger goal, such as a launch, a course, or a plan for a period of time, create a project: open the projects page, tap **+** in the top-right corner, enter a project name, then create it.
 
 ## Where to start
 
 In the project list, tap the **+** button in the top-right corner. A creation dialog appears.
 
-![Create project dialog](../../../screenshots/en/projects-create-dialog.png)
+![Projects list entry point](../../../screenshots/en/projects-overview-main.png)
 
 You can fill in:
 
-- **Name** (required): make it descriptive — "Q3 product launch" beats "Project 1" every time
-- **Domain** (optional): assign the project to a life area like Work, Health, or Learning
-- **Due date** (optional): the overall target completion date for the project
+- **Name** (required): describe what this project is meant to complete. For example, “Q3 product launch” is easier to understand than “Project 1”.
+- **Domain** (optional): place the project under a broader area, such as Work, Learning, or Health.
+- **Due date** (optional): the overall date you hope to finish the project.
 
-:::tip[A good name saves future headaches]
-The project name is the first thing you see when scanning your project list. A verb-plus-goal format works well: "Finish thesis" instead of "Thesis".
+:::tip[A good name saves time later]
+The project name appears in your project list. A “verb + goal” format works well, such as “Finish thesis” instead of just “Thesis”.
 :::
 
-## Create empty vs tasks-first
+## Create an empty project vs add tasks first
 
-Both approaches work — pick whichever fits how you think:
+Both approaches work. Choose the one that fits how you work:
 
 | Approach | Best when |
-|----------|-----------|
-| Create project first, add tasks later | Planning phase — you want to build the structure first |
-| Capture tasks in inbox, then assign to project | Action phase — capture quickly, organize later |
+| --- | --- |
+| Create the project first, then add tasks over time | You are still planning and want to set up the project structure first |
+| Capture tasks in the inbox, then assign them to a project | You are already doing the work and want to capture quickly, then organize later |
 
-Either way, tasks end up in the project.
+Either way, tasks can end up managed inside the project.
 
 ## After creating the project
 
-The usual next steps are:
+After the project is created, you can usually continue with these actions:
 
-1. Add milestones (optional) — if the goal has clear phases
-2. Link existing tasks to the project
-3. Create new tasks directly inside the project
+1. Add milestones (optional) — if the goal has clear phases.
+2. Link existing tasks to the project.
+3. Create new tasks directly inside the project.
 
-If you are not sure what to add yet, just close the project page. It will be there when you come back.
+If you are not sure what tasks to add yet, you can close the project page for now. The project has already been created, and you can come back later to fill it in.

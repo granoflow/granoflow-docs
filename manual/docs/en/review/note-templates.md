@@ -3,34 +3,44 @@ title: "Note templates"
 description: "Note templates give your daily and weekly reviews a consistent structure automatically. They provide the scaffold — you fill in the content."
 ---
 
-If you find yourself staring at a blank review and wondering "what format should I use today," note templates solve that.
-
-When you open today's or this week's review, a template auto-generates a structured draft — sections like "completed today," "how I felt," "priority for tomorrow" are already laid out. You just fill them in.
+Use note templates when you want every daily or weekly review to follow the same format. The template prepares the draft structure first, such as the date, completed items, feelings, and next steps; your job is to review it and add your own thoughts.
 
 ![Daily note template settings](../../../screenshots/en/review-daily-note-template-settings.png)
 
+## What it does
+
+When you open today's review or this week's summary, GranoFlow creates a draft from the matching template.
+
+The draft is not a blank page. It starts with the headings, sections, and variables from the template. Think of it like a form: the structure is already there, but the actual content still needs your input or adjustment.
+
 ## Two templates
 
-- **Daily note template**: shapes the draft generated for each day's review
-- **Weekly summary template**: shapes the draft generated for each week's review
+- **Daily note template**: used for each day's review draft.
+- **Weekly summary template**: used for each week's summary draft.
 
-They are independent — edit and reset them separately.
+![Weekly summary template settings](../../../screenshots/en/review-weekly-note-template-settings.png)
 
-## Variables
+These two templates are independent. You can make the daily template more detailed and the weekly template more summary-focused. You can also edit them separately or reset them separately.
 
-Templates support variables that are replaced with real data when the draft is generated:
+## What variables are
+
+Variables are placeholders inside a template. When GranoFlow creates the draft, it replaces them with real data.
+
+Common variables include:
 
 - Today's date
 - Today's completed task list
 - This week's review summary
 - Time-investment stats
 
-This means when you open a review, you are not facing a blank page — you are facing a draft that already knows what you finished today. You just add feelings and next steps.
+For example, if the template includes completed tasks, that section will try to bring in the tasks completed that day when you open the review. This gives you a starting point instead of an empty page. You can then decide what to keep and add your feelings and next steps.
 
-## What templates do not do
+## Templates do not write for you
 
-Templates provide structure, not content. They do not analyze your records or generate summaries automatically. For AI-assisted summarization, use the AI assistance feature — templates are a separate thing.
+Templates only provide the draft structure. They do not automatically analyze your records or generate summaries for you.
+
+If you want AI to help organize content, use the AI assistance feature. Note templates and AI assistance are separate features.
 
 :::tip[Members-only feature]
-Note templates are available to members. Non-members can view the default template but cannot customize it.
+Note templates are available to members. Non-members can view them but cannot customize them.
 :::

@@ -24,7 +24,7 @@ The first version uses a simple default:
 | Start time | 9:00 AM on the review date |
 | End time | The current time when you auto-arrange |
 | Distribution | Evenly distributed in task order |
-| Timeline | Non-overlapping inside the preview sheet; gaps are allowed |
+| Timeline | Tasks may overlap inside the preview sheet; gaps are also allowed |
 | Data rule | Task times are still allowed to overlap |
 
 Task order prefers completion order, creation order, and the current display order. Choosing the entry does not immediately change task time. GranoFlow first opens a bottom preview sheet so you can check the result before saving.
@@ -33,7 +33,7 @@ Task order prefers completion order, creation order, and the current display ord
 
 ## How to check the result
 
-The preview sheet also shows a timeline. Each task block can only be adjusted vertically: drag the top edge to change the start time, or the bottom edge to change the end time. Task blocks cannot be dragged horizontally.
+The preview sheet also shows a timeline. Drag the top edge of a task block to change the start time, or the bottom edge to change the end time. Task blocks cannot be dragged horizontally. On desktop, you can also type the start and end time directly in each task block, then use Tab to move to the next field.
 
 Look at three things:
 
@@ -43,7 +43,7 @@ Look at three things:
 
 You do not need to make every minute exact. For daily review, it is usually enough to separate records that were accidentally clustered together.
 
-The preview sheet does not allow two tasks to overlap. That limit keeps the drag interaction simple; it does not change GranoFlow's general rule that real task times may overlap elsewhere.
+The preview sheet allows task times to overlap, so you can move or type one task into the time range that best matches what happened. Before saving, GranoFlow still checks that the start time is earlier than the end time, and that the start time is not earlier than when the task was created.
 
 ## How this relates to Review Today's Tasks
 

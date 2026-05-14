@@ -25,6 +25,10 @@ That depends on the specific feature you use. GranoFlow calls external AI servic
 
 Just do not accept that suggestion. Ignored or unconfirmed suggestions have no effect. You can then open the task details and set the correct field manually.
 
+## Does Review Today's Tasks write changes automatically?
+
+No. AI can help review today's task durations and prepare suggestions for start time, end time, title, and Task Review. Those fields are written only after you copy the result back into GranoFlow and confirm it in the confirmation view.
+
 ## What does the Helper prompt do?
 
 The Helper prompt affects the default way GranoFlow asks external AI questions on your behalf. You can write in "what angle I want AI to use when explaining GranoFlow" so the answers better match your use case.

@@ -26,6 +26,10 @@ When you finish something, mark it complete. After that, the task will:
 If you still want to see the record in daily review, do not delete completed tasks casually. Completed tasks are not junk; they are your completion history.
 :::
 
+After completion, the task detail view shows **Task Review** and lets you edit it. Use it to record the actual time spent, what was confirmed, problems, or lessons learned. Archived tasks can also have editable Task Reviews.
+
+{/* manual-screenshot:id=tasks-detail-review-editable */}
+
 ## Archive
 
 Archive is for tasks you do not want to see every day, but may still need as a record later.
@@ -61,3 +65,9 @@ Check in this order. It is usually the fastest way:
 6. If you deleted it, check the trash.
 
 Most missing tasks are in one of these places.
+
+## Task Review after reopening
+
+If you write a Task Review after completing a task, then reopen that task, the review is not cleared. It stays visible in task details, but becomes read-only until the task is completed or archived again.
+
+{/* manual-screenshot:id=tasks-detail-review-readonly */}

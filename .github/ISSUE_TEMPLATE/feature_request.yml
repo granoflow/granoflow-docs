@@ -1,0 +1,70 @@
+name: Feature request
+description: Suggest an improvement or new capability
+title: "[Need] "
+labels:
+  - enhancement
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues before submitting.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Target platform
+      description: Which platform does this request mainly relate to?
+      options:
+        - iOS
+        - Android
+        - macOS
+        - Windows
+        - Web
+        - Documentation
+        - Cross-platform
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Current version
+      description: Version where this need is observed (e.g. 1.4.2+18)
+      placeholder: 1.4.2+18
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Problem / scenario
+      description: What specific problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What do you want Granoflow to do?
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: Why this helps
+      description: Expected value (efficiency, quality, clarity, etc.)
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered (optional)
+      description: Current workaround and what is missing
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and did not find the same request.
+          required: true
+        - label: This request includes a clear scenario and expected outcome.
+          required: true

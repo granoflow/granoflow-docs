@@ -1,0 +1,86 @@
+name: Bug report
+description: Report a reproducible problem
+title: "[Bug] "
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please search existing issues before submitting.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Where did this issue occur?
+      options:
+        - iOS
+        - Android
+        - macOS
+        - Windows
+        - Web
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: App/docs version where issue happened (e.g. 1.4.2+18)
+      placeholder: 1.4.2+18
+    validations:
+      required: true
+  - type: input
+    id: device_os
+    attributes:
+      label: Device / OS
+      description: Device model and OS version
+      placeholder: iPhone 15, iOS 18.1
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One sentence describing the problem
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide clear, numbered steps
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (optional)
+      description: Screenshots, videos, logs, links
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and did not find the same problem.
+          required: true
+        - label: I can reproduce this issue.
+          required: true

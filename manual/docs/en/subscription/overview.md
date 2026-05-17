@@ -25,6 +25,8 @@ In short: **the free version is enough for a serious trial, and it also works fo
 
 Open GranoFlow Settings, then go to Account/Subscription to see your current subscription status. When you are not subscribed and store purchases are available, the page starts with the plan selector and the selected plan details. Choosing Angel Member or the upgrade plan shows the November 22, 2026 purchase or paid-upgrade deadline directly in the detail card. When the store is loading or purchases are unavailable, the page only shows status, included benefits, restore purchase, and manage subscription options, without prices or purchase buttons.
 
+If the current account already has Angel membership, the Pro plan is shown as included with Angel membership and no Pro purchase button is offered. This helps prevent duplicate purchases when you already have the higher-tier entitlement.
+
 **Important**: Subscription status comes from the server, not from the app deciding on its own. If you already paid but the benefits do not appear yet, wait a moment for the status to refresh; if nothing changes, check your network and the account you are signed into.
 
 ## Most common questions

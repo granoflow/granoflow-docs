@@ -4,6 +4,15 @@
   <a href="README.md">English</a> | <a href="README.zh-CN.md">简体中文</a> | <a href="README.zh-HK.md">繁體中文（香港）</a> | 繁體中文（台灣）
 </p>
 
+<table>
+  <tr>
+    <td><strong>🎁 試用回饋可獲送年費會員</strong><br />提交有效 issue、被採納的建議，或言之有物的體驗分享，符合規則即可獲得獎勵。<br /><a href="#trial-incentive">查看繁體中文（台灣）規則</a></td>
+  </tr>
+  <tr>
+    <td><strong>🎁 Free annual membership for helpful trial feedback</strong><br />Valid issues, adopted suggestions, and substantial experience-sharing posts may qualify under the rules.<br /><a href="README.md#trial-incentive">View English rules</a></td>
+  </tr>
+</table>
+
 > 這是 Granoflow 的公開文件倉庫入口頁。  
 > 如果你想知道這款 App 是否能解決你的實際問題，建議先試用，再根據真實體驗給我們回饋。
 
@@ -15,7 +24,7 @@
 
 - [1. 先從這裡開始](#1-先從這裡開始)
 - [2. 為什麼建議你現在就試](#2-為什麼建議你現在就試)
-- [3. 試用激勵計畫（送年費會員）](#3-試用激勵計畫送年費會員)
+- [3. 試用激勵計畫（送年費會員）](#trial-incentive)
 - [4. 如何參與（建議路徑）](#4-如何參與建議路徑)
 - [5. 我們最希望收到的回饋類型](#5-我們最希望收到的回饋類型)
 - [6. 透明處理機制](#6-透明處理機制)
@@ -43,6 +52,8 @@
 > 產品功能細節與完整說明，已在手冊前幾章節詳細展開；本 README 不重複介紹。
 
 ---
+
+<a id="trial-incentive"></a>
 
 ## 3. 試用激勵計畫（送年費會員）
 

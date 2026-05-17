@@ -1,8 +1,17 @@
 # Granoflow Docs & Trial Entry
 
 <p align="right">
-  English（Free Annual Membership） | <a href="README.zh-CN.md">简体中文（送年费会员）</a> | <a href="README.zh-HK.md">繁體中文（香港，送年費會員）</a> | <a href="README.zh-TW.md">繁體中文（台灣，送年費會員）</a>
+  English | <a href="README.zh-CN.md">简体中文</a> | <a href="README.zh-HK.md">繁體中文（香港）</a> | <a href="README.zh-TW.md">繁體中文（台灣）</a>
 </p>
+
+<table>
+  <tr>
+    <td><strong>🎁 Free annual membership for helpful trial feedback</strong><br />Submit a valid issue, an adopted suggestion, or a substantial experience-sharing post to qualify under the rules.<br /><a href="#trial-incentive">View English rules</a></td>
+  </tr>
+  <tr>
+    <td><strong>🎁 试用反馈可获送年费会员</strong><br />提交有效 issue、被采纳的建议，或言之有物的体验分享，符合规则即可获得奖励。<br /><a href="README.zh-CN.md#trial-incentive">查看中文规则</a></td>
+  </tr>
+</table>
 
 > This is the public documentation entry page for Granoflow.  
 > If you are wondering whether this app can solve your real-life workflow problems, try it first and then share your real experience.
@@ -15,7 +24,7 @@
 
 - [1. Start Here](#1-start-here)
 - [2. Why Try It Now](#2-why-try-it-now)
-- [3. Trial Incentive Program (Free Annual Membership)](#3-trial-incentive-program-free-annual-membership)
+- [3. Trial Incentive Program (Free Annual Membership)](#trial-incentive)
 - [4. How to Participate](#4-how-to-participate)
 - [5. What We Want Most](#5-what-we-want-most)
 - [6. Transparency](#6-transparency)
@@ -43,6 +52,8 @@ Common trial scenarios:
 > Product details are already documented in the first chapters of the manual, so this README does not duplicate that content.
 
 ---
+
+<a id="trial-incentive"></a>
 
 ## 3. Trial Incentive Program (Free Annual Membership)
 

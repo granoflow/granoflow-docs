@@ -67,8 +67,10 @@ If you do not want to remember shortcuts, use the buttons below the input:
 - Reminder
 - Add to project
 - Tag
+- Image
 
-These buttons and the `#`, `@`, and `~` shortcuts write to the same task fields. Selected fields appear as small tokens; click a token to change it, or remove it to clear the field.
+These buttons and the `#`, `@`, and `~` shortcuts write to the same task fields. Selected fields appear as small tokens; click a token to change it, or remove it to clear the field.  
+The image button supports up to 5 images at a time and shows `Image N/5` after selection. After submit, images upload with the task. If some uploads fail because of network or permission issues, the task is still saved and you will see a message that the task was created but not all images were uploaded.
 
 ## Suggestions and Corrections
 

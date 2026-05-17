@@ -1,5 +1,5 @@
-name: Bug report
-description: Report a reproducible problem
+name: Bug report / 錯誤回報
+description: Report a reproducible problem / 回報可重現的問題
 title: "[Bug] "
 labels:
   - bug
@@ -9,78 +9,79 @@ body:
     attributes:
       value: |
         Please search existing issues before submitting.
+        提交前請先搜尋現有 issues，避免重複回報。
   - type: dropdown
     id: platform
     attributes:
-      label: Platform
-      description: Where did this issue occur?
+      label: Platform / 平台
+      description: Where did this issue occur? / 這個問題在哪個平台發生？
       options:
         - iOS
         - Android
         - macOS
         - Windows
         - Web
-        - Documentation
-        - Other
+        - Documentation / 文件
+        - Other / 其他
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Version
-      description: App/docs version where issue happened (e.g. 1.4.2+18)
-      placeholder: 1.4.2+18
+      label: Version / 版本
+      description: App/docs version where issue happened. / 發生問題的 App 或文件版本。
+      placeholder: 0.1.8+13
     validations:
       required: true
   - type: input
     id: device_os
     attributes:
-      label: Device / OS
-      description: Device model and OS version
+      label: Device / OS / 裝置與系統
+      description: Device model and OS version. / 裝置型號與系統版本。
       placeholder: iPhone 15, iOS 18.1
     validations:
       required: true
   - type: textarea
     id: summary
     attributes:
-      label: Summary
-      description: One sentence describing the problem
+      label: Summary / 摘要
+      description: One sentence describing the problem. / 用一句話描述問題。
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Steps to reproduce
-      description: Provide clear, numbered steps
+      label: Steps to reproduce / 重現步驟
+      description: Provide clear, numbered steps. / 請提供清楚的編號步驟。
       placeholder: |
-        1. Open ...
-        2. Tap ...
-        3. Observe ...
+        1. Open ... / 開啟 ...
+        2. Tap ... / 點選 ...
+        3. Observe ... / 觀察到 ...
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Expected result
+      label: Expected result / 預期結果
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Actual result
+      label: Actual result / 實際結果
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: Evidence (optional)
-      description: Screenshots, videos, logs, links
+      label: Evidence (optional) / 證據（選填）
+      description: Screenshots, videos, logs, links. / 截圖、影片、日誌或連結。
   - type: checkboxes
     id: checks
     attributes:
-      label: Checklist
+      label: Checklist / 檢查清單
       options:
-        - label: I searched existing issues and did not find the same problem.
+        - label: I searched existing issues and did not find the same problem. / 我已搜尋現有 issues，沒有找到相同問題。
           required: true
-        - label: I can reproduce this issue.
+        - label: I can reproduce this issue. / 我可以重現這個問題。
           required: true

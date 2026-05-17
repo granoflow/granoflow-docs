@@ -1,5 +1,1 @@
 blank_issues_enabled: false
-contact_links:
-  - name: Experience sharing reward entry
-    url: https://github.com/granoflow/granoflow-docs/issues/new?template=feature_request.yml
-    about: For reward-related experience-sharing entries, please open an issue and include your social post link.

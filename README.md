@@ -1,7 +1,7 @@
 # Granoflow Docs & Trial Entry
 
 <p align="right">
-  English | <a href="README.zh-CN.md">简体中文</a> | <a href="README.zh-HK.md">繁體中文（香港）</a> | <a href="README.zh-TW.md">繁體中文（台灣）</a>
+  English（Free Annual Membership） | <a href="README.zh-CN.md">简体中文（送年费会员）</a> | <a href="README.zh-HK.md">繁體中文（香港，送年費會員）</a> | <a href="README.zh-TW.md">繁體中文（台灣，送年費會員）</a>
 </p>
 
 > This is the public documentation entry page for Granoflow.  
@@ -15,7 +15,7 @@
 
 - [1. Start Here](#1-start-here)
 - [2. Why Try It Now](#2-why-try-it-now)
-- [3. Trial Incentive Program (Annual Membership)](#3-trial-incentive-program-annual-membership)
+- [3. Trial Incentive Program (Free Annual Membership)](#3-trial-incentive-program-free-annual-membership)
 - [4. How to Participate](#4-how-to-participate)
 - [5. What We Want Most](#5-what-we-want-most)
 - [6. Transparency](#6-transparency)
@@ -44,7 +44,7 @@ Common trial scenarios:
 
 ---
 
-## 3. Trial Incentive Program (Annual Membership)
+## 3. Trial Incentive Program (Free Annual Membership)
 
 We place real user feedback at the center of product iteration.
 

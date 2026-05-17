@@ -14,28 +14,9 @@ body:
 
         Please submit one entry per original post, and make sure the post link remains publicly accessible for review.
         每篇原始貼文請提交一個申請，並確保貼文連結在審核期間可公開存取。
-  - type: dropdown
-    id: platform
-    attributes:
-      label: Target platform / 目標平台
-      description: Which app platform did your experience mainly involve? / 你的體驗主要涉及哪個 App 平台？
-      options:
-        - Android
-        - iOS
-        - macOS
-        - macOS (DMG)
-        - Windows (MSIX)
-        - Linux (AppImage)
-    validations:
-      required: true
-  - type: input
-    id: version
-    attributes:
-      label: Current version / 目前版本
-      description: App version used in your experience. Default is the latest known version, with the build separator shown as a dot. / 你體驗時使用的 App 版本；預設為目前已知最新版本，建置分隔符以點號顯示。
-      value: 0.1.8.13
-    validations:
-      required: false
+
+        We review the reward based on real experience and long-term intent. Help us and your readers understand what changed in your life, and why you genuinely want to keep using Granoflow for more than one year.
+        我們會根據真實體驗與長期使用意願審核獎勵。請讓我們和讀者理解，你的生活有了什麼改變，以及為什麼你真的想持續使用 Granoflow 超過一年。
   - type: input
     id: post_link
     attributes:
@@ -51,34 +32,42 @@ body:
       description: Where did you publish the post? / 你在哪個平台發布貼文？
       options:
         - X / Twitter
+        - Threads
         - YouTube
         - Reddit
         - Facebook
         - Instagram
         - LinkedIn
         - TikTok
-        - Zhihu
-        - Weibo
         - Public blog / website / 公開部落格或網站
         - Other publicly accessible platform / 其他可公開存取的平台
     validations:
       required: true
-  - type: textarea
-    id: experience_summary
+  - type: upload
+    id: post_screenshot
     attributes:
-      label: Experience summary / 體驗摘要
-      description: Briefly describe the real scenario, what you tried, and what changed. / 簡要描述真實情境、你嘗試了什麼，以及帶來了什麼變化。
-      placeholder: |
-        Scenario / 情境：
-        What I tried / 我嘗試了什麼：
-        Result / change / 結果或變化：
+      label: Original post screenshot / 原始貼文截圖
+      description: Upload at least one screenshot of the original post for review backup. / 請至少上傳一張原始貼文截圖，作為審核備份。
     validations:
       required: true
+      accept: ".png,.jpg,.jpeg,.gif,.webp"
   - type: textarea
-    id: helped_point
+    id: experience_or_helped_point
     attributes:
-      label: Where Granoflow helped / Granoflow 幫到你的地方
-      description: Name one specific point where Granoflow helped your work, life, or practice. / 請說明 Granoflow 在你的工作、生活或實踐中具體幫到哪一點。
+      label: Experience summary or where Granoflow helped / 體驗摘要或 Granoflow 幫到你的地方
+      description: Briefly describe the real-life change shown in your post, the role Granoflow played, and why you want to keep using it. / 簡要描述貼文呈現的生活變化、Granoflow 扮演的角色，以及你為什麼想繼續使用。
+      placeholder: |
+        A strong entry usually reads like this / 好的申請通常像這樣：
+        1. My life/work/practice changed in this specific way: ...
+           我的生活、工作或練習有了這個具體改變：...
+        2. Granoflow was not the whole story. It helped as a tool by: ...
+           Granoflow 不是整篇分享的主角，它作為工具幫到我的地方是：...
+        3. I want the annual membership because I can see myself using it for more than one year to: ...
+           我想要年費會員，是因為我看得到自己接下來一年以上會用它來：...
+
+        Writing guidance / 寫作建議：
+        Focus on the change in your real life. Mention Granoflow naturally as one helper in that change. Avoid turning the post into an ad, a feature list, or a reward-only application.
+        請把重點放在你真實生活中的改變。自然提到 Granoflow 如何輔助這個改變即可。請避免把貼文寫成廣告、功能清單，或只是為了領獎的申請。
     validations:
       required: true
   - type: checkboxes
@@ -87,6 +76,8 @@ body:
       label: Checklist / 檢查清單
       options:
         - label: I confirm this is my own real experience, not promotional copy. / 我確認這是我自己的真實體驗，不是宣傳文案。
+          required: true
+        - label: I genuinely want to keep using Granoflow for more than one year, and this entry explains that intent. / 我是真的想持續使用 Granoflow 超過一年，且這份申請已說明這個意願。
           required: true
         - label: The original post is publicly accessible or published on a mainstream social platform. / 原始貼文可公開存取，或發布於主流社群平台。
           required: true

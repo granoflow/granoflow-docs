@@ -34,11 +34,11 @@ body:
     validations:
       required: true
   - type: input
-    id: device_os
+    id: device_model_os_version
     attributes:
-      label: Device / OS / 裝置與系統
-      description: Device model and OS version. / 裝置型號與系統版本。
-      placeholder: iPhone 15, iOS 18.1
+      label: Device brand, model, and OS version / 設備品牌、型號與作業系統版本
+      description: Enter the device brand, model, and operating system version. / 請填寫設備品牌、型號與作業系統版本號。
+      placeholder: Apple iPhone 15, iOS 18.1
     validations:
       required: true
   - type: textarea
@@ -71,6 +71,14 @@ body:
       label: Actual result / 實際結果
     validations:
       required: true
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Screenshot / 截圖
+      description: Upload at least one screenshot that shows the issue. / 請至少上傳一張能顯示問題的截圖。
+    validations:
+      required: true
+      accept: ".png,.jpg,.jpeg,.gif,.webp"
   - type: textarea
     id: evidence
     attributes:

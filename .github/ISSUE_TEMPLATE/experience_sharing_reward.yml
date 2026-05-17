@@ -15,8 +15,12 @@ body:
         Please submit one entry per original post, and make sure the post link remains publicly accessible for review.
         每篇原始貼文請提交一個申請，並確保貼文連結在審核期間可公開存取。
 
-        We review the reward based on real experience and long-term intent. Help us and your readers understand what changed in your life, and why you genuinely want to keep using Granoflow for more than one year.
-        我們會根據真實體驗與長期使用意願審核獎勵。請讓我們和讀者理解，你的生活有了什麼改變，以及為什麼你真的想持續使用 Granoflow 超過一年。
+        We review the reward based on a real public post, a specific Granoflow point mentioned in that post, and your genuine current commitment to keep using Granoflow for more than one year.
+        我們會根據真實公開貼文、貼文中提到的一個具體 Granoflow 亮點，以及你目前真實想持續使用 Granoflow 超過一年的承諾來審核獎勵。
+  - type: markdown
+    attributes:
+      value: |
+        ## Original post / 原始貼文
   - type: input
     id: post_link
     attributes:
@@ -25,6 +29,14 @@ body:
       placeholder: https://...
     validations:
       required: true
+  - type: upload
+    id: post_screenshot
+    attributes:
+      label: Original post screenshot / 原始貼文截圖
+      description: Upload at least one screenshot of the original post for review backup. / 請至少上傳一張原始貼文截圖，作為審核備份。
+    validations:
+      required: true
+      accept: ".png,.jpg,.jpeg,.gif,.webp"
   - type: dropdown
     id: post_platform
     attributes:
@@ -43,33 +55,27 @@ body:
         - Other publicly accessible platform / 其他可公開存取的平台
     validations:
       required: true
-  - type: upload
-    id: post_screenshot
+  - type: markdown
     attributes:
-      label: Original post screenshot / 原始貼文截圖
-      description: Upload at least one screenshot of the original post for review backup. / 請至少上傳一張原始貼文截圖，作為審核備份。
-    validations:
-      required: true
-      accept: ".png,.jpg,.jpeg,.gif,.webp"
+      value: |
+        ## Granoflow point / Granoflow 亮點
   - type: textarea
     id: experience_or_helped_point
     attributes:
-      label: Experience summary or where Granoflow helped / 體驗摘要或 Granoflow 幫到你的地方
-      description: Briefly describe the real-life change shown in your post, the role Granoflow played, and why you want to keep using it. / 簡要描述貼文呈現的生活變化、Granoflow 扮演的角色，以及你為什麼想繼續使用。
+      label: What I appreciate most about Granoflow / 我最欣賞 Granoflow 的地方
+      description: Briefly name the Granoflow quality, feeling, or specific role you appreciated most in this experience. / 請簡要說明這次體驗中，你最欣賞 Granoflow 的哪個特質、感受或具體作用。
       placeholder: |
-        A strong entry usually reads like this / 好的申請通常像這樣：
-        1. My life/work/practice changed in this specific way: ...
-           我的生活、工作或練習有了這個具體改變：...
-        2. Granoflow was not the whole story. It helped as a tool by: ...
-           Granoflow 不是整篇分享的主角，它作為工具幫到我的地方是：...
-        3. I want the annual membership because I can see myself using it for more than one year to: ...
-           我想要年費會員，是因為我看得到自己接下來一年以上會用它來：...
+        The thing I appreciate most about Granoflow is: ...
+        我最欣賞和喜歡 Granoflow 的點是：...
 
-        Writing guidance / 寫作建議：
-        Focus on the change in your real life. Mention Granoflow naturally as one helper in that change. Avoid turning the post into an ad, a feature list, or a reward-only application.
-        請把重點放在你真實生活中的改變。自然提到 Granoflow 如何輔助這個改變即可。請避免把貼文寫成廣告、功能清單，或只是為了領獎的申請。
+        For example, in my camping post, the main story was the campsite, the weather, and the feeling of traveling alone. The Granoflow point I appreciated was that it helped me keep a light rhythm before and after the trip without turning the weekend into another stressful checklist.
+        例如，在我的露營分享裡，主體是營地、天氣，以及一個人旅行的感受。我欣賞 Granoflow 的點是：它幫我在出發前後保留一點輕量節奏，但沒有把週末變成另一份壓力清單。
     validations:
       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## Required confirmations / 必要確認
   - type: checkboxes
     id: checks
     attributes:
@@ -77,11 +83,15 @@ body:
       options:
         - label: I confirm this is my own real experience, not promotional copy. / 我確認這是我自己的真實體驗，不是宣傳文案。
           required: true
-        - label: I genuinely want to keep using Granoflow for more than one year, and this entry explains that intent. / 我是真的想持續使用 Granoflow 超過一年，且這份申請已說明這個意願。
-          required: true
         - label: The original post is publicly accessible or published on a mainstream social platform. / 原始貼文可公開存取，或發布於主流社群平台。
           required: true
         - label: I understand the post must remain accessible for at least 24 hours after publishing. / 我理解貼文發布後必須至少維持 24 小時可存取。
+          required: true
+        - label: I confirm my original sharing post already mentions the Granoflow point I wrote above. / 我確認我的原始分享文章中已經提到了上面填寫的 Granoflow 亮點。
+          required: true
+        - label: I understand this entry should describe a specific life moment where Granoflow played a helpful role, not claim that Granoflow changed my life. / 我理解這份申請應描述一個 Granoflow 起到幫助作用的具體生活片段，而不是宣稱 Granoflow 改變了我的人生。
+          required: true
+        - label: I confirm that wanting to keep using Granoflow for more than one year is my genuine current commitment, not just wording for this reward entry. / 我確認「想持續使用 Granoflow 超過一年」是我目前真實的承諾，而不只是為了這份獎勵申請寫出的說法。
           required: true
         - label: I understand rewards are reviewed according to the published trial incentive rules. / 我理解獎勵會依公開的試用激勵規則審核。
           required: true

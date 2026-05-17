@@ -12,7 +12,7 @@ So when you first start using GranoFlow, you can use the free version to organiz
 ## Free vs. subscriber — what's different
 
 | Feature | Free | Subscriber |
-|---------|------|------------|
+| ------- | ---- | ---------- |
 | Tasks, projects, values | ✅ | ✅ |
 | Journal, reviews, backups | ✅ | ✅ |
 | AI task parsing and thinking support | ✅ | ✅ |
@@ -23,7 +23,7 @@ In short: **the free version is enough for a serious trial, and it also works fo
 
 ## Where to check your subscription status
 
-Open GranoFlow Settings, then go to Account/Subscription to see your current subscription status. This page usually also shows a Pro benefits summary, plus options to purchase or restore a purchase.
+Open GranoFlow Settings, then go to Account/Subscription to see your current subscription status. When you are not subscribed and store purchases are available, the page starts with the plan selector and the selected plan details. Choosing Angel Member or the upgrade plan shows the November 22, 2026 purchase or paid-upgrade deadline directly in the detail card. When the store is loading or purchases are unavailable, the page only shows status, included benefits, restore purchase, and manage subscription options, without prices or purchase buttons.
 
 **Important**: Subscription status comes from the server, not from the app deciding on its own. If you already paid but the benefits do not appear yet, wait a moment for the status to refresh; if nothing changes, check your network and the account you are signed into.
 

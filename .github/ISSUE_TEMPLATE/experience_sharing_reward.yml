@@ -1,0 +1,96 @@
+name: Experience sharing reward entry / 體驗分享獎勵申請
+description: Submit an experience-sharing post for annual membership reward review / 提交體驗分享貼文以申請年費會員獎勵審核
+title: "[Sharing] "
+labels:
+  - reward-entry
+  - experience-sharing
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for sharing your real Granoflow experience.
+        感謝你分享真實的 Granoflow 使用體驗。
+
+        Please submit one entry per original post, and make sure the post link remains publicly accessible for review.
+        每篇原始貼文請提交一個申請，並確保貼文連結在審核期間可公開存取。
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Target platform / 目標平台
+      description: Which app platform did your experience mainly involve? / 你的體驗主要涉及哪個 App 平台？
+      options:
+        - Android
+        - iOS
+        - macOS
+        - macOS (DMG)
+        - Windows (MSIX)
+        - Linux (AppImage)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Current version / 目前版本
+      description: App version used in your experience. Default is the latest known version, with the build separator shown as a dot. / 你體驗時使用的 App 版本；預設為目前已知最新版本，建置分隔符以點號顯示。
+      value: 0.1.8.13
+    validations:
+      required: false
+  - type: input
+    id: post_link
+    attributes:
+      label: Original post link / 原始貼文連結
+      description: Paste the direct public link to your experience-sharing post. / 請貼上體驗分享貼文的公開直連。
+      placeholder: https://...
+    validations:
+      required: true
+  - type: dropdown
+    id: post_platform
+    attributes:
+      label: Publishing platform / 發布平台
+      description: Where did you publish the post? / 你在哪個平台發布貼文？
+      options:
+        - X / Twitter
+        - YouTube
+        - Reddit
+        - Facebook
+        - Instagram
+        - LinkedIn
+        - TikTok
+        - Zhihu
+        - Weibo
+        - Public blog / website / 公開部落格或網站
+        - Other publicly accessible platform / 其他可公開存取的平台
+    validations:
+      required: true
+  - type: textarea
+    id: experience_summary
+    attributes:
+      label: Experience summary / 體驗摘要
+      description: Briefly describe the real scenario, what you tried, and what changed. / 簡要描述真實情境、你嘗試了什麼，以及帶來了什麼變化。
+      placeholder: |
+        Scenario / 情境：
+        What I tried / 我嘗試了什麼：
+        Result / change / 結果或變化：
+    validations:
+      required: true
+  - type: textarea
+    id: helped_point
+    attributes:
+      label: Where Granoflow helped / Granoflow 幫到你的地方
+      description: Name one specific point where Granoflow helped your work, life, or practice. / 請說明 Granoflow 在你的工作、生活或實踐中具體幫到哪一點。
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist / 檢查清單
+      options:
+        - label: I confirm this is my own real experience, not promotional copy. / 我確認這是我自己的真實體驗，不是宣傳文案。
+          required: true
+        - label: The original post is publicly accessible or published on a mainstream social platform. / 原始貼文可公開存取，或發布於主流社群平台。
+          required: true
+        - label: I understand the post must remain accessible for at least 24 hours after publishing. / 我理解貼文發布後必須至少維持 24 小時可存取。
+          required: true
+        - label: I understand rewards are reviewed according to the published trial incentive rules. / 我理解獎勵會依公開的試用激勵規則審核。
+          required: true

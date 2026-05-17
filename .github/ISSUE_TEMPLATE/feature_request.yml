@@ -1,5 +1,5 @@
-name: Feature request
-description: Suggest an improvement or new capability
+name: Feature request / 功能建議
+description: Suggest an improvement or new capability / 提出改進或新功能建議
 title: "[Need] "
 labels:
   - enhancement
@@ -9,62 +9,63 @@ body:
     attributes:
       value: |
         Please search existing issues before submitting.
+        提交前請先搜尋現有 issues，避免重複建議。
   - type: dropdown
     id: platform
     attributes:
-      label: Target platform
-      description: Which platform does this request mainly relate to?
+      label: Target platform / 目標平台
+      description: Which platform does this request mainly relate to? / 這個需求主要與哪個平台相關？
       options:
         - iOS
         - Android
         - macOS
         - Windows
         - Web
-        - Documentation
-        - Cross-platform
-        - Other
+        - Documentation / 文件
+        - Cross-platform / 跨平台
+        - Other / 其他
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Current version
-      description: Version where this need is observed (e.g. 1.4.2+18)
-      placeholder: 1.4.2+18
+      label: Current version / 目前版本
+      description: Version where this need is observed. / 你觀察到此需求時使用的版本。
+      placeholder: 0.1.8+13
     validations:
       required: true
   - type: textarea
     id: scenario
     attributes:
-      label: Problem / scenario
-      description: What specific problem are you trying to solve?
+      label: Problem / scenario / 問題或情境
+      description: What specific problem are you trying to solve? / 你想解決哪個具體問題？
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Proposed solution
-      description: What do you want Granoflow to do?
+      label: Proposed solution / 建議方案
+      description: What do you want Granoflow to do? / 你希望 Granoflow 怎麼做？
     validations:
       required: true
   - type: textarea
     id: value
     attributes:
-      label: Why this helps
-      description: Expected value (efficiency, quality, clarity, etc.)
+      label: Why this helps / 為什麼有幫助
+      description: Expected value, such as efficiency, quality, or clarity. / 預期價值，例如效率、品質或清晰度。
     validations:
       required: true
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternatives considered (optional)
-      description: Current workaround and what is missing
+      label: Alternatives considered (optional) / 考慮過的替代方案（選填）
+      description: Current workaround and what is missing. / 目前替代做法，以及仍然缺少什麼。
   - type: checkboxes
     id: checks
     attributes:
-      label: Checklist
+      label: Checklist / 檢查清單
       options:
-        - label: I searched existing issues and did not find the same request.
+        - label: I searched existing issues and did not find the same request. / 我已搜尋現有 issues，沒有找到相同需求。
           required: true
-        - label: This request includes a clear scenario and expected outcome.
+        - label: This request includes a clear scenario and expected outcome. / 這個建議包含清楚情境與預期結果。
           required: true

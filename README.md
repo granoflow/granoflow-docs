@@ -45,9 +45,11 @@
 You do not need to read everything first. We strongly recommend trying Granoflow in your real scenarios first.
 
 Common trial scenarios:
-- Repetitive steps, scattered information, and context switching are constantly interrupting your flow.
-- You want key workflows to be clearer and more traceable.
-- You want a product that keeps iterating and responds quickly to user feedback.
+- You open many tools every day: to-dos in chat, ideas in notes, plans in your calendar, and then suddenly feel like doing none of them.
+- You have a project that takes several weeks, not one day. You work late every day, but tasks still slip past their deadlines, and the anxiety keeps building.
+- You are tired of reacting to urgent interruptions. By the time you return to the task, you have already forgotten where you stopped.
+- You are not trying to pack every day full. You want a rhythm you can keep returning to across work, study, health, and creative work.
+- You are willing to try a product that is still moving quickly, and send us the real problems, stuck points, and improvement ideas you encounter.
 
 > Product details are already documented in the first chapters of the manual, so this README does not duplicate that content.
 
@@ -135,6 +137,7 @@ You can qualify via any one of the following:
 
 ## 6. Transparency
 
+- Granoflow is not open-source software, but its core functionality is designed to be usable for free; paid membership mainly supports ongoing development and unlocks extended capabilities.
 - We will keep feedback progress visible (status, adoption, next plans).
 - Reward delivery will be traceable while protecting privacy.
 - Rule updates will be announced publicly.

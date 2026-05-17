@@ -3,15 +3,15 @@ title: "Sign up and sign in"
 description: "Complete sign-up or sign in, and understand how your signed-in state affects sync, devices, and subscription recognition."
 ---
 
-To sign up or sign in to GranoFlow, enter your email address, then click the verification link in the email; GranoFlow uses passwordless sign-in, so there is no username-and-password step.
+To sign up or sign in to GranoFlow, enter your email address, then enter the 6-digit code from the email. GranoFlow uses passwordless sign-in, so there is no username-and-password step.
 
 ![Sign-in screen](../../../screenshots/en/account-sign-in-logged-out.png)
 
 ## How to sign in
 
 1. Enter your email address on the sign-in page.
-2. Open your inbox and find the verification email from GranoFlow.
-3. Click the verification link in the email.
+2. Open your inbox and find the verification code email from GranoFlow.
+3. Enter the 6-digit code in GranoFlow.
 4. Return to GranoFlow and wait for sign-in to finish.
 
 Because there is no password, there is no password to remember or forget.

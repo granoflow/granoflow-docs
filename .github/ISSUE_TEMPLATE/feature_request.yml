@@ -55,6 +55,14 @@ body:
       description: Expected value, such as efficiency, quality, or clarity. / 預期價值，例如效率、品質或清晰度。
     validations:
       required: true
+  - type: upload
+    id: screenshots
+    attributes:
+      label: Screenshot / 截圖
+      description: Upload at least one screenshot, sketch, or reference image that explains the request. / 請至少上傳一張能說明需求的截圖、草圖或參考圖片。
+    validations:
+      required: true
+      accept: ".png,.jpg,.jpeg,.gif,.webp"
   - type: textarea
     id: alternatives
     attributes:

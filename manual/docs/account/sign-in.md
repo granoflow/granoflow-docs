@@ -3,19 +3,19 @@ title: "注册与登录"
 description: "完成注册或登录，并理解登录状态如何影响同步、设备和订阅识别。"
 ---
 
-要注册或登录 GranoFlow，只需要输入邮箱，再输入邮件里的 6 位验证码；GranoFlow 使用无密码登录，没有用户名加密码这一步。
+注册或登录 GranoFlow 时，邮箱验证码是主路径：输入邮箱，再输入邮件里的 6 位验证码即可。支持的平台也会在登录页提供 Google 或 Apple 入口；无论使用哪种方式，最终都会回到同一个 GranoFlow 账号体系。
 
 <!-- manual-screenshot:id=account-sign-in-logged-out -->
 ![注册与登录 界面截图](../../screenshots/zh-cn/account-sign-in-logged-out.png)
 
 ## 怎么登录
 
-1. 在登录页面输入你的邮箱地址。
-2. 打开邮箱，找到 GranoFlow 发来的验证码邮件。
-3. 在 GranoFlow 中输入 6 位验证码。
+1. 在登录页面选择邮箱、Google 或 Apple。
+2. 如果使用邮箱，输入邮箱地址，打开邮件，找到 GranoFlow 发来的 6 位验证码。
+3. 如果使用 Google 或 Apple，按系统或浏览器提示选择账号并授权。
 4. 回到 GranoFlow，等待登录完成。
 
-因为没有密码，你不用记密码，也不会遇到忘记密码的问题。
+邮箱登录没有密码，你不用记密码，也不会遇到忘记密码的问题。
 
 ## 为什么要用同一个邮箱
 

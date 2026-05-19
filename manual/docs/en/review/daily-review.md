@@ -3,7 +3,7 @@ title: "Daily review"
 description: "The daily review counts tasks by completion time and helps you review time invested, auto-arrange overlapping task times, and use AI for task reviews."
 ---
 
-The daily review helps you check what you actually finished during the day and write a few notes about it. It counts tasks by **completion time**, not due date; tasks completed before 3 AM count as the previous day.
+The daily review helps you check what you actually finished during the day and write a few notes about it. It counts tasks by **completion time**, not due date; each new day starts at midnight.
 
 {/* manual-screenshot:id=review-overview-main */}
 ![Daily review](../../../screenshots/en/review-overview-main.png)
@@ -16,9 +16,9 @@ This means:
 
 - Task due yesterday, completed today → appears in today's review
 - Task completed yesterday at 11:58 PM → appears in yesterday's review
-- Task completed today at 1:00 AM → **appears in yesterday's review**, because anything completed before 3 AM counts as the previous day
+- Task completed today at 1:00 AM → appears in today's review
 
-This is designed for people who work past midnight or go to sleep late. That early-morning time is treated as an extension of yesterday, not the start of a new workday.
+In other words, the daily review uses natural calendar days: tasks completed after midnight belong to the new day.
 
 ## What to write
 

@@ -83,7 +83,7 @@ You can use it with focus timing, pinned tasks, or background sound. When a task
 
 Completion means the task is done and a completion time is recorded.
 
-Daily review uses the day the task was actually completed, not its due date. If you complete a task before 3 AM, it still counts as completed "yesterday."
+Daily review uses the day the task was actually completed, not its due date. Each new review day starts at midnight, so tasks completed after midnight belong to the new day.
 
 ### Archive
 

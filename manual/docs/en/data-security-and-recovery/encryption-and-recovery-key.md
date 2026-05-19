@@ -51,14 +51,14 @@ Check in this order:
 
 If none of these work, the encrypted cloud data may be unrecoverable. Local backups, if you have any, still work.
 
-## What “replace local key with cloud key” means
+## When GranoFlow asks for the cloud sync key
 
-This option is for this situation: the current device has local data, but you decide to switch this device to the encryption setup used by the cloud data.
+If GranoFlow says the keys do not match, enter the complete key for the current cloud data.
 
-Before using it, confirm two things:
+After you enter the correct key, GranoFlow checks whether this device and the cloud data belong to the same data set:
 
-- You have the complete key for the current cloud data
-- You understand which data matters more: the data on this device or the data in the cloud
+- If they are the same data set, GranoFlow only updates the sync key setting on this device.
+- If they are different data sets, GranoFlow moves to the “Use cloud data” confirmation flow. Before continuing, make sure you know which data matters more: this device or the cloud.
 
 :::caution[Keys are not passwords and cannot be reset]
 If you lose your encryption key, GranoFlow cannot reset or recover it for you. Save your key now instead of waiting until you need it.

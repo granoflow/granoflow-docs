@@ -1,6 +1,6 @@
 # Granoflow Privacy Policy
 
-**Last Updated: May 10, 2026**
+Last Updated: May 10, 2026
 
 This Privacy Policy applies to the Granoflow application, the `account-hub` login, account, subscription, and billing redirection pages, and the related online services we operate for account management, synchronization, cloud attachments, recovery, subscriptions, and support (collectively, the "Services").
 
@@ -57,6 +57,8 @@ This information is used to complete the requested flow, protect the service, an
 
 ### 2.5 Diagnostics, Crash Reports, and Anonymous Usage Data
 We use crash and diagnostic tooling, including **Firebase Crashlytics**, to help detect failures, investigate bugs, and improve stability. We also use privacy-friendly anonymous usage analytics sent to Granoflow's own core API to understand whether core product flows are working.
+
+When the app uses the shorter phrase “anonymous stats,” it refers to the anonymous usage analytics described in this section, not a separate analytics channel.
 
 This may include:
 
@@ -186,7 +188,7 @@ Depending on your location and applicable law, you may have the right to:
 
 Some requests may require identity verification, and some rights may be limited by law, technical feasibility, security needs, or the rights of others.
 
-For privacy requests, please email **granoflow@anz.tv**. Please do not post sensitive personal information in public GitHub issues.
+For privacy requests, please email [granoflow@anz.tv](mailto:granoflow@anz.tv). Please do not post sensitive personal information in public GitHub issues.
 
 ## 9. Region-Specific Disclosures
 

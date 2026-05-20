@@ -17,6 +17,7 @@
 > If you are wondering whether this app can solve your real-life workflow problems, try it first and then share your real experience.
 
 [![Issues](https://img.shields.io/github/issues/granoflow/granoflow-docs)](https://github.com/granoflow/granoflow-docs/issues)
+[![Website](https://img.shields.io/badge/website-granoflow.com-2ea44f)](https://granoflow.com)
 [![Manual](https://img.shields.io/badge/manual-online-blue)](https://granoflow.com/manual/)
 [![Language](https://img.shields.io/badge/language-EN%20%7C%20ZH--CN%20%7C%20ZH--HK%20%7C%20ZH--TW-success)](README.zh-CN.md)
 
@@ -34,6 +35,7 @@
 
 ## 1. Start Here
 
+- Official website: [https://granoflow.com](https://granoflow.com)
 - Manual entry: [`manual/README.md`](manual/README.md)
 - Published manual site: [https://granoflow.com/manual/](https://granoflow.com/manual/)
 - Legal documents: [`docs/`](docs/)
@@ -146,6 +148,7 @@ You can qualify via any one of the following:
 
 ## 7. Quick Links
 
+- Official website: [https://granoflow.com](https://granoflow.com)
 - Manual: [`manual/README.md`](manual/README.md)
 - Online manual: [https://granoflow.com/manual/](https://granoflow.com/manual/)
 - Legal docs: [`docs/`](docs/)

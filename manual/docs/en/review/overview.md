@@ -18,7 +18,7 @@ For many people, “retrospective” sounds stressful, as if it needs to be comp
 ## How to do a review
 
 1. Open the review page.
-2. Choose daily, weekly, or monthly review; for a daily review, you can choose a date, and it defaults to today.
+2. Choose daily, weekly, or monthly review; for a daily review, you can choose a date, and it defaults to today. For a weekly review, the detail page header shows the week number and date range. For a monthly review, switch to the month you want, then open the monthly overview. The detail page header shows that year and month.
 3. Glance at the completed tasks list.
 4. Write a few sentences. For example: “Tough day, but I finished the most important thing.”
 5. Read the values prompts and think about whether today’s actions moved toward what matters to you.

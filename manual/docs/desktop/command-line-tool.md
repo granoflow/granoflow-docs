@@ -16,11 +16,14 @@ description: "在桌面端使用 GranoFlow CLI 管理显示偏好、任务、项
 常用检查：
 
 ```bash
+granoflow
 granoflow help
 granoflow version --json
 granoflow status --json
 granoflow display get --json
 ```
+
+只运行 `granoflow` 会打开 GranoFlow 桌面端。查看命令说明请使用 `granoflow help`、`granoflow --help` 或 `granoflow -h`。
 
 所有命令都支持 `--json`，适合脚本或 AI 助手读取。JSON 模式只输出结构化结果。如果 App 不可达，会返回稳定的 `app_not_reachable` 错误。
 
@@ -107,6 +110,6 @@ granoflow backup restore --file backup.granobackup --confirm --backup-secret-fil
 
 ## 下一步
 
-- 想确认命令是否可用，先运行 `granoflow help` 和 `granoflow status --json`。
+- 想确认命令是否可用，先运行 `granoflow` 打开桌面端，再使用 `granoflow help` 和 `granoflow status --json`。
 - 想批量写入任务、项目或回顾，先准备 JSON 文件，再使用 `--input`。
 - 想处理备份恢复，先运行 `backup restore --preview` 看摘要，再决定是否使用 `--confirm`。

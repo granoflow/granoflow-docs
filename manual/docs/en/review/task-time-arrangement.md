@@ -10,9 +10,6 @@ This is not a calendar scheduling tool, and it does not prove the exact real-wor
 ## Where to start
 
 Open the daily review. If the right sidebar finds overlapping task times, it shows the **Auto-arrange task time** entry.
-
-{/* manual-screenshot:id=review-daily-time-overlap-entry */}
-
 If there are no overlapping tasks, this prompt is hidden. You can still use **Review Today's Tasks** directly.
 
 ## What auto-arrangement does
@@ -28,9 +25,6 @@ The first version uses a simple default:
 | Data rule | Task times are still allowed to overlap |
 
 Task order prefers completion order, creation order, and the current display order. Choosing the entry does not immediately change task time. GranoFlow first opens a bottom preview sheet so you can check the result before saving.
-
-{/* manual-screenshot:id=review-daily-task-time-arrangement */}
-
 ## How to check the result
 
 The preview sheet also shows a timeline. Drag the top edge of a task block to change the start time, or the bottom edge to change the end time. Task blocks cannot be dragged horizontally. On desktop, you can also type the start and end time directly in each task block, then use Tab to move to the next field.

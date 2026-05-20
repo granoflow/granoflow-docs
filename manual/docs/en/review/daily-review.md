@@ -36,9 +36,6 @@ Three to five sentences is usually enough. You do not need to write a formal rep
 The right side of the daily review shows **Time invested today**. This is calculated from the union of today's task time blocks: if two tasks overlap, the overlapping minutes are not counted twice.
 
 If GranoFlow finds overlapping task times, it shows a prompt to auto-arrange task time. This is useful when you forgot to record tasks during work and later completed several tasks at once, making their times cluster around the same moment.
-
-{/* manual-screenshot:id=review-daily-time-overlap-entry */}
-
 When you choose **Auto-arrange task time**, GranoFlow first puts today's tasks into a bottom preview sheet. By default, it starts at 9:00 AM and ends at the current time, then distributes tasks evenly in task order. You can drag the top or bottom edge of a task block to adjust its start or end time before saving. Tasks do not overlap inside the preview sheet only to keep the drag interaction simple; task times can still overlap at the data level, and this is not a scheduling calendar.
 
 See [Auto-arrange task time](task-time-arrangement) for the full rules.

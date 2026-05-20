@@ -70,24 +70,15 @@ This page usually appears from the sync entry, data management page, or top sync
 
 - Choose “Sync data to cloud” only after confirming that the tasks, projects, reviews, and attachments on this device are the version you want to keep. After confirmation, cloud sync uses this device’s data, and other devices are affected later.
 - Choose “Clear local data” only after confirming that cloud data is the version you want to keep. After confirmation, this device clears its current local data and local sync settings, then downloads from the cloud.
-- Choose “Cancel” to stop this flow. You can check the old device, cloud overview, or backup page first.
+- Choose “Cancel” to stop this flow. You can check the old device, your sync key record, or a backup page first.
 
 None of these choices can guarantee recovery for local attachments that never uploaded, unsynced changes on another device, or data whose key you did not keep. Before choosing, confirm that the most important data is still visible on this device or the old device.
 
-## Cloud Data Overview
+## Download Existing Cloud Data
 
-If the account already has cloud history, GranoFlow may show a cloud data overview first. Use it to roughly check how many tasks, projects, milestones, and attachments are in the cloud, when it was last updated, and what time span the data covers.
+If the account has decryptable cloud history, GranoFlow opens the sync progress page and starts recovery directly. This only downloads cloud data to the current device; it does not automatically enable everyday upload sync. After the download finishes, return to tasks, projects, and reviews to check the content.
 
-<!-- manual-screenshot:id=data-cloud-data-overview -->
-![Sync Existing Cloud Data On A New Device screen](../../../screenshots/en/data-cloud-data-overview.png)
-
-This page commonly appears from the sync entry after sign-in, especially when the current device cannot upload yet but cloud history is available to download. Its main action is “Download cloud data.” In some upload-capable, higher-risk cases, it may also show “Clear cloud data.”
-
-- “Download cloud data” is a one-time recovery action. It does not automatically enable everyday cloud sync. After downloading, return to tasks, projects, and reviews to check the content.
-- “Clear cloud data” requires another confirmation and may require system verification. After confirmation, cloud sync data is cleared; do not treat this as refresh or reload.
-- If the page says local and cloud encryption states differ, handle the key issue in “Encryption and recovery key” first instead of repeatedly trying to download.
-
-The overview can only help you judge the rough scope of cloud history. It cannot guarantee that every attachment has fully downloaded to this device, or decide whether another device still has unsynced content.
+If GranoFlow needs the original cloud sync key, it shows the lightweight “Enter cloud sync key” entry. You can enter the key to continue recovery, choose “Clear cloud data” to start over, or choose “Pause sync for now” to keep working locally while you look for the key. Pausing does not download, upload, or clear cloud data.
 
 ## When This Device Already Has Local Data
 

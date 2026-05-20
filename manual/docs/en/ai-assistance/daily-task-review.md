@@ -35,9 +35,6 @@ This flow cannot change task description, project, milestone, tags, reminders, d
 ## Confirmation before import
 
 After AI produces a result, copy it back into GranoFlow. GranoFlow shows a confirmation screen first, so you can check which tasks, fields, and report summaries will change.
-
-{/* manual-screenshot:id=ai-daily-task-review-import-confirm */}
-
 If you do not confirm, nothing is written. After confirming, you can still adjust the task manually in task details.
 
 ## Where the result appears

@@ -21,11 +21,14 @@ translationReview:
 常用檢查：
 
 ```bash
+granoflow
 granoflow help
 granoflow version --json
 granoflow status --json
 granoflow display get --json
 ```
+
+只運行 `granoflow` 會打開 GranoFlow 桌面端。查看命令說明請使用 `granoflow help`、`granoflow --help` 或 `granoflow -h`。
 
 所有命令都支援 `--json`，適合腳本或 AI 助手讀取。JSON 模式只輸出結構化結果。如果 App 無法連接，會返回穩定的 `app_not_reachable` 錯誤。
 
@@ -112,6 +115,6 @@ granoflow backup restore --file backup.granobackup --confirm --backup-secret-fil
 
 ## 下一步
 
-- 想確認命令是否可用，先運行 `granoflow help` 和 `granoflow status --json`。
+- 想確認命令是否可用，先運行 `granoflow` 打開桌面端，再使用 `granoflow help` 和 `granoflow status --json`。
 - 想批量寫入任務、項目或回顧，先準備 JSON 文件，再使用 `--input`。
 - 想處理備份恢復，先運行 `backup restore --preview` 看摘要，再決定是否使用 `--confirm`。

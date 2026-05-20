@@ -21,11 +21,14 @@ When you use business commands such as tasks, projects, or backups, the GranoFlo
 Useful checks:
 
 ```bash
+granoflow
 granoflow help
 granoflow version --json
 granoflow status --json
 granoflow display get --json
 ```
+
+Running `granoflow` opens the GranoFlow desktop app. To read command help, use `granoflow help`, `granoflow --help`, or `granoflow -h`.
 
 Every command supports `--json`, which is useful for scripts and AI assistants. JSON mode only outputs structured results. If the app cannot be reached, the command returns the stable `app_not_reachable` error.
 
@@ -112,6 +115,6 @@ The older `quick-add`, `logout`, `export`, and `import` commands remain compatib
 
 ## Next
 
-- To check whether the command is available, start with `granoflow help` and `granoflow status --json`.
+- To check whether the command is available, start with `granoflow` to open the desktop app, then use `granoflow help` and `granoflow status --json`.
 - To write tasks, projects, or reviews in batches, prepare a JSON file first, then use `--input`.
 - To handle backup restore, run `backup restore --preview` first to read the summary, then decide whether to use `--confirm`.

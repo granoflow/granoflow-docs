@@ -17,6 +17,7 @@
 > 如果你正在寻找「这款 App 到底能不能解决我的实际问题」，建议先试用，再基于真实体验给我们反馈。
 
 [![Issues](https://img.shields.io/github/issues/granoflow/granoflow-docs)](https://github.com/granoflow/granoflow-docs/issues)
+[![官网](https://img.shields.io/badge/官网-granoflow.com-2ea44f)](https://granoflow.com)
 [![在线手册](https://img.shields.io/badge/manual-在线-blue)](https://granoflow.com/manual/)
 [![语言](https://img.shields.io/badge/language-EN%20%7C%20ZH--CN%20%7C%20ZH--HK%20%7C%20ZH--TW-success)](README.md)
 
@@ -34,6 +35,7 @@
 
 ## 1. 先从这里开始
 
+- 官网：[https://granoflow.com](https://granoflow.com)
 - 立即查看手册：[`manual/README.md`](manual/README.md)
 - 在线手册站点：[https://granoflow.com/manual/](https://granoflow.com/manual/)
 - 法律与协议文档：[`docs/`](docs/)
@@ -148,6 +150,7 @@
 
 ## 7. 快速导航
 
+- 官网：[https://granoflow.com](https://granoflow.com)
 - 手册入口：[`manual/README.md`](manual/README.md)
 - 在线手册：[https://granoflow.com/manual/](https://granoflow.com/manual/)
 - 法律文档：[`docs/`](docs/)

@@ -28,9 +28,6 @@ The confirmation view usually shows:
 - A way to accept or ignore each suggestion separately.
 
 You do not have to accept everything at once. If one suggestion looks wrong, you can ignore just that item.
-
-{/* manual-screenshot:id=ai-daily-task-review-import-confirm */}
-
 ## If you do not confirm
 
 If you do not confirm, nothing is written. The original title stays unchanged, and task fields are not modified.

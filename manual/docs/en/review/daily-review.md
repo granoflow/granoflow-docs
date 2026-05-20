@@ -1,6 +1,6 @@
 ---
 title: "Daily review"
-description: "The daily review counts tasks by completion time and helps you review time invested, auto-arrange overlapping task times, and use AI for task reviews."
+description: "The daily review counts tasks by completion time and helps you review time invested and use AI for task reviews."
 ---
 
 The daily review helps you check what you actually finished during the day and write a few notes about it. It counts tasks by **completion time**, not due date; each new day starts at midnight.
@@ -39,12 +39,7 @@ The right side of the daily review shows **Time invested today**. This is calcul
 
 Task blocks in the timeline keep the task title as the main text. If a task belongs to a project and the block has enough space, the project name appears below the title in smaller text; short tasks, narrowed overlapping tasks, and tasks without a project only show the task title.
 
-If GranoFlow finds overlapping task times, it shows a prompt to auto-arrange task time. This is useful when you forgot to record tasks during work and later completed several tasks at once, making their times cluster around the same moment.
-When you choose **Auto-arrange task time**, GranoFlow first puts today's tasks into a bottom preview sheet. By default, it starts at 9:00 AM and ends at the current time, then distributes tasks evenly in task order. You can drag the top or bottom edge of a task block to adjust its start or end time before saving. Tasks do not overlap inside the preview sheet only to keep the drag interaction simple; task times can still overlap at the data level, and this is not a scheduling calendar.
-
-See [Auto-arrange task time](task-time-arrangement) for the full rules.
-
-You can also choose **Review Today's Tasks** and let AI help you check how long each task took, then summarize the day's domain, project, and milestone progress. AI only prepares suggestions. After you copy the result back into GranoFlow, you still need to confirm before it writes task start time, end time, title, Task Review, or today's domain reports. See [Review Today's Tasks](../ai-assistance/daily-task-review) for the full flow.
+If you want to review or correct today's task time, choose **Review Today's Tasks** and let AI help you check how long each task took, then summarize the day's domain, project, and milestone progress. AI only prepares suggestions. After you copy the result back into GranoFlow, you still need to confirm before it writes task start time, end time, title, Task Review, or today's domain reports. See [Review Today's Tasks](../ai-assistance/daily-task-review) for the full flow.
 
 ## Days with no completed tasks
 

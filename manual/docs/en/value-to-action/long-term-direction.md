@@ -1,223 +1,258 @@
 ---
-title: "Set the Long-Term Direction First"
-description: "Use domains and values in GranoFlow to keep long-term goals, personal planning, and daily tasks connected."
+title: "先确定长期方向"
+description: "理解如何在 GranoFlow 中使用领域和价值观，让长期方向、日常任务和真实行动重新连起来。"
 ---
 
-If you want to turn a long-term goal into something you can do today, you do not need to write a complete life plan first. In GranoFlow, you can use domains to record long-term directions, use values to describe how you want to act, then gradually connect them to projects, milestones, tasks, and review.
+很多人并不是不努力，而是努力了很久以后，开始隐约觉得：
 
-Domains and values are not settings you must fill in at the beginning. They help you look beyond tasks and projects, so you can see where your time is going over the long term and whether that effort is close to what you truly care about.
+> 我每天都在做事，但我说不清自己到底在靠近什么。
 
-If you are just starting, you can write tasks and projects first. When certain themes keep appearing, come back and organize domains and values.
+任务越来越多，项目一个接一个，日程也排得很满。可如果这些行动背后没有长期方向，生活就很容易变成一种持续运转的忙碌。
 
-## Domains Are Not Category Folders
+这也是为什么，在 GranoFlow 里，“领域”和“价值观”不是装饰性的设置项。它们不是让你写一份漂亮的人生宣言，而是帮助你在任务和项目之外重新看见：
 
-A domain is a life direction you care about over the long term.
+- 我长期在意什么？
+- 我希望自己怎样行动？
+- 我最近做的这些事，真的靠近了那个方向吗？
 
-It is not a normal folder, and it is not there only to sort tasks into categories.
+如果你想把长期目标变成今天能做的事，先不用急着整理一整套人生规划。你可以先用领域记录长期方向，再用价值观说明自己希望如何行动，之后再把它们慢慢连接到项目、里程碑、任务和回顾。
 
-Common domains include:
+## 领域不是分类文件夹
 
-- work and learning
-- relationships
-- physical and mental health
-- creative work
+领域是你长期在意的生活方向。
+它不是普通文件夹，也不是为了把任务分门别类而存在。
 
-For example, preparing for an exam is not a domain. It fits better as a project.
-Running every day is not a domain. It fits better as a task or habit plan.
-Writing a novel is also not a domain. It fits better as a project.
+常见领域包括：
 
-Domains are closer to the long-term direction behind those things:
+- 工作学习
+- 人际关系
+- 身心健康
+- 业余创作
 
-- Preparing for an exam may belong to work and learning.
-- Running every day may belong to physical and mental health.
-- Writing a novel may belong to creative work.
+如果说任务回答的是“现在做什么”，项目回答的是“这段时间推进什么”，那么领域回答的是：
 
-Domains help you see, during review, where your recent time and attention have mainly gone.
+> 我的人生主要投向哪些方向？
 
-## Values Are Not Goals
+例如，准备考试不是领域，更适合作为项目。
+每天跑步不是领域，更适合作为任务或习惯安排。
+写一本小说也不是领域，更适合作为项目。
 
-Goals can be completed. Values cannot be completed once and for all.
+这些事情背后，才更接近领域：
 
-For example:
+- 准备考试，可能属于工作学习
+- 每天跑步，可能属于身心健康
+- 写一本小说，可能属于业余创作
 
-> Lose 5 kg in three months
+领域的作用，是让你在回顾时能看见：最近的时间和注意力，主要流向了哪里。
+如果你发现自己几个月都在处理工作，却几乎没有照顾身体、关系或创作，那不是系统在责备你，而是它在帮助你看见现实。
 
-That is a goal.
+## 价值观不是目标
 
-> I want to care for my body over time instead of always overusing it.
+这大概是整章最重要的一点。
 
-That is a value.
+目标可以完成，价值观不能被一次性完成。
 
-Another example:
+例如：
 
-> Release a product version
+> 三个月减重 5 公斤
 
-That is a goal.
+这是目标。
 
-> I want to be reliable and keep delivering.
+> 我希望长期照顾身体，而不是一直透支自己。
 
-That is a value.
+这是价值观。
 
-Goals fit well inside projects and milestones. Values fit under domains as long-term directions for your choices.
+再例如：
 
-This is close to how ACT (Acceptance and Commitment Therapy) uses values: a value is not a goal you finish once, but a direction that can still guide action when life is uncertain, difficult, or imperfect. For more background, read [ACT and The Happiness Trap](/en/value-to-action/act-loop/).
+> 发布一个产品版本
 
-After a goal is completed, it may be over. A value keeps influencing future choices.
+这是目标。
 
-## Write a Usable Value
+> 我希望自己成为一个可靠、持续交付的人。
 
-Do not start by writing only abstract words.
+这是价值观。
 
-For example:
+目标适合放进项目和里程碑。
+价值观更像一种长期方向：它不会在某一天被打勾完成，但会反复影响你之后的选择。
 
-> discipline
-> health
-> growth
-> creativity
+这也更接近 ACT（接纳与承诺疗法）里 values 的用法。
+价值观不是“等我状态好了再考虑的事”，而是在你不确定、困难、混乱、甚至想逃避的时候，仍然能指向行动的方向。更多背景可以读 [ACT 与《幸福的陷阱》](/en/value-to-action/act-loop/)。
 
-There is nothing wrong with those words, but they are too short to guide action easily.
+价值观真正有用的时刻，不是在一切顺利时，而是在你犹豫时，它能帮助你回答：
 
-A better approach is to write a full sentence about how you want to act. You can start with these patterns:
+> 哪一种行动，更接近我想成为的人？
 
-> I want to...
-> In this domain, I want to...
-> When things get difficult, I still want to...
-> I do not want to only..., but to...
+## 为什么人会忙，却失去方向
 
-For example:
+现实里最常见的情况不是“什么都不做”，而是“做了很多，却慢慢失去感觉”。
 
-> I want to keep moving even when things are difficult.
-> I want to care for my body over time instead of always overusing it.
-> I want to be more honest in relationships, and more willing to listen.
-> I do not want to only consume content. I want to keep expressing and creating.
-> At work, I want to be reliable, clear, and able to deliver.
+你可能：
 
-A good value does not need to sound beautiful. It only needs to help you judge which next step is closer to the direction you care about.
+- 一直在处理任务，但没有在推进真正重要的事
+- 一直在满足外界要求，却越来越不清楚自己在乎什么
+- 一直在追求效率，却越来越难感到自己活得像自己
 
-## Start with 1-3 Values per Domain
+如果没有领域和价值观，任务系统就很容易变成单纯的执行系统。
+你会变得越来越会处理事情，却未必越来越知道自己为什么做这些事。
 
-Do not write a life manifesto at the beginning. Start with 1-3 values for each domain.
+GranoFlow 引入领域和价值观，不是为了让系统更复杂，而是为了让“行动”重新有出处。
 
-Too many values become a wall of slogans and are less likely to be used. What you need is a small set of directions that can keep reminding you.
+## 如何写一条真正可用的价值观
 
-For physical and mental health, you might start with:
+很多人第一次写价值观时，会先写一些抽象词：
 
-> I want to care for my body over time instead of always overusing it.
-> When my state is not good, I still want to do a small, gentle recovery action.
+> 自律
+> 健康
+> 成长
+> 创造力
 
-For creative work, you might start with:
+这些词本身没有错，但太短、太空，真正要用的时候，往往很难指导行动。
 
-> I do not want to only consume content. I want to keep expressing and creating.
-> I want to finish small works before chasing perfection.
+更好的方式，是用一句完整的话，写出你希望如何行动。
+可以从这些句式开始：
 
-That is enough to begin. Values are not better because there are more of them. They are better when they influence real action.
+> 我希望自己……
+> 我希望在这个领域里……
+> 当事情变难时，我希望自己仍然……
+> 我不希望自己只是……，而是……
 
-## Maintain Values on the Domains Page
+例如：
 
-The Domains page is for maintaining long-term directions and values. It is not a category system you must complete all at once. You can open domain management from first-use guidance, the sidebar management entry, or related settings, then add, edit, or remove a few values for each domain.
+> 我希望自己遇到困难时仍然能继续推进。
+> 我希望长期照顾身体，而不是一直透支自己。
+> 我希望在人际关系中更诚实，也更愿意倾听。
+> 我希望自己不是只消费内容，也能持续表达和创造。
+> 我希望在工作中成为一个可靠、清楚、能交付的人。
+
+一条好的价值观不一定要漂亮。
+它只需要在你犹豫时，能帮你判断：下一步更接近哪个方向。
+
+## 每个领域先写 1–3 条就够了
+
+不要一开始就写人生宣言。
+每个领域先写 1–3 条，就已经足够开始。
+
+太多价值观会变成口号墙，反而不会被使用。你真正需要的，不是数量，而是少数几条能反复提醒你的方向。
+
+例如，身心健康下面可以先写：
+
+> 我希望长期照顾身体，而不是一直透支自己。
+> 我希望自己在状态不好时，也能做一点温和的恢复。
+
+业余创作下面可以先写：
+
+> 我希望自己不是只消费内容，也能持续表达和创造。
+> 我希望先完成小作品，再追求完美。
+
+这已经足够开始。
+价值观不是写得越多越好，而是越能影响真实行动越好。
+
+## 在领域页里维护这些方向
+
+领域页用来维护长期方向和价值观，不是必须一次填完的分类系统。你可以从首页引导、侧栏管理入口或相关设置进入领域管理，然后逐个领域添加、修改或删除几条价值观。
 
 <!-- manual-screenshot:id=value-domains-management -->
-![Set the Long-Term Direction First screen](../../../screenshots/en/value-domains-management.png)
+![先确定长期方向界面截图](../../screenshots/zh-cn/value-domains-management.png)
 
-Even if the screenshot does not load, you can understand the page this way: each domain has its own values list; the page provides questions for that domain so you can write a full sentence about how you want to act, instead of only writing an abstract word. When the current available value limit is reached, organize existing values before adding more.
+如果截图没有加载，也不影响理解。你可以把这个页面想成一个“方向整理页”：每个领域下面都有自己的价值观列表；页面会用一些提示问题，帮助你把抽象念头写成一句完整的话，而不是只留下一个漂亮但难用的词。
 
-If the page offers an AI assistance entry, it only packages current values and the prompt into a request for an external AI. AI can help you explore wording, but it does not decide your life direction and cannot guarantee that generated values are accurate. What gets saved is still determined by your edits on the Domains page.
+如果页面提供 AI 辅助入口，它做的只是把当前内容整理成适合给外部 AI 的请求。AI 可以帮助你探索表达，但不会替你决定人生方向。最终保存哪些内容，仍以你在领域页中的判断为准。
 
-## Values Need to Connect to Action
+## 价值观要落到行动上
 
-If a value cannot reach action, it slowly loses force.
+价值观如果不能落到行动，就会慢慢失效。
+它会变成一句挂在页面上的好话，但不会真的影响生活。
 
-For example, you write:
+例如，你写下：
 
-> I want to care for my body over time instead of always overusing it.
+> 我希望长期照顾身体，而不是一直透支自己。
 
-It can connect to a project:
+它可以连接到项目：
 
-> Build a three-month basic exercise rhythm
+> 建立三个月的基础锻炼节奏
 
-The project can become milestones:
+项目可以拆成里程碑：
 
-> Adapt in the first week
-> Stabilize during the first month
-> Build a basic rhythm over three months
+> 第一周适应
+> 第一个月稳定
+> 三个月形成基本节奏
 
-Today's task can be:
+今天的任务可以是：
 
-> Do 20 minutes of low-intensity training
+> 做 20 分钟低强度训练
 
-Now the value is not just a sentence on a page. It has entered one step you can take today.
+这样，价值观就不是一条抽象句子，而是进入了今天能做的一步。
 
-Similarly, if you write:
+再例如，你写下：
 
-> I want to be reliable and keep delivering.
+> 我希望自己成为一个可靠、持续交付的人。
 
-It can connect to a project:
+它可以连接到项目：
 
-> Finish the current product version
+> 完成当前产品版本
 
-Today's task might be:
+今天的任务可能是：
 
-> Fix one blocking issue on the sign-in page
+> 修复登录页的一个阻塞问题
 
-GranoFlow's structure helps you connect this line:
+这就是 GranoFlow 想帮助你连起来的一条线：
 
-> values → projects → milestones → tasks → review
+> 价值观 → 项目 → 里程碑 → 任务 → 回顾
 
-## Refine Values through Review
+## 价值观不是定稿，而是会慢慢被修正
 
-Values are not finalized once.
+很多人以为，价值观应该是一组一开始就写得很准、很成熟的话。
+其实不是。
 
-The values you write at the beginning may be rough, or you may later discover that they are not quite accurate. That is normal.
+刚开始写下的价值观，可能很粗糙，也可能后来发现并不准确。这很正常。
+价值观不是考试答案，而是你在真实生活中慢慢辨认出来的方向。
 
-In daily review or stage review, you can observe:
+你可以在日回顾或阶段回顾中观察：
 
-- Did my recent actions actually move toward these values?
-- Which values only sound correct, but do not really matter to me?
-- Which repeated actions show that I actually care about something else?
-- Is the current project still worth investing in?
+- 最近我做的事，是否真的接近这些价值观？
+- 哪些价值观只是听上去正确，但我其实并不真正重视？
+- 哪些行动反复出现，说明我真正看重的是别的东西？
+- 现在的项目，是否还值得继续投入？
 
-Sometimes review shows that a value needs to be rewritten.
+有时候，回顾会让你发现某条价值观需要改写。
 
-For example:
+例如：
 
-> I want to stay highly efficient every day.
+> 我希望每天都保持高效率。
 
-This sounds positive, but it may feel too pressuring. You may rewrite it as:
+这句话听上去积极，但可能太压迫。你也许会把它改成：
 
-> When my state is not perfect, I still want to move the most important step forward steadily.
+> 我希望在状态不完美时，也能稳定推进最重要的一步。
 
-That is closer to how GranoFlow is meant to be used: not trying to be efficient forever, but keeping a sense of direction in real life.
+这更接近 GranoFlow 的使用方式：不是追求永远高效，而是在真实生活里保持方向感。
 
-## It Is Fine If You Do Not Know What to Write
+## 如果暂时写不出来，也没关系
 
-If you cannot write values yet, do not get stuck.
+如果你现在还写不出价值观，不要因为这个卡住。
 
-You can keep using tasks, projects, and review first. After you have real records, look back and ask:
+你可以先继续使用任务、项目和回顾。等你积累了一些真实记录，再回头看：
 
-- What felt worth doing?
-- What made me feel more like myself after completing it?
-- What was difficult, but still something I did not want to give up?
-- What looked busy, but only drained me?
+- 哪些事情让我觉得值得？
+- 哪些事情完成后，我会觉得更像自己？
+- 哪些事情虽然困难，但我仍然不想放弃？
+- 哪些事情看似忙碌，其实只是消耗？
 
-Values often are not invented by thinking harder. They become visible through repeated action and review.
+价值观常常不是“想出来”的，而是在反复行动和回顾中“看出来”的。
 
-So at the beginning, simple values are enough:
+所以，刚开始时可以很简单：
 
-> I want to move important things forward steadily.
-> I want to care for my body.
-> I want to take important relationships seriously.
-> I want to keep creating.
+> 我希望自己能稳定推进重要的事。
+> 我希望自己能照顾身体。
+> 我希望自己能认真对待重要关系。
+> 我希望自己能持续创作。
 
-Write them down first, then revise them later.
+先写下来，之后再改。
+这已经比什么都不写、什么都不看，要更接近真正的方向。
 
-## Next
+## 下一步
 
-After you have initial domains and values, you can continue with projects and milestones.
+当你有了初步的领域和价值观，就可以继续把长期方向拆成更具体的承接结构：
 
-Projects turn long-term directions into goals you can move forward over a period of time.
-Milestones split projects into stages.
-Tasks turn each stage into one step you can take today.
-
-Next, read:
-
-> Projects and milestones: turn long-term directions into stage goals.
+- [项目与里程碑：把长期方向拆成阶段目标](/en/value-to-action/projects-and-milestones/)：把持续投入放进一个能推进的容器。
+- [任务与收集箱：把下一步写下来](/en/value-to-action/tasks-and-inbox/)：把阶段落到今天能做的一步。
+- [回顾：让经历真正沉淀](/en/value-to-action/review-reflection/)：在真实行动后，慢慢修正和确认你的方向。

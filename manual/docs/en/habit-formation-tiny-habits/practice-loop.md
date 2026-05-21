@@ -1,125 +1,97 @@
 ---
-title: "Build one tiny habit in 5 minutes"
-description: "Use Tiny Habits in GranoFlow to turn habit formation into a task small enough to start, then keep feedback through review."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
+title: "Habit Practice Loop: Start from One Minimal Action"
+description: "Run one Atomic Habits-aligned minimal loop in GranoFlow:
+design cue, lower friction, complete action, record feedback,
+and preserve restart entry."
 ---
 
-To build one tiny habit in GranoFlow in 5 minutes, choose one area you want to make steadier, turn it into a task small enough to start, attach it to a natural prompt, complete the smallest version, then write a short review about whether it is easy to continue.
+If you keep bouncing between “I should do this”
+and “I cannot sustain it,”
+this page solves one thing:
 
-You are not trying to build a complete habit system at once. Start with one small loop:
+> Turn one habit into one action you can start today.
 
-> Choose a direction → write a small task → find a prompt → complete it → review
+Core rule: start small, then stabilize; start doable, then sustain.
 
-This page uses Tiny Habits, the Fogg Behavior Model, and micro-habit thinking to bring habit formation into GranoFlow tasks and reviews. The point is not to chase streaks. The point is to make one small behavior easier to repeat.
+## Step 1: Define a fail-safe minimum action
 
-## Step 1: Choose a real direction
+Do not start from the ideal version. Start from a low-friction action.
 
-Do not start by asking:
+Examples:
 
-> What impressive habit should I build?
+- Not: exercise 1 hour every day
+- Start with: stretch 5 minutes after dinner
 
-Ask instead:
+- Not: write 2,000 words every day
+- Start with: open doc and write 100 words
 
-> What part of my life do I want to make a little steadier?
+- Not: organize all tasks every day
+- Start with: clean 1 inbox task daily
 
-For example:
+If it cannot start today, it is still too big.
 
-- Body and energy
-- English learning
-- Writing
-- Bedtime cleanup
-- Daily review
-- Project momentum
+## Step 2: Make the action obvious
 
-The direction can be ordinary. If the first version is too big, you are more likely to avoid it.
+In Atomic Habits, cues and environment matter.
 
-## Step 2: Shrink it into a task
+In GranoFlow, you can:
 
-In GranoFlow, write that direction as a task small enough to start right away.
+- write the habit action as a concrete task in today view
+- attach a clear trigger condition (for example “after dinner”)
+- group similar habit actions via project/tag to reduce search cost
+
+First make it visible, then discuss persistence.
 
 <!-- manual-screenshot:id=interface-quick-add-main -->
-![Quick add turning an idea into a task](../../../screenshots/en/interface-quick-add-main.png)
+![Write a startable habit action in quick add](../../../screenshots/en/interface-quick-add-main.png)
 
-Instead of:
+## Step 3: Make the action easy
 
-> Keep exercising
+Habit failure often means high start threshold, not low importance.
 
-Write:
+Compress actions into 10–20 minute units and prioritize startability.
 
-> After dinner, stretch for 2 minutes
+Examples:
 
-Instead of:
+- walk 10 minutes first, not 5 km run immediately
+- write one paragraph first, not a full chapter in one go
 
-> Improve my English
+Easy does not mean low value. It buys continuity.
 
-Write:
+## Step 4: Make the action satisfying
 
-> Listen to English for 3 minutes
+Each completion needs visible feedback.
 
-Instead of:
+In GranoFlow, the minimum feedback is:
 
-> Review every day
+1. mark task completed
+2. write one review line: what happened, what next
 
-Write:
+This converts “I broke again” into “I moved forward today.”
 
-> Before bed, write down one thing I completed today
+## Step 5: Use minimal return method after interruption
 
-The test is simple: if you still want to avoid the task when you see it, it may not be small enough.
+Interruption is normal, not failure.
 
-## Step 3: Give it a natural prompt
+After interruption, do not repay backlog. Do three steps:
 
-A tiny habit needs a trigger. Without a prompt, a behavior can easily be pushed aside by a busy day.
+1. one reality line: where I stopped
+2. one minimal action: what I do today
+3. one review line: what next after this
 
-You can put the prompt directly in the task title:
+You restore continuity, not perfection.
 
-- After breakfast, read 1 page
-- Before shutting down the computer, write tomorrow's first task
-- After brushing teeth, stretch for 1 minute
-- After opening GranoFlow, organize one inbox task
+## 30-Second Habit Readiness Check
 
-The prompt does not need to be complex. It works best when it follows something you already do, such as finishing a meal, brushing your teeth, or shutting down your computer.
+Before starting, check:
 
-## Step 4: Complete only the smallest version
+- Is the action small enough to start today?
+- Is trigger condition clear?
+- Is completion feedback visible?
+- Is return step clear after interruption?
 
-Do the smallest version, then mark the task as completed.
+If 2+ answers are “no,” shrink the action or clarify trigger.
 
-Do not turn 2 minutes into 30 minutes on the first day just to prove that you have finally changed.
+## Next
 
-The value of a tiny habit is that it makes starting easier. You can do more if you want, but the step you record in GranoFlow should still be small enough that you are willing to return tomorrow.
-
-## Step 5: Write a short review
-
-At the end of the day, three sentences are enough:
-
-```text
-What tiny habit did I complete today?
-
-What moment did it follow?
-
-Was this version easy enough to continue?
-```
-
-For example:
-
-```text
-I stretched for 2 minutes after dinner today.
-
-It followed cleaning up the dishes, so the prompt felt natural.
-
-The action was small enough. I can continue tomorrow.
-```
-
-Review is not a test of perfect consistency.
-
-It is a way to observe whether the habit design works: Is the task small enough? Is the prompt natural? After doing it, do you feel willing to come back tomorrow?
-
-## Do not stack too many habits
-
-Start with one.
-
-GranoFlow can hold many tasks, projects, and reviews, but habit formation does not need to fill your whole life at once. Let one tiny behavior show up steadily before deciding whether to expand it.
-
-Next, read [Connect tiny habits back to long-term projects](/en/habit-formation-tiny-habits/from-habit-to-project/).
+- [From Habit to Project: Put Consistent Effort into a Container](/en/habit-formation-tiny-habits/from-habit-to-project/)

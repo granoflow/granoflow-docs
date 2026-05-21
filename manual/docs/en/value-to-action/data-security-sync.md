@@ -1,68 +1,130 @@
 ---
-title: "Data security and sync"
-description: "Local-first, end-to-end encryption, and why your encryption key is not your password — understand these three things and your GranoFlow data will not disappear or become unreadable for mysterious reasons."
+title: "数据安全与同步"
+description: "本地优先、端到端加密、密钥不是登录密码——把这几个概念弄清楚，你就更不容易在换设备、同步或恢复数据时感到慌乱。"
 ---
 
-If you only want the practical answer: remember three things. Your GranoFlow data is saved on the device you are using first; when cloud sync is enabled, the cloud stores an encrypted copy; and your login password proves the account is yours, but your encryption key is what unlocks the data.
+一旦事情牵涉到“数据不见了”“换设备”“同步失败”或“密钥忘了”，人很容易一下子紧张起来。
+这很正常，因为这些问题不只是技术问题，它们还会直接碰到一种不安：
 
-## What local-first means
+> 我的记录还在吗？
+> 我还能把它找回来吗？
 
-Local-first means GranoFlow saves your data on your device first. You can capture tasks, organize projects, and read reviews without staying online all the time.
+这页的目的，就是把几个最容易混淆的概念拆开说清楚。如果你只想先记住最重要的三件事，可以先记住下面这三句：
 
-If cloud sync is not enabled, your data mainly lives in the current device and workspace. Before switching devices or reinstalling, you need to make sure your backup and key are ready.
+1. 你的数据首先保存在你正在使用的设备上。
+2. 开启云同步后，云端保存的是加密副本，不是可直接读取的原文。
+3. 登录密码只能证明账号是你的，真正解开数据的是加密密钥。
 
-If cloud sync is enabled, GranoFlow uploads your data to the cloud. The cloud is used for syncing across devices and restoring data after you switch devices.
+把这三句话分清楚，很多关于同步和恢复的焦虑都会小很多。
 
-> Local = the workspace you are using now
-> Cloud = an encrypted copy for multi-device sync and recovery
+## 本地优先是什么意思
 
-## What end-to-end encryption protects
+“本地优先”的意思是：GranoFlow 会先把数据存在你的设备上。
+你记录任务、整理项目、查看回顾时，不需要一直联网。
 
-End-to-end encryption (E2EE) means your data is encrypted before it leaves your device. The cloud stores ciphertext, and GranoFlow's servers cannot read your task content.
+如果你没有开启云同步，数据主要就在当前设备和当前工作区里。你换设备、重装系统或清理环境之前，需要自己先确认：备份和密钥是否都准备好了。
 
-But end-to-end encryption is not a complete shield against everything. When you use GranoFlow normally, the app has to decrypt data locally so it can show the content to you. If your device is controlled by malware, or someone else can unlock your device, E2EE cannot protect you from that.
+如果你开启云同步，GranoFlow 才会把数据上传到云端。云端的作用，不是替代本地，而是帮助你在多台设备之间同步，或者在换设备后恢复数据。
 
-You still need the basics: lock your screen, store your key carefully, and avoid copying private content into services you do not trust.
+你可以先这样理解：
 
-## Your key is not your login password
+> 本地 = 你正在使用的数据来源
+> 云端 = 用来同步和恢复的加密副本
 
-This is the most common mix-up. Your password or email code proves the account belongs to you. Your encryption key unlocks your encrypted data.
+所以，看到“本地优先”时，不必把它理解成“没有云”。
+更准确的理解是：
 
-| | Purpose |
-|--|---------|
-| **Password / email code** | Proves the account belongs to you |
-| **Encryption key** | Unlocks your encrypted data |
+> 先在本地工作，再决定是否让云端帮你同步和恢复。
 
-So you may be able to log in successfully, but still be unable to open cloud data or backup files without the correct key.
+## 端到端加密保护什么
 
-This is not GranoFlow making things difficult. It is the basic boundary of end-to-end encryption: if the server could unlock your data whenever you asked, that would also mean the server could read your content.
+端到端加密（E2EE）的意思是：数据离开你的设备之前，已经先被加密。云端保存的是密文，GranoFlow 的服务器读不到你的任务内容、项目记录或回顾文本。
 
-**How to store your key:**
+这能保护什么？
+它能保护的是：即使数据被同步到云端，服务器也不能直接读取你的内容。
 
-- Save it in a reliable password manager
-- Do not keep it only as a screenshot on one device
-- Before switching devices, confirm the key works
+但端到端加密不是万能防护。
+当你在设备上正常使用 GranoFlow 时，App 需要在本地解密数据，才能把内容显示给你看。如果设备本身被恶意软件控制，或者别人能直接解锁你的设备，端到端加密也挡不住。
 
-## What happens if you forget your key
+所以，除了加密本身，你仍然需要做好这些基本保护：
 
-What happens depends on what you still have access to.
+- 锁好屏幕
+- 妥善保存密钥
+- 不要随便把私人内容复制到不可信的服务里
 
-- Old device can still open the data: you can keep using it or set up sync again
-- Only encrypted cloud data, no key: the server cannot decrypt it for you
-- Backup file, but not the key used when the backup was created: the backup cannot be restored
+加密解决的是“云端看不到原文”的问题，
+但设备安全，仍然是你自己要守住的边界。
 
-> Login gets you back into your account. The key gets you back into your data. They are not interchangeable.
+## 密钥不是登录密码
 
-## Before switching devices
+这是最容易混淆，也最容易让人慌的一点。
 
-Before switching devices, check these three things on the old device:
+登录密码或邮箱验证码，只负责证明这个账号属于你；
+加密密钥，才负责解开你的加密数据。
 
-1. The old device can still open GranoFlow
-2. Cloud sync is current, or you have exported the latest backup
-3. You know the key for the current data
+||用途|
+|--|------|
+|**登录密码 / 邮箱验证码**|证明账号属于你|
+|**加密密钥**|解开你的加密数据|
 
-After that, log in with the same account on the new device, enter the key when prompted, then restore or sync your data.
+所以，你可能能正常登录账号，但如果没有正确密钥，云端数据或备份文件里的内容仍然打不开。
 
-:::caution[An empty device is not a data source]
-When syncing for the first time on a new device, do not treat a device with no data as the "new starting point" for the cloud. This may overwrite your old data.
+这不是 GranoFlow 故意为难你，而是端到端加密的基本边界：
+如果服务器可以随时帮你解开数据，也就代表服务器本来就有能力读取你的内容。
+
+换句话说：
+
+> 登录让你回到账号，密钥让你回到内容。
+> 这两件事不能互相替代。
+
+**密钥保存建议：**
+
+- 存进可靠的密码管理器
+- 不要只截图存在一台设备里
+- 换设备前确认密钥可用
+
+## 忘记密钥会怎样
+
+忘记密钥后，结果取决于你手上还剩什么。
+
+- **旧设备还能打开数据**：你可以继续在旧设备上使用，或重新建立同步
+- **只有云端加密数据，但没有密钥**：服务器无法替你解开
+- **有备份文件，但没有创建备份时对应的密钥**：备份也无法恢复
+
+很多人会希望“至少我已经登录账号了，系统能不能帮我找回来”。
+但如果系统能在没有密钥的情况下帮你解开数据，那就意味着它本来就能读你的内容。那会直接破坏端到端加密的边界。
+
+所以，与其把希望放在“之后再想办法”，不如在现在就把密钥保管好。
+
+## 换设备前，先确认三件事
+
+换设备前，最重要的不是赶快登录新设备，而是先在旧设备上确认：
+
+1. 旧设备仍然能打开 GranoFlow
+2. 云同步状态正常，或已经导出了最新备份
+3. 你知道当前数据对应的密钥
+
+确认后，再在新设备上登录同一账号，按提示输入密钥，然后恢复或同步数据。
+
+如果这三件事里有任何一件没确认，先不要着急切换。
+先在旧设备上把边界搞清楚，通常比事后补救容易得多。
+
+:::caution[空设备不是数据来源]
+新设备第一次同步时，不要把一台没有数据的设备当成“新起点”同步到云端。这可能会覆盖你的旧数据。
 :::
+
+## 如果你现在正在慌，可以先这样判断
+
+如果你遇到的是“登录了，但看不到内容”或“换设备后数据没出来”，先不要急着反复点按钮。先问自己：
+
+1. 我现在看到的是本地没数据，还是云端数据解不开？
+2. 我手上还有没有旧设备、备份文件或可用密钥？
+3. 我现在缺的是账号登录，还是加密密钥？
+
+把问题拆开后，很多看上去像同一种故障的情况，其实会变得清楚很多。
+
+## 下一步
+
+如果你还在处理账号、购买或多设备问题，可以继续阅读：
+
+- [账号与会员](/en/value-to-action/account-membership/)：分清账号、订阅、会员和权益各自属于哪一层。

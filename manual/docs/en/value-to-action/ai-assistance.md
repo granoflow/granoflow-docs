@@ -1,55 +1,156 @@
 ---
-title: "AI assistance: organize your notes, not your life"
-description: "GranoFlow's AI feature is an organizer, not a decision-maker. It helps make your written records clearer — the judgment always stays with you."
+title: "AI 辅助：整理你的记录，不替你做决定"
+description: "GranoFlow 的 AI 功能更像整理助手，而不是决策者。它帮助你看见模式、整理材料，但最终判断仍然属于你自己。"
 ---
 
-If you want AI to help with your GranoFlow records, treat it as a text organizer: it can summarize, group, and spot patterns, but you still decide what to accept and what to do next.
+AI 很容易让人产生两种相反的误解。
 
-GranoFlow does not treat AI as someone who lives your life for you. AI is useful for working with **content you have already written**, such as turning today's tasks into a daily log, finding what keeps getting delayed, or organizing scattered notes into a weekly review.
+一种误解是高估它：
+觉得它既然能总结、归类、生成建议，也许可以顺便替我判断人生方向。
 
-But AI is not there to make life decisions for you. It cannot decide whether you should abandon a project, judge whether a relationship is worth continuing, or choose your career path.
+另一种误解是低估它：
+觉得它不过是在堆一些漂亮话，对真实生活没有帮助。
 
-One principle matters most:
+GranoFlow 对 AI 的定位，不在这两个极端里。它更像一个整理助手：
 
-> Your records are yours. AI only helps you organize them.
+- 帮你把已经写下来的东西看得更清楚
+- 帮你整理模式、归纳线索、生成草稿
+- 但不替你决定什么重要，什么值得继续
 
-## Why the “copy and confirm” flow exists
+核心原则只有一句话：
 
-GranoFlow does not write external AI responses straight into your tasks or reviews. You copy, read, and confirm the result yourself.
+> 你的记录由你掌握，AI 只负责帮你整理。
 
-The flow works like this:
+## AI 适合做什么
 
-1. GranoFlow prepares a prompt.
-2. You copy the prompt to an external AI, such as ChatGPT, Claude, or Gemini.
-3. The external AI generates a summary or suggestions.
-4. You copy the AI result back into GranoFlow.
-5. GranoFlow recognizes the returned content.
-6. After you confirm it, the content is imported.
+AI 最适合处理的是：**你已经写下来的内容。**
 
-This adds one confirmation step, but the purpose is simple: your records are not changed before you have seen the result. That matters for personal journals, values, and reviews.
+例如：
 
-## What AI is good for
+- 把今天的任务整理成日报
+- 找出哪些事情反复拖延
+- 把零散记录整理成周回顾
+- 从一段时间的项目记录里提炼出模式
+- 帮你把一堆原始笔记整理成可读文本
 
-| Use case | What AI can help with |
-|----------|----------------------|
-| Daily review | Summarize what you finished today and what comes next |
-| Weekly review | Find which projects moved forward and which tasks kept slipping |
-| Clarifying values | Pull out what you seem to care about from your own experiences |
-| Writing reports | Turn GranoFlow records into daily reports, weekly reports, or project updates |
+你可以把它理解成一个“整理和翻译”的帮手。
+它擅长看见材料里的模式，但不擅长替你承担价值判断。
 
-AI can help you see patterns, but it cannot take responsibility for your choices.
+下面这些场景，AI 通常很有帮助：
 
-## Think before sending content to AI
+|场景|AI 能帮你做什么|
+|------|--------------|
+|日回顾|整理今天完成了什么、下一步是什么|
+|周回顾|找出本周哪些项目被推进、哪些任务反复延期|
+|价值观整理|从你的经历里找出你真正在意什么|
+|写报告|把 GranoFlow 记录整理成日报、周报、项目进展|
 
-Before you send content to an external AI, check whether it includes:
+AI 可以帮你看见模式，但不能替你承担选择。
 
-- Real names, email addresses, phone numbers, or addresses
-- Other people's private information
-- Company secrets or unpublished business plans
-- Diary content you do not want to leave your device
+## AI 不适合替你做什么
 
-If you are unsure, remove the sensitive parts first, or send only a summary.
+AI 不适合替你做人生判断。
 
-:::note[AI is an organizer, not a judge]
-A better question is not “What should I do?” but “Based on my records, list a few possible interpretations and next steps. I will decide.”
+它不能替你决定：
+
+- 是否放弃一个项目
+- 一段关系是否值得继续
+- 哪个职业方向更适合你
+- 你真正重视的价值观到底是什么
+
+为什么？
+因为这些问题并不只是“信息够不够”的问题，
+它们还牵涉到你愿意承担什么、想成为怎样的人、准备接受什么代价。
+
+这些判断最后都必须回到你自己身上。
+
+从这个角度看，AI 更像镜子，不像舵手。
+它能帮你看见东西，但不能替你决定往哪里走。
+
+## 为什么采用“复制 + 确认”流程
+
+GranoFlow 不会把外部 AI 的回复直接写进你的任务或回顾里。
+你需要自己复制、查看、再确认。
+
+流程通常是这样的：
+
+1. GranoFlow 准备提示词
+2. 你把提示词复制给外部 AI，例如 ChatGPT、Claude 或 Gemini
+3. 外部 AI 生成总结或建议
+4. 你把 AI 的结果复制回 GranoFlow
+5. GranoFlow 识别复制回来的内容
+6. 你确认后，内容才会导入
+
+这个流程多了一步确认，但目的很明确：
+你的记录不会在你没看过的情况下被改掉。
+
+对于个人日记、价值观、回顾和长期项目，这一点尤其重要。
+因为这些内容不是普通草稿，它们和你的方向感、判断感直接有关。
+
+## 给 AI 发内容前，先想一想边界
+
+把内容发给外部 AI 之前，先检查里面有没有这些信息：
+
+- 真实姓名、邮箱、电话或地址
+- 他人隐私
+- 公司机密或未公开商业计划
+- 你不希望离开设备的日记内容
+
+如果不确定，就先删掉敏感部分，或者只发送概括信息。
+
+这不是因为 AI 一定不安全，
+而是因为当内容离开设备、发送给外部服务时，边界就和只存在本地时不一样了。
+
+AI 很适合帮你整理材料，
+但你仍然需要自己决定：哪些材料适合发出去，哪些不适合。
+
+## 更好的提问方式是什么
+
+如果你把 AI 当成裁判，很容易问出这样的问题：
+
+> 你觉得我该怎么做？
+
+这类问题听上去省力，但也最容易把判断权交出去。
+
+更合适的问法通常是：
+
+> 请根据我的记录，列出几个可能的解释和下一步选项，我来决定。
+
+或者：
+
+> 请帮我整理我这一周做了什么，哪些项目在推进，哪些地方反复卡住。
+
+又或者：
+
+> 请根据这些回顾，帮我总结出 3 个我反复在意的主题。
+
+这样的问法仍然能得到 AI 的帮助，
+但不会让它越过“整理”这条边界，直接替你做决定。
+
+:::note[AI 是整理者，不是裁判]
+更合适的提问不是“你觉得我该怎么做”，而是“请根据我的记录，列出几个可能的解释和下一步选项，我来决定”。
 :::
+
+## 在第二章的语境里，AI 的位置是什么
+
+如果把第二章的主线说得再简单一点，它一直在处理同一个问题：
+
+> 当现实不完美时，我怎样仍然朝自己重视的方向行动？
+
+在这条线上：
+
+- 任务和收集箱帮助你把事情接住
+- 项目和里程碑帮助你把持续投入拆清楚
+- 回顾帮助你把经历变成经验
+- AI 则可以帮你把这些材料整理得更清楚
+
+但方向感本身，仍然要由你来保留。
+
+GranoFlow 不希望 AI 替你生活。它更希望 AI 帮你把已经发生的生活，看得更明白一点。
+
+## 下一步
+
+如果你想把 AI 放在合适的位置继续用下去，可以接着阅读：
+
+- [回顾：让经历真正沉淀](/en/value-to-action/review-reflection/)：看懂 AI 最适合介入哪一类整理工作。
+- [先确定长期方向](/en/value-to-action/long-term-direction/)：理解哪些判断仍然必须由你自己保留。

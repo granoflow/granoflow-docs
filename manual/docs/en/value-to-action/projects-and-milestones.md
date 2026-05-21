@@ -1,305 +1,299 @@
 ---
-title: "Projects and Milestones: Turn Long-Term Directions into Stage Goals"
-description: "Use projects and milestones to hold long-term direction and break values-based goals into stages you can keep moving."
+title: "项目与里程碑：把长期方向拆成阶段目标"
+description: "理解如何用项目和里程碑承接长期方向，把长期目标拆成可以持续推进的阶段，并让价值观真正落到行动上。"
 ---
 
-If you know what matters to you but do not know what to do today, create a project first, then break it into milestones and tasks. A project holds a goal you will keep moving over a period of time, a milestone marks the current stage, and a task writes down the next step you can take today.
+很多人不是没有目标，而是目标太大。
 
-After you have domains and values, do not rush into writing a long task list.
+想做的事明明很重要，但一想到它需要花很久、涉及很多步骤、还可能中断几次，大脑就会自然往后退。于是你看上去像是在拖延，实际上常常只是因为：
 
-First ask yourself:
+> 这件事还没有被拆到足够让人开始。
 
-> What do I want to keep moving forward during this period?
+这也是为什么，在有了领域和价值观之后，GranoFlow 不会建议你立刻写一大堆零散任务。
+你更需要先问自己：
 
-The answer is usually a project.
+> 这段时间，我到底想持续推进什么？
 
-## What a Project Is
+这个答案，通常就是项目。
+而如果项目还是太大，你还需要里程碑，来帮你看见当前先走哪一段。
 
-A project is a goal you keep moving forward over a period of time.
+## 项目是什么
 
-It is bigger than a task and more concrete than a life wish.
+项目是一段时间内持续推进的目标。
+它比任务更大，比人生愿望更具体，也比“我以后要认真做这件事”更清楚。
 
-For example:
+例如：
 
-- finish the current product version
-- prepare for an exam
-- build a three-month exercise rhythm
-- finish the first set of comics
-- build a personal website
-- organize a moving plan
+- 完成当前产品版本
+- 准备一次考试
+- 建立三个月锻炼节奏
+- 完成第一组漫画
+- 搭建个人网站
+- 整理一次搬家计划
 
-These all work well as projects.
+这些都适合作为项目。
 
-A project should not be a large abstract wish.
+项目不适合写成一句很大的愿望。
+例如：
 
-For example:
+- 变得更自律
+- 学好英语
+- 改善生活
+- 做好产品
+- 成为更好的人
 
-- become more disciplined
-- learn English well
-- improve my life
-- make the product better
-- become a better person
+这些说法太大、太虚。它们更像价值观、长期方向，或者还需要继续拆分的问题。
 
-These are too large and vague. They are closer to values, long-term directions, or questions that still need to be broken down.
+一个好的项目，通常能回答这个问题：
 
-A good project should answer this question:
+> 做到什么程度，才算这一阶段结束？
 
-> How far does this need to go before this stage is complete?
+如果这个问题完全答不上来，这件事往往还不是一个可推进的项目。
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![Project detail with milestones and staged tasks](../../../screenshots/en/projects-milestones-detail.png)
+![项目详情中的里程碑和任务阶段](../../screenshots/zh-cn/projects-milestones-detail.png)
 
-## When to Create a Project
+如果截图没有加载，也不影响理解。你可以把项目页想成一个“持续投入的容器”：上面是这段时间要推进的目标，中间是当前阶段，下面是今天能做的具体任务。它的作用不是让你管理更多东西，而是让你不必每天都面对一个巨大而模糊的目标。
 
-Not everything needs a project.
+## 为什么不是所有事情都要建项目
 
-If something can be finished today, write it as a task.
+不是所有事情都需要项目。
 
-For example:
+如果一件事今天就能完成，直接写成任务就够了。
+例如：
 
-- reply to an email
-- buy one item
-- change one button label
-- book a health check
+- 回复一封邮件
+- 买一件东西
+- 改一个按钮文案
+- 预约一次体检
 
-These do not need projects.
+这些事情不需要额外再套一层结构。
 
-If something has these qualities, it is a good candidate for a project:
+但如果一件事有下面这些特点，它通常更适合建立项目：
 
-- it takes several days or weeks
-- it needs multiple steps
-- it may pause and resume later
-- it needs materials, tasks, and stages to be organized
-- it is worth reviewing after completion
+- 需要持续几天或几周
+- 需要多个步骤
+- 中途可能暂停，之后再回来继续
+- 需要整理资料、任务和阶段
+- 完成后值得回顾经验
 
-For example, "write an article" may only be a task.
-But "finish a series of articles" fits better as a project.
+例如，“写一篇文章”可能只是任务。
+但“连续写完一个系列文章”更适合成为项目。
 
-"Run for 20 minutes" is a task.
-"Build a three-month running rhythm" is a project.
+“跑步 20 分钟”是任务。
+“建立三个月跑步节奏”是项目。
 
-"Fix a small bug" is a task.
-"Complete a version release" is a project.
+“修一个小 Bug”是任务。
+“完成一个版本发布”是项目。
 
-A project gives sustained effort a container.
+项目的作用，是给一段持续投入一个容器。没有项目，很多真正重要的事就会一直散落在任务列表里，看起来很忙，却没有推进感。
 
-## What a Milestone Is
+## 里程碑是什么
 
-A milestone is a stage inside a project.
+里程碑是项目里的阶段节点。
+它回答的问题不是“这个项目最后会怎样”，而是：
 
-It answers:
+> 当前先完成哪一段？
 
-> Which part should be completed first?
+例如，一个项目叫：
 
-For example, a project called:
+> 完成当前产品版本
 
-> Finish the current product version
+它可以拆成这些里程碑：
 
-can be split into these milestones:
+- 完成核心功能
+- 修复主要问题
+- 准备发布材料
+- 提交审核
+- 处理审核反馈
 
-- finish the core features
-- fix the main issues
-- prepare release materials
-- submit for review
-- handle review feedback
+一个项目叫：
 
-A project called:
+> 建立三个月锻炼节奏
 
-> Build a three-month exercise rhythm
+它可以拆成：
 
-can be split into:
+- 第一周适应
+- 第一个月稳定
+- 第二个月提高强度
+- 第三个月形成固定节奏
 
-- adapt during the first week
-- stabilize during the first month
-- increase intensity during the second month
-- form a stable rhythm during the third month
+里程碑不是为了让项目看起来专业，
+也不是为了让系统更复杂。
 
-Milestones are not there to make projects more complicated.
+它的真正作用是：把一个大目标切成几段，让你今天不必面对“整个项目”，只需要面对“现在这一段”。
 
-They split a large goal into smaller stages. That way, you do not need to face the whole project every day. You only need to know which stage you are working on now.
+## 小项目可以没有里程碑
 
-## Small Projects May Not Need Milestones
+不要为了完整而强行加里程碑。
 
-Do not add milestones just to make a project look complete.
+如果一个项目很小，只有三五个任务，直接用项目管理就够了。比如“整理一次旅行材料”，可能只需要确认机票、整理护照信息、保存酒店订单、检查行李清单。
 
-If a project is small and only has three to five tasks, managing it directly as a project is enough.
+但如果项目很长、任务很多，或者会持续超过几周，最好加里程碑。否则项目很容易慢慢变成一个越来越重的任务堆。
 
-For example:
+判断标准很简单：
 
-> Organize travel materials
+> 如果你看着这个项目，不知道下一步该从哪里继续，它通常就该拆阶段了。
 
-It may only have a few tasks:
+## 大项目不是靠意志力推进的
 
-- confirm the flight
-- organize passport information
-- save the hotel order
-- check the packing list
+很多项目迟迟推不动，不一定是因为你不够自律。
+更常见的原因是：它太大了。
 
-This kind of project may not need milestones.
+例如：
 
-But if a project is long, has many tasks, or lasts more than a few weeks, adding milestones usually helps. Otherwise the project can become an increasingly heavy pile of tasks.
+> 改变人生
 
-The rule is simple:
+这不是项目。
 
-> If you look at the project and do not know where to continue, split it into milestones.
+> 学好英语
 
-## Keep Projects Specific
+也太大。
 
-Projects that are too large are hard to start.
+你可以把它拆成更具体的项目：
 
-For example:
+- 完成一本英语教材
+- 坚持 30 天口语练习
+- 准备一次英语面试
+- 看完一门英文课程
 
-> Change my life
+再比如：
 
-That is not a project.
+> 做好 GranoFlow
 
-> Learn English well
+也太大。
 
-That is also too large.
+可以拆成：
 
-You can turn it into more specific projects:
+- 完成新手手册第一版
+- 修复图片上传体验
+- 准备公测用户邀请
+- 完成 App Store 审核材料
 
-- finish one English textbook
-- practice speaking for 30 days
-- prepare for an English interview
-- complete one English course
+项目越具体，越容易推进。
+如果一个项目永远没有清楚的结束点，它通常不是项目本身有多伟大，而是它还没有被拆到足够清楚。
 
-Another example:
+## 项目最后一定要落到任务
 
-> Make GranoFlow better
+项目不能只停留在标题上。
 
-That is also too large.
+无论项目多重要，最后都必须落到今天可以做的一步。否则它就会停留在想法里，看上去雄心勃勃，实际上并没有进入执行。
 
-You can split it into:
+例如：
 
-- finish the first version of the beginner manual
-- improve the image upload experience
-- prepare public beta invitations
-- complete App Store review materials
+项目：
 
-The more specific a project is, the easier it is to move forward.
+> 完成新手手册第一版
 
-If a project can never be completed, it is usually not a good project. It may need to become several projects, or move up into a domain and values.
+里程碑：
 
-## Projects Need to Reach Tasks
+> 写完前 6 章
 
-A project should not stay as a title.
+今天的任务：
 
-Every project eventually needs to reach one step you can take today.
+> 写完“项目与里程碑”这一章草稿
 
-For example:
+这样你每天面对的就不是一个模糊的大目标，而是一个清楚的下一步。
 
-Project:
+如果一个项目下面没有任何任务，通常只有两种可能：
 
-> Finish the first version of the beginner manual
+1. 它还只是愿望，没有进入执行阶段
+2. 它太模糊，需要先拆成里程碑或任务
 
-Milestone:
+GranoFlow 的项目不是用来收藏愿望的。
+项目应该帮助你行动。
 
-> Finish the first 6 chapters
+## 项目完成，不代表一切结束
 
-Today's task:
+项目完成，表示这一阶段的目标结束了。
 
-> Draft the "Projects and Milestones" chapter
+完成不代表它完美，也不代表以后不会继续做相关事情。
+例如：
 
-Now you are not facing a vague large goal every day. You are facing a clear next step.
+> 完成第一组漫画
 
-If a project has no tasks under it, there are usually two possibilities:
+这个项目完成后，你以后仍然可以建立新项目：
 
-First, it is still only a wish and has not entered execution.
-Second, it is too vague and needs to be split into milestones or tasks.
+> 完成第二组漫画
 
-Projects in GranoFlow are not for collecting wishes. They should help you act.
+这样比把所有创作都塞进一个永远不会结束的“漫画项目”更清楚。
 
-## Projects Can Be Completed
+项目完成后，也值得做一次简短回顾：
 
-Completing a project means this stage of the goal is over.
+- 哪些任务真正推进了项目？
+- 哪些阶段比预期困难？
+- 哪些经验可以保留到下一个项目？
+- 这个项目是否接近我的价值观？
 
-It does not mean the work is perfect, and it does not mean you will never do related work again.
+完成项目，不只是关闭一个容器，也是把一段时间的投入变成经验。
 
-For example:
+## 项目也可以归档，甚至放弃
 
-> Finish the first set of comics
+不是所有项目都必须完成。
 
-After this project is complete, you can still create a new project later:
+有些项目会过期。
+有些项目会失去意义。
+有些项目开始后，你才发现它并不重要。
+有些项目只是当时需要，现在已经不需要了。
 
-> Finish the second set of comics
+这时可以归档，或者放弃。
 
-That is clearer than putting all creative work into one "comics project" that never ends.
+放弃不是失败。
+真正重要的问题不是：
 
-After completing a project, you can review:
+> 我有没有完成所有项目？
 
-- Which tasks actually moved the project forward?
-- Which stages were harder than expected?
-- Which lessons should be carried into the next project?
-- Did this project move toward my values?
+而是：
 
-Completing a project is not only closing a container. It also turns a period of effort into experience.
+> 我有没有看清，它为什么不再值得继续？
 
-## Projects Can Be Archived or Dropped
+例如：
 
-Not every project has to be completed.
+> 我原本想做这个课程，但现在发现它和当前方向关系不大。先归档，之后不再占用注意力。
 
-Some projects expire.
-Some projects lose meaning.
-Some projects start before you realize they are not important.
-Some projects were needed at the time, but are no longer needed.
+这就是有效的回顾。
 
-At that point, you can archive them or drop them.
+GranoFlow 不要求你把每一个开始过的项目都做到最后。它更重视的是：你是否能从行动中看见自己的方向，并及时调整。
 
-Dropping a project is not failure.
+## 一个完整例子
 
-The real question is not "Did I complete every project?" It is:
+假设你的领域是：
 
-> Do I understand why this project is no longer worth continuing?
+> 工作学习
 
-For example:
+你的价值观是：
 
-> I originally wanted to take this course, but now I see that it is not closely related to my current direction. Archive it for now so it no longer takes attention.
+> 我希望自己成为一个可靠、清楚、能交付的人。
 
-That is useful review.
+它可以落成一个项目：
 
-GranoFlow does not require you to finish every project you start. It puts more weight on whether you can see your direction through action and adjust in time.
+> 完成 GranoFlow 新手手册第一版
 
-## A Complete Example
+这个项目可以拆成里程碑：
 
-Domain:
+> 完成前 3 章
+> 完成核心功能说明
+> 完成数据安全说明
+> 完成发布前校对
 
-> Work and learning
+而今天的任务可能是：
 
-Value:
+> 写完“快速开始”
+> 修改“把价值变成行动”
+> 补充“核心概念”
+> 校对术语一致性
 
-> I want to be reliable, clear, and able to deliver.
+最后在回顾里，你可能写下：
 
-Project:
+> 今天完成了项目与里程碑章节。结构比之前清楚，但任务与收集箱还需要单独写一章。下一步写任务系统。
 
-> Finish the first version of the GranoFlow beginner manual
+这样，一条价值观就真正落到了项目、里程碑、任务和回顾里。
+你不是只是在完成待办事项，而是在用一段时间的行动，慢慢靠近自己重视的方向。
 
-Milestones:
+## 下一步
 
-> Finish the first 3 chapters
-> Finish the core feature explanations
-> Finish the data safety explanation
-> Complete pre-release proofreading
+有了项目和里程碑之后，就可以开始处理每天的具体行动：
 
-Tasks:
-
-> Write "Quick Start"
-> Revise "Turn Values into Action"
-> Add "Core Concepts"
-> Check terminology consistency
-
-Review:
-
-> Today I completed the projects and milestones chapter. The structure is clearer than before, but tasks and the inbox still need their own chapter. Next, write the task system page.
-
-This is how a value reaches projects, milestones, tasks, and review.
-
-You are not only completing to-dos. You are using a period of action to move closer to the direction you care about.
-
-## Next
-
-After you have projects and milestones, you can start handling daily concrete actions.
-
-Next, read:
-
-> Tasks and inbox: write down the next step.
+- [任务与收集箱：把下一步写下来](/en/value-to-action/tasks-and-inbox/)：把阶段落到今天能开始的一步。
+- [回顾：让经历真正沉淀](/en/value-to-action/review-reflection/)：在推进项目之后，留下经验而不只是记录。
+- [先确定长期方向](/en/value-to-action/long-term-direction/)：回头检查这个项目是否仍然服务于你重视的方向。

@@ -1,69 +1,101 @@
 ---
-title: "Quick Start"
-description: "Complete your first values-to-action practice in GranoFlow in 5 minutes: capture, organize, act, and review without building a full life plan first."
+title: "快速开始"
+description: "用 5 分钟在 GranoFlow 完成第一次价值到行动实践：先记录、再整理、先推进一步，最后用回顾把经验留下来。"
 ---
 
-If this is your first time opening GranoFlow, you do not need to organize your whole life plan first. Press the `+` button in the middle of the bottom bar, write down one real thing you need to handle, then decide whether it should stay as a task or connect to a project, milestone, or domain. At night, do a short review.
+如果你第一次打开 GranoFlow，不需要先想清楚整个人生，也不需要先整理完所有任务。
+你只需要先做一件事：**把此刻最占用你注意力的那件事写下来。**
 
-This page walks you through the smallest useful loop: capture, organize, act, and review. It uses the values-to-action idea from ACT and The Happiness Trap, but you do not need to understand the theory first. Start by putting one real thing into GranoFlow, then let it become clearer over time.
+很多人会等“状态更好”再开始。但《幸福的陷阱》（The Happiness Trap）和 ACT（接纳与承诺疗法）提醒我们：**你不需要先把自己调整到完美，仍然可以先做一个小而重要的动作。**
 
-## Write One Thing Down
+这一页会先带你走完最小的一轮：**记录、整理、推进、回顾**。
 
-Open GranoFlow and press the `+` button in the middle of the bottom bar.
+## 第一步：先写下一件事
 
-Write the clearest thing on your mind. It can be small, for example:
+打开 GranoFlow 后，点击底部栏中间的 `+`。
 
-- an email you need to reply to today
-- a piece of work you want to keep moving forward
-- an idea you do not want to forget yet
+写下你现在最明确、最占注意力的一件事。它可以很小，例如：
 
-It does not need to be perfect, and you do not need to decide which project it belongs to first. Quick add is mainly for capture: get the thing out of your head first, then decide where it should go.
+- 今天要回复的一封邮件
+- 想继续推进的一项工作
+- 一个突然想到、但暂时不想忘记的念头
+- 一件你一直拖着没做、但其实很重要的事
 
-If you do not set a date or choose a project yet, the task stays in the inbox. The inbox is not a failure area or a junk drawer. It is a temporary place for things that are not organized yet.
+这里不需要写得完美，也不需要一开始就写对分类。先写下来，只是为了不让它继续在脑子里打转。
 
-## Decide Where It Belongs
+如果你暂时没有设置日期，也没有选择项目，它会先留在收集箱。收集箱不是失败区，也不是杂物间；它只是一个**先接住、再整理**的地方。
 
-After saving, ask one simple question: is this a one-time task, or does it belong to a longer-term goal?
+## 第二步：先判断它属于哪一层
 
-If it is a one-time item, handle it as a normal task. Mark it complete when it is done, and it becomes part of your history.
+写下来以后，再问自己一个简单问题：
 
-If it belongs to an ongoing goal, connect it to a project. Projects are for goals that continue over time, such as a course, a product version, or a creative plan.
+> 这是一件今天或近期就能做的事，还是它背后有一个更长期的方向？
 
-If the project needs stages, add a milestone. A milestone marks a stage goal. It is not there to make the project more complicated; it helps you see which part should come first.
+如果它就是一件能直接执行的事，把它当作任务就够了。
+如果它会持续占用你注意力，值得分阶段推进，它更适合放进项目。
+如果它背后反复出现同一种长期方向，例如工作学习、关系、健康或创作生活，它可能还连接着某个领域与价值观。
 
-If the same long-term direction keeps showing up behind the task, such as work, learning, relationships, health, or creative life, you can connect it to the matching domain later. Domains are closer to the directions you care about over time, and you do not need to build them all on day one.
+你不需要在第一次使用时就把这些结构全部建好。
+GranoFlow 的重点不是让你立刻搭起一个复杂系统，而是帮助你慢慢看清：**这件事该落在哪里，下一步该怎么走。**
 
-## Move One Step Today
+## 第三步：今天只推进一步
 
-For your first session, do not try to organize every task, every project, or every life direction.
+第一次使用时，不要急着整理所有任务、所有项目、所有人生方向。
+你真正需要的是：**选出一个今天可以开始的小动作。**
 
-Choose one action you can move forward today, then complete it.
+例如：
 
-GranoFlow's structure is not there to make your plan bigger. It is there to make the next step clearer. When a task is too large, break it into smaller steps. If you can start the next step, the structure is already useful.
+- 不要写：`准备汇报`
+- 可以写：`列出明天汇报的 3 个重点`
 
-If you mark a task as in progress, the system tries to keep only one task holding your attention at a time. You do not need to stare at many things you "should" do. You only need to know what comes first right now.
+- 不要写：`处理产品问题`
+- 可以写：`整理今天发现的 5 个登录问题`
 
-When it is done, mark it complete. If something no longer needs daily attention but is still worth keeping, archive it. If something was added by mistake or too early, delete it, then restore it or clear it later from the trash if needed.
+- 不要写：`恢复运动`
+- 可以写：`今晚做 15 分钟低强度拉伸`
 
-## Do a Short Evening Review
+动作太大，大脑就会继续逃避；动作够小，你就更容易开始。
 
-At the end of the day, open Review.
+如果你把某个任务标记为进行中，GranoFlow 会尽量让当前只有一件事占住你的主要注意力。这样你不必同时盯着许多“应该做”的事，只需要知道：
 
-You do not need to write much. Just check three things:
+> 现在先做哪一个。
 
-- what you completed today
-- what is worth keeping
-- what the next step is
+## 第四步：做完后留下一个简短回顾
 
-Review is not a score, and it is not a check on whether you worked hard enough. It keeps the day's actions, choices, and lessons so they can become accumulated context instead of just passing by.
+当天结束时，打开「回顾」。
 
-If you did not complete much today, you can still review. GranoFlow does not reset because you paused. You can stop at any time and come back at any time.
+你不需要写很长，只要回答三件事：
 
-## Next
+- 今天完成了什么？
+- 这件事说明了什么？
+- 下一步是什么？
 
-After your first capture, action, and review, continue with:
+回顾不是给自己打分，也不是检查你有没有足够努力。
+它的作用是把今天的行动留下来，让它不只是过去的一天，而是慢慢变成经验。
 
-- [ACT and The Happiness Trap](/en/value-to-action/act-loop/): understand how GranoFlow turns values and committed action from Acceptance and Commitment Therapy into one practical daily step.
-- [Tasks overview](/en/tasks/overview/): understand the relationship between tasks, inbox, completed items, archive, and trash.
-- [Projects and milestones overview](/en/projects/overview/): turn ongoing goals into stages.
-- [Values and prompts](/en/review/values-and-prompts/): make review closer to the directions you care about.
+如果今天完成得不多，也可以照常回顾。
+GranoFlow 不会因为中断而清零；你随时停下，也随时可以回来。
+
+## 如果你现在就想试一次
+
+你可以按这个顺序做：
+
+1. 点击 `+`
+2. 写下一件最占注意力的事
+3. 不急着分类，先保存
+4. 把它改写成一个 10–20 分钟能开始的任务
+5. 做完后写一句回顾
+
+这就已经是一轮完整实践。
+
+你不需要先“准备好”，才有资格开始。
+很多时候，**开始本身就是让自己慢慢清楚起来的方式。**
+
+## 下一步
+
+完成第一次记录、推进和回顾后，可以继续阅读：
+
+- [任务与收集箱：把下一步写下来](/en/value-to-action/tasks-and-inbox/)：把模糊念头变成可执行动作。
+- [从领域到任务](/en/value-to-action/from-domain-to-task/)：看懂 GranoFlow 的整张行动地图。
+- [回顾：让经历真正沉淀](/en/value-to-action/review-reflection/)：把做过的事变成经验。
+- [ACT 与《幸福的陷阱》](/en/value-to-action/act-loop/)：理解为什么不必等状态完美，也能朝重视的方向行动。

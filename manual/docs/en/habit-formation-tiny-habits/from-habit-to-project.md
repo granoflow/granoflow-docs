@@ -1,122 +1,73 @@
 ---
-title: "Connect tiny habits back to long-term projects"
-description: "Use Tiny Habits, the Fogg Behavior Model, and GranoFlow to build a low-pressure habit and task management practice with micro habits."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
+title: "From Habit to Project: Put Consistent Effort into a Container"
+description: "When a habit is no longer a one-off attempt, use projects and milestones to make it manageable, reviewable, and continuously improvable."
 ---
 
-If you already have a tiny habit but do not know how it relates to a long-term goal, connect it to a project first: ask what longer effort the small action supports, use milestones to observe it stage by stage, then use review to decide whether to continue, adjust, or let it go.
+Micro habits help you start. For long-term progress, you usually need a container.
 
-A tiny habit is useful because it makes action small enough to start. But if it only stays at "I checked the box today," you may soon wonder:
+This page answers one question:
 
-> Why am I doing this?
+> When should habit actions be upgraded into projects?
 
-In GranoFlow, a tiny habit does not have to stay as an isolated action. You can place it back into projects, values, and review, so it becomes part of a longer direction.
+## When to upgrade from single task to project
 
-## Work back from the tiny habit to a project
+Upgrade when any condition appears:
 
-After a tiny habit has happened a few times, do not rush to make it bigger. First ask yourself:
+- the habit needs several weeks of continuity
+- the behavior now has multiple action steps
+- after interruption you often forget where to resume
+- you need stage goals to keep challenge suitable
 
-> What longer effort does this action belong to?
+Example:
 
-For example:
+- Single task: stretch 5 minutes after dinner
+- Project upgrade: build a 3-month foundational exercise rhythm
 
-| Tiny habit | Possible project |
-| --- | --- |
-| Stretch for 2 minutes after dinner | Build a three-month basic exercise rhythm |
-| Listen to English for 3 minutes each day | Restart English listening input |
-| Write down one completed thing before bed | Build a daily review rhythm |
-| Organize one inbox task after opening the computer | Reduce work startup friction |
+## Use milestones to stage the habit
 
-If you find that the action is likely to continue, you can create a project in GranoFlow. A project does not need to be large. It simply holds a direction you want to keep moving for a period of time.
+Project structure is not for complexity; it is for “right-sized challenge.”
+
+Example staging:
+
+- Milestone 1: week-one adaptation (build attendance)
+- Milestone 2: month-one stability (reduce breaks)
+- Milestone 3: month-three review (decide upgrade)
+
+Now daily work is “one step in this stage,” not “the whole life goal.”
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![Project detail with milestones and staged tasks](../../../screenshots/en/projects-milestones-detail.png)
+![Use project and milestones for sustained habit effort](../../../screenshots/en/projects-milestones-detail.png)
 
-## Use milestones to reduce long-term pressure
+## Use review for continuous improvement
 
-Habits are often written as goals with no end:
+Atomic Habits emphasizes continuous improvement over one-shot overhaul.
 
-> Exercise forever
-> Study English every day
-> Always stay disciplined
+In GranoFlow review, focus on three points:
 
-That wording can feel heavy.
+1. Which action is easiest to sustain (keep)
+2. Which action has too much friction (shrink)
+3. Should challenge be upgraded next (adjust)
 
-You can turn it into stages instead:
+That is the practical meaning of “1% daily”: no dramatic burst, steady micro-adjustment.
 
-- Week 1: only establish the trigger
-- Week 2: keep the smallest version
-- Week 3: observe whether the timing needs to change
-- Week 4: decide whether to continue, expand, or let it go
+## Common pitfalls
 
-That is what milestones are for. They do not ask you to keep going forever. They help you know what to observe in the current stage.
+- Pitfall 1: project as slogan (“completely transform myself”)
+  - Fix: rewrite as stage-verifiable target.
+- Pitfall 2: milestones too big, creating anxiety
+  - Fix: shrink to this-week executable units.
+- Pitfall 3: after interruption, trying to repay everything
+  - Fix: restore minimal action first, then rebuild rhythm.
 
-## Use review to decide whether it fits you
+## Relation to Chapter 2 and Chapter 3
 
-Not every habit is worth doing forever.
+This page does not repeat full value/flow theory. It keeps Chapter 4 responsibility:
 
-Some tiny habits are small but not meaningful to you.
-Some habits look correct but conflict with your real life rhythm.
-Some habits work at first, then need a new time, place, or action.
-
-During review, ask yourself:
-
-- Did this habit actually reduce friction?
-- Does it connect to a direction I value?
-- When it failed, was the action too large, or was the prompt unnatural?
-- Is it still worth continuing, or should I try another version?
-
-GranoFlow review is not there to prove that you did everything every day.
-
-It helps you see clearly whether the habit design fits your real life.
-
-## Return after an interruption
-
-If a tiny habit is interrupted, you do not need to treat it as failure.
-
-In GranoFlow, you can do a very short review:
-
-```text
-What was the previous tiny habit?
-
-Why did it stop?
-
-What is the smallest version I am willing to restore now?
-```
-
-For example:
-
-```text
-The previous habit was stretching for 2 minutes after dinner.
-
-It stopped recently because dinner time became unstable.
-
-I will change it to 1 minute of stretching before bed.
-```
-
-This is gentler than "start another 30-day streak," and closer to real life.
-
-## A complete structure
-
-You can use GranoFlow like this:
-
-> Domain: body and energy
-> Value: I want to care for my body over the long term instead of constantly draining it
-> Project: build a three-month basic exercise rhythm
-> Milestone: in week one, only establish the trigger
-> Task: stretch for 1 minute before bed
-> Review: the action is small, but bedtime is more stable than after dinner, so I will keep observing
-
-This is where GranoFlow and Tiny Habits meet:
-
-Tiny Habits helps you make the behavior small enough to begin.
-GranoFlow helps you place that small behavior inside a longer structure and review whether it is worth continuing.
+- Chapter 2: values-to-action overall path
+- Chapter 3: flow conditions and stable engagement
+- Chapter 4: systematizing habits into long-term sustainable practice
 
 ## Next
 
-If you have not created your first tiny habit yet, return to [Build one tiny habit in 5 minutes](/en/habit-formation-tiny-habits/practice-loop/).
-
-If you want to keep connecting habits and projects, continue with [Projects and milestones](/en/value-to-action/projects-and-milestones/) and [Review](/en/value-to-action/review-reflection/).
+- [Habits and Continuous Improvement: Chapter Overview](/en/habit-formation-tiny-habits/overview/)
+- [Return to Habit Practice Loop for the next micro-adjustment](/en/habit-formation-tiny-habits/practice-loop/)

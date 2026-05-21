@@ -1,303 +1,312 @@
 ---
-title: "Tasks and Inbox: Write Down the Next Step"
-description: "Learn how to capture tasks, organize the inbox, and turn loose thoughts into the next action you can move forward in GranoFlow."
+title: "任务与收集箱：把下一步写下来"
+description: "理解如何在 GranoFlow 中记录任务、整理收集箱，并把零散想法变成可以推进的下一步行动。"
 ---
 
-If your head is full of things and you do not know where to put them, write them down as tasks in GranoFlow first; if you have not decided on a date, project, or milestone yet, leave them in the inbox and organize them into clear next steps later.
+很多时候，让人疲惫的不是事情本身，而是它一直悬在脑子里。
 
-Tasks are the most common entry point in GranoFlow. You do not need to understand domains, values, projects, and milestones before you capture something. Often, the first step is simply:
+你可能反复想着：
 
-> Write down what is in your head first.
+- 这件事别忘了
+- 那件事迟早得处理
+- 这个问题之后还要回来
+- 我应该先整理一下再开始
 
-After that, decide whether it needs a date, should join a project, should be broken into smaller steps, or can stay in the inbox for now.
+结果是，事情还没真正开始做，注意力已经被消耗掉了。
 
-## What a Task Is
+这也是为什么，在 GranoFlow 里，任务和收集箱不是琐碎的辅助功能，而是整套系统里最重要的入口之一。
 
-A task is one step you can do.
+如果说 ACT 和《幸福的陷阱》提醒我们：不必先等状态完美，也能开始行动；
+那么任务与收集箱，就是把这句话真正落到手上的地方。
 
-It should be smaller than a project and more concrete than an idea. When you look at it, you should know what to do next.
+> 先写下来。
+> 先接住它。
+> 再把它变成今天能做的一步。
 
-Good tasks usually look like this:
+## 任务是什么
 
-- reply to an email
-- check the sign-in flow
-- draft one manual chapter
-- organize 10 pieces of user feedback
-- run for 20 minutes
-- send a confirmation message to a friend
+任务是 GranoFlow 里最接近现实行动的一层。
 
-These tasks are specific. You do not need to guess what they mean.
+它应该比项目更小，比想法更具体。你看到它的时候，最好不需要再猜“我到底要做什么”，而是能直接开始。
 
-Weak tasks are usually too large, too vague, or closer to wishes:
+好的任务通常像这样：
 
-- learn English well
-- make the product better
-- improve my life
-- become disciplined
-- handle all problems
+- 回复一封邮件
+- 检查登录流程
+- 写完一章手册草稿
+- 整理 10 条用户反馈
+- 跑步 20 分钟
+- 给朋友发一条确认消息
 
-You can still write these down, but they are not clear tasks yet. Later, you can turn them into projects, values, or smaller actions.
+这些任务都有一个共同点：
+它们不是抽象愿望，而是可执行动作。
 
-## Write a Good Task
+不太好的任务通常太大、太虚，或者更像一种模糊压力：
 
-A good task does not need to be long, but it should be easy to understand when you see it again.
+- 学好英语
+- 做好产品
+- 改善生活
+- 变得自律
+- 处理所有问题
 
-One simple method is: start with a verb.
+这些内容也可以先写下来，但它们还不是清楚的任务。
+之后你需要把它们继续整理成项目、价值观，或者拆成更小的行动。
 
-For example:
+## 为什么任务要写得这么小
 
-- finish...
-- check...
-- revise...
-- organize...
-- send...
-- book...
-- read...
-- practice...
+很多人不是不愿意做事，而是不知道从哪里开始。
 
-Instead of only writing:
+一个任务如果太大，大脑就会自动拖延。
+它不是在反抗你，而是在回避不确定感。
 
-> Manual
+所以一个好任务，不是看起来“厉害”，而是能真正让你开始。
+你可以把好任务理解成一句话：
 
-write:
+> 我看完它，就知道下一步该怎么动手。
 
-> Draft the "Tasks and Inbox" chapter
+一个很简单的方法是：用动词开头。
 
-Instead of only writing:
+例如：
 
-> English
+- 写完……
+- 检查……
+- 修改……
+- 整理……
+- 发送……
+- 预约……
+- 阅读……
+- 练习……
 
-write:
+不要只写：
 
-> Practice English listening for 20 minutes
+> 手册
 
-Instead of only writing:
+可以写成：
 
-> Product issues
+> 写完「任务与收集箱」这一章草稿
 
-write:
+不要只写：
 
-> Organize 5 product issues found today
+> 英语
 
-The clearer the task is, the easier it is to start.
+可以写成：
 
-If you look at a task and do not know where to begin, it usually means the task is still too large. Keep breaking it down until it becomes an action you can do directly.
+> 练习 20 分钟英语听力
 
-## What the Inbox Is
+不要只写：
 
-The inbox is a temporary place for unorganized items.
+> 产品问题
 
-It is not a trash can, and it is not a failure zone. Its job is to let you capture something first, without organizing it perfectly right away.
+可以写成：
 
-You can put these items in the inbox first:
+> 整理今天发现的 5 个产品问题
 
-- a sudden idea
-- something that does not have a date yet
-- a task that may belong to a project, but has not been organized yet
-- a reminder you do not want to forget
-- a thought you will judge later
+任务写得越清楚，开始时越轻松。
+如果一个任务让你看着就发沉，通常说明它还没有小到能让你真正开始。
 
-The point of the inbox is to make capturing easier.
+## 收集箱是什么
 
-When something appears in your mind, you do not need to decide which project it belongs to immediately, and you do not need to turn it into a perfect task right away. Write it down first, then organize it later.
+收集箱是临时存放未整理事项的地方。
 
-That is lighter than keeping it in your head.
+它不是垃圾桶，也不是失败区。它的意义很简单：让你先把事情记下来，不必马上整理完美。
 
-## What Stays in the Inbox
+因为人很容易陷入这样一个循环：
 
-In general, if a task has not been clearly arranged yet, it stays in the inbox.
+> 我还没想清楚，所以先别记。
+> 因为没记下来，所以它一直在脑子里打转。
+> 因为它一直在脑子里打转，我就更难想清楚。
 
-For example:
+收集箱打断的，就是这个循环。
 
-- it has no date
-- it has not joined a project
-- it has not been placed in a milestone
-- it is still to-do or in progress
+你可以把这些内容先放进去：
 
-Once you give it a date or add it to a project, it is no longer only a temporary inbox item. It has entered a clearer structure.
+- 一个突然想到的想法
+- 一件还没决定日期的事
+- 一个可能属于某个项目、但你还没整理的任务
+- 一段不想忘记的提醒
+- 一个之后再判断是否值得做的念头
 
-So the inbox is not a fixed category.
+从产品结构上看，收集箱是入口；从使用体验上看，它更像一种心理减压动作。你不必立刻判断一件事属于哪个项目，也不必马上把它拆成完美任务。先把它放下来就够了。
 
-It is more like an entry point: things enter GranoFlow here first, then gradually move into task lists, projects, milestones, or review.
+## 什么会留在收集箱里
 
-## When to Organize the Inbox
+一般来说，如果一件事还没有明确安排，它就会留在收集箱。
 
-You do not need to organize the inbox every time you write a task.
+例如：
 
-You can organize it once a day, or when the inbox is clearly piling up.
+- 没有日期
+- 没有加入项目
+- 没有放进里程碑
+- 仍然是待办或进行中状态
 
-When organizing, ask a few simple questions for each item:
+一旦你给它安排了日期，或者把它放进项目，它就不再只是收集箱里的临时事项，而是开始进入更明确的结构。
 
-- Is this still important?
-- Can it be done today or soon?
-- Does it need a date?
-- Does it belong to a project?
-- Is it too large and needs to be broken down?
-- Is it no longer needed and can be deleted?
+所以，收集箱不是一个固定分类。
+它更像一个过渡入口：
 
-Organizing the inbox is not about making it perfectly empty.
+> 事情先从这里进入 GranoFlow，再慢慢流向任务列表、项目、里程碑或回顾。
 
-It simply helps turn "things temporarily written down" into clearer next steps.
+## 什么时候整理收集箱
 
-## Understand Task States
+你不需要每写一条任务就整理一次。
 
-Tasks can be in different states at different stages.
+可以每天整理一次，也可以在收集箱明显堆积时整理。重点不是频率，而是让它不要一直变成“看过但不处理”的地方。
 
-**To-do**: not started yet, but ready to handle later.
-**In progress**: currently being moved forward, suitable for the one thing that needs attention now.
-**Completed**: finished, and can become part of review and history.
-**Archived**: no longer needs daily attention, but is still worth keeping.
-**Trash**: deleted, and can be restored or cleaned up later.
+整理时，对每一条问几个简单问题：
 
-These states are not there to create a complex workflow. They help you understand where something currently is.
+- 这件事还重要吗？
+- 它可以今天或近期执行吗？
+- 它需要安排日期吗？
+- 它属于某个项目吗？
+- 它太大了，是否需要拆小？
+- 它其实已经不需要了，是否可以删除？
 
-If a task still needs to be done, keep it as to-do.
-If you are doing it now, set it to in progress.
-If it is done, mark it completed.
-If you no longer need to see it every day but it is still worth keeping, archive it.
-If it was added by mistake or is no longer needed, delete it.
+整理收集箱不是为了把它清空到完美状态。
+它只是帮助你把“暂时记下的东西”变成更清楚的下一步。
 
-## Keep In-Progress Tasks Few
+## 如果任务太大，怎么办
 
-You should not have too many tasks in progress.
+如果一个任务迟迟没有开始，先不要责备自己。它可能只是太大了。
 
-If many tasks are in progress at the same time, your attention is still pulled in many directions.
+例如，“写完手册”可以拆成：
 
-A better approach is to move one important thing forward now. After finishing, pausing, or switching, handle the next one.
+- 写完快速开始
+- 写完把价值变成行动
+- 校对全文标题
+- 检查链接和截图
 
-GranoFlow's task system is not there to make you stare at everything at once. It helps you know:
+又比如，“整理房间”可以拆成：
 
-> Which one should I do now?
+- 清理桌面
+- 整理衣柜第一层
+- 扔掉过期物品
+- 拖地 10 分钟
 
-That is also why tasks should be clear. The clearer the task, the lower the cost of switching.
+拆小不是偷懒，而是为了让行动真正发生。如果一个任务今天无法开始，它通常还不够小。
 
-## When a Task Is Too Large
+## 任务状态怎么理解
 
-If a task has not started for a long time, do not blame yourself first.
+任务在不同阶段，会有不同状态。
+这些状态不是为了制造复杂流程，而是为了让你知道：一件事现在在哪里。
 
-It may simply be too large.
+**待办**：还没开始，但准备之后处理。
+**进行中**：现在正在推进，适合当前最需要注意的一件事。
+**已完成**：已经做完，会进入回顾和历史记录。
+**已归档**：不再需要日常关注，但仍然值得保留。
+**回收站**：已经删除，之后可以恢复或继续清理。
 
-For example:
+你可以简单这样理解：
 
-> Finish the manual
+- 如果任务还要做，留在待办
+- 如果正在做，设为进行中
+- 如果做完了，标记完成
+- 如果不再需要每天看到，但仍有保存价值，归档
+- 如果是误加或已经不需要，删除
 
-This task is too large.
+状态存在的意义，不是增加管理成本，
+而是减少你对“这件事到底现在算什么”的反复判断。
 
-It can be broken into:
+## 进行中任务为什么要少
 
-- write Quick Start
-- write Turn Values into Action
-- write Core Concepts
-- write Tasks and Inbox
-- proofread all titles
-- check links and screenshots
+很多人会下意识把好几件事都标成“进行中”，
+因为它们好像都很重要。
 
-Another example:
+但如果很多任务同时处于进行中，你的大脑还是会被拉扯。
+每一件事都像在轻轻扯你一下，结果就是：没有哪件事真正被推进。
 
-> Clean the room
+更好的方式是：当前只推进一件最重要的事。做完、暂停或切换之后，再处理下一件。
 
-can be broken into:
+GranoFlow 的任务系统不是为了让你同时盯着所有事情，
+而是帮你知道：
 
-- clear the desk
-- organize the first shelf of the wardrobe
-- throw away expired items
-- put books back on the shelf
-- mop for 10 minutes
+> 现在先做哪一个。
 
-Breaking a task down is not avoiding work.
+这也是任务要写清楚的原因。任务越清楚，切换成本越低。
 
-It is how action becomes startable.
+## 任务和项目的区别
 
-## Tasks and Projects
+一个简单判断是：
 
-A simple distinction:
+> 今天或近期能直接做的，是任务。
+> 需要持续推进、包含多步行动的，是项目。
 
-> If you can do it today or soon, it is a task.
-> If it needs sustained effort and multiple actions, it is a project.
+例如：
 
-For example:
+> 跑步 20 分钟
 
-> Run for 20 minutes
+这是任务。
 
-This is a task.
+> 建立三个月锻炼节奏
 
-> Build a three-month exercise rhythm
+这是项目。
 
-This is a project.
+> 修改登录按钮文案
 
-> Revise the sign-in button label
+这是任务。
 
-This is a task.
+> 完成产品新版本发布
 
-> Complete the new product version release
+这是项目。
 
-This is a project.
+任务解决的是“下一步是什么”。
+项目解决的是“这一段时间我在推进什么”。
 
-Tasks answer "What is the next step?"
-Projects answer "What am I moving forward during this period?"
+两者要配合使用。
+只有项目，没有任务，会变成愿望。
+只有任务，没有项目，容易变成零散忙碌。
 
-They need to work together.
+## 从收集箱到任务列表
 
-Only projects, without tasks, become wishes.
-Only tasks, without projects, can become scattered busyness.
+一个想法进入 GranoFlow 后，通常会这样流动：
 
-## From Inbox to Task List
+1. 先写进收集箱
+2. 整理时判断它是否还重要
+3. 如果可以直接做，改成明确任务
+4. 如果需要持续推进，加入项目
+5. 如果项目较大，再放进里程碑
+6. 完成后进入回顾
 
-After an idea enters GranoFlow, you can handle it like this:
+例如，你在收集箱里写下：
 
-1. Write it into the inbox first
-2. Decide whether it still matters during organizing
-3. If it can be done directly, turn it into a clear task
-4. If it needs sustained effort, add it to a project
-5. If the project is large, place it in a milestone
-6. After completion, bring it into review
+> 手册
 
-For example, you write this in the inbox:
+整理时，可以改成：
 
-> Manual
+> 写完「任务与收集箱」这一章正文
 
-While organizing, you can change it to:
+然后把它加入项目：
 
-> Write the body of the "Tasks and Inbox" chapter
+> 完成 GranoFlow 新手手册第一版
 
-Then add it to the project:
+如果项目已经有里程碑，也可以放进：
 
-> Finish the first version of the GranoFlow beginner manual
+> 完成核心入门章节
 
-If the project already has milestones, you can place it under:
+这样，一个模糊念头就变成了清楚任务。
+这也是 GranoFlow 最实用的一点：
 
-> Complete the core beginner chapters
+> 它不要求你一开始就想清楚，而是允许你一边记录、一边变清楚。
 
-Now a vague idea has become a clear task.
+## 不必每天清空所有任务
 
-## You Do Not Need to Clear Every Task Every Day
+任务列表不是考试卷。
 
-A task list is not an exam paper.
+你不需要每天把所有任务都做完，才算使用得好。
+现实生活里，总会有推迟、变化和中断。GranoFlow 更关心的是：你能不能看清当前最重要的一步，并在回顾中理解发生了什么。
 
-You do not need to finish every task every day to use GranoFlow well.
+今天完成一件重要的小事，也比盯着一长串模糊任务更有效。
 
-Real life always includes delays, changes, and interruptions. GranoFlow cares more about whether you can see the most important next step and understand what happened through review.
+如果任务太多，就整理。
+如果任务过期，就调整。
+如果任务不重要，就删除或归档。
+如果任务仍然重要，就重新安排下一步。
 
-Finishing one important small thing today is more useful than staring at a long list of vague tasks.
+任务系统不是用来证明你很忙，而是帮你减少混乱。
 
-If there are too many tasks, organize them.
-If a task has expired, adjust it.
-If a task is not important, delete or archive it.
-If a task still matters, arrange the next step again.
+## 下一步
 
-The task system is not there to prove how busy you are. It helps reduce confusion.
+当你能把事情写成任务，并用收集箱承接暂时没整理好的想法后，就可以继续往下读：
 
-## Next
-
-Once you can write things as tasks and use the inbox for thoughts that are not yet organized, you can continue to review.
-
-Review helps you see:
-
-- what you actually completed today
-- which tasks moved projects forward
-- which actions moved closer to your values
-- what the next step should be
-
-Next, read:
-
-> Review: let experiences really settle.
+- [项目与里程碑：把长期方向拆成阶段目标](/en/value-to-action/projects-and-milestones/)：当一件事需要持续推进时，给它建立阶段骨架。
+- [回顾：让经历真正沉淀](/en/value-to-action/review-reflection/)：把做过的事变成经验，而不只是完成记录。
+- [先确定长期方向](/en/value-to-action/long-term-direction/)：理解这些任务最后在为哪些方向服务。

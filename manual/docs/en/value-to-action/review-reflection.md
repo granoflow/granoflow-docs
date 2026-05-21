@@ -1,230 +1,244 @@
 ---
-title: "Review: Let Experiences Really Settle"
-description: "Use GranoFlow review to connect tasks, projects, and values so daily experience becomes feedback for long-term goals."
+title: "回顾：让经历真正沉淀"
+description: "理解如何用 GranoFlow 回顾任务、项目和价值观，让日常经历沉淀为长期方向的反馈，而不只是完成记录。"
 ---
 
-Review means pausing to ask: what did I do, what does it tell me, and what should I adjust next? In GranoFlow, you can look at tasks, projects, and values together, so each day becomes more than a list of completed items. It becomes feedback that helps you move closer to long-term goals.
+很多人会记任务、做任务、勾掉任务。但如果事情做到这里就结束了，一天很容易只剩下两种感受：
 
-Writing down tasks reduces the load in your head.
+- 做得不够多
+- 还有很多没做完
 
-Completing tasks moves real things forward.
+这也是为什么，很多任务工具越用越忙，越用越容易让人觉得自己永远在落后。
 
-Review turns experience into something you can carry forward.
+GranoFlow 里的“回顾”，不是为了让你把一天重新审判一遍。
+它的存在，是为了帮你把已经发生的事，从“完成记录”慢慢变成“可以带走的经验”。
 
-GranoFlow does not want you to only keep adding tasks, completing tasks, and clearing lists. The real value is being able to look at what already happened and see what you are moving toward, what you are moving away from, and what should change next.
+写下任务，是为了减轻脑中的负担。
+完成任务，是为了推进现实里的事情。
+回顾，则是为了把经历变成判断，让你慢慢知道：
 
-If you are familiar with ACT (Acceptance and Commitment Therapy) or *The Happiness Trap*, you can treat review as a lightweight check on committed action: am I still moving toward what matters, and is the next step concrete enough? For the full background, read [ACT and The Happiness Trap](/en/value-to-action/act-loop/).
+- 什么对自己有效
+- 什么只是看上去很忙
+- 哪些行动真的接近你重视的方向
+- 下一步怎样更清楚
 
-## Review Is Not Self-Criticism
+如果你熟悉 ACT（接纳与承诺疗法）或《幸福的陷阱》，可以把回顾理解成一次温和的“承诺行动检查”：
 
-Review is not about criticizing yourself.
+> 我这段时间，是否仍在靠近自己真正重视的方向？
 
-It is not asking:
+更多背景可以读 [ACT 与《幸福的陷阱》](/en/value-to-action/act-loop/)。
 
-> Why was I not hardworking enough today?
-> Why did I procrastinate again?
-> Why did I not finish every plan?
+## 回顾不是自我检讨
 
-These questions can easily turn review into pressure.
+回顾不是批评自己。
 
-Better questions are:
+它不是问：
 
-> What actually happened today?
-> What did I complete?
-> Which actions moved closer to what I care about?
-> What needs to be adjusted?
-> What is the next step?
+> 我今天为什么不够努力？
+> 我为什么又拖延？
+> 我为什么没有完成所有计划？
 
-The purpose of review is not to judge yourself. It is to see reality clearly.
+这些问题很容易让回顾变成压力，也会让你下意识地回避它。
 
-Once you see reality clearly, you can tell what is worth continuing, what needs to change, and what can be put down.
+更适合问的是：
 
-## Completion Is Only the First Step
+> 今天真实发生了什么？
+> 我完成了哪些事？
+> 哪些行动接近我重视的方向？
+> 哪些地方需要调整？
+> 下一步是什么？
 
-After a task is completed, it becomes a record.
+回顾的目的不是审判自己，而是看清现实。
+看清现实之后，你才知道哪些事情值得继续，哪些事情需要改变，哪些事情可以放下。
 
-But a record is not yet experience.
+## 完成任务只是第一步
 
-For example, you completed:
+任务完成以后，它会成为记录。
+但记录本身还不是经验。
 
-> Write the "Tasks and Inbox" chapter
+例如，你完成了：
 
-If you only check it off, it is just a completed task.
+> 写完「任务与收集箱」这一章
 
-If you write this in review:
+如果只是打勾，它只是一个已完成任务。
 
-> Today I finished the task chapter. The structure is clear now, but the review chapter needs to emphasize that review is not self-criticism. It is how experience settles.
+如果你在回顾里写下：
 
-Then it becomes experience.
+> 今天写完了任务章节。结构已经清楚，但“回顾”这一章需要更明确地区分“沉淀经验”和“自我检讨”。明天继续处理回顾系统。
 
-Completing a task tells you what you did.
-Review tells you what it means.
+它就变成了经验。
 
-That is the value of review.
+完成任务告诉你：我做了什么。
+回顾告诉你：这件事意味着什么。
 
-## Ask Only a Few Questions Each Day
+这就是回顾真正的价值：
+它让你不是只把一天“用掉”，而是把一天“留下来”。
 
-Daily review does not need to be long.
+## 每天只问几个问题就够了
 
-At the end of the day, you can answer only a few questions:
+日回顾不需要很长。
+很多时候，真正能持续使用的回顾，反而是短的、真实的、没有表演感的。
 
-- What did I complete today?
-- Which thing was closest to what I care about?
-- What drained me without really moving anything forward?
-- What is worth remembering?
-- What is the next step?
+每天结束时，你可以只回答几个问题：
 
-You do not need to write a deep insight every day.
+- 今天完成了什么？
+- 哪件事最接近我重视的方向？
+- 哪件事消耗了我，但没有真正推进什么？
+- 有什么值得记住？
+- 下一步是什么？
 
-Sometimes one simple note is enough:
+你不需要每天写出“深刻洞见”。
+有时候，一句简单记录就够了：
 
-> My state was average today, but I still completed one key task. Tomorrow I will continue with the remaining part.
+> 今天状态一般，但还是完成了一个关键任务。明天继续处理剩下的部分。
 
-That is also a useful review.
+这也是有效回顾。
 
-## Do Not Only Count Tasks
+回顾的重点，从来不是文采，而是真实。
 
-Completing many tasks does not always mean the day was valuable.
+## 不要只看任务数量
 
-Sometimes you finish ten small things, but they are all chores.
-Sometimes you finish only one thing, but it truly moves a project forward.
+完成很多任务，不一定代表这一天真的有价值。
 
-So during review, do not only look at the number.
+有时候，你完成了十件小事，但都只是杂务。
+有时候，你只完成了一件事，但它真正推进了项目。
 
-What matters more is:
+所以回顾时，不要只看数量。
+更重要的是看：
 
-- Which tasks moved projects forward?
-- Which tasks moved milestones forward?
-- Which actions moved closer to values?
-- Which things only made me look busy?
+- 哪些任务推进了项目？
+- 哪些任务推动了里程碑？
+- 哪些行动接近价值观？
+- 哪些事情只是让自己看起来很忙？
 
-Review in GranoFlow is not there to prove that you are efficient. It helps you see whether your time is flowing toward what really matters.
+GranoFlow 的回顾，不是为了证明你很高效。
+它是为了帮你看见：你的时间，是否真的流向了重要的方向。
 
-## Review Projects, Not Only the Day
+## 回顾项目，而不是只回顾当天
 
-In addition to daily review, review projects regularly.
+除了每天回顾，也要定期回顾项目。
 
-You can ask:
+因为人很容易陷入一种状态：
 
-- Is this project still important?
-- Is the current milestone clear?
-- Which tasks actually moved it forward?
-- Which tasks were detours?
-- Does this project still fit my values?
-- Should the next stage continue, adjust, archive, or stop?
+> 每天都很忙，但项目没有真正前进。
 
-Project review helps you avoid a common situation:
+项目回顾可以帮助你避免这种情况。
+你可以问：
 
-> Every day is busy, but the project is not really moving.
+- 这个项目还重要吗？
+- 当前里程碑是否清楚？
+- 哪些任务真正推进了它？
+- 哪些任务只是绕路？
+- 这个项目是否还符合我的价值观？
+- 下一阶段应该继续、调整、归档，还是放弃？
 
-If a project has not moved for a long time, it does not necessarily mean you are lazy. It may be too large, too vague, or no longer important.
+如果一个项目长期没有推进，不一定是你懒。
+可能是它太大、太模糊，或者已经不再重要。
 
-At that point, the useful move is not self-blame. It is reorganizing.
+这时要做的，不是责备自己，而是重新整理。
 
-## After an Interruption, Restart from Review
+## 中断后，从回顾重新开始
 
-Life gets interrupted.
+人生会中断。
 
-You may not open GranoFlow for a few days.
-A project may stop for several weeks.
-Tasks you wrote earlier may have expired.
+你可能几天没打开 GranoFlow。
+也可能某个项目停了几周。
+也可能之前写的任务已经过期。
 
-Do not try to catch up on everything.
+这时不要补账。
+不要试图把断掉的每一天都补回来。那只会增加压力，也会让你更难回来。
 
-Do not try to fill in every missing day. That only adds pressure.
+更好的方式，是做一次简短回顾：
 
-A better approach is a short review:
+> 这段时间发生了什么？
+> 哪些事情已经不重要了？
+> 哪些项目还值得继续？
+> 今天能重新开始的最小一步是什么？
 
-> What happened during this period?
-> What no longer matters?
-> Which projects are still worth continuing?
-> What is the smallest step I can restart with today?
+中断不是失败。
+真正重要的是：回来之后，你还能重新看见方向，并做出下一步行动。
 
-An interruption is not failure.
+回顾在这里的作用，不是让你“补交作业”，
+而是帮你温和地恢复行动感。
 
-What matters is that, after coming back, you can see the direction again and take the next action.
+## 回顾也帮助你放下
 
-## Review Can Help You Let Go
+回顾不只是帮助你继续。
+它也帮助你放下。
 
-Review does not only help you continue.
+有些任务不再需要做。
+有些项目不再值得推进。
+有些目标只是过去某个阶段的想法。
+有些计划听上去正确，但其实已经不适合现在的你。
 
-It also helps you let go.
+如果不回顾，它们会一直占用注意力。
 
-Some tasks no longer need to be done.
-Some projects are no longer worth moving forward.
-Some goals were only ideas from an earlier stage.
-Some plans sound correct, but do not fit your current life.
+你可以在回顾中写下：
 
-Without review, they keep taking attention.
+> 这个项目已经不适合当前方向，先归档。之前的尝试让我确认，我现在更需要专注另一个项目。
 
-You can write in review:
+这不是失败。
+这是把过去的投入，转化成判断。
 
-> This project no longer fits my current direction. Archive it for now. The earlier attempt helped me confirm that I need to focus on another project.
+很多时候，真正让人轻松下来的不是“终于全做完了”，
+而是“我终于看清楚，有些事可以不再继续了”。
 
-That is not failure.
+## 回顾如何帮助你校准价值观
 
-It turns past effort into judgment.
+价值观不是写完就结束。
+它需要在回顾中被验证。
 
-## Review and Values
+你可以对照自己的价值观，看最近的行动是否真的接近它。
 
-Values are not finished once written.
+例如，你写过：
 
-They need to be tested through review.
+> 我希望自己成为一个可靠、持续交付的人。
 
-You can compare recent actions with your values and ask whether those actions are really moving closer to them.
+回顾时可以问：
 
-For example, you wrote:
+> 最近我是否真的在交付？
+> 我有没有把很多时间花在准备、犹豫和反复修改上？
+> 下一步怎样更接近“可靠交付”？
 
-> I want to be reliable and keep delivering.
+再例如，你写过：
 
-During review, ask:
+> 我希望长期照顾身体，而不是一直透支自己。
 
-> Have I actually been delivering recently?
-> Have I spent too much time preparing, hesitating, and revising repeatedly?
-> What next step would move closer to "reliable delivery"?
+回顾时可以问：
 
-Another example:
+> 最近我是否给身体留下恢复空间？
+> 我是不是只在身体出问题后才注意它？
+> 明天能做一个什么小调整？
 
-> I want to care for my body over time instead of always overusing it.
+价值观提供方向，回顾检查方向是否还在现实中发生。
+所以，回顾不是附属动作，而是“价值 → 行动”这条路上的闭环。
 
-During review, ask:
+## 让 AI 帮你整理，但不要替你判断
 
-> Have I left room for recovery recently?
-> Do I only notice my body after something goes wrong?
-> What small adjustment can I make tomorrow?
+你可以把回顾内容导出或复制给外部 AI（人工智能），让它帮你整理本周做了什么、哪些项目推进了、哪些任务反复拖延。
 
-Values provide direction. Review checks whether that direction is still happening in real life.
+AI 适合做整理、归纳和提醒；最终判断仍然应该由你决定。因为只有你知道：哪些事情真的重要，哪些事情只是看起来合理。
 
-## Let AI Help Organize, but Not Decide for You
+## 一个简单的回顾模板
 
-You can export or copy review content to an external AI (artificial intelligence) and let it help organize:
-
-- what you did this week
-- which projects moved forward
-- which tasks were delayed repeatedly
-- which domains were ignored
-- how the next step could be arranged
-
-AI is good at organizing, summarizing, and reminding.
-
-But the final judgment should still be yours.
-
-Only you know which things truly matter and which things only look reasonable.
-
-GranoFlow can help you prepare the material, and AI can help you see patterns, but your life direction should not be handed over entirely to a tool.
-
-## A Simple Review Template
-
-If you do not know how to start, use this template:
+如果你不知道怎么开始，可以直接用下面这个模板：
 
 ```text
-What did I complete today?
+今天完成了什么？
 
-Which thing was closest to what I care about?
+哪件事最接近我重视的方向？
 
-What was difficult or off track today?
+今天有什么困难或偏离？
 
-What did I learn?
+我学到了什么？
 
-What is the next step?
+下一步是什么？
 ```
+
+## 下一步
+
+当你开始通过回顾沉淀经验之后，可以继续把这条闭环看得更完整：
+
+- [先确定长期方向](/en/value-to-action/long-term-direction/)：理解你在用哪些价值观为行动定向。
+- [项目与里程碑：把长期方向拆成阶段目标](/en/value-to-action/projects-and-milestones/)：检查回顾如何帮助项目继续推进。
+- [AI 辅助：整理你的记录，不替你做决定](/en/value-to-action/ai-assistance/)：理解 AI 在回顾中的合适角色。

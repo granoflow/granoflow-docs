@@ -1,75 +1,158 @@
 ---
-title: "ACT and The Happiness Trap: turning values into action"
-description: "GranoFlow draws on ACT (Acceptance and Commitment Therapy) — you do not need to eliminate anxiety first to move toward what you care about. This page explains how that thinking shows up in daily use."
+title: "ACT 与《幸福的陷阱》：把价值变成行动"
+description: "GranoFlow 借用了 ACT（接纳与承诺疗法）的核心实践：不必先消灭焦虑，也能朝重视的方向行动。这一章会把理论翻译成你今天就能执行的一步。"
 ---
 
-This page answers a practical question: when you feel anxious, scattered, or not ready, how can you still use GranoFlow to move on what matters? The answer is: accept the current state first, write things down, then turn what you care about into one small step you can take today.
+这章要解决一个很常见的问题：**我明知道有些事重要，但总在等“状态更好”再开始。**
 
-Many task tools can make it feel as if you need to fix your state before you start.
+等不焦虑了再推进项目，等想清楚了再做计划，等生活稳定了再调整方向。
+这就是《幸福的陷阱》反复指出的困境：我们把“先感觉好起来”当成行动前提，结果常常是越等越难开始。
 
-For example, stop feeling anxious before working. Figure everything out before planning. Stabilize your life before changing anything.
+在 GranoFlow 里，我们采用另一条路：**不必先把状态调整到完美，也可以先做一个与价值一致的小行动。**
 
-Real life usually does not work that way. The perfectly ready day may never arrive.
+## 这套方法从哪里来
 
-GranoFlow draws on **ACT (Acceptance and Commitment Therapy)**, made accessible to many readers by Russ Harris in *The Happiness Trap*: you do not have to eliminate anxiety and chaos before living a life that matters. You can act toward what you value while real-life imperfection is still there.
+GranoFlow 这一章借用的是 ACT（Acceptance and Commitment Therapy，接纳与承诺疗法）的实践思路。ACT 是行为科学取向的心理干预方法之一，核心不在于“消灭所有负面感受”，而在于：当困难感受出现时，仍然能朝自己重视的方向行动。
 
-## One loop: accept → values → action → review
+《幸福的陷阱》（The Happiness Trap）作者 Russ Harris 是澳大利亚医生、ACT 培训者与科普作者。这本书也长期被当作 ACT 的大众入门读物。
 
-```mermaid
-graph LR
-  A[Accept reality] --> B[See your values]
-  B --> C[Commit to action]
-  C --> D[Actually do it]
-  D --> E[Review and absorb]
-  E --> A
-```
+你不需要先读完整本书再使用 GranoFlow。本章只做一件事：把这套思路翻译成你今天就能做的步骤。
 
-The loop means: acknowledge reality first, notice what you care about, choose a concrete action, then use review to keep the experience.
+## Think in ACT：四步实践框架
 
-You do not need to complete the whole loop every day. Sometimes you only write one thing down. Sometimes you only do one review. That still counts.
+你可以把 ACT 在 GranoFlow 里的用法记成四步：
 
-## Accept: write it down before you figure it out
+> 接纳现实 → 看见价值观 → 承诺行动 → 回顾沉淀
 
-In GranoFlow, the first step is not getting yourself into a perfect state. It is writing down whatever is occupying your attention.
+你不需要每天完整走完这四步。它更像一个卡住时可返回的导航框架。
 
-Put it in the inbox. At this point, you do not need to explain why it belongs there, categorize it, rank it, or make a full plan.
+### 1) 接纳现实：先如实记录，而不是先自我修理
 
-![Inbox](../../../screenshots/en/tasks-inbox-main.png)
+**旧思路**：我现在很乱，先别写，等理清了再说。
+**ACT 思路**：我可以先承认“现在就是有点乱”，再开始记录。
+**GranoFlow 动作**：打开 `+`，先写进收集箱，不要求马上分类。
+**微例子**：`明天汇报还没准备，脑子很乱`（先记下，再处理）
 
-If the screenshot does not load, the idea is still simple: find the inbox and capture the thing that is taking up space in your head.
+接纳不是躺平，也不是放弃。
+接纳是把精力从“和情绪打架”转向“先做一个可执行动作”。
 
-Acceptance is not giving up. It means: I acknowledge that this is the situation right now, and I start from here.
+<!-- manual-screenshot:id=tasks-inbox-main -->
+![收集箱视图：先记录再整理](../../screenshots/zh-cn/tasks-inbox-main.png)
 
-## Values: who do you want to be
+如果截图没有加载，也不影响你实践：先把当前最占注意力的事情放进收集箱，哪怕只有一句话。
 
-Tasks answer “what do I need to do.” Values answer “who do I want to be.”
+### 2) 看见价值观：先问方向，不只问效率
 
-The same workout can mean different things. One person may care about appearance, another about health, another about having more strength for the long run. The action is the same, but the value behind it can be completely different.
+**旧思路**：我今天要把所有任务清空。
+**ACT 思路**：我先确认，什么方向值得我今天投入。
+**GranoFlow 动作**：用一句话写下“我希望自己如何行动”。
+**微例子**：`我希望自己在压力下仍然可靠交付，而不是反复逃避。`
 
-You do not need a beautiful life motto. The most useful values are often ordinary:
+价值观不是目标数字。
+“这周完成 10 项任务”是目标；
+“我希望成为可靠、清楚、能交付的人”是价值观。
 
-- I want to be a reliable person
-- I want to keep going when things are hard
-- I want to create something, not just consume life
+目标会完成，价值会长期反复指引选择。
 
-## Commit to action: turn direction into one step for today
+### 3) 承诺行动：把方向压缩成今天的一小步
 
-Writing down values is not enough. A value needs to land in projects, milestones, and tasks.
+**旧思路**：我知道这件事重要，但太大了，不知从哪开始。
+**ACT 思路**：先做最小可执行步骤，不等完美计划。
+**GranoFlow 动作**：把事项拆成 10–20 分钟可启动任务。
+**微例子**：把“完成版本发布”先拆成 `整理发布阻塞问题前 3 条`
 
-For example, if you value “being reliable,” you might turn it into a project: “Complete the current product version.” That project can become milestones: “finish core features → test → release.” Each milestone can then become specific tasks you can move today.
+承诺行动不等于“从此不许中断”。
+它的意思是：即使我状态一般，也愿意做一个朝价值观方向前进的具体动作。
 
-Committing to action does not mean “I can never stop again.” It means: even if I am not at my best, I am willing to take one concrete step toward what I care about.
+一个实用判断标准是：
+**如果这个任务今天无法开始，说明它还不够小。**
 
-## Interruptions are not failure
+### 4) 回顾沉淀：把“做过”变成“学到”
 
-Life interrupts. Illness, job changes, and low energy can all pause a plan.
+**旧思路**：打勾完成就结束了。
+**ACT 思路**：行动之后问一句“这次经验说明了什么”。
+**GranoFlow 动作**：在回顾里写 2-3 句：完成了什么、卡在哪里、下一步是什么。
+**微例子**：`今天完成了核心问题梳理，但估时偏乐观。明天先做登录流程验证。`
 
-What matters is not “I never stopped.” What matters is “I can come back after stopping.”
+回顾不是自我批评，而是把现实反馈带回下一轮行动。
 
-When you come back, you do not need to compensate for the past or blame yourself. Just ask two questions again: what project still matters now? What is the smallest step I can take today?
+## 一个 5 分钟实践脚本（现在就能做）
 
-## GranoFlow's position
+如果你现在正卡住，可以直接照做这 5 分钟：
 
-GranoFlow is not a therapy tool and cannot replace professional help. It only borrows the parts of ACT that fit daily life: accepting reality, seeing values, committing to action, and using review to keep what happened.
+### 第 1 分钟：写现实
 
-The goal is not to make you a permanently high-performing person. It is to help you keep moving toward what you actually care about, in real life.
+写下你正在回避或拖延的事，不修饰、不解释。
+
+例：
+`我一直在拖版本说明，因为担心写不好。`
+
+### 第 2 分钟：写价值观方向
+
+写一句“我希望自己如何行动”。
+
+例：
+`我希望自己在不确定时，仍然保持清楚和交付。`
+
+### 第 3-4 分钟：定义最小动作
+
+把事情拆成一个 10–20 分钟任务，必须可立即开始。
+
+例：
+`先写版本说明的“变更摘要”草稿，不求完整。`
+
+### 第 5 分钟：设置开始条件
+
+明确“什么时候、在哪、做到哪一步算完成”。
+
+例：
+`现在就开始；在桌面文档里写 120 字摘要；写完即完成。`
+
+这 5 分钟的目标不是“彻底解决问题”，
+而是从“心理拉扯”切回“可执行行动”。
+
+## 常见误用与纠偏
+
+### 误用 1：把接纳当成躺平
+
+- 误用说法：我很焦虑，所以今天什么都不做。
+- 纠偏：我承认焦虑在场，但先做 15 分钟最小任务。
+
+### 误用 2：把价值观写成 KPI
+
+- 误用说法：我的价值观是“本月完成 30 个任务”。
+- 纠偏：价值观写“我想成为怎样的人”；任务数量只是执行指标。
+
+### 误用 3：把承诺行动变成意志力冲刺
+
+- 误用说法：今天必须一次干完，不然就是失败。
+- 纠偏：承诺的是“持续回到方向”，不是“单次爆发”。
+
+### 误用 4：把中断视为全盘归零
+
+- 误用说法：断了几天，前面都白做了。
+- 纠偏：中断是现实的一部分，重启能力比连续天数更重要。
+
+## 中断后怎么重启
+
+当你几天没打开 GranoFlow，或者项目停住时，不要补账。先做一次短回顾，再写下“今天能重新开始的最小任务”，并立即开始 10 分钟。
+
+你不需要先恢复“最佳状态”再回来。回来本身，就是恢复方向感的开始。
+
+## GranoFlow 的立场
+
+GranoFlow 不是心理治疗工具，也不能替代专业帮助。
+我们借用 ACT 的日常实践价值在于：**当现实不完美时，仍然帮助你把价值变成行动。**
+
+这也是本章最想传达的一句话：
+
+> 你不需要先感觉更好，才能开始更重要的事。
+> 你可以先做一步，再在行动中慢慢变清楚。
+
+## 下一步
+
+如果你想把这套思路落得更实：
+
+- [任务与收集箱：把下一步写下来](/en/value-to-action/tasks-and-inbox/)
+- [回顾：让经历真正沉淀](/en/value-to-action/review-reflection/)
+- [从领域到任务](/en/value-to-action/from-domain-to-task/)

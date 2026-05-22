@@ -1,96 +1,123 @@
 ---
 title: "Habit Practice Loop: Start from One Minimal Action"
 description: "Run one Atomic Habits-aligned minimal loop in GranoFlow:
-design cue, lower friction, complete action, record feedback,
-and preserve restart entry."
+make cues obvious,
+increase attractiveness,
+lower friction,
+reinforce satisfaction,
+and iterate with daily 1% adjustments."
 ---
 
-If you keep bouncing between “I should do this”
-and “I cannot sustain it,”
-this page solves one thing:
+This page does one thing:
+**help you finish one minimal habit loop today.**
 
-> Turn one habit into one action you can start today.
+You do not need ideal motivation.
+Start with a low-pressure loop
+and let momentum come from completion.
 
-Core rule: start small, then stabilize; start doable, then sustain.
+## Loop overview (5 steps)
 
-## Step 1: Define a fail-safe minimum action
+1. Pick a fail-safe minimal action.
+2. Make it obvious.
+3. Make it attractive and easy.
+4. Make completion satisfying.
+5. Do a 60-second review for the next 1% adjustment.
 
-Do not start from the ideal version. Start from a low-friction action.
+## Step 1: Define a fail-safe minimal action
+
+Single standard:
+**you can start it today without negotiation**.
 
 Examples:
 
-- Not: exercise 1 hour every day
-- Start with: stretch 5 minutes after dinner
+- Not: run 5 km every day
+- Start with: walk 10 minutes after dinner
 
-- Not: write 2,000 words every day
+- Not: write 2,000 words daily
 - Start with: open doc and write 100 words
 
-- Not: organize all tasks every day
-- Start with: clean 1 inbox task daily
+- Not: organize all tasks daily
+- Start with: process 1 inbox task
 
-If it cannot start today, it is still too big.
+If you still hesitate to start,
+the action is still too large.
 
-## Step 2: Make the action obvious
+## Step 2: Make it obvious
 
-In Atomic Habits, cues and environment matter.
+Convert intention into visible execution conditions.
 
-In GranoFlow, you can:
+In GranoFlow:
 
-- write the habit action as a concrete task in today view
-- attach a clear trigger condition (for example “after dinner”)
-- group similar habit actions via project/tag to reduce search cost
-
-First make it visible, then discuss persistence.
+- Write concrete action names, not slogans.
+- Add explicit trigger conditions,
+  such as “after dinner.”
+- Place the action in today view
+  to reduce search friction.
 
 <!-- manual-screenshot:id=interface-quick-add-main -->
 ![Write a startable habit action in quick add](../../../screenshots/en/interface-quick-add-main.png)
 
-## Step 3: Make the action easy
+## Step 3: Make it attractive and easy
 
-Habit failure often means high start threshold, not low importance.
+### Make it attractive
 
-Compress actions into 10–20 minute units and prioritize startability.
+- Pair it with an existing positive routine
+  (for example, after making tea).
+- Start from the most willing minimal version,
+  not the ideal version.
 
-Examples:
+### Make it easy
 
-- walk 10 minutes first, not 5 km run immediately
-- write one paragraph first, not a full chapter in one go
+- Keep the first version within 10–20 minutes.
+- Prioritize startability over volume.
+- Complete minimum first, then optionally add more.
 
-Easy does not mean low value. It buys continuity.
+Continuity matters more than intensity.
 
-## Step 4: Make the action satisfying
+## Step 4: Make it satisfying
 
-Each completion needs visible feedback.
+After each completion,
+do two actions immediately:
 
-In GranoFlow, the minimum feedback is:
+1. Mark the task completed.
+2. Write one review line:
+   what happened today, what is next.
 
-1. mark task completed
-2. write one review line: what happened, what next
+Visible completion evidence reinforces repeat behavior.
 
-This converts “I broke again” into “I moved forward today.”
+## Step 5: 60-second review for 1% improvement
 
-## Step 5: Use minimal return method after interruption
+Before ending the day, answer:
 
-Interruption is normal, not failure.
+- Which step had the highest friction?
+- Which part should be smaller tomorrow?
+- Should trigger be more specific
+  (time/place/preceding action)?
 
-After interruption, do not repay backlog. Do three steps:
+Adjust one parameter only.
+Small adjustments sustain better.
 
-1. one reality line: where I stopped
-2. one minimal action: what I do today
-3. one review line: what next after this
+## Minimal return method after interruption
 
-You restore continuity, not perfection.
+After interruption,
+do not repay backlog.
+Restart the loop:
 
-## 30-Second Habit Readiness Check
+1. One reality line: where I stopped.
+2. One smaller action: what I do today.
+3. One review line: where I resume tomorrow.
 
-Before starting, check:
+Goal: recover rhythm, not perfect streaks.
 
-- Is the action small enough to start today?
-- Is trigger condition clear?
-- Is completion feedback visible?
-- Is return step clear after interruption?
+## 30-second start checklist
 
-If 2+ answers are “no,” shrink the action or clarify trigger.
+- [ ] I know the trigger (obvious).
+- [ ] I feel willing to start (attractive).
+- [ ] I can finish minimum today (easy).
+- [ ] I have clear completion feedback (satisfying).
+
+If any two fail,
+shrink action before starting.
 
 ## Next
 

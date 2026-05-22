@@ -1,73 +1,104 @@
 ---
 title: "From Habit to Project: Put Consistent Effort into a Container"
-description: "When a habit is no longer a one-off attempt, use projects and milestones to make it manageable, reviewable, and continuously improvable."
+description: "When habits become multi-stage work,
+apply Atomic Habits at project level:
+set milestones,
+review weekly,
+and keep progress sustainable through 1% adjustments."
 ---
 
-Micro habits help you start. For long-term progress, you usually need a container.
+Micro habits are excellent for starting.
+Long-horizon progress usually needs
+a stronger container:
+**project structure**.
 
-This page answers one question:
+This page answers one key question:
+**when should a habit be upgraded into a project?**
 
-> When should habit actions be upgraded into projects?
+## Upgrade signals: when project mode is needed
 
-## When to upgrade from single task to project
+Move to project mode if any signal appears:
 
-Upgrade when any condition appears:
-
-- the habit needs several weeks of continuity
-- the behavior now has multiple action steps
-- after interruption you often forget where to resume
-- you need stage goals to keep challenge suitable
+- the habit needs 4+ weeks of continuity,
+- behavior now includes multiple action steps,
+- interruption often causes resume confusion,
+- stage goals are needed to keep challenge appropriate.
 
 Example:
 
-- Single task: stretch 5 minutes after dinner
-- Project upgrade: build a 3-month foundational exercise rhythm
+- Single habit action: stretch 5 minutes after dinner
+- Project mode: build a 12-week foundational fitness rhythm
 
-## Use milestones to stage the habit
+## Project mode is not extra pressure
 
-Project structure is not for complexity; it is for “right-sized challenge.”
+Its purpose is reducing noise and decision fatigue:
 
-Example staging:
+- today’s action is clearer,
+- current progress is clearer,
+- next adjustment is clearer.
 
-- Milestone 1: week-one adaptation (build attendance)
-- Milestone 2: month-one stability (reduce breaks)
-- Milestone 3: month-three review (decide upgrade)
+This is still systems over willpower:
+success is carried by structure,
+not mood.
 
-Now daily work is “one step in this stage,” not “the whole life goal.”
+## Milestones for sustainable challenge
+
+Use “stage goal + minimal action”:
+
+- Milestone 1 (Weeks 1–2): establish attendance, avoid breaks.
+- Milestone 2 (Weeks 3–6): stabilize frequency, reduce interruption.
+- Milestone 3 (Weeks 7–12): small upgrades based on actual state.
+
+For each milestone, keep Four Laws checks:
+
+- obvious: is trigger clear?
+- attractive: do I still want to start?
+- easy: is action still finishable?
+- satisfying: is feedback still motivating?
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
 ![Use project and milestones for sustained habit effort](../../../screenshots/en/projects-milestones-detail.png)
 
-## Use review for continuous improvement
+## Weekly review to institutionalize 1% improvement
 
-Atomic Habits emphasizes continuous improvement over one-shot overhaul.
+Run one 10-minute weekly review:
 
-In GranoFlow review, focus on three points:
+1. Keep: which step is most stable?
+2. Shrink: which step has the highest friction?
+3. Upgrade: which step can handle a small challenge increase?
 
-1. Which action is easiest to sustain (keep)
-2. Which action has too much friction (shrink)
-3. Should challenge be upgraded next (adjust)
+Change only 1–2 parameters each week
+(time, size, trigger).
 
-That is the practical meaning of “1% daily”: no dramatic burst, steady micro-adjustment.
+## Minimal configuration for a habit project
 
-## Common pitfalls
+In GranoFlow, include at least:
 
-- Pitfall 1: project as slogan (“completely transform myself”)
-  - Fix: rewrite as stage-verifiable target.
-- Pitfall 2: milestones too big, creating anxiety
-  - Fix: shrink to this-week executable units.
-- Pitfall 3: after interruption, trying to repay everything
-  - Fix: restore minimal action first, then rebuild rhythm.
+- one project container (theme + period),
+- 2–3 milestones,
+- daily minimal action template,
+- weekly review entry.
 
-## Relation to Chapter 2 and Chapter 3
+This preserves easy execution
+while maintaining long-term direction.
 
-This page does not repeat full value/flow theory. It keeps Chapter 4 responsibility:
+## Common pitfalls and corrections
 
-- Chapter 2: values-to-action overall path
-- Chapter 3: flow conditions and stable engagement
-- Chapter 4: systematizing habits into long-term sustainable practice
+- Pitfall: project title as a slogan.
+  - Fix: rewrite into measurable stage goals and period.
+- Pitfall: oversized milestones causing repeated failure.
+  - Fix: split into weekly executable stages.
+- Pitfall: trying to catch up all at once after interruption.
+  - Fix: resume minimal action first,
+    rebuild frequency second.
+
+## Chapter connection
+
+- Chapter 2: values to action.
+- Chapter 3: conditions for stable engagement.
+- Chapter 4: systematize habits into sustainable practice.
 
 ## Next
 
-- [Habits and Continuous Improvement: Chapter Overview](/en/habit-formation-tiny-habits/overview/)
+- [Habits and Continuous Improvement: Chapter 4 Overview](/en/habit-formation-tiny-habits/overview/)
 - [Return to Habit Practice Loop for the next micro-adjustment](/en/habit-formation-tiny-habits/practice-loop/)

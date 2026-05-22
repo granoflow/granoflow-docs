@@ -37,7 +37,7 @@ GranoFlow 这一章借用的是 ACT（Acceptance and Commitment Therapy，接纳
 接纳是把精力从“和情绪打架”转向“先做一个可执行动作”。
 
 <!-- manual-screenshot:id=tasks-inbox-main -->
-![收集箱视图：先记录再整理](../../screenshots/zh-cn/tasks-inbox-main.png)
+![Inbox view: capture first, organize later](../../../screenshots/en/tasks-inbox-main.png)
 
 如果截图没有加载，也不影响你实践：先把当前最占注意力的事情放进收集箱，哪怕只有一句话。
 

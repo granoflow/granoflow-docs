@@ -51,7 +51,7 @@ description: "理解如何用專案和裡程碑承接长期方向，把长期目
 如果這个问题完全答不上来，這件事往往還不是一个可推进的專案。
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![專案详情中的裡程碑和任務階段](../../screenshots/zh-cn/projects-milestones-detail.png)
+![專案詳情中的里程碑和任務階段](../../../screenshots/zh-tw/projects-milestones-detail.png)
 
 如果截图没有加载，也不影响理解。你可以把專案页想成一个“持续投入的容器”：上面是這段時间要推进的目標，中间是当前階段，下面是今天能做的具体任務。它的作用不是讓你管理更多东西，而是讓你不必每天都面对一个巨大而模糊的目標。
 

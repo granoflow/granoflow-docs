@@ -1,71 +1,100 @@
 ---
-title: "Habits and Continuous Improvement: Chapter Overview"
-description: "Chapter 4 uses Atomic Habits as the method entry
-and turns habit building into executable system design in GranoFlow:
-design cues, lower friction, and improve through small feedback loops."
+title: "Habits and Continuous Improvement: Chapter 4 Overview"
+description: "Use the Atomic Habits framework in Chapter 4:
+replace willpower-first thinking with systems,
+improve by 1% continuously,
+and apply the Four Laws in GranoFlow with clear boundaries."
 ---
 
-If you keep only one line:
-**habits are not sustained by raw willpower;
-they are grown by systems.**
+If you remember one line first, remember this:
+**build the system before demanding discipline.**
 
-This chapter translates Atomic Habits into daily GranoFlow practice:
+Chapter 4 translates Atomic Habits into low-pressure,
+executable practice in GranoFlow.
+The focus is not forcing yourself harder,
+but making the right action easier to happen.
 
-- turn “I should keep this habit” into a startable action today
-- lower restart cost after interruption
-- use small feedback for continuous improvement
+## Role and boundary of this page
 
-## What this chapter solves
+This overview has only two jobs:
 
-You may have seen this pattern:
+1. Give you one complete method map.
+2. Define what Chapter 4 does and does not cover.
 
-- You know a habit matters, but keep waiting for a better state.
-- You start hard, then break after a few days.
-- After breaking, it feels difficult to return.
+Chapter 4 does not promise dramatic life transformation in a week.
+It focuses on:
 
-This chapter does not teach instant perfection. It teaches:
+- systems over willpower,
+- 1% continuous improvement,
+- clear loops for interruption, return, and upgrade.
 
-> How to improve by 1% daily and still continue after interruption.
+## Chapter structure (three page roles)
 
-## Reading map (page roles)
+| Page | Role | What you get |
+| --- | --- | --- |
+| overview (this page) | Method overview | Shared method language |
+| practice-loop | Minimal practice loop | One loop you can run today |
+| from-habit-to-project | Upgrade path | Move habit into project mode |
 
-Chapter 4 has three pages, each with one main job:
+If you want immediate action,
+continue with practice-loop next.
 
-| Page | Main job |
-| --- | --- |
-| This page (Overview) | Why this method works and how to read the chapter |
-| Habit Practice Loop | How to run one low-friction habit loop today |
-| From Habit to Project | When to upgrade actions into projects |
+## Four Atomic Habits landing points in Chapter 4
 
-If you want to start immediately, go to Habit Practice Loop first.
+### 1) Systems over willpower
 
-## Applied scope of Atomic Habits in this chapter
+Instead of asking “am I disciplined enough?”, ask:
 
-This chapter applies practical method language, not academic theory survey.
+- Is the cue visible enough?
+- Is the action small enough?
+- Is completion feedback immediate enough?
 
-Core axis:
+In GranoFlow, tasks, tags, projects, and review
+make these conditions concrete.
 
-1. Systems over willpower
-2. Small consistent gains over short bursts
-3. Make good habits obvious, attractive, easy, and satisfying
+### 2) 1% continuous improvement
 
-It does not promise guaranteed success.
+You do not need a full redesign every day.
+For each loop, ask:
 
-It emphasizes:
+1. Which step is too hard and should be smaller?
+2. Which cue is unstable and should be redesigned?
+3. Which feedback is weak and should be more visible?
 
-- You do not need to become highly disciplined before starting.
-- You can first redesign cues/environment and action size, then stabilize behavior.
+Long-term change comes from accumulated micro-adjustments.
 
-## How this maps to GranoFlow
+### 3) Four Laws in practice
 
-Typical path in GranoFlow:
+Chapter 4 repeatedly applies the Four Laws:
 
-> Value direction → Habit action task → Project container (when needed)
-> → Review feedback → Next micro-adjustment
+- **Make it obvious**: clear trigger and visible entry.
+- **Make it attractive**: lower psychological startup cost.
+- **Make it easy**: shrink action to executable size.
+- **Make it satisfying**: leave immediate completion evidence.
 
-So you are not only “tracking habits.”
-You are connecting habits with long-term direction
-through tasks, projects, and review.
+### 4) Identity grows through repetition
+
+You do not need to prove identity first.
+Repeating small aligned actions gradually builds identity.
+
+## Recommended execution path in GranoFlow
+
+> Direction (why) → Minimal action (what) → Trigger (when)
+> → Feedback (done signal) → Weekly micro-adjustment (next 1%)
+
+When the habit spans weeks and stages,
+upgrade it into a project container.
+
+## Common misunderstandings (what this chapter does not do)
+
+- Misunderstanding: habit = more check-ins.
+  - Correction: this chapter prioritizes loop quality,
+    not check-in volume.
+- Misunderstanding: interruption = failure.
+  - Correction: interruption is system feedback;
+    adjust cue or action size.
+- Misunderstanding: push with willpower first, optimize later.
+  - Correction: optimize system first to reduce future friction.
 
 ## Next
 

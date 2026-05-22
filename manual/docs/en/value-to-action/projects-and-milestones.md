@@ -51,7 +51,7 @@ description: "理解如何用项目和里程碑承接长期方向，把长期目
 如果这个问题完全答不上来，这件事往往还不是一个可推进的项目。
 
 <!-- manual-screenshot:id=projects-milestones-detail -->
-![项目详情中的里程碑和任务阶段](../../screenshots/zh-cn/projects-milestones-detail.png)
+![Milestones and task phases in project detail](../../../screenshots/en/projects-milestones-detail.png)
 
 如果截图没有加载，也不影响理解。你可以把项目页想成一个“持续投入的容器”：上面是这段时间要推进的目标，中间是当前阶段，下面是今天能做的具体任务。它的作用不是让你管理更多东西，而是让你不必每天都面对一个巨大而模糊的目标。
 

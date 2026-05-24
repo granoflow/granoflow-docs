@@ -60,7 +60,9 @@ translationReview:
 
 業務對象命令包括 `task`、`project`、`milestone`、`tag`、`domain-value` 和 `review`。這些命令需要運行中的桌面 App 承接；App 不可達時會返回 `app_not_reachable`，不會繞過 App 直接讀取或寫入本機數據庫。
 
-CLI 的 `backup create` 和 `backup restore` 也需要運行中的桌面 App 承接。備份恢復前應先使用 `--preview` 查看摘要，只有明確 `--confirm` 後才會匯入。完整命令見 [命令行工具](/manual/zh-hk/desktop/command-line-tool/)。
+CLI 的 `backup create` 和 `backup restore` 也需要運行中的桌面 App 承接。備份恢復前應先使用 `--preview` 查看摘要，只有明確 `--confirm` 後才會匯入。
+
+完整導覽見 [命令行工具](/manual/zh-hk/desktop/command-line-tool/)。如果你要完整命令矩陣，直接閱讀 [CLI 命令與參數參考](/manual/zh-hk/desktop/cli-command-reference/)；如果你要確認 token 或本機訪問邊界，閱讀 [CLI 安全設定與密鑰邊界](/manual/zh-hk/desktop/cli-security-and-settings/)。
 
 ## 數據與恢復
 

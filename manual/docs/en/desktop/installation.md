@@ -38,3 +38,5 @@ After installation, open GranoFlow and sign in with your account. If this accoun
 :::note[Desktop and mobile share the same account]
 When you sign in to the same account on desktop and mobile, your data is shared between devices through cloud sync.
 :::
+
+If you want to call GranoFlow from Terminal, continue with [Command line tool](/manual/en/desktop/command-line-tool/).

@@ -60,7 +60,9 @@ To adjust app display preferences from the terminal, use `granoflow display lang
 
 Business object commands include `task`, `project`, `milestone`, `tag`, `domain-value`, and `review`. These commands require the running desktop app to receive the request. If the app cannot be reached, the command returns `app_not_reachable` and does not bypass the app to read or write the local database directly.
 
-The CLI `backup create` and `backup restore` commands also require the running desktop app. Preview a backup restore with `--preview` before importing anything with `--confirm`. See [Command line tool](/manual/en/desktop/command-line-tool/) for full examples.
+The CLI `backup create` and `backup restore` commands also require the running desktop app. Preview a backup restore with `--preview` before importing anything with `--confirm`.
+
+See [Command line tool](/manual/en/desktop/command-line-tool/) for the full map. For complete command matrix, open [CLI command reference](/manual/en/desktop/cli-command-reference/). For token/local access boundaries, open [CLI security and key boundaries](/manual/en/desktop/cli-security-and-settings/).
 
 ## Data and Recovery
 

@@ -21,7 +21,7 @@ translationReview:
 
 ## 安裝與首次檢查
 
-在 macOS 上，先在 App「命令列工具」設定頁點「安裝命令列工具」或「修復命令列工具」；系統會跳出管理員授權框，輸入登入密碼後才會建立 `/usr/local/bin/granoflow` 符號連結。其他平台在同一設定頁完成安裝或修復後，執行：
+在 macOS 上，先在 App「命令列工具」設定頁點「安裝命令列工具」或「修復命令列工具」；系統會跳出管理員授權框（Helper 顯示名為「Granoflow 命令行工具」），輸入登入密碼後才會建立 `/usr/local/bin/granoflow` 符號連結。其他平台在同一設定頁完成安裝或修復後，執行：
 
 ```bash
 granoflow help

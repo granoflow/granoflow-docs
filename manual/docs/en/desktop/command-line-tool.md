@@ -23,7 +23,7 @@ translationReview:
 
 ## Install and first checks
 
-On macOS, open the app's Command Line Tool settings page and tap **Install Command Line Tool** or **Repair Command Line Tool**. macOS shows an administrator authorization dialog; enter your login password to create the `/usr/local/bin/granoflow` symlink. On other platforms, install or repair from the same settings page, then run:
+On macOS, open the app's Command Line Tool settings page and tap **Install Command Line Tool** or **Repair Command Line Tool**. macOS shows an administrator authorization dialog (helper display name: **Granoflow Command Line Tool**); enter your login password to create the `/usr/local/bin/granoflow` symlink. On other platforms, install or repair from the same settings page, then run:
 
 ```bash
 granoflow help

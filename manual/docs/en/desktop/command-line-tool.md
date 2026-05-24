@@ -8,6 +8,8 @@ translationReview:
   - plan-eng-review
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 `granoflow` is the end-user desktop CLI. Treat it as a **local command-line entry point**, not a development/build tool and not a cloud operations interface.
 
 ## Start with this map
@@ -21,7 +23,7 @@ translationReview:
 
 ## Install and first checks
 
-Install or repair `granoflow` from the app's Command Line Tool settings page, then run:
+On macOS, open the app's Command Line Tool settings page and tap **Install Command Line Tool** or **Repair Command Line Tool**. macOS shows an administrator authorization dialog; enter your login password to create the `/usr/local/bin/granoflow` symlink. On other platforms, install or repair from the same settings page, then run:
 
 ```bash
 granoflow help

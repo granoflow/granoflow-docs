@@ -7,6 +7,8 @@ translationReview:
   - product-frontend-design
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 If you are not sure what a setting affects, first check its group: Appearance and Current Device usually only affect display and reminders on this device; Account, Sync, Data, Subscription, and AI entries take you to pages for more specific settings or explanations.
 
 Settings pages:

@@ -3,6 +3,8 @@ title: "CLI 如何连接到 App"
 description: "理解 native CLI 与运行中 App command channel 的边界，以及 loopback bridge 与端口规则。"
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 ## Think in boundaries：先分清两层
 
 - **Native CLI 可直接执行**：`help`、`version`、`lang`、`bridge`、`clean`、`backup-package`

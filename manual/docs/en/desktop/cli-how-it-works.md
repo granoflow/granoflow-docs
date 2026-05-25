@@ -7,6 +7,8 @@ translationReview:
   - plan-eng-review
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 ## Think in boundaries
 
 - **Native CLI commands**: `help`, `version`, `lang`, `bridge`, `clean`, `backup-package`

@@ -3,6 +3,8 @@ title: "系统托盘与窗口"
 description: "关闭窗口不等于退出应用——了解桌面端的托盘行为，避免误以为 GranoFlow 已经关闭。"
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 如果你关掉了 GranoFlow 的桌面窗口，但它好像还在运行，这通常是正常的：**关闭窗口只是隐藏窗口，不等于退出应用**。要完全关闭 GranoFlow，需要从 Dock、菜单栏或系统托盘里选择退出。
 
 ![系统托盘与窗口](../../screenshots/zh-cn/desktop-tray-window-behavior.png)

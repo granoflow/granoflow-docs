@@ -7,6 +7,8 @@ translationReview:
   - plan-eng-review
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 ## Think in boundaries：先分清兩層
 
 - **Native CLI 可直接執行**：`help`、`version`、`lang`、`bridge`、`clean`、`backup-package`

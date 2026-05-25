@@ -3,6 +3,8 @@ title: "系統工作列與視窗"
 description: "關閉視窗不等於結束應用程式——了解桌面端的工作列行為，避免誤以為 GranoFlow 已經關閉。"
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 如果你關掉 GranoFlow 桌面視窗，但應用程式好像還在執行，這通常是正常的：**關閉視窗只是隱藏視窗，不等於結束應用程式**。如果要完全關閉 GranoFlow，需要從 Dock、選單列或系統匣選擇結束。
 
 ![系統工作列與視窗](../../../screenshots/zh-tw/desktop-tray-window-behavior.png)

@@ -7,6 +7,8 @@ translationReview:
   - product-frontend-design
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 如果你不確定某個設定會影響哪裡，先看它屬於哪個分組：外觀和目前裝置通常只影響這台裝置的顯示和提醒；帳號、同步、資料、訂閱和 AI 入口會帶你進入對應頁面，處理更具體的設定或說明。
 
 設定相關頁面：

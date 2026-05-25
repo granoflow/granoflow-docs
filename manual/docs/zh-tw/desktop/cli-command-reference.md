@@ -7,6 +7,8 @@ translationReview:
   - plan-eng-review
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 ## 快速分類
 
 ### 不需要執行中 App

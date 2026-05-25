@@ -7,6 +7,8 @@ translationReview:
   - plan-eng-review
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 ## Think in permissions
 
 Protected app command channel commands follow a fixed gate order:

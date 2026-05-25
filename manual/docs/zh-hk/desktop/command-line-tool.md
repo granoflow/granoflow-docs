@@ -21,7 +21,7 @@ translationReview:
 
 ## 安裝與首次檢查
 
-喺 macOS 上，先喺 App「命令行工具」設定頁撳「安裝命令行工具」或「修復命令行工具」；系統會彈出管理員授權框（Helper 顯示名為「Granoflow 命令行工具」），輸入登入密碼後先會建立 `/usr/local/bin/granoflow` 符號連結。其他平台喺同一設定頁完成安裝或修復後，執行：
+喺 macOS 上，先將 GranoFlow 拖入「應用程式」，再喺 App「命令行工具」設定頁撳「安裝命令行工具」或「修復命令行工具」。首次安裝嗰陣，macOS 可能會要求你喺「系統設定 → 一般 → 登入項目」入面允許「Granoflow 背景項目」；批准之後再撳一次安裝，App 就會建立 `/usr/local/bin/granoflow` 符號連結，之後嘅修復或重裝通常唔使再批准。需要 macOS 13 或之後嘅版本。其他平台喺同一設定頁完成安裝或修復後，執行：
 
 ```bash
 granoflow help

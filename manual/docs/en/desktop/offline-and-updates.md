@@ -3,6 +3,8 @@ title: "Offline use and updates"
 description: "GranoFlow desktop works without internet — understand the boundaries of offline mode and how updates affect your data."
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 When you have no internet connection, you can still use GranoFlow desktop to view and edit content already available on this computer. After the connection comes back, changes made offline are synced to the cloud. Version updates usually update the app itself and do not delete your local data or account settings.
 
 ## What you can do offline

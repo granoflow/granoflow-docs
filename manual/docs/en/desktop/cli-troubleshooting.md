@@ -7,6 +7,8 @@ translationReview:
   - plan-eng-review
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 ## `command not found: granoflow`
 
 Go to the app Command Line Tool settings page and install or repair CLI, then reopen terminal.

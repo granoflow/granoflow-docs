@@ -3,6 +3,8 @@ title: "系統托盤與視窗"
 description: "關閉視窗唔等於退出應用——了解桌面端的托盤行為，避免誤以為 GranoFlow 已經關閉。"
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 如果你關咗 GranoFlow 桌面視窗，但應用好似仲運行緊，通常係正常情況：**關閉視窗只係隱藏視窗，唔等於退出應用**。如果要完全關閉 GranoFlow，需要喺 Dock、選單列或者系統托盤選擇退出。
 
 ![系統托盤與視窗](../../../screenshots/zh-hk/desktop-tray-window-behavior.png)

@@ -3,6 +3,8 @@ title: "Desktop installation"
 description: "Download and install the GranoFlow desktop app, and what to do if your system blocks it on first launch."
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 To use GranoFlow on your computer, download the installer from the GranoFlow website, install it, then sign in with the same account. The desktop app stays on your computer and can be opened with a shortcut, so you do not need to open a browser every time.
 
 ## Download and install

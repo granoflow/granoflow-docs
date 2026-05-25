@@ -3,6 +3,8 @@ title: "System tray and window"
 description: "Closing the window does not quit the app — understand how the desktop tray works to avoid confusion."
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 If you closed the GranoFlow desktop window but the app still seems to be running, that is usually normal: **closing the window hides it; it does not quit the app**. To fully close GranoFlow, choose Quit or Exit from the Dock, menu bar, or system tray.
 
 ![System tray and window behavior](../../../screenshots/en/desktop-tray-window-behavior.png)

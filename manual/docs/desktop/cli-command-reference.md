@@ -3,6 +3,8 @@ title: "CLI 命令与参数参考"
 description: "查看 granoflow CLI 的公开稳定命令、参数与 App 依赖分类。"
 ---
 
+<!-- markdownlint-disable MD013 -->
+
 ## 快速分类
 
 ### 不需要运行中 App

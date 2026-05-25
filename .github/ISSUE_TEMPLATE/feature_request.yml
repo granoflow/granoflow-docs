@@ -10,6 +10,14 @@ body:
       value: |
         Please search existing issues before submitting.
         提交前請先搜尋現有 issues，避免重複建議。
+  - type: input
+    id: user_nickname
+    attributes:
+      label: User nickname / 使用者暱稱
+      description: Please do not change this nickname before the reward is issued. / 收到獎勵發放前請勿改名。
+      placeholder: Your public nickname / 你的公開暱稱
+    validations:
+      required: true
   - type: dropdown
     id: platform
     attributes:

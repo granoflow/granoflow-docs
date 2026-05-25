@@ -17,6 +17,14 @@ body:
 
         We review the reward based on a real public post, a specific Granoflow point mentioned in that post, and your genuine current commitment to keep using Granoflow for more than one year.
         我們會根據真實公開貼文、貼文中提到的一個具體 Granoflow 亮點，以及你目前真實想持續使用 Granoflow 超過一年的承諾來審核獎勵。
+  - type: input
+    id: user_nickname
+    attributes:
+      label: User nickname / 使用者暱稱
+      description: Please do not change this nickname before the reward is issued. / 收到獎勵發放前請勿改名。
+      placeholder: Your public nickname / 你的公開暱稱
+    validations:
+      required: true
   - type: markdown
     attributes:
       value: |

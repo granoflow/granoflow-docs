@@ -65,7 +65,7 @@ No. Local data stays on your device. Some subscription features may pause, but y
 First check that the GranoFlow account you are signed in to now is the same account used for the purchase. Benefits are tied to the account, not to a specific device.
 
 **If I subscribe on iOS, can I use it on Android?**
-Not directly. iOS, Android, and macOS are separate payment platforms, and purchases are independent. After signing in to the same GranoFlow account, you can share the matching benefits across multiple devices on the same platform.
+Not directly. Current store purchases are independent: an iOS purchase must be restored on iOS, and an Android purchase must be restored on Android. The macOS DMG build is not currently a store purchase platform. After signing in to the same GranoFlow account, you can share the matching benefits across multiple devices on the same store platform.
 
 **How do I restore a purchase?**
 Go to the subscription page in Settings and choose Restore purchases. Before restoring, make sure the signed-in account is the same account used for the purchase.

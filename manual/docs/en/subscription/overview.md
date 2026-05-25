@@ -37,8 +37,8 @@ First check one thing: is the account you are signed into now the same account y
 **I switched phones. Where did my subscription go?**
 Sign in with the same account, and the benefits usually come back with that account.
 
-**Can purchases be shared across iOS, Android, and macOS?**
-Not always. See [Platform purchases and restore](/en/subscription/platforms-and-restore/).
+**Can purchases be shared across store platforms?**
+Not always. Current store purchases are handled separately; the macOS DMG build is not currently a store purchase platform. See [Platform purchases and restore](/en/subscription/platforms-and-restore/).
 
 ## Subscription vs. data — which matters more
 

@@ -23,9 +23,9 @@ You do not need to plan every step upfront. Write the next one or two steps you 
 
 ## Reorder and nest nodes
 
-In task detail, use the more button on a node row to choose Move Up, Move Down, Indent, Outdent, or Delete. On desktop, you can also use the drag handle on the left side of a node to change its order or nesting. When the node list has keyboard focus, use `Alt+↑ / Alt+↓` to move a node up or down, `Alt+← / Alt+→` to outdent or indent it, and `Delete` or `Backspace` to delete the current node.
+On desktop, use the drag handle on the left side of a node to change its order or nesting. When the node list has keyboard focus, use `Alt+↑ / Alt+↓` to move a node up or down, and `Alt+← / Alt+→` to outdent or indent it.
 
-On phone or tablet, long-press a node row to open the same node actions. When you delete a node, GranoFlow hides that node and its child nodes, then shows an Undo action at the bottom.
+To delete a node, use the delete button on the right side of the node row. On desktop, `Delete` or `Backspace` also deletes the current node. When you delete a node, GranoFlow hides that node and its child nodes, then shows an Undo action at the bottom.
 
 ## How nodes and the parent task relate
 

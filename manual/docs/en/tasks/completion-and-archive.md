@@ -65,4 +65,4 @@ Most missing tasks are in one of these places.
 
 ## Task Review after reopening
 
-If you write a Task Review after completing a task, then reopen that task, the review is not cleared. It stays visible in task details, but becomes read-only until the task is completed or archived again.
+If you write a Task Review after completing a task, then reopen that task, the review is not cleared. While the task is incomplete, task details hide the Task Review. It appears again when the task is completed or archived.

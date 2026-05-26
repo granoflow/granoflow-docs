@@ -39,4 +39,4 @@ If you do not confirm, nothing is written. After confirming, you can still adjus
 
 ## Where the result appears
 
-The written Task Review appears in the task detail view. It is editable when the task is completed or archived. If you reopen the task later, the existing review stays visible but becomes read-only until the task is completed or archived again.
+The written Task Review appears in the detail view for completed or archived tasks. It is editable when the task is completed or archived. If you reopen the task later, the review is kept but hidden while the task is incomplete, and appears again when the task is completed or archived.

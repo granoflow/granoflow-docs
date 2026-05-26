@@ -21,6 +21,10 @@ Write each step or node as one action you can actually do. For example, “write
 
 You do not need to plan every step upfront. Write the next one or two steps you can do now, then add more later if needed.
 
+## Reorder and nest nodes
+
+In task detail, use the more button on a node row to choose Move Up, Move Down, Indent, Outdent, or Delete. When you delete a node, GranoFlow hides that node and its child nodes, then shows an Undo action at the bottom.
+
 ## How nodes and the parent task relate
 
 - When you complete nodes, the parent task progress updates, such as “3/5 done”

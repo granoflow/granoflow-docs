@@ -13,12 +13,18 @@ If you remember one or two words from a task title but cannot remember which lis
 
 Open the search page from the search entry on the home or main interface. After it opens, type a specific keyword in the input box, such as a few consecutive words from the task title, then review the result list below.
 
+You can also add structured conditions to the search text:
+
+- Type `#tag` to show tasks with that tag. You can use a system tag label or an existing custom tag name, such as `#Important`, `#Urgent`, `#Work-Learning`, or `#Home`.
+- Type `@project` to show tasks in that project. Use the full project name, or a partial name that points to one project clearly.
+- Combine normal keywords with structured conditions, such as `draft #Important @Product Refresh`.
+
 <!-- manual-screenshot:id=interface-search-main -->
 ![Search screen](../../../screenshots/en/interface-search-main.png)
 
-If the keyword is too short, the page asks you to keep typing. Add more specific words, then check whether results appear.
+For plain keywords, the page asks you to keep typing when the keyword is too short. A structured condition like `#tag` or `@project` can search on its own, without first reaching three characters.
 
-If there are no results, it only means no matching item was found in the current searchable scope. It does not mean GranoFlow has checked all historical data, attachment content, or deleted content one by one.
+If there are no results, it only means no matching item was found in the current searchable scope. It can also mean the tag name or project name did not match an existing object. It does not mean GranoFlow has checked all historical data, attachment content, or deleted content one by one.
 
 ## Using Results
 
@@ -32,4 +38,4 @@ If the task belongs to a project, you still need to use the task or project page
 - You want to quickly open a completed or archived task.
 - Before organizing the inbox, a project, or a review, you want to find an older task first.
 
-Search does not create tasks, bulk-edit search results, or save itself as an automatic filtered view. If you need to browse tasks by tag, project, date, or completion state over time, keep using the relevant list or project page.
+Search does not create tasks, create tags or projects, bulk-edit search results, or save itself as an automatic filtered view. If you need to browse tasks by tag, project, date, or completion state over time, keep using the relevant list or project page.

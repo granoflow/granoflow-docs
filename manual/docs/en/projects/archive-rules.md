@@ -25,11 +25,7 @@ If the screenshot does not load, follow the text path instead: open the project 
 
 ## Deletion protection
 
-If the project still has unfinished tasks or milestones, GranoFlow will not let you delete it outright. It will first ask you to decide what to do with the contents:
-
-- Move tasks to another project
-- Complete or archive the tasks inside
-- Confirm deletion, including the tasks inside
+Delete only appears for empty projects. If the project still has tasks or milestones, the delete action is hidden; move, complete, archive, or delete the contents first, then come back to delete the project.
 
 This protection helps prevent you from accidentally deleting tasks or milestones that are still useful.
 

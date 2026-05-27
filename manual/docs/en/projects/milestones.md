@@ -18,7 +18,7 @@ Use a name that describes the result of the phase, such as “First draft done�
 ## Milestone states
 
 | State | Meaning |
-|-------|---------|
+| --- | --- |
 | In progress | The milestone still has unfinished tasks |
 | Completed | All tasks in the milestone are complete |
 | Archived | You manually archived it, so it is collapsed from the current view |
@@ -33,12 +33,8 @@ A common approach is to sort them by time: put the earliest phase at the top and
 
 ## Before deleting a milestone
 
-Before deleting a milestone, if it still contains tasks, GranoFlow asks you how to handle those tasks:
-
-- Move the tasks to another milestone
-- Keep the tasks under the project, but without any milestone
-- Delete the tasks together with the milestone
+Delete only appears for empty milestones. If the milestone still contains tasks, the delete action is hidden; move, complete, archive, or delete those tasks first, then come back to delete the milestone.
 
 :::caution[Deleting a milestone does not auto-delete tasks]
-Unless you explicitly choose “also delete tasks”, tasks that were under this milestone will not disappear. They are only removed from the milestone and still belong to the project.
+Deleting a milestone does not delete its tasks. Handle the tasks first, then delete the empty milestone.
 :::

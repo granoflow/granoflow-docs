@@ -35,7 +35,7 @@ Cross-device sync means this: when you add, change, or delete something on one d
 
 If you temporarily have no network connection, GranoFlow’s local data remains usable. You can still capture tasks, organize projects, write reviews, search, and export local backups.
 
-If you turn on Offline Mode, sync, sign-in, membership checks, and purchase restore are temporarily unavailable. When you tap those online features, the app will tell you that the related service cannot be reached; turn Offline Mode off and try again later.
+If you are not signed in, do not have an active membership, or the sync service cannot be reached, cloud sync is temporarily unavailable. When you tap an online feature, the app will ask you to try again later; data already on this device remains usable.
 
 If your device has internet but the sync service is temporarily unavailable, the app will not block local use. Data already on this device remains editable; changes that need to upload to or download from the cloud can sync again later.
 

@@ -1,6 +1,6 @@
 ---
 title: "Offline use and updates"
-description: "GranoFlow desktop works without internet — understand the boundaries of offline mode and how updates affect your data."
+description: "GranoFlow desktop works without internet — understand offline-use boundaries and how updates affect your data."
 ---
 
 <!-- markdownlint-disable MD013 -->

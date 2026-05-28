@@ -19,6 +19,14 @@ Even if the screenshot does not load, the idea is:
 - If you do not see the right tag, type a new name to create it
 - One task can have multiple tags
 
+## Custom tag templates
+
+When you edit an existing custom tag in tag management, you can add a description template and node template. Later, when a task selects that tag, GranoFlow copies the template content into that task's own description and nodes.
+
+Templates are copied once. After copying, the content belongs to the task itself. Editing or deleting the tag template later will not automatically rewrite existing tasks.
+
+The built-in examples `account`, `bug`, and `feature` are all ordinary custom tags. `account` is useful for account-cleanup tasks and its default description template includes platform name, website, email, phone, third-party login, and notes; it does not include a password field. `bug` is useful for reproduction steps, expected result, and actual result. `feature` is useful for user value, scenarios, and acceptance criteria.
+
 ## What to use tags for
 
 Tags work best for **cross-project, reusable** categories. These are good examples:

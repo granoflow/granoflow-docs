@@ -11,13 +11,13 @@ After switching to a new phone, tablet, or computer, these preferences will not 
 
 ## What each setting does
 
-**Timer**
+### Timer
 
 Controls feedback on this device during focus sessions, such as sounds and status indicators.
 
 It only affects the timer experience. It does not change time-tracking data that has already been recorded.
 
-**App lock**
+### App lock
 
 When enabled, GranoFlow requires device-level authentication before opening, such as Face ID, fingerprint, or PIN.
 
@@ -25,13 +25,17 @@ This is useful on shared devices, or when you step away briefly and want to redu
 
 Note: app lock is not your account password, and it does not replace an encryption key or system-level security settings.
 
-**Task reminder banners**
+### Messages and reminders
 
-Controls whether lightweight task reminder banners appear on this device.
+Controls task reminders, notification center messages, and silent sync on this device.
 
-Turning banners off does not delete tasks or clear reminder times already set on tasks. If reminders behave differently across devices, also check this device's system notification permissions.
+Task reminders can show system banners and play a sound when the banner appears. Turning banners off does not delete tasks or clear reminder times already set on tasks; the sound option only takes effect while banners are on.
 
-**Inbox move notifications**
+Notification center messages stay inside the app by default. They do not show system banners or play sounds unless you turn on system banners here. The sound option only takes effect after banners are on.
+
+Silent sync catches up new data from other devices in the background. It stays silent: no banners, no sounds, and no new notification center items.
+
+### Inbox move notifications
 
 Controls whether GranoFlow shows a short success confirmation after a task is moved out of the inbox.
 

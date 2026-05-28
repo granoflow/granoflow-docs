@@ -25,4 +25,6 @@ If you are checking sync, subscription entitlements, account status, or task rem
 
 The notifications page shows **in-app messages**, which means the notification list you see after opening GranoFlow.
 
-System-level push notifications, such as task reminder banners, also depend on system notification permissions, platform background limits, and network status. If task reminders are not appearing on time, check both whether system notification permission is enabled on your device and whether Do Not Disturb is active.
+System-level banners are controlled from Settings > Messages and reminders. Task reminder banners are on by default, and their sound can be turned off separately. Notification center messages stay inside the app by default; they do not show system banners or play sounds unless you turn that on. Sound for notification center messages only takes effect after banners are on.
+
+System banners can also be affected by system notification permissions, platform background limits, network conditions, and Do Not Disturb. If task reminders do not appear on time, also check this device's system notification permissions.

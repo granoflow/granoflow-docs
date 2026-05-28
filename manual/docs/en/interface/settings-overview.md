@@ -34,9 +34,11 @@ If you only want to adjust reading and display, continue to [Language, theme, an
 
 ## Current Device
 
-Device preferences control how this device behaves, such as timer sound, app lock, task reminder banners, swipe action notifications, and overlap protection for focus time ranges.
+Device preferences control how this device behaves, such as timer sound, app lock, messages and reminders, and swipe action notifications.
 
 You can think of these options as: how this device reminds me, protects me, and shows feedback. They should not be understood as account-level business data or as a cross-device sync promise.
+
+Messages and reminders centralize task reminders, notification center messages, and silent sync. Task reminders can control system banners and sound. Notification center messages stay inside the app by default, and only show system banners after you turn that on. Silent sync catches up data in the background without showing banners or playing sounds.
 
 ## Account and Sync
 

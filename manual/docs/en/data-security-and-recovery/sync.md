@@ -39,6 +39,8 @@ If you are not signed in, do not have an active membership, or the sync service 
 
 If your device has internet but the sync service is temporarily unavailable, the app will not block local use. Data already on this device remains editable; changes that need to upload to or download from the cloud can sync again later.
 
+Pro devices can turn on silent sync from Settings > Messages and reminders. Silent sync catches up new data from other devices on this device, but it stays silent: no system banners, no sounds, and no new notification center messages. Availability still depends on sign-in state, Pro entitlement, and platform support.
+
 ## Adding a new device to sync
 
 If you get a new phone, or reinstall the app, and want to connect to your existing cloud data, you need the **cloud sync key** from your old device.

@@ -22,7 +22,7 @@ Even if the screenshot does not load, the idea is:
 
 ## Custom tag templates
 
-When you edit an existing custom tag in tag management, you can add a description template and node template. Later, when a task selects that tag, GranoFlow copies the template content into that task's own description and nodes.
+When you edit an existing custom tag in tag management, you can add a description template and node template. Later, when a task selects that tag, GranoFlow copies the template into the task's own description and nodes only if the task does not already have a description or nodes. Existing content is not overwritten.
 
 Templates are copied once. After copying, the content belongs to the task itself. Editing or deleting the tag template later will not automatically rewrite existing tasks.
 

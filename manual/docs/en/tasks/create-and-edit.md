@@ -33,6 +33,8 @@ When you create or edit a task, you will see these fields. Only the title is req
 | Nodes | Optional | Breaks the task into smaller steps |
 | Task Review | Optional | Stores retrospective notes after completion; editable when completed or archived |
 
+If a selected custom tag has a template, and the task does not already have a description or nodes, GranoFlow copies the template into the task after saving. If the task already has a description or nodes, the template is skipped so your existing content is not overwritten. The same tag template is applied to the same task only once; if template application fails, the tag selection is kept and you can fill in the description or nodes manually.
+
 :::tip[Natural language input]
 In the title field, you can type `#tag`, `@date`, or `~reminder` and GranoFlow will parse them automatically. For example, `Finish report @tomorrow #work` will detect tomorrow's date and a “work” tag. See [Writing tasks in natural language](title-parser) for the full syntax.
 :::

@@ -72,6 +72,8 @@ granoflow display reset --json
 ```bash
 granoflow task list --json
 granoflow task create --input task.json --json
+granoflow task tag add t_123 custom_bug --json
+granoflow tag template show custom_bug --json
 granoflow project update p_123 --input patch.json --json
 granoflow review day show --date 2026-05-24 --json
 ```

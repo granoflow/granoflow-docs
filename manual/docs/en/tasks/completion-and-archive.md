@@ -20,7 +20,8 @@ When you finish something, mark it complete. After that, the task will:
 - Appear in the “Completed” view
 - Be used in daily review stats
 
-![Completed and archived task views](../../../screenshots/en/tasks-completed-archived-trash.png)
+<!-- manual-screenshot:id=tasks-completed-archived-trash -->
+![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-completed-archived-trash.png)
 
 :::tip[Tip]
 If you still want to see the record in daily review, do not delete completed tasks casually. Completed tasks are not junk; they are your completion history.
@@ -33,7 +34,8 @@ Archive is for tasks you do not want to see every day, but may still need as a r
 
 For example: old tasks from a project, expired items that still have reference value, or anything you want out of the current list without deleting it.
 
-![Archived task list](../../../screenshots/en/tasks-archived-list.png)
+<!-- manual-screenshot:id=tasks-archived-list -->
+![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-archived-list.png)
 
 Archive and complete are not the same thing:
 
@@ -44,7 +46,8 @@ Archive and complete are not the same thing:
 
 After you delete a task, it goes to the trash. As long as the trash has not been emptied, you can still check it there.
 
-![Trash list](../../../screenshots/en/tasks-trash-list.png)
+<!-- manual-screenshot:id=tasks-trash-list -->
+![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-trash-list.png)
 
 :::caution[Think before emptying]
 Manually emptying the trash is irreversible. If a task belonged to a project or still has review value, you will not be able to recover it from the trash after emptying it.
@@ -66,3 +69,6 @@ Most missing tasks are in one of these places.
 ## Task Review after reopening
 
 If you write a Task Review after completing a task, then reopen that task, the review is not cleared. While the task is incomplete, task details hide the Task Review. It appears again when the task is completed or archived.
+
+<!-- manual-screenshot:id=tasks-detail-review-readonly -->
+![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-detail-review-readonly.png)

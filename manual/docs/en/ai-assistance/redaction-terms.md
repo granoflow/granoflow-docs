@@ -5,7 +5,8 @@ description: "Maintain a sensitive-word-to-placeholder mapping so GranoFlow auto
 
 If you do not want client names, company names, project codenames, or similar text sent to external AI as-is, add them to Redaction terms. Before GranoFlow sends content to external AI, it replaces the sensitive text with the placeholder you set, such as replacing "Acme Corp" with `CLIENT_A`; after the AI returns a response, GranoFlow tries to restore the placeholder back to the original text.
 
-![Redaction terms settings](../../../screenshots/en/ai-redaction-terms-settings.png)
+<!-- manual-screenshot:id=ai-redaction-terms-settings -->
+![Redaction terms screen capture](../../../screenshots/en/ai-redaction-terms-settings.png)
 
 ## What to add
 

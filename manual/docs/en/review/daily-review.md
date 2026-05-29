@@ -37,6 +37,9 @@ Three to five sentences is usually enough. You do not need to write a formal rep
 
 The right side of the daily review shows **Time invested today**. This is calculated from the union of today's task time blocks: if two tasks overlap, the overlapping minutes are not counted twice.
 
+<!-- manual-screenshot:id=review-daily-time-overlap-entry -->
+![Daily review screen capture](../../../screenshots/en/review-daily-time-overlap-entry.png)
+
 Task blocks in the timeline keep the task title as the main text. If a task belongs to a project and the block has enough space, the project name appears below the title in smaller text; short tasks, narrowed overlapping tasks, and tasks without a project only show the task title.
 
 If you want to review or correct today's task time, choose **Review Today's Tasks** and let AI help you check how long each task took, then summarize the day's domain, project, and milestone progress. AI only prepares suggestions. After you copy the result back into GranoFlow, you still need to confirm before it writes task start time, end time, title, Task Review, or today's domain reports. See [Review Today's Tasks](../ai-assistance/daily-task-review) for the full flow.

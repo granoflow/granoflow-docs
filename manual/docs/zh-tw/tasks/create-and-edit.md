@@ -16,8 +16,8 @@ description: "建立任務時，只要輸入標題並儲存就可以。日期、
 
 ## 任務編輯介面
 
-{/* manual-screenshot:id=tasks-create-edit-dialog */}
-![建立與編輯任務對話框](../../../screenshots/zh-tw/tasks-create-edit-dialog.png)
+<!-- manual-screenshot:id=tasks-create-edit-dialog -->
+![建立與編輯任務 介面截圖](../../../screenshots/zh-tw/tasks-create-edit-dialog.png)
 
 建立或編輯任務時，你會看到這些欄位。只有標題必須填寫。
 
@@ -51,6 +51,9 @@ description: "建立任務時，只要輸入標題並儲存就可以。日期、
 ## 編輯已有任務
 
 點擊任何任務，就可以打開任務詳情。改完欄位後，離開詳情頁時會自動儲存。
+
+<!-- manual-screenshot:id=tasks-detail-review-editable -->
+![建立與編輯任務 介面截圖](../../../screenshots/zh-tw/tasks-detail-review-editable.png)
 
 任務完成或封存後，詳情裡會顯示「任務回顧」。你可以在這裡補充這件事實際花了多久、後來確認了什麼、下次要注意什麼。如果你先完成任務並寫了回顧，之後又把任務恢復為未完成，已有回顧不會被清空；任務再次完成或封存後，回顧會重新顯示並可以編輯。
 :::caution[注意]

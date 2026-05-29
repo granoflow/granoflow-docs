@@ -5,7 +5,8 @@ description: "記錄範本幫你每天或每週的回顧草稿保持一致結構
 
 如果你想讓每天或每週的回顧都有固定格式，就用記錄範本。範本會先放好草稿結構，例如日期、完成事項、感受和下一步；你要做的是檢查內容，然後補上自己的想法。
 
-![日記範本設定界面](../../../screenshots/zh-tw/review-daily-note-template-settings.png)
+<!-- manual-screenshot:id=review-daily-note-template-settings -->
+![記錄範本 介面截圖](../../../screenshots/zh-tw/review-daily-note-template-settings.png)
 
 ## 它會做什麼
 
@@ -18,7 +19,8 @@ description: "記錄範本幫你每天或每週的回顧草稿保持一致結構
 - **每日筆記範本**：用於每天的日記草稿。
 - **每週小結範本**：用於每週的週記草稿。
 
-![每週小結範本設定界面](../../../screenshots/zh-tw/review-weekly-note-template-settings.png)
+<!-- manual-screenshot:id=review-weekly-note-template-settings -->
+![記錄範本 介面截圖](../../../screenshots/zh-tw/review-weekly-note-template-settings.png)
 
 這兩個範本互不影響。你可以把每日範本寫得細一點，把每週範本寫得更像總結；也可以分別編輯，或分別恢復預設。
 

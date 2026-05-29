@@ -37,6 +37,9 @@ This flow cannot change task description, project, milestone, tags, reminders, d
 After AI produces a result, copy it back into GranoFlow. GranoFlow shows a confirmation screen first, so you can check which tasks, fields, and report summaries will change.
 If you do not confirm, nothing is written. After confirming, you can still adjust the task manually in task details.
 
+<!-- manual-screenshot:id=ai-daily-task-review-import-confirm -->
+![Review Today's Tasks screen capture](../../../screenshots/en/ai-daily-task-review-import-confirm.png)
+
 ## Where the result appears
 
 The written Task Review appears in the detail view for completed or archived tasks. It is editable when the task is completed or archived. If you reopen the task later, the review is kept but hidden while the task is incomplete, and appears again when the task is completed or archived.

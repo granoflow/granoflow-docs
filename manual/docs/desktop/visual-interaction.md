@@ -5,7 +5,8 @@ description: "桌面端有更大的屏幕空间——了解宽屏下的布局特
 
 在桌面端找功能时，先看左边切换页面，再看中间的任务列表或页面内容；如果窗口够宽，点开任务后，详情通常会出现在右边，不需要离开当前列表。
 
-![桌面端宽屏界面](../../screenshots/zh-cn/desktop-visual-interaction-wide.png)
+<!-- manual-screenshot:id=desktop-visual-interaction-wide -->
+![桌面端界面习惯 界面截图](../../screenshots/zh-cn/desktop-visual-interaction-wide.png)
 
 ## 宽屏布局的特点
 

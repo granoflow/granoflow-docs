@@ -9,7 +9,8 @@ description: "專案是你用來承載一個持續目標的容器——把相關
 
 ## 專案頁面能看什麼
 
-![專案概覽介面](../../../screenshots/zh-tw/projects-overview-main.png)
+<!-- manual-screenshot:id=projects-overview-main -->
+![專案概覽 介面截圖](../../../screenshots/zh-tw/projects-overview-main.png)
 
 在專案列表裡，你可以看到已有專案，以及每個專案目前的進度。即使截圖沒有載入，你也可以把這裡理解成「所有專案的總覽頁」：先找到你要看的專案，再進入詳細內容。
 
@@ -19,7 +20,8 @@ description: "專案是你用來承載一個持續目標的容器——把相關
 - 每個里程碑下面的任務
 - 專案整體完成了多少
 
-![專案詳情介面](../../../screenshots/zh-tw/projects-detail-main.png)
+<!-- manual-screenshot:id=projects-detail-main -->
+![專案概覽 介面截圖](../../../screenshots/zh-tw/projects-detail-main.png)
 
 在寬螢幕或桌面上，點選任務後，任務詳細內容會在右側展開。這樣你可以一邊看專案階段，一邊看某個任務的具體內容，不需要在多個頁面之間來回切換。
 

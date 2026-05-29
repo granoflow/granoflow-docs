@@ -11,7 +11,8 @@ It is not a task list, and it is not an analytics report. Treat it as a home sta
 
 The top of the page shows brief summaries for today and yesterday. You can see how many tasks were completed, which projects were involved, and how much time was invested.
 
-![Progress page](../../../screenshots/en/interface-home-progress-main.png)
+<!-- manual-screenshot:id=interface-home-progress-main -->
+![Progress screen capture](../../../screenshots/en/interface-home-progress-main.png)
 
 Tap "Today" to open the task page and continue working on current tasks. Tap "Yesterday" to open yesterday’s review and see what was completed that day.
 

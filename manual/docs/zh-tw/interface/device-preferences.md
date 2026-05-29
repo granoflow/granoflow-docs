@@ -7,7 +7,8 @@ description: "這些設定只影響目前這台裝置，不會同步到其他裝
 
 換了新手機、平板或電腦後，這些偏好不會跟著過去。你需要在新裝置上重新檢查一次。
 
-![目前裝置偏好介面](../../../screenshots/zh-tw/interface-device-preferences-main.png)
+<!-- manual-screenshot:id=interface-device-preferences-main -->
+![目前裝置偏好 介面截圖](../../../screenshots/zh-tw/interface-device-preferences-main.png)
 
 ## 各項設定說明
 

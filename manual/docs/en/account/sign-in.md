@@ -5,7 +5,8 @@ description: "Complete sign-up or sign in, and understand how your signed-in sta
 
 Email verification is the main way to sign up or sign in to GranoFlow: enter your email address, then enter the 6-digit code from the email. Supported platforms may also show Google or Apple sign-in. Whichever option you use, it connects to the same GranoFlow account system.
 
-![Sign-in screen](../../../screenshots/en/account-sign-in-logged-out.png)
+<!-- manual-screenshot:id=account-sign-in-logged-out -->
+![Sign up and sign in screen capture](../../../screenshots/en/account-sign-in-logged-out.png)
 
 ## How to sign in
 

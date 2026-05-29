@@ -16,7 +16,8 @@ description: "图片附件和文字任务分开存储、分开同步——了解
 
 ## 删除图片附件是什么意思
 
-![附件详情](../../screenshots/zh-cn/data-attachments-clear-detail.png)
+<!-- manual-screenshot:id=data-attachments-clear-detail -->
+![附件与图片 界面截图](../../screenshots/zh-cn/data-attachments-clear-detail.png)
 
 删除图片相关内容时，要分清两件事：
 

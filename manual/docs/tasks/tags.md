@@ -11,7 +11,8 @@ description: "标签是任务的横向分类，用来给任务打上「工作」
 
 在新建任务或打开任务详情时，找到标签区域，然后选择已有标签，或输入新名称创建标签。
 
-![标签管理界面](../../screenshots/zh-cn/tasks-tags-management.png)
+<!-- manual-screenshot:id=tasks-tags-management -->
+![标签 界面截图](../../screenshots/zh-cn/tasks-tags-management.png)
 
 即使截图没有加载，也可以按下面理解：
 

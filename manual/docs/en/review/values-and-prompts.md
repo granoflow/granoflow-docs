@@ -5,7 +5,8 @@ description: Customize review prompts and values so your daily journal and weekl
 
 If you want journal cleanup, weekly reviews, and values exploration to sound more like you, edit the related prompts and values settings here. They shape future questions, organization, and draft wording for the relevant features, but they do not automatically rewrite existing tasks, records, or past summaries.
 
-![Values and prompts settings](../../../screenshots/en/review-values-prompts-settings.png)
+<!-- manual-screenshot:id=review-values-prompts-settings -->
+![Values and prompts screen capture](../../../screenshots/en/review-values-prompts-settings.png)
 
 ## What prompt settings do
 
@@ -13,18 +14,27 @@ A prompt is the work instruction the AI assistant reads. When you use AI feature
 
 Each scenario has its own prompt:
 
+<!-- markdownlint-disable MD055 MD056 -->
+
 | Scenario | Screenshot | What it shapes |
-|----------|------------|----------------|
-| Daily review rewrite | ![](../../../screenshots/en/review-daily-journal-prompt-settings.png) | Requirements for organizing the day's notes, such as what to keep and how to phrase it. |
-| Weekly review | ![](../../../screenshots/en/review-weekly-review-prompt-settings.png) | How a week of records is organized and expressed. |
-| Domain values | ![](../../../screenshots/en/review-domain-values-prompt-settings.png) | The questions and angles used when exploring values; it does not decide your direction for you. |
-| Work and learning report | ![](../../../screenshots/en/review-work-learning-report-prompt-settings.png) | How the report draft organizes content and highlights key points. |
+| --- | --- | --- |
+| Daily review rewrite | <!-- manual-screenshot:id=review-daily-journal-prompt-settings -->
+![Values and prompts screen capture](../../../screenshots/en/review-daily-journal-prompt-settings.png) | Requirements for organizing the day's notes, such as what to keep and how to phrase it. |
+| Weekly review | <!-- manual-screenshot:id=review-weekly-review-prompt-settings -->
+![Values and prompts screen capture](../../../screenshots/en/review-weekly-review-prompt-settings.png) | How a week of records is organized and expressed. |
+| Domain values | <!-- manual-screenshot:id=review-domain-values-prompt-settings -->
+![Values and prompts screen capture](../../../screenshots/en/review-domain-values-prompt-settings.png) | The questions, book-reference boundary, and final import format used when exploring values; it does not decide your direction for you. |
+| Work and learning report | <!-- manual-screenshot:id=review-work-learning-report-prompt-settings -->
+![Values and prompts screen capture](../../../screenshots/en/review-work-learning-report-prompt-settings.png) | How the report draft organizes content and highlights key points. |
+
+<!-- markdownlint-enable MD055 MD056 -->
 
 After you edit a prompt, the next use of that feature reads the new text. Existing tasks, records, and historical summaries are not automatically rewritten.
 
 ## Questionnaire and values settings
 
-![Questionnaire settings](../../../screenshots/en/review-questionnaire-prompt-settings.png)
+<!-- manual-screenshot:id=review-questionnaire-prompt-settings -->
+![Values and prompts screen capture](../../../screenshots/en/review-questionnaire-prompt-settings.png)
 
 Analysis and questionnaire settings affect questions before and after a review, including when a review questionnaire is finalized. Their job is to help turn the day's records into a relatively stable result, not to judge whether the day was good or bad.
 

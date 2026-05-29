@@ -13,7 +13,8 @@ Tap **+** in the middle of the bottom navigation bar, type the task, then save i
 
 You do not need to figure out every detail at the start. You can capture tasks like this:
 
-![Inbox interface](../../../screenshots/en/tasks-inbox-main.png)
+<!-- manual-screenshot:id=tasks-inbox-main -->
+![Inbox screen capture](../../../screenshots/en/tasks-inbox-main.png)
 
 - "Call the client tomorrow"
 - "Organize course notes"

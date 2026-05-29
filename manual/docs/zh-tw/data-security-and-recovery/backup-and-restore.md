@@ -5,17 +5,20 @@ description: "備份是誤刪、設備損壞、遷移時的最後防線——但
 
 如果你想在誤刪、換設備或重裝系統前保留一份可以回復的資料，請到 GranoFlow 設定裡的資料/備份頁面手動匯出備份檔，並把檔案存到你自己找得到、能掌控的位置。
 
-![備份與還原管理介面](../../../screenshots/zh-tw/data-backup-restore-management.png)
+<!-- manual-screenshot:id=data-backup-restore-management -->
+![備份與還原 介面截圖](../../../screenshots/zh-tw/data-backup-restore-management.png)
 
 ## 備份和同步有什麼差別
 
 備份是一份「某個時間點的資料副本」。同步是把目前資料同步到雲端或其他設備。它們解決的問題不一樣。
 
-| | 備份 | 雲端同步 |
+<!-- markdownlint-disable MD060 -->
+|  | 備份 | 雲端同步 |
 | --- | --- | --- |
 | 會保留歷史狀態嗎？ | ✅ 是某個時間點的快照 | ❌ 只代表目前狀態 |
 | 誤刪後能回到舊狀態嗎？ | ✅ 可以還原到建立備份時的狀態 | ❌ 刪除通常也會同步到雲端 |
 | 需要你主動操作嗎？ | ✅ 需要手動匯出並儲存檔案 | ✅/❌ 同步會自動進行，但不保留歷史版本 |
+<!-- markdownlint-enable MD060 -->
 
 ## 什麼時候應該做備份
 

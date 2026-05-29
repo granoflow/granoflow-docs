@@ -7,7 +7,8 @@ If you purchased GranoFlow membership through the App Store or Google Play but c
 
 Account recovery only handles the case where a purchase may be connected to a different account. It is not for deleting an account, signing out, restoring a purchase, recovering local data, or recovering an encryption key.
 
-![Account recovery screen](../../../screenshots/en/account-recovery-main.png)
+<!-- manual-screenshot:id=account-recovery-main -->
+![Account recovery screen capture](../../../screenshots/en/account-recovery-main.png)
 
 ## When to use account recovery
 
@@ -33,7 +34,7 @@ Do not use account recovery when:
 ## Possible outcomes
 
 | Result | Meaning |
-|--------|---------|
+| --- | --- |
 | Request submitted | The system has received the request. Follow the page prompts or check your email |
 | No history found | No purchase record that can be used for verification was found on the current platform |
 | Records do not match | The store purchase record and the email you entered cannot be connected through the current verification |

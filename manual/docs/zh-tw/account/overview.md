@@ -7,7 +7,8 @@ description: "帳號負責登入、同步身份、設備列表和訂閱狀態—
 
 很多誤會都從這裡開始：有人以為刪除帳號就會清空所有資料，也有人以為重新註冊帳號就能找回以前的資料。實際上不是這樣。帳號和資料是**兩件獨立的事**，所以在登出、刪除或重置之前，要先分清楚。
 
-![帳號總覽界面](../../../screenshots/zh-tw/account-overview-profile.png)
+<!-- manual-screenshot:id=account-overview-profile -->
+![帳號總覽 介面截圖](../../../screenshots/zh-tw/account-overview-profile.png)
 
 ## 帳號負責什麼
 

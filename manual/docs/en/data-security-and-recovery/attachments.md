@@ -16,7 +16,8 @@ So if a task appears on another device but the image is not visible yet, it does
 
 ## What removing image attachments means
 
-![Attachment detail screen](../../../screenshots/en/data-attachments-clear-detail.png)
+<!-- manual-screenshot:id=data-attachments-clear-detail -->
+![Attachments and images screen capture](../../../screenshots/en/data-attachments-clear-detail.png)
 
 There are two different things you can do with image-related data:
 

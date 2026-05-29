@@ -5,7 +5,8 @@ description: "維護一份「敏感詞 → 代號」的對應表，讓 GranoFlow
 
 如果你不想把客戶名、公司名、專案代號等原文直接發給外部 AI，可以把它們加到「去識別化詞彙」。GranoFlow 會在發給外部 AI 之前，依照你設定的規則把敏感詞替換成代號，例如把「客戶A公司」替換成 `CLIENT_A`；AI 回覆後，GranoFlow 會嘗試把代號還原成原文。
 
-![去識別化詞彙設定界面](../../../screenshots/zh-tw/ai-redaction-terms-settings.png)
+<!-- manual-screenshot:id=ai-redaction-terms-settings -->
+![去識別化詞彙 介面截圖](../../../screenshots/zh-tw/ai-redaction-terms-settings.png)
 
 ## 適合新增什麼詞
 

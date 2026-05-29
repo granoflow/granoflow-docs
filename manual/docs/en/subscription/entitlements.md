@@ -7,7 +7,8 @@ If you want to know whether you can use a subscriber feature, check the featureâ
 
 Membership status is based on the primary membership capability returned by the server. Pro must still be within its valid period; Angel membership is a long-term primary entitlement and ordinary expiration does not remove it. Only revoking events such as refunds or transfers make Angel membership unavailable.
 
-![Subscription entitlements](../../../screenshots/en/subscription-vip-settings.png)
+<!-- manual-screenshot:id=subscription-vip-settings -->
+![Subscription entitlements screen capture](../../../screenshots/en/subscription-vip-settings.png)
 
 ## Subscriber-only features
 

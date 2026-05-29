@@ -5,17 +5,20 @@ description: "GranoFlow encrypts your cloud data with an encryption key — it i
 
 The practical thing to do now is: while you can still open GranoFlow on your old device, save your cloud sync key in a password manager or another safe place. When you change devices, reinstall the app, or see a “sync key mismatch” prompt, GranoFlow may ask for this key; without it, your encrypted cloud data may not open.
 
-![Encryption and recovery key screen](../../../screenshots/en/data-encryption-recovery-key.png)
+<!-- manual-screenshot:id=data-encryption-recovery-key -->
+![Encryption and recovery key screen capture](../../../screenshots/en/data-encryption-recovery-key.png)
 
 GranoFlow uses end-to-end encryption for cloud sync data. The encryption key works like a safe key: **without it, even GranoFlow’s own servers cannot read your data**. This also means: **if you lose the key yourself, GranoFlow cannot reset or recover it for you.**
 
 ## Key vs password — what is the difference
 
-| | Login password or verification email | Encryption / sync key |
+<!-- markdownlint-disable MD060 -->
+|  | Login password or verification email | Encryption / sync key |
 | --- | --- | --- |
 | What it does | Proves who you are | Opens encrypted cloud data |
 | If you forget it | Request a new verification email | **Cannot be recovered** |
 | If you change it | Only affects sign-in | Affects whether you can access cloud data |
+<!-- markdownlint-enable MD060 -->
 
 ## Where to find your key
 

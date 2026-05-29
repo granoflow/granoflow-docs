@@ -5,7 +5,8 @@ description: "了解同步會把哪些狀態帶到其他設備，以及網路、
 
 多端同步的意思是：你在一台裝置新增、修改或刪除內容後，其他登入同一個帳號的裝置，也會盡量變成相同狀態。它方便你在多台裝置繼續使用 GranoFlow，但它不是用來救回誤刪內容的備份功能。
 
-![同步狀態介面](../../../screenshots/zh-tw/data-sync-status-main.png)
+<!-- manual-screenshot:id=data-sync-status-main -->
+![多端同步 介面截圖](../../../screenshots/zh-tw/data-sync-status-main.png)
 
 ## 同步什麼、不同步什麼
 

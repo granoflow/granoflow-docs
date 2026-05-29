@@ -5,7 +5,8 @@ description: "记录模板帮你每天或每周的回顾草稿保持一致结构
 
 如果你想让每天或每周的回顾都有固定格式，就用记录模板。模板会先放好草稿结构，比如日期、完成事项、感受和下一步；你要做的是检查内容，然后补上自己的想法。
 
-![日记模板设置界面](../../screenshots/zh-cn/review-daily-note-template-settings.png)
+<!-- manual-screenshot:id=review-daily-note-template-settings -->
+![记录模板 界面截图](../../screenshots/zh-cn/review-daily-note-template-settings.png)
 
 ## 它会做什么
 
@@ -18,7 +19,8 @@ description: "记录模板帮你每天或每周的回顾草稿保持一致结构
 - **每日笔记模板**：用于每天的日记草稿。
 - **每周小结模板**：用于每周的周记草稿。
 
-![每周小结模板设置界面](../../screenshots/zh-cn/review-weekly-note-template-settings.png)
+<!-- manual-screenshot:id=review-weekly-note-template-settings -->
+![记录模板 界面截图](../../screenshots/zh-cn/review-weekly-note-template-settings.png)
 
 这两个模板互不影响。你可以把每日模板写得细一点，把每周模板写得更像总结；也可以分别编辑，或分别恢复默认。
 

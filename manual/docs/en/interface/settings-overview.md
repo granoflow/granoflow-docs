@@ -26,7 +26,7 @@ Settings is the central entry point in GranoFlow. It brings display experience, 
 Appearance usually includes theme, font size, and language.
 
 <!-- manual-screenshot:id=interface-settings-overview-main -->
-![Settings overview interface screenshot](../../../screenshots/en/interface-settings-overview-main.png)
+![Settings overview screen capture](../../../screenshots/en/interface-settings-overview-main.png)
 
 These settings mainly affect what you see on the current device. Changing language, switching to dark mode, or increasing font size does not rewrite tasks, projects, tags, or review records, and it does not change the meaning of data in [multi-device sync](/manual/en/data-security-and-recovery/sync/).
 

@@ -15,7 +15,8 @@ The fastest way is: tap the **+** button in the middle of the bottom bar, enter 
 
 You do not need to decide the project, date, or tags right now. Capture the task first, then organize it later.
 
-![Tasks overview interface](../../../screenshots/en/tasks-overview-main.png)
+<!-- manual-screenshot:id=tasks-overview-main -->
+![Tasks overview screen capture](../../../screenshots/en/tasks-overview-main.png)
 
 If a task has no date and no project, it goes into the **Inbox** first. Think of the Inbox as a temporary note area: put things there first, then sort them out when you have time.
 

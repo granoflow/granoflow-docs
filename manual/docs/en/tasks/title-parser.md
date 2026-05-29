@@ -15,7 +15,8 @@ When adding or editing a task title, type things like this:
 
 When GranoFlow detects `#`, `@`, `~`, or a date phrase, the matching suggestion is highlighted in the input field.
 
-![Natural language parsing confirmation](../../../screenshots/en/tasks-title-parser-confirmation.png)
+<!-- manual-screenshot:id=tasks-title-parser-confirmation -->
+![Writing tasks in natural language screen capture](../../../screenshots/en/tasks-title-parser-confirmation.png)
 
 You can confirm a suggestion in two ways:
 

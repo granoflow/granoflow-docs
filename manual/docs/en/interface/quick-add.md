@@ -26,7 +26,7 @@ After writing the title, click the submit button. GranoFlow saves the line as th
 On desktop, the input hint shows `#tag @project ~reminder`. These symbols are shortcuts, not required fields.
 
 <!-- manual-screenshot:id=interface-quick-add-main -->
-![Quick add interface screenshot](../../../screenshots/en/interface-quick-add-main.png)
+![Quick add screen capture](../../../screenshots/en/interface-quick-add-main.png)
 
 - Type `#` to search tags.
 - Type `@` to search projects or milestones.

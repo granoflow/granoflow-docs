@@ -9,7 +9,8 @@ description: "项目是你用来承载一个持续目标的容器——把相关
 
 ## 项目页面能看什么
 
-![项目概览界面](../../screenshots/zh-cn/projects-overview-main.png)
+<!-- manual-screenshot:id=projects-overview-main -->
+![项目概览 界面截图](../../screenshots/zh-cn/projects-overview-main.png)
 
 在项目列表里，你可以看到已有项目，以及每个项目当前的进度。即使截图没有加载，你也可以把这里理解成“所有项目的总览页”：先找到你要看的项目，再进入详情。
 
@@ -19,7 +20,8 @@ description: "项目是你用来承载一个持续目标的容器——把相关
 - 每个里程碑下面的任务
 - 项目整体完成了多少
 
-![项目详情界面](../../screenshots/zh-cn/projects-detail-main.png)
+<!-- manual-screenshot:id=projects-detail-main -->
+![项目概览 界面截图](../../screenshots/zh-cn/projects-detail-main.png)
 
 在宽屏或桌面上，点击任务后，任务详情会在右侧展开。这样你可以一边看项目阶段，一边看某个任务的具体内容，不需要在多个页面之间来回跳。
 

@@ -11,7 +11,8 @@ description: "標籤是任務的橫向分類，用來給任務打上「工作」
 
 在新建任務或打開任務詳情時，找到標籤區域，然後選擇已有標籤，或輸入新名稱建立標籤。
 
-![標籤管理介面](../../../screenshots/zh-tw/tasks-tags-management.png)
+<!-- manual-screenshot:id=tasks-tags-management -->
+![標籤 介面截圖](../../../screenshots/zh-tw/tasks-tags-management.png)
 
 即使截圖沒有載入，也可以這樣理解：
 

@@ -9,7 +9,8 @@ If a task feels too big and you do not know where to start, open the task detail
 
 Open the task detail, find the steps or nodes area, and add the first sub-step.
 
-![Task breakdown detail view](../../../screenshots/en/tasks-breakdown-detail.png)
+<!-- manual-screenshot:id=tasks-breakdown-detail -->
+![Breaking down tasks screen capture](../../../screenshots/en/tasks-breakdown-detail.png)
 
 Write each step or node as one action you can actually do. For example, “write the whole report” is too large, so you might split it into:
 

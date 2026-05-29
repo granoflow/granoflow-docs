@@ -7,7 +7,8 @@ description: "The desktop app has more screen space — learn the widescreen lay
 
 When you are looking for something in the desktop app, start on the left to switch pages, use the middle area for the task list or current page, and, on a wide enough window, click a task to see its details on the right without leaving the list.
 
-![Desktop widescreen interface](../../../screenshots/en/desktop-visual-interaction-wide.png)
+<!-- manual-screenshot:id=desktop-visual-interaction-wide -->
+![Desktop interface habits screen capture](../../../screenshots/en/desktop-visual-interaction-wide.png)
 
 ## Widescreen layout
 

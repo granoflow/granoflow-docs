@@ -5,7 +5,8 @@ description: "記錄模板幫你每天或每週的回顧草稿保持一致結構
 
 如果你想每日或每週回顧都有固定格式，就可以用記錄模板。模板會先準備好草稿結構，例如日期、完成事項、感受和下一步；你要做的是檢查內容，再補上自己的想法。
 
-![日記模板設置界面](../../../screenshots/zh-hk/review-daily-note-template-settings.png)
+<!-- manual-screenshot:id=review-daily-note-template-settings -->
+![記錄模板 界面截圖](../../../screenshots/zh-hk/review-daily-note-template-settings.png)
 
 ## 它會做甚麼
 
@@ -18,7 +19,8 @@ description: "記錄模板幫你每天或每週的回顧草稿保持一致結構
 - **每日筆記模板**：用於每天的日記草稿。
 - **每週小結模板**：用於每週的周記草稿。
 
-![每週小結模板設置界面](../../../screenshots/zh-hk/review-weekly-note-template-settings.png)
+<!-- manual-screenshot:id=review-weekly-note-template-settings -->
+![記錄模板 界面截圖](../../../screenshots/zh-hk/review-weekly-note-template-settings.png)
 
 這兩個模板互不影響。你可以把每日模板寫得仔細一點，把每週模板寫得更像總結；也可以分開編輯，或分開恢復預設。
 

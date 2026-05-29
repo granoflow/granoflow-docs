@@ -7,7 +7,8 @@ In GranoFlow, your account is mainly used to identify who you are, connect sync,
 
 Many misunderstandings start here. Some people think deleting the account will clear all data. Others think signing up again will bring old data back. That is not how it works. Your account and your data are **two separate things**, so make sure you understand the difference before signing out, deleting, or resetting anything.
 
-![Account overview](../../../screenshots/en/account-overview-profile.png)
+<!-- manual-screenshot:id=account-overview-profile -->
+![Account overview screen capture](../../../screenshots/en/account-overview-profile.png)
 
 ## What your account handles
 

@@ -7,7 +7,8 @@ Use Device preferences when you want to change how GranoFlow feels on this devic
 
 After switching to a new phone, tablet, or computer, these preferences will not follow you. Check them again on the new device.
 
-![Device preferences screen](../../../screenshots/en/interface-device-preferences-main.png)
+<!-- manual-screenshot:id=interface-device-preferences-main -->
+![Device preferences screen capture](../../../screenshots/en/interface-device-preferences-main.png)
 
 ## What each setting does
 

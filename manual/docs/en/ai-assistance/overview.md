@@ -5,7 +5,8 @@ description: "GranoFlow's AI is an organizer assistant, not an autonomous agent 
 
 GranoFlow's AI will not change your tasks by itself, and it will not send data to external AI unless you actively use an AI feature. Its job is to help organize information and make suggestions; you decide whether to use them and whether anything is written.
 
-![AI assistance settings](../../../screenshots/en/ai-helper-prompt-settings.png)
+<!-- manual-screenshot:id=ai-helper-prompt-settings -->
+![AI assistance overview screen capture](../../../screenshots/en/ai-helper-prompt-settings.png)
 
 ## What AI can do in GranoFlow
 

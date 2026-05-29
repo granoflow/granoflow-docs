@@ -7,7 +7,8 @@ If you want to turn a title like “Meeting with Sarah tomorrow 3pm #work” int
 
 After you confirm and add it, the task appears in Inbox or Tasks depending on its fields. This screenshot shows a `#release` sample after it has landed in Tasks.
 
-![Title parsing result in Tasks](../../../screenshots/en/ai-title-parsing-quick-add.png)
+<!-- manual-screenshot:id=ai-title-parsing-quick-add -->
+![How AI helps organize titles screen capture](../../../screenshots/en/ai-title-parsing-quick-add.png)
 
 ## What title parsing can recognize
 

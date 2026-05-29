@@ -9,24 +9,25 @@ After you link a task to a project, it leaves the Inbox and appears in the proje
 
 You can link a task to a project in two ways.
 
-**Option 1: choose a project from the task detail**
+### Option 1: choose a project from the task detail
 
 Open the task detail, find the project field, and choose the target project. If needed, you can also choose a milestone inside that project.
 
 This is the most common way, especially when you already have the task open and want to classify it directly.
 
-**Option 2: drag the task into a project**
+### Option 2: drag the task into a project
 
 Open the project detail page and drag an existing task under a milestone. The task will be linked to that project and placed under that milestone.
 
-![Drag to link tasks to a project](../../../screenshots/en/projects-link-tasks-drag.png)
+<!-- manual-screenshot:id=projects-link-tasks-drag -->
+![Link tasks to a project screen capture](../../../screenshots/en/projects-link-tasks-drag.png)
 
 ## Where a linked task appears
 
 After linking a task to a project, the same task may appear in more than one place. It has not been copied; it is the same task shown in different views.
 
 | View | Behavior |
-|------|----------|
+| --- | --- |
 | Project page | Appears in the project; if you chose a milestone, it appears under that milestone |
 | Today view | Still appears if the task is due today |
 | Calendar view | Shows by due date |

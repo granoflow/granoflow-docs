@@ -16,8 +16,8 @@ description: "创建任务时，只要写标题并保存就可以。日期、项
 
 ## 任务编辑界面
 
-{/* manual-screenshot:id=tasks-create-edit-dialog */}
-![创建与编辑任务对话框](../../screenshots/zh-cn/tasks-create-edit-dialog.png)
+<!-- manual-screenshot:id=tasks-create-edit-dialog -->
+![创建与编辑任务 界面截图](../../screenshots/zh-cn/tasks-create-edit-dialog.png)
 
 创建或编辑任务时，你会看到这些字段。只有标题必须填写。
 
@@ -53,6 +53,9 @@ description: "创建任务时，只要写标题并保存就可以。日期、项
 ## 编辑已有任务
 
 点击任何任务，就可以打开任务详情。改完字段后，退出详情页时会自动保存。
+
+<!-- manual-screenshot:id=tasks-detail-review-editable -->
+![创建与编辑任务 界面截图](../../screenshots/zh-cn/tasks-detail-review-editable.png)
 
 任务完成或归档后，详情里会显示“任务回顾”。你可以在这里补充这件事实际花了多久、后来确认了什么、下次要注意什么。如果你先完成任务并写了回顾，之后又把任务恢复为未完成，已有回顾不会被清空；任务再次完成或归档后，回顾会重新显示并可以编辑。
 :::caution[注意]

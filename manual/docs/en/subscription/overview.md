@@ -7,12 +7,13 @@ You do not need a subscription to use GranoFlow's core features: tasks, projects
 
 So when you first start using GranoFlow, you can use the free version to organize your work and life. After you know it fits your rhythm, you can decide whether membership is worth it.
 
-![Subscription overview](../../../screenshots/en/subscription-overview-main.png)
+<!-- manual-screenshot:id=subscription-overview-main -->
+![Subscription overview screen capture](../../../screenshots/en/subscription-overview-main.png)
 
 ## Free vs. subscriber — what's different
 
 | Feature | Free | Subscriber |
-| ------- | ---- | ---------- |
+| --- | --- | --- |
 | Tasks, projects, values | ✅ | ✅ |
 | Journal, reviews, backups | ✅ | ✅ |
 | AI task parsing and thinking support | ✅ | ✅ |

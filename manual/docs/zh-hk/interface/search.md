@@ -20,7 +20,7 @@ translationReview:
 - 一般關鍵字可以同結構化條件一齊用，例如 `方案 #重要 @產品優化`。
 
 <!-- manual-screenshot:id=interface-search-main -->
-![搜尋界面截圖](../../../screenshots/zh-hk/interface-search-main.png)
+![搜尋 界面截圖](../../../screenshots/zh-hk/interface-search-main.png)
 
 如果只輸入一般關鍵字，關鍵字太短時頁面會提示你繼續輸入。`#標籤` 或 `@項目` 呢類結構化條件可以單獨搜尋，不需要先湊夠三個字。
 

@@ -7,7 +7,8 @@ description: "會員權益都在哪裡，以及會員專屬設定和一般設定
 
 會員狀態以伺服器返回嘅主會員能力為準。Pro 需要仍然喺有效期內；天使會員係長期主會員權益，普通到期唔會令佢失效。只有退款、轉移等會撤銷權益嘅情況，先會令天使會員不再可用。
 
-![訂閱權益界面](../../../screenshots/zh-hk/subscription-vip-settings.png)
+<!-- manual-screenshot:id=subscription-vip-settings -->
+![訂閱權益 界面截圖](../../../screenshots/zh-hk/subscription-vip-settings.png)
 
 ## 會員專屬功能
 
@@ -45,6 +46,9 @@ description: "會員權益都在哪裡，以及會員專屬設定和一般設定
 ## 同步權益的特別說明
 
 同步是會員專屬功能。如果目前帳號沒有可用權益，同步入口會提示你查看或開通會員。
+
+<!-- manual-screenshot:id=subscription-sync-vip-upsell -->
+![訂閱權益 界面截圖](../../../screenshots/zh-hk/subscription-sync-vip-upsell.png)
 
 看到同步權益說明頁，**不代表同步已經開始，亦不代表你的本機資料已經遺失**。本機資料獨立於同步權益存在。
 

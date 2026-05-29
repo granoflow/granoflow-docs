@@ -9,7 +9,8 @@ If you want to understand whether your time investment has a pattern, start with
 
 GranoFlow shows different phase labels based on the focus time you recorded for the day, such as “just getting started,” “building momentum,” or “deep focus.” These labels help you quickly understand roughly where that day sits.
 
-![Diagnostic state settings](../../../screenshots/en/review-diagnostic-state-settings.png)
+<!-- manual-screenshot:id=review-diagnostic-state-settings -->
+![Diagnostics and heatmap screen capture](../../../screenshots/en/review-diagnostic-state-settings.png)
 
 You can adjust each phase’s time point and wording in settings. For example, if 2 hours is where you personally start to feel steady, set that phase to 2 hours. This changes the review display rules only. It does not change your historical records or judge whether you worked “hard enough.”
 
@@ -17,7 +18,8 @@ You can adjust each phase’s time point and wording in settings. For example, i
 
 The heatmap uses color intensity to show how much time you invested each day. A darker color usually means more recorded time that day; a lighter color means less time or no record.
 
-![Heatmap threshold settings](../../../screenshots/en/review-heatmap-threshold-settings.png)
+<!-- manual-screenshot:id=review-heatmap-threshold-settings -->
+![Diagnostics and heatmap screen capture](../../../screenshots/en/review-heatmap-threshold-settings.png)
 
 You can adjust the heatmap color thresholds. For example, if 2 hours per day is “normally active” for you, set that point as the middle color. Thresholds only change how colors are grouped. They do not modify the time data you already recorded.
 
@@ -25,7 +27,8 @@ You can adjust the heatmap color thresholds. For example, if 2 hours per day is 
 
 GranoFlow can surface anomaly signals in your review data, such as a certain task type not appearing for several days, or your time investment shifting far from its usual range.
 
-![Diagnostic anomaly settings](../../../screenshots/en/review-diagnostic-anomaly-settings.png)
+<!-- manual-screenshot:id=review-diagnostic-anomaly-settings -->
+![Diagnostics and heatmap screen capture](../../../screenshots/en/review-diagnostic-anomaly-settings.png)
 
 An anomaly prompt is not a conclusion, and it does not mean “something is wrong with you.” It is only a reminder to look back: did your work rhythm change? Did one type of work pause for a while? Or is there another reason that only you can interpret?
 

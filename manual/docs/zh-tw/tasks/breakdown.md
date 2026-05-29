@@ -9,7 +9,8 @@ description: "任務太大不知道怎麼開始？把它拆成小步驟，每次
 
 打開任務詳情，找到「步驟」或「節點」區域，點擊新增第一個子步驟。
 
-![拆解任務詳情介面](../../../screenshots/zh-tw/tasks-breakdown-detail.png)
+<!-- manual-screenshot:id=tasks-breakdown-detail -->
+![拆解任務 介面截圖](../../../screenshots/zh-tw/tasks-breakdown-detail.png)
 
 每個步驟（節點）只寫一個可以直接去做的動作。例如「寫完整個報告」太大，可以拆成：
 

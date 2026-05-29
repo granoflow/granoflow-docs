@@ -24,7 +24,7 @@ translationReview:
 最穩妥的順序是：先在舊裝置確認資料還在，再複製或記錄同步密鑰，最後操作新裝置。
 
 <!-- manual-screenshot:id=data-new-device-sync-old-device-key -->
-![在舊裝置上記錄雲端同步密鑰](../../../screenshots/zh-tw/data-new-device-sync-old-device-key.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-old-device-key.png)
 
 ## 空裝置同步
 
@@ -39,13 +39,13 @@ translationReview:
 7. 回到任務、專案、回顧等頁面，確認雲端資料已經出現在新裝置上。
 
 <!-- manual-screenshot:id=data-new-device-sync-enter-key -->
-![在新裝置上輸入另一台設備的同步密鑰](../../../screenshots/zh-tw/data-new-device-sync-enter-key.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-enter-key.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-join-existing -->
-![填寫同步密鑰後加入既有雲端同步](../../../screenshots/zh-tw/data-new-device-sync-join-existing.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-join-existing.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-restored-data -->
-![雲端資料已復原到新裝置](../../../screenshots/zh-tw/data-new-device-sync-restored-data.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-restored-data.png)
 
 完成後，這台裝置就加入了原來的雲端同步。之後你在任一裝置上產生的新變化，會按一般多裝置同步繼續上傳和下載。
 
@@ -64,7 +64,7 @@ translationReview:
 有時 GranoFlow 會發現：目前裝置登入的是同一個帳號，但這台裝置還沒有加入目前雲端同步。頁面會讓你在「同步資料到雲端」「清空本機資料」和「取消」之間選擇。
 
 <!-- manual-screenshot:id=data-sync-device-join -->
-![在新裝置同步既有雲端資料介面截圖](../../../screenshots/zh-tw/data-sync-device-join.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-sync-device-join.png)
 
 這個頁面通常出現在同步入口、資料管理頁，或頂部同步狀態提示裡。它不是一般的同步按鈕，而是在問你要保留哪一邊的資料。
 
@@ -85,7 +85,7 @@ translationReview:
 如果你已經在新裝置上新增過任務、專案、回顧，或者給任務上傳過圖片，再同步既有雲端資料就要更謹慎。這時本機和雲端都可能有資料，GranoFlow 需要先確認你想保留哪一份。
 
 <!-- manual-screenshot:id=data-new-device-sync-local-image-task -->
-![新裝置上已經有本機圖片任務](../../../screenshots/zh-tw/data-new-device-sync-local-image-task.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-local-image-task.png)
 
 先做這幾件事：
 
@@ -97,7 +97,7 @@ translationReview:
 接下來根據頁面上的選擇判斷：
 
 <!-- manual-screenshot:id=data-new-device-sync-local-data-choice -->
-![本機已有資料時需要先選擇資料來源](../../../screenshots/zh-tw/data-new-device-sync-local-data-choice.png)
+![在新裝置同步既有雲端資料 介面截圖](../../../screenshots/zh-tw/data-new-device-sync-local-data-choice.png)
 
 - 如果你只想把雲端資料同步到這台裝置，選擇偏向「使用雲端資料」或「清空本機資料」的路徑。這樣會讓這台裝置改用雲端資料，本機剛新增但還沒同步成功的內容可能不會保留。
 - 如果你確實要以這台裝置為準，才選擇「同步資料到雲端」或「重建雲端同步」。這類操作會讓雲端改用目前裝置的資料，並影響其他裝置後續同步，不能當成一般下載按鈕使用。

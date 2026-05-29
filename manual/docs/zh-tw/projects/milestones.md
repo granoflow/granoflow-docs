@@ -13,7 +13,8 @@ description: "里程碑是專案裡的階段節點，幫你把一個大目標拆
 
 名稱建議寫成這個階段要達到的結果，例如「初稿完成」「測試通過」「正式上線」。盡量不要只寫「第一階段」「第二階段」，因為這種名稱看不出這個階段到底要完成什麼。
 
-![里程碑詳情介面](../../../screenshots/zh-tw/projects-milestones-detail.png)
+<!-- manual-screenshot:id=projects-milestones-detail -->
+![管理里程碑 介面截圖](../../../screenshots/zh-tw/projects-milestones-detail.png)
 
 ## 里程碑的狀態
 

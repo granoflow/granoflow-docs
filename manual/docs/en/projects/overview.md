@@ -9,7 +9,8 @@ A task is one specific thing to do. A project is the larger goal behind a group 
 
 ## What you see in a project
 
-![Projects overview](../../../screenshots/en/projects-overview-main.png)
+<!-- manual-screenshot:id=projects-overview-main -->
+![Projects overview screen capture](../../../screenshots/en/projects-overview-main.png)
 
 In the project list, you can see your projects and the current progress for each one. If the screenshot does not load, think of this as the overview page for all projects: find the project you want, then open its detail page.
 
@@ -19,7 +20,8 @@ Inside a project, you can see:
 - Tasks under each milestone
 - How much of the whole project is complete
 
-![Project detail view](../../../screenshots/en/projects-detail-main.png)
+<!-- manual-screenshot:id=projects-detail-main -->
+![Projects overview screen capture](../../../screenshots/en/projects-detail-main.png)
 
 On a wide screen or desktop, clicking a task opens the task detail on the right. This lets you read a project’s phases and a task’s details side by side, without jumping between pages.
 

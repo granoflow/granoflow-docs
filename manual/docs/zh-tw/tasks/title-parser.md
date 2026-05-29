@@ -15,7 +15,8 @@ description: "在任務標題裡直接輸入 #標籤、@日期、~提醒，Grano
 
 只要 GranoFlow 識別到 `#`、`@`、`~` 或日期詞，輸入框裡會高亮顯示對應候選項。
 
-![自然語言解析確認介面](../../../screenshots/zh-tw/tasks-title-parser-confirmation.png)
+<!-- manual-screenshot:id=tasks-title-parser-confirmation -->
+![用自然語言寫任務 介面截圖](../../../screenshots/zh-tw/tasks-title-parser-confirmation.png)
 
 你可以用兩種方式確認候選項：
 

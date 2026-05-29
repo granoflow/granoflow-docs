@@ -5,7 +5,8 @@ description: "Sync brings changes from one device to all others signed in to the
 
 Cross-device sync means this: when you add, change, or delete something on one device, GranoFlow tries to make the other devices signed in to the same account match that state. It helps you keep using GranoFlow across devices, but it is not a backup for recovering accidentally deleted content.
 
-![Sync status screen](../../../screenshots/en/data-sync-status-main.png)
+<!-- manual-screenshot:id=data-sync-status-main -->
+![Cross-device sync screen capture](../../../screenshots/en/data-sync-status-main.png)
 
 ## What syncs, and what does not
 

@@ -5,7 +5,8 @@ description: "Note templates give your daily and weekly reviews a consistent str
 
 Use note templates when you want every daily or weekly review to follow the same format. The template prepares the draft structure first, such as the date, completed items, feelings, and next steps; your job is to review it and add your own thoughts.
 
-![Daily note template settings](../../../screenshots/en/review-daily-note-template-settings.png)
+<!-- manual-screenshot:id=review-daily-note-template-settings -->
+![Note templates screen capture](../../../screenshots/en/review-daily-note-template-settings.png)
 
 ## What it does
 
@@ -18,7 +19,8 @@ The draft is not a blank page. It starts with the headings, sections, and variab
 - **Daily note template**: used for each day's review draft.
 - **Weekly summary template**: used for each week's summary draft.
 
-![Weekly summary template settings](../../../screenshots/en/review-weekly-note-template-settings.png)
+<!-- manual-screenshot:id=review-weekly-note-template-settings -->
+![Note templates screen capture](../../../screenshots/en/review-weekly-note-template-settings.png)
 
 These two templates are independent. You can make the daily template more detailed and the weekly template more summary-focused. You can also edit them separately or reset them separately.
 

@@ -20,7 +20,8 @@ GranoFlow 里和“任务不见了”最相关的三个状态是：
 - 出现在“已完成”视图里
 - 用于日回顾统计
 
-![已完成任务和归档界面](../../screenshots/zh-cn/tasks-completed-archived-trash.png)
+<!-- manual-screenshot:id=tasks-completed-archived-trash -->
+![完成、归档与回收站 界面截图](../../screenshots/zh-cn/tasks-completed-archived-trash.png)
 
 :::tip[小技巧]
 如果你还想在日回顾里看到完成记录，不要随手删除已完成任务。已完成任务不是垃圾，它们是你的完成记录。
@@ -33,7 +34,8 @@ GranoFlow 里和“任务不见了”最相关的三个状态是：
 
 例如：项目里的旧任务、已经过期但有参考价值的事项、不想放在当前列表里但也不想删除的内容。
 
-![已归档任务列表](../../screenshots/zh-cn/tasks-archived-list.png)
+<!-- manual-screenshot:id=tasks-archived-list -->
+![完成、归档与回收站 界面截图](../../screenshots/zh-cn/tasks-archived-list.png)
 
 归档和完成不是一回事：
 
@@ -44,7 +46,8 @@ GranoFlow 里和“任务不见了”最相关的三个状态是：
 
 删除任务后，任务会进入回收站。只要回收站还没有被清空，你还可以去回收站查看它。
 
-![回收站列表](../../screenshots/zh-cn/tasks-trash-list.png)
+<!-- manual-screenshot:id=tasks-trash-list -->
+![完成、归档与回收站 界面截图](../../screenshots/zh-cn/tasks-trash-list.png)
 
 :::caution[清空前想好]
 手动清空回收站是不可逆的。如果任务曾经属于某个项目，或者还有回顾价值，清空后就不能再靠回收站找回了。
@@ -66,3 +69,6 @@ GranoFlow 里和“任务不见了”最相关的三个状态是：
 ## 重新启用后的任务回顾
 
 如果你完成任务后写了任务回顾，之后又取消完成或重新启用任务，已有回顾不会被清空。未完成时，任务详情不会显示任务回顾；任务再次完成或归档后，回顾会重新显示并可以编辑。
+
+<!-- manual-screenshot:id=tasks-detail-review-readonly -->
+![完成、归档与回收站 界面截图](../../screenshots/zh-cn/tasks-detail-review-readonly.png)

@@ -20,7 +20,8 @@ description: "任務消失了？先檢查篩選、日期、項目、已完成、
 - 出現在「已完成」視圖
 - 用於日回顧統計
 
-![已完成任務和歸檔界面](../../../screenshots/zh-hk/tasks-completed-archived-trash.png)
+<!-- manual-screenshot:id=tasks-completed-archived-trash -->
+![完成、歸檔與回收站 界面截圖](../../../screenshots/zh-hk/tasks-completed-archived-trash.png)
 
 :::tip[小技巧]
 如果你之後還想在日回顧看到完成記錄，不要隨手刪除已完成任務。已完成任務不是垃圾，而是你的完成記錄。
@@ -33,7 +34,8 @@ description: "任務消失了？先檢查篩選、日期、項目、已完成、
 
 例如：項目裏的舊任務、已經過期但有參考價值的事項、不想放在目前列表但也不想刪除的內容。
 
-![已歸檔任務列表](../../../screenshots/zh-hk/tasks-archived-list.png)
+<!-- manual-screenshot:id=tasks-archived-list -->
+![完成、歸檔與回收站 界面截圖](../../../screenshots/zh-hk/tasks-archived-list.png)
 
 歸檔和完成不是同一回事：
 
@@ -44,7 +46,8 @@ description: "任務消失了？先檢查篩選、日期、項目、已完成、
 
 刪除任務後，任務會進入回收站。只要回收站尚未清空，你仍然可以去回收站查看它。
 
-![回收站列表](../../../screenshots/zh-hk/tasks-trash-list.png)
+<!-- manual-screenshot:id=tasks-trash-list -->
+![完成、歸檔與回收站 界面截圖](../../../screenshots/zh-hk/tasks-trash-list.png)
 
 :::caution[清空前想清楚]
 手動清空回收站是不可逆的。如果任務曾經屬於某個項目，或者仍有回顧價值，清空後就不能再靠回收站找回。
@@ -66,3 +69,6 @@ description: "任務消失了？先檢查篩選、日期、項目、已完成、
 ## 重新啟用後的任務回顧
 
 如果你完成任務後寫了任務回顧，之後又取消完成或重新啟用任務，已有回顧不會被清空。未完成時，任務詳情不會顯示任務回顧；任務再次完成或歸檔後，回顧會重新顯示並可以編輯。
+
+<!-- manual-screenshot:id=tasks-detail-review-readonly -->
+![完成、歸檔與回收站 界面截圖](../../../screenshots/zh-hk/tasks-detail-review-readonly.png)

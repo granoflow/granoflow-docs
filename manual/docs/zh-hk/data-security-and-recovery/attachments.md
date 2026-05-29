@@ -16,7 +16,8 @@ description: "圖片附件和文字任務分開儲存、分開同步——了解
 
 ## 刪除圖片附件代表咩
 
-![附件詳情](../../../screenshots/zh-hk/data-attachments-clear-detail.png)
+<!-- manual-screenshot:id=data-attachments-clear-detail -->
+![附件與圖片 界面截圖](../../../screenshots/zh-hk/data-attachments-clear-detail.png)
 
 處理圖片相關內容時，要分清兩件事：
 

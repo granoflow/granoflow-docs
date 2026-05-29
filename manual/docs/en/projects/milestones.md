@@ -13,7 +13,8 @@ On the project detail page, tap “Add milestone”, then enter a milestone name
 
 Use a name that describes the result of the phase, such as “First draft done”, “Testing passed”, or “Live”. Avoid names like “Phase 1” or “Phase 2” when possible, because they do not explain what the phase is meant to finish.
 
-![Milestone detail view](../../../screenshots/en/projects-milestones-detail.png)
+<!-- manual-screenshot:id=projects-milestones-detail -->
+![Manage milestones screen capture](../../../screenshots/en/projects-milestones-detail.png)
 
 ## Milestone states
 

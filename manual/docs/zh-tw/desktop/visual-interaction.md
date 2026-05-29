@@ -5,7 +5,8 @@ description: "桌面端有更大的螢幕空間——了解寬螢幕下的版面
 
 在桌面端找功能時，先看左邊切換頁面，再看中間的任務清單或目前頁面；如果視窗夠寬，點開任務後，詳情通常會顯示在右邊，不需要離開目前清單。
 
-![桌面端寬螢幕介面](../../../screenshots/zh-tw/desktop-visual-interaction-wide.png)
+<!-- manual-screenshot:id=desktop-visual-interaction-wide -->
+![桌面端介面習慣 介面截圖](../../../screenshots/zh-tw/desktop-visual-interaction-wide.png)
 
 ## 寬螢幕版面的特點
 

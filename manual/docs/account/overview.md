@@ -7,7 +7,8 @@ description: "账号负责登录、同步身份、设备列表和订阅状态—
 
 很多误会都来自这里：有人以为删了账号就会清空所有数据，也有人以为重新注册账号就能找回以前的数据。实际不是这样。账号和数据是**两件独立的事**，做删除、退出、重置之前要先分清楚。
 
-![账号总览界面](../../screenshots/zh-cn/account-overview-profile.png)
+<!-- manual-screenshot:id=account-overview-profile -->
+![账号总览 界面截图](../../screenshots/zh-cn/account-overview-profile.png)
 
 ## 账号负责什么
 

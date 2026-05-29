@@ -15,7 +15,8 @@ description: "在任务标题里直接输入 #标签、@日期、~提醒，Grano
 
 只要 GranoFlow 识别到 `#`、`@`、`~` 或日期词，输入框里会高亮显示对应候选项。
 
-![自然语言解析确认界面](../../screenshots/zh-cn/tasks-title-parser-confirmation.png)
+<!-- manual-screenshot:id=tasks-title-parser-confirmation -->
+![用自然语言写任务 界面截图](../../screenshots/zh-cn/tasks-title-parser-confirmation.png)
 
 确认候选项的方法有两种：
 

@@ -7,7 +7,8 @@ description: "輸入任務標題時，AI 可以識別日期、標籤、專案和
 
 確認並新增之後，任務會依實際欄位出現在收集箱或任務頁。截圖展示的是一個帶 `#release` 的範例任務在任務頁裡的結果狀態。
 
-![標題解析後的任務結果](../../../screenshots/zh-tw/ai-title-parsing-quick-add.png)
+<!-- manual-screenshot:id=ai-title-parsing-quick-add -->
+![AI 如何輔助整理標題 介面截圖](../../../screenshots/zh-tw/ai-title-parsing-quick-add.png)
 
 ## 標題解析可以識別什麼
 

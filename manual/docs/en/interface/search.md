@@ -20,7 +20,7 @@ You can also add structured conditions to the search text:
 - Combine normal keywords with structured conditions, such as `draft #Important @Product Refresh`.
 
 <!-- manual-screenshot:id=interface-search-main -->
-![Search screen](../../../screenshots/en/interface-search-main.png)
+![Search screen capture](../../../screenshots/en/interface-search-main.png)
 
 For plain keywords, the page asks you to keep typing when the keyword is too short. A structured condition like `#tag` or `@project` can search on its own, without first reaching three characters.
 

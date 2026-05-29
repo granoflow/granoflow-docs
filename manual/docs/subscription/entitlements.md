@@ -7,7 +7,8 @@ description: "会员权益都在哪里，以及会员专属设置和普通设置
 
 会员状态以服务器返回的主会员能力为准。Pro 需要仍在有效期内；天使会员是长期主会员权益，普通到期不会让它失效。只有退款、转移等会撤销权益的情况，才会让天使会员不再可用。
 
-![订阅权益界面](../../screenshots/zh-cn/subscription-vip-settings.png)
+<!-- manual-screenshot:id=subscription-vip-settings -->
+![订阅权益 界面截图](../../screenshots/zh-cn/subscription-vip-settings.png)
 
 ## 会员专属功能
 
@@ -45,6 +46,9 @@ description: "会员权益都在哪里，以及会员专属设置和普通设置
 ## 同步权益的特殊说明
 
 同步是会员专属功能。如果当前账号没有可用权益，同步入口会提示你查看或开通会员。
+
+<!-- manual-screenshot:id=subscription-sync-vip-upsell -->
+![订阅权益 界面截图](../../screenshots/zh-cn/subscription-sync-vip-upsell.png)
 
 看到同步权益说明页，**不代表同步已经开始，也不代表你的本地数据已经丢失**。本地数据独立于同步权益存在。
 

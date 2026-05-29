@@ -5,17 +5,20 @@ description: "备份是误删、设备损坏、迁移时的最后防线——但
 
 如果你想在误删、换设备或重装前保留一份可回退的数据，请在 GranoFlow 设置里的数据/备份页面手动导出备份文件，并把文件保存到你自己能找到、能控制的位置。
 
-![备份与恢复管理界面](../../screenshots/zh-cn/data-backup-restore-management.png)
+<!-- manual-screenshot:id=data-backup-restore-management -->
+![备份与恢复 界面截图](../../screenshots/zh-cn/data-backup-restore-management.png)
 
 ## 备份和同步有什么区别
 
 备份是一份“某个时间点的数据副本”。同步是把当前数据同步到云端或其他设备。它们解决的问题不一样。
 
-| | 备份 | 云端同步 |
+<!-- markdownlint-disable MD060 -->
+|  | 备份 | 云端同步 |
 | --- | --- | --- |
 | 是否保留历史状态？ | ✅ 是某个时间点的快照 | ❌ 只代表当前状态 |
 | 误删后能不能回到旧状态？ | ✅ 可以恢复到备份创建时的状态 | ❌ 删除通常也会同步到云端 |
 | 是否需要你主动操作？ | ✅ 需要手动导出并保存文件 | ✅/❌ 同步会自动进行，但不保存历史版本 |
+<!-- markdownlint-enable MD060 -->
 
 ## 什么时候应该做备份
 

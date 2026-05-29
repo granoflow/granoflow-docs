@@ -11,7 +11,8 @@ For example, you might have a "Fitness app" project. Some tasks in it may be "ne
 
 When creating a task or opening task details, find the tags area, then select an existing tag or type a new name to create one.
 
-![Tags management screen](../../../screenshots/en/tasks-tags-management.png)
+<!-- manual-screenshot:id=tasks-tags-management -->
+![Tags screen capture](../../../screenshots/en/tasks-tags-management.png)
 
 Even if the screenshot does not load, the idea is:
 

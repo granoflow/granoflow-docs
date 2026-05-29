@@ -9,7 +9,8 @@ description: "任务太大不知道怎么下手？把它拆成小步骤，每次
 
 打开任务详情，找到“步骤”或“节点”区域，点击添加第一个子步骤。
 
-![拆解任务详情界面](../../screenshots/zh-cn/tasks-breakdown-detail.png)
+<!-- manual-screenshot:id=tasks-breakdown-detail -->
+![拆解任务 界面截图](../../screenshots/zh-cn/tasks-breakdown-detail.png)
 
 每个步骤（节点）只写一个能直接去做的动作。比如“写完整个报告”太大，可以拆成：
 

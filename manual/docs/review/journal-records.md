@@ -5,7 +5,8 @@ description: "记录是你在回顾时写下的文字——感受、想法、下
 
 记录用来保存你在某天回顾时写下的想法。你可以写今天的感受、任务为什么完成或没完成、明天想先做什么；之后切换到那一天，就能和当天的任务一起查看。
 
-![记录与历史界面](../../screenshots/zh-cn/review-journal-records-section.png)
+<!-- manual-screenshot:id=review-journal-records-section -->
+![记录与历史 界面截图](../../screenshots/zh-cn/review-journal-records-section.png)
 
 ## 记录适合写什么
 

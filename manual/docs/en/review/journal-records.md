@@ -5,7 +5,8 @@ description: "Notes are what you write during review — feelings, thoughts, nex
 
 Notes save what you wrote during a review for a specific day. You can write how the day felt, why tasks did or did not get done, or what you want to do first tomorrow; later, switch to that date to see the notes together with that day's tasks.
 
-![Notes and history](../../../screenshots/en/review-journal-records-section.png)
+<!-- manual-screenshot:id=review-journal-records-section -->
+![Notes and history screen capture](../../../screenshots/en/review-journal-records-section.png)
 
 ## What to write in notes
 

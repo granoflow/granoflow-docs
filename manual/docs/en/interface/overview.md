@@ -7,14 +7,16 @@ If you are trying to find where things are in GranoFlow, start with the four mai
 
 GranoFlow's main interface is simple. On a phone in portrait mode, navigation is usually at the bottom. On wide screens or desktop, it may appear on the left. The position can change, but the entries are the same.
 
-![Interface navigation overview](../../../screenshots/en/interface-overview-navigation.png)
+<!-- manual-screenshot:id=interface-overview-navigation -->
+![Interface overview screen capture](../../../screenshots/en/interface-overview-navigation.png)
 
-![Root navigation](../../../screenshots/en/interface-root-route.png)
+<!-- manual-screenshot:id=interface-root-route -->
+![Interface overview screen capture](../../../screenshots/en/interface-root-route.png)
 
 ## The four main entries
 
 | Entry | What you do here |
-|------|--------------|
+| --- | --- |
 | **Progress** | The default home screen. Use it to see what you completed today and roughly where each project stands. |
 | **Tasks** | View your task list and keep moving unfinished tasks forward. |
 | **Review** | Do daily reviews, weekly reviews, and view the monthly calendar. |

@@ -5,7 +5,8 @@ description: "桌面端有更大的屏幕空間——了解闊屏下的佈局特
 
 在桌面端搵功能時，先睇左邊切換頁面，再睇中間嘅任務列表或目前頁面；如果視窗夠闊，點開任務之後，詳情通常會喺右邊顯示，唔需要離開目前列表。
 
-![桌面端闊屏界面](../../../screenshots/zh-hk/desktop-visual-interaction-wide.png)
+<!-- manual-screenshot:id=desktop-visual-interaction-wide -->
+![桌面端界面習慣 界面截圖](../../../screenshots/zh-hk/desktop-visual-interaction-wide.png)
 
 ## 闊屏佈局的特點
 

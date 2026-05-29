@@ -7,7 +7,8 @@ If you just want a quick review, open the review page, look at what you complete
 
 For many people, “retrospective” sounds stressful, as if it needs to be complete and insightful. GranoFlow review is not like that. Think of it as a very light journal: glance at what is already done, note how it felt or what comes next, then stop.
 
-![Review overview](../../../screenshots/en/review-overview-main.png)
+<!-- manual-screenshot:id=review-overview-main -->
+![Review overview screen capture](../../../screenshots/en/review-overview-main.png)
 
 ## What is inside a review
 

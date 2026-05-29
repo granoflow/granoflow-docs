@@ -5,12 +5,13 @@ description: "Normal use does not send any data. Only when you actively use an A
 
 If you are only browsing tasks, writing journals, or doing reviews, GranoFlow does not send that content to AI. Text may enter the AI processing flow only when you actively trigger an AI feature, and only the text related to that action is involved.
 
-![AI redaction settings](../../../screenshots/en/ai-redaction-settings.png)
+<!-- manual-screenshot:id=ai-redaction-settings -->
+![What content may be sent to AI screen capture](../../../screenshots/en/ai-redaction-settings.png)
 
 ## What each feature may send
 
 | AI feature | Content that may be sent |
-|-----------|--------------------------|
+| --- | --- |
 | Title parsing | The task title you are currently typing |
 | Clipboard assistant | The text you copied to the clipboard |
 | Helper prompt | The current page description + your saved prompt |

@@ -9,7 +9,8 @@ description: "項目是你用來承載一個持續目標的容器——把相關
 
 ## 項目頁面能看甚麼
 
-![項目概覽界面](../../../screenshots/zh-hk/projects-overview-main.png)
+<!-- manual-screenshot:id=projects-overview-main -->
+![項目概覽 界面截圖](../../../screenshots/zh-hk/projects-overview-main.png)
 
 在項目列表，你可以看到已有項目，以及每個項目目前的進度。即使截圖沒有載入，你也可以將這裡理解成「所有項目的總覽頁」：先找出你要看的項目，再進入詳情。
 
@@ -19,7 +20,8 @@ description: "項目是你用來承載一個持續目標的容器——把相關
 - 每個里程碑下面的任務
 - 項目整體完成了多少
 
-![項目詳情界面](../../../screenshots/zh-hk/projects-detail-main.png)
+<!-- manual-screenshot:id=projects-detail-main -->
+![項目概覽 界面截圖](../../../screenshots/zh-hk/projects-detail-main.png)
 
 在寬屏或桌面上，點擊任務後，任務詳情會在右側展開。這樣你可以一邊看項目階段，一邊看某個任務的具體內容，不需要在多個頁面之間來回跳轉。
 

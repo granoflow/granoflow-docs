@@ -13,7 +13,8 @@ description: "收集箱是你的「先記再說」區域。先把任務記下來
 
 一開始不需要想清楚所有細節。可以先這樣記：
 
-![收集箱介面](../../../screenshots/zh-tw/tasks-inbox-main.png)
+<!-- manual-screenshot:id=tasks-inbox-main -->
+![收集箱 介面截圖](../../../screenshots/zh-tw/tasks-inbox-main.png)
 
 - 「明天聯絡客戶」
 - 「整理課程筆記」

@@ -7,14 +7,16 @@ description: "主介面四個入口：進展、任務、回顧、設定，加上
 
 GranoFlow 的主介面很簡單。手機直向使用時，導覽通常在底部；橫向或桌面使用時，導覽可能在左側。位置會變，但入口還是這幾個。
 
-![介面導覽總覽](../../../screenshots/zh-tw/interface-overview-navigation.png)
+<!-- manual-screenshot:id=interface-overview-navigation -->
+![介面總覽 介面截圖](../../../screenshots/zh-tw/interface-overview-navigation.png)
 
-![底部導覽根路由](../../../screenshots/zh-tw/interface-root-route.png)
+<!-- manual-screenshot:id=interface-root-route -->
+![介面總覽 介面截圖](../../../screenshots/zh-tw/interface-root-route.png)
 
 ## 四個主要入口
 
 | 入口 | 在這裡可以做什麼 |
-|------|--------------|
+| --- | --- |
 | **進展** | 預設首頁。用來看今天完成了什麼，以及專案大概在哪個階段。 |
 | **任務** | 查看任務清單，並繼續推進還沒完成的任務。 |
 | **回顧** | 做日回顧、週回顧，也可以查看月度行事曆。 |

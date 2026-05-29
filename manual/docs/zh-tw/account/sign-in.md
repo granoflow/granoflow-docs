@@ -5,7 +5,8 @@ description: "完成註冊或登入，並了解登入狀態如何影響同步、
 
 註冊或登入 GranoFlow 時，信箱驗證碼是主要方式：輸入信箱，再輸入信件裡的 6 位驗證碼即可。支援的平台也會在登入頁提供 Google 或 Apple 入口；無論使用哪種方式，最後都會回到同一個 GranoFlow 帳號系統。
 
-![登入界面](../../../screenshots/zh-tw/account-sign-in-logged-out.png)
+<!-- manual-screenshot:id=account-sign-in-logged-out -->
+![註冊與登入 介面截圖](../../../screenshots/zh-tw/account-sign-in-logged-out.png)
 
 ## 怎麼登入
 

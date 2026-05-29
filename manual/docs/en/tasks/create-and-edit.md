@@ -16,8 +16,8 @@ To create a task quickly, enter a title and save it. You can leave everything el
 
 ## The task editing screen
 
-{/* manual-screenshot:id=tasks-create-edit-dialog */}
-![Create and edit task dialog](../../../screenshots/en/tasks-create-edit-dialog.png)
+<!-- manual-screenshot:id=tasks-create-edit-dialog -->
+![Creating and editing tasks screen capture](../../../screenshots/en/tasks-create-edit-dialog.png)
 
 When you create or edit a task, you will see these fields. Only the title is required.
 
@@ -51,6 +51,9 @@ Changing the date, project, or milestone does not create another task. It only c
 ## Editing an existing task
 
 Tap any task to open its detail view. Change the fields you need; the task auto-saves when you leave the detail view.
+
+<!-- manual-screenshot:id=tasks-detail-review-editable -->
+![Creating and editing tasks screen capture](../../../screenshots/en/tasks-detail-review-editable.png)
 
 After a task is completed or archived, its detail view shows **Task Review**. Use it to record what was confirmed, what actually happened, or what you want to remember next time. If you complete a task, add a review, and then reopen it, the review is kept but hidden while the task is incomplete. It appears again when the task is completed or archived.
 :::caution[Note]

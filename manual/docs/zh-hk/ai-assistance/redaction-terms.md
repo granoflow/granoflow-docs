@@ -5,7 +5,8 @@ description: "維護一份「敏感詞 → 代號」的對應表，讓 GranoFlow
 
 如果你唔想將客戶名、公司名、項目代號等原文直接發俾外部 AI，可以將佢哋加到「脫敏詞」。GranoFlow 會喺發俾外部 AI 之前，按你設定嘅規則將敏感詞換成代號，例如將「客戶A公司」換成 `CLIENT_A`；AI 回覆之後，GranoFlow 會嘗試將代號還原返原文。
 
-![脫敏詞設定界面](../../../screenshots/zh-hk/ai-redaction-terms-settings.png)
+<!-- manual-screenshot:id=ai-redaction-terms-settings -->
+![脫敏詞 界面截圖](../../../screenshots/zh-hk/ai-redaction-terms-settings.png)
 
 ## 適合添加咩詞
 

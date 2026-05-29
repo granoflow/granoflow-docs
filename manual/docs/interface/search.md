@@ -16,7 +16,7 @@ description: "用搜索快速找到已有任务、任务节点、项目、里程
 - 普通关键词可以和结构化条件一起使用，例如 `方案 #重要 @产品优化`。
 
 <!-- manual-screenshot:id=interface-search-main -->
-![搜索界面截图](../../screenshots/zh-cn/interface-search-main.png)
+![搜索 界面截图](../../screenshots/zh-cn/interface-search-main.png)
 
 如果只输入普通关键词，关键词太短时页面会提示你继续输入。`#标签` 或 `@项目` 这种结构化条件可以单独搜索，不需要先凑够三个字。
 

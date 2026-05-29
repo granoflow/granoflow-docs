@@ -24,7 +24,7 @@ Check these 4 things first:
 The safest order is: first confirm that the data is still on the old device, then copy or record the sync key, and only then work on the new device.
 
 <!-- manual-screenshot:id=data-new-device-sync-old-device-key -->
-![Record the cloud sync key on the old device](../../../screenshots/en/data-new-device-sync-old-device-key.png)
+![Sync Existing Cloud Data On A New Device screen capture](../../../screenshots/en/data-new-device-sync-old-device-key.png)
 
 ## Sync An Empty Device
 
@@ -39,13 +39,13 @@ An empty device means a fresh install, a reinstall, or a device where you have n
 7. Return to tasks, projects, reviews, and other pages to confirm that the cloud data appears on the new device.
 
 <!-- manual-screenshot:id=data-new-device-sync-enter-key -->
-![Enter the sync key from another device on the new device](../../../screenshots/en/data-new-device-sync-enter-key.png)
+![Sync Existing Cloud Data On A New Device screen capture](../../../screenshots/en/data-new-device-sync-enter-key.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-join-existing -->
-![Join existing cloud sync after entering the key](../../../screenshots/en/data-new-device-sync-join-existing.png)
+![Sync Existing Cloud Data On A New Device screen capture](../../../screenshots/en/data-new-device-sync-join-existing.png)
 
 <!-- manual-screenshot:id=data-new-device-sync-restored-data -->
-![Cloud data restored on the new device](../../../screenshots/en/data-new-device-sync-restored-data.png)
+![Sync Existing Cloud Data On A New Device screen capture](../../../screenshots/en/data-new-device-sync-restored-data.png)
 
 After this finishes, the device has joined the original cloud sync. Later changes from any device continue through normal multi-device sync.
 
@@ -64,7 +64,7 @@ If you see choices such as “Sync data to cloud,” “Rebuild cloud sync,” o
 Sometimes GranoFlow finds that the current device is signed in to the same account, but has not joined the current cloud sync yet. The page asks you to choose between “Sync data to cloud,” “Clear local data,” and “Cancel.”
 
 <!-- manual-screenshot:id=data-sync-device-join -->
-![Sync Existing Cloud Data On A New Device screen](../../../screenshots/en/data-sync-device-join.png)
+![Sync Existing Cloud Data On A New Device screen capture](../../../screenshots/en/data-sync-device-join.png)
 
 This page usually appears from the sync entry, data management page, or top sync status prompt. It is not a normal sync button. It is asking which side’s data you want to keep.
 
@@ -85,7 +85,7 @@ If GranoFlow needs the original cloud sync key, it shows the lightweight “Ente
 If you have already added tasks, projects, reviews, or uploaded an image to a task on the new device, be more careful before syncing existing cloud data. Local and cloud may both contain data, so GranoFlow needs to confirm which side you want to keep.
 
 <!-- manual-screenshot:id=data-new-device-sync-local-image-task -->
-![The new device already has a local task with an image](../../../screenshots/en/data-new-device-sync-local-image-task.png)
+![Sync Existing Cloud Data On A New Device screen capture](../../../screenshots/en/data-new-device-sync-local-image-task.png)
 
 Do these first:
 
@@ -97,7 +97,7 @@ Do these first:
 Then decide based on the choices shown on the page:
 
 <!-- manual-screenshot:id=data-new-device-sync-local-data-choice -->
-![Choose the data source when this device already has local data](../../../screenshots/en/data-new-device-sync-local-data-choice.png)
+![Sync Existing Cloud Data On A New Device screen capture](../../../screenshots/en/data-new-device-sync-local-data-choice.png)
 
 - If you only want cloud data on this device, choose the path that uses cloud data or clears local data. This makes the device use cloud data, and newly added local content that has not synced successfully may not be kept.
 - Only choose “Sync data to cloud” or “Rebuild cloud sync” if this device is truly the source you want to keep. These actions make cloud sync use this device’s current data and affect other devices later. Do not treat them as normal download buttons.

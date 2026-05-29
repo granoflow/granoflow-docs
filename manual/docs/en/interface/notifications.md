@@ -5,7 +5,8 @@ description: "The notifications page is GranoFlow's in-app inbox. You can review
 
 If you want to check alerts sent by GranoFlow inside the app, open the notifications page; you can review unread notifications, open the related area, or mark notifications as read.
 
-![Notifications page](../../../screenshots/en/interface-notifications-main.png)
+<!-- manual-screenshot:id=interface-notifications-main -->
+![Notifications screen capture](../../../screenshots/en/interface-notifications-main.png)
 
 ## What you can do here
 

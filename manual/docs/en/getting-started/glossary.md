@@ -109,7 +109,7 @@ You can do this in weekly review, monthly detail, and similar views. The point i
 
 ### AI assistant
 
-The AI assistant is the external AI tool you choose, such as ChatGPT, Claude, Gemini, or DeepSeek.
+The AI assistant is the external AI tool you choose, such as ChatGPT, Codex, Claude, Gemini, or DeepSeek.
 
 GranoFlow does not include a hidden AI that silently edits your data. It prepares a prompt, copies it to your clipboard, and opens the AI tool you selected.
 

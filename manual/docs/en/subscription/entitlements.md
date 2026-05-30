@@ -27,10 +27,13 @@ The following features require subscriber entitlements for full use.
 
 ### Personalization
 
+- AI Assistants & Prompts settings
 - Custom review prompts
-- Journal templates
+- Custom journal, weekly journal, values, and work / learning report prompts
 - Helper prompt customization
 - Diagnostics configuration and heatmap threshold settings
+
+Prompt and AI rewrite entries are grouped under Prompt Settings in Pro settings. Open it, then choose the specific scenario.
 
 ## What happens when you are not subscribed
 

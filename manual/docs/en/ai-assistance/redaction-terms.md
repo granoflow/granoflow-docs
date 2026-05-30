@@ -5,6 +5,8 @@ description: "Maintain a sensitive-word-to-placeholder mapping so GranoFlow auto
 
 If you do not want client names, company names, project codenames, or similar text sent to external AI as-is, add them to Redaction terms. Before GranoFlow sends content to external AI, it replaces the sensitive text with the placeholder you set, such as replacing "Acme Corp" with `CLIENT_A`; after the AI returns a response, GranoFlow tries to restore the placeholder back to the original text.
 
+This list only stores fixed replacement rules you maintain manually. Emails, amounts, links, dates, long numbers, credit cards, IBANs, phone numbers, and similar values found by rule-based discovery use the category defaults in AI redaction settings and may be temporarily replaced with short-lived placeholders such as `EMAIL_1`, `MONEY_1`, or `ID_1`; they are not automatically added to this long-term list.
+
 <!-- manual-screenshot:id=ai-redaction-terms-settings -->
 ![Redaction terms screen capture](../../../screenshots/en/ai-redaction-terms-settings.png)
 
@@ -20,7 +22,7 @@ Add fixed terms that you often include in content but do not want sent directly 
 
 ## How to add a term
 
-1. Open Redaction terms in AI settings.
+1. Open Settings → AI redaction → Redaction terms.
 2. Add a new term.
 3. Enter the original text in the sensitive term field, such as "Acme Corp".
 4. Enter the replacement placeholder, such as `CLIENT_A` or `PROJECT_X`.
@@ -44,7 +46,7 @@ No. Redaction terms are an aid, not a security guarantee.
 These are the limits:
 
 - They may miss abbreviations, aliases, typos, or other variants.
-- They only process terms you have already defined; they do not automatically scan and identify all sensitive data.
+- They only process fixed terms you have defined; rule-based discovery uses short-lived placeholders and does not maintain this list for you.
 - After external AI receives the redacted content, GranoFlow cannot control how that external AI handles it.
 
 Manually review important content before sending.

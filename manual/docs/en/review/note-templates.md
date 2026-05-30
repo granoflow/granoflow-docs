@@ -1,48 +1,26 @@
 ---
-title: "Note templates"
-description: "Note templates give your daily and weekly reviews a consistent structure automatically. They provide the scaffold — you fill in the content."
+title: "How daily and weekly records are created"
+description: "Daily and weekly records can be written by hand or generated with AI assistance and imported."
 ---
 
-Use note templates when you want every daily or weekly review to follow the same format. The template prepares the draft structure first, such as the date, completed items, feelings, and next steps; your job is to review it and add your own thoughts.
+Daily records and weekly summaries do not require a local template. You can write them yourself, or copy the relevant AI prompt, ask an external AI assistant to generate a draft, and import the result into GranoFlow.
 
-<!-- manual-screenshot:id=review-daily-note-template-settings -->
-![Note templates screen capture](../../../screenshots/en/review-daily-note-template-settings.png)
+## Daily records
 
-## What it does
+Daily review notes can be edited and saved at any time. Today, yesterday, and older dates can all be rewritten. Saving only stores the current version; it does not lock the questionnaire.
 
-When you open today's review or this week's summary, GranoFlow creates a draft from the matching template.
+If you want AI to help rewrite or organize the day's record, adjust the journal prompt in Prompt Settings, then use the journal AI entry to generate content.
 
-The draft is not a blank page. It starts with the headings, sections, and variables from the template. Think of it like a form: the structure is already there, but the actual content still needs your input or adjustment.
+## Weekly summaries
 
-## Two templates
+Weekly summaries do not start from a local template draft. When there is no existing summary, you can write one by hand, or use the weekly journal prompt to have an AI assistant generate a version that you can import or keep editing.
 
-- **Daily note template**: used for each day's review draft.
-- **Weekly summary template**: used for each week's summary draft.
+The weekly prompt only shapes how the AI assistant organizes the content. It does not automatically rewrite saved weekly summaries.
 
-<!-- manual-screenshot:id=review-weekly-note-template-settings -->
-![Note templates screen capture](../../../screenshots/en/review-weekly-note-template-settings.png)
+## Where prompts live
 
-These two templates are independent. You can make the daily template more detailed and the weekly template more summary-focused. You can also edit them separately or reset them separately.
+Open Pro Settings > Prompt Settings to adjust the journal prompt, weekly journal prompt, AI rewrite prompt, values prompt, and work / learning report prompt separately.
 
-## What variables are
-
-Variables are placeholders inside a template. When GranoFlow creates the draft, it replaces them with real data.
-
-Common variables include:
-
-- Today's date
-- Today's completed task list
-- This week's review summary
-- Time-investment stats
-
-For example, if the template includes completed tasks, that section will try to bring in the tasks completed that day when you open the review. This gives you a starting point instead of an empty page. You can then decide what to keep and add your feelings and next steps.
-
-## Templates do not write for you
-
-Templates only provide the draft structure. They do not automatically analyze your records or generate summaries for you.
-
-If you want AI to help organize content, use the AI assistance feature. Note templates and AI assistance are separate features.
-
-:::tip[Members-only feature]
-Note templates are available to members. Non-members can view them but cannot customize them.
+:::tip[Writing tip]
+Start with one or two honest sentences, then ask AI to organize them. The result usually sounds more like you than starting from a blank prompt.
 :::

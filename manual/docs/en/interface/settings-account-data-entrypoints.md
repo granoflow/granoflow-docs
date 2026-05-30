@@ -57,7 +57,7 @@ To understand why subscriptions exist, read [Subscription overview](/manual/en/s
 
 ## AI Assistant and Tag Management
 
-The AI assistant entry is for choosing or configuring the external AI tool you want to use with GranoFlow, such as handing prepared content to ChatGPT, Claude, Gemini, DeepSeek, or a custom assistant.
+The AI assistant entry is for choosing or configuring the external AI tool you want to use with GranoFlow, such as handing prepared content to ChatGPT, Codex, Claude, Gemini, DeepSeek, or a custom assistant.
 
 This entry does not mean AI will automatically read all local data, and it does not mean AI will silently change your records. For the overall boundaries, read [AI assistance](/manual/en/ai-assistance/overview/). For the clipboard flow, read [AI assistant and clipboard](/manual/en/ai-assistance/clipboard-assistant/).
 

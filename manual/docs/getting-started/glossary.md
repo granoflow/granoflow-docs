@@ -109,7 +109,7 @@ graph TD
 
 ### AI 助手
 
-AI 助手指的是你自己选择的外部 AI 工具，比如 ChatGPT、Claude、Gemini 或 DeepSeek。
+AI 助手指的是你自己选择的外部 AI 工具，比如 ChatGPT、Codex、Claude、Gemini 或 DeepSeek。
 
 GranoFlow 不内置一个会偷偷替你改数据的黑箱 AI。它会帮你准备提示词，复制到剪贴板，然后打开你选择的 AI 工具。
 

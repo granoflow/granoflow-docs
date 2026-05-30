@@ -3,7 +3,7 @@ title: Values and prompts
 description: Customize review prompts and values so your daily journal and weekly review feel like your own words, not a generic template.
 ---
 
-If you want journal cleanup, weekly reviews, and values exploration to sound more like you, edit the related prompts and values settings here. They shape future questions, organization, and draft wording for the relevant features, but they do not automatically rewrite existing tasks, records, or past summaries.
+If you want journal cleanup, weekly reviews, and values exploration to sound more like you, open Pro settings, then go to AI Assistants & Prompts > Prompt Settings. These settings shape future questions, organization, and draft wording for the relevant features, but they do not automatically rewrite existing tasks, records, or past summaries.
 
 <!-- manual-screenshot:id=review-values-prompts-settings -->
 ![Values and prompts screen capture](../../../screenshots/en/review-values-prompts-settings.png)
@@ -12,7 +12,7 @@ If you want journal cleanup, weekly reviews, and values exploration to sound mor
 
 A prompt is the work instruction the AI assistant reads. When you use AI features to organize a journal, generate a weekly summary, or extract action insights, the system reads the prompt for that scenario to understand the tone, focus, and structure you prefer.
 
-Each scenario has its own prompt:
+Inside Prompt Settings, each scenario still has its own prompt:
 
 <!-- markdownlint-disable MD055 MD056 -->
 
@@ -33,10 +33,7 @@ After you edit a prompt, the next use of that feature reads the new text. Existi
 
 ## Questionnaire and values settings
 
-<!-- manual-screenshot:id=review-questionnaire-prompt-settings -->
-![Values and prompts screen capture](../../../screenshots/en/review-questionnaire-prompt-settings.png)
-
-Analysis and questionnaire settings affect questions before and after a review, including when a review questionnaire is finalized. Their job is to help turn the day's records into a relatively stable result, not to judge whether the day was good or bad.
+Daily review questionnaires can be rewritten and saved at any time. Today, yesterday, and older dates can all be updated. Saving only stores the current version; it does not lock the questionnaire.
 
 Domain values settings bring your long-term direction into review context. Values can be edited at any time and may become clearer as real records accumulate. They are not a classification table that must be filled in once and stay correct forever.
 

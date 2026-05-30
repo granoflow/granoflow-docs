@@ -1,0 +1,559 @@
+openapi: 3.1.0
+info:
+  title: Granoflow Local HTTP API
+  version: 0.2.0
+  summary: App-owned local HTTP API contract (English only)
+  description: |
+    English-only contract for the Granoflow App local HTTP API.
+
+    Scope of this contract:
+    - Endpoints that are currently implemented by the running App process.
+    - Local loopback-first access model with optional user-managed network exposure.
+
+    Out of scope:
+    - Supabase Admin / RevenueCat Admin / arbitrary SQL / direct SQLCipher access.
+    - Any endpoint not implemented in the local HTTP server runtime.
+
+servers:
+  - url: http://127.0.0.1:{port}
+    description: Local loopback endpoint
+    variables:
+      port:
+        default: "42667"
+        description: Configurable bridge/API port. Default is 42667.
+security:
+  - bearerAuth: []
+tags:
+  - name: Meta
+  - name: Commands
+  - name: Resources
+paths:
+  /v1/health:
+    get:
+      tags: [Meta]
+      summary: Health check
+      description: Public health probe. No bearer token required.
+      operationId: getHealth
+      security: []
+      responses:
+        "200":
+          description: Server reachable
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthResponse"
+  /v1/version:
+    get:
+      tags: [Meta]
+      summary: Version metadata
+      operationId: getVersion
+      security: []
+      responses:
+        "200":
+          description: Version payload
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/VersionResponse"
+  /v1/commands:
+    post:
+      tags: [Commands]
+      summary: Execute command envelope
+      operationId: postCommands
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CommandEnvelope"
+      responses:
+        "200":
+          description: Command response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/tasks:
+    get:
+      tags: [Resources]
+      summary: List tasks
+      operationId: listTasks
+      responses:
+        "200":
+          description: Resource command result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Create task
+      operationId: createTask
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          description: Resource created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: Get task
+      operationId: getTask
+      responses:
+        "200":
+          description: Resource command result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    patch:
+      tags: [Resources]
+      summary: Update task
+      operationId: updateTask
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          description: Resource command result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Delete task
+      operationId: deleteTask
+      responses:
+        "200":
+          description: Resource command result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/projects:
+    get:
+      tags: [Resources]
+      summary: List projects
+      operationId: listProjects
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Create project
+      operationId: createProject
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/projects/{id}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: Get project
+      operationId: getProject
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    patch:
+      tags: [Resources]
+      summary: Update project
+      operationId: updateProject
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Delete project
+      operationId: deleteProject
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/milestones:
+    get:
+      tags: [Resources]
+      summary: List milestones
+      operationId: listMilestones
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Create milestone
+      operationId: createMilestone
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/milestones/{id}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: Get milestone
+      operationId: getMilestone
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    patch:
+      tags: [Resources]
+      summary: Update milestone
+      operationId: updateMilestone
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Delete milestone
+      operationId: deleteMilestone
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tags:
+    get:
+      tags: [Resources]
+      summary: List tags
+      operationId: listTags
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Create tag
+      operationId: createTag
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tags/{id}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: Get tag
+      operationId: getTag
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    patch:
+      tags: [Resources]
+      summary: Update tag
+      operationId: updateTag
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Delete tag
+      operationId: deleteTag
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/domain-values:
+    get:
+      tags: [Resources]
+      summary: List domain values
+      operationId: listDomainValues
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Create domain value bucket
+      operationId: createDomainValues
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/domain-values/{id}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: Get domain values
+      operationId: getDomainValues
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    patch:
+      tags: [Resources]
+      summary: Update domain values
+      operationId: updateDomainValues
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Delete domain values
+      operationId: deleteDomainValues
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/reviews:
+    get:
+      tags: [Resources]
+      summary: List reviews
+      operationId: listReviews
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Create review
+      operationId: createReview
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/reviews/{id}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: Get review
+      operationId: getReview
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    patch:
+      tags: [Resources]
+      summary: Update review
+      operationId: updateReview
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Delete review
+      operationId: deleteReview
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: API Token
+  parameters:
+    ResourceId:
+      name: id
+      in: path
+      required: true
+      schema:
+        type: string
+  responses:
+    Error:
+      description: Error response
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ErrorEnvelope"
+  schemas:
+    HealthResponse:
+      type: object
+      required: [status, apiEnabled, running, version, serverTime]
+      properties:
+        status:
+          type: string
+          enum: [ok]
+        apiEnabled:
+          type: boolean
+        running:
+          type: boolean
+        version:
+          type: string
+        releaseDate:
+          type: [string, "null"]
+        serverTime:
+          type: string
+          format: date-time
+    VersionResponse:
+      type: object
+      required: [version, buildNumber, channel, gitCommit]
+      properties:
+        version:
+          type: string
+        buildNumber:
+          type: string
+        releaseDate:
+          type: [string, "null"]
+        channel:
+          type: string
+        gitCommit:
+          type: string
+    CommandEnvelope:
+      type: object
+      additionalProperties: true
+      description: |
+        Forwarded to the App command handler as-is.
+    CommandResult:
+      type: object
+      additionalProperties: true
+      description: |
+        App command result envelope.
+    ErrorEnvelope:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: object
+          required: [code, message]
+          properties:
+            code:
+              type: string
+            message:
+              type: string
+            detail:
+              type: [string, "null"]

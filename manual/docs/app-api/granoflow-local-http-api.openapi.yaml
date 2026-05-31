@@ -2,25 +2,11 @@ openapi: 3.1.0
 info:
   title: Granoflow Local HTTP API
   version: 0.2.0
-  summary: App-owned local HTTP API contract (English only)
-  description: |
-    English-only contract for the Granoflow App local HTTP API.
-
-    Scope of this contract:
-    - Endpoints that are currently implemented by the running App process.
-    - Local loopback-first access model with optional user-managed network exposure.
-
-    Out of scope:
-    - Supabase Admin / RevenueCat Admin / arbitrary SQL / direct SQLCipher access.
-    - Any endpoint not implemented in the local HTTP server runtime.
-
 servers:
   - url: http://127.0.0.1:{port}
-    description: Local loopback endpoint
     variables:
       port:
         default: "56789"
-        description: Configurable local HTTP API port. Default is 56789.
 security:
   - bearerAuth: []
 tags:

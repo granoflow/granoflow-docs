@@ -1,8 +1,9 @@
 ---
-title: "CLI 如何連接到 App"
-description: "理解 native CLI 與運行中 App command channel 嘅邊界，以及 loopback bridge 同端口規則。"
+title: "本機 HTTP API 工作原理"
+description: "理解本機 HTTP API 嘅監聽地址、端口配置、Token 認證同 App 保護門禁。"
 translationSource: zh-CN
 translationReview:
+  - manual-usefulness-review
   - ux-writing
   - plan-eng-review
 ---
@@ -11,45 +12,49 @@ translationReview:
 
 ## Think in boundaries：先分清兩層
 
-- **Native CLI 可直接執行**：`help`、`version`、`lang`、`bridge`、`clean`、`backup-package`
-- **需要運行中 App command channel**：`display`、`status`、`sync`、`open <route>`、業務對象、`backup`、`ai-agent` 真實數據命令
+- **本機 HTTP API 可直接處理**：`/v1/health`、`/v1/status`、命令參數校驗、JSON 格式檢查
+- **需要 App 執行業務邏輯**：`/v1/task`、`/v1/project`、`/v1/backup`、`/v1/ai-agent` 等數據操作命令
 
-CLI 唔會繞過 App 直接操作生產數據。
+本機 HTTP API 唔會繞過 App 直接操作生產數據。所有數據操作最終由 App 執行。
 
-## Think in the running App
+如果 App 未運行，API 會返回 `app_not_reachable`。
 
-業務對象同備份屬於用戶數據命令。CLI 只做參數校驗、JSON 輸入讀取同轉發，實際讀寫由 App 執行。
+## Think in the local address：本機 HTTP API 係乜嘢
 
-如果 App 未運行或不可達，命令會返回 `app_not_reachable`。
+本機 HTTP API 透過本機回環地址監聽：`http://127.0.0.1:<port>`。
 
-## Think in the local port
+- host 固定為 `127.0.0.1`
+- 默認端口為 `42667`
+- 端口可以喺設定頁修改，範圍 `1024..65535`
+- API 配置係本機監聽配置，唔係遠程 API 服務
+- App 嘅「命令行工具」設定頁會顯示目前本機地址。你可以複製根地址，亦可以用默認瀏覽器打開 `/v1/health` 檢查本機 HTTP 介面是否可連線；本機 HTTP 介面關閉嗰陣，呢兩個動作會停用，要先開啟介面之後先用得。
 
-CLI 同 App 透過本機 loopback 通道通訊：`127.0.0.1:<port>`。
-
-- host 固定 `127.0.0.1`
-- port 可配置，範圍 `1024..65535`
-- bridge 配置係本機端口配置，唔係遠程 API 服務
-
-查看配置：
+## API 端點示例
 
 ```bash
+# 健康檢查
+curl http://127.0.0.1:42667/v1/health
+
+# 系統狀態
+curl http://127.0.0.1:42667/v1/status
+
+# 查看 API 配置
 granoflow bridge config show --json
-```
-
-修改端口：
-
-```bash
-granoflow bridge port set 52001 --json
-```
-
-修復配置：
-
-```bash
-granoflow bridge config repair --reset --json
 ```
 
 ## 端口變更後嘅關鍵動作
 
-`bridge port set` 寫入後，**必須重啟 App** 先會生效。
+`bridge port set` 寫入後，**必須重啟 App** 先會生效。若果你係喺 App 設定頁而且本機 HTTP 介面已經關閉嗰陣修改端口，新端口會喺下次開啟本機 HTTP 介面後生效。
 
-`bridge-config.json` 只保存 schema、protocol、host、port 等非敏感欄位，唔會保存 token、nonce、App lock 狀態、帳號或跨裝置憑據。
+本機 HTTP 配置只保存 schema、protocol、host、port 等非敏感字段，唔保存 token、nonce、App lock 狀態、帳號或跨裝置憑據。
+
+## Think in permissions：API 門禁順序
+
+受保護嘅本機 HTTP 端點有固定門禁順序：
+
+1. 本機 HTTP API 總開關（關閉時所有端點返回 403）
+2. App lock（要先解鎖 App）
+3. nonce
+4. Token Verification（只喺開啟時需要 API token）
+
+`/v1/health`、`/v1/status` 等唯讀端點通常唔受門禁限制。

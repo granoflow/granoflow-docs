@@ -1,8 +1,9 @@
 ---
-title: "CLI troubleshooting"
+title: "Troubleshooting"
 description: "Resolve command not found, app_not_reachable, port conflicts, token failures, and JSON input errors."
 translationSource: zh-CN
 translationReview:
+  - manual-usefulness-review
   - ux-writing
   - plan-eng-review
 ---
@@ -11,56 +12,60 @@ translationReview:
 
 ## `command not found: granoflow`
 
-Go to the app Command Line Tool settings page and install or repair CLI, then reopen terminal.
+Go to the app's Command Line Tool settings page and reinstall or repair the CLI, then reopen the terminal and retry.
 
 ## `app_not_reachable`
 
-This means the command needs the running app command channel, but the app is unreachable.
+This means the command needs the running app's local HTTP API, but it is currently unreachable.
 
 Check in order:
 
-1. app is running
-2. local CLI access is enabled
-3. bridge port is consistent
+1. Is the app running?
+2. Is the local HTTP API enabled (Settings → Command Line Tool → toggle)?
+3. Is the local HTTP port consistent?
 
 ```bash
+# Primary diagnostic: directly check if the API is reachable
+curl -s http://127.0.0.1:42667/v1/health
+
+# View current port configuration
 granoflow bridge config show --json
 ```
 
 ## Port conflict or invalid port
 
-If the port is occupied by another process, set a new port and restart app:
+If the port is occupied by another process, change the port first, then restart the app:
 
 ```bash
 granoflow bridge port set 52001 --json
 ```
 
-Port changes require app restart.
+Port changes require an app restart.
 
 ## Token verification failure
 
-Confirm:
+Confirm the following:
 
-- Token Verification is enabled
-- `--token` or `GRANOFLOW_CLI_TOKEN` is correct
-- token is applied to protected commands
+- Is Token Verification enabled?
+- Is `--token`, `GRANOFLOW_CLI_TOKEN`, or the `Authorization` header correct?
+- Is the token passed to a protected endpoint?
 
-## Local access disabled (`cli_disabled`)
+## Local HTTP API disabled (`cli_disabled`)
 
-Enable local CLI access in app settings, then retry.
+Enable the local HTTP interface in the app settings page, then retry.
 
-## App lock / nonce rejected
+## App Lock / nonce rejected
 
-Unlock in app first, then retry command.
+Unlock in the app first, then retry the command.
 
 ## Backup secret error
 
-For `backup restore` or `backup-package`, make sure secret file exists, is readable, and not empty.
+When `backup restore` or `backup-package` uses a secret file, ensure the file exists, is readable, has correct content, and is not empty.
 
 ## JSON input error
 
-If `--input` fails, verify:
+When `--input` fails, check:
 
-- file exists
-- JSON is valid
-- top-level value is a JSON object
+- Does the file exist?
+- Is the JSON valid?
+- Is the top-level value a JSON object?

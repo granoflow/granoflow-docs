@@ -13,6 +13,7 @@ tags:
   - name: Meta
   - name: Commands
   - name: Resources
+  - name: Reviews
 paths:
   /:
     get:
@@ -414,72 +415,200 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/CommandResult"
-  /v1/reviews:
-    get:
-      tags: [Resources]
-      summary: List reviews
-      operationId: listReviews
-      responses:
-        "200":
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/CommandResult"
-    post:
-      tags: [Resources]
-      summary: Create review
-      operationId: createReview
-      requestBody:
-        required: false
-        content:
-          application/json:
-            schema:
-              type: object
-      responses:
-        "201":
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/CommandResult"
-  /v1/reviews/{id}:
+  /v1/reviews/days/{date}:
     parameters:
-      - $ref: "#/components/parameters/ResourceId"
+      - name: date
+        in: path
+        required: true
+        description: Local review date in YYYY-MM-DD format.
+        schema:
+          type: string
+          format: date
     get:
-      tags: [Resources]
-      summary: Get review
-      operationId: getReview
+      tags: [Reviews]
+      summary: Get daily review reflection
+      description: |
+        Reads the daily review for a local date, including focus/task aggregates and editable
+        reflection fields. Review means reflection / retrospective record.
+      operationId: getDailyReview
       responses:
         "200":
+          description: Daily review
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/CommandResult"
+                $ref: "#/components/schemas/DailyReviewResult"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
     patch:
-      tags: [Resources]
-      summary: Update review
-      operationId: updateReview
+      tags: [Reviews]
+      summary: Update daily review reflection
+      description: |
+        Updates editable daily reflection fields. Arbitrary gapAnswers maps are not accepted;
+        use the documented reflectionAnswers keys only.
+      operationId: updateDailyReview
       requestBody:
         required: false
         content:
           application/json:
             schema:
-              type: object
+              $ref: "#/components/schemas/DailyReviewPatchRequest"
       responses:
         "200":
+          description: Updated daily review
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/CommandResult"
-    delete:
-      tags: [Resources]
-      summary: Delete review
-      operationId: deleteReview
+                $ref: "#/components/schemas/DailyReviewResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/reviews/weeks/{weekStart}:
+    parameters:
+      - name: weekStart
+        in: path
+        required: true
+        description: Local week start date in YYYY-MM-DD format.
+        schema:
+          type: string
+          format: date
+    get:
+      tags: [Reviews]
+      summary: Get weekly review reflection
+      description: Reads the weekly summary and weekly value review entries for a local week.
+      operationId: getWeeklyReview
       responses:
         "200":
+          description: Weekly review
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/CommandResult"
+                $ref: "#/components/schemas/WeeklyReviewResult"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+    patch:
+      tags: [Reviews]
+      summary: Update weekly review summary
+      description: Updates the weekly summary content. Weekly value scores use the value endpoint.
+      operationId: updateWeeklyReview
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WeeklyReviewPatchRequest"
+      responses:
+        "200":
+          description: Updated weekly review
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WeeklyReviewResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/reviews/weeks/{weekStart}/values/{valueId}:
+    parameters:
+      - name: weekStart
+        in: path
+        required: true
+        description: Local week start date in YYYY-MM-DD format.
+        schema:
+          type: string
+          format: date
+      - name: valueId
+        in: path
+        required: true
+        description: Value id returned by the domain-values API.
+        schema:
+          type: string
+    put:
+      tags: [Reviews]
+      summary: Set weekly value review
+      description: |
+        Creates or updates a weekly score and note for one value. Obtain valueId from the
+        domain-values API before calling this endpoint.
+      operationId: setWeeklyValueReview
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WeeklyValueReviewPatchRequest"
+      responses:
+        "200":
+          description: Updated weekly value review
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WeeklyValueReviewResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+    patch:
+      tags: [Reviews]
+      summary: Update weekly value review
+      description: |
+        Updates a weekly score and/or note for one value. Obtain valueId from the domain-values
+        API before calling this endpoint.
+      operationId: updateWeeklyValueReview
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/WeeklyValueReviewPatchRequest"
+      responses:
+        "200":
+          description: Updated weekly value review
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/WeeklyValueReviewResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/reviews/months/{month}:
+    parameters:
+      - name: month
+        in: path
+        required: true
+        description: Local review month in YYYY-MM format.
+        schema:
+          type: string
+          pattern: "^\\d{4}-\\d{2}$"
+    get:
+      tags: [Reviews]
+      summary: Get monthly review aggregate
+      description: Reads the monthly aggregate review. Monthly review is read-only in this version.
+      operationId: getMonthlyReview
+      responses:
+        "200":
+          description: Monthly review aggregate
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MonthlyReviewResult"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
 components:
   securitySchemes:
     bearerAuth:
@@ -543,6 +672,200 @@ components:
       additionalProperties: true
       description: |
         App command result envelope.
+    DailyReviewResult:
+      type: object
+      required: [entity_type, entity]
+      properties:
+        entity_type:
+          type: string
+          enum: [review.day]
+        updated:
+          type: boolean
+        entity:
+          $ref: "#/components/schemas/DailyReview"
+    DailyReview:
+      type: object
+      required: [date, focusMinutes, completedTasks, sessionCount, totalInvestedMinutes, reflection]
+      properties:
+        date:
+          type: string
+          format: date
+        focusMinutes:
+          type: integer
+        completedTasks:
+          type: array
+          items:
+            type: object
+            additionalProperties: true
+        sessionCount:
+          type: integer
+        totalInvestedMinutes:
+          type: integer
+        reflection:
+          $ref: "#/components/schemas/DailyReviewReflection"
+    DailyReviewReflection:
+      type: object
+      required: [reflectionAnswers]
+      properties:
+        longNote:
+          type: [string, "null"]
+        moodScore:
+          type: [integer, "null"]
+        moodNote:
+          type: [string, "null"]
+        efficiencyScore:
+          type: [integer, "null"]
+        efficiencyNote:
+          type: [string, "null"]
+        reflectionAnswers:
+          $ref: "#/components/schemas/DailyReflectionAnswers"
+    DailyReflectionAnswers:
+      type: object
+      additionalProperties: false
+      properties:
+        real_focus_time:
+          type: [string, "null"]
+        interruption_count:
+          type: [string, "null"]
+        energy_state:
+          type: [string, "null"]
+        work_learning_report:
+          type: [string, "null"]
+    DailyReviewPatchRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        longNote:
+          type: [string, "null"]
+        moodScore:
+          type: integer
+        moodNote:
+          type: [string, "null"]
+        efficiencyScore:
+          type: integer
+        efficiencyNote:
+          type: [string, "null"]
+        reflectionAnswers:
+          $ref: "#/components/schemas/DailyReflectionAnswers"
+    WeeklyReviewResult:
+      type: object
+      required: [entity_type, entity]
+      properties:
+        entity_type:
+          type: string
+          enum: [review.week]
+        updated:
+          type: boolean
+        entity:
+          $ref: "#/components/schemas/WeeklyReview"
+    WeeklyReview:
+      type: object
+      required:
+        [weekStart, weekEnd, totalFocusMinutes, completedTaskCount, averageDailyMinutes, sessionCount, totalInvestedMinutes, values]
+      properties:
+        weekStart:
+          type: string
+          format: date
+        weekEnd:
+          type: string
+          format: date
+        totalFocusMinutes:
+          type: integer
+        completedTaskCount:
+          type: integer
+        averageDailyMinutes:
+          type: integer
+        sessionCount:
+          type: integer
+        totalInvestedMinutes:
+          type: integer
+        content:
+          type: [string, "null"]
+        values:
+          type: array
+          items:
+            $ref: "#/components/schemas/WeeklyValueReview"
+    WeeklyReviewPatchRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        content:
+          type: string
+    WeeklyValueReviewResult:
+      type: object
+      required: [entity_type, entity]
+      properties:
+        entity_type:
+          type: string
+          enum: [review.week.value]
+        updated:
+          type: boolean
+        entity:
+          $ref: "#/components/schemas/WeeklyValueReview"
+    WeeklyValueReview:
+      type: object
+      required: [id, weekStart, domainSlug, valueId, valueTitle]
+      properties:
+        id:
+          type: string
+        weekStart:
+          type: string
+          format: date
+        domainSlug:
+          type: string
+        valueId:
+          type: string
+        score:
+          type: [integer, "null"]
+        note:
+          type: [string, "null"]
+        valueTitle:
+          type: string
+        valueDescription:
+          type: [string, "null"]
+    WeeklyValueReviewPatchRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        score:
+          type: integer
+        note:
+          type: [string, "null"]
+        domainSlug:
+          type: string
+          default: work_learning
+        valueTitle:
+          type: string
+          description: Snapshot title for the value. Defaults to valueId when omitted.
+        valueDescription:
+          type: [string, "null"]
+          description: Optional snapshot description for the value.
+    MonthlyReviewResult:
+      type: object
+      required: [entity_type, entity]
+      properties:
+        entity_type:
+          type: string
+          enum: [review.month]
+        entity:
+          $ref: "#/components/schemas/MonthlyReview"
+    MonthlyReview:
+      type: object
+      required: [year, month, totalFocusMinutes, completedTaskCount, averageDailyMinutes]
+      properties:
+        year:
+          type: integer
+        month:
+          type: integer
+        totalFocusMinutes:
+          type: integer
+        completedTaskCount:
+          type: integer
+        averageDailyMinutes:
+          type: integer
+        mostActiveDate:
+          type: [string, "null"]
+          format: date
     ErrorEnvelope:
       type: object
       required: [error]

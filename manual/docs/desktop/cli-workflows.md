@@ -1,13 +1,18 @@
 ---
-title: "用 CLI 思考工作流"
-description: "用 Think in workflows 方式，把 CLI 命令组合成可执行的日常流程。"
+title: "用 CLI 和 HTTP 思考工作流"
+description: "用 Think in workflows 方式，把 CLI 命令和 HTTP 调用组合成可执行的日常流程。"
 ---
 
 ## Think in capture：先抓现状
 
 ```bash
+# CLI 方式
 granoflow status --json
 granoflow task list --json
+
+# 直接 HTTP 调用
+curl -s http://127.0.0.1:42667/v1/status
+curl -s http://127.0.0.1:42667/v1/task
 ```
 
 先确认 App 可达、同步状态和任务总览，再进入写操作。
@@ -45,5 +50,6 @@ granoflow backup restore --file before-change.granobackup --preview --json
 ## Think in automation：给 AI 助手或脚本
 
 - 全程优先 `--json`
-- 先判断是否需要运行中的 App
+- 先判断是否需要运行中的 App（通过 `/v1/status` 检查）
 - 对长流程加入错误分支（如 `app_not_reachable`、`cli_disabled`）
+- 也可直接通过 curl 调用本机 HTTP API，不依赖 `granoflow` CLI 是否安装

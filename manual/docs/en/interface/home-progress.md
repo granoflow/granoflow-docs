@@ -1,20 +1,20 @@
 ---
 title: "Progress"
-description: "Progress is GranoFlow's default home screen for quickly checking today, yesterday, this week, this month, and project progress."
+description: "Progress is GranoFlow's default home screen for quickly checking what needs attention, today's state, this week, this month, and project progress."
 ---
 
-The Progress page helps you see, as soon as you open GranoFlow: what happened today, what yesterday left behind, whether you have been moving forward this week and this month, and where your active projects stand.
+The Progress page helps you see, as soon as you open GranoFlow: what needs attention now, how today is going, whether you have been moving forward this week and this month, and where your active projects stand.
 
 It is not a task list, and it is not an analytics report. Treat it as a home status board: glance at it first, then decide whether to continue today’s tasks or review yesterday.
 
-## Today and yesterday
+## Home status and today's insights
 
-The top of the page shows brief summaries for today and yesterday. You can see how many tasks were completed, which projects were involved, and how much time was invested.
+The top of the page starts with the work queue, today's progress, and a short feedback card so you can decide what to do next. When today already has logged invested time, the page can also show lightweight "Today's progress insights": one stage message, up to two behavior tags, and a button into today's review.
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
 ![Progress screen capture](../../../screenshots/en/interface-home-progress-main.png)
 
-Tap "Today" to open the task page and continue working on current tasks. Tap "Yesterday" to open yesterday’s review and see what was completed that day.
+"Today's progress insights" is a quick read, not the full analysis. To see the full context, notes, or reflection, use "View today's review" or "Complete today's review" to open Review.
 
 ## This week and this month
 

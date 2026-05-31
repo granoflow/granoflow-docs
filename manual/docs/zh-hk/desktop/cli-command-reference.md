@@ -1,13 +1,31 @@
 ---
-title: "CLI 命令與參數參考"
-description: "查看 granoflow CLI 公開穩定命令、參數與 App 依賴分類。"
+title: "CLI 命令同參數參考"
+description: "查看 granoflow CLI 嘅公開穩定命令、參數、HTTP 端點對應同 App 依賴分類。"
 translationSource: zh-CN
 translationReview:
+  - manual-usefulness-review
   - ux-writing
   - plan-eng-review
 ---
 
 <!-- markdownlint-disable MD013 -->
+
+## HTTP API 等效
+
+`granoflow` CLI 提供嘅所有功能都對應本機 HTTP API 端點。CLI 係可選嘅交互式客戶端，你可以直接用 curl 呼叫：
+
+```bash
+# 等同於 granoflow status --json
+curl -s http://127.0.0.1:42667/v1/status
+
+# 等同於 granoflow task list --json
+curl -s http://127.0.0.1:42667/v1/task
+
+# 等同於 granoflow backup create --out backup.granobackup
+curl -s -X POST http://127.0.0.1:42667/v1/backup -d '{"out":"backup.granobackup"}'
+```
+
+本機 HTTP API 默認監聽 `http://127.0.0.1:42667`，端口可以喺設定頁修改。
 
 ## 快速分類
 
@@ -22,10 +40,10 @@ translationReview:
 - `clean`
 - `backup-package inspect|encrypt|decrypt|merge`
 
-### 需要運行中 App command channel
+### 需要運行中 App（透過 HTTP API）
 
 - `display *`
-- `open <route>`（唔帶 route 嘅 `open` 用於喚起 App）
+- `open <route>`（唔帶 route 嘅 `open` 用嚟喚起 App）
 - `status`
 - `sync run`
 - `task|project|milestone|tag|domain-value|review`
@@ -44,7 +62,7 @@ granoflow lang zh-HK
 granoflow lang reset
 ```
 
-## bridge 命令
+## bridge 命令（本機 HTTP 端口配置）
 
 ```bash
 granoflow bridge config show --json
@@ -56,7 +74,7 @@ granoflow bridge config repair --reset --json
 
 ```bash
 granoflow display get --json
-granoflow display language zh-HK --json
+granoflow display language zh-CN --json
 granoflow display theme dark --json
 granoflow display font-size large --json
 granoflow display window-layout landscape --json
@@ -99,4 +117,4 @@ granoflow backup-package merge --left a.granobackup --right b.granobackup --out 
 
 ## JSON 自動化約定
 
-公開命令支持 `--json`。JSON 模式只輸出結構化 envelope，唔混入人類文本。
+公開命令支援 `--json`。JSON 模式只輸出結構化 envelope，唔會混雜人類文字。

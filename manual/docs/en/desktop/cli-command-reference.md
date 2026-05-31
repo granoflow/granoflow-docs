@@ -1,13 +1,31 @@
 ---
 title: "CLI command reference"
-description: "Find public stable granoflow CLI commands, options, and app dependency classification."
+description: "View public stable granoflow CLI commands, parameters, HTTP endpoint mapping, and app dependency classification."
 translationSource: zh-CN
 translationReview:
+  - manual-usefulness-review
   - ux-writing
   - plan-eng-review
 ---
 
 <!-- markdownlint-disable MD013 -->
+
+## HTTP API equivalence
+
+All functionality provided by the `granoflow` CLI also corresponds to local HTTP API endpoints. The CLI is an optional interactive client — you can call the API directly with curl:
+
+```bash
+# Equivalent to granoflow status --json
+curl -s http://127.0.0.1:42667/v1/status
+
+# Equivalent to granoflow task list --json
+curl -s http://127.0.0.1:42667/v1/task
+
+# Equivalent to granoflow backup create --out backup.granobackup
+curl -s -X POST http://127.0.0.1:42667/v1/backup -d '{"out":"backup.granobackup"}'
+```
+
+The local HTTP API listens on `http://127.0.0.1:42667` by default; the port can be changed on the settings page.
 
 ## Quick classification
 
@@ -22,16 +40,16 @@ translationReview:
 - `clean`
 - `backup-package inspect|encrypt|decrypt|merge`
 
-### Requires running app command channel
+### Requires running app (via HTTP API)
 
 - `display *`
-- `open <route>` (plain `open` without route is for launching app)
+- `open <route>` (plain `open` without a route launches the app)
 - `status`
 - `sync run`
 - `task|project|milestone|tag|domain-value|review`
 - `quick-add`, `logout`, `export`, `import`
 - `backup create|restore`
-- real-data `ai-agent` commands
+- `ai-agent` real-data commands
 
 ## Core commands
 
@@ -44,7 +62,7 @@ granoflow lang zh-HK
 granoflow lang reset
 ```
 
-## Bridge commands
+## Bridge commands (local HTTP port configuration)
 
 ```bash
 granoflow bridge config show --json
@@ -99,4 +117,4 @@ granoflow backup-package merge --left a.granobackup --right b.granobackup --out 
 
 ## JSON automation contract
 
-Public commands support `--json`. JSON mode returns structured envelope only, with no human text mixed in.
+Public commands support `--json`. JSON mode returns a structured envelope only, with no human-readable text mixed in.

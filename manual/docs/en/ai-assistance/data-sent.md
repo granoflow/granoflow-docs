@@ -25,7 +25,7 @@ There are four key settings:
 
 - **Master switch**: when off, GranoFlow does not perform outbound redaction replacement.
 - **Category defaults**: when the system finds emails, links, dates, long numbers, money, credit cards, IBANs, and similar content by rule, this decides whether the default is "redacted" or "allowed"; phone numbers default to allowed and can be turned on when needed.
-- **Phone, number, and money settings**: when phone is on, you can choose recognition regions; numbers can use a minimum digit count and either a number or ID placeholder; money can include symbol/currency-code and Chinese uppercase matching, with either a money or amount placeholder.
+- **Phone, number, and money settings**: when phone is on, you can choose recognition regions and search by region name, English name, code, or dialing prefix; the dialing prefix only helps you find a region, while recognition follows the regions you save. Numbers can use a minimum digit count and either a number or ID placeholder; money can include symbol/currency-code and Chinese uppercase matching, with either a money or amount placeholder.
 - **Redaction terms**: lets you maintain fixed sensitive-term-to-placeholder rules, such as client names, company names, or project codenames.
 
 Auto-discovery is rule-based assistance, not intelligent review. It may miss unusual formats, and it may mistake ordinary numbers for sensitive content. When a category defaults to "redacted", discovered values are temporarily replaced with short-lived placeholders such as `EMAIL_1`, `MONEY_1`, or `ID_1` and GranoFlow tries to restore them after the AI responds; they are not automatically added to your long-term redaction terms. **You still need to check before sending.**

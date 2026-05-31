@@ -1,23 +1,27 @@
 ---
-title: "CLI 排障"
+title: "排障"
 description: "处理 command not found、app_not_reachable、端口冲突、token 失败和 JSON 输入错误。"
 ---
 
 ## `command not found: granoflow`
 
-先回到 App 设置页的“命令行工具”重新安装或修复 CLI，然后重开终端再试。
+先回到 App 设置页的"命令行工具"重新安装或修复 CLI，然后重开终端再试。
 
 ## `app_not_reachable`
 
-说明命令需要运行中的 App command channel，但当前不可达。
+说明命令需要运行中的 App 本机 HTTP API，但当前不可达。
 
 检查顺序：
 
 1. App 是否正在运行
-2. 本地访问是否开启
-3. bridge 端口是否一致
+2. 本机 HTTP API 是否开启（设置页 → 命令行工具 → 开关）
+3. 本机 HTTP 端口是否一致
 
 ```bash
+# 首要诊断：直接检查 API 是否可达
+curl -s http://127.0.0.1:42667/v1/health
+
+# 查看当前端口配置
 granoflow bridge config show --json
 ```
 
@@ -36,12 +40,12 @@ granoflow bridge port set 52001 --json
 确认以下项：
 
 - Token Verification 是否开启
-- `--token` 或 `GRANOFLOW_CLI_TOKEN` 是否正确
-- token 是否传给了受保护命令
+- `--token`、`GRANOFLOW_CLI_TOKEN` 或 `Authorization` 请求头是否正确
+- token 是否传给了受保护端点
 
-## 本地访问关闭（`cli_disabled`）
+## 本机 HTTP API 关闭（`cli_disabled`）
 
-到 App 设置页开启本地命令行访问后重试。
+到 App 设置页开启本机 HTTP 接口后重试。
 
 ## App Lock / nonce 拒绝
 

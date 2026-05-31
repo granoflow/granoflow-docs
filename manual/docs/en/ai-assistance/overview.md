@@ -21,7 +21,9 @@ GranoFlow's AI will not change your tasks by itself, and it will not send data t
 
 When you click Helper on a page, GranoFlow prepares a prompt. The prompt includes the current page route, a short page description, and several related official manual links.
 
-This means that when you give the prompt to an external AI, it can read those manual pages first before answering your question. If those links are not enough, the prompt also keeps the official manual home page as a fallback.
+This means that when you give the prompt to an external AI, it can read those manual pages first before answering your question. If those links are not enough, the prompt also keeps the official manual home page as a fallback. If the manual does not clearly answer the question, Helper asks the external AI to say that the information is not confirmed in the manual; in low-risk cases, it may offer an inference, but it must separate the inference from manual-confirmed information.
+
+If you say a feature is missing, hard to find, or hard to use, Helper also asks the external AI to acknowledge the experience issue first, not argue with you, and optionally direct you to [granoflow-docs](https://github.com/granoflow/granoflow-docs) for feedback; effective feedback may have a chance to receive a GranoFlow annual membership reward.
 
 For example, if you click Helper on the sync page, the prompt prioritizes manuals about sync, new-device sync, and device management instead of only giving the manual home page.
 

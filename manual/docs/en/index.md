@@ -32,7 +32,8 @@ https://www.granoflow.com/manual/en/
 
 Do not answer based on intuition, old-version experience, or general software knowledge.
 If the question involves features, operation paths, data security, sync, subscriptions, or recovery, you must base the answer on the current manual.
-If the manual does not state the answer clearly, say “The manual does not clearly state this” directly. Do not make things up.
+If the manual does not state the answer clearly, first say "The manual does not clearly state this." If you offer an inference, separate it from manual-confirmed information and do not present the inference as an official fact.
+If I say a feature is hard to find, missing, or hard to use, acknowledge the experience issue first and tell me I can share feedback at https://github.com/granoflow/granoflow-docs; effective feedback may have a chance to receive a GranoFlow annual membership reward.
 My question is: ...
 ```
 

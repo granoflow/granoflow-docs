@@ -19,8 +19,8 @@ servers:
     description: Local loopback endpoint
     variables:
       port:
-        default: "42667"
-        description: Configurable bridge/API port. Default is 42667.
+        default: "56789"
+        description: Configurable local HTTP API port. Default is 56789.
 security:
   - bearerAuth: []
 tags:
@@ -28,6 +28,20 @@ tags:
   - name: Commands
   - name: Resources
 paths:
+  /:
+    get:
+      tags: [Meta]
+      summary: Human-readable welcome page
+      description: Public browser-friendly landing response with version and API documentation URL.
+      operationId: getWelcome
+      security: []
+      responses:
+        "200":
+          description: Welcome text
+          content:
+            text/plain:
+              schema:
+                type: string
   /v1/health:
     get:
       tags: [Meta]

@@ -44,7 +44,7 @@ cat payload.json | granoflow task create --input - --json
 
 - `GRANOFLOW_CLI_LANG`：CLI 輸出語言
 - `GRANOFLOW_CLI_TOKEN`：受保護命令 token
-- `GRANOFLOW_CLI_IPC_PORT` / bridge 配置：本機通道端口相關
+- `bridge-config.json` / `granoflow bridge`：本機 RESTful API 端口相關，預設 `127.0.0.1:56789`
 
 ## 腳本實務建議
 

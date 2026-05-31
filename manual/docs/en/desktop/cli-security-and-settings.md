@@ -1,6 +1,6 @@
 ---
 title: "CLI security and key boundaries"
-description: "Understand the local HTTP API access switch, Token Verification, App Lock, redaction, and the boundaries between different keys."
+description: "Understand the local HTTP API access switch, access code protection, official docs debugging, App Lock, redaction, and the boundaries between different keys."
 translationSource: zh-CN
 translationReview:
   - manual-usefulness-review
@@ -15,23 +15,32 @@ translationReview:
 Protected local HTTP endpoints follow a fixed gate order:
 
 1. Local HTTP API master switch (when off, all endpoints return 403)
-2. App lock
-3. nonce
-4. Token Verification (only required when enabled)
-5. Endpoint-level permissions (some commands require higher privileges)
+2. Origin checks (local pages are allowed by default; official docs debugging must be opened explicitly)
+3. App lock
+4. nonce
+5. Access code protection (only required when enabled)
+6. Endpoint-level permissions (some commands require higher privileges)
 
 Read-only endpoints such as `/v1/health` and `/v1/status` are typically not subject to gate restrictions.
-`granoflow help`, `granoflow version`, and `granoflow open` are discovery and wake-up entries and do not require a token.
+`granoflow help`, `granoflow version`, and `granoflow open` are discovery and wake-up entries and do not require an access code.
 
-## Token Verification
+## Access code protection
 
-When enabled, protected endpoints that read or modify app data require an API token.
+When enabled, protected endpoints that read or modify app data require an access code.
 
-Pass the token via:
+Pass the access code via:
 
 - **HTTP request**: `Authorization: Bearer <value>` header
 - **CLI command**: `--token <value>` parameter
 - **Environment variable**: `GRANOFLOW_CLI_TOKEN`
+
+“Allow any device origin” requires access code protection and at least one enabled access code. Without that protection, the switch cannot be enabled; if access code protection is turned off or the last enabled access code is removed, it is turned off automatically.
+
+## Official docs debugging
+
+`granoflow.com` documentation pages do not have business API access by default. To debug the local API from a docs page, open “Official docs debugging” manually in the app settings page.
+
+Each start creates a temporary access code that expires after 1 hour. Closing debugging, expiration, restarting the app, or starting a new session invalidates the old code. Send the temporary code through the `Authorization: Bearer <temporary-code>` header, not in a URL or long-term storage.
 
 ## Local HTTP API switch
 
@@ -41,7 +50,7 @@ When the switch is off, the CLI can still execute local commands that do not dep
 
 ## App Lock and nonce
 
-Even if Token Verification is off, the preceding gates still apply. If App Lock or nonce validation fails, the request is rejected first.
+Even if access code protection is off, the preceding gates still apply. If origin checks, App Lock, or nonce validation fail, the request is rejected first.
 
 ## Think in redaction as assistance
 
@@ -49,7 +58,7 @@ Redaction helps reduce the risk of exposing sensitive information in external AI
 
 ## Think in secrets separately: three types of keys, do not mix
 
-- **API token**: authorization token for the local HTTP API (passed via Authorization header or CLI `--token`)
+- **Access code**: authorization credential for the local HTTP API (passed via Authorization header or CLI `--token`)
 - **Backup secret**: secret for backup package encryption/restore (typically provided via a file)
 - **Cloud sync key**: recovery key for end-to-end encrypted cloud sync data
 
@@ -72,5 +81,5 @@ granoflow clean --all --json
 | Variable | Purpose |
 | --- | --- |
 | `GRANOFLOW_CLI_LANG` | CLI output language |
-| `GRANOFLOW_CLI_TOKEN` | API token (equivalent to Authorization header) |
+| `GRANOFLOW_CLI_TOKEN` | Access code (equivalent to Authorization header) |
 | `GRANOFLOW_CLI_IPC_PORT` | Local HTTP API port (equivalent to bridge port) |

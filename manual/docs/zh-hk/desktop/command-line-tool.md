@@ -14,10 +14,12 @@ translationReview:
 
 本機 HTTP API 只綁定到 `127.0.0.1`，唔會暴露到區域網絡或公網。
 
+如果需要從 `granoflow.com` 文件頁調試本機接口，必須先喺 App 入面臨時開啟官方文件調試並使用 1 小時訪問碼；文件頁唔再預設可以訪問業務接口。允許任何設備來源亦必須先開啟訪問碼保護。
+
 ## 先睇呢個導覽
 
 - 想先理解工作原理：睇 [本機 HTTP API 工作原理](/manual/zh-hk/desktop/cli-how-it-works/)
-- 想確認 token、本機訪問、App Lock、密鑰分別：睇 [安全設定與密鑰邊界](/manual/zh-hk/desktop/cli-security-and-settings/)
+- 想確認訪問碼、本機訪問、App Lock、密鑰分別：睇 [安全設定與密鑰邊界](/manual/zh-hk/desktop/cli-security-and-settings/)
 - 想查完整 CLI 命令同 HTTP 端點：睇 [命令參考與 HTTP 對應](/manual/zh-hk/desktop/cli-command-reference/)
 - 想按真實場景行流程：睇 [工作流](/manual/zh-hk/desktop/cli-workflows/)
 - 想俾腳本或 AI 助手用：睇 [JSON、環境變數與直接呼叫](/manual/zh-hk/desktop/cli-json-and-scripting/)

@@ -16,10 +16,12 @@ You can interact with the API through the **command line tool** (`granoflow` CLI
 
 The local HTTP API binds only to `127.0.0.1` — it is not exposed to the LAN or internet.
 
+To debug the local API from `granoflow.com` documentation pages, first open official docs debugging in the app and use the 1-hour access code. Documentation pages are no longer allowed to access business endpoints by default. Allowing any device origin also requires access code protection.
+
 ## Start with this map
 
 - To understand how it works first: read [How the local HTTP API works](/manual/en/desktop/cli-how-it-works/)
-- To check token, local access, App Lock, and key boundaries: read [Security settings and key boundaries](/manual/en/desktop/cli-security-and-settings/)
+- To check access codes, local access, App Lock, and key boundaries: read [Security settings and key boundaries](/manual/en/desktop/cli-security-and-settings/)
 - For the complete CLI command and HTTP endpoint reference: read [Command reference and HTTP mapping](/manual/en/desktop/cli-command-reference/)
 - For real-world workflows: read [Workflows](/manual/en/desktop/cli-workflows/)
 - For scripts and AI assistants: read [JSON, environment variables, and direct HTTP calls](/manual/en/desktop/cli-json-and-scripting/)

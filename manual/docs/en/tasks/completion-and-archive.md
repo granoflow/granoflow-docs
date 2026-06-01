@@ -46,6 +46,10 @@ Archive and complete are not the same thing:
 
 After you delete a task, it goes to the trash. As long as the trash has not been emptied, you can still check it there.
 
+The trash has two segments: **Tasks** and **Cards**. The task segment handles deleted tasks, while the card segment handles deleted review cards. They are not mixed together; restore, permanently delete, and empty actions apply only to the current segment.
+
+When you restore a task that used to belong to a deleted project or milestone, GranoFlow asks whether to restore that original project and milestone too, or restore only the task to Inbox. If you restore only the task, it becomes a plain Inbox task with no project, no milestone, and no date, so you can organize it again later.
+
 <!-- manual-screenshot:id=tasks-trash-list -->
 ![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-trash-list.png)
 

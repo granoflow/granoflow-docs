@@ -1,36 +1,34 @@
 ---
 title: "Review Today's Tasks"
-description: "Use AI to review today's task durations, then confirm before writing task times, titles, Task Reviews, and today's domain reports."
+description: "Use AI to review today's tasks, then confirm before writing titles, Task Reviews, today's domain reports, and optional new tasks."
 ---
 
-**Review Today's Tasks** is for the daily review. It helps you check how long each task took, whether the time looks reasonable, and what confirmed details should be saved back to tasks and today's domain reports.
+**Review Today's Tasks** is for the daily review. It helps you organize the day's tasks, lessons, and next steps, then save the confirmed details back to tasks and today's domain reports.
 
-AI only prepares suggestions. Start time, end time, title, Task Review, and report content are written only after you confirm them in GranoFlow.
+AI only prepares suggestions. Title, Task Review, report content, and optional new tasks are written only after you confirm them in GranoFlow. Task start time, end time, and duration are sent only as read-only context and cannot be written back through this flow.
 
 ## Where to start
 
 Open the daily review and find **Review Today's Tasks** in the right sidebar. If there are no tasks to review today, the entry stays disabled and GranoFlow tells you there are no reviewable tasks yet.
 
-If there are tasks and no overlap, the sidebar shows **Review Today's Tasks** directly. If task times overlap, the prompt says that you can auto-arrange task time, or use **Review Today's Tasks**.
+When there are reviewable tasks, the sidebar shows **Review Today's Tasks** directly.
 
 ## What AI discusses with you
 
-AI starts with a table, ordered by task start time. It lists task title, start time, end time, actual duration, and a duration analysis. It focuses first on tasks whose time looks unusual and needs your confirmation, then summarizes domain, project, and milestone progress from the day.
+AI starts with a table ordered by the task times already recorded in GranoFlow. It can use that timing as context, but real time corrections must be made manually in the task list or task detail view. AI then summarizes domain, project, and milestone progress from the day.
 
 You explain the real situation, difficulties, or lessons learned. AI records, understands, and organizes what you confirm; it does not invent the conclusion for you.
 
 ## Fields that can be written back
 
-The import can update only these task fields, plus the domain reports involved that day:
+The import can update only these task fields, plus the domain reports involved that day and any new tasks you confirm:
 
 | Field | What it is for |
 | --- | --- |
-| Start time | Correct the task's actual start time |
-| End time | Correct the task's actual end time |
 | Task title | Improve the task title |
 | Task Review | Save the task-level review you confirmed |
 
-This flow cannot change task description, project, milestone, tags, reminders, deadlines, or other fields. It cannot create tasks or schedule future work. Project and milestone progress is saved only as part of the day's report content; it does not directly edit project or milestone records.
+This flow cannot change task time, task description, tags, reminders, existing deadlines, or other fields. It can create tasks after you confirm them, but only with a title, date, and optional project / milestone binding. Project and milestone progress is saved only as part of the day's report content; it does not directly edit project or milestone records.
 
 ## Confirmation before import
 

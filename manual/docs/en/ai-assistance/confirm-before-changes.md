@@ -23,7 +23,7 @@ Confirmation has one simple job: before anything is written, you can see what AI
 The confirmation view usually shows:
 
 - Fields identified by AI, such as date, tags, project, or reminder.
-- In the daily task review flow, the start time, end time, task title, or Task Review that AI is preparing to update.
+- In the daily task review flow, the task title, Task Review, today's report content, or optional new tasks that AI is preparing to update.
 - The matching text in the original title, usually highlighted.
 - A way to accept or ignore each suggestion separately.
 

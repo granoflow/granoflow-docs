@@ -27,7 +27,7 @@ Just do not accept that suggestion. Ignored or unconfirmed suggestions have no e
 
 ## Does Review Today's Tasks write changes automatically?
 
-No. AI can help review today's task durations and prepare suggestions for start time, end time, title, and Task Review. Those fields are written only after you copy the result back into GranoFlow and confirm it in the confirmation view.
+No. AI can help review today's tasks and prepare suggestions for title, Task Review, today's domain reports, and optional new tasks. Task times are read-only context in this flow and are not written back by AI. Allowed fields are written only after you copy the result back into GranoFlow and confirm it in the confirmation view.
 
 ## What does the Helper prompt do?
 

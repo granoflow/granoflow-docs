@@ -50,6 +50,9 @@ This lets you see where the feature is and what settings may become available af
 
 Sync is a subscriber feature. If your current account has no active entitlement, the sync entry will prompt you to view or activate a subscription.
 
+<!-- manual-screenshot:id=subscription-sync-vip-upsell -->
+![Subscription entitlements screen capture](../../../screenshots/en/subscription-sync-vip-upsell.png)
+
 Seeing the sync entitlement page **does not mean sync has started, and does not mean your local data has been lost**. Local data exists independently of sync entitlements.
 
 :::note[Entitlement status comes from the server]

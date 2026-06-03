@@ -37,12 +37,16 @@ Three to five sentences is usually enough. You do not need to write a formal rep
 
 The right side of the daily review shows **Time invested today**. This is calculated from the union of today's task time blocks: if two tasks overlap, the overlapping minutes are not counted twice.
 
+**Flow time** is a separate time field. It represents the truly focused time you confirm yourself, and it must be entered manually. It is not derived from task start time, completion time, or time invested. You can enter it in the daily review or from the detail view of a task completed that day; completed tasks on the same day show the same day-level flow time.
+
 <!-- manual-screenshot:id=review-daily-time-overlap-entry -->
 ![Daily review screen capture](../../../screenshots/en/review-daily-time-overlap-entry.png)
 
 Task blocks in the timeline keep the task title as the main text. If a task belongs to a project and the block has enough space, the project name appears below the title in smaller text; short tasks, narrowed overlapping tasks, and tasks without a project only show the task title.
 
 If you want to review today's task reflections, choose **Review Today's Tasks** and let AI use the recorded task times as context, then summarize the day's domain, project, and milestone progress. Task times are read-only in this flow; real time corrections must be made manually in the task list or task detail view. After you copy the result back into GranoFlow, you still need to confirm before it writes task title, Task Review, today's domain reports, or optional new tasks. See [Review Today's Tasks](../ai-assistance/daily-task-review) for the full flow.
+
+Weekly and monthly reviews add up the manually entered daily flow time, so they can show the total amount of truly focused time for the week or month.
 
 ## Days with no completed tasks
 

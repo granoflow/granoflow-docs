@@ -13,12 +13,13 @@ In GranoFlow, these three states matter most when a task seems missing:
 
 ## Completion
 
-When you finish something, mark it complete. After that, the task will:
+When you finish something, use **Complete** in the task detail view or a completion control in the list. After that, the task will:
 
 - Leave the current task list
 - Record a completion time
 - Appear in the “Completed” view
 - Be used in daily review stats
+- Hide the **Start** and **Complete** buttons in task details, so an ended task is not started again as if it were still pending
 
 <!-- manual-screenshot:id=tasks-completed-archived-trash -->
 ![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-completed-archived-trash.png)
@@ -27,7 +28,10 @@ When you finish something, mark it complete. After that, the task will:
 If you still want to see the record in daily review, do not delete completed tasks casually. Completed tasks are not junk; they are your completion history.
 :::
 
-After completion, the task detail view shows **Task Review** and lets you edit it. Use it to record the actual time spent, what was confirmed, problems, or lessons learned. Archived tasks can also have editable Task Reviews.
+After completion, the task detail view shows **Task Review** and lets you edit it. Use it to record what was confirmed, problems, or lessons learned.
+
+Completed task details also show **Flow time**. This is not the automatic time invested from start to completion; it is the truly focused time you enter manually. Tasks completed on the same day share that day-level flow time. Archived tasks can still have editable Task Reviews, but they do not show an editable flow-time entry.
+
 ## Archive
 
 Archive is for tasks you do not want to see every day, but may still need as a record later.

@@ -13,6 +13,7 @@ For many people, “retrospective” sounds stressful, as if it needs to be comp
 ## What is inside a review
 
 - **What you completed today**: tracked by actual completion time, not due date
+- **Time stats**: time invested comes from the union of task time blocks, while flow time is the truly focused time you enter manually; weekly and monthly reviews add up daily flow time
 - **Your notes**: feelings, thoughts, and next steps in your own words
 - **Values prompts**: a way to connect today’s actions back to your long-term direction
 

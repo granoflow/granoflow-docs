@@ -31,6 +31,9 @@ To debug the local API from `granoflow.com` documentation pages, first open offi
 
 On macOS, move GranoFlow to **Applications** first, then open the app's Command Line Tool settings page and tap **Install Command Line Tool** or **Repair Command Line Tool**. On first install, macOS may ask you to allow the **Granoflow background item** under **System Settings → General → Login Items**; after approval, tap install again and the app will create the `/usr/local/bin/granoflow` symlink. Subsequent repairs or reinstalls typically need no extra approval. macOS 13 or later is required.
 
+<!-- manual-screenshot:id=desktop-command-line-tool-settings-main -->
+![Local HTTP API screen capture](../../../screenshots/en/desktop-command-line-tool-settings-main.png)
+
 After installation, confirm the API is reachable:
 
 ```bash

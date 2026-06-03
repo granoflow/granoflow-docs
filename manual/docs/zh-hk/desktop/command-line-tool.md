@@ -29,6 +29,9 @@ translationReview:
 
 喺 macOS 上，先將 GranoFlow 拖入「應用程式」，再喺 App 嘅「命令行工具」設定頁撳「安裝命令行工具」或「修復命令行工具」。首次安裝嗰陣，macOS 可能會要求你喺「系統設定 → 一般 → 登入項目」入面允許「Granoflow 背景項目」；批准之後再撳一次安裝，App 就會建立 `/usr/local/bin/granoflow` 符號連結，之後嘅修復或重裝通常唔使再額外操作。需要 macOS 13 或更新版本。
 
+<!-- manual-screenshot:id=desktop-command-line-tool-settings-main -->
+![本機 HTTP API 界面截圖](../../../screenshots/zh-hk/desktop-command-line-tool-settings-main.png)
+
 安裝後先確認 API 可達：
 
 ```bash

@@ -7,18 +7,18 @@ The Progress page helps you see, as soon as you open GranoFlow: what needs atten
 
 It is not a task list, and it is not an analytics report. Treat it as a home status board: glance at it first, then decide whether to continue today’s tasks or review yesterday.
 
-## Home status and today's insights
+## Home status and today's review
 
-The top of the page starts with the work queue and the Card study entry so you can decide what to do next. When today already has logged invested time, the page can also show lightweight "Today's progress insights": one stage message, up to two behavior tags, and a button into today's review. Today's and yesterday's completed tasks, project count, and invested time appear in the Progress snapshot below; on desktop landscape, that snapshot sits under the left-side action entries while projects, directions and areas, and longer-term week/month information stay on the right.
+The top of the page starts with the work queue and the Card study entry so you can decide what to do next. The Progress snapshot follows, grouping yesterday's and today's completed tasks, project count, and invested time; if you use Card study, it can also show card learning progress, unseen/learning/mastered distribution, cards due today, and recently reviewed cards. Under the snapshot, a lightweight Today's review card shows one stage message, up to two behavior tags, and a button into today's review when diagnostic context is available. If there is no diagnostic context but today's review can be written or has already been completed, the same card still gives you the write or view entry. On desktop landscape, these current-state sections stay on the left while projects, directions and areas, and longer-term week/month information stay on the right.
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
 ![Progress screen capture](../../../screenshots/en/interface-home-progress-main.png)
 
-"Today's progress insights" is a quick read, not the full analysis. To see the full context, notes, or reflection, use "View today's review" or "Complete today's review" to open Review.
+"Today's review" is a quick read, not the full analysis. To see the full context, notes, or reflection, use "Write today's review" or "View today's review" to open Review.
 
 ## Card study
 
-If you have turned review insights into knowledge cards, the Progress page shows one Card study section near the top. It shows both the total number of cards and the cards due today. Click the total card count to open Card statistics, where you can see learning status, upcoming review load, and recent review activity.
+If you have turned review insights into knowledge cards, the Progress page shows one Card study section near the top. It shows both the total number of cards and the cards due today. Click the total card count to open Card statistics, where you can see learning status, upcoming review load, and recent review activity. Card learning progress and card numbers inside the Progress snapshot are status context, not a second study entry.
 
 From Card statistics, you can continue into card review or open Card management. Card management lists all non-deleted cards and supports search, filters, and sorting. Click a card to edit it; single-card and bulk delete actions move cards to Trash so they can still be restored.
 

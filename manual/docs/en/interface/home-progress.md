@@ -9,7 +9,7 @@ It is not a task list, and it is not an analytics report. Treat it as a home sta
 
 ## Home status and today's insights
 
-The top of the page starts with the work queue and the Card study entry so you can decide what to do next. When today already has logged invested time, the page can also show lightweight "Today's progress insights": one stage message, up to two behavior tags, and a button into today's review. Today's and yesterday's completed tasks, project count, and invested time appear in the Progress snapshot below.
+The top of the page starts with the work queue and the Card study entry so you can decide what to do next. When today already has logged invested time, the page can also show lightweight "Today's progress insights": one stage message, up to two behavior tags, and a button into today's review. Today's and yesterday's completed tasks, project count, and invested time appear in the Progress snapshot below; on desktop landscape, that snapshot sits under the left-side action entries while projects, directions and areas, and longer-term week/month information stay on the right.
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
 ![Progress screen capture](../../../screenshots/en/interface-home-progress-main.png)

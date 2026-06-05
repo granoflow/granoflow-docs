@@ -41,6 +41,8 @@ GranoFlow 里和“任务不见了”最相关的三个状态是：
 <!-- manual-screenshot:id=tasks-archived-list -->
 ![完成、归档与回收站 界面截图](../../screenshots/zh-cn/tasks-archived-list.png)
 
+已归档视图的任务筛选下方也会显示“卡片”入口。它会进入卡片管理里的已归档视图，用来查看不会进入主动复习的卡片，并在需要时取消归档。
+
 归档和完成不是一回事：
 
 - **完成**：表示任务真的做完了，会进入完成统计

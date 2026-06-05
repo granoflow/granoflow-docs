@@ -41,6 +41,8 @@ For example: old tasks from a project, expired items that still have reference v
 <!-- manual-screenshot:id=tasks-archived-list -->
 ![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-archived-list.png)
 
+The archived view also shows a **Cards** entry below the task filters. It opens the archived view in Card management, where you can review cards that do not enter active review and unarchive them when needed.
+
 Archive and complete are not the same thing:
 
 - **Complete**: the task is actually done, and it counts in completion stats

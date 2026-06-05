@@ -41,6 +41,8 @@ description: "任務消失了？先檢查篩選、日期、項目、已完成、
 <!-- manual-screenshot:id=tasks-archived-list -->
 ![完成、歸檔與回收站 界面截圖](../../../screenshots/zh-hk/tasks-archived-list.png)
 
+已歸檔視圖的任務篩選下方亦會顯示「卡片」入口。它會進入卡片管理裏的已封存視圖，用來查看不會進入主動複習的卡片，並在需要時取消封存。
+
 歸檔和完成不是同一回事：
 
 - **完成**：表示任務真的做完了，會進入完成統計

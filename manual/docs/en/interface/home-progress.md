@@ -18,9 +18,9 @@ The top of the page starts with the work queue and the Card study entry so you c
 
 ## Card study
 
-If you have turned review insights into knowledge cards, the Progress page shows one Card study section near the top. It shows both the total number of cards and the cards due today. Click the total card count to open Card statistics, where you can see learning status, upcoming review load, and recent review activity. Card learning progress and card numbers inside the Progress snapshot are status context, not a second study entry.
+If you have turned review insights into knowledge cards, the Progress page shows one Card study section near the top. It shows active review cards and the cards due today; archived cards are not included in these counts. Click the card count to open Card statistics, where you can see learning status, upcoming review load, and recent review activity. Card learning progress and card numbers inside the Progress snapshot are status context, not a second study entry.
 
-From Card statistics, you can continue into card review or open Card management. Card management lists all non-deleted cards and supports search, filters, and sorting. Click a card to edit it; single-card and bulk delete actions move cards to Trash so they can still be restored.
+From Card statistics, you can continue into card review or open Card management. Card management separates active review cards from archived cards, shows both counts, and supports search, filters, and sorting. Click a card to edit it. Swipe right on an active card to archive it, or swipe left to move it to Trash so it can still be restored. Archived cards do not enter active review, but they can still appear from related tasks and review context, where you can unarchive them.
 
 ## This week and this month
 

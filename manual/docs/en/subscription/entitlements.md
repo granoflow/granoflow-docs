@@ -27,13 +27,12 @@ The following features require subscriber entitlements for full use.
 
 ### Personalization
 
-- AI Assistants & Prompts settings
-- Custom review prompts
-- Custom journal, weekly journal, values, and work / learning report prompts
-- Helper prompt customization
+- AI assistant settings
+- AI research preferences
+- Research-lens customization for journal, weekly journal, values, and work / learning report assistance
 - Diagnostics configuration and heatmap threshold settings
 
-Prompt and AI rewrite entries are grouped under Prompt Settings in Pro settings. Open it, then choose the specific scenario.
+AI rewrite and review-related entries read AI Research Preferences from Pro settings. That page edits the research lens only; system prompts, import formats, and JSON structures are not editable there.
 
 ## What happens when you are not subscribed
 

@@ -1,35 +1,18 @@
 ---
-title: Values and prompts
-description: Customize review prompts and values so your daily journal and weekly review feel like your own words, not a generic template.
+title: Values and AI research preferences
+description: Tune values and AI research preferences so AI assistance follows your judgment style without making import contracts editable.
 ---
 
-If you want journal cleanup, weekly reviews, and values exploration to sound more like you, open Pro settings, then go to AI Assistants & Prompts > Prompt Settings. These settings shape future questions, organization, and draft wording for the relevant features, but they do not automatically rewrite existing tasks, records, or past summaries.
+If you want journal cleanup, weekly reviews, and values exploration to follow your preferred way of thinking, open Pro Settings > AI Research Preferences. This setting shapes the theories, books, scholars, examples, and tone AI may prefer in future assistance, but it does not automatically rewrite existing tasks, records, or past summaries.
 
 <!-- manual-screenshot:id=review-values-prompts-settings -->
 ![Values and prompts screen capture](../../../screenshots/en/review-values-prompts-settings.png)
 
-## What prompt settings do
+## What AI research preferences do
 
-A prompt is the work instruction the AI assistant reads. When you use AI features to organize a journal, generate a weekly summary, or extract action insights, the system reads the prompt for that scenario to understand the tone, focus, and structure you prefer.
+AI research preferences are not a full prompt editor. They only tell AI which reference frames you tend to prefer, such as behavior science, cognitive learning, productivity systems, management and organizations, psychological regulation, or philosophy and lifestyle.
 
-Inside Prompt Settings, each scenario still has its own prompt:
-
-<!-- markdownlint-disable MD055 MD056 -->
-
-| Scenario | Screenshot | What it shapes |
-| --- | --- | --- |
-| Daily review rewrite | <!-- manual-screenshot:id=review-daily-journal-prompt-settings -->
-![Values and prompts screen capture](../../../screenshots/en/review-daily-journal-prompt-settings.png) | Requirements for organizing the day's notes, such as what to keep and how to phrase it. |
-| Weekly review | <!-- manual-screenshot:id=review-weekly-review-prompt-settings -->
-![Values and prompts screen capture](../../../screenshots/en/review-weekly-review-prompt-settings.png) | How a week of records is organized and expressed. |
-| Domain values | <!-- manual-screenshot:id=review-domain-values-prompt-settings -->
-![Values and prompts screen capture](../../../screenshots/en/review-domain-values-prompt-settings.png) | The questions, book-reference boundary, and final import format used when exploring values; it does not decide your direction for you. |
-| Work and learning report | <!-- manual-screenshot:id=review-work-learning-report-prompt-settings -->
-![Values and prompts screen capture](../../../screenshots/en/review-work-learning-report-prompt-settings.png) | How the report draft organizes content and highlights key points. |
-
-<!-- markdownlint-enable MD055 MD056 -->
-
-After you edit a prompt, the next use of that feature reads the new text. Existing tasks, records, and historical summaries are not automatically rewritten.
+The preference text is included in AI request packages, but it cannot override safety rules, privacy boundaries, the import format, JSON structure, or field validation. Legacy Helper, AI rewrite, journal, weekly journal, values, and work / learning report prompt routes now land on the same AI Research Preferences page instead of exposing full prompt editors.
 
 ## Questionnaire and values settings
 
@@ -39,10 +22,11 @@ Domain values settings bring your long-term direction into review context. Value
 
 ## Limits to keep in mind
 
-- **Prompts do not guarantee AI quality**: Changing a prompt guides direction, but it does not guarantee accurate output.
-- **No effect on tasks or projects**: These settings only shape future prompts, drafts, and question organization. They do not change existing records.
+- **Research preferences do not guarantee AI quality**: They guide direction, but they do not guarantee accurate output.
+- **No effect on tasks or projects**: These settings only shape future analysis, drafts, and question organization. They do not change existing records.
+- **No import contract changes**: System prompts, response contracts, JSON schemas, and redaction rules are not editable here.
 - **Some settings are members-only**: Non-members can view the default configuration but cannot customize it.
 
 :::tip[Not sure where to start?]
-Start with the journal prompt. Tell the AI your preferred writing habits or note-taking style; this is usually where the change is easiest to notice.
+Write one or two sentences about the lens you prefer, such as “use behavior science when discussing procrastination, and explain where the advice may not apply.”
 :::

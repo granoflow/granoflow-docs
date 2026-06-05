@@ -9,7 +9,7 @@ Daily records and weekly summaries do not require a local template. You can writ
 
 Daily review notes can be edited and saved at any time. Today, yesterday, and older dates can all be rewritten. Saving only stores the current version; it does not lock the questionnaire.
 
-If you want AI to help rewrite or organize the day's record, adjust the journal prompt in Prompt Settings, then use the journal AI entry to generate content.
+If you want AI to help rewrite or organize the day's record, describe your preferred analysis lens and tone in AI Research Preferences, then use the journal AI entry to generate content.
 
 ## Weekly summaries
 
@@ -17,9 +17,9 @@ Weekly summaries do not start from a local template draft. When there is no exis
 
 The weekly prompt only shapes how the AI assistant organizes the content. It does not automatically rewrite saved weekly summaries.
 
-## Where prompts live
+## Where AI preferences live
 
-Open Pro Settings > Prompt Settings to adjust the journal prompt, weekly journal prompt, AI rewrite prompt, values prompt, and work / learning report prompt separately.
+Open Pro Settings > AI Research Preferences to maintain one shared research preference. It can shape the analysis lens for journal, weekly journal, AI rewrite, values, and work / learning report flows, but it does not make system prompts, import formats, or JSON structures editable.
 
 :::tip[Writing tip]
 Start with one or two honest sentences, then ask AI to organize them. The result usually sounds more like you than starting from a blank prompt.

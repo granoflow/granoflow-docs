@@ -45,6 +45,8 @@ The data entry is for import, export, backup, restore, checking attachment statu
 
 These actions are usually more sensitive than appearance settings and device preferences. Backup helps preserve important data when changing devices, reinstalling, or dealing with an issue; restore brings backup or cloud data back to the current device.
 
+Data Management separates **Full data** from **Card decks**. Full backup and restore use `.flow.grano` and are meant for whole-device migration or recovery. Card deck import and export use `.deck.grano`; they only handle the selected card deck and its cards, and they do not create tasks.
+
 Before restoring, confirm the backup source, account status, key, and version conditions. Read [Backup and restore](/manual/en/data-security-and-recovery/backup-and-restore/) for details.
 
 ## Subscription Entry

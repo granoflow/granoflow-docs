@@ -138,6 +138,12 @@ GranoFlow 的回顾，不是为了证明你很高效。
 
 进展页的「卡片学习」区域会显示主动复习卡片数和今日待复习数量，不包含已归档卡片。点击总卡片数可以进入卡片统计；如果想集中整理卡片，可以从统计页进入卡片管理，也可以从已归档任务页的「卡片」入口进入已归档卡片视图，分别查看主动复习和已归档卡片，搜索、筛选、排序、编辑、归档、取消归档，或把不再需要的卡片移到回收站。
 
+On desktop, Card management can also import Anki/APKG decks. This import path only brings card content into GranoFlow: image and audio attachments become local media assets; video decks are disabled by default and are only available in controlled test or internal builds. If an APKG references remote media, GranoFlow does not silently download it or keep remote links in long-term card content. A small number of remote media links can be reviewed and stripped before import; too many remote links are rejected. Full Anki templates, deck options, and lossless review history migration are not part of this capability yet.
+
+To share or move a GranoFlow card deck between GranoFlow installations, use a `.deck.grano` package. It is different from a full `.flow.grano` data backup and does not replace Anki/APKG: export starts from one top-level deck, automatically includes its child decks and non-deleted cards, and excludes study history unless you explicitly enable **Include study history**. Export requires a `GF1-DESK-...` copyright token. The token helps verify later re-export intent; it is not copy protection or strong DRM.
+
+Before importing a `.deck.grano` package, GranoFlow shows a preview and waits for confirmation. Import does not create tasks. It only keeps task links that already exist on the current device; cards with no valid local task link become archived cards. Study history is off by default and is only merged when you enable **Import study history** in the preview.
+
 ## 回顾项目，而不是只回顾当天
 
 除了每天回顾，也要定期回顾项目。

@@ -6,11 +6,23 @@ description: Tune values and AI research preferences so AI assistance follows yo
 If you want journal cleanup, weekly reviews, and values exploration to follow your preferred way of thinking, open Pro Settings > AI Research Preferences. This setting shapes the theories, books, scholars, examples, and tone AI may prefer in future assistance, but it does not automatically rewrite existing tasks, records, or past summaries.
 
 <!-- manual-screenshot:id=review-values-prompts-settings -->
-![Values and prompts screen capture](../../../screenshots/en/review-values-prompts-settings.png)
+![Values and AI research preferences screen capture](../../../screenshots/en/review-values-prompts-settings.png)
 
 ## What AI research preferences do
 
 AI research preferences are not a full prompt editor. They only tell AI which reference frames you tend to prefer, such as behavior science, cognitive learning, productivity systems, management and organizations, psychological regulation, or philosophy and lifestyle.
+
+<!-- manual-screenshot:id=review-work-learning-report-prompt-settings -->
+![Values and AI research preferences screen capture](../../../screenshots/en/review-work-learning-report-prompt-settings.png)
+
+<!-- manual-screenshot:id=review-domain-values-prompt-settings -->
+![Values and AI research preferences screen capture](../../../screenshots/en/review-domain-values-prompt-settings.png)
+
+<!-- manual-screenshot:id=review-daily-journal-prompt-settings -->
+![Values and AI research preferences screen capture](../../../screenshots/en/review-daily-journal-prompt-settings.png)
+
+<!-- manual-screenshot:id=review-weekly-review-prompt-settings -->
+![Values and AI research preferences screen capture](../../../screenshots/en/review-weekly-review-prompt-settings.png)
 
 The preference text is included in AI request packages, but it cannot override safety rules, privacy boundaries, the import format, JSON structure, or field validation. Legacy Helper, AI rewrite, journal, weekly journal, values, and work / learning report prompt routes now land on the same AI Research Preferences page instead of exposing full prompt editors.
 

@@ -24,7 +24,7 @@ OpenAPI 合同来源是 `granoflow-docs/manual/docs/app-api/granoflow-local-http
 在 App 中进入“本机接口服务”，打开“开启接口服务”。开启后，页面会显示当前设备可用的连接地址，并提供复制地址、在浏览器打开、官方文档调试和进阶安全设置。
 
 <!-- manual-screenshot:id=app-api-local-interface-service -->
-![App 接口 介面截圖](../../screenshots/zh-tw/app-api-local-interface-service.png)
+![App 接口 界面截图](../../screenshots/zh-cn/app-api-local-interface-service.png)
 
 这个开关只影响当前设备。它不会把数据上传到 Granoflow 服务器，也不会让其他设备自动获得访问权限。第三方工具能否连接，还取决于它们使用的地址、访问码和来源设置。
 

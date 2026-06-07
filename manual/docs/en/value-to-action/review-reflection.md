@@ -136,15 +136,26 @@ GranoFlow 的回顾，不是为了证明你很高效。
 
 如果一张卡片已经有译文，卡片详情会把译文放在高级区域；复习时先看问题，再显示答案，最后用“遗忘、勉强、记得、轻松”四档给自己一个简单反馈。显示答案后，如果这张卡已经不适合继续学习，可以移到回收站；如果只是想让它不再进入主动复习，可以选择归档。归档卡片仍可能在相关任务和回顾上下文中出现，并会标记“已归档”。这两个动作都会给出撤销入口。
 
-The Card learning area on the Progress page shows active review card count and cards due today, excluding archived cards. Clicking total cards opens Card statistics. Card statistics is the main page for the card deck area: the top-left control stays as the main menu, and the page provides entries into card review, card management, and archived cards. Card review and Card management open as child pages from statistics and show a top-left back control.
+The difference between active review cards and archived cards is this: active review cards are included in card learning statistics, the due-today queue, and review scheduling; archived cards leave those active review surfaces while keeping their card content, task links, and review context. You can unarchive them from the archived cards view when needed.
 
-If you want to organize cards, open Card management from statistics or open the archived cards view directly. There you can review active and archived cards, search, filter, sort, edit, archive, unarchive, or move cards you no longer need to the recycle bin.
+The Card learning area on the Progress page shows active review card count and cards due today, excluding archived cards. Clicking total cards opens Card statistics. Card statistics is the main page for the card deck area: the top-left control stays as the main menu, and the page provides entries into card review and card management. Card details, Card review, and Card management open as child pages. Card details returns to the page you opened it from; Card review and Card management return to Card statistics.
 
-In Card management, deck-related actions live in the Card deck menu inside the page's filtering tools, not in the top navigation bar. On desktop, this menu can import Anki/APKG decks. This import path only brings card content into GranoFlow: image and audio attachments become local media assets; video decks are disabled by default and are only available in controlled test or internal builds. If an APKG references remote media, GranoFlow does not silently download it or keep remote links in long-term card content. A small number of remote media links can be reviewed and stripped before import; too many remote links are rejected. Full Anki templates, deck options, and lossless review history migration are not part of this capability yet.
+If you want to organize cards, open Card management from statistics. The same page lets you review active and archived cards, search, filter, sort, edit, archive, unarchive, or move cards you no longer need to the recycle bin.
+
+In Card management, the main tools keep search, filter, and sort separate. Deck selection lives in the Filter panel; Import deck, Export current deck, Import Anki deck, and Export Anki deck live in the page-level More menu. The Anki/APKG import path only brings card content into GranoFlow: image and audio attachments become local media assets; video decks are disabled by default and are only available in controlled test or internal builds. If an APKG references remote media, GranoFlow does not silently download it or keep remote links in long-term card content. A small number of remote media links can be reviewed and stripped before import; too many remote links are rejected. Full Anki templates, deck options, and lossless review history migration are not part of this capability yet.
 
 To share or move a GranoFlow card deck between GranoFlow installations, use a `.deck.grano` package. It is different from a full `.flow.grano` data backup and does not replace Anki/APKG: export starts from one top-level deck, automatically includes its child decks and non-deleted cards, and excludes study history unless you explicitly enable **Include study history**. Export requires a `GF1-DESK-...` copyright token. The token helps verify later re-export intent; it is not copy protection or strong DRM.
 
 Before importing a `.deck.grano` package, GranoFlow shows a preview and waits for confirmation. Import does not create tasks. It only keeps task links that already exist on the current device; cards with no valid local task link become archived cards. Study history is off by default and is only merged when you enable **Import study history** in the preview.
+
+<!-- manual-screenshot:id=review-card-statistics-main -->
+![回顾：让经历真正沉淀 screen capture](../../../screenshots/en/review-card-statistics-main.png)
+
+<!-- manual-screenshot:id=review-card-management-main -->
+![回顾：让经历真正沉淀 screen capture](../../../screenshots/en/review-card-management-main.png)
+
+<!-- manual-screenshot:id=review-card-study-answer -->
+![回顾：让经历真正沉淀 screen capture](../../../screenshots/en/review-card-study-answer.png)
 
 ## 回顾项目，而不是只回顾当天
 

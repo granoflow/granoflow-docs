@@ -124,9 +124,11 @@ GranoFlow 的回顾，不是为了证明你很高效。
 
 这样的经验以后还会反复用到。你可以把它整理成知识卡片，让它和相关任务保持关联。之后在任务详情、日回顾、周回顾或月回顾中看到这些卡片时，可以进入卡片复习，把已经发生过的经验重新带回下一次行动。
 
-在任务详情里，即使当前还没有任务卡片，也可以从“任务卡片”区域点击“添加卡片”进入“关联卡片”页面。你可以先搜索并关联已有卡片；如果没有合适结果，也可以在同一页选择“AI 添加卡片”或“添加卡片”。已有卡片不会重复显示为可关联项。
+In task details, even when a task has no linked cards yet, you can tap **Add card** in the **Task cards** area to open the **Link cards** page. Search and link existing cards first; if nothing fits, use **Add cards with AI** or **Add card** on the same page. Cards already linked to this task are not shown as linkable again.
 
-添加或编辑卡片时，可以选择基础卡、双向卡或填空卡。常用的正面、背面放在主区域，译文、来源和关键词放在高级选项里；从任务详情进入新建卡片时，保存后会自动关联当前任务。
+**Add card** starts on the **note page**: save title, body, source, keywords, and other note fields, then open the **layout page** to place note fields on the front and back. After layout, you return to the note page and can use **Add another layout** to create sibling cards for the same note. The task cards area groups sibling cards by note; at group level you can edit the note or unlink the group, and at card level you can edit layout, archive, or move to trash. Source and keywords are not part of front/back layout; they appear as subtle footnotes at the bottom of the card back during review.
+
+**Add cards with AI** still uses draft preview and confirmation before import. Card management, card details, and import flows keep the original single-page editor.
 
 After importing Anki cards, you do not need to turn the whole deck into a daily obligation. A steadier approach is to import decks that relate to your current work or study, then link a few relevant cards when you add a work or study task. You can also create a study task specifically to link imported cards. If a card is currently archived, unarchive it only when you decide to study it again.
 

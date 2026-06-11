@@ -29,11 +29,17 @@ Create a backup before situations like these:
 - Deleting many tasks or projects
 - Finishing an important phase and wanting to keep a record of that moment
 
+## Card deck packages and full backup
+
+Data Management uses flat cards: the **Local backup** card exports `.flow.grano` encrypted with your device key for device migration or full recovery; the **Card decks** card handles `.deck.grano` packages with plain JSON card text that is not encrypted like a local backup. A card deck package only moves the selected deck and its cards. It does not replace a full backup and does not sync to the cloud by itself.
+
+Tapping **Export current deck** on the **Card decks** card opens the card deck list so you can pick a top-level deck before exporting.
+
 ## How to create a backup
 
 1. Open GranoFlow Settings.
-2. Go to the Data / Backup page.
-3. Choose Export backup.
+2. Go to Data Management.
+3. On the **Local backup** card, choose **Create local backup**.
 4. Wait for the export to finish. Do not tap repeatedly or close the page while it is processing.
 5. Save the exported backup file somewhere you control, such as iCloud, a local folder, or your computer.
 

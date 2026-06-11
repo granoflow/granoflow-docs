@@ -45,7 +45,7 @@ The data entry is for import, export, backup, restore, checking attachment statu
 
 These actions are usually more sensitive than appearance settings and device preferences. Backup helps preserve important data when changing devices, reinstalling, or dealing with an issue; restore brings backup or cloud data back to the current device.
 
-Data Management separates **Full data** from **Card decks**. Full backup and restore use `.flow.grano` and are meant for whole-device migration or recovery. Card deck import and export use `.deck.grano`; they only handle the selected card deck and its cards, and they do not create tasks.
+Data Management shows three flat action cards for everyday work: the **Local backup** card creates an encrypted `.flow.grano` file for whole-device migration or recovery; the **Card decks** card offers grano and Anki import plus **Export current deck**, which opens the card deck list instead of starting export immediately; the **Encryption key** card manages your device key. A `.deck.grano` package stores card text as plain JSON and is not encrypted with your device key like a local backup; it only handles the selected card deck and its cards, and it does not create tasks. Destructive cleanup actions stay in a separate **Danger zone** group at the bottom.
 
 Before restoring, confirm the backup source, account status, key, and version conditions. Read [Backup and restore](/manual/en/data-security-and-recovery/backup-and-restore/) for details.
 

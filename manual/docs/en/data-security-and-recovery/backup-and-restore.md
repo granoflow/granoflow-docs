@@ -31,7 +31,7 @@ Create a backup before situations like these:
 
 ## Card deck packages and full backup
 
-Data Management uses flat cards: the **Local backup** card exports `.flow.grano` encrypted with your device key for device migration or full recovery; the **Card decks** card handles `.deck.grano` packages with plain JSON card text that is not encrypted like a local backup. A card deck package only moves the selected deck and its cards. It does not replace a full backup and does not sync to the cloud by itself.
+Data Management uses flat cards: the **Local backup** card exports `.flow.grano` encrypted with your device key for device migration or full recovery; the **Card decks** card handles `.deck.grano` packages, which move the selected deck, its cards, and packageable local image media. A card deck package does not replace a full backup and does not sync to the cloud by itself. The Card decks card also shows current card cache usage, the cache limit, and a clear-cache action.
 
 Tapping **Export current deck** on the **Card decks** card opens the card deck list so you can pick a top-level deck before exporting.
 

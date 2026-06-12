@@ -9,7 +9,7 @@ It is not a task list, and it is not an analytics report. Treat it as a home sta
 
 ## Home status and today's review
 
-The top of the page starts with the work queue and the Card study entry so you can decide what to do next. The Progress snapshot follows, grouping yesterday's and today's completed tasks, project count, and invested time; if you use Card study, it can also show card learning progress, unseen/learning/mastered distribution, cards due today, and recently reviewed cards. Under the snapshot, a lightweight Today's review card shows one stage message, up to two behavior tags, and a button into today's review when diagnostic context is available. If there is no diagnostic context but today's review can be written or has already been completed, the same card still gives you the write or view entry. On desktop landscape, these current-state sections stay on the left while projects, directions and areas, and longer-term week/month information stay on the right.
+The top of the page starts with the work queue and the Card study entry so you can decide what to do next. The Progress snapshot follows, grouping yesterday's and today's completed tasks, project count, and invested time; if you use Card study, it can also show card learning progress, New/Learning/Review/Internalized distribution, cards due today, and recently reviewed cards. Under the snapshot, a lightweight Today's review card shows one stage message, up to two behavior tags, and a button into today's review when diagnostic context is available. If there is no diagnostic context but today's review can be written or has already been completed, the same card still gives you the write or view entry. On desktop landscape, these current-state sections stay on the left while projects, directions and areas, and longer-term week/month information stay on the right.
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
 ![Progress screen capture](../../../screenshots/en/interface-home-progress-main.png)
@@ -19,6 +19,8 @@ The top of the page starts with the work queue and the Card study entry so you c
 ## Card study
 
 If you have turned review insights into knowledge cards, the Progress page shows one Card study section near the top. It shows active review cards and the cards due today; archived cards are not included in these counts. Click the card count to open Card statistics, where you can see learning status, upcoming review load, and recent review activity. Card learning progress and card numbers inside the Progress snapshot are status context, not a second study entry.
+
+Card learning status has four levels: New, Learning, Review, and Internalized. Internalized means a card that has reached Review has also been linked to tasks from 3 different projects. It marks that the card has moved from review into real project use, so it can return as experience for future action. It is not an automatic AI judgment, and it does not mean the card never needs review again.
 
 From Card statistics, you can continue into card review or open Card management. Card management separates active review cards from archived cards, shows both counts, and supports search, filters, and sorting. Click a card to edit it. Swipe right on an active card to archive it, or swipe left to move it to Trash so it can still be restored. Archived cards do not enter active review, but they can still appear from related tasks and review context, where you can unarchive them.
 

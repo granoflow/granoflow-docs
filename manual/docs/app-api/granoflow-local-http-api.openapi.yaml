@@ -56,6 +56,20 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/VersionResponse"
+  /v1/capabilities:
+    get:
+      tags: [Meta]
+      summary: Machine-readable Local HTTP API capabilities
+      description: Public capability discovery for CLI, scripts, and AI automation.
+      operationId: getCapabilities
+      security: []
+      responses:
+        "200":
+          description: Capability payload
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CapabilitiesResponse"
   /v1/commands:
     post:
       tags: [Commands]
@@ -70,6 +84,115 @@ paths:
       responses:
         "200":
           description: Command response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/tools:
+    get:
+      tags: [Commands]
+      summary: List AI agent tools exposed by the App service layer
+      operationId: listAiAgentTools
+      responses:
+        "200":
+          description: AI agent tool list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/tasks/{id}/export:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Commands]
+      summary: Export a single-task AI request package
+      operationId: exportAiAgentTask
+      responses:
+        "200":
+          description: AI task request package
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/tasks/validate:
+    post:
+      tags: [Commands]
+      summary: Validate a single-task AI reply
+      operationId: validateAiAgentTask
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [path]
+              properties:
+                path:
+                  type: string
+                  description: Absolute local APKG file path.
+      responses:
+        "200":
+          description: AI task validation result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/tasks/import:
+    post:
+      tags: [Commands]
+      summary: Preview or import a single-task AI reply
+      operationId: importAiAgentTask
+      parameters:
+        - name: dryRun
+          in: query
+          required: false
+          schema:
+            type: boolean
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [path]
+              properties:
+                path:
+                  type: string
+                  description: Absolute local APKG file path.
+                dryRunId:
+                  type: string
+                  description: Optional client dry-run correlation id.
+                skipCardsWithMissingMedia:
+                  type: boolean
+                  default: false
+                  description: Confirm the existing missing-media choice.
+                stripRemoteMedia:
+                  type: boolean
+                  default: false
+                  description: Remove remote media tokens before importing.
+      responses:
+        "200":
+          description: AI task import or preview result
           content:
             application/json:
               schema:
@@ -147,6 +270,103 @@ paths:
       responses:
         "200":
           description: Resource command result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/complete:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    post:
+      tags: [Resources]
+      summary: Complete task
+      description: Marks a task completed through the App business service layer.
+      operationId: completeTask
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/TaskCompleteRequest"
+      responses:
+        "200":
+          description: Task completed
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/tasks/{id}/review-card-drafts/validate:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    post:
+      tags: [Commands]
+      summary: Validate AI review-card draft JSON for a task
+      operationId: validateTaskReviewCardDraft
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          description: Review-card draft validation result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/review-card-drafts/import:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    post:
+      tags: [Commands]
+      summary: Preview or import AI review-card draft JSON for a task
+      operationId: importTaskReviewCardDraft
+      parameters:
+        - name: dryRun
+          in: query
+          required: false
+          schema:
+            type: boolean
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          description: Review-card draft import or preview result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{taskId}/review-cards/{cardId}/unlink:
+    post:
+      tags: [Resources]
+      summary: Unlink a review card from the current task
+      operationId: unlinkTaskReviewCard
+      responses:
+        "200":
+          description: Unlink result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{taskId}/review-notes/{noteId}/unlink:
+    post:
+      tags: [Resources]
+      summary: Unlink a review note from the current task
+      operationId: unlinkTaskReviewNote
+      responses:
+        "200":
+          description: Unlink result
           content:
             application/json:
               schema:
@@ -415,6 +635,274 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/CommandResult"
+  /v1/review-cards:
+    get:
+      tags: [Resources]
+      summary: List review cards
+      operationId: listReviewCards
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Create review card
+      operationId: createReviewCard
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-cards/{id}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: Get review card
+      operationId: getReviewCard
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    patch:
+      tags: [Resources]
+      summary: Update review card
+      operationId: updateReviewCard
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Delete review card
+      operationId: deleteReviewCard
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-cards/{cardId}/archive:
+    post:
+      tags: [Resources]
+      summary: Archive review card
+      operationId: archiveReviewCard
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-cards/{cardId}/unarchive:
+    post:
+      tags: [Resources]
+      summary: Unarchive review card
+      operationId: unarchiveReviewCard
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-cards/{cardId}/trash:
+    post:
+      tags: [Resources]
+      summary: Move review card to trash
+      operationId: trashReviewCard
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-card-decks:
+    get:
+      tags: [Resources]
+      summary: List review card decks
+      operationId: listReviewCardDecks
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Create review card deck
+      operationId: createReviewCardDeck
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-card-decks/{id}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: Get review card deck
+      operationId: getReviewCardDeck
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Delete empty user-managed review card deck
+      operationId: deleteReviewCardDeck
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-card-decks/{id}/cards:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    post:
+      tags: [Resources]
+      summary: List cards in a review card deck
+      operationId: listReviewCardDeckCards
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-card-decks/import/anki/dry-run:
+    post:
+      tags: [Resources]
+      summary: Dry-run Anki APKG import
+      operationId: dryRunAnkiDeckImport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-card-decks/import/anki/confirm:
+    post:
+      tags: [Resources]
+      summary: Confirm Anki APKG import
+      operationId: confirmAnkiDeckImport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-task-card-links:
+    get:
+      tags: [Resources]
+      summary: List review task-card links
+      operationId: listReviewTaskCardLinks
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Create review task-card link
+      operationId: createReviewTaskCardLink
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-task-card-links/{id}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: Get review task-card link
+      operationId: getReviewTaskCardLink
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    patch:
+      tags: [Resources]
+      summary: Update review task-card link
+      operationId: updateReviewTaskCardLink
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Delete review task-card link
+      operationId: deleteReviewTaskCardLink
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
   /v1/reviews/days/{date}:
     parameters:
       - name: date
@@ -662,6 +1150,30 @@ components:
           type: string
         gitCommit:
           type: string
+    CapabilitiesResponse:
+      type: object
+      additionalProperties: true
+      required: [apiVersion, resources, dryRun, aiAgent, auth]
+      properties:
+        apiVersion:
+          type: string
+        appVersion:
+          type: string
+        resources:
+          type: object
+          additionalProperties:
+            type: array
+            items:
+              type: string
+        dryRun:
+          type: object
+          additionalProperties: true
+        aiAgent:
+          type: object
+          additionalProperties: true
+        auth:
+          type: object
+          additionalProperties: true
     CommandEnvelope:
       type: object
       additionalProperties: true
@@ -672,6 +1184,18 @@ components:
       additionalProperties: true
       description: |
         App command result envelope.
+    TaskCompleteRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        startedAt:
+          type: string
+          format: date-time
+          description: Optional start timestamp to apply before completing the task.
+        endedAt:
+          type: string
+          format: date-time
+          description: Optional completion timestamp to apply before completing the task.
     DailyReviewResult:
       type: object
       required: [entity_type, entity]

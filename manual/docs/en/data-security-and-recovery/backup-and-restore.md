@@ -1,56 +1,61 @@
 ---
-title: "Backup and restore"
-description: "Backup is your last line of defense against accidental deletion, device failure, or migration — but it requires action on your part."
+title: "Backup and Restore"
+description: "Backup is your last line of defense against accidental deletion, device damage, or migration—but it’s not real-time and requires you to take the initiative."
+translationSource: zh-CN
+translationReview:
+  - deepseek-flash
+  - deepseek-pro
+  - manual-multilingual-translation
 ---
 
-If you want a copy of your data before deleting things, changing devices, or reinstalling the system, manually export a backup from the Data / Backup page in GranoFlow Settings and save the file somewhere you control and can find again.
+If you want to keep a recoverable copy of your data before accidental deletion, switching devices, or reinstalling, manually export a backup file on the GranoFlow settings Data/Backup page and save the file to a location you can find and control.
 
 <!-- manual-screenshot:id=data-backup-restore-management -->
-![Backup and restore screen capture](../../../screenshots/en/data-backup-restore-management.png)
+![Backup and Restore interface screenshot](../../../screenshots/en/data-backup-restore-management.png)
 
-## Backup vs sync
+## What’s the difference between backup and sync?
 
-A backup is a copy of your data at one point in time. Sync keeps the current data updated in the cloud or across devices. They solve different problems.
+A backup is a "point-in-time copy of your data." Sync is synchronizing current data to the cloud or another device. They solve different problems.
 
 <!-- markdownlint-disable MD060 -->
-|  | Backup | Cloud sync |
+|  | Backup | Cloud Sync |
 | --- | --- | --- |
-| Keeps historical state? | ✅ Yes, it is a point-in-time snapshot | ❌ It only represents the current state |
-| Can recover an older state after accidental deletion? | ✅ Yes, back to the time the backup was created | ❌ Deletions usually sync to the cloud too |
-| Requires manual action? | ✅ Yes, you need to export and save the file manually | ✅/❌ Sync runs automatically, but it does not keep historical versions |
+| Does it preserve historical state? | ✅ Yes, a snapshot at a point in time | ❌ Only represents the current state |
+| Can you revert to an old state after accidental deletion? | ✅ Yes, you can restore to the state when the backup was created | ❌ Deletion is usually synced to the cloud as well |
+| Does it require you to take action? | ✅ Requires manual export and saving the file | ✅/❌ Sync happens automatically but does not preserve historical versions |
 <!-- markdownlint-enable MD060 -->
 
-## When to create a backup
+## When should you back up?
 
-Create a backup before situations like these:
+It is recommended to export a backup before the following situations:
 
-- Upgrading to a major new app version
-- Switching phones, switching computers, or reinstalling the system
-- Deleting many tasks or projects
-- Finishing an important phase and wanting to keep a record of that moment
+- Before upgrading to a major App version
+- Before changing phones, computers, or reinstalling the system
+- Before deleting a large number of tasks or projects
+- After completing an important milestone, if you want to keep a record of that point
 
-## Card deck packages and full backup
+## Card Deck Packs vs. Full Backups
 
-Data Management uses flat cards: the **Local backup** card exports `.flow.grano` encrypted with your device key for device migration or full recovery; the **Card decks** card handles `.deck.grano` packages, which move the selected deck, its cards, and packageable local image media. A card deck package does not replace a full backup and does not sync to the cloud by itself. The Card decks card also shows current card cache usage, the cache limit, and a clear-cache action.
+The data management page shows cards in a tiled layout: the `Local Backup` card exports a `.flow.grano` file encrypted with your device key, suitable for switching devices or full device restore; the `Card Deck` card handles `.deck.grano` card deck packs, allowing you to migrate selected card decks, cards, and packable local image media, but cannot replace a full backup and will not automatically sync to the cloud. The Card Deck card also displays current card cache usage and its limit, along with an entry to clear the cache. For more details, see [Card Decks, Import & Export](/manual/en/review-cards/decks-import-export/).
 
-Tapping **Export current deck** on the **Card decks** card opens the card deck list so you can pick a top-level deck before exporting.
+On the `Card Deck` card, clicking "Export current deck" takes you to the deck list, where you can select top-level decks and then export.
 
 ## How to create a backup
 
-1. Open GranoFlow Settings.
-2. Go to Data Management.
-3. On the **Local backup** card, choose **Create local backup**.
-4. Wait for the export to finish. Do not tap repeatedly or close the page while it is processing.
-5. Save the exported backup file somewhere you control, such as iCloud, a local folder, or your computer.
+1. Open GranoFlow settings.
+2. Go to the Data Management page.
+3. On the "Local Backup" card, select "Create local backup package".
+4. Wait for the export to finish — do not click repeatedly or close the page while processing.
+5. Save the exported backup file to a location you can control, such as iCloud, a local folder, or your computer.
 
-## How to restore from backup
+## How to restore from a backup
 
-1. Open GranoFlow Settings.
-2. Go to the Data / Backup page.
-3. Choose Import backup.
-4. Select the backup file you saved earlier.
-5. After confirming the import, wait for restore to finish. Do not repeat the action while it is processing.
+1. Open GranoFlow settings.
+2. Go to the Data/Backup page.
+3. Select "Import backup".
+4. Locate the backup file you saved earlier.
+5. Confirm the import and wait for the restore to finish — do not repeat the operation while processing.
 
-:::caution[Restoring overwrites current data]
-Restoring from backup is an overwrite operation. After import, the data on the current device is replaced by the data in the backup file. If you want to keep the latest content on this device, export a current backup first, then import the older backup.
+:::caution[Restore will overwrite current data]
+Restoring from a backup is an overwrite operation. After importing, the data on the current device will be replaced by the data in the backup file. If you want to keep the latest content on your current device, first export a current backup, then import the old backup.
 :::

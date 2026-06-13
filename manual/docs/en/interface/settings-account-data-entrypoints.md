@@ -1,74 +1,75 @@
 ---
-title: "Account, sync, and data entry points"
-description: "Understand what account, sync, data, subscription, AI assistant, and tag management entries in Settings are for."
+title: "Account, Sync, and Data Entry Points"
+description: "Learn how to understand the Account, Sync, Data, Subscription, AI Assistant, and Tag Management entry points on the settings page."
 translationSource: zh-CN
 translationReview:
-  - ux-writing
-  - product-frontend-design
+  - deepseek-flash
+  - deepseek-pro
+  - manual-multilingual-translation
 ---
 
-When you see Account, Sync, Data, Subscription, AI Assistant, or Tag Management in Settings, treat them as buttons that open more specific settings pages: Account handles sign-in and devices, Sync keeps records consistent across devices, Data handles import, export, backup, and restore, Subscription handles Pro entitlements, and AI Assistant and Tag Management handle external AI tool setup and task tags.
+If you see Account, Sync, Data, Subscription, AI Assistant, or Tag Management entry points on the settings page, treat them as buttons leading to dedicated settings pages: Account manages login and devices, Sync ensures consistent records across multiple devices, Data handles import/export, backup and restore, Subscription manages Pro entitlements, and AI Assistant and Tag Management respectively handle external AI tool integration and task tags.
 
-Settings pages:
+Related settings pages:
 
-- [Settings overview](/manual/en/interface/settings-overview/)
-- [Language, theme, and font](/manual/en/interface/settings-language-appearance/)
-- [Device preferences](/manual/en/interface/device-preferences/)
-- [Account, sync, and data entry points](/manual/en/interface/settings-account-data-entrypoints/)
+- [Settings Overview](/manual/en/interface/settings-overview/)
+- [Language, Theme, and Fonts](/manual/en/interface/settings-language-appearance/)
+- [Current Device Preferences](/manual/en/interface/device-preferences/)
+- [Account, Sync, and Data Entry Points](/manual/en/interface/settings-account-data-entrypoints/)
 
-These entries do not only change something on the current Settings page. After you open one, you usually move to a more specific page with its own rules and limits.
+These entry points are not confined to the current settings page. After clicking, you will usually enter more specific pages with their own rules and constraints.
 
-If an action involves restore, delete, sync reset, keys, subscription entitlements, or signing out, read the relevant page before continuing. Screenshots only help you confirm where the entries are; even if a screenshot does not load, the text below explains what each entry is for.
+If an operation involves restore, deletion, sync reset, encryption keys, subscription entitlements, or account logout, read the corresponding page first before proceeding. Screenshots only help you confirm the location of the entry point; even if the screenshot does not load, you can determine the purpose of each entry point from the text below.
 
-## Account Entry
+## Account Entry Point
 
-The account entry is for signing up, signing in, signing out, checking account status, and connecting the current device to the same account system.
+The Account entry point is used to register, log in, log out, view account status, and connect the current device to the same account system.
 
 <!-- manual-screenshot:id=interface-device-preferences-main -->
-![Account, sync, and data entry points screenshot](../../../screenshots/en/interface-device-preferences-main.png)
+![Account, Sync, and Data Entry Points Interface Screenshot](../../../screenshots/en/interface-device-preferences-main.png)
 
-After signing in, you can purchase or restore GranoFlow Pro entitlements, enable cloud sync capabilities that require an account, and access account-related personalization.
+After logging in, you can purchase or restore GranoFlow Pro entitlements, enable cloud sync capabilities that require an account, and access account-related personalization settings.
 
-To understand what an account can do, read [Account overview](/manual/en/account/overview/). To understand how the current device relates to other devices, read [Device management](/manual/en/account/device-management/).
+If you want to know what an account can do, read [Account Overview](/manual/en/account/overview/). If you want to understand the relationship between the current device and other devices, read [Device Management](/manual/en/account/device-management/).
 
-## Sync Entry
+## Sync Entry Point
 
-The sync entry is for keeping core records such as tasks, projects, and reviews consistent across devices.
+The Sync entry point is used to keep core records such as tasks, projects, and reviews consistent across multiple devices.
 
-Sync does not mean “copy every local setting to another device.” It mainly handles the movement of work records. Current-device preferences such as language, theme, font, and app lock are in a different scope.
+Sync is not equivalent to "copying all local settings to another device." It primarily handles the data flow of business records. Language, theme, fonts, app lock, and other current device preferences fall into a different scope.
 
-To confirm what syncs, or what to check first when sync behaves unexpectedly, read [Multi-device sync](/manual/en/data-security-and-recovery/sync/).
+If you want to confirm what gets synced, or what to check first when sync issues occur, read [Multi-Device Sync](/manual/en/data-security-and-recovery/sync/).
 
-## Data and Recovery Entry
+## Data and Recovery Entry Point
 
-The data entry is for import, export, backup, restore, checking attachment status, or clearing local storage use.
+The Data entry point is used to import, export, back up, restore, view attachment status, or clear local storage usage.
 
-These actions are usually more sensitive than appearance settings and device preferences. Backup helps preserve important data when changing devices, reinstalling, or dealing with an issue; restore brings backup or cloud data back to the current device.
+These operations are typically more sensitive than appearance settings and current device preferences. Backups preserve important data when changing devices, reinstalling, or encountering anomalies; restore brings backup or cloud data back to the current device.
 
-Data Management shows three flat action cards for everyday work: the **Local backup** card creates an encrypted `.flow.grano` file for whole-device migration or recovery; the **Card decks** card offers grano deck import, an Anki import information dialog, **Export current deck** to open the card deck list, current card cache usage, and a clear-cache action; the **Encryption key** card manages your device key. A `.deck.grano` package only handles the selected card deck, its cards, and packageable local image media. It does not create tasks and does not replace a full local backup. Destructive cleanup actions stay in a separate **Danger zone** group at the bottom.
+The data management page presents daily operations with three tiled function cards: within the "Local Backup" card, "Create Local Backup Package" generates an encrypted `.flow.grano` file, suitable for full device migration or restore; the "Deck" card provides import of grano decks, an Anki import instruction pop-up, "Export Current Deck" that navigates to the deck list, current card cache usage and a clear cache entry; the "Encryption Key" card manages device keys. `.deck.grano` only handles selected decks, cards, and packable local image media; it does not create task entities and cannot replace a full local backup. Destructive cleanup entries are placed separately in the "Dangerous Operations" group at the bottom of the page. For the difference between decks and backups, read [Decks, Import, and Export](/manual/en/review-cards/decks-import-export/).
 
-Before restoring, confirm the backup source, account status, key, and version conditions. Read [Backup and restore](/manual/en/data-security-and-recovery/backup-and-restore/) for details.
+Before restoring, first confirm the backup source, account status, encryption keys, and version compatibility. For details, read [Backup and Restore](/manual/en/data-security-and-recovery/backup-and-restore/).
 
-## Subscription Entry
+## Subscription Entry Point
 
-The subscription entry is for checking GranoFlow Pro entitlements, purchase status, restore purchase guidance, and limits that may come from purchases on different platforms.
+The Subscription entry point is used to view GranoFlow Pro entitlements, purchase status, restore purchase instructions, and limitations that may arise from purchases on different platforms.
 
-Pro entitlements may affect cloud sync, attachment capabilities, storage quota, or access to advanced configuration. Actual prices and purchase availability follow the platform UI.
+Pro entitlements may affect cloud sync, attachment capabilities, storage quotas, or the availability of advanced settings. Actual pricing and purchase availability depend on the platform display.
 
-To understand why subscriptions exist, read [Subscription overview](/manual/en/subscription/overview/). To see entitlement boundaries, read [Subscription entitlements](/manual/en/subscription/entitlements/).
+If you want to understand why there is a subscription, read [Subscription Overview](/manual/en/subscription/overview/). If you want to see the boundaries of entitlements, read [Subscription Entitlements](/manual/en/subscription/entitlements/).
 
 ## AI Assistant and Tag Management
 
-The AI assistant entry is for choosing or configuring the external AI tool you want to use with GranoFlow, such as handing prepared content to ChatGPT, Codex, Claude, Gemini, DeepSeek, or a custom assistant.
+The AI Assistant entry point is used to select or configure external AI tools to work with GranoFlow, for example, sending organized content to ChatGPT, Codex, Claude, Gemini, DeepSeek, or a custom assistant.
 
-This entry does not mean AI will automatically read all local data, and it does not mean AI will silently change your records. For the overall boundaries, read [AI assistance](/manual/en/ai-assistance/overview/). For the clipboard flow, read [AI assistant and clipboard](/manual/en/ai-assistance/clipboard-assistant/).
+This entry point does not mean that AI automatically reads all local data, nor that AI silently modifies your records. For overall boundaries, read [AI Assistance](/manual/en/ai-assistance/overview/); for the clipboard workflow, read [AI Assistant and Clipboard](/manual/en/ai-assistance/clipboard-assistant/).
 
-Tag management is for creating, renaming, organizing, or disabling task tags. Tags help you organize tasks across contexts, places, energy levels, or themes.
+Tag Management is used to create, rename, organize, or deactivate task tags. Tags help you organize tasks horizontally by scenario, location, energy level, or topic.
 
-Tags affect how tasks are organized, so do not treat them as appearance settings. Read [Tags](/manual/en/tasks/tags/) to see how tags help organize tasks.
+Tags affect how tasks are organized, so do not treat them as mere appearance settings. Read [Tags](/manual/en/tasks/tags/) to see how tags help organize tasks.
 
-## Next
+## Next Steps
 
-- If you run into sync issues, read [Multi-device sync](/manual/en/data-security-and-recovery/sync/).
-- If you are preparing to back up or restore, read [Backup and restore](/manual/en/data-security-and-recovery/backup-and-restore/).
-- If you are not sure whether an action affects the account, read [Account overview](/manual/en/account/overview/).
+- If you encounter sync issues, read [Multi-Device Sync](/manual/en/data-security-and-recovery/sync/).
+- Before backing up or restoring, read [Backup and Restore](/manual/en/data-security-and-recovery/backup-and-restore/).
+- If you are unsure whether an operation affects your account, read [Account Overview](/manual/en/account/overview/).

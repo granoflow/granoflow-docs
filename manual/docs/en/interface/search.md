@@ -1,45 +1,48 @@
 ---
 title: "Search"
-description: "Use search to find existing tasks, task nodes, projects, milestones, cards, daily reviews, weekly reviews, and monthly reviews quickly, and understand where results can take you and what search cannot replace."
+description: "Use search to quickly find existing tasks, task nodes, projects, milestones, cards, daily reviews, weekly reviews, and monthly reviews, and understand where search results can take you and what filtering and audit work it cannot replace."
 translationSource: zh-CN
 translationReview:
-  - manual-usefulness-review
-  - ux-writing
+  - deepseek-flash
+  - deepseek-pro
+  - manual-multilingual-translation
 ---
 
-If you remember one or two words from a task, task node, project, milestone, card, daily review, weekly review, or monthly review but cannot remember where it is, use search to find and open it. Search is for finding existing content. It is not a full check, and it does not organize tasks or projects for you.
+If you remember one or two words from a task, task node, project, milestone, card, daily review, weekly review, or monthly review but forget where it is, use Search to find and open it. Search is for "finding existing content," not for performing a full audit or organizing tasks or projects on your behalf.
 
-## Where To Enter
+## How to Access
 
-Open the search page from the search entry on the home or main interface. After it opens, type a specific keyword in the input box, such as a few consecutive words from a task title, task node title, project description, milestone summary, card front or back, or review note, then review the result list below.
+Enter the Search page from the search entry on the home page or main interface. Once open, type a relatively specific keyword into the input box — for example, a task title, task node title, project description, milestone summary, card front/back content, or a few consecutive words from a review record — then look at the result list below.
 
-You can also add structured conditions to the search text:
+You can also add structured conditions to your search term:
 
-- Type `#tag` to show tasks with that tag. You can use a system tag label or an existing custom tag name, such as `#Important`, `#Urgent`, `#Work-Learning`, or `#Home`.
-- Type `@project` to show tasks in that project. Use the full project name, or a partial name that points to one project clearly.
-- Combine normal keywords with structured conditions, such as `draft #Important @Product Refresh`.
+- Enter `#tag` to see only tasks with that tag. The tag can be a system tag display name or an existing custom tag name, for example `#important`, `#urgent`, `#Work-Learning`, `#home`.
+- Enter `@project` to see only tasks that belong to that project. The project name can be the full name or a partial name that uniquely identifies the project.
+- Regular keywords can be used together with structured conditions, e.g., `plan #important @product-optimization`.
 
 <!-- manual-screenshot:id=interface-search-main -->
-![Search screen capture](../../../screenshots/en/interface-search-main.png)
+![Search interface screenshot](../../../screenshots/en/interface-search-main.png)
 
-For plain keywords, the page asks you to keep typing when the keyword is too short. A structured condition like `#tag` or `@project` can search on its own, without first reaching three characters.
+If you only enter regular keywords and they are too short, the page will prompt you to continue typing. Structured conditions like `#tag` or `@project` can be searched on their own without needing to meet a three-character minimum.
 
-If there are no results, it only means no matching item was found in the current searchable scope. It can also mean the tag name or project name did not match an existing object. It does not mean GranoFlow has checked every attachment, deleted item, or historical record outside the searchable scope.
+If there are no results, it only means no match was found within the current searchable scope. It could also be that the tag name or project name does not correspond to an existing object. It does not mean that GranoFlow has checked every attachment, deleted content, or historical data not included in the search scope.
 
-## Using Results
+## How to Use Results
 
-Search results are grouped by type, and only groups with results are shown. The group order is tasks, projects, milestones, cards, daily reviews, weekly reviews, and monthly reviews. When task nodes match, search does not show a separate node group. Instead, it shows the owning task once and lists the matching nodes under that task result. This keeps the match reason visible while preserving the task it belongs to.
+Search results are displayed in columns by type, showing only columns that have results. The column order is Tasks, Projects, Milestones, Cards, Daily Reviews, Weekly Reviews, Monthly Reviews. When a task node matches, there will not be a separate "Node" column; instead, the parent task is displayed as one task result, with the matching nodes listed under it. This way you can see both the reason for the match and which task it belongs to.
 
-Task results show the title, update date, and matching text. When several nodes, the task description, or the task review match at the same time, the task result shows short matching excerpts under the same row. If the task title itself matches directly, the result only shows the task title and basic information, without expanding description, review, or node content.
+Task results show the title, update time, and matching text. When multiple nodes, task descriptions, or task reviews match at the same time, up to two lines of matching excerpts are shown under the same task result. When the task title itself directly matches, only the title and basic info are shown, without expanding descriptions, reviews, or node content.
 
-When you open a task result, GranoFlow takes you to the task's current location. It may be in the inbox, task list, completed list, archive, or trash. Project and milestone results open their project context. Card results open the matching card detail. Review results open the achievements and review area and try to land on the matching day or week.
+After clicking a task result, GranoFlow takes you to the task's current location. It may be in the Inbox, Task List, Completed, Archived, or Trash. Opening a project or milestone result takes you to the corresponding project context; opening a card result takes you to the card details; opening a review result takes you to the Achievements & Reviews page, which tries to navigate to the corresponding date or week.
 
-If the result belongs to a project, you still need to use the task or project page to judge which stage it belongs to, which milestone it relates to, and whether its date still makes sense.
+If the result belongs to a project, after opening, you still need to go back to the task or project page to determine which phase it belongs to, which milestone it is related to, and whether the date is still appropriate.
 
-## When To Use It
+Search can help you find existing cards, but does not replace card management, review, or archiving decisions. For systematic card organization, start with [Cards: Bringing Experience Back to Action](/manual/en/review-cards/) to understand the relationship between cards and tasks, then go to card statistics or card management.
 
-- You remember part of a task, task node, project, milestone, card, daily review, weekly review, or monthly review text, but not where it is.
+## When to Use
+
+- You remember part of the text of a task, task node, project, milestone, card, daily review, weekly review, or monthly review, but you forgot where it is placed.
 - You want to quickly open a completed or archived task.
-- Before organizing the inbox, a project, or a review, you want to find an older task first.
+- You want to find an old task before organizing your inbox, working on a project, or doing a review.
 
-Search does not create tasks, create tags or projects, bulk-edit search results, or save itself as an automatic filtered view. If you need to browse tasks by tag, project, date, or completion state over time, keep using the relevant list or project page.
+Search does not create new tasks, new tags, or new projects, does not batch-edit search results, and does not save as auto-filter views. If you need to view tasks by tag, project, date, or completion status for an extended period, continue using the corresponding list and project pages.

@@ -1,84 +1,89 @@
 ---
-title: "Completion, archive, and trash"
-description: "Task disappeared? First check filters, dates, projects, Completed, Archived, and Trash; it usually just moved somewhere else."
+title: "Completion, Archiving, and Trash"
+description: "Task disappeared? First check filters, dates, projects, completed, archived, and trash; it's usually just moved somewhere else."
+translationSource: zh-CN
+translationReview:
+  - deepseek-flash
+  - deepseek-pro
+  - manual-multilingual-translation
 ---
 
-If a task disappears from your list, do not assume it is lost. Most of the time, it is hidden by a filter, scheduled for a date, inside a project, completed, archived, or in the trash.
+Don't immediately assume a task is lost when it disappears from the list. The most common reasons are: it's hidden by a filter, scheduled for a specific day, placed in a project, marked as completed, archived, or sitting in the trash.
 
-In GranoFlow, these three states matter most when a task seems missing:
+The three states in GranoFlow most relevant to "task disappeared" are:
 
-- **Completed**: the task is done, and it appears in the completed view and daily review stats
-- **Archived**: you do not need to see it now, but you want to keep the record
-- **Trash**: the task was deleted, but the trash has not been emptied
+- **Completed**: The task is done, and it appears in the completed view and daily review statistics.
+- **Archived**: Hidden from current view but the record is preserved.
+- **Trash**: The task was deleted, but the trash hasn't been emptied yet.
 
 ## Completion
 
-When you finish something, use **Complete** in the task detail view or a completion control in the list. After that, the task will:
+When a task is done, you can click "Complete" in the task details, or mark it as completed from the completion entry on the list. After completion, this task will:
 
-- Leave the current task list
+- Disappear from the current to-do list
 - Record a completion time
-- Appear in the “Completed” view
-- Be used in daily review stats
-- Hide the **Start** and **Complete** buttons in task details, so an ended task is not started again as if it were still pending
+- Appear in the "Completed" view
+- Be used for daily review statistics
+- Hide the "Start" and "Complete" buttons in the task details, preventing a finished task from being started again as a to-do
 
 <!-- manual-screenshot:id=tasks-completed-archived-trash -->
-![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-completed-archived-trash.png)
+![Completion, archiving, and trash interface screenshot](../../../screenshots/en/tasks-completed-archived-trash.png)
 
 :::tip[Tip]
-If you still want to see the record in daily review, do not delete completed tasks casually. Completed tasks are not junk; they are your completion history.
+If you still want to see completion records in daily reviews, don't casually delete completed tasks. Completed tasks are not junk; they are your completion records.
 :::
 
-After completion, the task detail view shows **Task Review** and lets you edit it. Use it to record what was confirmed, problems, or lessons learned.
+After completion, the task details will display "Task Review" and allow editing. This is a good place to record confirmed situations, issues, and lessons learned.
 
-Completed task details also show **Flow time**. This is not the automatic time invested from start to completion; it is the truly focused time you enter manually. Tasks completed on the same day share that day-level flow time. Archived tasks can still have editable Task Reviews, but they do not show an editable flow-time entry.
+Completed task details also show "Flow Time". This is not an automated "time spent" calculated from start to finish, but the actual focused time you manually record; tasks completed on the same day share that day's flow time. After archiving a task, you can continue to edit the task review, but the editable flow time entry is no longer shown.
 
-## Archive
+## Archiving
 
-Archive is for tasks you do not want to see every day, but may still need as a record later.
+Archiving is suitable for tasks you don't want to see every day right now but may need to know existed later.
 
-For example: old tasks from a project, expired items that still have reference value, or anything you want out of the current list without deleting it.
+For example: old tasks in a project, expired items that still have reference value, or content you don't want in the current list but also don't want to delete.
 
 <!-- manual-screenshot:id=tasks-archived-list -->
-![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-archived-list.png)
+![Completion, archiving, and trash interface screenshot](../../../screenshots/en/tasks-archived-list.png)
 
-The archived view also shows a **Cards** entry below the task filters. It opens the archived view in Card management, where you can review cards that do not enter active review and unarchive them when needed.
+Below the task filters in the archived view, a "Cards" entry is also displayed. It takes you to the archived view in card management, where you can view cards that are not in active review and unarchive them when needed. Card archiving and task archiving have different meanings; if you want to understand why a card can exit active review while still remaining in the task context, read [Practice, Mastery, and Internalization](/manual/en/review-cards/study-and-internalize/).
 
-Archive and complete are not the same thing:
+Archiving and completion are not the same:
 
-- **Complete**: the task is actually done, and it counts in completion stats
-- **Archive**: the task is only moved out of the current view; it does not mean done, and it does not count as completed
+- **Completed**: Means the task is truly done, and it counts toward completion statistics.
+- **Archived**: Simply hides the task from the current view; it does not mean it's done, and it does not count toward completion statistics.
 
 ## Trash
 
-After you delete a task, it goes to the trash. As long as the trash has not been emptied, you can still check it there.
+After deleting a task, it goes to the trash. As long as the trash hasn't been emptied, you can still view it there.
 
-The trash has two segments: **Tasks** and **Cards**. The task segment handles deleted tasks, while the card segment handles deleted review cards. They are not mixed together; restore, permanently delete, and empty actions apply only to the current segment.
+At the top of the trash, there are two segments: "Tasks" and "Cards". The tasks segment handles deleted tasks; the cards segment handles deleted review experience cards. The two segments are not mixed; restore, permanently delete, and empty operations only affect the current segment.
 
-When you restore a task that used to belong to a deleted project or milestone, GranoFlow asks whether to restore that original project and milestone too, or restore only the task to Inbox. If you restore only the task, it becomes a plain Inbox task with no project, no milestone, and no date, so you can organize it again later.
+When restoring a task, if it originally belonged to a deleted project or milestone, GranoFlow will ask you to choose: restore the original project and milestone as well, or restore only the task to the Inbox. If you choose to restore only the task, it becomes a plain Inbox task without a project, milestone, or date, which you can reorganize later.
 
 <!-- manual-screenshot:id=tasks-trash-list -->
-![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-trash-list.png)
+![Completion, archiving, and trash interface screenshot](../../../screenshots/en/tasks-trash-list.png)
 
-:::caution[Think before emptying]
-Manually emptying the trash is irreversible. If a task belonged to a project or still has review value, you will not be able to recover it from the trash after emptying it.
+:::caution[Think Before Emptying]
+Manually emptying the trash is irreversible. If a task once belonged to a project or had review value, it cannot be recovered from the trash after emptying.
 :::
 
-## Task is missing — where to look
+## What to Do If You Can't Find a Task
 
-Check in this order. It is usually the fastest way:
+Search in this order—it's usually the fastest:
 
-1. Check whether a filter is hiding it, such as showing only “today” tasks.
-2. Think about whether it has a date. If it does, look in that day’s task list.
-3. Think about whether it belongs to a project. If it does, look in the project page.
-4. If it is already done, check the “Completed” view.
-5. If you wanted it out of the current list, it may be archived. Check the “Archived” view.
-6. If you deleted it, check the trash.
+1. Check if a filter is hiding it, for example showing only "Today" tasks.
+2. Consider if it has a date. If so, look in that day's task list.
+3. Consider if it was added to a project. If so, look in that project's page.
+4. If it was completed, look in the "Completed" view.
+5. If you didn't want to see it in the current list, you might have archived it. Look in the "Archived" view.
+6. If you deleted it, look in the trash.
 
-Most missing tasks are in one of these places.
+Most lost tasks are found in one of these places.
 
-## Task Review after reopening
+## Task Review After Reactivation
 
-If you write a Task Review after completing a task, then reopen that task, the review is not cleared. While the task is incomplete, task details hide the Task Review. It appears again when the task is completed or archived.
+If you wrote a task review after completing a task and later uncompleted or reactivated it, the existing review is not cleared. When the task is not completed, the task details will not show the review; once the task is completed again or archived, the review will reappear and can be edited.
 
 <!-- manual-screenshot:id=tasks-detail-review-readonly -->
-![Completion, archive, and trash screen capture](../../../screenshots/en/tasks-detail-review-readonly.png)
+![Completion, archiving, and trash interface screenshot](../../../screenshots/en/tasks-detail-review-readonly.png)

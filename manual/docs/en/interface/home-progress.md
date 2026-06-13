@@ -1,47 +1,52 @@
 ---
 title: "Progress"
-description: "Progress is GranoFlow's default home screen for quickly checking what needs attention, today's state, this week, this month, and project progress."
+description: "Progress is the default home page of GranoFlow, used to quickly see what to do today, today's status, this week, this month, and project progress."
+translationSource: zh-CN
+translationReview:
+  - deepseek-flash
+  - deepseek-pro
+  - manual-multilingual-translation
 ---
 
-The Progress page helps you see, as soon as you open GranoFlow: what needs attention now, how today is going, whether you have been moving forward this week and this month, and where your active projects stand.
+The Progress page is designed so that as soon as you open GranoFlow, you know: what needs attention now, what progress has been made today, whether there has been consistent action this week and month, and the status of ongoing projects.
 
-It is not a task list, and it is not an analytics report. Treat it as a home status board: glance at it first, then decide whether to continue today’s tasks or review yesterday.
+It is not a to-do list or a statistical report. Think of it as a home dashboard: take a quick look, then decide whether to continue today's tasks or go back and review yesterday.
 
-## Home status and today's review
+## Home Status & Today's Review
 
-The top of the page starts with the work queue and the Card study entry so you can decide what to do next. The Progress snapshot follows, grouping yesterday's and today's completed tasks, project count, and invested time; if you use Card study, it can also show card learning progress, New/Learning/Review/Internalized distribution, cards due today, and recently reviewed cards. Under the snapshot, a lightweight Today's review card shows one stage message, up to two behavior tags, and a button into today's review when diagnostic context is available. If there is no diagnostic context but today's review can be written or has already been completed, the same card still gives you the write or view entry. On desktop landscape, these current-state sections stay on the left while projects, directions and areas, and longer-term week/month information stay on the right.
+At the top of the page, the work queue and card study entry are displayed to help you decide what to tackle next. Then comes the "Progress Snapshot", which shows yesterday's and today's completions, number of projects, and time invested; if you're already using card study, it also supplements card study progress, the distribution of Not studied / Studying / Mastered / Internalized, cards due for review today, and recently reviewed cards. Below the snapshot is a lightweight "Today's Review" card: when a diagnosis exists, it shows a line describing today's engagement phase, up to two behavior tags, and a button to enter Today's Review; when there is no diagnosis but you can record a review or have already completed one, the entry to write or view Today's Review is also preserved. In desktop landscape, these current status items are placed on the left, while the right side continues to display project, direction and domain, and this week/month long-term information.
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
-![Progress screen capture](../../../screenshots/en/interface-home-progress-main.png)
+![Progress interface screenshot](../../../screenshots/en/interface-home-progress-main.png)
 
-"Today's review" is a quick read, not the full analysis. To see the full context, notes, or reflection, use "Write today's review" or "View today's review" to open Review.
+The "Today's Review" card is just a quick judgment; it does not expand into full analysis. If you want to see more complete reasons, records, or retrospective content, click "Write Today's Review" or "View Today's Review" to enter the review page.
 
-## Card study
+## Card Study
 
-If you have turned review insights into knowledge cards, the Progress page shows one Card study section near the top. It shows active review cards and the cards due today; archived cards are not included in these counts. Click the card count to open Card statistics, where you can see learning status, upcoming review load, and recent review activity. Card learning progress and card numbers inside the Progress snapshot are status context, not a second study entry.
+If you have organized experiences from reviews into knowledge cards, the Progress page will display a "Card Study" area at the top. It shows the total number of cards and the number due for review today; clicking the total card count takes you to "Card Statistics" to see study status, future review load, and recent review activity. The card study progress and card numbers in the Progress Snapshot are just status supplements, not a second review entry point.
 
-Card learning status has four levels: New, Learning, Review, and Internalized. Internalized means a card that has reached Review has also been linked to tasks from 3 different projects. It marks that the card has moved from review into real project use, so it can return as experience for future action. It is not an automatic AI judgment, and it does not mean the card never needs review again.
+Card study statuses are: Not studied, Studying, Mastered, Internalized. Internalized means a mastered card has been brought back to real projects: tasks from 3 different projects are associated with the same card. It reminds you that this experience is not only remembered but also used in different projects, and can return as experience for future actions.
 
-From Card statistics, you can continue into card review or open Card management. Card management lists all non-deleted cards, supports search, filters, and sorting, and uses the filter panel to switch between active review and archived cards. The list shows how many matching cards are currently displayed. Click a card to edit it. Swipe right on an active card to archive it, or swipe left to move it to Trash; in the archived view, swipe right to unarchive a card or swipe left to move it to Trash.
+In "Card Statistics", you can continue to card review or open "Card Management". To understand why cards are placed together with tasks, reviews, and projects, read [Cards: Bringing Experience Back to Action](/manual/en/review-cards/); to see the difference between practice, mastery, and internalization, read [Practice, Mastery, and Internalization](/manual/en/review-cards/study-and-internalize/).
 
-## This week and this month
+## This Week & This Month Status
 
-The Progress page also shows progress for this week and this month. The point is not to give you a stressful score or ranking, but to help you notice whether you have been taking steady action recently.
+The Progress page also shows progress for this week and month. Its focus is not to give you a stressful ranking or score, but to help you see if you have been taking consistent action recently.
 
-If an area has not appeared for several days, you can think about it during review: was that part of the plan, or has it quietly been ignored?
+If a certain domain has not appeared for several consecutive days, you can think about it during review: is this normal scheduling, or has it been overlooked by you.
 
-## Project progress cards
+## Project Progress Cards
 
-If you are working on projects, the Progress page shows related project cards. This lets you get a quick sense of which projects have moved recently without opening each project page one by one.
+If you are working on projects, the Progress page will show related project cards. This way, you don't need to open each project page individually to get a rough idea of which projects have had recent progress.
 
-## What it is useful for
+## What Is It Good For?
 
-The Progress page is best for answering this question:
+The Progress page is best at answering:
 
-> Have I been steadily moving forward on the things I care about?
+> Have I been steadily advancing the things I care about recently?
 
-If you only need a quick status check, the Progress page is enough. If you want to understand causes or adjust your plan, go to Review.
+If you just want to quickly confirm your status, the Progress page is enough. If you want to analyze reasons and adjust arrangements, then go to the review page.
 
-:::note[Progress does not replace Review]
-Progress is for a quick glance. Review is where deeper thinking happens. They work better together.
+:::note[Progress Does Not Replace Review]
+The Progress page is an entry point for a quick glance; the review page is the place for deep thinking. The two work better together.
 :::

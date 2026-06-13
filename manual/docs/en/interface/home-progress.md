@@ -22,7 +22,7 @@ If you have turned review insights into knowledge cards, the Progress page shows
 
 Card learning status has four levels: New, Learning, Review, and Internalized. Internalized means a card that has reached Review has also been linked to tasks from 3 different projects. It marks that the card has moved from review into real project use, so it can return as experience for future action. It is not an automatic AI judgment, and it does not mean the card never needs review again.
 
-From Card statistics, you can continue into card review or open Card management. Card management separates active review cards from archived cards, shows both counts, and supports search, filters, and sorting. Click a card to edit it. Swipe right on an active card to archive it, or swipe left to move it to Trash so it can still be restored. Archived cards do not enter active review, but they can still appear from related tasks and review context, where you can unarchive them.
+From Card statistics, you can continue into card review or open Card management. Card management lists all non-deleted cards, supports search, filters, and sorting, and uses the filter panel to switch between active review and archived cards. The list shows how many matching cards are currently displayed. Click a card to edit it. Swipe right on an active card to archive it, or swipe left to move it to Trash; in the archived view, swipe right to unarchive a card or swipe left to move it to Trash.
 
 ## This week and this month
 

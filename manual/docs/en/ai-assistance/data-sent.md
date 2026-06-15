@@ -40,7 +40,7 @@ Rule-based discovery tries to preserve the type shape so AI can tell whether it 
 - Emails and links: keep a recognizable structure, while domains become short-lived random numeric domains such as `1846.com`.
 - Paths: keep common structural words and file extensions, while other segments become random letters.
 
-AI prompt packages and local HTTP AI assistant exports also include `isRedacted`, `redactionStatus`, and `redactionReason`. `isRedacted: true` means the redaction pass completed for this request; `false` means redaction was disabled, failed, or could not be confirmed.
+AI prompt packages and local HTTP AI assistant exports also include `isRedacted` and `redactionReason`. `isRedacted: true` means the redaction pass completed for this request; `false` means redaction was disabled, the prompt package could not be confirmed, or redaction metadata was missing, with the specific reason written in `redactionReason`.
 
 ## What redaction terms do
 

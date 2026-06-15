@@ -301,52 +301,6 @@ paths:
           $ref: "#/components/responses/Error"
         "423":
           $ref: "#/components/responses/Error"
-  /v1/tasks/{id}/review-card-drafts/validate:
-    parameters:
-      - $ref: "#/components/parameters/ResourceId"
-    post:
-      tags: [Commands]
-      summary: Validate AI review-card draft JSON for a task
-      operationId: validateTaskReviewCardDraft
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-      responses:
-        "200":
-          description: Review-card draft validation result
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/CommandResult"
-  /v1/tasks/{id}/review-card-drafts/import:
-    parameters:
-      - $ref: "#/components/parameters/ResourceId"
-    post:
-      tags: [Commands]
-      summary: Preview or import AI review-card draft JSON for a task
-      operationId: importTaskReviewCardDraft
-      parameters:
-        - name: dryRun
-          in: query
-          required: false
-          schema:
-            type: boolean
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-      responses:
-        "200":
-          description: Review-card draft import or preview result
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/CommandResult"
   /v1/tasks/{taskId}/review-cards/{cardId}/unlink:
     post:
       tags: [Resources]

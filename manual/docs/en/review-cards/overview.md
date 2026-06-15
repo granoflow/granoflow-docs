@@ -68,9 +68,10 @@ That's also why GranoFlow does not encourage you to import a large number of car
 Cards usually have several entry points:
 
 1. In the task details of a project, click "Add card" in the "Task Cards" area.
-2. On the "Linked Cards" page, search for and link existing cards, or choose "AI Add Card" or "Add Card."
+2. On the "Linked Cards" page, search for and link existing cards, or choose "Add Card" to create one manually.
 3. In the "Card Learning" area of the progress page, access card statistics, practice, or management.
-4. In daily, weekly, or monthly reviews, enter contextual practice from the related task cards.
+4. In a single task's AI assistant, analyze or review the task with AI and then confirm card drafts for import.
+5. In daily, weekly, or monthly reviews, enter contextual practice from the related task cards.
 
 These entry points may seem scattered, but they all serve the same purpose: keeping cards in the context of tasks and reviews instead of turning into another isolated repository.
 

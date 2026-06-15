@@ -80,13 +80,13 @@ Linking an existing card is suitable when:
 
 This step may seem simple, but it affects the "internalized" judgment. The system only classifies a card as internalized when it sees that a mastered card has been brought back to tasks in multiple different projects.
 
-## Using AI to Add Cards
+## Using the Task AI Assistant to Draft Cards
 
-"AI add card" is suitable for turning task materials into card drafts, but it does not silently create cards.
+The task AI assistant is suitable for turning task analysis or review into reusable card drafts. It does not silently create cards.
 
-After AI returns, it first enters an in‑app candidate preview. You can edit, delete, and then confirm the import in the preview. Only after you confirm does GranoFlow create the card data, card layout, and link to the current task.
+AI first confirms its task understanding, source basis, and candidate card direction with you in natural language. Only after you explicitly agree and confirm the import does GranoFlow create the card data, card layout, and link to the current task.
 
-Here it’s important to remember a boundary: AI can help you draft, but it cannot judge for you whether this insight is truly worth keeping. The preview phase is for that purpose. If you see something that sounds good but won't be useful later, delete it; if you see something that’s imprecisely expressed but the direction is useful, edit it before importing.
+Here it’s important to remember a boundary: AI can help you draft, but it cannot judge for you whether this insight is truly worth keeping. The confirmation step is for that purpose. If you see something that sounds good but will not be useful later, ask AI not to import it; if the direction is useful but the wording is off, ask AI to revise it before confirming.
 
 ## How the Task Cards Area Displays
 

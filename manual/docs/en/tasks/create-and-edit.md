@@ -24,7 +24,7 @@ When you create or edit a task, you will see these fields. Only the title is req
 | Field | Required? | What it does |
 | --- | --- | --- |
 | Title | ✅ Yes | The task name. The more specific it is, the easier it is to act on later |
-| Description | Optional | Stores background notes, links, or extra details |
+| Description | Optional | Stores background notes, links, or extra details; supports [rich content](/manual/en/interface/markdown-content/) |
 | Due date | Optional | Makes the task appear in that day's task list |
 | Reminder | Optional | Sends a notification at the selected time; it cannot be set in the past |
 | Project | Optional | Moves the task out of the inbox and into that project |
@@ -58,6 +58,8 @@ Tap any task to open its detail view. Change the fields you need; the task auto-
 ![Creating and editing tasks screen capture](../../../screenshots/en/tasks-detail-review-editable.png)
 
 After a task is completed or archived, its detail view shows **Task Review**. Use it to record what was confirmed, what actually happened, or what you want to remember next time. If you complete a task, add a review, and then reopen it, the review is kept but hidden while the task is incomplete. It appears again when the task is completed or archived.
+
+Task descriptions, task reviews, and other long-text fields can use rich content. When you need a table, formula, local image, remote audio, or YouTube video, read [Rich content](/manual/en/interface/markdown-content/).
 :::caution[Note]
 Reminders cannot be set to a time in the past. If the reminder time you choose has already passed, the system will prompt you to pick a new one.
 :::

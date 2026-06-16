@@ -109,6 +109,8 @@ The "Card Learning" area on the Progress page shows the active review card count
 
 Card statistics is the main entry point to the card series page. From there you can enter card practice, or open card management. Card practice and card management open as sub-pages and return to the card statistics page.
 
+Card management is organized around notes rather than treating every card as an isolated item. Under one note, you can see its cards, archive state, and learning state together. Cards that have already become Internalized show an extra reminder during cleanup, so you do not accidentally move away experience that has already proven useful across projects.
+
 <!-- manual-screenshot:id=review-card-management-main -->
 ![Card management interface screenshot](../../../screenshots/en/review-card-management-main.png)
 

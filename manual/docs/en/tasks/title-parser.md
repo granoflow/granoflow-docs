@@ -27,6 +27,8 @@ You can confirm a suggestion in two ways:
 Detected content does **not** automatically become a tag, date, or reminder. You must explicitly confirm it before it is saved to the matching field. Anything you do not confirm stays in the title text as-is.
 :::
 
+Project, milestone, and tag suggestions follow the same rule. The suggestion list only helps you choose; the field is saved only after you click a suggestion or confirm it with Enter or Tab. If you press Escape or leave the suggestion unconfirmed, the text stays in the task title as ordinary text.
+
 ## Quick syntax reference
 
 | You type | What happens |

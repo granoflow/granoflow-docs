@@ -32,6 +32,7 @@ When you create or edit a task, you will see these fields. Only the title is req
 | Tags | Optional | Helps you filter tasks; one task can have multiple tags |
 | Nodes | Optional | Breaks the task into smaller steps |
 | Task Review | Optional | Stores retrospective notes after completion; editable when completed or archived |
+| Task Cards | Optional | Links or creates cards for project tasks, so useful experience from this task can become reusable review material |
 
 If a selected custom tag has a template, and the task does not already have a description or nodes, GranoFlow copies the template into the task after saving. If the task already has a description or nodes, the template is skipped so your existing content is not overwritten. The same tag template is applied to the same task only once; if template application fails, the tag selection is kept and you can fill in the description or nodes manually.
 
@@ -58,6 +59,8 @@ Tap any task to open its detail view. Change the fields you need; the task auto-
 ![Creating and editing tasks screen capture](../../../screenshots/en/tasks-detail-review-editable.png)
 
 After a task is completed or archived, its detail view shows **Task Review**. Use it to record what was confirmed, what actually happened, or what you want to remember next time. If you complete a task, add a review, and then reopen it, the review is kept but hidden while the task is incomplete. It appears again when the task is completed or archived.
+
+If the task belongs to a project, the detail view also shows **Task Cards**. From there you can add a new card, link an existing card, or practice cards related to this task. Linked cards are grouped by note: multiple cards from the same note stay together, with active cards before archived cards. Unlinking removes the relationship between the current task and that note's cards; it does not delete the cards themselves.
 
 Task descriptions, task reviews, and other long-text fields can use rich content. When you need a table, formula, local image, remote audio, or YouTube video, read [Rich content](/manual/en/interface/markdown-content/).
 :::caution[Note]

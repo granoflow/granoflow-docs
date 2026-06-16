@@ -18,7 +18,7 @@ There are several easily confused items in GranoFlow:
 
 - `.flow.grano`: Full local backup, used for whole‑device migration or recovery.
 - `.deck.grano`: GranoFlow’s native deck package, handling only selected decks and their cards.
-- Anki/APKG: Anki’s deck format, which is incompatible with GranoFlow’s card data, layout, and task‑linking model.
+- Anki/APKG: Anki’s deck format, which is incompatible with GranoFlow’s notes, layout, and task-linking model.
 
 They all look related to “import/export,” but solve different problems. Treating `.deck.grano` as a full backup will miss tasks, projects, and reviews. Treating Anki as a native GranoFlow deck will also misunderstand the boundaries of fields, media, templates, and study history.
 
@@ -73,7 +73,7 @@ It will handle:
 
 - Selected top‑level deck and sub‑decks
 - Undeleted cards
-- Card data, fields, layout, and packable local image media
+- Notes, fields, layout, and packable local image media
 - Optional study history
 
 It will not handle:
@@ -90,7 +90,7 @@ Before importing a `.deck.grano` file, GranoFlow shows a preview for your confir
 
 Anki/APKG and GranoFlow have completely different card formats.
 
-Anki emphasizes card templates and field combinations; GranoFlow additionally handles task associations, card data, layout, media boundaries, deck provenance, and review context. Therefore, Anki import cannot be understood as “bring everything in as‑is.”
+Anki emphasizes card templates and field combinations; GranoFlow additionally handles task associations, notes, layout, media boundaries, deck provenance, and review context. Therefore, Anki import cannot be understood as “bring everything in as-is.”
 
 The current Anki entry displays notes and limitations. If it encounters unsupported templates, remote media, missing attachments, video media, or content that cannot reliably derive a title, the import may be rejected or skip some data and cards. Even after a successful import, you should not expect arbitrary Anki templates, CSS, scheduling history, and study history to migrate without loss.
 

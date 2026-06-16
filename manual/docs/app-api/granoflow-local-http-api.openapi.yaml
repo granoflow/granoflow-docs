@@ -304,7 +304,7 @@ paths:
   /v1/tasks/{taskId}/review-cards/{cardId}/unlink:
     post:
       tags: [Resources]
-      summary: Unlink a review card from the current task
+      summary: Unlink the review card's note from the current task
       operationId: unlinkTaskReviewCard
       responses:
         "200":

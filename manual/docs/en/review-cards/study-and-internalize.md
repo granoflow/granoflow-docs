@@ -79,19 +79,19 @@ If today's due-for-practice is 0, but there are still candidate cards for practi
 <!-- manual-screenshot:id=review-card-study-question-focus -->
 ![Card practice question interface screenshot](../../../screenshots/en/review-card-study-question-focus.png)
 
-## Viewing Card Material
+## Viewing Notes
 
-Some cards belong to a more complete piece of card material. The practice page provides a material entry point; opening it lets you view in a side panel:
+Some cards belong to a more complete note. The practice page provides a note entry point; opening it lets you view in a side panel:
 
-- Material title and content
+- Note title and content
 - Corresponding translation
 - Source
 - Linked projects and linked tasks
-- All cards under the same material
+- All cards under the same note
 
-Linked projects are shown with three dots indicating coverage of 0, 1, 2, 3 or more projects; tasks without a project are placed under "Uncategorized Projects". When you tap a linked task, GranoFlow will first close the material panel, then open the task details.
+Linked projects are shown with three dots indicating coverage of 0, 1, 2, 3 or more projects; tasks without a project are placed under "Uncategorized Projects". When you tap a linked task, GranoFlow will first close the note panel, then open the task details.
 
-The purpose of this panel is not for you to read long text during practice, but to help you retrieve context when needed: where this card came from, which tasks it is related to, and which other cards exist under the same material.
+The purpose of this panel is not for you to read long text during practice, but to help you retrieve context when needed: where this card came from, which tasks it is related to, and which other cards exist under the same note.
 
 ## Archiving and Trash
 

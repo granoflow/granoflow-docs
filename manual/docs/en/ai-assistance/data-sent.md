@@ -1,51 +1,54 @@
 ---
-title: "What content may be sent to AI"
-description: "Normal use does not send any data. Only when you actively use an AI feature does the text needed for that feature enter the flow."
+title: "What Might Be Sent to AI"
+description: "Normal usage does not send any data; only when you actively use an AI feature does the text that feature needs to process enter the flow."
 ---
 
-If you are only browsing tasks, writing journals, or doing reviews, GranoFlow does not send that content to AI. Text may enter the AI processing flow only when you actively trigger an AI feature, and only the text related to that action is involved.
+If you are just browsing tasks, writing a diary, or doing a review, GranoFlow does not send that content to AI. Only when you actively click an AI feature will the text relevant to that operation enter the AI processing flow.
 
 <!-- manual-screenshot:id=ai-redaction-settings -->
-![What content may be sent to AI screen capture](../../../screenshots/en/ai-redaction-settings.png)
+![Screenshot of "What Might Be Sent to AI" interface](../../../screenshots/en/ai-redaction-settings.png)
 
-## What each feature may send
+## What Each Feature Sends
 
-| AI feature | Content that may be sent |
+| AI Feature | Content That May Be Sent |
 | --- | --- |
-| Title parsing | The task title you are currently typing |
-| Clipboard assistant | The text you copied to the clipboard |
-| Helper prompt | The current page description + your saved prompt |
-| Review AI organize | The review content you triggered organizing for this time |
+| Title Parsing | The task title you are currently typing |
+| Clipboard Assistant | The text you copied to the clipboard |
+| Helper Prompt | The current page's description + the prompt you set |
+| Task Assistant | The current task's title, status, due date, reminder, task review, labels, description summary, attachment name summary, nodes, belonging project / milestone summary, resource pack summary, and the summary of review cards already linked to this task |
+| Review AI Organization | The review content you triggered for this organization |
 
-## What AI redaction settings do
+The Task Assistant does not automatically send page runtime states such as the current focus session, which task is pinned, or whether the task detail button is clickable. It sees the task content and context; if you simply want to know what "Focus", "Complete", or "Current Task" means in the task details, it is better to use the Helper prompt on that page.
 
-AI redaction settings only affect replacement before content is sent. They do not mean AI automatically judges every piece of sensitive information.
+## What Is the Purpose of AI Redaction Settings
 
-There are four key settings:
+AI redaction settings only affect replacement before content is sent; they do not mean AI will automatically detect all sensitive information.
 
-- **Master switch**: when off, GranoFlow does not perform outbound redaction replacement.
-- **Category defaults**: when the system finds emails, links, dates, long numbers, money, credit cards, IBANs, and similar content by rule, this decides whether the default is "redacted" or "allowed"; phone numbers default to allowed and can be turned on when needed.
-- **Phone, number, and money settings**: when phone is on, you can choose recognition regions and search by region name, English name, code, or dialing prefix; the dialing prefix only helps you find a region, while recognition follows the regions you save. Numbers can use a minimum digit count and either a number or ID placeholder; money can include symbol/currency-code and Chinese uppercase matching, with either a money or amount placeholder.
-- **Redaction terms**: lets you maintain fixed sensitive-term-to-placeholder rules, such as client names, company names, or project codenames.
+There are four key items:
 
-Auto-discovery is rule-based assistance, not intelligent review. It may miss unusual formats, and it may mistake ordinary numbers for sensitive content. When a category defaults to "redacted", discovered values are temporarily replaced with easier-to-read short-lived redacted values such as `13xxxxx4821`, `foxxxx3920@1846.com`, `2026-08-17`, or `192.43.18.206`, and GranoFlow tries to restore them after the AI responds; they are not automatically added to your long-term redaction terms. **You still need to check before sending.**
+- **Master Switch**: When turned off, GranoFlow will not perform outbound redaction replacement.
+- **Category Default Policy**: When the system, based on rules, detects content like email, links, dates, long numbers, amounts, bank cards, IBAN, etc., the default handling is to either "Redact" or "Allow". Phone numbers default to "Allow"; you can turn them on as needed.
+- **Phone, Number, and Amount Configuration**: After enabling phone numbers, you can choose the region to recognize. The region selector supports searching by region name, English name, code, or telephone area code. The area code only helps you find the region; actual recognition is based on your saved region choices. For numbers, you can set the minimum number of digits and replace them with "Digits" or "Number". For amounts, you can choose whether to recognize currency symbols/codes and Chinese uppercase amounts, and set replacement with "Amount" or "Sum".
+- **Redaction Term Management**: Maintain your own manually confirmed "sensitive word → codename" rules, such as client names, company names, or project codes.
 
-## What automatic redacted values look like
+Automatic detection is only a rule aid, not intelligent review. It may miss special formats or mistakenly treat ordinary numbers as sensitive content. When the category default policy is "Redact", automatically detected values will be temporarily replaced with easier-to-read short-term redacted values, such as `13xxxxx4821`, `foxxxx3920@1846.com`, `2026-08-17`, `192.43.18.206`, and will attempt to restore them after AI returns. They will not be automatically written into your long-term redaction term list. **You still need to check the content before sending.**
 
-Rule-based discovery tries to preserve the type shape so AI can tell whether it is seeing a phone number, email, link, date, amount, card number, IBAN, IP address, MAC address, token, or file path.
+## What Do Automatic Redacted Values Look Like
 
-- Numbers, phone numbers, cards, and similar account identifiers: values with 6 or more digits keep the first two real digits, use `x` in the middle, and end with 4 short-lived stable random digits; values under 6 digits become same-length random digits.
-- Money: keeps the currency or amount marker and a rough scale, so AI can do coarse analysis, but not exact accounting.
-- Dates: keep the year and replace the month and day with legal random values.
-- Emails and links: keep a recognizable structure, while domains become short-lived random numeric domains such as `1846.com`.
-- Paths: keep common structural words and file extensions, while other segments become random letters.
+Rule-based automatic detection tries to preserve the shape of the type so that AI can tell whether it sees a phone number, email, link, date, amount, bank card, IBAN, IP, MAC, token, or file path.
 
-AI prompt packages and local HTTP AI assistant exports also include `isRedacted` and `redactionReason`. `isRedacted: true` means the redaction pass completed for this request; `false` means redaction was disabled, the prompt package could not be confirmed, or redaction metadata was missing, with the specific reason written in `redactionReason`.
+- Numbers, phone numbers, bank cards, and similar account numbers: For 6 or more digits, keep the first two real digits, replace the middle with `x`, and use short-term stable random digits for the last 4; for fewer than 6 digits, replace with random digits of the same length.
+- Amounts: Preserve currency or amount markers and roughly preserve the order of magnitude so AI can make a coarse analysis, but do not keep the exact amount.
+- Dates: Preserve the year; month and day are replaced with legal random values.
+- Emails and links: Preserve recognizable structure; the domain becomes a short-term random numeric domain, e.g., `1846.com`.
+- Paths: Preserve common structural words and extensions; other fragments are replaced with random letters.
 
-## What redaction terms do
+AI request packets and exported results from the local HTTP AI helper also include `isRedacted` and `redactionReason`. `isRedacted: true` means this request has completed the redaction flow; `false` means redaction is disabled, the request packet cannot be confirmed, or redaction metadata is missing – the specific reason will be written in `redactionReason`.
 
-The word list you maintain in "Redaction terms" is replaced with your chosen placeholders before content is sent. See the "Redaction terms" page for details.
+## What Will the Redaction Terms Do
 
-## In one sentence
+The term list you maintain under "Redaction Term Management" will be automatically replaced with the codenames you set before content is sent. Please see the "Redaction Terms" page for details.
 
-> GranoFlow's AI only involves your data when you actively trigger a feature. It does not collect in the background, does not upload automatically, and only sends text relevant to the current feature.
+## One-Sentence Summary
+
+> GranoFlow's AI only involves data when you actively trigger a feature; it does not collect data in the background, does not automatically upload, and the scope of sending is limited to the relevant text that the current feature needs to process.

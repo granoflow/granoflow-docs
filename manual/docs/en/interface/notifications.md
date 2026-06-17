@@ -14,6 +14,8 @@ You can use the notifications page to:
 
 - Review unread messages. Unread notifications have an unread indicator, so you can spot what you have not opened yet.
 - Tap a notification to jump to the related feature area.
+- Swipe right on a notification to pin it. Pinned notifications show a gold star and stay above regular notifications. Swipe right again on a pinned notification to unpin it.
+- Swipe left on a notification to delete it. GranoFlow asks for confirmation first; the notification is deleted directly and does not go to Trash. You can choose “Do not ask again” in the confirmation dialog.
 - Use “Mark all as read” to change unread notifications in the current list to read.
 
 ## Important: notifications are not status confirmation

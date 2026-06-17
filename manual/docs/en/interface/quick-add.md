@@ -7,7 +7,7 @@ translationReview:
   - product-frontend-design
 ---
 
-Quick add is for saving one thing right away: click the `+` in the bottom bar or side area, enter a task title, then submit. A title is enough; if you do not set a date, project, or milestone, the task goes to the inbox so you can organize it later.
+Quick add is for saving one thing right away: click the `+` in the bottom bar or side area, enter a task title, then submit. A title is enough; if you do not set a date, the task goes to the inbox so you can organize it later. A project or milestone only sets ownership; it does not by itself move an undated task out of the inbox.
 
 ## Write a Title
 

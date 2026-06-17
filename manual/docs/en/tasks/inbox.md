@@ -9,7 +9,7 @@ Think of the inbox as a "capture first, decide later" place. It is not your fina
 
 ## How to add a task to the inbox
 
-Tap **+** in the middle of the bottom navigation bar, type the task, then save it. As long as you do not choose a date, project, or milestone, the task goes into the inbox.
+Tap **+** in the middle of the bottom navigation bar, type the task, then save it. As long as you do not choose a date, the task goes into the inbox.
 
 You do not need to figure out every detail at the start. You can capture tasks like this:
 
@@ -25,25 +25,25 @@ The first step is only to write the task down. You can add the date, project, an
 
 ## Why some tasks do not appear in the inbox
 
-The inbox does not show every task. It only shows tasks with **no date, no project, and no milestone** that are still to-do or in progress.
+The inbox does not show every task. It only shows tasks with **no date** that are still to-do or in progress. Projects and milestones are ownership; an undated project task can still appear in the inbox.
 
 | What you did when saving | Where the task went |
 | --- | --- |
 | Saved without choosing anything | Inbox ✅ |
 | Picked a due date | That day's task list |
-| Assigned it to a project | Inside that project |
-| Created it from within a project | Automatically assigned to that project |
+| Assigned it to a project but did not pick a date | Inbox, and also assigned to that project |
+| Created it from within a project without a date | Inbox, and also assigned to that project |
 
-So if a task is not in the inbox, it is not necessarily lost. Usually, it already has a date or project.
+So if a task is not in the inbox, it is not necessarily lost. Usually, it already has a date, or it has been completed, archived, or deleted.
 
 ## Why tasks disappear from the inbox
 
-A task leaves the inbox once it has been organized. For example, this happens when you add a date, move it into a project, complete it, archive it, or delete it.
+A task leaves the inbox once it has a date. Completing, archiving, or deleting it also removes it from the inbox; assigning a project alone does not move an undated task out of the inbox.
 
-The inbox is not a folder. Once a task has a clear place, it no longer stays here.
+The inbox is not a folder. It checks whether the task has a date; projects and milestones only describe where the task belongs.
 
 :::note[Can not find your task?]
-Look in the task list for dated tasks, or open the specific project page. Organized tasks appear in their new location.
+Look in the task list for dated tasks, in completed/archived views, or on the specific project page. Organized tasks appear in the matching view.
 :::
 
 ## How to process the inbox

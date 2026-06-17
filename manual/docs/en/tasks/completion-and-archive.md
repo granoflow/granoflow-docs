@@ -59,6 +59,8 @@ After deleting a task, it goes to the trash. As long as the trash hasn't been em
 
 At the top of the trash, there are two segments: "Tasks" and "Cards". The tasks segment handles deleted tasks; the cards segment handles deleted review experience cards. The two segments are not mixed; restore, permanently delete, and empty operations only affect the current segment.
 
+In the Cards segment, swipe right on a card to restore it, or swipe left to open the permanent delete confirmation.
+
 When restoring a task, if it originally belonged to a deleted project or milestone, GranoFlow will ask you to choose: restore the original project and milestone as well, or restore only the task to the Inbox. If you choose to restore only the task, it becomes a plain Inbox task without a project, milestone, or date, which you can reorganize later.
 
 <!-- manual-screenshot:id=tasks-trash-list -->

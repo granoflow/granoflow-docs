@@ -44,10 +44,10 @@ In the title field, you can type `#tag`, `@date`, or `~reminder` and GranoFlow w
 
 Where the task appears after saving depends on which fields you filled in:
 
-- **No date, no project** → Inbox
+- **No date** → Inbox
 - **Date set** → That day's task list
-- **Project assigned** → Inside that project
-- **Created inside a project page** → Automatically assigned to that project
+- **Project or milestone assigned** → Belongs to that project; if it still has no date, it can also remain in the inbox
+- **Created inside a project page** → Automatically assigned to that project; whether it appears in the task list still depends on whether it has a date
 
 Changing the date, project, or milestone does not create another task. It only changes where the same task appears or belongs.
 

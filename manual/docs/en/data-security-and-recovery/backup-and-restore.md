@@ -38,7 +38,7 @@ It is recommended to export a backup before the following situations:
 
 The data management page shows cards in a tiled layout: the `Local Backup` card exports a `.flow.grano` file encrypted with your device key, suitable for switching devices or full device restore; the `Card Deck` card handles `.deck.grano` card deck packs, allowing you to migrate selected card decks, cards, and packable local image media, but cannot replace a full backup and will not automatically sync to the cloud. The Card Deck card also displays current card cache usage and its limit, along with an entry to clear the cache. For more details, see [Card Decks, Import & Export](/manual/en/review-cards/decks-import-export/).
 
-On the `Card Deck` card, clicking "Export current deck" takes you to the deck list, where you can select top-level decks and then export.
+On the `Card Deck` card, clicking "Export deck" takes you to the deck list, where you can select top-level decks and then export.
 
 ## How to create a backup
 

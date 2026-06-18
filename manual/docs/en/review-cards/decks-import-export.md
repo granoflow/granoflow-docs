@@ -48,7 +48,7 @@ The main entry points for deck‑level import, export, and Anki import are in th
 
 You can reach the deck list from the card statistics screen, or from the card management page via the deck breadcrumb. At the top of the list, you will find “Import Deck” and “Import Anki Deck”; each top‑level deck row has an export button at its end.
 
-The card management page itself is primarily for searching, filtering, sorting, and practicing cards within the current scope; it does not handle deck‑level import/export. This separation prevents you from thinking you are working with an entire deck while you are only managing a single card.
+The card management page itself is primarily for searching, filtering, sorting, and managing cards within the current scope; it does not handle deck‑level import/export. This separation prevents you from thinking you are working with an entire deck while you are only managing a single card.
 
 <!-- manual-screenshot:id=review-card-deck-list-main -->
 ![Screenshot of the deck management interface](../../../screenshots/en/review-card-deck-list-main.png)

@@ -23,7 +23,7 @@ Inside a project, you can see:
 <!-- manual-screenshot:id=projects-detail-main -->
 ![Projects overview screen capture](../../../screenshots/en/projects-detail-main.png)
 
-On a wide screen or desktop, clicking a task opens the task detail on the right. This lets you read a project’s phases and a task’s details side by side, without jumping between pages.
+On a wide screen or desktop, clicking a task opens its details in a right-side panel. When you close the panel, you return to the same place in the project, without jumping between pages.
 
 ## What projects can and cannot do
 

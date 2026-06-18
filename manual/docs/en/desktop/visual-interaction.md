@@ -12,11 +12,11 @@ When you are looking for something in the desktop app, start on the left to swit
 
 ## Widescreen layout
 
-The biggest difference between desktop and mobile is the wider screen. On a wide screen, GranoFlow can show navigation, the list, and task details in the same window, so you do not have to switch back and forth as much.
+The biggest difference between desktop and mobile is the wider screen. On a wide screen, GranoFlow keeps the left navigation and center workspace visible. When you open task details, they appear in a right-side panel over the current page, so closing the panel returns you to the same place.
 
 - **Left sidebar**: This is the navigation area. Use it to switch between views such as Inbox, Projects, Review, and more.
 - **Center content area**: This shows the task list or the page you currently have open.
-- **Right detail panel** (on wide screens): After you click a task, its details open on the right. This lets you keep the list visible while you view or handle the task.
+- **Right detail panel** (on wide screens): After you click a task, its details open from the right. When you close the panel, you return to the same place in the list.
 
 If the window is narrow, the desktop app collapses the sidebar and behaves more like the mobile app. If you cannot find the left sidebar, try making the window wider or look for the collapsed menu entry.
 

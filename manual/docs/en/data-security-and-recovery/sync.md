@@ -1,53 +1,77 @@
 ---
-title: "Cross-device sync"
-description: "Sync brings changes from one device to all others signed in to the same account — but it is not a backup."
+title: "Cross-Device Sync"
+description: "Learn what states sync brings to other devices, and how to judge when network, account, or conflicts occur."
 ---
 
-Cross-device sync means this: when you add, change, or delete something on one device, GranoFlow tries to make the other devices signed in to the same account match that state. It helps you keep using GranoFlow across devices, but it is not a backup for recovering accidentally deleted content.
+The purpose of cross-device sync is: after you add, modify, or delete content on one device, other devices logged into the same account will also try to reach the same state. It lets you continue the same task, project, review, and card workflow across phone, computer, and tablet, but it is not a backup feature for recovering accidentally deleted content.
+
+It is more accurate to think of sync as "converging the current state across multiple devices". It cares about what should be consistent now, not what it was three days ago. When you really need to preserve a point in time, first create a [local backup](/manual/en/data-security-and-recovery/backup-and-restore/).
 
 <!-- manual-screenshot:id=data-sync-status-main -->
-![Cross-device sync screen capture](../../../screenshots/en/data-sync-status-main.png)
+![Cross-Device Sync Interface](../../screenshots/en/data-sync-status-main.png)
 
-## What syncs, and what does not
+## What Does Sync Include and Not Include
 
-✅ What syncs:
+✅ Content that syncs:
 
-- Tasks, such as title, due date, tags, and status
+- Tasks, for example title, due date, tags, status, etc.
 - Projects and milestones
 - Review records
-- Images and attachments, when the network allows
+- Images and attachments, sync when the network allows
+- Long-term assets related to review cards, sync within current version support
 
-⚠️ The important part: sync is not a backup.
+⚠️ Keep in mind: sync is not backup.
 
-- **Delete something and it deletes everywhere**: sync is bidirectional, so deletion does not stay on just one device.
-- **No version history**: sync does not save “what things looked like 3 days ago.”
-- **Images may appear later**: text may finish syncing first, while images and attachments may follow later.
+- **If you delete, other devices also delete**: Sync is bidirectional; it does not keep deletions on only one device.
+- **No version history**: Sync does not save "what it was three days ago".
+- **Images may appear later**: Text content may sync first; images and attachments may sync later.
+- **Device preferences are not account data**: Language, theme, fonts, some local settings, and temporary cache usually belong to the current device and should not be understood as requiring consistency across all devices.
 
-## Common sync statuses
+## Common Sync States
 
-| Status | Meaning |
+| State | Meaning |
 | --- | --- |
 | Syncing | Uploading or downloading changes. |
-| Synced | This device matches the cloud. |
-| Waiting | Changes are queued, usually because of the network. |
-| Error | Sync hit a problem, so check your account or key. |
+| Synced | Current device data is consistent with the cloud. |
+| Waiting | Changes are queued, usually related to network. |
+| Error | Sync encountered a problem; check account or key. |
 
-## Offline and service unavailable states
+## What Happens When Offline or Service Unreachable
 
-If you temporarily have no network connection, GranoFlow’s local data remains usable. You can still capture tasks, organize projects, write reviews, search, and export local backups.
+If there is temporarily no network, local data in GranoFlow is still usable. You can continue recording tasks, organizing projects, writing reviews, searching content, and exporting local backups.
 
-If you are not signed in, do not have an active membership, or the sync service cannot be reached, cloud sync is temporarily unavailable. When you tap an online feature, the app will ask you to try again later; data already on this device remains usable.
+If you are not logged in, are not a member, or cannot connect to the sync service, cloud sync will be temporarily unavailable. When you tap a feature that requires the network, the app will prompt you to retry later; existing local data can still be used.
 
-If your device has internet but the sync service is temporarily unavailable, the app will not block local use. Data already on this device remains editable; changes that need to upload to or download from the cloud can sync again later.
+If the device has network but the sync service is temporarily unreachable, the app will not prevent you from using existing local data. Content already on this device can still be edited; changes that need to be uploaded to or downloaded from the cloud will wait until you sync again later.
 
-Pro devices can turn on silent sync from Settings > Messages and reminders. Silent sync catches up new data from other devices on this device, but it stays silent: no system banners, no sounds, and no new notification center messages. Availability still depends on sign-in state, Pro entitlement, and platform support.
+Member devices do not need to enable silent sync separately. As long as the account has sync eligibility, the service is reachable, the key status is normal, and the device is in a runnable state, GranoFlow will try to silently supplement new data from other devices in the background. This process remains silent, does not display system banners, does not play sounds, and does not add notification center messages.
 
-## Adding a new device to sync
+## Adding a New Device to Sync
 
-If you get a new phone, or reinstall the app, and want to connect to your existing cloud data, you need the **cloud sync key** from your old device.
+If you get a new phone or reinstall the app and want to connect to your existing cloud data, you need to use the **cloud sync key** from the old device.
 
-See the full walkthrough → [Sync existing cloud data to a new device](/manual/data-security-and-recovery/new-device-sync/)
+Detailed steps → [Syncing Existing Cloud Data on a New Device](/manual/en/data-security-and-recovery/new-device-sync/)
 
-:::caution[Sync does not replace backup]
-Export local backups regularly. Tasks you delete accidentally cannot be recovered through sync, because the cloud and your other devices delete them too.
+## What to Do When You See "Cloud Sync Recovery"
+
+When GranoFlow finds that the local key on the current device does not match the cloud sync data, it will enter "Cloud Sync Recovery". This is not a normal error pop‑up; it is protecting you from overwriting cloud or local data with the wrong data.
+
+The recovery process will ask you to enter the "cloud sync password". This password is used to attempt to open the encryption material of the current account's cloud data. After entering, GranoFlow will first check:
+
+- If the cloud data and local data use the same data key, it will only update the sync settings on this device and then continue syncing.
+- If the cloud data and local data are not the same set, GranoFlow will let you enter a selection process to decide clearly whether to use cloud data or keep the local path.
+- If the input is incorrect, GranoFlow will not save that input, nor will it download cloud data, upload local data, or clear the cloud.
+
+You may also see actions like "Pause Sync" or "Clear Cloud Data". Pausing sync only closes the current recovery entry; it does not mark it as permanently ignored. Clearing cloud data is a high‑risk operation and will require further confirmation and system authentication. When unsure, pause, confirm that the old device, backup files, and cloud sync password are all at hand, then continue.
+
+## How Sync and Backup Should Work Together
+
+During daily use, let sync handle current consistency across devices; before performing major operations, let backup handle revertible copies. A reusable judgment is:
+
+- Today you just want the computer and phone to see the same tasks – use sync.
+- Before reinstalling the app, changing devices, cleaning up many projects, or importing a lot of content – back up first.
+- When you see a sync key or cloud recovery prompt, do not clear the cloud first; first check whether the old device can still be opened, whether a local backup exists, and whether the cloud sync password was saved.
+
+:::caution[Sync Does Not Replace Backup]
+Please export local backups regularly. Deleted tasks cannot be recovered by sync because the cloud and other devices will also delete them.
 :::

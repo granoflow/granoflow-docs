@@ -35,7 +35,7 @@ When a new device joins an existing cloud sync, or when the device’s local key
 After entering the correct password, GranoFlow continues to determine whether the local data and the cloud data belong to the same set:
 
 - **Same set of data:** Only updates the sync protection settings on this device.
-- **Not the same set of data:** Leads to a choice flow: use cloud data or keep local data.
+- **Not the same set of data:** The current account's cloud protection is treated as the target, and local data is migrated into that account.
 - **Incorrect password:** Nothing is saved, no download, no upload, no data is cleared.
 
 ## How Should You Save It?
@@ -66,7 +66,7 @@ After entering the correct key, the new device can then access the corresponding
 GranoFlow first checks whether the key can open the target data. For backup import, the target is the backup file; for cloud sync recovery, the target is the cloud sync data of the current account.
 
 - **Key matches and data belongs to the same set** → Import or connect sync continues.
-- **Key matches, but local and cloud data are not the same set** → A selection screen appears, letting you decide which data to keep.
+- **Key matches, but local and cloud data are not the same set** → The current account's cloud protection is used as the target, and GranoFlow migrates local data into that account.
 - **Key is incorrect** → No data is changed; you are prompted to re-enter.
 
 ## What If You Forget the Key?
@@ -87,7 +87,7 @@ If GranoFlow prompts you to enter the cloud sync password, fill in the full key 
 After entering the correct key, GranoFlow first determines whether the local data and cloud data are the same set:
 
 - If they are the same set, only the sync key settings on this device are updated.
-- If they are not the same set, the confirmation flow “Use cloud data” is entered. Before proceeding, confirm which set of data – local or cloud – is more important.
+- If they are not the same set, the current account's cloud protection is used as the target. Before proceeding, confirm that you are using the intended account.
 
 :::caution[Keys are not passwords and cannot be reset]
 Once the data key or cloud sync password is lost, GranoFlow cannot help you reset or retrieve the data protected by them. Save them now – do not wait until you switch devices or import a backup only to find you are missing a key.

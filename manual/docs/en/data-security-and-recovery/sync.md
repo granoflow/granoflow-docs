@@ -59,10 +59,10 @@ When GranoFlow finds that the local key on the current device does not match the
 The recovery process will ask you to enter the "cloud sync password". This password is used to attempt to open the encryption material of the current account's cloud data. After entering, GranoFlow will first check:
 
 - If the cloud data and local data use the same data key, it will only update the sync settings on this device and then continue syncing.
-- If the cloud data and local data are not the same set, GranoFlow will let you enter a selection process to decide clearly whether to use cloud data or keep the local path.
+- If the current account already has protected cloud data and it is not the same set as local data, GranoFlow treats the current account's cloud protection as the target and migrates local data into that account.
 - If the input is incorrect, GranoFlow will not save that input, nor will it download cloud data, upload local data, or clear the cloud.
 
-You may also see actions like "Pause Sync" or "Clear Cloud Data". Pausing sync only closes the current recovery entry; it does not mark it as permanently ignored. Clearing cloud data is a high‑risk operation and will require further confirmation and system authentication. When unsure, pause, confirm that the old device, backup files, and cloud sync password are all at hand, then continue.
+You may also see actions like "Pause Sync" or "Clear Cloud Data". Pausing sync only closes the current recovery entry; it does not mark it as permanently ignored. Clearing cloud data is a high‑risk operation and will require further confirmation and system authentication. When unsure, pause, confirm that the old device, backup files, and current account cloud sync password are all at hand, then continue.
 
 ## How Sync and Backup Should Work Together
 

@@ -77,6 +77,8 @@ If you cancel the save location or close the system share panel, GranoFlow will 
 
 When importing, GranoFlow first tries to open the backup using the key saved on the current device. If it can open, it will not ask for an extra key; only if it cannot open will it prompt for the data key. Entering an incorrect key will not change the current data.
 
+If this device has already joined cloud sync, importing a backup keeps the current sync protection relationship and converts imported content as needed in the background. If this device has never joined sync, the backup can become the local basis for future backups. In either case, you do not need to understand the internal key choice; just follow the prompts and wait for the progress bar to finish.
+
 Import is not a simple brute-force overwrite of every record. GranoFlow first generates a restore plan: it writes only when the backup record is newer; skips when the local record is newer; if two records have the same timestamp but different content, it stops and prompts a conflict. Attachments follow the restore plan of their parent task, project, or milestone; if the parent record cannot be safely imported, the related attachments will not be force-included.
 
 If the backup package is missing attachment files, importing is blocked by default. Only when you explicitly choose "Ignore missing attachments and continue importing" does GranoFlow proceed to import the remaining recoverable records with this gap. This choice is suitable when you have confirmed that the missing attachments are not important, or you just want to restore tasks, projects, and text records as quickly as possible.

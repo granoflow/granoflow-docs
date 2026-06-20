@@ -1,6 +1,6 @@
 ---
-title: "Decks, Import & Export"
-description: "Understand the differences between deck management, .deck.grano deck packages, Anki import, and full backups."
+title: "Card Boxes, Import, and Export"
+description: "Understand the difference between card box management, .deck.grano card box files, Anki entry, and full backups."
 translationSource: zh-CN
 translationReview:
   - deepseek-flash
@@ -8,108 +8,119 @@ translationReview:
   - manual-multilingual-translation
 ---
 
-When you accumulate many cards, you naturally want to organize them: which belong to the same batch of tasks, which came from the same import package, which can be migrated to another device, and which should be temporarily archived.
+When cards multiply, you'll naturally want to organize them: which belong to the same batch of tasks, which come from the same import package, which can be migrated to another device, which should be temporarily archived.
 
-That is why card decks exist. A deck is not another project system, nor a full backup. It is more like a container for managing and migrating a set of cards.
+That's why card boxes exist. A card box is not another project system, nor a full backup. It's more like a container for managing and migrating a specific scope of cards.
 
-## Don’t Confuse the Three File Types
+## Don't Mix Up Three File Types
 
-There are several easily confused items in GranoFlow:
+There are a few easily confused things in GranoFlow:
 
-- `.flow.grano`: Full local backup, used for whole‑device migration or recovery.
-- `.deck.grano`: GranoFlow’s native deck package, handling only selected decks and their cards.
-- Anki/APKG: Anki’s deck format, which is incompatible with GranoFlow’s notes, layout, and task-linking model.
+- `.flow.grano`: Full local backup, used for whole-device migration or restoration.
+- `.deck.grano`: GranoFlow's own card box package, handling only the selected card box and its cards.
+- Anki/APKG: Anki's card box format, which is not the same as GranoFlow's note, layout, and task association model.
 
-They all look related to “import/export,” but solve different problems. Treating `.deck.grano` as a full backup will miss tasks, projects, and reviews. Treating Anki as a native GranoFlow deck will also misunderstand the boundaries of fields, media, templates, and study history.
+They all seem related to "import/export," but they solve different problems. Treating `.deck.grano` as a full backup will miss tasks, projects, and reviews. Treating Anki as a native GranoFlow card box will misunderstand the boundaries of fields, media, templates, and learning records.
 
-## Core Concept: Decks Handle Scope, Not Your Entire Life System
+## Core Concept: Card Boxes Handle Scope, Not Your Whole Life System
 
-A deck focuses on a set of cards and their deck tree. It helps you migrate a particular body of knowledge or experience, such as “paper reading methods,” “user interview insights,” or “product design principles.”
+A card box focuses on a set of cards and their card box tree. It can help migrate a certain category of knowledge or experience, like "paper reading methods," "user interview experience," or "product design principles."
 
-However, task entities, projects, milestones, daily reviews, accounts, and device keys are not the responsibility of `.deck.grano`. It will not create task entities, nor can it replace a full local backup.
+But task entities, projects, milestones, daily reviews, accounts, and device keys are not the responsibility of `.deck.grano`. It won't create task entities, nor can it replace a full local backup.
 
-You can decide like this:
+You can judge like this:
 
-- For device swap or full‑device recovery, use the `.flow.grano` local backup.
-- To migrate or share a specific deck, use `.deck.grano`.
-- If you want to bring in Anki cards, check the Anki import entry and its notes, but do not expect lossless round‑trip fidelity.
+- To switch devices or restore a whole device, use `.flow.grano` local backup.
+- To migrate or share a specific card box, use `.deck.grano`.
+- To try bringing in Anki cards, read the Anki import entry and instructions, but don't expect lossless conversion.
 
-## A Real‑World Task Example
+## A Real Task Example
 
-Suppose you have organized a set of “scientific writing” cards, containing experiences from reading papers, writing abstracts, preparing group meetings, and handling supervisor feedback. You want to migrate this set of cards to another computer.
+Suppose you've organized a set of "Research Writing" cards containing insights on reading papers, writing abstracts, preparing group meetings, and handling supervisor feedback. You want to migrate this set to another computer.
 
-In this case, you do not need to export the entire GranoFlow backup, nor should you treat it as an Anki package. Go to the deck list, select the top‑level deck, and export a `.deck.grano` file. That package will include the selected top‑level deck, its sub‑decks, undeleted cards, and packable local image media.
+You don't need to export the entire GranoFlow backup, nor should you think of it as an Anki package. Go to the card box list, select the top-level card box, and export `.deck.grano`. This package will include the selected top-level card box, sub-card boxes, undeleted cards, and any packable local image media.
 
-If you turned on “Include study history,” study history will be written into the export package; by default it is not included. Similarly, when importing, study history is not imported by default—only if you explicitly enable “Import study history” in the import preview will it be merged.
+If you've turned on "Include learning records," learning records will be included in the export package; by default they are not. Similarly, during import, learning records are not imported by default; they are only merged if you explicitly turn on "Import learning records" in the import preview.
 
-## Where to Manage Decks
+## Where to Manage Card Boxes
 
-The main entry points for deck‑level import, export, and Anki import are in the deck list.
+The main entry for card box–level import, export, and Anki import is in the card box list.
 
-You can reach the deck list from the card statistics screen, or from the card management page via the deck breadcrumb. At the top of the list, you will find “Import Deck” and a muted “Import Anki Deck” entry; each top-level deck row has an export button at its end. In the current version, the Anki entry only shows notes and a feedback entry. It will not let you choose an `.apkg` file, and it will not actually import Anki cards.
+You can reach the card box list from card statistics, or from the card management page via the card box breadcrumb. The list top provides "Import Card Box" and a subdued "Import Anki Card Box" entry. Each top-level card box row has an export button. In the current version, the Anki entry only shows instructions and a feedback entry; it won't let you select a `.apkg` file or actually import Anki cards.
 
-The card management page itself is primarily for searching, filtering, sorting, and managing cards within the current scope; it does not handle deck‑level import/export. This separation prevents you from thinking you are working with an entire deck while you are only managing a single card.
+The card management page itself is mainly for searching, filtering, sorting, and organizing cards within the current scope; it doesn't handle card box–level import/export. This separation prevents you from mistakenly thinking you're operating on the entire card box when you're just organizing a single card.
 
 <!-- manual-screenshot:id=review-card-deck-list-main -->
-![Screenshot of the deck management interface](../../../screenshots/en/review-card-deck-list-main.png)
+![Card Box Management page screenshot](../../../screenshots/en/review-card-deck-list-main.png)
 
-## Archiving and Deleting in the Deck List
+## Managing Cards Only Within a Card Box
 
-The deck list shows statistics such as active, archived, unseen, learning, mastered, and internalized.
+When you enter "Manage Cards" from a specific card box, GranoFlow opens the card management page scoped to that card box. This page still provides search, filter, sort, archive, and trash capabilities, but the scope is limited to the current card box and its sub-card boxes.
 
-In the deck list:
+This is suitable for partial organization, like checking only the "Research Writing" card box for mastered cards or cards that should be archived. It is not the same as the card box list, nor does it provide card box–level import/export. To export `.deck.grano`, go back to the card box list.
 
-- Swipe right to archive non‑internalized cards; internalized cards remain in active review.
-- Swipe left only deletes cards that are not linked to any task.
-- The deck itself is preserved as much as possible, especially when it still contains cards that cannot or should not be deleted.
+If you enter from the general card management page, you see the global scope; if you enter from a card box row, you see that card box's scope. When troubleshooting "why are there fewer cards here," first confirm whether you're currently within a specific card box scope.
 
-This design is somewhat conservative, but necessary. A deck often contains a whole body of experience; the cost of accidentally deleting it is much higher than that of a single card. Internalized cards deserve extra caution because they have been used in multiple projects.
+<!-- manual-screenshot:id=review-card-deck-scoped-management -->
+![Card Management within a Card Box screenshot](../../../screenshots/en/review-card-deck-scoped-management.png)
+
+## Archiving and Deleting in the Card Box List
+
+The card box list shows statistics for active, archived, not started, learning, mastered, and internalized.
+
+In the card box list:
+
+- Swipe right to archive non-internalized cards; internalized cards remain in active review.
+- Swipe left only deletes cards not linked to any task.
+- The card box itself is preserved as much as possible, especially when it still contains cards that cannot or should not be deleted.
+
+This design is a bit conservative, but necessary. A card box often contains a whole set of insights; deleting by mistake is costlier than a single card. Internalized cards deserve special caution because they've been used in multiple projects.
 
 ## What `.deck.grano` Can Do
 
-`.deck.grano` is suitable for migrating a deck between GranoFlow instances.
+`.deck.grano` is suitable for migrating a card box between GranoFlow instances.
 
-It will handle:
+It handles:
 
-- Selected top‑level deck and sub‑decks
+- Selected top-level card box and sub-card boxes
 - Undeleted cards
-- Notes, fields, layout, and packable local image media
-- Optional study history
+- Notes, fields, layouts, and packable local image media
+- Optional learning records
 
-It will not handle:
+It does not handle:
 
 - Task entities
 - Project and milestone entities
-- Daily, weekly, or monthly review body text
-- Full account or device recovery
-- Lossless round‑trip of arbitrary Anki templates, CSS, or scheduling history
+- Daily, weekly, monthly review content
+- Complete account or device restoration
+- Lossless preservation of arbitrary Anki templates, CSS, or scheduling history
 
-Before importing a `.deck.grano` file, GranoFlow shows a preview for your confirmation. The import does not create task entities; it only retains task associations that still exist on this device and are not in the trash. Missing task associations are counted and skipped in the preview; cards without a valid task association may end up in the archived section.
+Before importing `.deck.grano`, GranoFlow shows a preview for you to confirm. The import does not create task entities; it only retains task associations that still exist on this device and are not in the trash. Missing task associations are counted in the preview and skipped; cards with no valid task associations may go into the archived cards.
 
-## How the Anki Entry Works
+## How to Understand the Anki Entry
 
-Anki/APKG and GranoFlow have completely different card formats.
+Anki/APKG and GranoFlow's card format are completely different.
 
-Anki emphasizes card templates and field combinations; GranoFlow additionally handles task associations, notes, layout, media boundaries, deck provenance, and review context. Therefore, Anki import cannot be understood as “bring everything in as-is.”
+Anki emphasizes card templates and field combinations; GranoFlow also handles task associations, notes, layouts, media boundaries, card box sources, and review context. So Anki import cannot be understood as "copy as is."
 
-The current Anki entry displays notes and limitations. After you confirm, GranoFlow opens the `@Granoflow` X page as a feedback entry; it does not enter file selection, precheck, or import progress.
+The current Anki entry shows instructions and limitations. After confirmation, GranoFlow opens the `@GranoFlow` X page as a feedback entry; it does not go into file selection, precheck, or import progress.
 
-The underlying Anki/APKG compatibility code and safeguards still exist, but that does not mean the current user interface has opened Anki import. Even if Anki import is reopened in the future, you should not expect arbitrary Anki templates, CSS, scheduling history, or study history to migrate without loss.
+Under the hood, Anki/APKG compatibility code and defenses remain, but this does not mean the current user interface has opened Anki import. Even if it reopens in the future, you should not expect lossless migration of arbitrary Anki templates, CSS, scheduling history, or learning records.
 
-A safer approach is still to let GranoFlow cards come from your own tasks and reviews. The Anki entry can be a supplement, but should not become the main path for building your experience system.
+A safer approach remains: let GranoFlow cards come from your own tasks and reviews. The Anki entry can be a supplement, but should not become the main path for building your experience system.
 
 ## Relationship with Full Backups
 
-If you are preparing to switch devices, reinstall the system, or perform a large‑scale deletion, you should first create a full local backup (`.flow.grano`). The full backup is the primary line of defense to return to a previous point in time.
+If you're preparing to switch devices, reinstall the system, or do a large-scale deletion, first create a full local backup `.flow.grano`. The full backup is the main line of defense to return to a point in time.
 
-On the Data Management page, the “Decks” card handles `.deck.grano` import, Anki import instructions, exporting the current deck, viewing card cache, and clearing cache. None of these are equivalent to a full backup.
+The "Card Boxes" card in the Data Management page handles `.deck.grano` import, Anki import instructions, card box export, viewing card cache, and clearing cache. But none of these equal a full backup.
 
-A simple rule of thumb:
+A simple principle:
 
-- If you worry about losing your entire dataset, back up first.
-- If you only want to migrate a set of cards, then export the deck.
-- If you want to import external cards, read the limitations first; the current Anki entry only collects feedback, and `.deck.grano` is the main path for migrating decks between GranoFlow instances.
+- Worried about losing the entire data set? Back up first.
+- Only want to migrate a set of cards? Export the card box.
+- Want to import external cards? First read the limitations; the current Anki entry only collects feedback, `.deck.grano` is the main path for migrating card boxes between GranoFlow instances.
 
-## Summary
+## Closing
 
-Decks allow you to organize, migrate, and control the scope of your card system, but they do not change the core truth: what really matters is whether the experience can return to your tasks. Import and export are just ways to move data; whether a card has value ultimately depends on whether it helps you make better judgments in your next action.
+Card boxes let the card system be organized, migrated, and scoped, but they don't change the core: what truly matters is whether insights can return to tasks. Import/export are just transportation; a card's value ultimately depends on whether it helps you make better judgments in your next action.

@@ -1,59 +1,66 @@
 ---
-title: "Daily review"
-description: "The daily review counts tasks by completion time and helps you review time invested and use AI for task reviews."
+title: "Daily Review"
+description: "Daily review counts by task completion time and helps you view today's time invested and use AI to organize task reviews."
+translationSource: zh-CN
+translationReview:
+  - deepseek-flash
+  - deepseek-pro
+  - manual-multilingual-translation
 ---
 
-The daily review helps you check what you actually finished during the day and write a few notes about it. It counts tasks by **completion time**, not due date; each new day starts at midnight.
+The daily review is used at the end of the day to confirm what you actually accomplished and write a few notes. It counts tasks by their **completion time**, not due date; each day starts fresh at midnight.
 
-Use the previous-day and next-day buttons beside the date title to move through daily reviews. On portrait screens, the detail page also shows the current date in the header and keeps the same day navigation; days with no completed tasks can still be opened as empty states.
+You can swipe to the previous or next day beside the date title. When in portrait mode and the detail page is open, the top of the detail page shows the current date and continues using the same previous/next day buttons; even if no tasks were completed on a day, you can still navigate to it to see an empty state.
 
 {/* manual-screenshot:id=review-overview-main */}
-![Daily review](../../../screenshots/en/review-overview-main.png)
+![Daily review main interface](../../../screenshots/en/review-overview-main.png)
 
-## How tasks are counted
+## Counting Logic
 
-The daily review only looks at when a task was marked complete.
+The daily review only looks at when a task was marked as completed.
 
 This means:
 
-- Task due yesterday, completed today → appears in today's review
-- Task completed yesterday at 11:58 PM → appears in yesterday's review
-- Task completed today at 1:00 AM → appears in today's review
+- A task due yesterday but completed today → appears in today's review
+- A task completed at 23:58 yesterday → appears in yesterday's review
+- A task completed at 1:00 today → **appears in today's review**
 
-In other words, the daily review uses natural calendar days: tasks completed after midnight belong to the new day.
+In other words, the daily review groups by calendar day: tasks completed after midnight enter the new day's review.
 
-## What to write
+## How to Write a Daily Review
 
-There is no fixed format. You can simply write a few things worth remembering, such as:
+There is no fixed format. You can directly write a few things worth remembering today, for example:
 
-- What you completed, and what you did not complete
-- What felt smooth, and what got stuck
+- What got done today, what didn't
+- What went smoothly, what got stuck
 - What you want to handle first tomorrow
-- What your state felt like today
+- How you felt today
 
-Three to five sentences is usually enough. You do not need to write a formal report, and you do not need to answer every prompt.
+Three to five sentences are usually enough. You don't need to write a formal report or answer every prompt question.
 
-## Arranging today's task time
+## Organizing Today's Task Time
 
-The right side of the daily review shows **Time invested today**. This is calculated from the union of today's task time blocks: if two tasks overlap, the overlapping minutes are not counted twice.
+The right side of the daily review shows "Today's Time Invested." This time is calculated as the union of the day's task time blocks: if two task times overlap, the overlapping portion is not counted twice.
 
-**Flow time** is a separate time field. It represents the truly focused time you confirm yourself, and it must be entered manually. It is not derived from task start time, completion time, or time invested. You can enter it in the daily review or from the detail view of a task completed that day; completed tasks on the same day show the same day-level flow time.
+"Flow Time" is a separate manually recorded time. It represents your subjective confirmation of true focused time, and can only be entered manually. It is not automatically derived from task start time, completion time, or time invested. You can fill it in the daily review, or from the detail of any completed task on that day; completed tasks on the same day share the same daily flow time.
 
 <!-- manual-screenshot:id=review-daily-time-overlap-entry -->
-![Daily review screen capture](../../../screenshots/en/review-daily-time-overlap-entry.png)
+![Daily review screenshot](../../../screenshots/en/review-daily-time-overlap-entry.png)
 
-Task blocks in the timeline keep the task title as the main text. If a task belongs to a project and the block has enough space, the project name appears below the title in smaller text; short tasks, narrowed overlapping tasks, and tasks without a project only show the task title.
+Task blocks in the timeline are based on the task title. If a task is linked to a project and there is enough space in the block, the project name appears in smaller text below the title; short tasks, tasks with narrowed blocks after overlapping, or tasks without a linked project display only the task title.
 
-If you want to review today's task reflections, choose **Review Today's Tasks** and let AI use the recorded task times as context, then summarize the day's domain, project, and milestone progress. Task times are read-only in this flow; real time corrections must be made manually in the task list or task detail view. After you copy the result back into GranoFlow, you still need to confirm before it writes task title, Task Review, today's domain reports, or optional new tasks. See [Review Today's Tasks](../ai-assistance/daily-task-review) for the full flow.
+If a task's time is inaccurate, first go back to that completed task's detail, tap "Time Record," and adjust the start time and completion time to a period closer to reality. Doing this makes the task time blocks in the daily review, as well as later weekly and monthly reviews, more representative of your actual day. Full instructions are in [Calibrate time after completion](../tasks/completion-and-archive#calibrate-time-after-completion).
 
-Weekly and monthly reviews add up the manually entered daily flow time, so they can show the total amount of truly focused time for the week or month.
+If you want to reorganize the day's task review, tap "Review Today's Tasks" to let the AI understand the day's flow based on recorded task times and organize the domains, projects, and milestone progress involved. Task times are read-only context; actual time corrections need to be done manually in the task list or task detail. After copying the results back to GranoFlow, you need to confirm in a dialog before they are written to task titles, task reviews, that day's domain daily report, or optionally new tasks. Full flow in [Review Today's Tasks](../ai-assistance/daily-task-review).
 
-## Days with no completed tasks
+Weekly and monthly reviews aggregate the daily manually recorded flow time to show the total amount of true focused time for that week or month.
 
-If no tasks were completed on a given day, the daily review shows an empty state. It does not use empty charts or messages like "you did nothing today" to create pressure.
+## Days with No Completed Tasks
 
-The empty page simply means: no completed tasks were recorded for that day.
+If a day has no completed tasks, the daily review doesn't pressure you with empty charts or statements like "You did nothing today." The right side still displays basic information, such as zero time invested and a lightweight feedback when review is not applicable.
 
-:::note[The review is for you]
-The audience is your future self, not your boss or other users. Write it in whatever way will make sense to you later.
+An empty page simply means: no completed tasks were recorded for this day.
+
+:::note[Reviews are for you]
+The audience for your review is future you, not your boss or users. Write in a way that you'll understand later.
 :::

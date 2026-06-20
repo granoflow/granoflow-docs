@@ -1,33 +1,48 @@
 ---
 title: "Notifications"
-description: "The notifications page is GranoFlow's in-app inbox. You can review unread alerts, open related features, or mark notifications as read, but sync, subscription, and account status still need to be checked on their own feature pages."
+description: "The Notifications page is GranoFlow's in-app message inbox. View unread alerts, jump to relevant features, or mark notifications as read. But for sync, subscription, account, and other real statuses, go back to the corresponding feature page to confirm."
+translationSource: zh-CN
+translationReview:
+  - deepseek-flash
+  - deepseek-pro
+  - manual-multilingual-translation
 ---
 
-If you want to check alerts sent by GranoFlow inside the app, open the notifications page; you can review unread notifications, open the related area, or mark notifications as read.
+To view in-app reminders from GranoFlow, open the Notifications page. Here you can see unread notifications, jump to the relevant location, or mark notifications as read.
 
 <!-- manual-screenshot:id=interface-notifications-main -->
-![Notifications screen capture](../../../screenshots/en/interface-notifications-main.png)
+![Notifications page screenshot](../../../screenshots/en/interface-notifications-main.png)
 
-## What you can do here
+## What You Can Do on the Notifications Page
 
-You can use the notifications page to:
+On the Notifications page, you can perform these actions:
 
-- Review unread messages. Unread notifications have an unread indicator, so you can spot what you have not opened yet.
-- Tap a notification to jump to the related feature area.
-- Swipe right on a notification to pin it. Pinned notifications show a gold star and stay above regular notifications. Swipe right again on a pinned notification to unpin it.
-- Swipe left on a notification to delete it. GranoFlow asks for confirmation first; the notification is deleted directly and does not go to Trash. You can choose “Do not ask again” in the confirmation dialog.
-- Use “Mark all as read” to change unread notifications in the current list to read.
+- View unread messages. Unread notifications have an unread badge so you can handle content you haven't seen yet.
+- Tap a notification to jump to its corresponding feature location.
+- Swipe right on a notification to pin it. Pinned notifications get a gold star and always appear before ordinary notifications. Swipe right again on a pinned notification to unpin it.
+- Swipe left on a notification to delete it. A confirmation prompt will appear; the notification is deleted directly, not moved to the trash. You can also check "Don't ask again" in the confirmation box.
+- Use "Mark All as Read" to change the unread status of the current notification list to read.
 
-## Important: notifications are not status confirmation
+## Note: Notifications Are Not Status Confirmations
 
-“Mark all as read” only means those notifications are no longer treated as unread messages. It does not fix the issue mentioned in a notification, and it does not mean the related status has returned to normal.
+"Mark All as Read" only means you no longer consider these notifications as unread messages. It does not automatically resolve the issues mentioned in the notifications, nor does it mean the related status has returned to normal.
 
-If you are checking sync, subscription entitlements, account status, or task reminders, go back to the relevant feature page to view the current state. The notifications page can tell you that something happened, but it cannot replace the status shown on the feature page itself.
+If you're troubleshooting sync, subscription entitlements, account status, or task reminders, go back to the corresponding feature page to check the current status. The Notifications page can tell you "something happened," but it cannot replace the status confirmation on the actual feature page.
 
-## Relationship with system notifications
+## Relationship with System Notifications
 
-The notifications page shows **in-app messages**, which means the notification list you see after opening GranoFlow.
+The Notifications page displays **in-app messages**, meaning the notification list you see when you open GranoFlow inside the app.
 
-System-level banners are controlled from Settings > Messages and reminders. Task reminder banners are on by default, and their sound can be turned off separately. Notification center messages stay inside the app by default; they do not show system banners or play sounds unless you turn that on. Sound for notification center messages only takes effect after banners are on.
+System-level notification banners are controlled by "Settings > Messages & Reminders." Task reminder banners are enabled by default; sound can be turned off independently. Notification center messages are left only inside the app by default — they don't trigger system banners or play sounds. After you enable notification center message banners, you'll see these in-app messages at the system level; sound only works when the banner is enabled.
 
-System banners can also be affected by system notification permissions, platform background limits, network conditions, and Do Not Disturb. If task reminders do not appear on time, also check this device's system notification permissions.
+<!-- manual-screenshot:id=message-reminder-settings -->
+![Messages & Reminders settings screenshot](../../../screenshots/en/message-reminder-settings.png)
+
+This settings page is divided into two groups:
+
+- **Task Reminders**: Controls whether task due reminders pop system banners and whether sound plays.
+- **Notification Center Messages**: Controls whether in-app notifications also pop system banners and whether sound plays.
+
+The sound toggle depends on the corresponding banner. For example, if you disable task reminder banners, the task reminder sound also becomes unavailable; if you disable notification center message banners, the notification center message sound won't play independently.
+
+Whether system banners appear is also affected by system notification permissions, platform background restrictions, network status, and Do Not Disturb mode. If a task reminder doesn't pop on time, also check the system notification permissions on that device.

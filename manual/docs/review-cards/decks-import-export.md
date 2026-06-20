@@ -48,6 +48,17 @@ GranoFlow 里有几类容易混淆的东西：
 <!-- manual-screenshot:id=review-card-deck-list-main -->
 ![卡片盒管理界面截图](../../screenshots/zh-cn/review-card-deck-list-main.png)
 
+## 只管理某个卡片盒里的卡片
+
+从某个卡片盒进入“管理卡片”时，GranoFlow 会打开卡片盒范围内的卡片管理页。这个页面仍然提供搜索、筛选、排序、归档和回收站等整理能力，但范围被限制在当前卡片盒以及它的子卡片盒里。
+
+这适合做局部整理，例如只检查“科研写作”卡片盒里哪些卡片已经掌握、哪些卡片应该归档。它不等同于卡片盒列表，也不提供卡片盒级导入导出；要导出 `.deck.grano`，仍回到卡片盒列表处理。
+
+如果你从普通卡片管理页进入，看到的是全局范围；如果从卡片盒行进入，看到的是该卡片盒范围。排查“为什么这里少了几张卡片”时，先确认自己当前是不是在某个卡片盒范围内。
+
+<!-- manual-screenshot:id=review-card-deck-scoped-management -->
+![卡片盒范围内的卡片管理截图](../../screenshots/zh-cn/review-card-deck-scoped-management.png)
+
 ## 卡片盒列表里的归档与删除
 
 卡片盒列表会显示活跃、已归档、未学习、学习中、已掌握和已内化等统计。

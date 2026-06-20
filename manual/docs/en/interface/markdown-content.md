@@ -1,97 +1,106 @@
 ---
-title: "Rich content"
-description: "Use rich content in task descriptions, project notes, reviews, and card fields; add tables, formulas, local images, remote audio, and YouTube videos."
+title: "Rich text content"
+description: "Use rich text in task descriptions, project notes, review records, and card fields. Add tables, formulas, local images, remote audio, and YouTube videos."
 ---
 
-GranoFlow uses a rich content editor for long-text fields. You can type normally, add line breaks, style text, insert links, and add structured content from the toolbar.
+GranoFlow's long-text fields use rich text editing. You can type directly, add line breaks, bold text, insert links, or use the toolbar to add structured content.
 
-Common places include task descriptions, project or milestone notes, review records, and card fields that support rich content. The entry label may change by page, but the editor behavior stays the same.
+Common locations include task descriptions, project or milestone notes, review records, and card fields that support rich text. The entry text may differ from page to page, but the editing method is consistent.
 
-## Open the editor
+## Opening the editor
 
-Click a supported description or content area to open the editor. The editor is WYSIWYG: type directly, select text to format it, insert objects from the toolbar, then save.
+Tap the description or content area in a field that supports rich text, and you'll enter the editing page. The editor is WYSIWYG by default: you type directly in the body, select text to bold or italicize, insert links, and when you save and reopen, it will still display as rich text.
 
-Common toolbar buttons include:
+The common buttons at the top include:
 
-| Button | What it does |
+| Button | Use |
 | --- | --- |
-| Table | Inserts an editable table |
-| Image | Chooses a local image and inserts it as an attachment |
-| Media | Inserts remote audio, video, or a third-party video link with a title |
-| Formula | Opens a formula dialog with input and preview |
-| Flowchart | Inserts a Mermaid flowchart definition |
-| Save | Saves the content and returns to the previous page |
+| Table | Insert an editable table |
+| Image | Select an image from your device and insert it as an attachment |
+| Media | Insert a remote audio, video, or third-party video link, and optionally add a title |
+| Formula | Open a formula editing popup; enter the formula at the top and preview the result below |
+| Flowchart | Insert a Mermaid flowchart definition |
+| Save | Save the content and return to the previous page |
 
-On wide screens, advanced tools appear above the editor. On phones or narrow screens, the editor keeps basic text tools visible so the toolbar does not crowd the writing area.
+On wide screens, advanced tool buttons appear above the editing area; on phones or narrow screens, the editor keeps basic text tools to avoid the toolbar taking up body space.
 
-{/* manual-screenshot:id=rich-content-wysiwyg-editor */}
+<!-- manual-screenshot-needed:id=rich-content-wysiwyg-editor; reason=Display the WYSIWYG editor, rich text toolbar, and save button -->
 
-## Add a table
+## Adding a table
 
-Click **Table** to insert an editable table. Click into a cell and type. Tables are useful for comparisons, step lists, source notes, and structured card knowledge.
+Tap the "Table" toolbar button; GranoFlow inserts an editable table. After insertion, tap directly into a cell to enter text; press Enter for a new line, and the input stays within the current cell or body.
 
-{/* manual-screenshot:id=rich-content-table-insert */}
+Tables are good for comparisons, steps, reference lists, and structured knowledge in study cards. After saving, the table will still display and be editable as a table when reopened.
 
-## Add a formula
+<!-- manual-screenshot-needed:id=rich-content-table-insert; reason=Display editable table cells and the appearance after saving -->
 
-Click **Formula** to open the formula dialog. Type LaTeX in the top area and check the preview below.
+## Adding a formula
 
-For example:
+Tap "Formula" to open a dedicated popup. In the upper area, enter a LaTeX formula; below, see a live preview. After confirming, the formula is inserted as an object into the body.
+
+For example, you can enter:
 
 ```text
 \sum_{i=1}^{n} x_i = \frac{n(n+1)}{2}
 ```
 
-The formula appears as an object in the editor. Click the object again to edit it. Reading pages and card practice show the formula preview instead of dumping the definition into the text.
+The formula object displays as a preview block in the editing area. To edit, tap the formula object to reopen the popup. Formula content is saved with the field; study cards and reading pages show the formula preview rather than spreading the raw definition in the body.
 
-{/* manual-screenshot:id=rich-content-formula-dialog */}
+<!-- manual-screenshot-needed:id=rich-content-formula-dialog; reason=Display formula input area, preview area, and formula object in body -->
 
-## Add a local image
+## Adding a local image
 
-Click **Image** and choose a file from your device. GranoFlow saves it as an attachment for the current content and inserts an image object.
+Tap "Image", then select an image from your device. GranoFlow saves the image as an attachment for the current content and inserts an image object in the body.
 
-If you want to keep an image from the web, download it first, then insert it with **Image**. The editor does not ask you to paste an external image URL.
+The image title is used for description and fallback placeholder. If the image file is missing, fails to decode, or is temporarily unreadable, the page shows a short placeholder; it does not spread the full local path in the body.
 
-{/* manual-screenshot:id=rich-content-local-image */}
+If you want to save an image from a web page, first download it to your device, then insert it via the "Image" button.
 
-## Add remote audio
+<!-- manual-screenshot-needed:id=rich-content-local-image; reason=Display local image selection, body preview, and failure placeholder -->
 
-Click **Media**, enter a direct audio link, and give it a title. GranoFlow shows it as an audio entry and waits for your click before requesting the external resource.
+## Adding remote audio
 
-Common direct audio suffixes include `.mp3`, `.m4a`, `.aac`, `.wav`, and `.ogg`.
+Tap "Media", then select or enter an audio link, and give it a title. When rendered, an audio entry appears; tap it to open or play the audio. The page does not automatically request external sites before you tap.
 
-{/* manual-screenshot:id=rich-content-remote-audio-trigger */}
+Currently recognized common audio extensions include `.mp3`, `.m4a`, `.aac`, `.wav`, `.ogg`. If the link is not a direct audio file but a playback web page, it may only be opened as a regular web page.
 
-## Add a YouTube video
+<!-- manual-screenshot-needed:id=rich-content-remote-audio-trigger; reason=Display remote audio title, trigger, and confirmation before clicking -->
 
-Click **Media**, paste the YouTube link, and give it a title. GranoFlow does not automatically load an embedded player in the text. It shows a video entry first; you open it when you want to watch.
+## Adding a YouTube video
 
-If the video is private, region-limited, age-limited, or removed, playback may fail. Add a short text note near the link so the content still makes sense later.
+Tap "Media", enter a YouTube link, and give it a title. GranoFlow does not automatically load third‑party players in the body; the video appears as an entry, and you tap it to open the external page or player.
 
-{/* manual-screenshot:id=rich-content-youtube-video-trigger */}
+Videos that require login, are region‑restricted, age‑restricted, or have been removed cannot be guaranteed to play. We recommend writing the video's content clearly in the title or body, so that if the external link becomes invalid, the original meaning is still evident.
 
-## Flowcharts
+<!-- manual-screenshot-needed:id=rich-content-youtube-video-trigger; reason=Display YouTube title, trigger, and remote resource confirmation -->
 
-Click **Flowchart** to insert a Mermaid flowchart definition. Flowcharts are useful for steps, dependencies, and simple decisions.
+## Flowchart
 
-If a flowchart cannot render, GranoFlow shows a short fallback state and keeps an edit path. You can fix the definition, or ask AI to repair it and paste the result back.
+Tap "Flowchart" to insert a Mermaid flowchart definition. After saving, the body and card study page show the flowchart preview. Flowcharts are good for expressing steps, dependencies, and simple decision paths.
 
-{/* manual-screenshot:id=rich-content-mermaid-flow */}
+Mermaid is sensitive to indentation, arrows, and node characters. If a flowchart fails to render, GranoFlow shows a brief failure state. To edit, return to the editing page, tap the flowchart object, adjust the definition, and save again; you can also hand the flowchart definition over to AI for repairs and paste it back.
 
-## Remote resources
+<!-- manual-screenshot-needed:id=rich-content-mermaid-flow; reason=Display flowchart object, inline preview, and edit entry -->
 
-Remote audio, video, YouTube, and Vimeo links may contact an external service. GranoFlow's rule is simple: it does not load those resources before you confirm or click.
+## Remote resource confirmation and settings
 
-The first time you load a remote resource, you may see a confirmation dialog. If you choose not to be asked again, the choice is remembered on this device only.
+Remote audio, video, YouTube, or Vimeo links may all make requests to external services. GranoFlow's principle: without confirmation or a tap, do not automatically load remote content.
 
-{/* manual-screenshot:id=rich-content-remote-resource-setting */}
+When you first tap or load a remote resource, you'll see a confirmation popup. After checking "Don't ask again", the current device remembers this choice. This setting only affects the current device; it does not change your tasks, projects, reviews, or card content.
 
-## Troubleshooting
+To make the confirmation popup appear again, go to Settings → Pro Settings, find "Warn before loading remote Markdown resources", and change it back to require a warning. When the switch is off, remote images, audio, and video will load directly within allowed limits; when you turn it back on, you'll be asked again before loading remote resources.
 
-- Table looks wrong: reopen the editor and check the cells.
-- Formula does not render: click the formula object and check the LaTeX.
-- Image does not show: make sure the local attachment is still available, or insert the image again.
-- Audio or video does not open: check whether the link still works and does not require sign-in.
-- Flowchart does not render: click the flowchart object and check the Mermaid definition.
+<!-- manual-screenshot-needed:id=rich-content-remote-resource-setting; reason=Display the remote rich-text resource warning switch on the Settings page -->
 
-For important content, add a sentence of plain explanation near media or flowcharts. External links can disappear; your explanation stays in GranoFlow.
+## Troubleshooting display issues
+
+If content doesn't display correctly, return to the editing page and check the corresponding object:
+
+- Table not showing: Confirm the table still has headers and cell content.
+- Formula not showing: Tap the formula object and check if the LaTeX input is complete.
+- Image not showing: Confirm the local attachment is still readable, or re‑insert the image.
+- Audio or video won't play: Confirm the link is still accessible and doesn't require additional login.
+- YouTube won't play: Confirm the video hasn't been removed, is not region‑restricted, and doesn't require login.
+- Flowchart not showing: Return to the editing page, tap the flowchart object, and check if the Mermaid definition is complete.
+
+If content is important, add a line of text description next to the media or flowchart. External media may become invalid, but the text description will remain in GranoFlow.

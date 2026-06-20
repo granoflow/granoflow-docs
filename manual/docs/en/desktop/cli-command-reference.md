@@ -1,120 +1,138 @@
 ---
-title: "CLI command reference"
-description: "View public stable granoflow CLI commands, parameters, HTTP endpoint mapping, and app dependency classification."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+title: "CLI Commands and HTTP Mapping"
+description: "Look up current public granoflow CLI commands, parameters, HTTP endpoint mappings, and app dependency categories."
 ---
 
 <!-- markdownlint-disable MD013 -->
 
-## HTTP API equivalence
+The `granoflow` CLI is a client for the Local HTTP API. Commands that read or write app data call public endpoints under `http://127.0.0.1:<port>`. Offline backup-package conversion commands only process the backup files you provide and do not connect to the app.
 
-All functionality provided by the `granoflow` CLI also corresponds to local HTTP API endpoints. The CLI is an optional interactive client — you can call the API directly with curl:
+If you do not want to install the CLI, you can call the same HTTP API with curl.
+
+## Direct HTTP Examples
 
 ```bash
-# Equivalent to granoflow status --json
-curl -s http://127.0.0.1:42667/v1/status
+# Health check
+curl -s http://127.0.0.1:56789/v1/health
 
-# Equivalent to granoflow task list --json
-curl -s http://127.0.0.1:42667/v1/task
+# Version information
+curl -s http://127.0.0.1:56789/v1/version
 
-# Equivalent to granoflow backup create --out backup.granobackup
-curl -s -X POST http://127.0.0.1:42667/v1/backup -d '{"out":"backup.granobackup"}'
+# List tasks
+curl -s http://127.0.0.1:56789/v1/tasks
+
+# Create a task; protected endpoints usually need an access code
+curl -s -X POST http://127.0.0.1:56789/v1/tasks   -H "Authorization: Bearer <token>"   -d '{"title":"Example task"}'
 ```
 
-The local HTTP API listens on `http://127.0.0.1:42667` by default; the port can be changed on the settings page.
+## Quick Categories
 
-## Quick classification
-
-### Does not require running app
+### Requires Only the CLI
 
 - `help`
-- `version`
-- `lang`
-- `bridge config show`
-- `bridge port set <port>`
-- `bridge config repair --reset`
-- `clean`
-- `backup-package inspect|encrypt|decrypt|merge`
+- `config`
+- `backup decrypt`
+- `backup encrypt`
 
-### Requires running app (via HTTP API)
+### Requires the Local HTTP API
 
-- `display *`
-- `open <route>` (plain `open` without a route launches the app)
-- `status`
-- `sync run`
-- `task|project|milestone|tag|domain-value|review`
-- `quick-add`, `logout`, `export`, `import`
-- `backup create|restore`
-- `ai-agent` real-data commands
+- `health`
+- `api version`
+- `api capabilities`
+- `task list`
+- `task create`
+- `task complete`
+- `project list`
+- `project create`
+- `review day show/update`
+- `review week show/update/value`
+- `deck list/show/create/delete/cards/import anki`
+- `card archive/unarchive/trash/unlink/unlink-note`
+- `ai-agent tools`
+- `ai-agent task export/validate/import`
 
-## Core commands
+## Basic Commands
 
 ```bash
 granoflow help
 granoflow help task
-granoflow version --json
-granoflow lang get
-granoflow lang zh-HK
-granoflow lang reset
+granoflow help --json
+granoflow config --json
 ```
 
-## Bridge commands (local HTTP port configuration)
+`config` shows the API address, token source, and config-file path currently used by the CLI. Tokens are redacted.
+
+## API and Status Commands
 
 ```bash
-granoflow bridge config show --json
-granoflow bridge port set 52001 --json
-granoflow bridge config repair --reset --json
+granoflow health --json
+granoflow api version --json
+granoflow api capabilities --json
 ```
 
-## Display commands (requires app)
+These commands work well as reachability checks at the start of a script.
 
-```bash
-granoflow display get --json
-granoflow display language zh-CN --json
-granoflow display theme dark --json
-granoflow display font-size large --json
-granoflow display window-layout landscape --json
-granoflow display reset --json
-```
-
-## Business object commands (requires app)
-
-Resources: `task`, `project`, `milestone`, `tag`, `domain-value`, `review`
-
-Structured input: `--input <file|->`
+## Task and Project Commands
 
 ```bash
 granoflow task list --json
+granoflow task create --input task.json --dry-run --json
 granoflow task create --input task.json --json
-granoflow task tag add t_123 custom_bug --json
-granoflow tag template show custom_bug --json
-granoflow project update p_123 --input patch.json --json
+granoflow task complete --id task_123 --json
+granoflow project list --json
+granoflow project create --input project.json --dry-run --json
+```
+
+`--input <file|->` means reading JSON from a file or stdin. `--dry-run` only creates a local request preview and does not call the write endpoint.
+
+## Review Commands
+
+```bash
 granoflow review day show --date 2026-05-24 --json
+granoflow review day update --date 2026-05-24 --input day.json --dry-run --json
+granoflow review week show --week-start 2026-05-18 --json
+granoflow review week update --week-start 2026-05-18 --input week.json --json
+granoflow review week value --week-start 2026-05-18 --value-id value_123 --input value.json --json
 ```
 
-## Backup commands (requires app)
+## Card and Deck Commands
 
 ```bash
-granoflow backup create --out backup.granobackup --accept-sync-risk --json
-granoflow backup restore --file backup.granobackup --preview --json
-granoflow backup restore --file backup.granobackup --confirm --backup-secret-file secret.txt --json
+granoflow deck list --json
+granoflow deck show deck_123 --json
+granoflow deck create --name "Exam review" --json
+granoflow deck cards deck_123 --include-children --active --json
+granoflow deck import anki notes.apkg --dry-run --json
+granoflow deck import anki notes.apkg --confirm dry_run_123 --skip-cards-with-missing-media --json
+
+granoflow card archive card_123 --json
+granoflow card unarchive card_123 --json
+granoflow card trash card_123 --json
+granoflow card unlink --task-id task_123 --card-id card_123 --json
+granoflow card unlink-note --task-id task_123 --note-id note_123 --json
 ```
 
-`--preview` and `--confirm` are mutually exclusive.
-
-## backup-package commands (native CLI)
+## Offline Backup-Package Conversion
 
 ```bash
-granoflow backup-package inspect --file backup.granobackup --json
-granoflow backup-package encrypt --file plain.granobackup --out encrypted.granobackup --secret-file secret.txt --json
-granoflow backup-package decrypt --file encrypted.granobackup --out plain.granobackup --secret-file secret.txt --json
-granoflow backup-package merge --left a.granobackup --right b.granobackup --out merged.granobackup --json
+granoflow backup decrypt   --input encrypted.flow.grano   --output plaintext.flow.grano   --secret-file secret.txt   --json
+
+granoflow backup encrypt   --input plaintext.flow.grano   --output encrypted.flow.grano   --secret-env GRANOFLOW_BACKUP_SECRET   --json
 ```
 
-## JSON automation contract
+These two commands only convert backup-package files. They do not create an app backup or restore data into the app.
 
-Public commands support `--json`. JSON mode returns a structured envelope only, with no human-readable text mixed in.
+## AI Agent Commands
+
+```bash
+granoflow ai-agent tools --json
+granoflow ai-agent task export --id task_123 --json
+granoflow ai-agent task validate --input draft.json --json
+granoflow ai-agent task import --input draft.json --dry-run --json
+```
+
+AI agent commands still go through the Local HTTP API and app authorization boundaries. They do not read the local database directly.
+
+## JSON Automation Contract
+
+Public commands support `--json`. JSON mode only outputs a structured envelope and does not mix in human-readable text. Scripts should branch on error codes rather than natural-language prompts.

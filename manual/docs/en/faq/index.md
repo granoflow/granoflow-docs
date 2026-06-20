@@ -14,7 +14,7 @@ GranoFlow helps you manage tasks, projects, journal entries, and reviews. It is 
 A regular to-do app usually focuses on “what should I do” and “is it done.” GranoFlow also includes Journal and Review, so you can record what happened, reflect on it, and turn the next action back into a task.
 
 **What does “Inbox” mean?**
-Inbox is the default place for tasks that do not yet have a project or date. When you think of something, you can put it in the Inbox first and organize it later.
+Inbox is the default place for tasks with no date that are still to-do or in progress. Projects and milestones only describe ownership; if a task still has no date, it can stay in the Inbox. When you think of something, you can put it in the Inbox first and organize it later.
 
 **What is the difference between a task and a Journal Entry?**
 A Task is something you intend to complete, so it has a completion state. A Journal Entry is something you write down for reflection and review, so it does not have a “completed” state.

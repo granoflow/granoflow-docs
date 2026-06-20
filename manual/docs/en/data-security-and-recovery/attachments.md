@@ -28,7 +28,7 @@ After you clear local attachments, cleared non-image attachments can usually be 
 
 ## Do local backups include images?
 
-Local backups usually include only text data, such as tasks, projects, and review records. **Image files may not be included**. If you need images to be kept long term, the important thing is that cloud sync is working normally and the images have a chance to upload when network is available.
+Local backups package the business records and attachment files that already exist on the current device, including images, PDFs, and general attachments that are available on this device. However, a backup will not fetch attachments from the cloud if they have not yet been downloaded to this device. If images or attachments have not uploaded successfully, or if cloud attachments have not landed locally yet, they may be missing from the backup. If you need attachments to be as complete as possible, keep cloud sync working normally; Pro users should also enable "Full sync attachments" and wait for sync to finish before creating a backup.
 
 :::note[Images require network to upload]
 Images do not upload offline. For example, if you attach a photo to a task while underground, that image will wait until the next time network is available before it continues uploading to the cloud.

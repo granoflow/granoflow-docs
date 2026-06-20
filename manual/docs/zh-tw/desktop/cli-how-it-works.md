@@ -1,63 +1,91 @@
 ---
 title: "本機 HTTP API 工作原理"
-description: "理解本機 HTTP API 的監聽地址、連接埠設定、存取碼保護與 App 保護門禁。"
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+description: "理解本機 HTTP API 的监听位址、連接埠設定、存取碼保護，以及 CLI 為什么只是一個可選用戶端。"
 ---
 
 <!-- markdownlint-disable MD013 -->
 
-## Think in boundaries：先分清兩層
+## Think in layers：先分清两層
 
-- **本機 HTTP API 可直接處理**：`/v1/health`、`/v1/status`、命令參數驗證、JSON 格式檢查
-- **需要 App 執行業務邏輯**：`/v1/task`、`/v1/project`、`/v1/backup`、`/v1/ai-agent` 等資料操作命令
+GranoFlow 的桌面自動化有两層：
 
-本機 HTTP API 不會繞過 App 直接操作生產資料。所有資料操作最終由 App 執行。
+- **本機 HTTP API**：由執行中的 App 提供，负责公開端點、權限檢查和業務資料讀寫。
+- **`granoflow` CLI**：獨立下載的命令列用戶端，负责把命令参數轉換成 HTTP 請求，或處理少量
+  不依賴 App 的本機檔案任務。
 
-如果 App 未執行，API 會回傳 `app_not_reachable`。
+這意味着 CLI 不拥有一份獨立資料庫，也不會绕過 App 寫資料。App 未執行、介面未開啟或權限
+檢查失敗時，相關 CLI 命令也會失敗。
 
-## Think in the local address：本機 HTTP API 是什麼
+## Think in the local address：本機位址是什么
 
-本機 HTTP API 透過本機回環位址監聽：`http://127.0.0.1:<port>`。
+本機 HTTP API 通過回环位址监听：
+
+```text
+http://127.0.0.1:<port>
+```
 
 - host 固定為 `127.0.0.1`
-- 預設連接埠為 `42667`
-- 連接埠可在設定頁修改，範圍 `1024..65535`
-- API 設定是本機監聽設定，不是遠端 API 服務
-- App 的「命令列工具」設定頁會顯示目前本機位址。你可以複製根位址，也可以用預設瀏覽器開啟 `/v1/health` 檢查本機 HTTP 介面是否可連線；本機 HTTP 介面關閉時，這兩個動作會停用，請先開啟介面後再使用。
-- `granoflow.com` 文件頁不再預設視為業務介面可信來源；需要偵錯時，必須在設定頁臨時開啟官方文件偵錯並使用 1 小時存取碼。
-- 「允許任何裝置來源」屬於進階來源設定，必須先開啟存取碼保護並保留至少一個已啟用存取碼。
+- 目前預設連接埠為 `56789`
+- 連接埠可以在 App 設定頁修改，範圍為 `1024..65535`
+- API 設定是本機监听設定，不是雲端 API 服務
+- 設定頁會顯示目前本機位址，并提供復制根位址、打開 `/v1/health` 等辅助动作
 
-## API 端點範例
+如果介面關閉，復制和打開动作會被禁用；先開啟介面後再檢查。
+
+## CLI 如何找到 API
+
+CLI 按以下顺序决定 API 位址：
+
+1. `--api-base-url`
+2. `GRANOFLOW_API_BASE_URL`
+3. CLI 設定檔案中的 `api_base_url`
+4. 預設值 `http://127.0.0.1:56789`
+
+你可以用下面的命令查看目前設定來源：
+
+```bash
+granoflow config --json
+```
+
+## API 端點示例
 
 ```bash
 # 健康檢查
-curl http://127.0.0.1:42667/v1/health
+curl http://127.0.0.1:56789/v1/health
 
-# 系統狀態
-curl http://127.0.0.1:42667/v1/status
+# 版本信息
+curl http://127.0.0.1:56789/v1/version
 
-# 查看 API 設定
-granoflow bridge config show --json
+# CLI 等效呼叫
+granoflow health --json
+granoflow api version --json
 ```
 
-## 連接埠變更後的關鍵動作
+## Think in permissions：API 门禁顺序
 
-`bridge port set` 寫入後，**必須重新啟動 App** 才會生效。若你是在 App 設定頁且本機 HTTP 介面已經關閉時修改連接埠，新連接埠會在下次開啟本機 HTTP 介面後生效。
+受保護的本機 HTTP 端點會经過固定门禁：
 
-本機 HTTP 設定只保存 schema、protocol、host、port 等非敏感欄位，不保存存取碼、nonce、App lock 狀態、帳號或跨裝置憑證。
-
-## Think in permissions：API 門禁順序
-
-受保護的本機 HTTP 端點有固定門禁順序：
-
-1. 本機 HTTP API 總開關（關閉時所有端點回傳 403）
-2. 來源檢查（本機頁面預設允許，官方文件偵錯需要臨時開啟）
-3. App lock（需要先解鎖 App）
+1. 本機 HTTP API 总開關
+2. 來源檢查
+3. App Lock
 4. nonce
-5. 存取碼保護（僅在開啟時需要存取碼）
+5. 存取碼保護
+6. 端點級別權限
 
-`/v1/health`、`/v1/status` 等唯讀端點通常不受門禁限制。
+`/v1/health`、`/v1/version` 等發现類端點适合作為連通性檢查。讀取或修改 App 資料的端點
+通常需要更多门禁。
+
+## 官方文件調試與外部來源
+
+`granoflow.com` 文件頁不再預設被视為業務介面可信來源。需要在文件頁調試本機介面時，
+请在 App 設定頁臨時開啟官方文件調試，并使用生成的 1 小時存取碼。
+
+“允許任何裝置來源”屬于高級來源設定。開啟它之前，必須先啟用存取碼保護，并至少保留一個
+已啟用存取碼。
+
+## 参考：規則與邊界
+
+- 本機 HTTP API 不會自动暴露到區域網路或公網。
+- 移动端如提供臨時本機介面，也屬于前台會话能力，不是常驻後台服務。
+- CLI 的 `backup encrypt/decrypt` 是離線檔案轉換，不需要本機 HTTP API。
+- `scripts/anz` 是倉庫工程 CLI，不屬于用戶自動化介面。

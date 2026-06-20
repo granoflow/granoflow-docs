@@ -1,90 +1,86 @@
 ---
 title: "Settings overview"
-description: "Understand how GranoFlow organizes settings, which entries only affect the current device, and which lead to account, sync, data, subscription, or AI pages."
-translationSource: zh-CN
-translationReview:
-  - ux-writing
-  - product-frontend-design
+description: "Understand how GranoFlow Settings page is currently organized, which entries only affect the current device, and which take you to account, sync, data, subscription, or AI-related pages."
 ---
 
 <!-- markdownlint-disable MD013 -->
 
-If you are not sure what a setting affects, first check its group: Appearance and Current Device usually only affect display and reminders on this device; Account, Sync, Data, Subscription, and AI entries take you to pages for more specific settings or explanations.
+If you're not sure where a setting applies, first see which group it's in: Appearance, Preferences, and Security usually only affect this device; Data Management, About, Research Program, and Pro Settings take you to specific pages for more detailed account, sync, subscription, AI, or data rules.
 
-Settings pages:
+Related settings pages:
 
-- [Settings overview](/manual/en/interface/settings-overview/)
-- [Language, theme, and font](/manual/en/interface/settings-language-appearance/)
-- [Device preferences](/manual/en/interface/device-preferences/)
-- [Account, sync, and data entry points](/manual/en/interface/settings-account-data-entrypoints/)
-- [Command line tool](/manual/en/desktop/command-line-tool/)
+- [Settings overview](/manual/interface/settings-overview/)
+- [Language, theme & fonts](/manual/interface/settings-language-appearance/)
+- [Current-device preferences](/manual/interface/device-preferences/)
+- [Rich text content](/manual/interface/markdown-content/)
+- [Account, sync & data entry points](/manual/interface/settings-account-data-entrypoints/)
+- [Command-line tool](/manual/desktop/command-line-tool/)
 
-Settings is the central entry point in GranoFlow. It brings display experience, device preferences, account, sync, data, subscription, AI, and about information into one place, but each entry has a different scope.
+The Settings page is the unified entry point for GranoFlow. It brings together display experience, preferences, security, data management, privacy & diagnostics, About, Research Program, and Pro Settings in one place, but each entry affects a different scope.
 
 ## Appearance
 
-Appearance usually includes theme, font size, and language.
+Appearance typically includes theme, font size, and language.
 
 <!-- manual-screenshot:id=interface-settings-overview-main -->
-![Settings overview screen capture](../../../screenshots/en/interface-settings-overview-main.png)
+![Settings overview interface screenshot](../../screenshots/en/interface-settings-overview-main.png)
 
-These settings mainly affect what you see on the current device. Changing language, switching to dark mode, or increasing font size does not rewrite tasks, projects, tags, or review records, and it does not change the meaning of data in [multi-device sync](/manual/en/data-security-and-recovery/sync/).
+These settings mainly affect the interface you see on the current device. Switching your language, turning on dark mode, or increasing font size will not rewrite tasks, projects, tags, review records, or change the meaning of data in [multi-device sync](/manual/data-security-and-recovery/sync/).
 
-If you only want to adjust reading and display, continue to [Language, theme, and font](/manual/en/interface/settings-language-appearance/).
+If you just want to adjust your reading and display experience, read on at [Language, theme & fonts](/manual/interface/settings-language-appearance/).
 
-## Current Device
+## Preferences & Security
 
-Device preferences control how this device behaves, such as timer sound, app lock, messages and reminders, and swipe action notifications.
+Preferences control how this device works, such as timer background sounds, AI assistant entry, command-line tool, tag management, messages & reminders, and reducing some bottom prompts. App lock is in a separate "Security" group.
 
-You can think of these options as: how this device reminds me, protects me, and shows feedback. They should not be understood as account-level business data or as a cross-device sync promise.
+Think of these options as: how this device alerts me, protects me, and shows feedback. They should not be understood as account-level business data or a commitment to sync across devices.
 
-Messages and reminders centralize task reminders, notification center messages, and silent sync. Task reminders can control system banners and sound. Notification center messages stay inside the app by default, and only show system banners after you turn that on. Silent sync catches up data in the background without showing banners or playing sounds.
+"Messages & reminders" centrally manages task reminders and Notification Center messages. Task reminders let you control whether to show system banners and whether to play sounds; Notification Center messages only go to the in-app notification list by default, and only appear as system alerts if you turn on system banners. Silent sync is a default compensation capability of cloud sync; you don't need to turn it on or off here.
 
-## Account and Sync
+Remote rich-text resource prompts are located in "Pro Settings". They control whether to pop a confirmation before loading remote images, audio, video, and third-party links. They do not rewrite rich-text content itself, nor sync to other devices. For writing and limitations, read [Rich text content](/manual/interface/markdown-content/).
 
-The account entry is for signing in, signing out, checking account status, or opening account-related capabilities. The sync entry helps you understand the relationship between the current device and cloud data.
+## Data Management & Account Sync
 
-If you need to handle sign-in, devices, or sync, start with [Account overview](/manual/en/account/overview/) and [Device management](/manual/en/account/device-management/). If you want to understand how data moves between devices, read [Multi-device sync](/manual/en/data-security-and-recovery/sync/).
+The "Data Management" entry is for local backups, card deck import/export, media cache, and dangerous operations; the account entry is in the "About" area and is used for signing in, signing out, checking account status, or entering related account capabilities. The sync status and device relationship after login are handled by the account and sync pages.
 
-## Creation and Review
+If you need to deal with login, devices, or sync issues, first read [Account overview](/manual/account/overview/) and [Device management](/manual/account/device-management/). If you want to understand how data flows between multiple devices, read [Multi-device sync](/manual/data-security-and-recovery/sync/).
 
-Settings may include entries for AI assistants, tag management, prompts, or review-related configuration.
+## AI, Tags & Review Configuration
 
-These entries open specific configuration or explanation pages. They do not mean AI will automatically change your records. For flows that involve external AI tools, first understand the boundaries in [AI assistance](/manual/en/ai-assistance/overview/) and [AI assistant and clipboard](/manual/en/ai-assistance/clipboard-assistant/).
+Preferences provide AI assistant, tag management, and other entries; Pro Settings provide AI research preferences, AI desensitization, review, and card-related advanced configurations.
 
-## Command Line Tool
+These entries are for entering specific configuration or explanation pages; they do not mean AI will automatically modify your records. For processes involving external AI, first understand the boundaries of [AI Assistance](/manual/ai-assistance/overview/) and [AI Assistant & Clipboard](/manual/ai-assistance/clipboard-assistant/).
 
-Settings includes a Command Line Tool entry for installing or repairing the `granoflow` command and confirming whether the current platform can use the CLI from a terminal.
+## Command-Line Tool
 
-This CLI is only for the user's local computer and the running desktop app. It does not include development, build, cloud admin, internal debugging, or release commands.
+On the Settings page, under "Preferences", there is a "Command-line tool" entry for installing or fixing the `granoflow` command and confirming whether the current platform can call the CLI in a terminal.
 
-If you only run `granoflow help`, `granoflow version`, `granoflow status --json`, `granoflow display get --json`, or `granoflow open <route> --json` manually, you usually do not need extra setup. When scripts or AI assistants need structured results, prefer `--json`.
+The CLI here is only for the user's local machine and the running desktop app. It does not include development, building, cloud admin, internal debugging, or publishing commands.
 
-To adjust app display preferences from the terminal, use `granoflow display language/theme/font-size/reset`. These commands only affect display experience. They do not clear account or business data.
+If you just manually use `granoflow help`, `granoflow version`, `granoflow status --json`, `granoflow display get --json`, or `granoflow open <route> --json`, you usually don't need additional setup. When you need scripts or AI assistants to read structured results, prefer `--json`.
 
-Business object commands include `task`, `project`, `milestone`, `tag`, `domain-value`, and `review`. These commands require the running desktop app to receive the request. If the app cannot be reached, the command returns `app_not_reachable` and does not bypass the app to read or write the local database directly.
+To adjust App display preferences from the terminal, use `granoflow display language/theme/font-size/reset`. These commands only affect the display experience; they will not clear account or business data.
 
-The CLI `backup create` and `backup restore` commands also require the running desktop app. Preview a backup restore with `--preview` before importing anything with `--confirm`.
+Business object commands include `task`, `project`, `milestone`, `tag`, `domain-value`, and `review`. These commands require the running desktop app to handle them; if the app is unreachable, they return `app_not_reachable` and do not bypass the app to read or write the local database directly.
 
-See [Command line tool](/manual/en/desktop/command-line-tool/) for the full map. For complete command matrix, open [CLI command reference](/manual/en/desktop/cli-command-reference/). For token/local access boundaries, open [CLI security and key boundaries](/manual/en/desktop/cli-security-and-settings/).
+The CLI's `backup create` and `backup restore` also require the running desktop app. Before restoring a backup, use `--preview` to see a summary; only import after explicitly `--confirm`.
 
-## Data and Recovery
+Full navigation at [Command-line tool](/manual/desktop/command-line-tool/). If you need the full command matrix, read [CLI commands and parameter reference](/manual/desktop/cli-command-reference/); if you're confirming token or local access boundaries, read [CLI security settings and key boundaries](/manual/desktop/cli-security-and-settings/).
 
-Data and recovery entries are for import, export, backup, restore, attachments, or cleanup-related actions.
+## Privacy & Diagnostics, About, Research & Pro
 
-These actions usually have more impact than appearance settings. Read the relevant page before continuing, especially [Backup and restore](/manual/en/data-security-and-recovery/backup-and-restore/) and [Data and security overview](/manual/en/data-security-and-recovery/overview/).
+"Privacy & Diagnostics" lets you control whether to send crash reports and anonymous usage statistics. It does not upload task, project, review body, image, or attachment content. In high-risk or sensitive environments, you can turn off the "Help Improve" switch here.
 
-## About, Subscription, and Research
+The "About" area typically contains version info, the account entry, and necessary auxiliary entries. Hidden diagnostic or test data entry points are not shown as default entries for regular users.
 
-The about area usually includes version information, account entry points, and necessary support entries. Hidden diagnostics or test data entries are not shown as default entries for regular users.
+The "Research Program" is for users who actively participate in feedback or research; it does not affect daily tasks and data structures.
 
-Subscription entries are for checking entitlements, purchase status, or restore purchase guidance. Specific entitlements and platform rules are covered in [Subscription overview](/manual/en/subscription/overview/) and by the platform UI.
+"Pro Settings" provides access to subscription entry, full attachment sync, clear local attachments, remote rich-text resource prompts, card media cache, card study group size, domain count limit, AI research preferences, and AI desensitization—advanced entries. Specific benefits and platform rules follow [Subscription overview](/manual/subscription/overview/) and actual platform display.
 
-Research plans are low-frequency entries for users who actively choose to participate in feedback or research. They do not affect daily tasks or data structure.
+## Next steps
 
-## Next
-
-- To adjust display, read [Language, theme, and font](/manual/en/interface/settings-language-appearance/).
-- To understand local device switches, read [Device preferences](/manual/en/interface/device-preferences/).
-- To handle account, sync, or data entries, read [Account, sync, and data entry points](/manual/en/interface/settings-account-data-entrypoints/).
-- To let terminal commands, scripts, or AI assistants call GranoFlow, read [Command line tool](/manual/en/desktop/command-line-tool/).
+- To adjust display effects, read [Language, theme & fonts](/manual/interface/settings-language-appearance/).
+- To understand local toggles, read [Current-device preferences](/manual/interface/device-preferences/).
+- To add tables, formulas, images, or remote media in descriptions or card fields, read [Rich text content](/manual/interface/markdown-content/).
+- To handle account, sync, or data entries, read [Account, sync & data entry points](/manual/interface/settings-account-data-entrypoints/).
+- To call GranoFlow from terminal, script, or AI assistant, read [Command-line tool](/manual/desktop/command-line-tool/).

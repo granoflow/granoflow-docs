@@ -1,60 +1,82 @@
 ---
-title: "CLI workflows and HTTP workflows"
-description: "Use Think in workflows to combine CLI commands and HTTP calls into practical daily flows."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+title: "Think in CLI and HTTP Workflows"
+description: "Use a Think in workflows approach to combine CLI commands and HTTP calls into auditable, reversible daily automation flows."
 ---
 
-## Think in capture: first capture the current state
+The easiest way to break an automation script is not forgetting a command. It is skipping the questions: does this step need the app, will this write data, and how should the script stop if it fails? GranoFlow's Local HTTP API and CLI work best as workflows: capture the current state, preview writes, then execute and record the result.
+
+## Think in Capture: Start with the Current State
+
+First confirm that the app, local interface, and target data are reachable:
 
 ```bash
-# CLI approach
-granoflow status --json
+# CLI
+granoflow health --json
+granoflow api version --json
 granoflow task list --json
 
-# Direct HTTP call
-curl -s http://127.0.0.1:42667/v1/status
-curl -s http://127.0.0.1:42667/v1/task
+# Direct HTTP
+curl -s http://127.0.0.1:56789/v1/health
+curl -s http://127.0.0.1:56789/v1/tasks
 ```
 
-Check app reachability, sync state, and task overview before write operations.
+If this fails, do not continue to writes. Check whether the app is running, whether the Local HTTP API is enabled, whether the port matches, and whether the access code is correct.
 
-## Think in structure: structured writes
+## Think in Preview: Inspect Writes First
+
+For write operations such as creating tasks or updating reviews, keep the input in a JSON file and preview it with `--dry-run`:
+
+```bash
+granoflow task create --input task.json --dry-run --json
+granoflow review day update --date 2026-05-24 --input day.json --dry-run --json
+```
+
+`--dry-run` returns a local request preview and does not call the real write endpoint. It belongs in the review stage of a script, where you confirm the path, method, and JSON shape.
+
+## Think in Commit: Execute After Confirmation
+
+After the input looks right, remove `--dry-run`:
 
 ```bash
 granoflow task create --input task.json --json
-granoflow task set t_123 --input patch.json --json
+granoflow task complete --id task_123 --json
+granoflow review week value --week-start 2026-05-18 --value-id value_123 --input value.json --json
 ```
 
-Use `--input <file|->` to make changes reusable and reviewable.
+Write commands depend on the running app service layer. The CLI will not bypass the app and write the database directly when the app is unreachable.
 
-## Think in review: review and verify
+## Think in Cards: Treat Card Actions as Their Own Flow
+
+Review cards and tasks can become tangled if a script does too much at once. Keep deck import, card archiving, and task unlinking as separate steps:
 
 ```bash
-granoflow review day show --date 2026-05-24 --json
-granoflow review week list --json
+granoflow deck import anki notes.apkg --dry-run --json
+granoflow deck import anki notes.apkg --confirm dry_run_123 --json
+granoflow card unlink --task-id task_123 --card-id card_123 --json
 ```
 
-Record key outputs in scripts for traceability.
+For Anki import, run dry-run first and confirm with the dry-run id. Unlinking from a task removes the relationship; it should not be treated as deleting the card.
 
-## Think in backup: backup before high-risk operations
+## Think in Backup Packages: Conversion Is Offline
+
+The current public backup capability in the CLI is offline package conversion:
 
 ```bash
-granoflow backup create --out before-change.granobackup --accept-sync-risk --json
+granoflow backup decrypt --input encrypted.flow.grano --output plaintext.flow.grano --secret-file secret.txt --json
+granoflow backup encrypt --input plaintext.flow.grano --output encrypted.flow.grano --secret-file secret.txt --json
 ```
 
-Preview before restore:
+Use this when you already have a backup package and need to convert its encryption state. It does not create a new app backup or restore a backup into the app. For real backup creation, restore, and cloud-sync risk, return to the in-app Data Security and Recovery flow.
 
-```bash
-granoflow backup restore --file before-change.granobackup --preview --json
-```
+## Think in Automation: For AI Assistants or Scripts
 
-## Think in automation: for AI assistants or scripts
+- Prefer `--json` throughout
+- Start with `/v1/health` or `granoflow health --json`
+- Preview writes with `--dry-run`
+- Branch on error codes such as `config_error`, `auth_error`, `network_error`, and `api_error`
+- Do not treat human-readable CLI text as a stable protocol
+- Do not use `scripts/anz` as a user automation API; it is for repository engineering workflows only
 
-- Prefer `--json` end-to-end
-- First check whether the running app is needed (via `/v1/status`)
-- Add error branches for long flows (e.g. `app_not_reachable`, `cli_disabled`)
-- You can also call the local HTTP API directly via curl, without relying on the `granoflow` CLI being installed
+## Next
+
+Once the workflow shape is clear, JSON, environment variables, and direct HTTP calls become easier to turn into reusable tools instead of one-off terminal strings.

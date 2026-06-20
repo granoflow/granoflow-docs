@@ -1,64 +1,75 @@
 ---
 title: "排障"
-description: "處理 command not found、app_not_reachable、連接埠衝突、token 失敗和 JSON 輸入錯誤。"
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+description: "處理 command not found、API 不可達、連接埠錯誤、token 失敗和 JSON 輸入錯誤。"
 ---
 
 ## `command not found: granoflow`
 
-先回到 App 設定頁的「命令列工具」重新安裝或修復 CLI，然後重新開啟終端機再試。
+這通常表示你只安裝了桌面 App，還沒有單獨安裝 CLI，或 CLI 所在目錄沒有加入 PATH。
 
-## `app_not_reachable`
+處理順序：
 
-表示命令需要執行中的 App 本機 HTTP API，但目前不可達。
+1. 到官網或 release 頁面下載與你的平台匹配的 CLI 包。
+2. 解壓後把可執行檔案放到你自己的命令目錄。
+3. 確認該目錄已經加入 PATH。
+4. 在新終端裡執行 `granoflow help`。
 
-檢查順序：
+桌面 App 不會替你安裝、修復或卸載 CLI，也不會建立 `/usr/local/bin/granoflow` symlink。
 
-1. App 是否正在執行
-2. 本機 HTTP API 是否開啟（設定頁 → 命令列工具 → 開關）
-3. 本機 HTTP 連接埠是否一致
+## API 不可達
 
-```bash
-# 首要診斷：直接檢查 API 是否可達
-curl -s http://127.0.0.1:42667/v1/health
+如果 `granoflow health --json` 或業務命令無法連接 API，先檢查：
 
-# 查看目前連接埠設定
-granoflow bridge config show --json
-```
-
-## 連接埠衝突或連接埠錯誤
-
-如果連接埠被其他程序佔用，先改連接埠，再重新啟動 App：
+1. GranoFlow 桌面 App 是否正在執行
+2. 本機 HTTP API 是否已在設定頁開啟
+3. CLI 使用的 API 位址是否與 App 設定頁一致
+4. 連接埠是否被其他進程占用
 
 ```bash
-granoflow bridge port set 52001 --json
+curl -s http://127.0.0.1:56789/v1/health
+granoflow config --json
 ```
 
-連接埠變更後必須重新啟動 App。
+如果你修改過連接埠，請把範例裡的 `56789` 換成目前連接埠。
 
-## token 驗證失敗
+## 連接埠錯誤
 
-確認以下項目：
+CLI 不再通過 `bridge port set` 修改 App 連接埠。請在 App 設定頁修改本機 HTTP API 連接埠，
+然後讓 CLI 使用同一個基位址：
 
-- Token Verification 是否開啟
-- `--token`、`GRANOFLOW_CLI_TOKEN` 或 `Authorization` 請求頭是否正確
+```bash
+granoflow --api-base-url http://127.0.0.1:52001 health --json
+```
+
+也可以通過 `GRANOFLOW_API_BASE_URL` 或 CLI 設定檔案固定這個位址。
+
+## token 校验失敗
+
+確認以下項：
+
+- 存取碼保護是否開啟
+- `--token`、`GRANOFLOW_API_TOKEN` 或 `Authorization` 請求头是否正確
 - token 是否傳給了受保護端點
+- 官方檔案調試的臨時存取碼是否已經過期
 
-## 本機 HTTP API 關閉（`cli_disabled`）
+## 本機 HTTP API 關閉
 
-到 App 設定頁開啟本機 HTTP 介面後重試。
+到 App 設定頁開啟本機 HTTP API 後重試。介面關閉時，發现類或離線檔案命令可能仍可執行，
+但讀取或修改 App 資料的命令不會绕過 App 寫資料庫。
 
-## App Lock / nonce 拒絕
+## App Lock / nonce 拒绝
 
-先在 App 內完成解鎖，再重試命令。
+先在 App 內完成解鎖，再重試命令。腳本中遇到這類錯誤時，應停止目前寫入流程，而不是自動
+反復重試。
 
-## 備份金鑰錯誤
+## 備份密鑰錯誤
 
-`backup restore` 或 `backup-package` 使用金鑰檔案時，確認檔案存在、可讀、內容正確且非空。
+`backup decrypt/encrypt` 使用密鑰檔案或密鑰環境變數時，確認：
+
+- 檔案存在且可讀
+- 檔案內容不是空值
+- `--secret-file` 與 `--secret-env` 沒有同時使用
+- 輸入包確實是對應的 encrypted 或 plaintext 備份包
 
 ## JSON 輸入錯誤
 
@@ -66,4 +77,11 @@ granoflow bridge port set 52001 --json
 
 - 檔案是否存在
 - JSON 是否合法
-- 最上層是否為 JSON 物件
+- 頂層是否為 JSON 物件
+- stdin 模式是否使用了 `--input -`
+
+## 公開能力不匹配
+
+如果你看到舊檔案、舊腳本或舊教程提到 App 內安裝 CLI、`bridge port set`、`backup create`
+或 `backup restore`，請優先以目前手冊、OpenAPI 和 `granoflow help --json` 為準。這些舊
+入口不應再作為目前公開承諾使用。

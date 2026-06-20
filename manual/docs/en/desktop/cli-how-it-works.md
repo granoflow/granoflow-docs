@@ -1,63 +1,86 @@
 ---
-title: "How the local HTTP API works"
-description: "Understand the local HTTP API listen address, port configuration, access code protection, and app protection gates."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+title: "How the Local HTTP API Works"
+description: "Understand the Local HTTP API address, port configuration, access-code protection, and why the CLI is only an optional client."
 ---
 
 <!-- markdownlint-disable MD013 -->
 
-## Think in boundaries: two layers first
+## Think in Layers: Start with Two Layers
 
-- **Handled directly by the local HTTP API**: `/v1/health`, `/v1/status`, command parameter validation, JSON format checking
-- **Requires the app to execute business logic**: `/v1/task`, `/v1/project`, `/v1/backup`, `/v1/ai-agent` and other data operations
+GranoFlow desktop automation has two layers:
 
-The local HTTP API does not bypass the app to access production data directly. All data operations are ultimately executed by the app.
+- **Local HTTP API**: provided by the running app. It owns public endpoints, permission checks, and app data reads and writes.
+- **`granoflow` CLI**: a separately downloaded command-line client. It turns command arguments into HTTP requests, or handles a small set of local file tasks that do not need the app.
 
-If the app is not running, the API returns `app_not_reachable`.
+This means the CLI does not own a separate database and does not bypass the app to write data. If the app is not running, the interface is off, or permission checks fail, the related CLI commands fail too.
 
-## Think in the local address: what the local HTTP API is
+## Think in the Local Address: What It Means
 
-The local HTTP API listens on the loopback address: `http://127.0.0.1:<port>`.
+The Local HTTP API listens on the loopback address:
 
-- host is fixed to `127.0.0.1`
-- default port is `42667`
-- the port can be changed on the settings page, range `1024..65535`
-- the API configuration is a local listen configuration, not a remote API service
-- The app's Command Line Tool settings page shows the current local address. You can copy the root address, or open `/v1/health` in the default browser to check whether the local HTTP interface is reachable. When the local HTTP interface is off, both actions are disabled until you enable it.
-- `granoflow.com` documentation pages are no longer trusted business API origins by default; for debugging, open official docs debugging in settings and use the 1-hour access code.
-- “Allow any device origin” is an advanced origin setting and requires access code protection with at least one enabled access code.
+```text
+http://127.0.0.1:<port>
+```
 
-## API endpoint examples
+- The host is fixed to `127.0.0.1`
+- The current default port is `56789`
+- The port can be changed in app settings, within `1024..65535`
+- The API configuration is a local listener setting, not a cloud API service
+- The settings page shows the current local address and offers helper actions such as copying the root address or opening `/v1/health`
+
+If the interface is off, copy and open actions are disabled. Enable the interface first, then check again.
+
+## How the CLI Finds the API
+
+The CLI resolves the API address in this order:
+
+1. `--api-base-url`
+2. `GRANOFLOW_API_BASE_URL`
+3. `api_base_url` in the CLI config file
+4. Default value `http://127.0.0.1:56789`
+
+Use this command to see the current source:
+
+```bash
+granoflow config --json
+```
+
+## API Endpoint Examples
 
 ```bash
 # Health check
-curl http://127.0.0.1:42667/v1/health
+curl http://127.0.0.1:56789/v1/health
 
-# System status
-curl http://127.0.0.1:42667/v1/status
+# Version information
+curl http://127.0.0.1:56789/v1/version
 
-# View API configuration
-granoflow bridge config show --json
+# Equivalent CLI calls
+granoflow health --json
+granoflow api version --json
 ```
 
-## Important after changing port
+## Think in Permissions: API Gate Order
 
-After `bridge port set`, **restart the app** for changes to take effect. If you change the port from app settings while the local HTTP interface is off, the new port applies next time you enable the local HTTP interface.
+Protected Local HTTP endpoints pass through fixed gates:
 
-The local HTTP configuration stores only non-sensitive fields (schema, protocol, host, port). It does not store access codes, nonce, app lock state, account, or cross-device credentials.
-
-## Think in permissions: API gate order
-
-Protected local HTTP endpoints follow a fixed gate order:
-
-1. Local HTTP API master switch (when off, all endpoints return 403)
-2. Origin checks (local pages are allowed by default; official docs debugging must be opened temporarily)
-3. App lock (app must be unlocked first)
+1. Local HTTP API master switch
+2. Origin check
+3. App Lock
 4. nonce
-5. Access code protection (requires an access code when enabled)
+5. access-code protection
+6. endpoint-level permission
 
-Read-only endpoints such as `/v1/health` and `/v1/status` are typically not subject to gate restrictions.
+Discovery endpoints such as `/v1/health` and `/v1/version` are good reachability checks. Endpoints that read or modify app data usually require more gates.
+
+## Official Documentation Debugging and External Origins
+
+`granoflow.com` documentation pages are no longer trusted for business API access by default. To debug the local API from a documentation page, manually enable official documentation debugging in app settings and use the generated one-hour access code.
+
+"Allow any device origin" is an advanced origin setting. Before enabling it, access-code protection must be on and at least one access code must remain enabled.
+
+## Reference: Rules and Boundaries
+
+- The Local HTTP API is not automatically exposed to the LAN or public internet.
+- If mobile platforms expose a temporary local interface, it is a foreground session capability, not an always-on background service.
+- CLI `backup encrypt/decrypt` is offline file conversion and does not need the Local HTTP API.
+- `scripts/anz` is the repository engineering CLI and is not a user automation API.

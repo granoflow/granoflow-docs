@@ -1,59 +1,75 @@
 ---
 title: "排障"
-description: "处理 command not found、app_not_reachable、端口冲突、token 失败和 JSON 输入错误。"
+description: "处理 command not found、API 不可达、端口错误、token 失败和 JSON 输入错误。"
 ---
 
 ## `command not found: granoflow`
 
-先回到 App 设置页的"命令行工具"重新安装或修复 CLI，然后重开终端再试。
+这通常表示你只安装了桌面 App，还没有单独安装 CLI，或 CLI 所在目录没有加入 PATH。
 
-## `app_not_reachable`
+处理顺序：
 
-说明命令需要运行中的 App 本机 HTTP API，但当前不可达。
+1. 到官网或 release 页面下载与你的平台匹配的 CLI 包。
+2. 解压后把可执行文件放到你自己的命令目录。
+3. 确认该目录已经加入 PATH。
+4. 在新终端里运行 `granoflow help`。
 
-检查顺序：
+桌面 App 不会替你安装、修复或卸载 CLI，也不会创建 `/usr/local/bin/granoflow` symlink。
 
-1. App 是否正在运行
-2. 本机 HTTP API 是否开启（设置页 → 命令行工具 → 开关）
-3. 本机 HTTP 端口是否一致
+## API 不可达
 
-```bash
-# 首要诊断：直接检查 API 是否可达
-curl -s http://127.0.0.1:42667/v1/health
+如果 `granoflow health --json` 或业务命令无法连接 API，先检查：
 
-# 查看当前端口配置
-granoflow bridge config show --json
-```
-
-## 端口冲突或端口错误
-
-如果端口被其他进程占用，先改端口，再重启 App：
+1. GranoFlow 桌面 App 是否正在运行
+2. 本机 HTTP API 是否已在设置页开启
+3. CLI 使用的 API 地址是否与 App 设置页一致
+4. 端口是否被其他进程占用
 
 ```bash
-granoflow bridge port set 52001 --json
+curl -s http://127.0.0.1:56789/v1/health
+granoflow config --json
 ```
 
-端口变更后必须重启 App。
+如果你修改过端口，请把示例里的 `56789` 换成当前端口。
+
+## 端口错误
+
+CLI 不再通过 `bridge port set` 修改 App 端口。请在 App 设置页修改本机 HTTP API 端口，
+然后让 CLI 使用同一个基地址：
+
+```bash
+granoflow --api-base-url http://127.0.0.1:52001 health --json
+```
+
+也可以通过 `GRANOFLOW_API_BASE_URL` 或 CLI 配置文件固定这个地址。
 
 ## token 校验失败
 
 确认以下项：
 
-- Token Verification 是否开启
-- `--token`、`GRANOFLOW_CLI_TOKEN` 或 `Authorization` 请求头是否正确
+- 访问码保护是否开启
+- `--token`、`GRANOFLOW_API_TOKEN` 或 `Authorization` 请求头是否正确
 - token 是否传给了受保护端点
+- 官方文档调试的临时访问码是否已经过期
 
-## 本机 HTTP API 关闭（`cli_disabled`）
+## 本机 HTTP API 关闭
 
-到 App 设置页开启本机 HTTP 接口后重试。
+到 App 设置页开启本机 HTTP API 后重试。接口关闭时，发现类或离线文件命令可能仍可运行，
+但读取或修改 App 数据的命令不会绕过 App 写数据库。
 
 ## App Lock / nonce 拒绝
 
-先在 App 内完成解锁，再重试命令。
+先在 App 内完成解锁，再重试命令。脚本中遇到这类错误时，应停止当前写入流程，而不是自动
+反复重试。
 
 ## 备份密钥错误
 
-`backup restore` 或 `backup-package` 使用密钥文件时，确保文件存在、可读、内容正确且非空。
+`backup decrypt/encrypt` 使用密钥文件或密钥环境变量时，确认：
+
+- 文件存在且可读
+- 文件内容不是空值
+- `--secret-file` 与 `--secret-env` 没有同时使用
+- 输入包确实是对应的 encrypted 或 plaintext 备份包
 
 ## JSON 输入错误
 
@@ -62,3 +78,10 @@ granoflow bridge port set 52001 --json
 - 文件是否存在
 - JSON 是否合法
 - 顶层是否为 JSON 对象
+- stdin 模式是否使用了 `--input -`
+
+## 公开能力不匹配
+
+如果你看到旧文档、旧脚本或旧教程提到 App 内安装 CLI、`bridge port set`、`backup create`
+或 `backup restore`，请优先以当前手册、OpenAPI 和 `granoflow help --json` 为准。这些旧
+入口不应再作为当前公开承诺使用。

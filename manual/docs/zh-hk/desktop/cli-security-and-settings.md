@@ -1,82 +1,85 @@
 ---
 title: "安全設定與密鑰邊界"
-description: "理解本機 HTTP API 嘅本機訪問開關、訪問碼保護、官方文件調試、App Lock、脫敏同多種密鑰嘅邊界。"
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+description: "理解本機 HTTP API 的本機存取開關、存取碼保護、官方文件調試、App Lock、脫敏與多种密鑰的邊界。"
 ---
 
-## Think in permissions：先睇 API 門禁
+## Think in permissions：先看 API 门禁
 
-受保護嘅本機 HTTP 端點有固定門禁順序：
+受保護的本機 HTTP 端點有固定门禁順序：
 
-1. 本機 HTTP API 總開關（關閉時所有端點返回 403）
-2. 來源檢查（預設只接受本機頁面；官方文件調試需要另外開啟）
-3. App lock
+1. 本機 HTTP API 总開關
+2. 來源檢查
+3. App Lock
 4. nonce
-5. 訪問碼保護（開啟時需要訪問碼）
-6. 端點級別權限（部分命令需要更高權限）
+5. 存取碼保護
+6. 端點級別權限
 
-`/v1/health` 同 `/v1/status` 等唯讀端點通常唔受門禁限制。
-`granoflow help`、`granoflow version`、`granoflow open` 屬於發現與喚起入口，唔要求訪問碼。
+`/v1/health` 和 `/v1/version` 等發现類端點適合做連通性檢查。讀取或修改 App 資料的端點
+需要通過更多门禁。
 
-## 訪問碼保護
+## 存取碼保護
 
-開啟後，讀取或修改 App 數據嘅受保護端點需要訪問碼。
+開啟存取碼保護後，受保護端點需要存取碼。存取碼可以通過两种方式传递：
 
-可透過以下方式傳遞：
-- **HTTP 請求**：`Authorization: Bearer ***` 請求頭
-- **CLI 命令**：`--token <value>` 參數
-- **環境變數**：`GRANOFLOW_CLI_TOKEN`
+- **HTTP 請求**：`Authorization: Bearer <token>` 請求头
+- **CLI 命令**：`--token <value>` 參數或 `GRANOFLOW_API_TOKEN` 環境變數
 
-「允許任何設備來源」必須先開啟訪問碼保護，並至少保留一個已啟用訪問碼。否則呢個開關無法開啟；如果關閉訪問碼保護或刪除最後一個可用訪問碼，佢亦會自動關閉。
+不要把存取碼放進 URL，也不要把它長期寫進腳本倉庫。
 
 ## 官方文件調試
 
-`granoflow.com` 文件頁唔再預設擁有業務接口訪問權。需要喺文件頁調試本機接口時，請喺 App 設定頁手動開啟「官方文件調試」。
+`granoflow.com` 文件頁不再預設拥有業務介面存取權。需要在文件頁調試本機介面時，請在
+App 設定頁手动開啟官方文件調試。
 
-每次開啟都會生成一個臨時訪問碼，有效期 1 小時。關閉調試、到期、重啟 App，或者再次開啟調試後，舊訪問碼都會失效。調試請求同樣應該透過 `Authorization: Bearer <temporary-code>` 請求頭傳遞訪問碼，唔好放入 URL 或長期保存。
+每次開啟都會生成一個臨時存取碼，有效期 1 小時。關閉調試、到期、重啟 App，或再次開啟
+調試後，舊存取碼都會失效。
 
 ## 本機 HTTP API 開關
 
-本機 HTTP API 關閉嗰陣，所有受保護端點會被拒絕（返回 `cli_disabled`），唔係靜默失敗。
+本機 HTTP API 關閉時，受保護端點會被拒绝，不會静默寫入。此時 CLI 仍可執行不依賴 API
+的本機命令，例如：
 
-關閉狀態下，CLI 仍然可以執行唔依賴 API 嘅本機命令（`help`、`version`、`backup-package`、`clean`）。
+```bash
+granoflow help
+granoflow config --json
+granoflow backup decrypt --input encrypted.flow.grano --output plaintext.flow.grano --secret-file secret.txt --json
+```
 
-## App Lock 與 nonce
+## App Lock、nonce 與來源檢查
 
-就算訪問碼保護關閉，前置門禁仍然生效。來源檢查、App lock 或 nonce 校驗失敗嗰陣，請求會先被拒絕。
+即使存取碼保護關閉，前置门禁仍生效。來源檢查、App Lock 或 nonce 校验失敗時，請求會先
+被拒绝。遇到這類錯誤時，先回到 App 內確認介面開啟、App 已解鎖、目前請求來源被允許。
 
 ## Think in redaction as assistance
 
-脫敏用於減少外部 AI 輸入入面嘅敏感資訊暴露風險。佢係輔助處理，唔等於加密、訪問碼校驗或權限系統。
+脫敏用于减少外部 AI 輸入中的敏感資訊暴露风险。它是辅助處理，不等于加密、存取碼校验或
+權限系統。
 
-## Think in secrets separately：三類密鑰唔好撈亂用
+## Think in secrets separately：三類密鑰不要混用
 
-- **訪問碼**：本機 HTTP API 授權憑據（透過 Authorization header 或 CLI `--token` 傳遞）
-- **備份密鑰**：備份包加密/恢復 secret（通常透過檔案提供）
-- **雲端同步密鑰**：用於端到端加密雲同步數據恢復
+- **API 存取碼**：本機 HTTP API 授權凭據，通過 Authorization header、CLI `--token`
+  或 `GRANOFLOW_API_TOKEN` 传递。
+- **備份密鑰**：備份包加密或解密 secret，通常通過 `--secret-file` 或 `--secret-env`
+  提供给離線備份轉換命令。
+- **雲端同步密鑰**：用于端到端加密云同步資料恢復。
 
-呢三樣用途唔同，唔可以互相替代。
+這三者用途不同，不能互相替代。
 
 ## CLI 臨時資產清理
 
-`granoflow clean --json` 係 native CLI 本機清理命令，用嚟清理 CLI 臨時資產目錄：
-
-```bash
-granoflow clean --json
-granoflow clean --older-than 30m --json
-granoflow clean --all --json
-```
-
-`--all` 唔可以同 `--older-than` 同時使用。
+如果 CLI 後续命令生成短期明文資產，應按命令帮助或設定頁說明清理。目前公開的穩定手工入口
+仍以 CLI help 為準；不要把 App 設定項當作 CLI 安裝器或系統權限管理器。
 
 ## 環境變數速查
 
 | 變數 | 用途 |
 | --- | --- |
-| `GRANOFLOW_CLI_LANG` | CLI 輸出語言 |
-| `GRANOFLOW_CLI_TOKEN` | 訪問碼（等同於 Authorization header） |
-| `GRANOFLOW_CLI_IPC_PORT` | 本機 HTTP API 端口（等同於 bridge 端口） |
+| `GRANOFLOW_API_BASE_URL` | 本機 HTTP API 基地址，如 `http://127.0.0.1:56789` |
+| `GRANOFLOW_API_TOKEN` | API 存取碼 |
+| `GRANOFLOW_CONFIG` | CLI 配置文件路徑 |
+
+## 参考：規則與邊界
+
+- 桌面 App 不安裝 CLI，也不寫 PATH、MSIX alias 或 symlink。
+- CLI 設定只保存 API 地址和 token 等連接資訊；不要把備份密鑰、云同步密鑰和 API 存取碼混用。
+- 允許任何裝置來源必須建立在存取碼保護之上，不能把 CORS 或來源放行誤当成授權。

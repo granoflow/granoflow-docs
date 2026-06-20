@@ -1,27 +1,21 @@
 ---
-title: "JSON output, environment variables, and direct HTTP calls"
-description: "Understand --json, --input <file|->, stdin, HTTP endpoints, and environment variables for script and AI automation."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+title: "JSON Output, Environment Variables, and Direct HTTP Calls"
+description: "Understand --json, --input <file|->, stdin, HTTP endpoints, and environment variables for scripts and AI automation."
 ---
 
-<!-- markdownlint-disable MD013 -->
+## `--json` Output Contract
 
-## `--json` output contract
-
-The CLI `--json` mode returns structured results only, suitable for script parsing.
+CLI `--json` mode outputs structured results only, which makes it suitable for scripts.
 
 Recommendations:
 
-- Always add `--json` in automation flows
-- Do not rely on human-readable text for logic decisions
+- Add `--json` throughout automation flows
+- Do not use human-readable text for logic
+- Branch on envelope status and error codes
 
 ## `--input <file|->`
 
-Business object commands support structured input:
+Write commands pass structured data through JSON input:
 
 - `--input task.json`: read JSON from a file
 - `--input -`: read JSON from stdin
@@ -29,50 +23,52 @@ Business object commands support structured input:
 Example:
 
 ```bash
-cat payload.json | granoflow task create --input - --json
+cat payload.json | granoflow task create --input - --dry-run --json
 ```
 
-## Direct HTTP calls
+Dry-run first, check the request preview, then run the real write.
 
-If you do not want to depend on the CLI, you can call the local HTTP API directly:
+## Direct HTTP Calls
+
+If you do not depend on the CLI, call the Local HTTP API directly:
 
 ```bash
-# Check if the API is available
-curl -s http://127.0.0.1:42667/v1/health
+# Check API availability
+curl -s http://127.0.0.1:56789/v1/health
 
-# Read system status
-curl -s http://127.0.0.1:42667/v1/status
+# Read version
+curl -s http://127.0.0.1:56789/v1/version
 
-# Write operation (requires API token)
-curl -s -X POST http://127.0.0.1:42667/v1/task \
-  -H "Authorization: Bearer <token>" \
-  -d '{"title": "Example task"}'
+# Write operation, usually with an API token
+curl -s -X POST http://127.0.0.1:56789/v1/tasks   -H "Authorization: Bearer <token>"   -d '{"title": "Example task"}'
 ```
 
-The local HTTP API listens on `http://127.0.0.1:42667` by default.
+The Local HTTP API listens on `http://127.0.0.1:56789` by default. If the app settings page shows a different port, use that port.
 
-## Environment variables
+## Environment Variables
 
 | Variable | Purpose |
 | --- | --- |
-| `GRANOFLOW_CLI_LANG` | CLI output language |
-| `GRANOFLOW_CLI_TOKEN` | API token (equivalent to CLI `--token`) |
-| `GRANOFLOW_CLI_IPC_PORT` | Local HTTP API port |
-| `GRANOFLOW_API_URL` | Local HTTP API base URL (e.g. `http://127.0.0.1:52001`) |
+| `GRANOFLOW_API_BASE_URL` | Local HTTP API base URL |
+| `GRANOFLOW_API_TOKEN` | API access code |
+| `GRANOFLOW_CONFIG` | CLI config-file path |
 
-## Stable error handling
+## Stable Error Handling
 
-Common stable errors:
+Common error categories include:
 
-- `app_not_reachable`
-- `cli_disabled`
-- `invalid_argument`
-- `unknown_command`
+- Config error: invalid API address or config file
+- Auth error: missing, wrong, or expired access code
+- Network or reachability error: app not running, local interface off, or port mismatch
+- API business error: business-rule error returned by the app
+- API gap: the requested capability is not provided by the current API
 
-Automation scripts should branch on error codes, not on text strings.
+Automation scripts should branch on error codes rather than a piece of text.
 
-## Scripting best practices
+## Script Practices
 
-- Start with `granoflow version --json` or `curl -s http://127.0.0.1:42667/v1/status`
-- For commands that require the app, check reachability first
-- Run `backup create` before write operations
+- Start with `granoflow health --json` or `curl -s http://127.0.0.1:56789/v1/health`
+- Add `--dry-run` before write operations
+- Read tokens only from environment variables, config files, or secure credential storage; do not commit them to the repository
+- Do not call `scripts/anz` for user-data automation; it is an engineering script entrypoint
+- Do not treat offline `backup encrypt/decrypt` as app backup creation or restore

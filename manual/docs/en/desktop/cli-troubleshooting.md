@@ -1,71 +1,82 @@
 ---
 title: "Troubleshooting"
-description: "Resolve command not found, app_not_reachable, port conflicts, token failures, and JSON input errors."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+description: "Handle command not found, unreachable API, wrong ports, token failures, and JSON input errors."
 ---
-
-<!-- markdownlint-disable MD013 -->
 
 ## `command not found: granoflow`
 
-Go to the app's Command Line Tool settings page and reinstall or repair the CLI, then reopen the terminal and retry.
+This usually means you installed only the desktop app, have not installed the CLI separately, or the CLI directory is not in PATH.
 
-## `app_not_reachable`
+Check in this order:
 
-This means the command needs the running app's local HTTP API, but it is currently unreachable.
+1. Download the CLI package for your platform from the website or release page.
+2. Extract it and place the executable in your own command directory.
+3. Confirm that directory is in PATH.
+4. Open a new terminal and run `granoflow help`.
 
-Check in order:
+The desktop app does not install, repair, or uninstall the CLI, and it does not create a `/usr/local/bin/granoflow` symlink.
 
-1. Is the app running?
-2. Is the local HTTP API enabled (Settings → Command Line Tool → toggle)?
-3. Is the local HTTP port consistent?
+## API Unreachable
 
-```bash
-# Primary diagnostic: directly check if the API is reachable
-curl -s http://127.0.0.1:42667/v1/health
+If `granoflow health --json` or a business command cannot connect to the API, check:
 
-# View current port configuration
-granoflow bridge config show --json
-```
-
-## Port conflict or invalid port
-
-If the port is occupied by another process, change the port first, then restart the app:
+1. Whether the GranoFlow desktop app is running
+2. Whether the Local HTTP API is enabled in settings
+3. Whether the API address used by the CLI matches the settings page
+4. Whether another process is using the port
 
 ```bash
-granoflow bridge port set 52001 --json
+curl -s http://127.0.0.1:56789/v1/health
+granoflow config --json
 ```
 
-Port changes require an app restart.
+If you changed the port, replace `56789` with the current port.
 
-## Token verification failure
+## Wrong Port
 
-Confirm the following:
+The CLI no longer changes the app port through `bridge port set`. Change the Local HTTP API port in app settings, then point the CLI to the same base URL:
 
-- Is Token Verification enabled?
-- Is `--token`, `GRANOFLOW_CLI_TOKEN`, or the `Authorization` header correct?
-- Is the token passed to a protected endpoint?
+```bash
+granoflow --api-base-url http://127.0.0.1:52001 health --json
+```
 
-## Local HTTP API disabled (`cli_disabled`)
+You can also set this through `GRANOFLOW_API_BASE_URL` or the CLI config file.
 
-Enable the local HTTP interface in the app settings page, then retry.
+## Token Validation Failed
 
-## App Lock / nonce rejected
+Confirm:
 
-Unlock in the app first, then retry the command.
+- Whether access-code protection is enabled
+- Whether `--token`, `GRANOFLOW_API_TOKEN`, or the `Authorization` header is correct
+- Whether the token was sent to a protected endpoint
+- Whether an official-documentation temporary access code has expired
 
-## Backup secret error
+## Local HTTP API Off
 
-When `backup restore` or `backup-package` uses a secret file, ensure the file exists, is readable, has correct content, and is not empty.
+Enable the Local HTTP API in app settings and try again. Discovery or offline file commands may still run while the interface is off, but commands that read or modify app data will not bypass the app and write the database directly.
 
-## JSON input error
+## App Lock / nonce Rejected
+
+Unlock the app, then retry. Scripts should stop the current write flow on these errors instead of retrying indefinitely.
+
+## Backup Secret Error
+
+When `backup decrypt/encrypt` uses a secret file or secret environment variable, confirm:
+
+- The file exists and is readable
+- The file content is not empty
+- `--secret-file` and `--secret-env` are not used together
+- The input package is actually the matching encrypted or plaintext backup package
+
+## JSON Input Error
 
 When `--input` fails, check:
 
-- Does the file exist?
-- Is the JSON valid?
-- Is the top-level value a JSON object?
+- Whether the file exists
+- Whether the JSON is valid
+- Whether the top level is a JSON object
+- Whether stdin mode uses `--input -`
+
+## Public Capability Mismatch
+
+If old documentation, scripts, or tutorials mention in-app CLI install, `bridge port set`, `backup create`, or `backup restore`, prefer the current manual, OpenAPI, and `granoflow help --json`. Those old entries should no longer be treated as current public commitments.

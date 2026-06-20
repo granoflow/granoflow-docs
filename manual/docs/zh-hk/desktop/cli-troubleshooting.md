@@ -1,69 +1,87 @@
 ---
 title: "排障"
-description: "處理 command not found、app_not_reachable、端口衝突、token 失敗同 JSON 輸入錯誤。"
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+description: "處理 command not found、API 不可達、端口錯誤、token 失敗和 JSON 輸入錯誤。"
 ---
 
 ## `command not found: granoflow`
 
-先返去 App 設定頁嘅「命令行工具」重新安裝或修復 CLI，然後開過個終端再試。
+這通常表示你只安裝了桌面 App，還沒有單獨安裝 CLI，或 CLI 所在目錄沒有加入 PATH。
 
-## `app_not_reachable`
+處理順序：
 
-即係話命令需要運行中嘅 App 本機 HTTP API，但目前唔可達。
+1. 到官網或 release 頁面下載與你的平台匹配的 CLI 包。
+2. 解壓後把可執行文件放到你自己的命令目錄。
+3. 確認該目錄已經加入 PATH。
+4. 在新終端裡執行 `granoflow help`。
 
-檢查順序：
+桌面 App 不會替你安裝、修復或卸載 CLI，也不會建立 `/usr/local/bin/granoflow` symlink。
 
-1. App 係咪正在運行
-2. 本機 HTTP API 係咪開啟咗（設定頁 → 命令行工具 → 開關）
-3. 本機 HTTP 端口係咪一致
+## API 不可達
 
-```bash
-# 首要診斷：直接檢查 API 是否可達
-curl -s http://127.0.0.1:42667/v1/health
+如果 `granoflow health --json` 或業務命令無法連接 API，先檢查：
 
-# 查看目前端口配置
-granoflow bridge config show --json
-```
-
-## 端口衝突或端口錯誤
-
-如果端口被其他程序佔用，先改端口，再重啟 App：
+1. GranoFlow 桌面 App 是否正在執行
+2. 本機 HTTP API 是否已在設定頁開啟
+3. CLI 使用的 API 地址是否與 App 設定頁一致
+4. 端口是否被其他進程占用
 
 ```bash
-granoflow bridge port set 52001 --json
+curl -s http://127.0.0.1:56789/v1/health
+granoflow config --json
 ```
 
-端口變更後必須重啟 App。
+如果你修改過端口，請把例子裡的 `56789` 換成目前端口。
 
-## token 校驗失敗
+## 端口錯誤
 
-確認以下項目：
+CLI 不再通過 `bridge port set` 修改 App 端口。請在 App 設定頁修改本機 HTTP API 端口，
+然後讓 CLI 使用同一個基地址：
 
-- Token Verification 係咪開啟咗
-- `--token`、`GRANOFLOW_CLI_TOKEN` 或 `Authorization` 請求頭係咪正確
-- token 係咪傳咗去受保護端點
+```bash
+granoflow --api-base-url http://127.0.0.1:52001 health --json
+```
 
-## 本機 HTTP API 關閉（`cli_disabled`）
+也可以通過 `GRANOFLOW_API_BASE_URL` 或 CLI 配置文件固定這個地址。
 
-去 App 設定頁開啟本機 HTTP 介面之後再試過。
+## token 校验失敗
 
-## App Lock / nonce 拒絕
+確認以下項：
 
-先喺 App 入面完成解鎖，再重試命令。
+- 存取碼保護是否開啟
+- `--token`、`GRANOFLOW_API_TOKEN` 或 `Authorization` 請求头是否正確
+- token 是否傳給了受保護端點
+- 官方文件調試的臨時存取碼是否已經過期
+
+## 本機 HTTP API 關閉
+
+到 App 設定頁開啟本機 HTTP API 後重試。介面關閉時，發现類或離線文件命令可能仍可執行，
+但讀取或修改 App 資料的命令不會绕過 App 寫資料庫。
+
+## App Lock / nonce 拒绝
+
+先在 App 內完成解鎖，再重試命令。腳本中遇到這類錯誤時，應停止目前寫入流程，而不是自動
+反復重試。
 
 ## 備份密鑰錯誤
 
-`backup restore` 或 `backup-package` 使用密鑰檔案嗰陣，確保檔案存在、可讀、內容正確而且唔係空嘅。
+`backup decrypt/encrypt` 使用密鑰文件或密鑰環境變數時，確認：
+
+- 文件存在且可讀
+- 文件內容不是空值
+- `--secret-file` 與 `--secret-env` 沒有同時使用
+- 輸入包確實是對應的 encrypted 或 plaintext 備份包
 
 ## JSON 輸入錯誤
 
-`--input` 報錯嗰陣檢查：
+`--input` 報錯時檢查：
 
-- 檔案係咪存在
-- JSON 係咪合法
-- 頂層係咪 JSON 物件
+- 文件是否存在
+- JSON 是否合法
+- 頂層是否為 JSON 物件
+- stdin 模式是否使用了 `--input -`
+
+## 公開能力不匹配
+
+如果你看到舊文件、舊腳本或舊教程提到 App 內安裝 CLI、`bridge port set`、`backup create`
+或 `backup restore`，請優先以目前手冊、OpenAPI 和 `granoflow help --json` 為準。這些舊
+入口不應再作為目前公開承諾使用。

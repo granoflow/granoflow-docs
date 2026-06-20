@@ -18,13 +18,13 @@ You don’t need to decide which project it belongs to, what date to set, or whe
 <!-- manual-screenshot:id=tasks-overview-main -->
 ![Task System Overview - Screenshot](../../../screenshots/en/tasks-overview-main.png)
 
-If the task has no date and no project, it will first go to the **Inbox**. Think of the Inbox as a temporary sticky‑note area: put it there, process it when you have time.
+If a task has no date, it will first go into the **Inbox**. Projects and milestones only indicate task ownership; they do not move a task without a date out of the Inbox on their own. Think of the Inbox as a temporary sticky-note area: put it there, process it when you have time.
 
 In the top‑left menu you can find these task views:
 
 | Entry | Content Displayed |
 | --- | --- |
-| Inbox | Tasks without a date or project |
+| Inbox | Tasks without a date that are still To-do or In Progress |
 | Task List | Tasks you are actively working on |
 | Completed | Tasks that have been finished |
 | Archived | Tasks you no longer need to track but want to keep a record of |

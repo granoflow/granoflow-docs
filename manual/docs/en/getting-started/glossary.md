@@ -37,7 +37,7 @@ It is not a task, cannot be completed, and does not check anything off automatic
 
 A project is a container for a goal that takes time to move forward, such as "Move apartment," "Finish dissertation," or "Build App v2."
 
-Tasks can belong to projects. Once an inbox task is assigned to a project, it automatically leaves the inbox. Projects can be archived or completed; if there are still active tasks inside, the system asks you what to do with them first.
+Tasks can belong to projects and milestones; when you organize a task into a project, you usually choose a specific milestone. A project or milestone only describes ownership, and does not by itself move an undated task out of the inbox. Projects can be archived or completed; if there are still active tasks inside, the system asks you what to do with them first.
 
 ### Milestone
 
@@ -61,7 +61,7 @@ For example, the task "File taxes" could have nodes like "Gather receipts," "Fil
 
 The inbox is a temporary place for tasks you want to capture now and organize later.
 
-Only tasks with no due date, no project, no milestone, and a status of to-do or in progress appear in the inbox. Once you add a date or assign the task to a project, it leaves the inbox automatically. Think of it like a note in your pocket: put it there first, sort it out later.
+Tasks with no date and a status of to-do or in progress appear in the inbox. Projects and milestones are ownership; if a task still has no date, it can stay in the inbox. Once you give the task a date, complete it, archive it, or delete it, it leaves the inbox. Think of it like a note in your pocket: put it there first, sort it out later.
 
 ---
 

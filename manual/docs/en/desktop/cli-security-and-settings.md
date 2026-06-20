@@ -1,85 +1,76 @@
 ---
-title: "CLI security and key boundaries"
-description: "Understand the local HTTP API access switch, access code protection, official docs debugging, App Lock, redaction, and the boundaries between different keys."
-translationSource: zh-CN
-translationReview:
-  - manual-usefulness-review
-  - ux-writing
-  - plan-eng-review
+title: "Security Settings and Secret Boundaries"
+description: "Understand the Local HTTP API switch, access-code protection, official documentation debugging, App Lock, redaction, and different secret types."
 ---
 
-<!-- markdownlint-disable MD013 -->
+## Think in Permissions: Start with API Gates
 
-## Think in permissions: API gates first
+Protected Local HTTP endpoints pass through a fixed gate order:
 
-Protected local HTTP endpoints follow a fixed gate order:
-
-1. Local HTTP API master switch (when off, all endpoints return 403)
-2. Origin checks (local pages are allowed by default; official docs debugging must be opened explicitly)
-3. App lock
+1. Local HTTP API master switch
+2. origin check
+3. App Lock
 4. nonce
-5. Access code protection (only required when enabled)
-6. Endpoint-level permissions (some commands require higher privileges)
+5. access-code protection
+6. endpoint-level permission
 
-Read-only endpoints such as `/v1/health` and `/v1/status` are typically not subject to gate restrictions.
-`granoflow help`, `granoflow version`, and `granoflow open` are discovery and wake-up entries and do not require an access code.
+Discovery endpoints such as `/v1/health` and `/v1/version` are useful reachability checks. Endpoints that read or modify app data must pass more gates.
 
-## Access code protection
+## Access-Code Protection
 
-When enabled, protected endpoints that read or modify app data require an access code.
+When access-code protection is enabled, protected endpoints need an access code. It can be sent in two ways:
 
-Pass the access code via:
+- **HTTP request**: `Authorization: Bearer <token>` header
+- **CLI command**: `--token <value>` or the `GRANOFLOW_API_TOKEN` environment variable
 
-- **HTTP request**: `Authorization: Bearer <value>` header
-- **CLI command**: `--token <value>` parameter
-- **Environment variable**: `GRANOFLOW_CLI_TOKEN`
+Do not put access codes in URLs, and do not commit them to script repositories.
 
-“Allow any device origin” requires access code protection and at least one enabled access code. Without that protection, the switch cannot be enabled; if access code protection is turned off or the last enabled access code is removed, it is turned off automatically.
+## Official Documentation Debugging
 
-## Official docs debugging
+`granoflow.com` documentation pages do not have business API access by default. To debug the local API from a documentation page, manually enable official documentation debugging in the app settings page.
 
-`granoflow.com` documentation pages do not have business API access by default. To debug the local API from a docs page, open “Official docs debugging” manually in the app settings page.
+Each enable action creates a temporary access code that lasts one hour. Turning debugging off, expiry, app restart, or enabling debugging again invalidates the old code.
 
-Each start creates a temporary access code that expires after 1 hour. Closing debugging, expiration, restarting the app, or starting a new session invalidates the old code. Send the temporary code through the `Authorization: Bearer <temporary-code>` header, not in a URL or long-term storage.
+## Local HTTP API Switch
 
-## Local HTTP API switch
-
-When the local HTTP API is off, all protected endpoints are rejected (returns `cli_disabled`), not silently ignored.
-
-When the switch is off, the CLI can still execute local commands that do not depend on the API (`help`, `version`, `backup-package`, `clean`).
-
-## App Lock and nonce
-
-Even if access code protection is off, the preceding gates still apply. If origin checks, App Lock, or nonce validation fail, the request is rejected first.
-
-## Think in redaction as assistance
-
-Redaction helps reduce the risk of exposing sensitive information in external AI input. It is an aid, not a substitute for encryption, token verification, or a permissions system.
-
-## Think in secrets separately: three types of keys, do not mix
-
-- **Access code**: authorization credential for the local HTTP API (passed via Authorization header or CLI `--token`)
-- **Backup secret**: secret for backup package encryption/restore (typically provided via a file)
-- **Cloud sync key**: recovery key for end-to-end encrypted cloud sync data
-
-These three have different purposes and cannot replace each other.
-
-## CLI temporary asset cleanup
-
-`granoflow clean --json` is a native CLI local cleanup command for cleaning the CLI temporary asset directory:
+When the Local HTTP API is off, protected endpoints are rejected rather than silently writing data. The CLI can still run local commands that do not depend on the API, for example:
 
 ```bash
-granoflow clean --json
-granoflow clean --older-than 30m --json
-granoflow clean --all --json
+granoflow help
+granoflow config --json
+granoflow backup decrypt --input encrypted.flow.grano --output plaintext.flow.grano --secret-file secret.txt --json
 ```
 
-`--all` cannot be used with `--older-than`.
+## App Lock, nonce, and Origin Checks
 
-## Environment variable reference
+Even if access-code protection is off, earlier gates still apply. If origin check, App Lock, or nonce validation fails, the request is rejected first. For these errors, return to the app and confirm that the interface is enabled, the app is unlocked, and the request origin is allowed.
+
+## Think in Redaction as Assistance
+
+Redaction reduces the risk of exposing sensitive information to external AI inputs. It is a helper, not encryption, access-code validation, or a permission system.
+
+## Think in Secrets Separately: Do Not Mix Three Secret Types
+
+- **API access code**: credential for the Local HTTP API, passed through the Authorization header, CLI `--token`, or `GRANOFLOW_API_TOKEN`.
+- **Backup secret**: secret used to encrypt or decrypt a backup package, usually passed to offline backup conversion through `--secret-file` or `--secret-env`.
+- **Cloud sync secret**: used for end-to-end encrypted cloud-sync data recovery.
+
+These have different jobs and cannot replace each other.
+
+## CLI Temporary Asset Cleanup
+
+If future CLI commands generate short-lived plaintext assets, clean them according to command help or settings guidance. The current stable manual entry should remain the CLI help; do not treat app settings as a CLI installer or system permission manager.
+
+## Environment Variables
 
 | Variable | Purpose |
 | --- | --- |
-| `GRANOFLOW_CLI_LANG` | CLI output language |
-| `GRANOFLOW_CLI_TOKEN` | Access code (equivalent to Authorization header) |
-| `GRANOFLOW_CLI_IPC_PORT` | Local HTTP API port (equivalent to bridge port) |
+| `GRANOFLOW_API_BASE_URL` | Local HTTP API base URL, such as `http://127.0.0.1:56789` |
+| `GRANOFLOW_API_TOKEN` | API access code |
+| `GRANOFLOW_CONFIG` | CLI config-file path |
+
+## Reference: Rules and Boundaries
+
+- The desktop app does not install the CLI and does not write PATH, MSIX aliases, or symlinks.
+- CLI config stores connection information such as API address and token; do not mix backup secrets, cloud sync secrets, and API access codes.
+- Allowing any device origin must be built on access-code protection. CORS or origin allowlisting is not authorization.

@@ -14,7 +14,7 @@ AI does not understand your intent perfectly every time. The same phrase can hav
 - "Want to go for a run tomorrow" — tomorrow could be a due date, a reminder, or just part of the idea.
 - "Before next Friday" — this could be a due date or a planned start time.
 
-If AI changed tasks automatically, a wrong guess could write dates, tags, projects, or reminders into the task before you notice. Then you would need to check and fix those fields one by one.
+If AI changed tasks automatically, a wrong guess could write dates, tags, project or milestone assignments, or reminders into the task before you notice. Then you would need to check and fix those fields one by one.
 
 Confirmation has one simple job: before anything is written, you can see what AI is about to change.
 
@@ -22,12 +22,13 @@ Confirmation has one simple job: before anything is written, you can see what AI
 
 The confirmation view usually shows:
 
-- Fields identified by AI, such as date, tags, project, or reminder.
+- Fields identified by AI, such as date, tags, project or milestone assignments, or reminders.
 - In the daily task review flow, the task title, Task Review, today's report content, or optional new tasks that AI is preparing to update.
 - The matching text in the original title, usually highlighted.
 - A way to accept or ignore each suggestion separately.
 
 You do not have to accept everything at once. If one suggestion looks wrong, you can ignore just that item.
+
 ## If you do not confirm
 
 If you do not confirm, nothing is written. The original title stays unchanged, and task fields are not modified.

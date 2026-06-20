@@ -46,7 +46,7 @@ If you turned on “Include study history,” study history will be written into
 
 The main entry points for deck‑level import, export, and Anki import are in the deck list.
 
-You can reach the deck list from the card statistics screen, or from the card management page via the deck breadcrumb. At the top of the list, you will find “Import Deck” and “Import Anki Deck”; each top‑level deck row has an export button at its end.
+You can reach the deck list from the card statistics screen, or from the card management page via the deck breadcrumb. At the top of the list, you will find “Import Deck” and a muted “Import Anki Deck” entry; each top-level deck row has an export button at its end. In the current version, the Anki entry only shows notes and a feedback entry. It will not let you choose an `.apkg` file, and it will not actually import Anki cards.
 
 The card management page itself is primarily for searching, filtering, sorting, and managing cards within the current scope; it does not handle deck‑level import/export. This separation prevents you from thinking you are working with an entire deck while you are only managing a single card.
 
@@ -92,7 +92,9 @@ Anki/APKG and GranoFlow have completely different card formats.
 
 Anki emphasizes card templates and field combinations; GranoFlow additionally handles task associations, notes, layout, media boundaries, deck provenance, and review context. Therefore, Anki import cannot be understood as “bring everything in as-is.”
 
-The current Anki entry displays notes and limitations. If it encounters unsupported templates, remote media, missing attachments, video media, or content that cannot reliably derive a title, the import may be rejected or skip some data and cards. Even after a successful import, you should not expect arbitrary Anki templates, CSS, scheduling history, and study history to migrate without loss.
+The current Anki entry displays notes and limitations. After you confirm, GranoFlow opens the `@Granoflow` X page as a feedback entry; it does not enter file selection, precheck, or import progress.
+
+The underlying Anki/APKG compatibility code and safeguards still exist, but that does not mean the current user interface has opened Anki import. Even if Anki import is reopened in the future, you should not expect arbitrary Anki templates, CSS, scheduling history, or study history to migrate without loss.
 
 A safer approach is still to let GranoFlow cards come from your own tasks and reviews. The Anki entry can be a supplement, but should not become the main path for building your experience system.
 
@@ -106,7 +108,7 @@ A simple rule of thumb:
 
 - If you worry about losing your entire dataset, back up first.
 - If you only want to migrate a set of cards, then export the deck.
-- If you want to import external cards, read the limitations first, then try on a small scale.
+- If you want to import external cards, read the limitations first; the current Anki entry only collects feedback, and `.deck.grano` is the main path for migrating decks between GranoFlow instances.
 
 ## Summary
 

@@ -139,11 +139,17 @@ paths:
           application/json:
             schema:
               type: object
-              required: [path]
+              description: Single-task AI reply JSON object, either as the raw reply payload, a `payload`/`data` wrapper, or a Granoflow AI reply envelope.
               properties:
-                path:
+                toolId:
                   type: string
-                  description: Absolute local APKG file path.
+                  description: Optional tool id. Defaults to `single_task_ai`.
+                payload:
+                  type: object
+                  description: Single-task AI reply payload.
+                data:
+                  type: object
+                  description: Alternate wrapper for the single-task AI reply payload.
       responses:
         "200":
           description: AI task validation result
@@ -174,22 +180,20 @@ paths:
           application/json:
             schema:
               type: object
-              required: [path]
+              description: Single-task AI reply JSON object, either as the raw reply payload, a `payload`/`data` wrapper, or a Granoflow AI reply envelope.
               properties:
-                path:
+                toolId:
                   type: string
-                  description: Absolute local APKG file path.
+                  description: Optional tool id. Defaults to `single_task_ai`.
+                payload:
+                  type: object
+                  description: Single-task AI reply payload.
+                data:
+                  type: object
+                  description: Alternate wrapper for the single-task AI reply payload.
                 dryRunId:
                   type: string
                   description: Optional client dry-run correlation id.
-                skipCardsWithMissingMedia:
-                  type: boolean
-                  default: false
-                  description: Confirm the existing missing-media choice.
-                stripRemoteMedia:
-                  type: boolean
-                  default: false
-                  description: Remove remote media tokens before importing.
       responses:
         "200":
           description: AI task import or preview result

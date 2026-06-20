@@ -27,7 +27,7 @@ When creating or editing a task, you will see these fields. Only the title is re
 | Description | Optional | Add background info, links, notes, etc.; supports [rich text content](/manual/interface/markdown-content/) |
 | Due Date | Optional | Once set, the task appears in the task list for that date |
 | Reminder | Optional | Sends a notification at the specified time; the reminder time cannot be in the past |
-| Project | Optional | Once set, the task moves from the Inbox to the corresponding project |
+| Project | Optional | Sets task ownership; if the task still has no date, it continues to appear in the Inbox |
 | Milestone | Optional | Associates the task with a specific phase within a project |
 | Tags | Optional | Used for filtering tasks; a task can have multiple tags |
 | Subtasks (Nodes) | Optional | Break the task into smaller steps |
@@ -37,7 +37,7 @@ When creating or editing a task, you will see these fields. Only the title is re
 If a custom tag you select comes with a template, and this task does not yet have a description or subtasks, GranoFlow will add the template content to the task description and root subtask after saving. If the task already has a description or subtasks, the template is skipped to avoid overwriting what you have filled in. The same tag template will only be auto-applied to the same task once; if template application fails, the tag selection remains, and you can manually add the description or subtasks later.
 
 :::tip[Use Natural Language Input]
-In the title input box, you can directly write `#tagname`, `@date`, `~remindertime`, and GranoFlow will parse them automatically. For example, entering `整理报告 @明天 #工作` will automatically recognize tomorrow's date and the "工作" tag. For detailed rules, see [Writing Tasks with Natural Language](title-parser).
+When quickly adding a task, you can write date phrases, `#tagname`, `@project or milestone`, and `~reminder time` directly. For example, enter `Organize report tomorrow #work @paper-draft ~3pm`, and GranoFlow will show tomorrow's date, the “work” tag, the project or milestone suggestion, and the reminder time. They are written to the matching fields only after you confirm them. For detailed rules, see [Writing Tasks with Natural Language](title-parser).
 :::
 
 ## Where the Task Goes After Saving

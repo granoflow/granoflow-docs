@@ -9,12 +9,12 @@ It's not a task list or a statistics report. Think of it as a home dashboard: ta
 
 ## Home status & today's review
 
-At the top of the page, you'll first see your work queue and card study entry to help you decide what to do next. Below that is the "Progress snapshot", which shows yesterday's and today's completion counts, project count, and time invested; if you're already using card study, the snapshot also supplements card study progress, distribution of not studied / studying / mastered / internalized, today's due reviews, and recently reviewed counts. Below the snapshot is a lightweight "Today's review" card: when there's a diagnosis, it shows a line about today's investment stage, up to two behavior tags, and a button to enter today's review; if there's no diagnosis but you can record or have already completed a review today, it still keeps an entry to write or view today's review. On desktop landscape, these current status items are aligned on the left, while the right continues to display longer‑term information such as projects, directions & domains, this week, and this month.
+At the top of the page, you'll first see your work queue and card study entry to help you decide what to do next. Below that is the "Progress snapshot", which shows yesterday's and today's completion counts, project count, and time invested; if you're already using card study, the snapshot also supplements card study progress, distribution of not studied / studying / mastered / internalized, today's due reviews, and recently reviewed counts. Below the snapshot is a lightweight "Today's review" card: when there's a diagnosis, it shows a line about today's investment stage, up to two behavior tags, and a button to enter today's review; on weekends or at month end, entries for weekly or monthly review also appear in this same card when they are available. If there's no diagnosis but any daily, weekly, or monthly review can be recorded or has already been completed, the card still keeps the write, view, or completed state. On desktop landscape, these current status items are aligned on the left, while the right continues to display longer‑term information such as projects, directions & domains, this week, and this month.
 
 <!-- manual-screenshot:id=interface-home-progress-main -->
 ![Progress interface screenshot](../../screenshots/en/interface-home-progress-main.png)
 
-The "Today's review" card is only for quick judgment; it doesn't expand into a full analysis. For a more complete reason, record, or reflection, tap "Write today's review" or "View today's review" to go to the review page.
+The "Today's review" card is only for quick judgment; it doesn't expand into a full analysis. For a more complete reason, record, or reflection, use the daily, weekly, monthly, or review calendar entry inside the card to go to the review page.
 
 ## Card study
 

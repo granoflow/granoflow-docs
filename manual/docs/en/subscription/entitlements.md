@@ -11,7 +11,7 @@ In other words, Pro Settings are not a control panel that must be studied daily.
 
 <!-- manual-screenshot:id=subscription-vip-settings -->
 
-![Subscription benefits interface screenshot](/manual/screenshots/en/subscription-vip-settings.png)
+![Subscription benefits interface screenshot](../../../screenshots/en/subscription-vip-settings.png)
 
 ## Why Do Pro Settings Exist
 
@@ -72,7 +72,7 @@ Cloud sync is the core benefit of Pro. If the current account has no active bene
 
 <!-- manual-screenshot:id=subscription-sync-vip-upsell -->
 
-![Sync membership info interface screenshot](/manual/screenshots/en/subscription-sync-vip-upsell.png)
+![Sync membership info interface screenshot](../../../screenshots/en/subscription-sync-vip-upsell.png)
 
 Seeing the sync benefits info page **does not mean sync has started, nor that your local data is lost**. Local data exists independently of sync benefits. Data only enters the cloud sync pipeline when you are logged in, meet the benefit conditions, and actively complete the sync-related process.
 

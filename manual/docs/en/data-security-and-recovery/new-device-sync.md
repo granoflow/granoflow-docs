@@ -66,7 +66,7 @@ Sometimes GranoFlow finds that the current device is signed in to the same accou
 <!-- manual-screenshot:id=data-sync-device-join -->
 ![Sync Existing Cloud Data On A New Device screen capture](../../../screenshots/en/data-sync-device-join.png)
 
-This page usually appears from the sync entry, data management page, or top sync status prompt. It is not a normal sync button. It is asking which side’s data you want to keep.
+This page usually appears from the sync entry in Account or Settings, or from a top/side sync problem indicator. It is not a normal sync button or a “synced” status prompt. It is asking which side’s data you want to keep.
 
 - Choose “Sync data to cloud” only after confirming that the tasks, projects, reviews, and attachments on this device are the version you want to keep. After confirmation, cloud sync uses this device’s data, and other devices are affected later.
 - Choose “Clear local data” only after confirming that cloud data is the version you want to keep. After confirmation, this device clears its current local data and local sync settings, then downloads from the cloud.

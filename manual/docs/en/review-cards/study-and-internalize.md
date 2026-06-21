@@ -74,6 +74,8 @@ The practice page shows a question. After you tap to reveal the answer, use four
 
 These four ratings are used by the system to schedule subsequent reviews. Don't tap a higher rating just to make statistics look good, and don't blame yourself if you're having a bad day. The more honest the feedback, the more helpful the reminders will be.
 
+Sometimes a card may appear again later in the same session even after you have rated it. This usually means the system decided it is still worth practicing again today. The card moves to the end of the queue, but it does not increase the session total or the completed count. The completed count only moves forward when the next practice time is scheduled for tomorrow or later. In the early learning stage, even the first "Good" rating may mean seeing the card again a few minutes later; answering "Good" consistently, or choosing "Easy," is more likely to push the interval beyond today.
+
 If today's due count is 0 but there are still practice candidates, the progress page might display "Today's card practice is complete" and "Practice another set." This is for when you still have energy to continue with a small group; it doesn't mean you have to complete extra today.
 
 <!-- manual-screenshot:id=review-card-study-question-focus -->

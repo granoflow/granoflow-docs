@@ -29,7 +29,7 @@ If you want to know what an account can do, read [Account overview](/manual/acco
 
 ## Sync entry
 
-Sync status is typically accessed through the account, top sync status, or data-related pages. It is used to keep core records like tasks, projects, and reviews consistent across multiple devices.
+Sync status is typically accessed through the account, the sync entry in Settings, or a top/side sync attention indicator. The top/side entry appears only when there is pending sync work, syncing is in progress, sync has failed, or something needs attention; when everything is up to date, GranoFlow does not keep a permanent "synced" completion icon in the top bar. It is used to keep core records like tasks, projects, and reviews consistent across multiple devices.
 
 Sync does not mean "copy all local settings to another device." It primarily handles the flow of business record data. Language, theme, fonts, app lock, and other current-device preferences belong to a different scope.
 

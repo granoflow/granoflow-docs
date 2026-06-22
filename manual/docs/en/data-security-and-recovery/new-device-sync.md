@@ -21,6 +21,8 @@ Check these 4 things first:
 - The new device has network access, and the account can read cloud sync data.
 - You have the cloud sync key. It is not your sign-in password; it is the key that opens encrypted cloud data.
 
+If what you saved was the Data Key copied during first sync, it is usually the cloud sync key for this cloud data. If you later changed the Data Key, use the key that corresponds to the current cloud sync data. The Data Key for a local backup can be used for new-device sync only if it is the same string as the current cloud sync protection.
+
 The safest order is: first confirm that the data is still on the old device, then copy or record the sync key, and only then work on the new device.
 
 <!-- manual-screenshot:id=data-new-device-sync-old-device-key -->
@@ -108,7 +110,7 @@ Be extra careful with images and attachments. An image is only stable when the l
 ## Common Questions
 
 **What if the key cannot open cloud sync settings?**
-Check that you copied the full key, especially the beginning, end, and spaces. Make sure it is the cloud sync key, not your account password or unrelated text from a local backup file.
+Check that you copied the full key, especially the beginning, end, and spaces. Make sure it is the cloud sync key, not your account password and not a newly generated local Data Key. A backup Data Key applies only if it is the same key as the current cloud sync protection.
 
 **What if I do not have the old device nearby?**
 Use the saved cloud sync key if you kept it earlier. If you have neither the old device nor the key, GranoFlow may not be able to unlock the existing encrypted cloud data.

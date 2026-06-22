@@ -14,7 +14,9 @@ The most easily misunderstood point here is: backup is not "another sync button.
 
 The local backup package will be encrypted. Before creating a backup, GranoFlow first displays the "data key," which is hidden by default with a mask; you can tap the eye icon to view it. You can only start the backup after checking "I have copied the data key and saved it in a safe place."
 
-This confirmation is not just a formality. When you later import this backup, if the current device cannot automatically open it using the locally saved key, GranoFlow will ask you to enter the data key that was used for this backup. Regenerating a new data key only affects backups created from now on; it cannot open old backups. Therefore, the safest practice is to save the backup file and its corresponding data key separately in locations you can retrieve, such as a password manager, secure notes, external hard drive, or a cloud drive you trust.
+This confirmation is not just a formality. When you later restore this backup, if the current device cannot automatically open it using the locally saved key, GranoFlow will ask you to enter the data key that was used for this backup. Regenerating a new data key only affects backups created from now on; it cannot open old backups. Therefore, the safest practice is to save the backup file and its corresponding data key separately in locations you can retrieve, such as a password manager, secure notes, external hard drive, or a cloud drive you trust.
+
+If you also use cloud sync, this Data Key may or may not be the same string as your current Cloud Sync Password. Judge by the target: to restore a `.flow.grano` backup, use the Data Key copied when that backup was created; for a new device joining cloud sync or Cloud Sync Recovery, use the Cloud Sync Password that corresponds to the current account's cloud data. For the full relationship, see [Encryption and Recovery Keys](/manual/en/data-security-and-recovery/encryption-and-recovery-key/).
 
 A real scenario: you want to create a backup before switching computers. Don't just put the `.flow.grano` file into a cloud drive and call it done; also save the displayed data key into your password manager, and write a note like "GranoFlow 2026-06 backup before switching computers." Half a year later, if your old computer is no longer at hand, this note will be more important than you imagine.
 
@@ -68,23 +70,23 @@ If you cancel the save location or close the system share panel, GranoFlow will 
 
 1. Open GranoFlow settings.
 2. Go to the Data Management page.
-3. In the "Local backup" card, select "Import backup."
+3. In the "Local backup" card, select "Restore backup."
 4. Locate the previously saved `.flow.grano` file.
 5. Before restoring, confirm the device is connected to power, especially for mobile devices.
-6. View the backup time, backup version, and content summary to confirm this is the backup you want to import.
+6. View the backup time, backup version, and content summary to confirm this is the backup you want to restore.
 7. If GranoFlow asks for the "data key," enter the one you saved when creating this backup.
-8. Confirm the import, then wait for the process to complete. Do not perform repeated operations during processing.
+8. Confirm the restore, then wait for the process to complete. Do not perform repeated operations during processing.
 
-When importing, GranoFlow first tries to open the backup using the key saved on the current device. If it can open, it will not ask for an extra key; only if it cannot open will it prompt for the data key. Entering an incorrect key will not change the current data.
+When restoring, GranoFlow first tries to open the backup using the key saved on the current device. If it can open, it will not ask for an extra key; only if it cannot open will it prompt for the data key. Enter the Data Key copied when this backup was created, not your login password and not a newly generated Data Key. Entering an incorrect key will not change the current data.
 
-If this device has already joined cloud sync, importing a backup keeps the current sync protection relationship and converts imported content as needed in the background. If this device has never joined sync, the backup can become the local basis for future backups. In either case, you do not need to understand the internal key choice; just follow the prompts and wait for the progress bar to finish.
+If this device has already joined cloud sync, GranoFlow will try to keep the sync protection relationship between this device and the current account unchanged while restoring: the backup content is brought onto the current device, rather than allowing an old backup to change the cloud sync identity of the current account. If this device has never joined cloud sync, the backup becomes the basis for using this device going forward. You do not need to judge these technical differences; just enter the corresponding Data Key when prompted and wait for the progress to finish.
 
-Import is not a simple brute-force overwrite of every record. GranoFlow first generates a restore plan: it writes only when the backup record is newer; skips when the local record is newer; if two records have the same timestamp but different content, it stops and prompts a conflict. Attachments follow the restore plan of their parent task, project, or milestone; if the parent record cannot be safely imported, the related attachments will not be force-included.
+Restore is not a merge. GranoFlow restores local data and local attachments on the current device from the backup package: business records in the package are written back to the device, and old local records or old local attachment files that are not in the package are not kept. Attachments still follow the restore plan of their parent task, project, or milestone; if the parent record cannot be safely restored, related attachments will not be forced in.
 
-If the backup package is missing attachment files, importing is blocked by default. Only when you explicitly choose "Ignore missing attachments and continue importing" does GranoFlow proceed to import the remaining recoverable records with this gap. This choice is suitable when you have confirmed that the missing attachments are not important, or you just want to restore tasks, projects, and text records as quickly as possible.
+If the backup package is missing attachment files, restoring is blocked by default. Only when you explicitly choose "Ignore missing attachments and continue restoring" does GranoFlow proceed to restore the remaining recoverable records with this gap. This choice is suitable when you have confirmed that the missing attachments are not important, or you just want to restore tasks, projects, and text records as quickly as possible.
 
 :::caution[Restore will overwrite current data]
-Importing from a backup may overwrite the current device's data and attachment state. Before importing an old backup, if you want to keep the current device's latest content, first create a current backup and save the data key for this new backup.
+Restoring from a backup replaces the current device's local data and local attachment state. Before restoring an old backup, if you want to keep the current device's latest content, first create a current backup and save the Data Key for this new backup.
 :::
 
 Once you understand local backup, the next step is naturally to distinguish it from the role of [multi-device sync](/manual/en/data-security-and-recovery/sync/): backup gives you a revertible copy, while sync keeps multiple devices converging to the same current state.

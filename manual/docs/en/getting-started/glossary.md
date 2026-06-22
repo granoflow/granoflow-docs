@@ -151,13 +151,13 @@ This means GranoFlow's server cannot read your task content. Local search and ev
 
 The encryption key is the credential that unlocks encrypted backups and cloud data. It is **not** your login password.
 
-The key matters. If you lose it, old backups or matching encrypted cloud data cannot be unlocked. GranoFlow reminds you several times to save the key, but the server cannot recover a lost key for you.
+The key matters. The “Data Key” you see when creating a backup or syncing for the first time, and the “Cloud Sync Password” you enter when syncing a new device, both protect encrypted data; they are named by target. If you lose the key, old backups or matching encrypted cloud data cannot be unlocked. GranoFlow reminds you several times to save the key, but the server cannot recover a lost key for you.
 
 ### Backup and restore
 
 Backup exports all data on the device into a `.flow.grano` file protected by your encryption key.
 
-Restore imports that backup file back into GranoFlow and requires the key used when the backup was created. If attachments were not fully downloaded at backup time, the backup may not contain complete attachments.
+Restore brings that backup file back onto the current device and requires the key used when the backup was created. If attachments were not fully downloaded at backup time, the backup may not contain complete attachments.
 
 ### App lock
 

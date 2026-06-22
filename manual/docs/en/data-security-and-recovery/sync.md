@@ -50,13 +50,15 @@ Member devices do not need to enable silent sync separately. As long as the acco
 
 If you get a new phone or reinstall the app and want to connect to your existing cloud data, you need to use the **cloud sync key** from the old device.
 
+This key is usually the Data Key you copied the first time this data was synced to the cloud. If you later changed the Data Key, use the key that corresponds to the current cloud sync data; old backups still need the Data Key from when each backup was created.
+
 Detailed steps → [Syncing Existing Cloud Data on a New Device](/manual/en/data-security-and-recovery/new-device-sync/)
 
 ## What to Do When You See "Cloud Sync Recovery"
 
 When GranoFlow finds that the local key on the current device does not match the cloud sync data, it will enter "Cloud Sync Recovery". This is not a normal error pop‑up; it is protecting you from overwriting cloud or local data with the wrong data.
 
-The recovery process will ask you to enter the "cloud sync password". This password is used to attempt to open the encryption material of the current account's cloud data. After entering, GranoFlow will first check:
+The recovery process asks you to enter the “Cloud Sync Password.” This password is used to attempt to open the encryption material of the current account's cloud data. It is not your login password, and it is not necessarily the Data Key for an old backup. After entering, GranoFlow first checks:
 
 - If the cloud data and local data use the same data key, it will only update the sync settings on this device and then continue syncing.
 - If the current account already has protected cloud data and it is not the same set as local data, GranoFlow treats the current account's cloud protection as the target and migrates local data into that account.

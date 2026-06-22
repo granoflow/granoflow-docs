@@ -32,6 +32,14 @@ In the top‑left menu you can find these task views:
 
 After entering the “Task List”, tasks are grouped by time periods: overdue, today, tomorrow, this week, this month, next month, and later. In each group, you can quickly add a task from the top‑right corner; if you add a task under “Today”, it will default to today’s date; if under “Tomorrow”, it defaults to tomorrow. You can still change the title, date, reminder, project, milestone, tags, or image at the time of saving.
 
+## Why Only Today and Tomorrow Need Detailed Planning
+
+GranoFlow doesn’t encourage you to schedule every future day into a precise plan. In real life, change and surprises are the norm. Filling every day of next week or next month in advance often just creates the pressure of “my plan has already failed.”
+
+That’s why the task list treats only today and tomorrow as daily plans that truly need detailed arrangement: today decides what to do right now, and tomorrow leaves a clear but light next step. For tasks further out, you only need to estimate whether they roughly belong to this week, this month, next month, or later, so they form a loose distribution. When the time gets closer, move the tasks you actually need to handle into today or tomorrow.
+
+This is different from a traditional Todo List: GranoFlow is not about controlling every future day in advance. It helps you keep a sense of direction amid uncertainty.
+
 If you have already set a task as your current task, it appears at the top of the task list as “Current Task”. It is not a new task but a pinned display of the original one, making it easy to return to what you are actively pushing forward. Tapping it opens the details on the right side on wide screens, or navigates to the task detail page on narrow screens.
 
 ## Relationship Between Tasks, Projects, Milestones, and Domains

@@ -40,6 +40,8 @@ Suppose you've organized a set of "Research Writing" cards containing insights o
 
 You don't need to export the entire GranoFlow backup, nor should you think of it as an Anki package. Go to the card box list, select the top-level card box, and export `.deck.grano`. This package will include the selected top-level card box, sub-card boxes, undeleted cards, and any packable local image media.
 
+Pay special attention here: `.deck.grano` is a file for migrating and sharing card boxes, not an encrypted backup. Unlike `.flow.grano`, it is not protected by a data key. If you send the card package to someone else, they may be able to read the card text and images inside it. Do not store or send card packages containing sensitive content as if they were secure containers.
+
 If you've turned on "Include learning records," learning records will be included in the export package; by default they are not. Similarly, during import, learning records are not imported by default; they are only merged if you explicitly turn on "Import learning records" in the import preview.
 
 ## Where to Manage Card Boxes
@@ -93,6 +95,7 @@ It does not handle:
 - Project and milestone entities
 - Daily, weekly, monthly review content
 - Complete account or device restoration
+- Encrypted backup protection or a sharing password like `.flow.grano`
 - Lossless preservation of arbitrary Anki templates, CSS, or scheduling history
 
 Before importing `.deck.grano`, GranoFlow shows a preview for you to confirm. The import does not create task entities; it only retains task associations that still exist on this device and are not in the trash. Missing task associations are counted in the preview and skipped; cards with no valid task associations may go into the archived cards.

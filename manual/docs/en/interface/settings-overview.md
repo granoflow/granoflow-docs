@@ -5,7 +5,7 @@ description: "Understand how GranoFlow Settings page is currently organized, whi
 
 <!-- markdownlint-disable MD013 -->
 
-If you're not sure where a setting applies, first see which group it's in: Appearance, Preferences, and Security usually only affect this device; Data Management, About, Research Program, and Pro Settings take you to specific pages for more detailed account, sync, subscription, AI, or data rules.
+If you're not sure where a setting applies, first see which group it's in: Appearance, Preferences, and Security usually only affect this device; Data Management, About, Research & Activities, and Pro Settings take you to specific pages for more detailed account, sync, subscription, AI, or data rules.
 
 Related settings pages:
 
@@ -16,7 +16,7 @@ Related settings pages:
 - [Account, sync & data entry points](/manual/interface/settings-account-data-entrypoints/)
 - [Command-line tool](/manual/desktop/command-line-tool/)
 
-The Settings page is the unified entry point for GranoFlow. It brings together display experience, preferences, security, data management, privacy & diagnostics, About, Research Program, and Pro Settings in one place, but each entry affects a different scope.
+The Settings page is the unified entry point for GranoFlow. It brings together display experience, preferences, security, data management, privacy & diagnostics, About, Research & Activities, and Pro Settings in one place, but each entry affects a different scope.
 
 ## Appearance
 
@@ -67,13 +67,13 @@ The CLI's `backup create` and `backup restore` also require the running desktop 
 
 Full navigation at [Command-line tool](/manual/desktop/command-line-tool/). If you need the full command matrix, read [CLI commands and parameter reference](/manual/desktop/cli-command-reference/); if you're confirming token or local access boundaries, read [CLI security settings and key boundaries](/manual/desktop/cli-security-and-settings/).
 
-## Privacy & Diagnostics, About, Research & Pro
+## Privacy & Diagnostics, About, Research & Activities, and Pro
 
 "Privacy & Diagnostics" lets you control whether to send crash reports and anonymous usage statistics. It does not upload task, project, review body, image, or attachment content. In high-risk or sensitive environments, you can turn off the "Help Improve" switch here.
 
 The "About" area typically contains version info, the account entry, and necessary auxiliary entries. Hidden diagnostic or test data entry points are not shown as default entries for regular users.
 
-The "Research Program" is for users who actively participate in feedback or research; it does not affect daily tasks and data structures.
+The "Research & Activities" area is for users who actively participate in feedback, research, or public community activities; it does not affect daily tasks and data structures.
 
 "Pro Settings" provides access to subscription entry, full attachment sync, clear local attachments, remote rich-text resource prompts, card media cache, card study group size, domain count limit, AI research preferences, and AI desensitization—advanced entries. Specific benefits and platform rules follow [Subscription overview](/manual/subscription/overview/) and actual platform display.
 

@@ -91,7 +91,7 @@ You can qualify via any one of the following:
 
 ### 3.3 Evaluation & Delivery
 - "valid", "adopted", and "substantial" are judged by maintainers based on quality and practical value.
-- Repeated submissions, missing key info, or obvious low-quality spam are not rewarded.
+- Repeated submissions, missing key information, or feedback that is too vague to verify, are not eligible for rewards.
 - Issue rewards follow the "first valid report" rule.
 - Suggestion rewards follow the "first adopted suggestion" rule.
 - Reward process and timeline will be announced publicly in repository channels.

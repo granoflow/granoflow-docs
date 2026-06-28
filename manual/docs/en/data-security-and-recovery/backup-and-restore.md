@@ -66,27 +66,29 @@ In the `Card deck` card, tapping "Export card deck" enters the card deck list, w
 
 If you cancel the save location or close the system share panel, GranoFlow will not record this operation as a completed backup. If a backup is already in progress, tapping "Create backup" again will be blocked to avoid generating two interfering backup files simultaneously.
 
-## How to restore from a backup
+## How to import a backup
 
 1. Open GranoFlow settings.
 2. Go to the Data Management page.
-3. In the "Local backup" card, select "Restore backup."
+3. In the "Local backup" card, select "Import backup."
 4. Locate the previously saved `.flow.grano` file.
-5. Before restoring, confirm the device is connected to power, especially for mobile devices.
-6. View the backup time, backup version, and content summary to confirm this is the backup you want to restore.
+5. Before importing, confirm the device is connected to power, especially for mobile devices.
+6. View the backup time, backup version, and content summary to confirm this is the backup you want to import.
 7. If GranoFlow asks for the "data key," enter the one you saved when creating this backup.
-8. Confirm the restore, then wait for the process to complete. Do not perform repeated operations during processing.
+8. Confirm the import, then wait for the process to complete. Do not perform repeated operations during processing.
 
-When restoring, GranoFlow first tries to open the backup using the key saved on the current device. If it can open, it will not ask for an extra key; only if it cannot open will it prompt for the data key. Enter the Data Key copied when this backup was created, not your login password and not a newly generated Data Key. Entering an incorrect key will not change the current data.
+When importing, GranoFlow first tries to open the backup using the key saved on the current device. If it can open, it will not ask for an extra key; only if it cannot open will it prompt for the data key. Enter the Data Key copied when this backup was created, not your login password and not a newly generated Data Key. Entering an incorrect key will not change the current data.
 
-If this device has already joined cloud sync, GranoFlow will try to keep the sync protection relationship between this device and the current account unchanged while restoring: the backup content is brought onto the current device, rather than allowing an old backup to change the cloud sync identity of the current account. If this device has never joined cloud sync, the backup becomes the basis for using this device going forward. You do not need to judge these technical differences; just enter the corresponding Data Key when prompted and wait for the progress to finish.
+If this device has already joined cloud sync, GranoFlow will try to keep the sync protection relationship between this device and the current account unchanged while importing: the backup content is brought onto the current device, rather than allowing an old backup to change the cloud sync identity of the current account. If this device has never joined cloud sync, the backup becomes the basis for using this device going forward. You do not need to judge these technical differences; just enter the corresponding Data Key when prompted and wait for the progress to finish.
 
-Restore is not a merge. GranoFlow restores local data and local attachments on the current device from the backup package: business records in the package are written back to the device, and old local records or old local attachment files that are not in the package are not kept. Attachments still follow the restore plan of their parent task, project, or milestone; if the parent record cannot be safely restored, related attachments will not be forced in.
+Importing a backup is an incremental merge and does not clear the current device. Records that exist in the backup but not on this device are imported. When the same record exists on both sides, GranoFlow compares the last modified time and keeps the newer one. If the timestamp is still identical at millisecond precision, GranoFlow uses the backup version so devices can converge to the same data. Local records and local attachment files that are not in the backup are kept.
 
-If the backup package is missing attachment files, restoring is blocked by default. Only when you explicitly choose "Ignore missing attachments and continue restoring" does GranoFlow proceed to restore the remaining recoverable records with this gap. This choice is suitable when you have confirmed that the missing attachments are not important, or you just want to restore tasks, projects, and text records as quickly as possible.
+Attachments also follow the import plan. If the parent task, project, or milestone is missing, deleted, or unsafe, or if the attachment file itself is missing, GranoFlow will not force that attachment in. If the backup package is missing attachment files, importing is blocked by default. Only when you explicitly choose "Ignore missing attachments and continue importing" does GranoFlow proceed with the remaining importable records. This choice is suitable when you have confirmed that the missing attachments are not important, or you just want to import tasks, projects, and text records as quickly as possible.
 
-:::caution[Restore will overwrite current data]
-Restoring from a backup replaces the current device's local data and local attachment state. Before restoring an old backup, if you want to keep the current device's latest content, first create a current backup and save the Data Key for this new backup.
+If the result says that some records could not be imported, those records usually have missing timestamps, unsafe parent relationships, or incomplete attachment files. GranoFlow skips them and keeps the local side. You can export a plaintext JSON file to inspect those failed records; if any of them matter, use the JSON as a reference and recreate them manually.
+
+:::caution[Create a current backup first if you need a fallback]
+Importing a backup does not clear the current device, but it may update records that have the same ID when the backup is newer. Before importing an old backup, create a current backup first if you want a fallback for the current state.
 :::
 
 Once you understand local backup, the next step is naturally to distinguish it from the role of [multi-device sync](/manual/en/data-security-and-recovery/sync/): backup gives you a revertible copy, while sync keeps multiple devices converging to the same current state.

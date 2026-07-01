@@ -8,7 +8,7 @@ The purpose of cross-device sync is: after you add, modify, or delete content on
 It is more accurate to think of sync as "converging the current state across multiple devices". It cares about what should be consistent now, not what it was three days ago. When you really need to preserve a point in time, first create a [local backup](/manual/en/data-security-and-recovery/backup-and-restore/).
 
 <!-- manual-screenshot:id=data-sync-status-main -->
-![Cross-Device Sync Interface](../../screenshots/en/data-sync-status-main.png)
+![Cross-Device Sync Interface](../../../screenshots/en/data-sync-status-main.png)
 
 ## What Does Sync Include and Not Include
 

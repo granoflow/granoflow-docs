@@ -8,7 +8,7 @@ description: "了解同步會把哪些狀態帶到其他裝置，以及網絡、
 把同步理解成「讓當前狀態在多台裝置之間收斂」會更準確。它關心的是現在應該一致，而不是三天前是什麼樣。真正需要保留歷史時間點時，請先建立[本地備份](/manual/zh-hk/data-security-and-recovery/backup-and-restore/)。
 
 <!-- manual-screenshot:id=data-sync-status-main -->
-![多端同步 界面截圖](../../screenshots/zh-hk/data-sync-status-main.png)
+![多端同步 界面截圖](../../../screenshots/zh-hk/data-sync-status-main.png)
 
 ## 同步什麼、不同步什麼
 

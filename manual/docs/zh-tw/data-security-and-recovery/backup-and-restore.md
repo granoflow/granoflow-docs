@@ -8,7 +8,7 @@ description: "備份是換裝置、重裝、誤刪和大規模整理前的安全
 這裡最容易誤解的一點是：備份不是「另一個同步按鈕」。同步追求多台裝置保持當前一致；備份保存的是一個時間點。同步可以讓新任務出現在另一台裝置上，但如果你誤刪了任務，刪除也會同步過去。備份的價值正好相反：它讓你在重要操作前留下一份你自己控制的安全副本。
 
 <!-- manual-screenshot:id=data-backup-restore-management -->
-![備份與還原 介面截圖](../../screenshots/zh-tw/data-backup-restore-management.png)
+![備份與還原 介面截圖](../../../screenshots/zh-tw/data-backup-restore-management.png)
 
 ## 先記住一件事：檔案和資料密鑰要一起保存
 

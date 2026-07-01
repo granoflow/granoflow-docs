@@ -21,7 +21,7 @@ description: "了解設定頁中的帳號、同步、資料、訂閱、AI 助手
 帳號入口位於設定頁的「關於」區域。它用來註冊、登入、登出、查看帳號狀態，並把當前裝置接入同一個帳號體系。
 
 <!-- manual-screenshot:id=interface-device-preferences-main -->
-![帳號、同步與資料入口 介面截圖](../../screenshots/zh-hk/interface-device-preferences-main.png)
+![帳號、同步與資料入口 介面截圖](../../../screenshots/zh-hk/interface-device-preferences-main.png)
 
 登入後，你才能購買或還原 GranoFlow Pro 權益，啟用需要帳號的雲端同步能力，並進入與帳號有關的個人化設定。
 

@@ -21,7 +21,7 @@ If an operation involves restore, deletion, sync reset, keys, subscription benef
 The account entry is located in the "About" area on the Settings page. It's used to register, log in, log out, view account status, and connect the current device to the same account system.
 
 <!-- manual-screenshot:id=interface-device-preferences-main -->
-![Account, sync & data entry points interface screenshot](../../screenshots/en/interface-device-preferences-main.png)
+![Account, sync & data entry points interface screenshot](../../../screenshots/en/interface-device-preferences-main.png)
 
 After logging in, you can purchase or restore GranoFlow Pro benefits, enable cloud sync that requires an account, and enter account-related personalization.
 

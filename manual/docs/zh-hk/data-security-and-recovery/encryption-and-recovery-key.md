@@ -6,7 +6,7 @@ description: "理解數據密鑰、雲端同步密碼和登入密碼的分別，
 你現在最需要做的是：在還能打開 GranoFlow 的設備上，把關鍵密鑰保存到密碼管理器或安全的地方。以後換設備、重裝 App、恢復本地備份，或看到「雲端同步恢復」時，GranoFlow 可能會要求你輸入對應密鑰；沒有它，某些加密數據可能打不開。
 
 <!-- manual-screenshot:id=data-encryption-recovery-key -->
-![加密與恢復密鑰 界面截圖](../../screenshots/zh-hk/data-encryption-recovery-key.png)
+![加密與恢復密鑰 界面截圖](../../../screenshots/zh-hk/data-encryption-recovery-key.png)
 
 GranoFlow 的備份和雲端同步都使用加密。密鑰就像保險箱鑰匙：**沒有正確的鑰匙，連 GranoFlow 自己的伺服器也無法讀取受保護的數據**。這也代表：**如果你自己遺失密鑰，GranoFlow 無法幫你重置或找回已經被它保護的數據。**
 

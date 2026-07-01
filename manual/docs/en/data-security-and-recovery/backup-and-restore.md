@@ -8,7 +8,7 @@ When you are about to change devices, reinstall the system, delete a large amoun
 The most easily misunderstood point here is: backup is not "another sync button." Sync aims to keep multiple devices consistently up to date; backup saves a point in time. Sync allows new tasks to appear on another device, but if you accidentally delete a task, the deletion will also be synced. The value of backup is the opposite: it lets you keep a secure copy under your own control before performing important operations.
 
 <!-- manual-screenshot:id=data-backup-restore-management -->
-![Backup and Restore Interface Screenshot](../../screenshots/en/data-backup-restore-management.png)
+![Backup and Restore Interface Screenshot](../../../screenshots/en/data-backup-restore-management.png)
 
 ## First, remember one thing: keep the file and data key together
 

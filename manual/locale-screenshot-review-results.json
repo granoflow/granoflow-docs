@@ -1,0 +1,45 @@
+{
+  "schema": "granoflow.manual.locale_screenshot_review.v1",
+  "status": "approved",
+  "locales": {
+    "zh-cn": {
+      "runId": "20260704T004500Z-review-card-domain-garden-final-candidate",
+      "imageReview": "pass",
+      "documentationReview": "usable",
+      "screenshotCount": 6
+    },
+    "en": {
+      "runId": "20260704T010000Z-review-card-en-final-candidate",
+      "imageReview": "pass",
+      "documentationReview": "usable",
+      "screenshotCount": 6
+    },
+    "zh-hk": {
+      "runId": "20260704T012000Z-review-card-zh-hk-final-candidate",
+      "imageReview": "pass",
+      "documentationReview": "usable",
+      "screenshotCount": 6
+    },
+    "zh-tw": {
+      "runId": "20260704T013000Z-review-card-zh-tw-final-candidate",
+      "imageReview": "pass",
+      "documentationReview": "usable",
+      "screenshotCount": 6
+    }
+  },
+  "expected": {
+    "platform": "macos",
+    "theme": "dark",
+    "orientation": "landscape",
+    "viewport": "1280x800",
+    "screenshotIds": [
+      "review-card-statistics-main",
+      "review-card-deck-list-main",
+      "review-card-management-main",
+      "review-card-study-domain-garden-question",
+      "review-card-study-domain-garden",
+      "review-card-study-note-panel"
+    ]
+  },
+  "issues": []
+}

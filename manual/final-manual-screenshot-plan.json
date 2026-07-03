@@ -1,28 +1,56 @@
 {
   "schema": "granoflow.manual.final_screenshot_plan.v1",
-  "createdAt": "2026-07-03T17:11:40.156393Z",
-  "sourceManifest": "docs-temp/manual-route-screenshot/20260704T004500Z-review-card-domain-garden-final-candidate/e2e-artifacts/manifest.jsonl",
+  "createdAt": "2026-07-03T21:28:35.397816Z",
+  "sourceRuns": [
+    "docs-temp/manual-route-screenshot/20260704T-manual-route-zhcn-full-2",
+    "docs-temp/manual-route-screenshot/20260704T-review-card-zhcn-recapture-2"
+  ],
   "outputPolicy": {
     "assetRoot": "granoflow-docs/manual/screenshots",
     "markdownImagePattern": "/manual/screenshots/<locale-dir>/<id>.png",
-    "fileNamePattern": "<id>.png"
+    "fileNamePattern": "<id>.png",
+    "failedItemsExcluded": [
+      "review-card-study-note-panel"
+    ]
   },
   "screenshots": [
     {
-      "id": "review-card-statistics-main",
-      "manualPageId": "review-card-statistics",
+      "id": "route-account-main",
+      "manualPageId": "account",
       "docType": "Reference",
-      "readerGoal": "卡片统计页面",
-      "route": null,
+      "readerGoal": "记录 account 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/account",
+      "preferredAccess": "direct_route",
       "locale": "zh_CN",
       "platform": "macos",
       "theme": "dark",
       "orientation": "landscape",
       "viewport": "1280x800",
-      "stateKey": "seeded-local-review-cards",
+      "stateKey": "seeded-local-core",
       "seedObjectRef": null,
-      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/review-card-statistics-main.png",
-      "sourceCandidateId": "review-card-manual-screenshots-macos--01--step.png",
+      "captureIntent": "记录 account 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 account 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-account-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--02--route-account-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
       "imageReviewVerdict": "pass",
       "documentationReviewVerdict": "usable",
       "worthScore": 8,
@@ -31,36 +59,3015 @@
         "seed-change",
         "manual-copy-change",
         "locale-change"
+      ]
+    },
+    {
+      "id": "route-account-recovery-main",
+      "manualPageId": "account_recovery",
+      "docType": "Reference",
+      "readerGoal": "记录 account_recovery 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/account-recovery",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 account_recovery 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
       ],
-      "promotionStatus": "approved",
-      "preferredAccess": "ui_path",
-      "uiPath": "侧边栏卡片入口 -> 统计页；优先通过真实 UI 进入，不直接 route 截图。",
-      "directRouteEvidence": "not_used_for_promotion",
-      "knownFailurePatterns": [
-        "direct route may miss seeded state",
-        "single-line exception or database closed screen must fail image review",
-        "wrong random review card must fail documentation review"
-      ],
-      "recaptureHints": [
-        "install manual seed before capture",
-        "verify macOS dark landscape viewport before capture",
-        "verify fixed card slug card_domain_garden_manual_screenshot for study screenshots"
-      ],
-      "localeOverrides": {
-        "en": {
-          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-statistics-main.png",
-          "status": "approved"
-        },
-        "zh-HK": {
-          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-statistics-main.png",
-          "status": "approved"
-        },
-        "zh-TW": {
-          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-statistics-main.png",
-          "status": "approved"
-        }
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 account_recovery 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
       },
-      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-account-recovery-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--03--route-account-recovery-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-achievements-main",
+      "manualPageId": "achievements",
+      "docType": "Explanation",
+      "readerGoal": "记录 achievements 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/achievements",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 achievements 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 achievements 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-achievements-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--16--route-achievements-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-ai-assistant-settings-ai-assistant-main",
+      "manualPageId": "ai_assistant",
+      "docType": "Reference",
+      "readerGoal": "记录 ai_assistant 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/ai-assistant",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 ai_assistant 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 ai_assistant 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-ai-assistant-settings-ai-assistant-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--29--route-ai-assistant-settings-ai-assistant-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-ai-redaction-settings-settings-ai-redaction-main",
+      "manualPageId": "ai_redaction_settings",
+      "docType": "Reference",
+      "readerGoal": "记录 ai_redaction_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/ai-redaction",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 ai_redaction_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 ai_redaction_settings 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-ai-redaction-settings-settings-ai-redaction-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--30--route-ai-redaction-settings-settings-ai-redaction-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-ai-redaction-terms-settings-vip-ai-redaction-terms-main",
+      "manualPageId": "ai_redaction_terms",
+      "docType": "Reference",
+      "readerGoal": "记录 ai_redaction_terms 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/vip-ai-redaction-terms",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 ai_redaction_terms 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 ai_redaction_terms 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-ai-redaction-terms-settings-vip-ai-redaction-terms-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--54--route-ai-redaction-terms-settings-vip-ai-redaction-terms-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-ai-research-preference-settings-ai-research-preference-main",
+      "manualPageId": "ai_research_preference",
+      "docType": "Reference",
+      "readerGoal": "记录 ai_research_preference 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/ai-research-preference",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 ai_research_preference 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 ai_research_preference 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-ai-research-preference-settings-ai-research-preference-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--31--route-ai-research-preference-settings-ai-research-preference-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-archived-main",
+      "manualPageId": "archived",
+      "docType": "Reference",
+      "readerGoal": "记录 archived 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/archived",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 archived 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 archived 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-archived-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--04--route-archived-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-clear-attachments-settings-clear-attachments-main",
+      "manualPageId": "clear_attachments",
+      "docType": "Reference",
+      "readerGoal": "记录 clear_attachments 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/clear-attachments",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 clear_attachments 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 clear_attachments 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-clear-attachments-settings-clear-attachments-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--32--route-clear-attachments-settings-clear-attachments-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-cloud-key-takeover-settings-cloud-key-takeover-main",
+      "manualPageId": "cloud_key_takeover",
+      "docType": "Reference",
+      "readerGoal": "记录 cloud_key_takeover 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/cloud-key-takeover",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 cloud_key_takeover 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 cloud_key_takeover 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-cloud-key-takeover-settings-cloud-key-takeover-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--33--route-cloud-key-takeover-settings-cloud-key-takeover-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-command-line-tool-settings-command-line-tool-main",
+      "manualPageId": "command_line_tool",
+      "docType": "Reference",
+      "readerGoal": "记录 command_line_tool 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/command-line-tool",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 command_line_tool 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 command_line_tool 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-command-line-tool-settings-command-line-tool-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--34--route-command-line-tool-settings-command-line-tool-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-completed-main",
+      "manualPageId": "completed",
+      "docType": "Reference",
+      "readerGoal": "记录 completed 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/completed",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 completed 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 completed 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-completed-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--05--route-completed-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-custom-tags-management-settings-custom-tags-main",
+      "manualPageId": "custom_tags_management",
+      "docType": "Reference",
+      "readerGoal": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/custom-tags",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-custom-tags-management-settings-custom-tags-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--36--route-custom-tags-management-settings-custom-tags-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-custom-tags-management-settings-daily-note-template-main",
+      "manualPageId": "custom_tags_management",
+      "docType": "Reference",
+      "readerGoal": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/daily-note-template",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-custom-tags-management-settings-daily-note-template-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--38--route-custom-tags-management-settings-daily-note-template-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-custom-tags-management-settings-weekly-note-template-main",
+      "manualPageId": "custom_tags_management",
+      "docType": "Reference",
+      "readerGoal": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/weekly-note-template",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-custom-tags-management-settings-weekly-note-template-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--56--route-custom-tags-management-settings-weekly-note-template-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-data-management-settings-data-management-main",
+      "manualPageId": "data_management",
+      "docType": "Reference",
+      "readerGoal": "记录 data_management 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/data-management",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 data_management 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 data_management 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-data-management-settings-data-management-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--39--route-data-management-settings-data-management-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-diagnostic-anomaly-config-settings-diagnostic-anomaly-main",
+      "manualPageId": "diagnostic_anomaly_config",
+      "docType": "Reference",
+      "readerGoal": "记录 diagnostic_anomaly_config 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/diagnostic-anomaly",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 diagnostic_anomaly_config 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 diagnostic_anomaly_config 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-diagnostic-anomaly-config-settings-diagnostic-anomaly-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--41--route-diagnostic-anomaly-config-settings-diagnostic-anomaly-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-diagnostic-state-config-settings-diagnostic-state-main",
+      "manualPageId": "diagnostic_state_config",
+      "docType": "Reference",
+      "readerGoal": "记录 diagnostic_state_config 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/diagnostic-state",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 diagnostic_state_config 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 diagnostic_state_config 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-diagnostic-state-config-settings-diagnostic-state-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--42--route-diagnostic-state-config-settings-diagnostic-state-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-domains-main",
+      "manualPageId": "domains",
+      "docType": "Reference",
+      "readerGoal": "记录 domains 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/domains",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 domains 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 domains 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-domains-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--06--route-domains-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-heatmap-threshold-config-settings-heatmap-threshold-main",
+      "manualPageId": "heatmap_threshold_config",
+      "docType": "Reference",
+      "readerGoal": "记录 heatmap_threshold_config 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/heatmap-threshold",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 heatmap_threshold_config 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 heatmap_threshold_config 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-heatmap-threshold-config-settings-heatmap-threshold-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--44--route-heatmap-threshold-config-settings-heatmap-threshold-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-inbox-main",
+      "manualPageId": "inbox",
+      "docType": "Reference",
+      "readerGoal": "记录 inbox 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/inbox",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 inbox 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 inbox 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-inbox-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--07--route-inbox-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-local-backup-progress-settings-data-management-progress-main",
+      "manualPageId": "local_backup_progress",
+      "docType": "Reference",
+      "readerGoal": "记录 local_backup_progress 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/data-management/progress",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 local_backup_progress 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 local_backup_progress 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-local-backup-progress-settings-data-management-progress-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--40--route-local-backup-progress-settings-data-management-progress-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-local-http-api-access-log-settings-command-line-tool-access-log-main",
+      "manualPageId": "local_http_api_access_log",
+      "docType": "Reference",
+      "readerGoal": "记录 local_http_api_access_log 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/command-line-tool/access-log",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 local_http_api_access_log 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 local_http_api_access_log 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-local-http-api-access-log-settings-command-line-tool-access-log-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--35--route-local-http-api-access-log-settings-command-line-tool-access-log-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-message-reminder-settings-settings-message-reminders-main",
+      "manualPageId": "message_reminder_settings",
+      "docType": "Reference",
+      "readerGoal": "记录 message_reminder_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/message-reminders",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 message_reminder_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 message_reminder_settings 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-message-reminder-settings-settings-message-reminders-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--46--route-message-reminder-settings-settings-message-reminders-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-notifications-main",
+      "manualPageId": "notifications",
+      "docType": "Reference",
+      "readerGoal": "记录 notifications 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/notifications",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 notifications 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 notifications 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-notifications-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--08--route-notifications-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-projects-main",
+      "manualPageId": "projects",
+      "docType": "How-to",
+      "readerGoal": "记录 projects 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/projects",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 projects 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 projects 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-projects-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--15--route-projects-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-prompt-settings-settings-helper-ai-prompt-main",
+      "manualPageId": "prompt_settings",
+      "docType": "Reference",
+      "readerGoal": "记录 prompt_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/helper-ai-prompt",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 prompt_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 prompt_settings 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-prompt-settings-settings-helper-ai-prompt-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--45--route-prompt-settings-settings-helper-ai-prompt-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-prompt-settings-settings-prompt-settings-main",
+      "manualPageId": "prompt_settings",
+      "docType": "Reference",
+      "readerGoal": "记录 prompt_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/prompt-settings",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 prompt_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 prompt_settings 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-prompt-settings-settings-prompt-settings-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--47--route-prompt-settings-settings-prompt-settings-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-deck-list-review-cards-decks-main",
+      "manualPageId": "review_card_deck_list",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_deck_list 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/decks",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_deck_list 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_deck_list 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-deck-list-review-cards-decks-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--20--route-review-card-deck-list-review-cards-decks-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-detail-review-cards-id-main",
+      "manualPageId": "review_card_detail",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_detail 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_detail 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_detail 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-detail-review-cards-id-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--17--route-review-card-detail-review-cards-id-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-edit-review-cards-id-edit-main",
+      "manualPageId": "review_card_edit",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_edit 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_edit 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_edit 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-edit-review-cards-id-edit-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--18--route-review-card-edit-review-cards-id-edit-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-manage-review-cards-manage-main",
+      "manualPageId": "review_card_manage",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_manage 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/manage",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_manage 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_manage 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-manage-review-cards-manage-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--22--route-review-card-manage-review-cards-manage-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-new-review-cards-new-main",
+      "manualPageId": "review_card_new",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_new 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/new",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_new 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_new 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-new-review-cards-new-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--23--route-review-card-new-review-cards-new-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-single-study-review-cards-id-study-main",
+      "manualPageId": "review_card_single_study",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_single_study 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_single_study 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_single_study 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-single-study-review-cards-id-study-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--19--route-review-card-single-study-review-cards-id-study-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-statistics-review-cards-statistics-main",
+      "manualPageId": "review_card_statistics",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_statistics 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/statistics",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_statistics 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_statistics 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-statistics-review-cards-statistics-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--24--route-review-card-statistics-review-cards-statistics-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-study-review-cards-study-main",
+      "manualPageId": "review_card_study",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_study 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/study",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_study 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_study 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-study-review-cards-study-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--25--route-review-card-study-review-cards-study-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-task-link-review-cards-link-main",
+      "manualPageId": "review_card_task_link",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_task_link 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/link",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_task_link 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_task_link 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-task-link-review-cards-link-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--21--route-review-card-task-link-review-cards-link-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-temp-import-card-review-cards-temp-imports-tempdeckid-main",
+      "manualPageId": "review_card_temp_import_card",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_temp_import_card 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_temp_import_card 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_temp_import_card 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-temp-import-card-review-cards-temp-imports-tempdeckid-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--27--route-review-card-temp-import-card-review-cards-temp-imports-tempdeckid-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-review-card-temp-import-list-review-cards-temp-imports-main",
+      "manualPageId": "review_card_temp_import_list",
+      "docType": "How-to",
+      "readerGoal": "记录 review_card_temp_import_list 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/review-cards/temp-imports",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 review_card_temp_import_list 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 review_card_temp_import_list 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-review-card-temp-import-list-review-cards-temp-imports-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--26--route-review-card-temp-import-list-review-cards-temp-imports-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-search-main",
+      "manualPageId": "search",
+      "docType": "Reference",
+      "readerGoal": "记录 search 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/search",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 search 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 search 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-search-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--09--route-search-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-server-key-recovery-settings-server-key-recovery-main",
+      "manualPageId": "server_key_recovery",
+      "docType": "Reference",
+      "readerGoal": "记录 server_key_recovery 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/server-key-recovery",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 server_key_recovery 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 server_key_recovery 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-server-key-recovery-settings-server-key-recovery-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--50--route-server-key-recovery-settings-server-key-recovery-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-settings-daily-journal-prompt-main",
+      "manualPageId": "/settings/daily-journal-prompt",
+      "docType": "Reference",
+      "readerGoal": "记录 /settings/daily-journal-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/daily-journal-prompt",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 /settings/daily-journal-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 /settings/daily-journal-prompt 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-settings-daily-journal-prompt-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--37--route-settings-daily-journal-prompt-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-settings-domain-values-prompt-main",
+      "manualPageId": "/settings/domain-values-prompt",
+      "docType": "Reference",
+      "readerGoal": "记录 /settings/domain-values-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/domain-values-prompt",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 /settings/domain-values-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 /settings/domain-values-prompt 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-settings-domain-values-prompt-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--43--route-settings-domain-values-prompt-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-settings-main",
+      "manualPageId": "settings",
+      "docType": "Reference",
+      "readerGoal": "记录 settings 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 settings 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 settings 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-settings-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--28--route-settings-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-settings-review-prompt-main",
+      "manualPageId": "/settings/review-prompt",
+      "docType": "Reference",
+      "readerGoal": "记录 /settings/review-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/review-prompt",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 /settings/review-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 /settings/review-prompt 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-settings-review-prompt-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--48--route-settings-review-prompt-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-settings-review-questionnaire-main",
+      "manualPageId": "/settings/review-questionnaire",
+      "docType": "Reference",
+      "readerGoal": "记录 /settings/review-questionnaire 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/review-questionnaire",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 /settings/review-questionnaire 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 /settings/review-questionnaire 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-settings-review-questionnaire-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--49--route-settings-review-questionnaire-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-settings-test-data-main",
+      "manualPageId": "settings_test_data",
+      "docType": "Reference",
+      "readerGoal": "记录 settings_test_data 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/test-data",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 settings_test_data 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 settings_test_data 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-settings-test-data-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--52--route-settings-test-data-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-settings-test-diagnostics-main",
+      "manualPageId": "settings_test_diagnostics",
+      "docType": "Reference",
+      "readerGoal": "记录 settings_test_diagnostics 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/test-diagnostics",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 settings_test_diagnostics 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 settings_test_diagnostics 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-settings-test-diagnostics-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--53--route-settings-test-diagnostics-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-settings-weekly-review-prompt-main",
+      "manualPageId": "/settings/weekly-review-prompt",
+      "docType": "Reference",
+      "readerGoal": "记录 /settings/weekly-review-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/weekly-review-prompt",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 /settings/weekly-review-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 /settings/weekly-review-prompt 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-settings-weekly-review-prompt-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--57--route-settings-weekly-review-prompt-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-settings-work-learning-report-prompt-main",
+      "manualPageId": "/settings/work-learning-report-prompt",
+      "docType": "Reference",
+      "readerGoal": "记录 /settings/work-learning-report-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/work-learning-report-prompt",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 /settings/work-learning-report-prompt 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 /settings/work-learning-report-prompt 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-settings-work-learning-report-prompt-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--58--route-settings-work-learning-report-prompt-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-statistics-main",
+      "manualPageId": "statistics",
+      "docType": "Reference",
+      "readerGoal": "记录 statistics 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/statistics",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 statistics 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 statistics 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-statistics-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--10--route-statistics-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-statistics-root-main",
+      "manualPageId": "statistics",
+      "docType": "Reference",
+      "readerGoal": "记录 statistics 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 statistics 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 statistics 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-statistics-root-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--01--route-statistics-root-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-subscribe-main",
+      "manualPageId": "subscribe",
+      "docType": "Reference",
+      "readerGoal": "记录 subscribe 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/subscribe",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 subscribe 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 subscribe 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-subscribe-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--11--route-subscribe-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-sync-device-join-settings-sync-device-join-main",
+      "manualPageId": "sync_device_join",
+      "docType": "Reference",
+      "readerGoal": "记录 sync_device_join 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/sync-device-join",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 sync_device_join 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 sync_device_join 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-sync-device-join-settings-sync-device-join-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--51--route-sync-device-join-settings-sync-device-join-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-sync-progress-sync-main",
+      "manualPageId": "sync_progress",
+      "docType": "Reference",
+      "readerGoal": "记录 sync_progress 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/sync",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 sync_progress 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 sync_progress 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-sync-progress-sync-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--12--route-sync-progress-sync-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-sync-vip-upsell-main",
+      "manualPageId": "sync_vip_upsell",
+      "docType": "Reference",
+      "readerGoal": "记录 sync_vip_upsell 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/sync-vip-upsell",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 sync_vip_upsell 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 sync_vip_upsell 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-sync-vip-upsell-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--13--route-sync-vip-upsell-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-task-review-card-add-tasks-taskid-cards-add-main",
+      "manualPageId": "task_review_card_add",
+      "docType": "How-to",
+      "readerGoal": "记录 task_review_card_add 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/tasks?seedTaskSlug=project_tasks_dashboard",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 task_review_card_add 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 task_review_card_add 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-task-review-card-add-tasks-taskid-cards-add-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--60--route-task-review-card-add-tasks-taskid-cards-add-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-task-review-card-layout-edit-tasks-taskid-review-notes-noteid-layout-cardid-main",
+      "manualPageId": "task_review_card_layout_edit",
+      "docType": "How-to",
+      "readerGoal": "记录 task_review_card_layout_edit 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/tasks?seedTaskSlug=project_tasks_dashboard",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 task_review_card_layout_edit 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 task_review_card_layout_edit 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-task-review-card-layout-edit-tasks-taskid-review-notes-noteid-layout-cardid-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--64--route-task-review-card-layout-edit-tasks-taskid-review-notes-noteid-layout-cardid-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-task-review-card-layout-new-tasks-taskid-review-notes-noteid-layout-main",
+      "manualPageId": "task_review_card_layout_new",
+      "docType": "How-to",
+      "readerGoal": "记录 task_review_card_layout_new 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/tasks?seedTaskSlug=project_tasks_dashboard",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 task_review_card_layout_new 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 task_review_card_layout_new 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-task-review-card-layout-new-tasks-taskid-review-notes-noteid-layout-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--63--route-task-review-card-layout-new-tasks-taskid-review-notes-noteid-layout-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-task-review-card-link-tasks-taskid-cards-link-main",
+      "manualPageId": "task_review_card_link",
+      "docType": "How-to",
+      "readerGoal": "记录 task_review_card_link 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/tasks?seedTaskSlug=project_tasks_dashboard",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 task_review_card_link 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 task_review_card_link 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-task-review-card-link-tasks-taskid-cards-link-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--61--route-task-review-card-link-tasks-taskid-cards-link-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-task-review-note-edit-tasks-taskid-review-notes-noteid-edit-main",
+      "manualPageId": "task_review_note_edit",
+      "docType": "How-to",
+      "readerGoal": "记录 task_review_note_edit 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/tasks?seedTaskSlug=project_tasks_dashboard",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 task_review_note_edit 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 task_review_note_edit 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-task-review-note-edit-tasks-taskid-review-notes-noteid-edit-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--62--route-task-review-note-edit-tasks-taskid-review-notes-noteid-edit-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-task-review-note-new-tasks-taskid-review-notes-new-main",
+      "manualPageId": "task_review_note_new",
+      "docType": "How-to",
+      "readerGoal": "记录 task_review_note_new 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/tasks?seedTaskSlug=project_tasks_dashboard",
+      "preferredAccess": "route_then_ui",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 task_review_note_new 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 task_review_note_new 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-task-review-note-new-tasks-taskid-review-notes-new-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--65--route-task-review-note-new-tasks-taskid-review-notes-new-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-tasks-main",
+      "manualPageId": "tasks",
+      "docType": "How-to",
+      "readerGoal": "记录 tasks 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/tasks",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core-or-route-sample",
+      "seedObjectRef": null,
+      "captureIntent": "记录 tasks 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 tasks 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-tasks-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--59--route-tasks-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-trash-main",
+      "manualPageId": "trash",
+      "docType": "Reference",
+      "readerGoal": "记录 trash 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/trash",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 trash 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 trash 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-trash-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--14--route-trash-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
+    },
+    {
+      "id": "route-vip-settings-settings-vip-settings-main",
+      "manualPageId": "vip_settings",
+      "docType": "Reference",
+      "readerGoal": "记录 vip_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/settings/vip-settings",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "captureIntent": "记录 vip_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "记录 vip_settings 页面在 macOS 深色横屏下的真实可见状态",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-vip-settings-settings-vip-settings-main.png",
+      "sourceCandidateId": "manual-route-screenshots-macos--55--route-vip-settings-settings-vip-settings-main.png",
+      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ]
     },
     {
       "id": "review-card-deck-list-main",
@@ -114,7 +3121,8 @@
           "status": "approved"
         }
       },
-      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth.",
+      "sourceRunId": "20260704T-review-card-zhcn-recapture-2"
     },
     {
       "id": "review-card-management-main",
@@ -168,13 +3176,14 @@
           "status": "approved"
         }
       },
-      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth.",
+      "sourceRunId": "20260704T-review-card-zhcn-recapture-2"
     },
     {
-      "id": "review-card-study-domain-garden-question",
-      "manualPageId": "review-card-study-domain-garden",
-      "docType": "Tutorial",
-      "readerGoal": "卡片复习问题聚焦页面",
+      "id": "review-card-statistics-main",
+      "manualPageId": "review-card-statistics",
+      "docType": "Reference",
+      "readerGoal": "卡片统计页面",
       "route": null,
       "locale": "zh_CN",
       "platform": "macos",
@@ -182,12 +3191,12 @@
       "orientation": "landscape",
       "viewport": "1280x800",
       "stateKey": "seeded-local-review-cards",
-      "seedObjectRef": "card_domain_garden_manual_screenshot",
-      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/review-card-study-domain-garden-question.png",
-      "sourceCandidateId": "review-card-manual-screenshots-macos--04--step.png",
+      "seedObjectRef": null,
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/review-card-statistics-main.png",
+      "sourceCandidateId": "review-card-manual-screenshots-macos--01--step.png",
       "imageReviewVerdict": "pass",
       "documentationReviewVerdict": "usable",
-      "worthScore": 9,
+      "worthScore": 8,
       "recaptureTriggers": [
         "app-route-change",
         "seed-change",
@@ -196,7 +3205,7 @@
       ],
       "promotionStatus": "approved",
       "preferredAccess": "ui_path",
-      "uiPath": "安装手册 seed -> 进入卡片练习 -> 固定卡片 card_domain_garden_manual_screenshot -> 停留问题态。",
+      "uiPath": "侧边栏卡片入口 -> 统计页；优先通过真实 UI 进入，不直接 route 截图。",
       "directRouteEvidence": "not_used_for_promotion",
       "knownFailurePatterns": [
         "direct route may miss seeded state",
@@ -210,19 +3219,20 @@
       ],
       "localeOverrides": {
         "en": {
-          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-study-domain-garden-question.png",
+          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-statistics-main.png",
           "status": "approved"
         },
         "zh-HK": {
-          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-study-domain-garden-question.png",
+          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-statistics-main.png",
           "status": "approved"
         },
         "zh-TW": {
-          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-study-domain-garden-question.png",
+          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-statistics-main.png",
           "status": "approved"
         }
       },
-      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth.",
+      "sourceRunId": "20260704T-review-card-zhcn-recapture-2"
     },
     {
       "id": "review-card-study-domain-garden",
@@ -276,13 +3286,14 @@
           "status": "approved"
         }
       },
-      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth.",
+      "sourceRunId": "20260704T-review-card-zhcn-recapture-2"
     },
     {
-      "id": "review-card-study-note-panel",
-      "manualPageId": "review-card-study-note",
+      "id": "review-card-study-domain-garden-question",
+      "manualPageId": "review-card-study-domain-garden",
       "docType": "Tutorial",
-      "readerGoal": "卡片复习笔记面板",
+      "readerGoal": "卡片复习问题聚焦页面",
       "route": null,
       "locale": "zh_CN",
       "platform": "macos",
@@ -290,12 +3301,12 @@
       "orientation": "landscape",
       "viewport": "1280x800",
       "stateKey": "seeded-local-review-cards",
-      "seedObjectRef": null,
-      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/review-card-study-note-panel.png",
-      "sourceCandidateId": "review-card-manual-screenshots-macos--06--step.png",
+      "seedObjectRef": "card_domain_garden_manual_screenshot",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/review-card-study-domain-garden-question.png",
+      "sourceCandidateId": "review-card-manual-screenshots-macos--04--step.png",
       "imageReviewVerdict": "pass",
       "documentationReviewVerdict": "usable",
-      "worthScore": 8,
+      "worthScore": 9,
       "recaptureTriggers": [
         "app-route-change",
         "seed-change",
@@ -304,7 +3315,7 @@
       ],
       "promotionStatus": "approved",
       "preferredAccess": "ui_path",
-      "uiPath": "安装手册 seed -> 进入卡片练习 -> 固定卡片 -> 打开笔记/来源面板。",
+      "uiPath": "安装手册 seed -> 进入卡片练习 -> 固定卡片 card_domain_garden_manual_screenshot -> 停留问题态。",
       "directRouteEvidence": "not_used_for_promotion",
       "knownFailurePatterns": [
         "direct route may miss seeded state",
@@ -318,19 +3329,20 @@
       ],
       "localeOverrides": {
         "en": {
-          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-study-note-panel.png",
+          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-study-domain-garden-question.png",
           "status": "approved"
         },
         "zh-HK": {
-          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-study-note-panel.png",
+          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-study-domain-garden-question.png",
           "status": "approved"
         },
         "zh-TW": {
-          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-study-note-panel.png",
+          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-study-domain-garden-question.png",
           "status": "approved"
         }
       },
-      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth.",
+      "sourceRunId": "20260704T-review-card-zhcn-recapture-2"
     }
   ]
 }

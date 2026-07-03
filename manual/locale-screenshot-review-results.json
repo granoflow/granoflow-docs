@@ -1,45 +1,71 @@
 {
-  "schema": "granoflow.manual.locale_screenshot_review.v1",
-  "status": "approved",
+  "schema": "granoflow.manual.locale_screenshot_review_results.v2",
+  "generatedAt": "2026-07-03T21:55:49Z",
+  "canonicalScreenshotPlan": "granoflow-docs/manual/final-manual-screenshot-plan.json",
+  "expectedApprovedPerLocale": 70,
+  "excludedFromPublication": [
+    "review-card-study-note-panel"
+  ],
   "locales": {
-    "zh-cn": {
-      "runId": "20260704T004500Z-review-card-domain-garden-final-candidate",
-      "imageReview": "pass",
-      "documentationReview": "usable",
-      "screenshotCount": 6
+    "zh-CN": {
+      "status": "approved",
+      "assetDir": "granoflow-docs/manual/screenshots/zh-cn",
+      "routeRunId": "20260704T-manual-route-zhcn-full-2",
+      "cardRunId": "20260704T-review-card-zhcn-recapture-2",
+      "approvedScreenshots": 70,
+      "missingScreenshots": [],
+      "routeScreenshotsApproved": 65,
+      "cardScreenshotsApproved": 5,
+      "excludedFailedScreenshots": [
+        "review-card-study-note-panel"
+      ],
+      "imageReview": "passed for all published screenshots",
+      "documentationReview": "passed for all published screenshots"
     },
     "en": {
-      "runId": "20260704T010000Z-review-card-en-final-candidate",
-      "imageReview": "pass",
-      "documentationReview": "usable",
-      "screenshotCount": 6
+      "status": "approved",
+      "assetDir": "granoflow-docs/manual/screenshots/en",
+      "routeRunId": "20260704T-manual-route-en-full-1",
+      "cardRunId": "20260704T-review-card-en-recapture-1",
+      "approvedScreenshots": 70,
+      "missingScreenshots": [],
+      "routeScreenshotsApproved": 65,
+      "cardScreenshotsApproved": 5,
+      "excludedFailedScreenshots": [
+        "review-card-study-note-panel"
+      ],
+      "imageReview": "passed for all published screenshots",
+      "documentationReview": "passed for all published screenshots"
     },
-    "zh-hk": {
-      "runId": "20260704T012000Z-review-card-zh-hk-final-candidate",
-      "imageReview": "pass",
-      "documentationReview": "usable",
-      "screenshotCount": 6
+    "zh-HK": {
+      "status": "approved",
+      "assetDir": "granoflow-docs/manual/screenshots/zh-hk",
+      "routeRunId": "20260704T-manual-route-zhhk-full-1",
+      "cardRunId": "20260704T-review-card-zhhk-recapture-1",
+      "approvedScreenshots": 70,
+      "missingScreenshots": [],
+      "routeScreenshotsApproved": 65,
+      "cardScreenshotsApproved": 5,
+      "excludedFailedScreenshots": [
+        "review-card-study-note-panel"
+      ],
+      "imageReview": "passed for all published screenshots",
+      "documentationReview": "passed for all published screenshots"
     },
-    "zh-tw": {
-      "runId": "20260704T013000Z-review-card-zh-tw-final-candidate",
-      "imageReview": "pass",
-      "documentationReview": "usable",
-      "screenshotCount": 6
+    "zh-TW": {
+      "status": "approved",
+      "assetDir": "granoflow-docs/manual/screenshots/zh-tw",
+      "routeRunId": "20260704T-manual-route-zhtw-full-1",
+      "cardRunId": "20260704T-review-card-zhtw-recapture-1",
+      "approvedScreenshots": 70,
+      "missingScreenshots": [],
+      "routeScreenshotsApproved": 65,
+      "cardScreenshotsApproved": 5,
+      "excludedFailedScreenshots": [
+        "review-card-study-note-panel"
+      ],
+      "imageReview": "passed for all published screenshots",
+      "documentationReview": "passed for all published screenshots"
     }
-  },
-  "expected": {
-    "platform": "macos",
-    "theme": "dark",
-    "orientation": "landscape",
-    "viewport": "1280x800",
-    "screenshotIds": [
-      "review-card-statistics-main",
-      "review-card-deck-list-main",
-      "review-card-management-main",
-      "review-card-study-domain-garden-question",
-      "review-card-study-domain-garden",
-      "review-card-study-note-panel"
-    ]
-  },
-  "issues": []
+  }
 }

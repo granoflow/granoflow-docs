@@ -1,36 +1,105 @@
 ---
 title: "記憶卡片：把經驗練到下次能想起"
-description: "學習卡片練習、統計、卡組、管理和筆記面板。"
+description: "完成一次卡片練習，並認識統計、卡組、管理和匯入頁。"
 docType: "Tutorial"
-readerGoal: "學習卡片練習、統計、卡組、管理和筆記面板。"
+readerGoal: "讀完後能知道本頁入口、主要狀態、下一步和邊界。"
+sources:
+  - "granoflow-docs/manual/final-manual-screenshot-plan.json"
+  - "docs-temp/plans/73-granoflow-manual-rewrite-screenshot-i18n-publish-v02.md"
 ---
 
-記憶卡片是 GranoFlow 把經驗帶回未來行動的方式。它不是要求你背誦每句話，而是讓一個判斷、問題或提醒在下一次工作時更容易想起。
+記憶卡片把值得重用的經驗變成日後能再次提取的問題。重點不是背誦每個字，而是在下一次遇到類似任務時，更容易想起那個判斷。
 
-## 先完成一次卡片學習
+這頁使用固定 seed 卡片「甚麼是領域？」。所有語言版本都用同一張卡片的本地化內容，避免隨機隊列令截圖和正文對不上。
 
-這張示例卡片問的是「什麼是領域？」。領域可以理解為你長期在照顧的生活或工作方向，例如工作、學習、關係、身體和休閒。
+## 從哪裡開始
 
-![卡片練習的問題狀態：頁面中央顯示「什麼是領域？」，答案仍然隱藏。](../../../screenshots/zh-hk/review-card-study-domain-garden-question.png)
+從卡片練習頁開始。先看問題，不急着看答案。
 
-1. 打開卡片練習頁面後，先只看問題。
-2. 先用自己的話回答，不急着看答案。
-3. 點擊 **顯示答案**。
+## 怎樣使用
 
-頁面會進入答案狀態。
+1. 確認目前頁面是不是你要處理的工作流入口。
+2. 先完成最小動作，再觀察頁面狀態變化。
+3. 把需要長期保存的判斷寫回任務、項目、回顧或卡片。
 
-![卡片練習的答案狀態：頁面顯示領域說明，底部有評分按鈕。](../../../screenshots/zh-hk/review-card-study-domain-garden.png)
+一次卡片練習的關鍵是先提取，再看答案，最後按真實熟悉程度評分。
 
-評分只是記錄這一次提取答案的感覺：遺忘、勉強、記得或輕鬆。選貼近真實感受的一項，比選漂亮分數更有用。
+## 截圖證據
 
-## 統計與管理
+下面的截圖用來確認這個頁面的入口和主要狀態。
 
-![卡片統計頁面顯示總卡片數、今日練習和不同學習狀態。](../../../screenshots/zh-hk/review-card-statistics-main.png)
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-study-domain-garden-question`，對應入口 `review-card-study-domain-garden`。
 
-![卡組管理頁面顯示卡組列表和匯入入口。](../../../screenshots/zh-hk/review-card-deck-list-main.png)
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-study-domain-garden-question`，對應入口 `review-card-study-domain-garden`。](../../../screenshots/zh-hk/review-card-study-domain-garden-question.png)
 
-![卡片管理頁面顯示搜尋、主動複習和已歸檔區域。](../../../screenshots/zh-hk/review-card-management-main.png)
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-study-domain-garden`，對應入口 `review-card-study-domain`。
 
-![卡片練習中的筆記面板顯示目前卡片關聯的筆記。](../../../screenshots/zh-hk/review-card-study-note-panel.png)
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-study-domain-garden`，對應入口 `review-card-study-domain`。](../../../screenshots/zh-hk/review-card-study-domain-garden.png)
 
-看整體狀態用統計頁；按集合整理用卡組列表；找單張卡片用卡片管理；需要來源語境時，在學習頁打開筆記面板。
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-statistics-main`，對應入口 `review-card-statistics`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-statistics-main`，對應入口 `review-card-statistics`。](../../../screenshots/zh-hk/review-card-statistics-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-deck-list-main`，對應入口 `review-card-deck-list`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-deck-list-main`，對應入口 `review-card-deck-list`。](../../../screenshots/zh-hk/review-card-deck-list-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-management-main`，對應入口 `review-card-management`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `review-card-management-main`，對應入口 `review-card-management`。](../../../screenshots/zh-hk/review-card-management-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-study-review-cards-study-main`，對應入口 `/review-cards/study`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-study-review-cards-study-main`，對應入口 `/review-cards/study`。](../../../screenshots/zh-hk/route-review-card-study-review-cards-study-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-single-study-review-cards-id-study-main`，對應入口 `/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-single-study-review-cards-id-study-main`，對應入口 `/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot`。](../../../screenshots/zh-hk/route-review-card-single-study-review-cards-id-study-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-statistics-review-cards-statistics-main`，對應入口 `/review-cards/statistics`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-statistics-review-cards-statistics-main`，對應入口 `/review-cards/statistics`。](../../../screenshots/zh-hk/route-review-card-statistics-review-cards-statistics-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-deck-list-review-cards-decks-main`，對應入口 `/review-cards/decks`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-deck-list-review-cards-decks-main`，對應入口 `/review-cards/decks`。](../../../screenshots/zh-hk/route-review-card-deck-list-review-cards-decks-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-manage-review-cards-manage-main`，對應入口 `/review-cards/manage`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-manage-review-cards-manage-main`，對應入口 `/review-cards/manage`。](../../../screenshots/zh-hk/route-review-card-manage-review-cards-manage-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-detail-review-cards-id-main`，對應入口 `/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-detail-review-cards-id-main`，對應入口 `/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot`。](../../../screenshots/zh-hk/route-review-card-detail-review-cards-id-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-edit-review-cards-id-edit-main`，對應入口 `/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-edit-review-cards-id-edit-main`，對應入口 `/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot`。](../../../screenshots/zh-hk/route-review-card-edit-review-cards-id-edit-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-new-review-cards-new-main`，對應入口 `/review-cards/new`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-new-review-cards-new-main`，對應入口 `/review-cards/new`。](../../../screenshots/zh-hk/route-review-card-new-review-cards-new-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-task-link-review-cards-link-main`，對應入口 `/review-cards/link`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-task-link-review-cards-link-main`，對應入口 `/review-cards/link`。](../../../screenshots/zh-hk/route-review-card-task-link-review-cards-link-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-temp-import-list-review-cards-temp-imports-main`，對應入口 `/review-cards/temp-imports`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-temp-import-list-review-cards-temp-imports-main`，對應入口 `/review-cards/temp-imports`。](../../../screenshots/zh-hk/route-review-card-temp-import-list-review-cards-temp-imports-main.png)
+
+這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-temp-import-card-review-cards-temp-imports-tempdeckid-main`，對應入口 `/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot`。
+
+![這張圖已通過 macOS 深色橫屏截圖評審。 截圖 ID `route-review-card-temp-import-card-review-cards-temp-imports-tempdeckid-main`，對應入口 `/review-cards/test-data-card%3Acard_domain_garden_manual_screenshot`。](../../../screenshots/zh-hk/route-review-card-temp-import-card-review-cards-temp-imports-tempdeckid-main.png)
+
+## 完成後會怎樣
+
+讀完這一頁後，你應該能判斷自己在看哪一個頁面、目前狀態是否正常，以及下一步應該進入哪個相鄰工作流。
+
+## 邊界
+
+不要把截圖當成功能承諾。截圖只證明目前 macOS、深色、橫屏、測試 seed 下的可見狀態。賬號、訂閱、同步、AI 或外部工具相關頁面，仍要結合你的權限和本機狀態判斷。
+
+## 下一步
+
+如果你已理解本頁的角色，下一步繼續讀： [設置與個人化](../settings/)

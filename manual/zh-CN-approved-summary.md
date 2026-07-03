@@ -1,37 +1,16 @@
 # zh-CN Approved Summary
 
-- Truth source: `manual/docs/**` root locale pages
-- Screenshot plan: `manual/final-manual-screenshot-plan.json`
-- Locale: zh-CN
-- Status: approved
+- Generated: 2026-07-03T21:56:24Z
+- Approval status: `approved`
+- zh-CN page count: 10
+- Canonical screenshot IDs: 70
+- Published screenshot IDs per locale: 70
+- Excluded failed screenshot IDs: review-card-study-note-panel
 
-## Coverage
+## Gate Result
 
-The zh-CN truth source now covers the new manual architecture:
-
-- manual home
-- getting started mental model
-- tasks
-- projects and milestones
-- review
-- review cards
-- data, safety, and recovery
-- desktop and local interfaces
-- troubleshooting
-
-Only the review-card page uses screenshots in this release. Those screenshots all come from approved stable screenshot IDs in `final-manual-screenshot-plan.json`.
+The Simplified Chinese manual source under `manual/docs/**` is approved as the truth source for EN / zh-HK / zh-TW localization. The source references only screenshots present in `final-manual-screenshot-plan.json`; no run-folder, candidate, timestamped, or note-panel screenshot is referenced.
 
 ## Risk Boundary
 
-The manual avoids medical, diagnosis, therapy, legal, compliance, and outcome-guarantee language. Psychology-related ideas are expressed only as low-risk product behavior: record, review, organize, and choose a next step.
-
-## Reader Testing
-
-- A new reader can choose a starting path from the manual home page.
-- A new reader can understand the relationship between tasks, projects, review, and cards.
-- A new reader can complete the review-card tutorial from question state to answer state.
-- Troubleshooting tells the reader not to publish single-line error screenshots and not to start by deleting local data.
-
-## Approval Result
-
-`manual-zh-approval-review` result: `approved`. The zh-CN root locale pages in `manual/docs/**` can be used as the source for EN, zh-HK, and zh-TW.
+The text avoids medical, legal, compliance, treatment, diagnosis, guaranteed productivity, guaranteed wellbeing, and other professional-result claims. Product behavior is described as recording, organizing, reviewing, planning, backing up, syncing, and choosing next steps.

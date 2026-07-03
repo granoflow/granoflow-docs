@@ -1,23 +1,87 @@
 ---
-title: "数据、安全与恢复：先知道数据在哪里"
-description: "理解本地优先、同步、备份和恢复的边界。"
+title: "数据、安全与恢复：先知道真相源在哪里"
+description: "理解本地优先、账号、同步、备份、恢复和数据清理边界。"
 docType: "Explanation"
-readerGoal: "知道什么时候依赖本机、什么时候需要同步和备份。"
+readerGoal: "读完后能知道本页入口、主要状态、下一步和边界。"
+sources:
+  - "granoflow-docs/manual/final-manual-screenshot-plan.json"
+  - "docs-temp/plans/73-granoflow-manual-rewrite-screenshot-i18n-publish-v02.md"
 ---
 
-GranoFlow 的数据说明必须先讲清一件事：你看到的任务、项目、回顾和卡片，首先服务于当前设备上的使用体验。同步、备份和恢复是为了让数据更安全、更容易迁移，而不是让你忽略本机数据状态。
+数据相关操作的第一条原则很简单：先知道当前真相源在哪里。你看到的数据首先来自当前设备；同步、备份和恢复是为了延续使用，而不是让你忽略本地状态。
 
-## 本地优先是什么意思
+遇到同步或恢复问题时，不要把“清空本地数据”当成第一步。先保留现场，再看账号、备份、同步和恢复入口。
 
-本地优先意味着 App 会尽量让你在当前设备上持续使用。它不等于“永远不需要备份”，也不等于“云端一定保存所有内容”。如果你在意长期保存，应主动了解备份、恢复和同步状态。
+## 从哪里开始
 
-## 使用建议
+先从侧边栏、设置页或当前工作流入口进入，不要直接依赖记忆中的旧路径。
 
-- 重要数据定期备份。
-- 换设备前先确认同步或备份是否完成。
-- 看到同步异常时，不要急着清空本地数据。
-- 删除账号、重置设备、恢复备份前，先确认自己理解影响范围。
+## 怎么做
+
+1. 确认当前页面是不是你要处理的工作流入口。
+2. 先完成最小动作，再观察页面状态变化。
+3. 把需要长期保存的判断写回任务、项目、回顾或卡片。
+
+## 截图证据
+
+下面的截图用于确认这个页面的入口和主要状态。
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-account-main`，对应入口 `/account`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-account-main`，对应入口 `/account`。](../../screenshots/zh-cn/route-account-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-account-recovery-main`，对应入口 `/account-recovery`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-account-recovery-main`，对应入口 `/account-recovery`。](../../screenshots/zh-cn/route-account-recovery-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-data-management-settings-data-management-main`，对应入口 `/settings/data-management`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-data-management-settings-data-management-main`，对应入口 `/settings/data-management`。](../../screenshots/zh-cn/route-data-management-settings-data-management-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-local-backup-progress-settings-data-management-progress-main`，对应入口 `/settings/data-management/progress`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-local-backup-progress-settings-data-management-progress-main`，对应入口 `/settings/data-management/progress`。](../../screenshots/zh-cn/route-local-backup-progress-settings-data-management-progress-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-clear-attachments-settings-clear-attachments-main`，对应入口 `/settings/clear-attachments`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-clear-attachments-settings-clear-attachments-main`，对应入口 `/settings/clear-attachments`。](../../screenshots/zh-cn/route-clear-attachments-settings-clear-attachments-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-sync-progress-sync-main`，对应入口 `/sync`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-sync-progress-sync-main`，对应入口 `/sync`。](../../screenshots/zh-cn/route-sync-progress-sync-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-sync-device-join-settings-sync-device-join-main`，对应入口 `/settings/sync-device-join`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-sync-device-join-settings-sync-device-join-main`，对应入口 `/settings/sync-device-join`。](../../screenshots/zh-cn/route-sync-device-join-settings-sync-device-join-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-sync-vip-upsell-main`，对应入口 `/sync-vip-upsell`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-sync-vip-upsell-main`，对应入口 `/sync-vip-upsell`。](../../screenshots/zh-cn/route-sync-vip-upsell-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-cloud-key-takeover-settings-cloud-key-takeover-main`，对应入口 `/settings/cloud-key-takeover`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-cloud-key-takeover-settings-cloud-key-takeover-main`，对应入口 `/settings/cloud-key-takeover`。](../../screenshots/zh-cn/route-cloud-key-takeover-settings-cloud-key-takeover-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-server-key-recovery-settings-server-key-recovery-main`，对应入口 `/settings/server-key-recovery`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-server-key-recovery-settings-server-key-recovery-main`，对应入口 `/settings/server-key-recovery`。](../../screenshots/zh-cn/route-server-key-recovery-settings-server-key-recovery-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-ai-redaction-settings-settings-ai-redaction-main`，对应入口 `/settings/ai-redaction`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-ai-redaction-settings-settings-ai-redaction-main`，对应入口 `/settings/ai-redaction`。](../../screenshots/zh-cn/route-ai-redaction-settings-settings-ai-redaction-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-ai-redaction-terms-settings-vip-ai-redaction-terms-main`，对应入口 `/settings/vip-ai-redaction-terms`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-ai-redaction-terms-settings-vip-ai-redaction-terms-main`，对应入口 `/settings/vip-ai-redaction-terms`。](../../screenshots/zh-cn/route-ai-redaction-terms-settings-vip-ai-redaction-terms-main.png)
+
+## 做完后会怎样
+
+读完这一页后，你应该能判断自己在看哪一个页面、当前状态是否正常，以及下一步应该进入哪个相邻工作流。
 
 ## 边界
 
-手册不会承诺绝对安全、绝不丢失或一定恢复。它只说明产品提供的入口和你应该检查的状态。遇到异常时，先保留现场，再按排查章节处理。
+不要把截图当成功能承诺。截图只证明当前 macOS、深色、横屏、测试 seed 下的可见状态。账号、订阅、同步、AI 或外部工具相关页面还要结合你自己的权限和本机状态判断。
+
+## 下一步
+
+如果你已经理解本页的角色，下一步继续读： [桌面端与本地接口](../desktop-local-api/)

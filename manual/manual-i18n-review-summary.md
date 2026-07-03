@@ -1,26 +1,19 @@
 # Manual I18n Review Summary
 
-## Chinese Truth Source
+- Generated: 2026-07-03T21:56:24Z
+- Source truth: `zh-CN` approved by `manual-zh-approval-review`
+- Target locales: `en`, `zh-HK`, `zh-TW`
+- Page count per locale: zh-CN 10, en 10, zh-HK 10, zh-TW 10
+- Screenshot references per locale: zh-CN 70, en 70, zh-HK 70, zh-TW 70
+- Screenshot ID parity: {"zh-cn": true, "en": true, "zh-hk": true, "zh-tw": true}
 
-- Source: `manual/docs/**` root locale pages
-- Approval: `manual-zh-approval-review` returned `approved`
-- Screenshot plan: `manual/final-manual-screenshot-plan.json`
+## Review Result
 
-## Locales
+All target locale pages are derived from the approved zh-CN structure and keep the same screenshot ID set. Paths switch only the locale directory segment and retain the stable `<id>.png` filename.
 
-- EN: `manual/docs/en/**`
-- zh-HK: `manual/docs/zh-hk/**`
-- zh-TW: `manual/docs/zh-tw/**`
+## Locale Notes
 
-## Translation Notes
-
-- `GranoFlow` and screenshot IDs were not translated.
-- Image filenames remain `<id>.png`.
-- Locale image directories are changed only by locale segment: `zh-cn`, `en`, `zh-hk`, `zh-tw`.
-- No run folder, timestamped candidate, or temporary screenshot path is referenced by the manuals.
-- No medical, diagnosis, therapy, legal, compliance, or outcome-guarantee wording was introduced.
-- zh-HK uses `項目`; zh-TW uses `專案`.
-
-## Screenshot Recapture
-
-All published review-card screenshots have locale assets and passed locale screenshot review. Other pages are text-only until their screenshots are captured and reviewed.
+- `project`: zh-HK uses `項目`; zh-TW uses `專案`.
+- `settings`: zh-HK uses `設置`; zh-TW uses `設定`.
+- `data`: zh-HK uses `數據`; zh-TW uses `資料`.
+- No target page references `review-card-study-note-panel`.

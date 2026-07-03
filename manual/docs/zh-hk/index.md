@@ -1,25 +1,31 @@
 ---
 title: "GranoFlow 手冊"
-description: "從任務、項目、回顧、記憶卡片、數據安全和桌面能力理解 GranoFlow。"
+description: "按任務、項目、回顧、卡片、設置和數據邊界學習 GranoFlow。"
 docType: "Tutorial"
-readerGoal: "從任務、項目、回顧、記憶卡片、數據安全和桌面能力理解 GranoFlow。"
+readerGoal: "讀完後能知道本頁入口、主要狀態、下一步和邊界。"
+sources:
+  - "granoflow-docs/manual/final-manual-screenshot-plan.json"
+  - "docs-temp/plans/73-granoflow-manual-rewrite-screenshot-i18n-publish-v02.md"
 ---
 
-GranoFlow 把任務、項目、回顧和記憶卡片放在同一條工作流裡。你可以先把要做的事收進任務，再把較長週期的工作放進項目和里程碑；完成之後，用回顧和卡片把經驗留下來。
+GranoFlow 不是把任務、項目、回顧和卡片分成四個孤立工具，而是把它們接成一條工作流：先把事情收進來，再放回項目和領域；推進之後，用回顧留下判斷；值得重用的經驗，再進入記憶卡片。
 
-這版手冊按新的文檔架構重寫，不複製已廢棄的舊手冊，也不引用舊截圖。已通過評審的截圖會放進正文；尚未進入截圖計劃的頁面，只寫可核驗的操作和邊界。
+這版手冊按目前 macOS 應用、深色橫屏截圖和 `final-manual-screenshot-plan.json` 重寫。舊手冊只用作覆蓋檢查，不作為新正文來源。
 
-## 建議閱讀順序
+## 閱讀路徑
 
-1. [先建立整體心智模型](getting-started/overview/)。
-2. [把事情放進任務](tasks/)。
-3. [用項目承載較長週期的工作](projects/)。
-4. [用回顧留下經驗](review/)。
-5. [用記憶卡片復用經驗](review-cards/)。
-6. [理解數據、安全與恢復](data-security/)。
-7. [使用桌面能力和本地接口](desktop-local-api/)。
-8. [遇到問題時先排查](troubleshooting/)。
+1. 先讀 [GranoFlow 在解決什麼問題](getting-started/overview/)，建立整體心智模型。
+2. 再讀 [任務](tasks/)，把事情變成可以推進的下一步。
+3. 接着讀 [項目與領域](projects/)，把任務放回長期結構。
+4. 讀 [回顧](review/)，學習怎樣保留完成過程裡的判斷。
+5. 用 [記憶卡片](review-cards/) 完成一次練習。
+6. 按需要查 [設置](settings/)、[數據安全](data-security/) 和 [桌面接口](desktop-local-api/)。
+7. 遇到異常時，先看 [排查順序](troubleshooting/)。
 
-## 當前截圖範圍
+## 這本手冊怎樣使用截圖
 
-目前公開截圖只覆蓋記憶卡片鏈路。其他章節會在截圖、圖片正常性評審和文檔可用性評審通過後再補圖。
+只有通過圖片正常性評審和文檔可用性評審的截圖才進入正文。截圖不是裝飾，它必須幫你確認入口、狀態、結果或風險邊界。
+
+## 下一步
+
+如果你已理解本頁的角色，下一步繼續讀： [先理解 GranoFlow 在解決什麼問題](getting-started/overview/)

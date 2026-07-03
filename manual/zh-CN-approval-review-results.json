@@ -1,64 +1,10 @@
 {
-  "schema": "granoflow.manual.zh_approval_review.v1",
+  "schema": "manual.zh_approval_review.v1",
   "status": "approved",
-  "truthSource": "manual/docs/** root locale pages",
-  "screenshotPlan": "manual/final-manual-screenshot-plan.json",
-  "revisionRounds": 1,
-  "pages": [
-    {
-      "path": "docs/data-security/index.md",
-      "status": "approved",
-      "hasTitle": true,
-      "imageRefs": 0
-    },
-    {
-      "path": "docs/desktop-local-api/index.md",
-      "status": "approved",
-      "hasTitle": true,
-      "imageRefs": 0
-    },
-    {
-      "path": "docs/getting-started/overview.md",
-      "status": "approved",
-      "hasTitle": true,
-      "imageRefs": 0
-    },
-    {
-      "path": "docs/index.md",
-      "status": "approved",
-      "hasTitle": true,
-      "imageRefs": 0
-    },
-    {
-      "path": "docs/projects/index.md",
-      "status": "approved",
-      "hasTitle": true,
-      "imageRefs": 0
-    },
-    {
-      "path": "docs/review/index.md",
-      "status": "approved",
-      "hasTitle": true,
-      "imageRefs": 0
-    },
-    {
-      "path": "docs/review-cards/index.md",
-      "status": "approved",
-      "hasTitle": true,
-      "imageRefs": 6
-    },
-    {
-      "path": "docs/tasks/index.md",
-      "status": "approved",
-      "hasTitle": true,
-      "imageRefs": 0
-    },
-    {
-      "path": "docs/troubleshooting/index.md",
-      "status": "approved",
-      "hasTitle": true,
-      "imageRefs": 0
-    }
-  ],
+  "manualRoot": "/Users/will/code/granoflow/granoflow-docs/manual/docs",
+  "screenshotPlan": "/Users/will/code/granoflow/granoflow-docs/manual/final-manual-screenshot-plan.json",
+  "locale": "zh-CN",
+  "pageCount": 10,
+  "screenshotPlanIds": 70,
   "issues": []
 }

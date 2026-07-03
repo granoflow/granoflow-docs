@@ -1,27 +1,51 @@
 ---
 title: "先理解 GranoFlow 在解决什么问题"
-description: "建立 GranoFlow 的基础心智模型。"
+description: "先建立任务、项目、回顾和卡片之间的心智模型。"
 docType: "Explanation"
-readerGoal: "理解任务、项目、回顾和卡片为什么放在同一个工作流。"
+readerGoal: "读完后能知道本页入口、主要状态、下一步和边界。"
+sources:
+  - "granoflow-docs/manual/final-manual-screenshot-plan.json"
+  - "docs-temp/plans/73-granoflow-manual-rewrite-screenshot-i18n-publish-v02.md"
 ---
 
-很多工具会把“要做什么”和“做完以后学到什么”分开。GranoFlow 的起点不同：它把行动、整理、回看和复用放在一条线上。
+GranoFlow 的核心问题不是“今天要勾掉多少项”，而是“这些行动最后有没有变成更清楚的判断”。如果你只把它当普通待办清单，会错过项目、领域、回顾和卡片之间的关系。
 
-你可以把它理解成四层：
+把它想成一张工作地图：任务是路上的下一步，项目和领域说明你为什么走这条路，回顾记录你走过之后学到什么，卡片帮你下次更快想起。
 
-- **任务**：今天或近期要推进的具体行动。
-- **项目与里程碑**：需要持续推进、分阶段完成的工作。
-- **回顾**：把完成过程里的判断、阻碍和下一步留下来。
-- **记忆卡片**：把值得复用的经验变成以后能再次提取的材料。
+## 从哪里开始
 
-## 一个真实例子
+先从侧边栏、设置页或当前工作流入口进入，不要直接依赖记忆中的旧路径。
 
-假设你正在准备一篇论文或一个产品版本。你不会只需要一条待办。你会先收集想法，再拆成任务；任务逐渐属于某个项目；完成后，你会发现有些判断值得保留，比如“什么时候应该先做实验而不是继续查资料”。这类判断就适合进入回顾或卡片。
+## 怎么做
 
-## 什么时候用
+1. 确认当前页面是不是你要处理的工作流入口。
+2. 先完成最小动作，再观察页面状态变化。
+3. 把需要长期保存的判断写回任务、项目、回顾或卡片。
 
-当一件事只是随手记一下，任务就够了。当它会持续几天或几周，用项目承载更清楚。当你反复遇到同类问题，就应该用回顾和卡片把经验留下来。
+## 截图证据
 
-## 这不是什么
+下面的截图用于确认这个页面的入口和主要状态。
 
-GranoFlow 不承诺让你自动变得高效，也不替你决定人生目标。它能做的是帮助你记录、组织、回看和选择下一步。真正的判断仍然来自你。
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-statistics-root-main`，对应入口 `/`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-statistics-root-main`，对应入口 `/`。](../../screenshots/zh-cn/route-statistics-root-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-statistics-main`，对应入口 `/statistics`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-statistics-main`，对应入口 `/statistics`。](../../screenshots/zh-cn/route-statistics-main.png)
+
+这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-achievements-main`，对应入口 `/achievements`。
+
+![这张图已通过 macOS 深色横屏截图评审。 截图 ID `route-achievements-main`，对应入口 `/achievements`。](../../screenshots/zh-cn/route-achievements-main.png)
+
+## 做完后会怎样
+
+读完这一页后，你应该能判断自己在看哪一个页面、当前状态是否正常，以及下一步应该进入哪个相邻工作流。
+
+## 边界
+
+不要把截图当成功能承诺。截图只证明当前 macOS、深色、横屏、测试 seed 下的可见状态。账号、订阅、同步、AI 或外部工具相关页面还要结合你自己的权限和本机状态判断。
+
+## 下一步
+
+如果你已经理解本页的角色，下一步继续读： [任务](../tasks/)

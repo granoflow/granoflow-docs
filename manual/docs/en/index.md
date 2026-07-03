@@ -1,31 +1,24 @@
 ---
 title: "Granoflow Manual"
-description: "Learn Granoflow through tasks, projects, reflection, cards, settings, and data boundaries."
+description: "A complete path from capturing work to preserving experience."
 docType: "Tutorial"
-readerGoal: "After reading, know the entry point, main state, next step, and boundary."
+readerGoal: "Follow the current macOS manual source and complete the page goal with approved screenshots."
 sources:
   - "granoflow-docs/manual/final-manual-screenshot-plan.json"
   - "docs-temp/plans/73-granoflow-manual-rewrite-screenshot-i18n-publish-v02.md"
 ---
 
-Granoflow is not four separate tools named tasks, projects, reflection, and cards. It connects them into one workflow: capture work, place it back into projects and domains, keep the judgment after progress, and turn reusable experience into review cards.
+The Granoflow manual follows the action loop: capture work, place it in projects and domains, reflect after completion, and turn reusable experience into cards. Read in order or jump to the part that matches where you are stuck.
 
-This edition is written from the current macOS app, dark landscape screenshots, and `final-manual-screenshot-plan.json`. The deprecated manual is used only as a coverage reminder, not as a source for new copy.
+## Reading path
+1. [Start with the whole picture](start-here/)
+2. [Capture and move work forward](capture-work/)
+3. [Shape long-running work with projects and domains](shape-projects/)
+4. [Close the loop with reflection](close-the-loop/)
+5. [Practice experience with cards](practice-cards/)
+6. [Tune rules and prompts](personalize-flow/)
+7. [Manage local data and sync boundaries](protect-data/)
+8. [Connect desktop and local interfaces](connect-desktop/)
+9. [Recover when something looks wrong](recover-when-stuck/)
 
-## Reading Path
-
-1. Start with [what Granoflow is for](getting-started/overview/).
-2. Read [tasks](tasks/) to turn captured work into next steps.
-3. Read [projects and domains](projects/) to put tasks back into structure.
-4. Read [reflection](review/) to keep decisions from finished work.
-5. Complete one practice round in [review cards](review-cards/).
-6. Use [settings](settings/), [data safety](data-security/), and [desktop interfaces](desktop-local-api/) when you need them.
-7. If something looks wrong, start with [troubleshooting](troubleshooting/).
-
-## How Screenshots Are Used
-
-A screenshot appears only after image review and documentation review pass. It is not decoration; it must help you confirm an entry point, state, result, or boundary.
-
-## Next step
-
-When this page makes sense, continue with: [What Granoflow Is For](getting-started/overview/)
+This manual is organized from the current macOS app, dark landscape screenshots, and the final screenshot plan. The copy focuses on current visible pages, real entry points, and approved screenshots.

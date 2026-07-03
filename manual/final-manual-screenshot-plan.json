@@ -32,7 +32,35 @@
         "manual-copy-change",
         "locale-change"
       ],
-      "promotionStatus": "approved"
+      "promotionStatus": "approved",
+      "preferredAccess": "ui_path",
+      "uiPath": "侧边栏卡片入口 -> 统计页；优先通过真实 UI 进入，不直接 route 截图。",
+      "directRouteEvidence": "not_used_for_promotion",
+      "knownFailurePatterns": [
+        "direct route may miss seeded state",
+        "single-line exception or database closed screen must fail image review",
+        "wrong random review card must fail documentation review"
+      ],
+      "recaptureHints": [
+        "install manual seed before capture",
+        "verify macOS dark landscape viewport before capture",
+        "verify fixed card slug card_domain_garden_manual_screenshot for study screenshots"
+      ],
+      "localeOverrides": {
+        "en": {
+          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-statistics-main.png",
+          "status": "approved"
+        },
+        "zh-HK": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-statistics-main.png",
+          "status": "approved"
+        },
+        "zh-TW": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-statistics-main.png",
+          "status": "approved"
+        }
+      },
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
     },
     {
       "id": "review-card-deck-list-main",
@@ -58,7 +86,35 @@
         "manual-copy-change",
         "locale-change"
       ],
-      "promotionStatus": "approved"
+      "promotionStatus": "approved",
+      "preferredAccess": "ui_path",
+      "uiPath": "侧边栏卡片入口 -> 卡组/卡包列表；优先通过真实 UI 进入。",
+      "directRouteEvidence": "not_used_for_promotion",
+      "knownFailurePatterns": [
+        "direct route may miss seeded state",
+        "single-line exception or database closed screen must fail image review",
+        "wrong random review card must fail documentation review"
+      ],
+      "recaptureHints": [
+        "install manual seed before capture",
+        "verify macOS dark landscape viewport before capture",
+        "verify fixed card slug card_domain_garden_manual_screenshot for study screenshots"
+      ],
+      "localeOverrides": {
+        "en": {
+          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-deck-list-main.png",
+          "status": "approved"
+        },
+        "zh-HK": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-deck-list-main.png",
+          "status": "approved"
+        },
+        "zh-TW": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-deck-list-main.png",
+          "status": "approved"
+        }
+      },
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
     },
     {
       "id": "review-card-management-main",
@@ -84,7 +140,35 @@
         "manual-copy-change",
         "locale-change"
       ],
-      "promotionStatus": "approved"
+      "promotionStatus": "approved",
+      "preferredAccess": "ui_path",
+      "uiPath": "侧边栏卡片入口 -> 卡片管理；优先通过真实 UI 进入。",
+      "directRouteEvidence": "not_used_for_promotion",
+      "knownFailurePatterns": [
+        "direct route may miss seeded state",
+        "single-line exception or database closed screen must fail image review",
+        "wrong random review card must fail documentation review"
+      ],
+      "recaptureHints": [
+        "install manual seed before capture",
+        "verify macOS dark landscape viewport before capture",
+        "verify fixed card slug card_domain_garden_manual_screenshot for study screenshots"
+      ],
+      "localeOverrides": {
+        "en": {
+          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-management-main.png",
+          "status": "approved"
+        },
+        "zh-HK": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-management-main.png",
+          "status": "approved"
+        },
+        "zh-TW": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-management-main.png",
+          "status": "approved"
+        }
+      },
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
     },
     {
       "id": "review-card-study-domain-garden-question",
@@ -110,7 +194,35 @@
         "manual-copy-change",
         "locale-change"
       ],
-      "promotionStatus": "approved"
+      "promotionStatus": "approved",
+      "preferredAccess": "ui_path",
+      "uiPath": "安装手册 seed -> 进入卡片练习 -> 固定卡片 card_domain_garden_manual_screenshot -> 停留问题态。",
+      "directRouteEvidence": "not_used_for_promotion",
+      "knownFailurePatterns": [
+        "direct route may miss seeded state",
+        "single-line exception or database closed screen must fail image review",
+        "wrong random review card must fail documentation review"
+      ],
+      "recaptureHints": [
+        "install manual seed before capture",
+        "verify macOS dark landscape viewport before capture",
+        "verify fixed card slug card_domain_garden_manual_screenshot for study screenshots"
+      ],
+      "localeOverrides": {
+        "en": {
+          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-study-domain-garden-question.png",
+          "status": "approved"
+        },
+        "zh-HK": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-study-domain-garden-question.png",
+          "status": "approved"
+        },
+        "zh-TW": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-study-domain-garden-question.png",
+          "status": "approved"
+        }
+      },
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
     },
     {
       "id": "review-card-study-domain-garden",
@@ -136,7 +248,35 @@
         "manual-copy-change",
         "locale-change"
       ],
-      "promotionStatus": "approved"
+      "promotionStatus": "approved",
+      "preferredAccess": "ui_path",
+      "uiPath": "安装手册 seed -> 进入卡片练习 -> 固定卡片 -> 点击显示答案 -> 停留答案态。",
+      "directRouteEvidence": "not_used_for_promotion",
+      "knownFailurePatterns": [
+        "direct route may miss seeded state",
+        "single-line exception or database closed screen must fail image review",
+        "wrong random review card must fail documentation review"
+      ],
+      "recaptureHints": [
+        "install manual seed before capture",
+        "verify macOS dark landscape viewport before capture",
+        "verify fixed card slug card_domain_garden_manual_screenshot for study screenshots"
+      ],
+      "localeOverrides": {
+        "en": {
+          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-study-domain-garden.png",
+          "status": "approved"
+        },
+        "zh-HK": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-study-domain-garden.png",
+          "status": "approved"
+        },
+        "zh-TW": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-study-domain-garden.png",
+          "status": "approved"
+        }
+      },
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
     },
     {
       "id": "review-card-study-note-panel",
@@ -162,7 +302,35 @@
         "manual-copy-change",
         "locale-change"
       ],
-      "promotionStatus": "approved"
+      "promotionStatus": "approved",
+      "preferredAccess": "ui_path",
+      "uiPath": "安装手册 seed -> 进入卡片练习 -> 固定卡片 -> 打开笔记/来源面板。",
+      "directRouteEvidence": "not_used_for_promotion",
+      "knownFailurePatterns": [
+        "direct route may miss seeded state",
+        "single-line exception or database closed screen must fail image review",
+        "wrong random review card must fail documentation review"
+      ],
+      "recaptureHints": [
+        "install manual seed before capture",
+        "verify macOS dark landscape viewport before capture",
+        "verify fixed card slug card_domain_garden_manual_screenshot for study screenshots"
+      ],
+      "localeOverrides": {
+        "en": {
+          "assetPath": "granoflow-docs/manual/screenshots/en/review-card-study-note-panel.png",
+          "status": "approved"
+        },
+        "zh-HK": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-hk/review-card-study-note-panel.png",
+          "status": "approved"
+        },
+        "zh-TW": {
+          "assetPath": "granoflow-docs/manual/screenshots/zh-tw/review-card-study-note-panel.png",
+          "status": "approved"
+        }
+      },
+      "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth."
     }
   ]
 }

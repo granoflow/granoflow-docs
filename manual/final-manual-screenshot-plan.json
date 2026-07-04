@@ -3,7 +3,9 @@
   "createdAt": "2026-07-03T21:28:35.397816Z",
   "sourceRuns": [
     "docs-temp/manual-route-screenshot/20260704T-manual-route-zhcn-full-2",
-    "docs-temp/manual-route-screenshot/20260704T-review-card-zhcn-recapture-2"
+    "docs-temp/manual-route-screenshot/20260704T-review-card-zhcn-recapture-2",
+    "docs-temp/manual-screenshot-macos-e2e/260704-124500-fixed-route-capture",
+    "docs-temp/manual-screenshot-macos-e2e/260704-125600-inbox-clean-recapture"
   ],
   "outputPolicy": {
     "assetRoot": "granoflow-docs/manual/screenshots",
@@ -646,7 +648,7 @@
         "can_explain_visible_state"
       ],
       "visualAcceptance": {
-        "requiredSemanticState": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+        "requiredSemanticState": "日记模板设置真实页面可见；不得是 Pro 设置登录空态。",
         "forbiddenStates": [
           "single-line-error",
           "blank",
@@ -654,23 +656,34 @@
           "wrong-locale",
           "wrong-theme",
           "wrong-orientation",
-          "database-closed"
+          "database-closed",
+          "logged-out-lock-screen",
+          "requires-login-empty-state",
+          "wrong-page-pro-settings"
+        ],
+        "rejectVisibleText": [
+          "Pro 设置",
+          "需要登录",
+          "请先登录，再查看订阅选项。",
+          "登录"
         ]
       },
       "learningDisposition": "pending",
-      "promotionStatus": "approved",
+      "promotionStatus": "needs_recapture",
       "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-custom-tags-management-settings-daily-note-template-main.png",
       "sourceCandidateId": "manual-route-screenshots-macos--38--route-custom-tags-management-settings-daily-note-template-main.png",
       "sourceRunId": "20260704T-manual-route-zhcn-full-2",
-      "imageReviewVerdict": "pass",
-      "documentationReviewVerdict": "usable",
+      "imageReviewVerdict": "needs_recapture",
+      "documentationReviewVerdict": "blocked_wrong_image_for_review_manual",
       "worthScore": 8,
       "recaptureTriggers": [
         "app-route-change",
         "seed-change",
         "manual-copy-change",
         "locale-change"
-      ]
+      ],
+      "recaptureReason": "2026-07-04 manual review: current image is the logged-out Pro settings lock screen and must not appear in the review chapter. Recapture the actual daily/weekly note template page after the correct logged-in/pro state, or keep the manual text image-free.",
+      "recaptureBatch": "manual-followup-authenticated-screenshots"
     },
     {
       "id": "route-custom-tags-management-settings-weekly-note-template-main",
@@ -693,7 +706,7 @@
         "can_explain_visible_state"
       ],
       "visualAcceptance": {
-        "requiredSemanticState": "记录 custom_tags_management 页面在 macOS 深色横屏下的真实可见状态",
+        "requiredSemanticState": "周记模板设置真实页面可见；不得是 Pro 设置登录空态。",
         "forbiddenStates": [
           "single-line-error",
           "blank",
@@ -701,23 +714,34 @@
           "wrong-locale",
           "wrong-theme",
           "wrong-orientation",
-          "database-closed"
+          "database-closed",
+          "logged-out-lock-screen",
+          "requires-login-empty-state",
+          "wrong-page-pro-settings"
+        ],
+        "rejectVisibleText": [
+          "Pro 设置",
+          "需要登录",
+          "请先登录，再查看订阅选项。",
+          "登录"
         ]
       },
       "learningDisposition": "pending",
-      "promotionStatus": "approved",
+      "promotionStatus": "needs_recapture",
       "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-custom-tags-management-settings-weekly-note-template-main.png",
       "sourceCandidateId": "manual-route-screenshots-macos--56--route-custom-tags-management-settings-weekly-note-template-main.png",
       "sourceRunId": "20260704T-manual-route-zhcn-full-2",
-      "imageReviewVerdict": "pass",
-      "documentationReviewVerdict": "usable",
+      "imageReviewVerdict": "needs_recapture",
+      "documentationReviewVerdict": "blocked_wrong_image_for_review_manual",
       "worthScore": 8,
       "recaptureTriggers": [
         "app-route-change",
         "seed-change",
         "manual-copy-change",
         "locale-change"
-      ]
+      ],
+      "recaptureReason": "2026-07-04 manual review: current image is the logged-out Pro settings lock screen and must not appear in the review chapter. Recapture the actual daily/weekly note template page after the correct logged-in/pro state, or keep the manual text image-free.",
+      "recaptureBatch": "manual-followup-authenticated-screenshots"
     },
     {
       "id": "route-data-management-settings-data-management-main",
@@ -955,11 +979,8 @@
       ]
     },
     {
-      "id": "route-inbox-main",
       "manualPageId": "inbox",
       "docType": "Reference",
-      "readerGoal": "记录 inbox 页面在 macOS 深色横屏下的真实可见状态",
-      "route": "/inbox",
       "preferredAccess": "direct_route",
       "locale": "zh_CN",
       "platform": "macos",
@@ -968,14 +989,13 @@
       "viewport": "1280x800",
       "stateKey": "seeded-local-core",
       "seedObjectRef": null,
-      "captureIntent": "记录 inbox 页面在 macOS 深色横屏下的真实可见状态",
       "documentationValueCriteria": [
         "supports_step_result",
         "shows_real_seed_data_or_valid_empty_state",
         "can_explain_visible_state"
       ],
       "visualAcceptance": {
-        "requiredSemanticState": "记录 inbox 页面在 macOS 深色横屏下的真实可见状态",
+        "requiredSemanticState": "收集箱显示三条 manual_inbox_* 本地化种子任务，且不是空状态",
         "forbiddenStates": [
           "single-line-error",
           "blank",
@@ -988,18 +1008,22 @@
       },
       "learningDisposition": "pending",
       "promotionStatus": "approved",
-      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-inbox-main.png",
-      "sourceCandidateId": "manual-route-screenshots-macos--07--route-inbox-main.png",
-      "sourceRunId": "20260704T-manual-route-zhcn-full-2",
+      "sourceCandidateId": "route-inbox-main-zh-cn-clean-recapture.png",
       "imageReviewVerdict": "pass",
       "documentationReviewVerdict": "usable",
-      "worthScore": 8,
+      "worthScore": 9,
       "recaptureTriggers": [
         "app-route-change",
         "seed-change",
         "manual-copy-change",
         "locale-change"
-      ]
+      ],
+      "id": "route-inbox-main",
+      "readerGoal": "记录非空收集箱页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/inbox",
+      "captureIntent": "展示无截止日期、未归属项目的三条种子任务如何稳定出现在收集箱",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-inbox-main.png",
+      "sourceRunId": "260704-125600-inbox-clean-recapture"
     },
     {
       "id": "route-local-backup-progress-settings-data-management-progress-main",
@@ -2538,18 +2562,22 @@
         ]
       },
       "learningDisposition": "pending",
-      "promotionStatus": "approved",
+      "promotionStatus": "needs_recapture",
       "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-sync-device-join-settings-sync-device-join-main.png",
       "sourceCandidateId": "manual-route-screenshots-macos--51--route-sync-device-join-settings-sync-device-join-main.png",
       "sourceRunId": "20260704T-manual-route-zhcn-full-2",
-      "imageReviewVerdict": "pass",
-      "documentationReviewVerdict": "usable",
+      "imageReviewVerdict": "fail_duplicate_wrong_page",
+      "documentationReviewVerdict": "not_usable",
       "worthScore": 8,
       "recaptureTriggers": [
         "app-route-change",
         "seed-change",
         "manual-copy-change",
-        "locale-change"
+        "locale-change",
+        "duplicate-wrong-page-screenshot"
+      ],
+      "notes": [
+        "2026-07-04: asset is byte-identical to route-sync-progress-sync-main.png and shows sync progress, not the new-device join page; removed from manual pages until recaptured."
       ]
     },
     {
@@ -3026,7 +3054,7 @@
       "id": "route-vip-settings-settings-vip-settings-main",
       "manualPageId": "vip_settings",
       "docType": "Reference",
-      "readerGoal": "记录 vip_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "readerGoal": "记录登录后的 Pro 设置页面在 macOS 深色横屏下的真实可见状态",
       "route": "/settings/vip-settings",
       "preferredAccess": "direct_route",
       "locale": "zh_CN",
@@ -3034,16 +3062,16 @@
       "theme": "dark",
       "orientation": "landscape",
       "viewport": "1280x800",
-      "stateKey": "seeded-local-core",
+      "stateKey": "logged-in-pro-cloud",
       "seedObjectRef": null,
-      "captureIntent": "记录 vip_settings 页面在 macOS 深色横屏下的真实可见状态",
+      "captureIntent": "展示登录后可见的 Pro 设置和订阅相关配置；当前未登录锁屏空态不得用于手册。",
       "documentationValueCriteria": [
         "supports_step_result",
         "shows_real_seed_data_or_valid_empty_state",
         "can_explain_visible_state"
       ],
       "visualAcceptance": {
-        "requiredSemanticState": "记录 vip_settings 页面在 macOS 深色横屏下的真实可见状态",
+        "requiredSemanticState": "登录后的 Pro 设置页面可见，能看到订阅/Pro 功能设置内容，而不是“需要登录”锁屏空态。",
         "forbiddenStates": [
           "single-line-error",
           "blank",
@@ -3051,23 +3079,35 @@
           "wrong-locale",
           "wrong-theme",
           "wrong-orientation",
-          "database-closed"
+          "database-closed",
+          "logged-out-lock-screen",
+          "requires-login-empty-state",
+          "needs-login"
+        ],
+        "rejectVisibleText": [
+          "需要登录",
+          "请先登录，再查看订阅选项。",
+          "登录",
+          "Please log in first"
         ]
       },
       "learningDisposition": "pending",
-      "promotionStatus": "approved",
+      "promotionStatus": "needs_recapture",
       "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-vip-settings-settings-vip-settings-main.png",
       "sourceCandidateId": "manual-route-screenshots-macos--55--route-vip-settings-settings-vip-settings-main.png",
       "sourceRunId": "20260704T-manual-route-zhcn-full-2",
-      "imageReviewVerdict": "pass",
-      "documentationReviewVerdict": "usable",
-      "worthScore": 8,
+      "imageReviewVerdict": "needs_recapture",
+      "documentationReviewVerdict": "blocked_until_logged_in_recapture",
+      "worthScore": 9,
       "recaptureTriggers": [
         "app-route-change",
         "seed-change",
         "manual-copy-change",
         "locale-change"
-      ]
+      ],
+      "recaptureReason": "2026-07-04 screenshot audit: current image can be logged-out Pro settings empty state. Recapture after pro-cloud login, together with later screenshot fixes.",
+      "recaptureBatch": "manual-followup-authenticated-screenshots",
+      "recapturePriority": "high"
     },
     {
       "id": "review-card-deck-list-main",
@@ -3343,6 +3383,100 @@
       },
       "historicalCoverageReference": "manual.bak may be used only to compare topic coverage, not as route/UI/copy truth.",
       "sourceRunId": "20260704T-review-card-zhcn-recapture-2"
+    },
+    {
+      "manualPageId": "review",
+      "docType": "Reference",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "周回顾真实页面，包含周范围、完成任务和回顾内容区域",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "sourceCandidateId": "route-achievements-week-main-zh-cn-fixed-route.png",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ],
+      "id": "route-achievements-week-main",
+      "readerGoal": "记录周回顾页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/achievements?viewMode=week",
+      "captureIntent": "展示周回顾页面，而不是设置页或提示词页面",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-achievements-week-main.png",
+      "sourceRunId": "260704-124500-fixed-route-capture"
+    },
+    {
+      "manualPageId": "review",
+      "docType": "Reference",
+      "preferredAccess": "direct_route",
+      "locale": "zh_CN",
+      "platform": "macos",
+      "theme": "dark",
+      "orientation": "landscape",
+      "viewport": "1280x800",
+      "stateKey": "seeded-local-core",
+      "seedObjectRef": null,
+      "documentationValueCriteria": [
+        "supports_step_result",
+        "shows_real_seed_data_or_valid_empty_state",
+        "can_explain_visible_state"
+      ],
+      "visualAcceptance": {
+        "requiredSemanticState": "月回顾真实页面，包含月份视图、日期分布和回顾内容区域",
+        "forbiddenStates": [
+          "single-line-error",
+          "blank",
+          "loading",
+          "wrong-locale",
+          "wrong-theme",
+          "wrong-orientation",
+          "database-closed"
+        ]
+      },
+      "learningDisposition": "pending",
+      "promotionStatus": "approved",
+      "sourceCandidateId": "route-achievements-month-main-zh-cn-fixed-route.png",
+      "imageReviewVerdict": "pass",
+      "documentationReviewVerdict": "usable",
+      "worthScore": 8,
+      "recaptureTriggers": [
+        "app-route-change",
+        "seed-change",
+        "manual-copy-change",
+        "locale-change"
+      ],
+      "id": "route-achievements-month-main",
+      "readerGoal": "记录月回顾页面在 macOS 深色横屏下的真实可见状态",
+      "route": "/achievements?viewMode=month",
+      "captureIntent": "展示月回顾页面，而不是设置页或提示词页面",
+      "assetPath": "granoflow-docs/manual/screenshots/zh-cn/route-achievements-month-main.png",
+      "sourceRunId": "260704-124500-fixed-route-capture"
     }
   ]
 }

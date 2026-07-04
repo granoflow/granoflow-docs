@@ -3,8 +3,8 @@
   "status": "approved",
   "manualRoot": "/Users/will/code/granoflow/granoflow-docs/manual/docs",
   "screenshotPlan": "/Users/will/code/granoflow/granoflow-docs/manual/final-manual-screenshot-plan.json",
-  "locale": "zh-CN",
-  "pageCount": 10,
-  "screenshotPlanIds": 70,
+  "locale": "zh-cn",
+  "pageCount": 100,
+  "screenshotPlanIds": 72,
   "issues": []
 }

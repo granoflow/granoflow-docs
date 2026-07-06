@@ -14,6 +14,9 @@ tags:
   - name: Commands
   - name: Resources
   - name: Reviews
+  - name: Sync
+  - name: Backup
+  - name: Import
 paths:
   /:
     get:
@@ -98,6 +101,12 @@ paths:
     get:
       tags: [Commands]
       summary: List AI agent tools exposed by the App service layer
+      description: >
+        Runtime capability discovery for AI agents. `single_task_ai` may
+        advertise `capabilities.reviewCardDraftNoteFields.capability =
+        review_card_draft_note_fields_v1`; callers must check this before
+        sending structured review-card `note_fields`, `front_layout`, or
+        `back_layout` fields.
       operationId: listAiAgentTools
       responses:
         "200":
@@ -128,6 +137,67 @@ paths:
           $ref: "#/components/responses/Error"
         "423":
           $ref: "#/components/responses/Error"
+  /v1/ai-agent/tasks/similar-solutions:
+    post:
+      tags: [Commands]
+      summary: Search similar historical task experiences for an AI agent
+      description: >
+        Semantic-search endpoint for AI agents. The caller sends a task or
+        problem summary; Granoflow computes the local embedding and returns
+        similar historical task experiences. Results are evidence-bound:
+        completed tasks with `task_review` return `outcome=success`; archived
+        tasks with `task_review` return `outcome=failed_or_abandoned`; tasks
+        without review evidence are not returned by default. When semantic
+        search is disabled, the model asset is not ready, or the index has no
+        usable candidates yet, the response is HTTP 200 with `ok=false` and
+        `error.code` set to `vector_search_disabled`,
+        `model_asset_not_ready`, or `semantic_index_not_ready`.
+      operationId: searchAiAgentSimilarTaskSolutions
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [summary]
+              properties:
+                summary:
+                  type: string
+                  minLength: 1
+                  maxLength: 500
+                errorText:
+                  type: string
+                  maxLength: 1000
+                repo:
+                  type: string
+                module:
+                  type: string
+                paths:
+                  type: array
+                  maxItems: 20
+                  items:
+                    type: string
+                    maxLength: 240
+                limit:
+                  type: integer
+                  minimum: 1
+                  maximum: 20
+                  default: 8
+                client:
+                  type: string
+      responses:
+        "200":
+          description: Similar task experiences or a business-level disabled/not-ready result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
   /v1/ai-agent/tasks/validate:
     post:
       tags: [Commands]
@@ -139,14 +209,27 @@ paths:
           application/json:
             schema:
               type: object
-              description: Single-task AI reply JSON object, either as the raw reply payload, a `payload`/`data` wrapper, or a Granoflow AI reply envelope.
+              description: >
+                Single-task AI reply JSON object, either as the raw reply
+                payload, a `payload`/`data` wrapper, or a Granoflow AI reply
+                envelope. `data.review_card_drafts[]` must always keep complete
+                fallback content in `front` and `back`. When
+                `/v1/ai-agent/tools` advertises
+                `review_card_draft_note_fields_v1`, card drafts may also carry
+                `note_fields[]` entries with `key`, `label`, `type`, `value`,
+                and optional `tts_language_code` for `text_to_speech`, plus
+                `front_layout` and `back_layout`.
               properties:
                 toolId:
                   type: string
                   description: Optional tool id. Defaults to `single_task_ai`.
                 payload:
                   type: object
-                  description: Single-task AI reply payload.
+                  description: >
+                    Single-task AI reply payload. Enhanced review-card fields
+                    require `review_card_draft_note_fields_v1`; otherwise
+                    callers should keep pronunciation, phonetic, and
+                    translation hints directly in `front` and `back`.
                 data:
                   type: object
                   description: Alternate wrapper for the single-task AI reply payload.
@@ -180,14 +263,27 @@ paths:
           application/json:
             schema:
               type: object
-              description: Single-task AI reply JSON object, either as the raw reply payload, a `payload`/`data` wrapper, or a Granoflow AI reply envelope.
+              description: >
+                Single-task AI reply JSON object, either as the raw reply
+                payload, a `payload`/`data` wrapper, or a Granoflow AI reply
+                envelope. `data.review_card_drafts[]` must always keep complete
+                fallback content in `front` and `back`. When
+                `/v1/ai-agent/tools` advertises
+                `review_card_draft_note_fields_v1`, card drafts may also carry
+                `note_fields[]` entries with `key`, `label`, `type`, `value`,
+                and optional `tts_language_code` for `text_to_speech`, plus
+                `front_layout` and `back_layout`.
               properties:
                 toolId:
                   type: string
                   description: Optional tool id. Defaults to `single_task_ai`.
                 payload:
                   type: object
-                  description: Single-task AI reply payload.
+                  description: >
+                    Single-task AI reply payload. Enhanced review-card fields
+                    require `review_card_draft_note_fields_v1`; otherwise
+                    callers should keep pronunciation, phonetic, and
+                    translation hints directly in `front` and `back`.
                 data:
                   type: object
                   description: Alternate wrapper for the single-task AI reply payload.
@@ -197,6 +293,448 @@ paths:
       responses:
         "200":
           description: AI task import or preview result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/tasks/historical-mutations:
+    post:
+      tags: [Commands]
+      summary: Preview or apply controlled historical task mutations
+      description: >
+        AI-agent endpoint for personal historical fact correction. This is the
+        only Local HTTP API task endpoint that accepts physical historical task
+        fields such as `createdAt`, `updatedAt`, `startedAt`, and `endedAt`.
+        Ordinary `/v1/tasks` CRUD must not silently accept those fields.
+      operationId: mutateHistoricalTasks
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/HistoricalTaskMutationRequest"
+      responses:
+        "200":
+          description: Historical task mutation preview or apply result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HistoricalTaskMutationResponse"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/context-pack:
+    post:
+      tags: [Commands]
+      summary: Build a structured AI-agent work-memory context pack
+      description: >
+        Returns scoped tasks, task reviews, and reusable work-memory context as
+        structured facts. This endpoint does not expose embedding scores,
+        planning hints, risk scores, or agent recommendations.
+      operationId: buildAiAgentContextPack
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                scope:
+                  type: string
+                  enum: [task, project, repo]
+                repo:
+                  type: string
+                taskId:
+                  type: string
+                projectId:
+                  type: string
+                query:
+                  type: string
+                limit:
+                  type: integer
+                  minimum: 1
+                  maximum: 25
+                client:
+                  type: string
+      responses:
+        "200":
+          description: Structured work-memory context pack
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/task-completions:
+    post:
+      tags: [Commands]
+      summary: Record an engineering task completion through controlled paths
+      description: >
+        V1 capability endpoint for task-completion records. The App must
+        delegate to existing task write/complete paths or fail closed; this
+        endpoint must not introduce a second task-completion business rule.
+      operationId: recordAiAgentTaskCompletion
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [title, summary, outcome]
+              properties:
+                repo:
+                  type: string
+                title:
+                  type: string
+                summary:
+                  type: string
+                decisions:
+                  type: array
+                  items:
+                    type: string
+                outcome:
+                  type: string
+                  enum: [success, failed]
+                tags:
+                  type: array
+                  items:
+                    type: string
+                client:
+                  type: string
+                source:
+                  type: object
+      responses:
+        "200":
+          description: Task completion record result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/review-cards:
+    post:
+      tags: [Commands]
+      summary: Record a reusable review card through controlled paths
+      description: >
+        V1 capability endpoint for reusable lessons. The App must delegate to
+        existing controlled review-card import/create and duplicate-protection
+        paths or fail closed; this endpoint must not directly insert cards.
+      operationId: recordAiAgentReviewCard
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [title, problem, solution]
+              properties:
+                title:
+                  type: string
+                problem:
+                  type: string
+                solution:
+                  type: string
+                tags:
+                  type: array
+                  items:
+                    type: string
+                client:
+                  type: string
+                source:
+                  type: object
+      responses:
+        "200":
+          description: Review card record result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/review-cards/similar:
+    post:
+      tags: [Commands]
+      summary: Search similar review cards for an AI agent
+      description: >
+        Semantic-search endpoint for AI agents. The caller sends a task or
+        problem summary; Granoflow computes the local embedding and returns
+        compact review-card matches only. Results do not include project,
+        milestone, task, attachment body, raw local path, or binary content.
+        When semantic search is disabled, the model asset is not ready, or the
+        index has no usable candidates yet, the response is HTTP 200 with
+        `ok=false` and `error.code` set to `vector_search_disabled`,
+        `model_asset_not_ready`, or `semantic_index_not_ready`.
+      operationId: searchAiAgentSimilarReviewCards
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [summary]
+              properties:
+                summary:
+                  type: string
+                  minLength: 1
+                  maxLength: 500
+                errorText:
+                  type: string
+                  maxLength: 1000
+                repo:
+                  type: string
+                module:
+                  type: string
+                paths:
+                  type: array
+                  maxItems: 20
+                  items:
+                    type: string
+                    maxLength: 240
+                limit:
+                  type: integer
+                  minimum: 1
+                  maximum: 20
+                  default: 8
+                client:
+                  type: string
+      responses:
+        "200":
+          description: Similar review cards or a business-level disabled/not-ready result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/sync/status:
+    get:
+      tags: [Sync]
+      summary: Read cloud sync status through the app service layer
+      operationId: getSyncStatus
+      responses:
+        "200":
+          description: Sync status result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/sync/pull:
+    post:
+      tags: [Sync]
+      summary: Pull cloud data into the local app through the app service layer
+      operationId: postSyncPull
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses:
+        "200":
+          description: Sync pull result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/sync/push:
+    post:
+      tags: [Sync]
+      summary: Push local data to cloud through the app service layer
+      operationId: postSyncPush
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses:
+        "200":
+          description: Sync push result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/backup/exports:
+    post:
+      tags: [Backup]
+      summary: Create a local backup package through the app service layer
+      operationId: postBackupExport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [outputPath]
+              properties:
+                outputPath:
+                  type: string
+      responses:
+        "200":
+          description: Backup export result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/backup/imports/preview:
+    post:
+      tags: [Backup]
+      summary: Preview a local backup package without writing data
+      operationId: postBackupImportPreview
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FilePathRequest"
+      responses:
+        "200":
+          description: Backup package manifest summary
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/backup/imports:
+    post:
+      tags: [Backup]
+      summary: Restore a local backup package through the app service layer
+      operationId: postBackupImport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [file, confirm]
+              properties:
+                file:
+                  type: string
+                backupSecretFile:
+                  type: string
+                confirm:
+                  type: boolean
+                allowMissingAttachments:
+                  type: boolean
+                allowLargeAttachmentConversion:
+                  type: boolean
+      responses:
+        "200":
+          description: Backup restore result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/imports/preview:
+    post:
+      tags: [Import]
+      summary: Preview an import file without writing data
+      operationId: postImportPreview
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FilePathRequest"
+      responses:
+        "200":
+          description: Import preview summary
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/imports:
+    post:
+      tags: [Import]
+      summary: Apply an import file through the same app service layer used by UI imports
+      operationId: postImport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+              required: [file, confirm]
+              properties:
+                file:
+                  type: string
+                importKeyFile:
+                  type: string
+                confirm:
+                  type: boolean
+      responses:
+        "200":
+          description: Import result
           content:
             application/json:
               schema:
@@ -222,6 +760,12 @@ paths:
     post:
       tags: [Resources]
       summary: Create task
+      description: >
+        Ordinary task creation. Historical physical fields such as `createdAt`,
+        `updatedAt`, `startedAt`, `endedAt`, and `deletedAt` are rejected with
+        `historical_fields_not_supported`; use
+        `/v1/ai-agent/tasks/historical-mutations` for personal historical fact
+        correction.
       operationId: createTask
       requestBody:
         required: false
@@ -253,6 +797,12 @@ paths:
     patch:
       tags: [Resources]
       summary: Update task
+      description: >
+        Ordinary task update. Historical physical fields such as `createdAt`,
+        `updatedAt`, `startedAt`, `endedAt`, and `deletedAt` are rejected with
+        `historical_fields_not_supported`; use
+        `/v1/ai-agent/tasks/historical-mutations` for personal historical fact
+        correction.
       operationId: updateTask
       requestBody:
         required: false
@@ -308,7 +858,7 @@ paths:
   /v1/tasks/{taskId}/review-cards/{cardId}/unlink:
     post:
       tags: [Resources]
-      summary: Unlink the review card's note from the current task
+      summary: Unlink a review card from the current task
       operationId: unlinkTaskReviewCard
       responses:
         "200":
@@ -455,6 +1005,474 @@ paths:
       tags: [Resources]
       summary: Delete milestone
       operationId: deleteMilestone
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/images:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List task images
+      operationId: listTaskImages
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Add task image from a local file path
+      operationId: addTaskImage
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  description: Local file path readable by the running Granoflow app.
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/images/{attachmentId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: attachmentId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Resources]
+      summary: Delete task image
+      operationId: deleteTaskImage
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/pdfs:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List task pdfs
+      operationId: listTaskPdfs
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Add task pdf from a local file path
+      operationId: addTaskPdf
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  description: Local file path readable by the running Granoflow app.
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/pdfs/{attachmentId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: attachmentId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Resources]
+      summary: Delete task pdf
+      operationId: deleteTaskPdf
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/attachments:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List task attachments
+      operationId: listTaskAttachments
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Add task attachment from a local file path
+      operationId: addTaskAttachment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  description: Local file path readable by the running Granoflow app.
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/attachments/{attachmentId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: attachmentId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Resources]
+      summary: Delete task attachment
+      operationId: deleteTaskAttachment
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/projects/{id}/images:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List project images
+      operationId: listProjectImages
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Add project image from a local file path
+      operationId: addProjectImage
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  description: Local file path readable by the running Granoflow app.
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/projects/{id}/images/{attachmentId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: attachmentId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Resources]
+      summary: Delete project image
+      operationId: deleteProjectImage
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/projects/{id}/pdfs:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List project pdfs
+      operationId: listProjectPdfs
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Add project pdf from a local file path
+      operationId: addProjectPdf
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  description: Local file path readable by the running Granoflow app.
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/projects/{id}/pdfs/{attachmentId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: attachmentId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Resources]
+      summary: Delete project pdf
+      operationId: deleteProjectPdf
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/projects/{id}/attachments:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List project attachments
+      operationId: listProjectAttachments
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Add project attachment from a local file path
+      operationId: addProjectAttachment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  description: Local file path readable by the running Granoflow app.
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/projects/{id}/attachments/{attachmentId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: attachmentId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Resources]
+      summary: Delete project attachment
+      operationId: deleteProjectAttachment
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/milestones/{id}/images:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List milestone images
+      operationId: listMilestoneImages
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Add milestone image from a local file path
+      operationId: addMilestoneImage
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  description: Local file path readable by the running Granoflow app.
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/milestones/{id}/images/{attachmentId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: attachmentId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Resources]
+      summary: Delete milestone image
+      operationId: deleteMilestoneImage
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/milestones/{id}/pdfs:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List milestone pdfs
+      operationId: listMilestonePdfs
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Add milestone pdf from a local file path
+      operationId: addMilestonePdf
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  description: Local file path readable by the running Granoflow app.
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/milestones/{id}/pdfs/{attachmentId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: attachmentId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Resources]
+      summary: Delete milestone pdf
+      operationId: deleteMilestonePdf
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/milestones/{id}/attachments:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List milestone attachments
+      operationId: listMilestoneAttachments
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Add milestone attachment from a local file path
+      operationId: addMilestoneAttachment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file:
+                  type: string
+                  description: Local file path readable by the running Granoflow app.
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/milestones/{id}/attachments/{attachmentId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: attachmentId
+        in: path
+        required: true
+        schema:
+          type: string
+    delete:
+      tags: [Resources]
+      summary: Delete milestone attachment
+      operationId: deleteMilestoneAttachment
       responses:
         "200":
           content:
@@ -761,11 +1779,11 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/CommandResult"
-  /v1/review-card-decks/import/anki/dry-run:
+  /v1/review-card-decks/import/package/preview:
     post:
       tags: [Resources]
-      summary: Dry-run Anki APKG import
-      operationId: dryRunAnkiDeckImport
+      summary: Preview review card deck package import
+      operationId: previewReviewCardDeckPackageImport
       requestBody:
         required: true
         content:
@@ -778,11 +1796,28 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/CommandResult"
-  /v1/review-card-decks/import/anki/confirm:
+  /v1/review-card-decks/import/package/confirm:
     post:
       tags: [Resources]
-      summary: Confirm Anki APKG import
-      operationId: confirmAnkiDeckImport
+      summary: Confirm review card deck package import
+      operationId: confirmReviewCardDeckPackageImport
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/review-card-decks/export/package:
+    post:
+      tags: [Resources]
+      summary: Export review card deck package
+      operationId: exportReviewCardDeckPackage
       requestBody:
         required: true
         content:
@@ -1042,7 +2077,7 @@ paths:
     get:
       tags: [Reviews]
       summary: Get monthly review aggregate
-      description: Reads the monthly aggregate review. Monthly review is read-only in this version.
+      description: Reads the monthly aggregate review and editable monthly review content.
       operationId: getMonthlyReview
       responses:
         "200":
@@ -1051,6 +2086,30 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/MonthlyReviewResult"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+    patch:
+      tags: [Reviews]
+      summary: Update monthly review content
+      description: Updates the monthly review content. Monthly aggregate metrics remain read-only.
+      operationId: updateMonthlyReview
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/MonthlyReviewPatchRequest"
+      responses:
+        "200":
+          description: Updated monthly review
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/MonthlyReviewResult"
+        "400":
+          $ref: "#/components/responses/Error"
         "401":
           $ref: "#/components/responses/Error"
         "423":
@@ -1142,6 +2201,181 @@ components:
       additionalProperties: true
       description: |
         App command result envelope.
+    HistoricalTaskMutationRequest:
+      type: object
+      additionalProperties: false
+      required: [dryRun, source, mutations]
+      properties:
+        dryRun:
+          type: boolean
+        source:
+          $ref: "#/components/schemas/HistoricalTaskMutationSource"
+        mutations:
+          type: array
+          maxItems: 20
+          items:
+            $ref: "#/components/schemas/HistoricalTaskMutation"
+    HistoricalTaskMutationSource:
+      type: object
+      additionalProperties: true
+      properties:
+        kind:
+          type: string
+        threadId:
+          type: string
+        summary:
+          type: string
+        startedAt:
+          type: string
+          format: date-time
+        endedAt:
+          type: string
+          format: date-time
+    HistoricalTaskMutation:
+      type: object
+      additionalProperties: false
+      required: [clientMutationId, op]
+      properties:
+        clientMutationId:
+          type: string
+        op:
+          type: string
+          enum: [create, update, softDelete]
+        taskId:
+          type: string
+        fields:
+          $ref: "#/components/schemas/HistoricalTaskMutationFields"
+        reason:
+          type: string
+    HistoricalTaskMutationFields:
+      type: object
+      additionalProperties: false
+      properties:
+        title:
+          type: string
+        status:
+          type: string
+          enum: [pending, doing, done, archived, trashed]
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        startedAt:
+          type: string
+          format: date-time
+        endedAt:
+          type: string
+          format: date-time
+        dueAt:
+          type: string
+          format: date-time
+        remindAt:
+          type: string
+          format: date-time
+        description:
+          type: string
+        taskReview:
+          type: string
+        projectId:
+          type: [string, "null"]
+        milestoneId:
+          type: [string, "null"]
+        tags:
+          type: array
+          items:
+            type: string
+    HistoricalTaskMutationResponse:
+      type: object
+      additionalProperties: false
+      required: [ok, data]
+      properties:
+        ok:
+          type: boolean
+        data:
+          type: object
+          additionalProperties: false
+          required: [dryRun, acceptedCount, rejectedCount, results]
+          properties:
+            dryRun:
+              type: boolean
+            acceptedCount:
+              type: integer
+            rejectedCount:
+              type: integer
+            results:
+              type: array
+              items:
+                $ref: "#/components/schemas/HistoricalTaskMutationResult"
+    HistoricalTaskMutationResult:
+      type: object
+      additionalProperties: false
+      required: [clientMutationId, op, status, warnings, errors]
+      properties:
+        clientMutationId:
+          type: string
+        op:
+          type: string
+          enum: [create, update, softDelete]
+        status:
+          type: string
+          enum: [accepted, rejected, applied]
+        taskId:
+          type: string
+        readback:
+          type: object
+          additionalProperties: true
+        warnings:
+          type: array
+          items:
+            $ref: "#/components/schemas/HistoricalTaskMutationWarning"
+        errors:
+          type: array
+          items:
+            $ref: "#/components/schemas/HistoricalTaskMutationError"
+    HistoricalTaskMutationWarning:
+      type: object
+      additionalProperties: false
+      required: [code, message]
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+    HistoricalTaskMutationError:
+      type: object
+      additionalProperties: false
+      required: [code, message]
+      properties:
+        code:
+          type: string
+          enum:
+            - invalid_payload
+            - unsupported_capability
+            - batch_limit_exceeded
+            - task_not_found
+            - project_not_found
+            - milestone_not_found
+            - project_milestone_mismatch
+            - title_required
+            - invalid_time_range
+            - completed_ended_at_required
+            - doing_started_at_required
+            - historical_fields_not_supported
+        message:
+          type: string
+    FilePathRequest:
+      type: object
+      additionalProperties: false
+      required: [file]
+      properties:
+        file:
+          type: string
+        path:
+          type: string
+        inputPath:
+          type: string
     TaskCompleteRequest:
       type: object
       additionalProperties: false
@@ -1345,9 +2579,19 @@ components:
           type: integer
         averageDailyMinutes:
           type: integer
+        totalRealFocusMinutes:
+          type: integer
         mostActiveDate:
           type: [string, "null"]
           format: date
+        content:
+          type: [string, "null"]
+    MonthlyReviewPatchRequest:
+      type: object
+      additionalProperties: false
+      properties:
+        content:
+          type: string
     ErrorEnvelope:
       type: object
       required: [error]

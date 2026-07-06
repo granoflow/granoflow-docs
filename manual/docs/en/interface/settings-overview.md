@@ -9,6 +9,8 @@ The settings page might seem like something only advanced users need. In fact, i
 
 For example, when sync goes wrong, you don't have to search through every page—just go to the accounts, data, or sync-related entry points in Settings.
 
+If you want to find tasks, projects, milestones, cards, and past knowledge by meaning, open Local Semantic Search from Settings. For model details, download size, and precision settings, see [Local Semantic Search and Vector Models](./semantic-vector-search/).
+
 ## How to Decide What to Do Next
 
 | What you're facing | Check this first | Next step |

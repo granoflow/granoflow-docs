@@ -3,11 +3,15 @@ title: Search
 description: "Find tasks, cards, reviews, and settings clues."
 ---
 
-Search is not a second inbox. It's useful when you already know some keywords and want to find tasks, notes, or cards you wrote down in the past.
+Search is not a second inbox. It's useful when you already know some keywords and want to find tasks, projects, milestones, notes, or cards you wrote down in the past. When Local Semantic Search is enabled, search uses a local vector model to understand semantic similarity. When it is disabled, search falls back to ordinary text matching.
 
 ## A real-world scenario
 
 If you remember writing something like "when to empty the inbox," you can search directly with keywords. If you don't yet know what you're looking for, go back to a task, project, or review list to narrow down the scope.
+
+## Local Semantic Search
+
+If you often remember the meaning but not the exact wording, read [Local Semantic Search and Vector Models](./semantic-vector-search/). It explains the local model, download size, storage precision, search precision, and multi-device setup.
 
 ## How to decide what to do next
 

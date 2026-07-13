@@ -1,4 +1,3 @@
-# granoflow.com/api deploy refresh: 2026-07-07
 openapi: 3.1.0
 info:
   title: Granoflow Local HTTP API
@@ -112,6 +111,25 @@ paths:
       responses:
         "200":
           description: AI agent tool list
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/review-card-drafts/schema:
+    get:
+      tags: [Commands]
+      summary: Review card draft template and field schema for AI import
+      description: >
+        Returns machine-readable card types, note field types, study patterns,
+        and fallback guidance for `single_task_ai` `review_card_drafts` import.
+      operationId: getReviewCardDraftSchema
+      responses:
+        "200":
+          description: Review card draft schema
           content:
             application/json:
               schema:
@@ -333,14 +351,41 @@ paths:
           $ref: "#/components/responses/Error"
         "423":
           $ref: "#/components/responses/Error"
+  /v1/ai-agent/gfmcp/prepare:
+    post:
+      tags: [Commands]
+      summary: Ensure the GFMCP automation tag and localized task template
+      operationId: prepareGfmcpAutomation
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+      responses:
+        "200":
+          description: GFMCP tag and template readiness
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
   /v1/ai-agent/context-pack:
     post:
       tags: [Commands]
       summary: Build a structured AI-agent work-memory context pack
       description: >
-        Returns scoped tasks, task reviews, and reusable work-memory context as
-        structured facts. This endpoint does not expose embedding scores,
-        planning hints, risk scores, or agent recommendations.
+        Returns scoped projects, milestones, tasks, task reviews, and reusable
+        work-memory context as structured facts. Project and milestone entries
+        may include their description fields so agents can read the current
+        living context. This endpoint does not expose embedding scores, planning
+        hints, risk scores, or agent recommendations.
       operationId: buildAiAgentContextPack
       requestBody:
         required: true
@@ -369,6 +414,231 @@ paths:
       responses:
         "200":
           description: Structured work-memory context pack
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/memory-batches/preview:
+    post:
+      tags: [Commands]
+      summary: Preview an AI-agent memory batch before any write
+      description: >
+        Preview-only endpoint for agent-submitted task completions, task
+        reviews, and review-card candidates. The App owns project/milestone
+        matching and duplicate signals; this endpoint never writes data.
+      operationId: previewAiAgentMemoryBatch
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [items]
+              properties:
+                source:
+                  type: object
+                target:
+                  type: object
+                  properties:
+                    projectId:
+                      type: string
+                    milestoneId:
+                      type: string
+                items:
+                  type: array
+                  minItems: 1
+                  maxItems: 20
+                  items:
+                    type: object
+                    required: [title]
+                    properties:
+                      clientItemId:
+                        type: string
+                      kind:
+                        type: string
+                        enum: [task_completion, task_review, review_card_candidate]
+                      title:
+                        type: string
+                      summary:
+                        type: string
+                      completedAt:
+                        type: string
+                        format: date-time
+                      reviewCardCandidates:
+                        type: array
+                        items:
+                          type: object
+                dryRun:
+                  type: boolean
+                  default: true
+      responses:
+        "200":
+          description: Server-side preview result; writesPerformed is always false.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/project-context-attachments/ensure:
+    post:
+      tags: [Commands]
+      summary: Ensure canonical project context YAML attachments exist
+      description: >
+        Ensures `project_snapshot.yaml` and `project_rules.yaml` exist as
+        project document attachments. This endpoint creates templates only when
+        `dryRun` is false.
+      operationId: ensureAiAgentProjectContextAttachments
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [projectId]
+              properties:
+                projectId:
+                  type: string
+                dryRun:
+                  type: boolean
+                  default: true
+      responses:
+        "200":
+          description: Canonical attachment status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/project-context-attachments/read:
+    post:
+      tags: [Commands]
+      summary: Read a bounded project context YAML section
+      description: >
+        Reads only the header, summary, and smallest matching section by
+        default. Full reads require explicit full audit/export/migration/rewrite
+        intent.
+      operationId: readAiAgentProjectContextAttachment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [projectId]
+              properties:
+                projectId:
+                  type: string
+                attachment:
+                  type: string
+                  enum: [snapshot, rules, project_snapshot.yaml, project_rules.yaml]
+                section:
+                  type: string
+                query:
+                  type: string
+                intent:
+                  type: string
+                allowFullRead:
+                  type: boolean
+                  default: false
+      responses:
+        "200":
+          description: Bounded attachment content or stale/conflict status
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/project-context-attachments/reconcile:
+    post:
+      tags: [Commands]
+      summary: Check or reconcile project context YAML freshness
+      description: >
+        Reconciles low-risk factual snapshot deltas. Rules, wording,
+        positioning, and long-lived decision conflicts return a proposal or
+        conflict report instead of being silently overwritten.
+      operationId: reconcileAiAgentProjectContextAttachment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [projectId]
+              properties:
+                projectId:
+                  type: string
+                attachment:
+                  type: string
+                  enum: [snapshot, rules, project_snapshot.yaml, project_rules.yaml]
+                dryRun:
+                  type: boolean
+                  default: true
+      responses:
+        "200":
+          description: Freshness or reconcile result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/project-context-attachments/write:
+    post:
+      tags: [Commands]
+      summary: Write a project context YAML attachment with safety gates
+      description: >
+        Writes snapshot content directly when safe. Writes to `project_rules.yaml`
+        require confirmation unless the caller is only requesting a proposal.
+        Secret or privacy risks fail closed.
+      operationId: writeAiAgentProjectContextAttachment
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [projectId, content]
+              properties:
+                projectId:
+                  type: string
+                attachment:
+                  type: string
+                  enum: [snapshot, rules, project_snapshot.yaml, project_rules.yaml]
+                section:
+                  type: string
+                content:
+                  type: string
+                confirmed:
+                  type: boolean
+                  default: false
+      responses:
+        "200":
+          description: Write result, proposal, or fail-closed error
           content:
             application/json:
               schema:
@@ -479,14 +749,12 @@ paths:
       tags: [Commands]
       summary: Search similar review cards for an AI agent
       description: >
-        Semantic-search endpoint for AI agents. The caller sends a task or
-        problem summary; Granoflow computes the local embedding and returns
+        App-owned similarity endpoint for AI agents. Granoflow prefers local
+        vector search, then uses caller-supplied keywords when vectors are
+        disabled, unavailable, or return no usable candidates. The response
+        identifies `searchMode` as `vector` or `keyword_fallback` and returns
         compact review-card matches only. Results do not include project,
         milestone, task, attachment body, raw local path, or binary content.
-        When semantic search is disabled, the model asset is not ready, or the
-        index has no usable candidates yet, the response is HTTP 200 with
-        `ok=false` and `error.code` set to `vector_search_disabled`,
-        `model_asset_not_ready`, or `semantic_index_not_ready`.
       operationId: searchAiAgentSimilarReviewCards
       requestBody:
         required: true
@@ -513,6 +781,12 @@ paths:
                   items:
                     type: string
                     maxLength: 240
+                keywords:
+                  type: array
+                  maxItems: 12
+                  items:
+                    type: string
+                    minLength: 1
                 limit:
                   type: integer
                   minimum: 1
@@ -522,7 +796,83 @@ paths:
                   type: string
       responses:
         "200":
-          description: Similar review cards or a business-level disabled/not-ready result
+          description: Similar review cards with vector or keyword-fallback mode metadata
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/review-cards/authoring/preview:
+    post:
+      tags: [Commands]
+      summary: Preview controlled review-card authoring operations
+      description: >
+        Validates the project task, loads current card and shared-note state,
+        returns field diffs and affected cards/tasks, and issues an expiring
+        preview token/hash. This endpoint performs no writes.
+      operationId: previewAiAgentReviewCardAuthoring
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [taskId, operations]
+              properties:
+                taskId:
+                  type: string
+                operations:
+                  type: array
+                  minItems: 1
+                  items:
+                    type: object
+      responses:
+        "200":
+          description: Zero-write authoring preview
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/ai-agent/review-cards/authoring/apply:
+    post:
+      tags: [Commands]
+      summary: Apply approved review-card authoring operations
+      description: >
+        Applies only approved operation IDs from an unchanged, unexpired
+        preview. Supports existing-card linking, field-level card/note updates,
+        and one-note-to-many-card creation, then returns App-owned readback.
+      operationId: applyAiAgentReviewCardAuthoring
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [previewToken, previewHash, approvedOperationIds]
+              properties:
+                previewToken:
+                  type: string
+                previewHash:
+                  type: string
+                approvedOperationIds:
+                  type: array
+                  minItems: 1
+                  items:
+                    type: string
+      responses:
+        "200":
+          description: Controlled authoring apply result and readback
           content:
             application/json:
               schema:
@@ -589,6 +939,35 @@ paths:
       responses:
         "200":
           description: Sync push result
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "400":
+          $ref: "#/components/responses/Error"
+        "401":
+          $ref: "#/components/responses/Error"
+        "423":
+          $ref: "#/components/responses/Error"
+  /v1/sync/gfmcp-safe-run:
+    post:
+      tags: [Sync]
+      summary: Run cloud sync only after the app-owned access decision allows it
+      description: >
+        Intended for GFMCP automation. Returns synced_to_server, local_only, or
+        unknown_remote_visibility without opening UI or bypassing login,
+        membership, account-key, deletion, or server-availability gates.
+      operationId: postGfmcpSafeSync
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: false
+      responses:
+        "200":
+          description: Safe sync decision and result
           content:
             application/json:
               schema:
@@ -751,6 +1130,13 @@ paths:
       tags: [Resources]
       summary: List tasks
       operationId: listTasks
+      parameters:
+        - name: tag
+          in: query
+          required: false
+          schema:
+            type: string
+          description: When set, return only tasks that include this tag slug.
       responses:
         "200":
           description: Resource command result
@@ -1164,6 +1550,128 @@ paths:
       operationId: deleteTaskAttachment
       responses:
         "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/nodes:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+    get:
+      tags: [Resources]
+      summary: List task nodes
+      operationId: listTaskNodes
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    post:
+      tags: [Resources]
+      summary: Atomically create an idempotent ordered task node batch
+      operationId: batchCreateTaskNodes
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [idempotencyKey, expectedTaskUpdatedAt, nodes]
+              properties:
+                idempotencyKey:
+                  type: string
+                expectedTaskUpdatedAt:
+                  type: string
+                  format: date-time
+                nodes:
+                  type: array
+                  minItems: 1
+                  maxItems: 50
+                  items:
+                    type: object
+                    required: [title]
+                    properties:
+                      title:
+                        type: string
+                      parentId:
+                        type: string
+                        nullable: true
+      responses:
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "409":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+  /v1/tasks/{id}/nodes/{nodeId}:
+    parameters:
+      - $ref: "#/components/parameters/ResourceId"
+      - name: nodeId
+        in: path
+        required: true
+        schema:
+          type: string
+    patch:
+      tags: [Resources]
+      summary: Update a task node title or apply a node status through NodeService
+      operationId: updateTaskNode
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [expectedUpdatedAt]
+              properties:
+                expectedUpdatedAt:
+                  type: string
+                  format: date-time
+                title:
+                  type: string
+                status:
+                  type: string
+                  enum: [pending, finished]
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "409":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+    delete:
+      tags: [Resources]
+      summary: Soft-delete a task node tree after explicit confirmation
+      operationId: deleteTaskNode
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [expectedUpdatedAt, confirmed]
+              properties:
+                expectedUpdatedAt:
+                  type: string
+                  format: date-time
+                confirmed:
+                  type: boolean
+                  enum: [true]
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CommandResult"
+        "409":
           content:
             application/json:
               schema:

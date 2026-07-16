@@ -43,6 +43,8 @@ Don’t copy the task description into the card. The task description answers �
 
 The card detail page shows the card’s title, source, learning status, and linked tasks. In the screenshot, the card “What is a domain?” is already linked to a task. This link matters: it turns the card from a piece of knowledge into a reminder that connects back to a concrete action.
 
+Think of the card detail page as an index card, not a duplicate of the full note. To keep reading, expand **Original fields** and select **View note** below the `Content` preview. The note opens from the right with its full content, the other cards made from that note, and linked tasks. Close it to return to the same card detail page.
+
 If you already have a suitable card, don’t create a new similar one. Open the original card, check whether it covers this task; if it does, just link it. If it’s almost right, you can edit the answer to make it more reusable.
 
 ## When not to make a card

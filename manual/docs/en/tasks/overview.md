@@ -12,7 +12,7 @@ Many task tools force you to fill in a lot of fields from the start. GranoFlow�
 ![Task List](../../screenshots/en/route-tasks-main.png)
 The task list is best for viewing tasks you’ve decided to move forward with. Here you’ll see tasks grouped by timeframe, such as Today, Tomorrow, This Week, This Month, or Later.
 
-What this image really shows isn’t the number of buttons, but the state of tasks once they’re in the list: they’re no longer just ideas, but have dates, order, or a next step. From here you can click into a task to fill in more fields, or start focusing or completing it directly.
+What this image really shows isn’t the number of buttons, but the state of tasks once they’re in the list: they’re no longer just ideas, but have dates, order, or a next step. From here you can open a task to fill in more fields, or start focusing or complete it directly from the list.
 
 ## From Idea to Completion
 
@@ -37,6 +37,19 @@ You don't have to go through this line all at once. Often, you only need to comp
 
 Not every task needs to be linked upward. For small things that can be done directly, writing them as tasks is enough; for goals that will last a while and generate multiple tasks, put them into projects.
 
+## The Difference Between Regular To-Dos and Project Tasks
+
+A regular to-do answers “What should I do next?” A project task answers “Which stage goal does this step serve?” Both matter, but one should not replace the other.
+
+| Task type | Good examples | Typical handling |
+| --- | --- | --- |
+| Inbox task | Buy dental floss, reply to a friend, capture an idea | Capture it first, then decide whether to add a date or complete it directly |
+| Today task | Send meeting notes before 16:00, organize course notes tonight | Add a date, then let it enter the daily review after completion |
+| Project task | Finish the script for lesson 3, verify the sync recovery flow | Link it to a project and milestone, and add nodes when needed |
+| Historical entry | Record last week's completed release check | Backfill only when it affects a review or project record |
+
+If something takes only a few minutes, you do not need to create a project just to make it look organized. If it repeatedly creates follow-up actions, or needs review and handoff after completion, it is a better fit for a project.
+
 ## Why only plan today and tomorrow in detail
 
 GranoFlow doesn't encourage you to fill every future day with plans. The future will change, and tasks will change too; scheduling next week and next month too finely often just moves the maintenance cost of the plan to today.
@@ -57,7 +70,7 @@ A good task usually answers two questions: What do I do next? What change can I 
 | Archived | No need to focus on for now | Keeps record but doesn't take up the current list |
 | Trash | Deleted but not emptied | Still possible to restore |
 
-In the task details, click 'Focus', and this task will become the currently active task and start a focus session. If another task is already in focus, GranoFlow will remind you to handle that task first, preventing you from treating two things as the current priority at the same time.
+Task details are for adding task information and do not provide “Start Focus” or “Complete Task” buttons. When the work is done, return to the task list and select its checkbox. To start focusing, use the focus entry currently provided by the app.
 
 ## Getting Started for the First Time
 

@@ -53,7 +53,7 @@ Changing the date, project, or milestone does not duplicate the task. It only ch
 
 ## Editing an existing task
 
-Click a task to open its details. The task details are not only for changing the title – it's also where you move a task from "noted down" to "in progress."
+Click a task to open its details. Task details are not only for changing the title; they bring together the context you need to view and update the task.
 
 You will typically do these things in the details:
 
@@ -61,10 +61,9 @@ You will typically do these things in the details:
 - Add a date, reminder, tag, project, or milestone
 - Put context, links, or drafts in the description
 - Split the task into smaller actions using nodes
-- Tap "Focus" to set it as the task you are currently working on
-- Tap "Complete" to finish the task and leave a completion record
+- View images, attachments, and related historical references
 
-If the task has not started, the bottom of the details usually shows "Focus" and "Complete." When you tap "Focus," GranoFlow sets this task as the current task and starts a focus session; tapping "Complete" marks it as done. If the task is already in focus, the bottom of the details will emphasize completing the current task.
+Task details do not show "Start Focus" or "Complete Task" buttons. When the task is done, return to the task list and select its checkbox. To start focusing, use the focus entry currently provided by the app.
 
 ::::note[Reminder time boundaries]
 A reminder cannot be set to a time that has already passed. If you select a past time, the system will prompt you to choose again.

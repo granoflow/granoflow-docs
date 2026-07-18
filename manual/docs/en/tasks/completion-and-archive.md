@@ -20,7 +20,7 @@ When a task is completed, it typically:
 - Is used for daily review statistics
 - Shows a task review entry in the details
 
-If a task is currently in focus mode, tapping "Complete" will first end the current focus session, then mark the task as completed and clear the current task.
+Select the task's checkbox in the task list to complete it. If the task is currently in focus mode, completing it will first end the current focus session, then mark the task as completed and clear the current task.
 
 ::::tip[Don't rush to delete completion records]
 If you still want to see completion records in your daily review, don't treat completed tasks as useless content to delete. They are clues for reviewing the actions of the day.

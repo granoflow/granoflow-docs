@@ -1,18 +1,20 @@
 # AI达人浏览器翻译扩展（AI Power Translator）隐私政策
 
-最后更新：2026-07-31
+最后更新：2026-10-19
 
 语言：[English](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.html)
 | 简体中文 |
 [繁體中文（香港）](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-HK.html)
 | [繁體中文（台灣）](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-TW.html)
 
-本隐私政策适用于 **AI Power Translator** Chrome 扩展（以下简称“本扩展”）。
+本隐私政策适用于 **AI Power Translator** 浏览器扩展（包括 Chrome 和 Microsoft Edge）（以下简称“本扩展”）。
 本扩展由 **A New Zero Innovations Limited（Hong Kong）**（以下简称“我们”）
 运营。
 
 这是针对本扩展的专项隐私政策。你另行选择使用 Granoflow 服务时，还适用
 [Granoflow 隐私政策](https://granoflow.github.io/granoflow-docs/privacy-policy.zh-CN.html)。
+
+本版本也支持图片及在线或本地 PDF 翻译。处理这些功能时，所需图片、PDF 文字或图像会发送至你选择的模型或服务，具体能力与隐私条件取决于该服务。
 
 ## 1. 本扩展的单一用途
 
@@ -49,7 +51,7 @@
 - 自动识别的 API 协议信息
 - Granoflow 地址和可选的 Granoflow API 密钥
 
-这些设置保存在你的 Chrome 配置文件的 `chrome.storage.local` 中，不会保存在
+这些设置保存在你的浏览器配置文件的 `chrome.storage.local` 中，不会保存在
 我们运营的服务器上。本扩展不会为这部分本地存储另加一层加密。
 
 AI API 密钥只会在验证请求所必需时发送到你配置的 AI 地址。Granoflow 密钥只会
@@ -62,12 +64,33 @@ AI API 密钥只会在验证请求所必需时发送到你配置的 AI 地址。
 
 ### 2.4 我们不会通过本扩展收集的信息
 
-本扩展不包含由开发者运营的使用分析、广告跟踪、崩溃报告或 AI 中转服务，也不
+本扩展不包含广告跟踪、崩溃报告或 AI 中转服务，也不
 要求你为本扩展创建账户。你仅仅安装或使用本扩展，不会使我们收到你的网页内容、
 提示词、API 密钥或本地缓存结果。
 
 Google 可能依据其自身条款向发布者提供汇总后的 Chrome 应用商店统计数据。这些
 商店统计数据不会向我们提供本扩展处理过的网页内容。
+
+### 2.5 产品使用统计（Firebase）
+
+使用统计在安装及每次扩展升级后默认开启。你可在通用设置中关闭，关闭不影响翻译。
+关闭会停止自动采集、清空待发数据并取消在途发送；保持关闭直到下次安装或升级重新开启。
+开启时，扩展向产品独立 Firebase 项目发送每日首次翻译计数、扩展内推广展示和点击计数、
+规范化模型来源、选择与调用类别，以及可获得的数字 token 汇总。公共字段包括浏览器名称和
+主版本、扩展版本、本地日历日、协议版本及每次上传新生成的随机批次 ID；不复用为用户或
+安装身份。模型语言差异报告在接收服务允许时，仅包含受控档案 ID/版本、规范化服务和模型
+类别、用途、源/目标语言代码及差异分类。
+
+这些事件不含网页文字、图片、PDF、提示词、密钥、自定义端点、私有模型名、原始配置、
+错误原文或完整 User-Agent。使用 Firestore REST，不加载 Firebase Analytics、广告追踪或
+自动网页采集 SDK，不创建匿名登录用户 ID，也不关联跨网站或跨产品身份，不用于个性化广告。
+扩展不将 IP 写入这些事件；Google 基础设施可能处理 IP 等连接信息，遵循
+[Firebase 隐私规则](https://firebase.google.com/support/privacy)。
+
+维护任务按设计将超过 30 天的原始记录汇总后删除，超过 12 个月的日汇总删除。维护在开发者
+电脑运行；电脑离线、磁盘未挂载、登录失效或服务不可达时会顺延，不能保证第 30 天准时删除。
+Google 基础设施日志按 Google 政策处理。由于没有持续安装身份，已提交事件无法凭安装 ID
+找回。网站优化建议链接只打开作者的 X 主页，不会自动向 Firebase 提交当前网站或其内容。
 
 ## 3. 信息在哪里处理
 
@@ -141,6 +164,8 @@ Granoflow 地址发出有限的连接检查请求；这些检查不包含网页�
 ## 6. 共享与披露
 
 本扩展只会在以下情况下传输信息：
+
+- 使用统计开启时，向 Firebase 发送第 2.5 节列出的产品交互统计
 
 - 为完成你请求的翻译、解释、对话或卡片生成功能，发送到你配置的 AI 服务商
 - 当你请求连接检查或主动发送卡片时，发送到你配置的 Granoflow 地址

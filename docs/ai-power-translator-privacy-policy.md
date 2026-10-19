@@ -1,13 +1,13 @@
 # AI Power Translator Privacy Policy
 
-Last Updated: July 31, 2026
+Last Updated: October 19, 2026
 
 Languages: English |
 [简体中文](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-CN.html)
 | [繁體中文（香港）](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-HK.html)
 | [繁體中文（台灣）](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-TW.html)
 
-This Privacy Policy applies to the **AI Power Translator** Chrome extension
+This Privacy Policy applies to the **AI Power Translator** browser extension (including Chrome and Microsoft Edge)
 (the "Extension"). The Extension is operated by **A New Zero Innovations
 Limited (Hong Kong)** ("we," "us," or "our").
 
@@ -19,7 +19,7 @@ applies to Granoflow services that you separately choose to use.
 
 The Extension helps you read and work with webpage content by translating,
 explaining, and discussing text, translating readable page text alongside the
-original, generating optional reading cards, and sending cards to a Granoflow
+original, translating images and online or local PDFs, generating optional reading cards, and sending cards to a Granoflow
 instance when you choose to do so.
 
 The Extension handles webpage content and related information only as needed
@@ -33,6 +33,7 @@ advertising, credit decisions, data brokerage, or unrelated profiling.
 Depending on the action you choose, the Extension may handle:
 
 - Text you select on a webpage
+- Images you ask to translate and text or images from online or local PDF files
 - The surrounding paragraph and adjacent text needed to understand a
   selection
 - Readable text from the current page when you request full-page translation
@@ -72,8 +73,8 @@ It does not request permission to read the clipboard.
 
 ### 2.4 Information we do not collect through the Extension
 
-The Extension does not include developer-operated analytics, advertising
-tracking, crash reporting, or a developer-operated AI proxy. It does not ask
+The Extension does not include advertising tracking, crash reporting, or a
+developer-operated AI proxy. Product usage statistics are described below. It does not ask
 you to create an Extension account. We do not receive your webpage content,
 prompts, API keys, or locally cached results merely because you install or use
 the Extension.
@@ -82,17 +83,53 @@ Google may provide publishers with aggregate Chrome Web Store statistics under
 Google's own terms. Those store statistics do not give us the webpage content
 processed by the Extension.
 
+### 2.5 Product usage statistics (Firebase)
+
+Usage statistics are enabled by default on installation and after each Extension
+upgrade. You can turn them off in General settings without disabling translation.
+Turning them off stops automatic collection, clears queued events, and cancels
+in-flight sending. They remain off until the next installation or upgrade,
+which enables them again.
+
+When enabled, the Extension sends its daily first-translation count, displays
+and clicks of promotions inside the Extension, normalized model source,
+selection and call categories, and available numeric token totals to a
+product-specific Firebase project. Common fields include browser name and major
+version, Extension version, local calendar date, protocol version, and a fresh
+random batch ID per upload. Batch IDs are not reused as user or installation IDs.
+Model-language discrepancy reports, where accepted by the receiving service,
+contain controlled profile IDs/versions, normalized provider/model categories,
+purpose, source/target language codes, and discrepancy categories.
+
+These events do not contain page text, images, PDFs, prompts, API keys, custom
+endpoints, private model names, original configuration or error text, or a full
+User-Agent. This uses Firestore REST, not Firebase Analytics, advertising
+tracking, an automatic webpage-collection SDK, or an anonymous-login user ID.
+It does not associate identities across sites or products and is not used for
+personalized advertising. The Extension does not collect or write IP addresses
+into these events; Google infrastructure may process connection information
+such as IP addresses under [Firebase's privacy practices](https://firebase.google.com/support/privacy).
+
+Maintenance is designed to aggregate raw records older than 30 days into daily
+summaries and delete the raw records, then delete daily summaries older than
+12 months. Maintenance runs from a developer-operated computer and may be
+delayed by that computer being offline, an unmounted drive, expired login, or
+service unavailability; deletion exactly on day 30 is not guaranteed. Google
+infrastructure logs are governed by Google's policies. Because there is no
+persistent installation identity, already submitted events cannot be retrieved
+by an installation ID. The website-improvement link opens the author's X profile;
+it does not automatically submit the current website or its content to Firebase.
+
 ## 3. Where Processing Takes Place
 
-### 3.1 Chrome built-in AI
+### 3.1 Browser-managed on-device AI
 
-When you select Chrome built-in AI and it is available, text is processed by
-Chrome's browser-managed on-device model. The initial model may be downloaded
-by Chrome, but the Extension does not send your prompt or webpage content to
+When you select browser-managed on-device AI and it is available in your
+browser, text is processed by that browser's on-device model. An initial model
+download may be managed by the browser, but the Extension does not send your prompt or webpage content to
 our server for this processing.
 
-Chrome's own software and services are governed by Google's terms and privacy
-policy.
+Browser software and services are governed by the respective browser vendor's terms and privacy policy.
 
 ### 3.2 An AI provider you configure
 
@@ -100,7 +137,8 @@ When you select a custom AI API, the Extension sends the information needed
 for the requested feature directly to the endpoint you configured. Depending
 on the action, this can include selected text, surrounding context, current
 page URL, page title, readable page text, follow-up questions, earlier
-conversation messages, and generated results used to create cards.
+conversation messages, images requested for translation, PDF text or images
+needed for the selected feature, and generated results used to create cards.
 
 The provider may also receive ordinary network information, such as your IP
 address and request metadata. Its retention, model-training, logging, and
@@ -175,6 +213,8 @@ contacts, precise location, camera, or microphone.
 
 The Extension transfers information only:
 
+- To Firebase for the product usage statistics described in Section 2.5 when enabled
+
 - To the AI provider you configured, when needed to perform your requested
   translation, explanation, conversation, or card-generation feature
 - To the Granoflow address you configured, when you request a connection test
@@ -219,6 +259,8 @@ is completely secure.
 ## 9. Your Choices and Privacy Requests
 
 You can:
+
+- Turn off usage statistics in General settings; an installation or upgrade enables them again
 
 - Use Chrome built-in AI where available instead of a remote provider
 - Choose which AI provider and Granoflow instance, if any, to configure

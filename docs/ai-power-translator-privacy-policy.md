@@ -63,7 +63,7 @@ The Extension may store the settings you enter, including:
 - Automatically detected API protocol information
 - Granoflow address and optional Granoflow API token
 
-These settings are stored locally through the extension's `chrome.storage.local` API in your browser profile or Safari app.
+These settings are stored in local extension storage managed by your browser or Safari.
 They are not stored by us on a developer-operated server. The Extension does
 not add its own encryption layer to this local storage.
 
@@ -176,7 +176,7 @@ The Extension does not send generated cards to Granoflow automatically.
 
 ## 4. Local Storage and Retention
 
-The Extension uses `chrome.storage.local` to provide settings, caching, card
+The Extension uses local extension storage to provide settings, caching, card
 display, and delivery:
 
 - Translation, explanation, and generated-card cache entries are reused for

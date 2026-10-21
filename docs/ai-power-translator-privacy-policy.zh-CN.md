@@ -1,20 +1,20 @@
-# AI达人浏览器翻译扩展（AI Power Translator）隐私政策
+# AI Power Translator 隐私政策
 
-最后更新：2026-10-19
+最后更新：2026-10-21
 
 语言：[English](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.html)
 | 简体中文 |
 [繁體中文（香港）](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-HK.html)
 | [繁體中文（台灣）](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-TW.html)
 
-本隐私政策适用于 **AI Power Translator** 浏览器扩展（包括 Chrome 和 Microsoft Edge）（以下简称“本扩展”）。
+本隐私政策适用于 **AI Power Translator** 的 Chrome、Microsoft Edge 浏览器扩展及 macOS、iOS 上的 Safari App（以下简称“本扩展”）。
 本扩展由 **A New Zero Innovations Limited（Hong Kong）**（以下简称“我们”）
 运营。
 
 这是针对本扩展的专项隐私政策。你另行选择使用 Granoflow 服务时，还适用
 [Granoflow 隐私政策](https://granoflow.github.io/granoflow-docs/privacy-policy.zh-CN.html)。
 
-本版本也支持图片及在线或本地 PDF 翻译。处理这些功能时，所需图片、PDF 文字或图像会发送至你选择的模型或服务，具体能力与隐私条件取决于该服务。
+本产品也支持图片及在线或本地 PDF 翻译。选择云模型时，所需图片、PDF 文字或图像会直接发送至你配置的模型服务；设备端功能可用时则在本机处理。具体能力与隐私条件取决于所选处理方式。
 
 ## 1. 本扩展的单一用途
 
@@ -38,7 +38,7 @@
 - 你的追问，以及回答追问所需的前文对话
 - 根据上述内容生成的译文、解释和阅读卡片内容
 
-本扩展不会访问 Chrome 的浏览历史数据库，也不会建立你访问过的全部网页记录。
+本扩展不会访问 浏览器的浏览历史数据库，也不会建立你访问过的全部网页记录。
 当前页面网址和内容只用于你主动调用的功能、本地缓存标识、来源标注，以及你选择
 发送到 Granoflow 的卡片。
 
@@ -51,8 +51,8 @@
 - 自动识别的 API 协议信息
 - Granoflow 地址和可选的 Granoflow API 密钥
 
-这些设置保存在你的浏览器配置文件的 `chrome.storage.local` 中，不会保存在
-我们运营的服务器上。本扩展不会为这部分本地存储另加一层加密。
+这些设置通过 `chrome.storage.local` API 保存在浏览器配置文件或 Safari App 的本地存储中，
+不会保存在我们运营的服务器上。本扩展不会为这部分本地存储另加一层加密。
 
 AI API 密钥只会在验证请求所必需时发送到你配置的 AI 地址。Granoflow 密钥只会
 发送到你配置的 Granoflow 地址。
@@ -94,13 +94,15 @@ Google 基础设施日志按 Google 政策处理。由于没有持续安装身�
 
 ## 3. 信息在哪里处理
 
-### 3.1 Chrome 内置 AI
+### 3.1 设备端 AI
 
 当你选择 Chrome 内置 AI 且浏览器支持该功能时，文字由 Chrome 管理的设备端模型
 处理。Chrome 可能需要先下载模型，但本扩展不会为了这种处理把你的提示词或网页
 内容发送到我们的服务器。
 
 Chrome 自身软件和服务的数据处理受 Google 的条款和隐私政策约束。
+
+在 macOS 和 iOS 的 Safari 中，设备和语言支持时可使用 Apple 的 Translation 框架或 Foundation Models 在设备上处理文字。系统可能下载所需模型；此处理不会将网页内容或提示词发送到我们的服务器。Apple 软件和服务遵循 Apple 的条款及隐私政策。
 
 ### 3.2 你配置的 AI 服务商
 
@@ -133,7 +135,7 @@ Granoflow 地址发出有限的连接检查请求；这些检查不包含网页�
 
 - 译文、解释和生成卡片的缓存会在 72 小时内被复用。
 - 72 小时是缓存有效期，不是保证删除期限。过期记录可能继续保留在本地，直到被
-  新记录替换、因缓存容量限制被移除、从 Chrome 配置文件中清除，或者本扩展被
+  新记录替换、因缓存容量限制被移除、从浏览器或 Safari App 中清除，或者本扩展被
   卸载。
 - 本地生成的笔记和卡片记录可能保留到扩展存储被清除或本扩展被卸载。
 - 设置、API 密钥、地址信息和 Granoflow 连接设置会保留到你修改它们、清除扩展
@@ -141,21 +143,21 @@ Granoflow 地址发出有限的连接检查请求；这些检查不包含网页�
 - 对话上下文只保留在当前扩展界面的对话过程中；我们不会故意把它加入由我们运营
   的独立长期对话历史服务。
 
-清除普通网页 Cookie 或浏览历史不一定会清除扩展存储。你可以通过 Chrome 清除
+清除普通网页 Cookie 或浏览历史不一定会清除扩展存储。你可以通过浏览器或设备清除
 本扩展的存储，或卸载本扩展，以删除本地保存的信息。
 
 已经发送到 AI 服务商或非本地 Granoflow 实例的内容，适用该接收方自己的保留和
 删除规则。
 
-## 5. Chrome 权限
+## 5. 浏览器及 Safari 权限
 
-本扩展为已披露的功能申请以下权限：
+Chrome 和 Edge 申请下列权限；Safari 通过 Apple 的 App 和扩展权限设置授予相应访问权限。
 
 - **网站访问权限（`<all_urls>`）**：显示划词工具栏；读取你要求翻译或解释的
   文字；插入全文译文；取得当前页面的来源信息；以及连接你配置的 AI 和
   Granoflow 地址。
 - **`activeTab`**：支持与当前活动页面有关的操作。
-- **`storage`**：在 Chrome 配置文件中保存设置、本地凭据、协议识别结果、缓存
+- **`storage`**：在本地保存设置、本地凭据、协议识别结果、缓存
   结果和生成的卡片信息。
 - **`clipboardWrite`**：只在你选择复制操作后写入剪贴板。
 
@@ -198,7 +200,7 @@ Granoflow 地址发出有限的连接检查请求；这些检查不包含网页�
 ## 8. 安全
 
 本扩展尽量通过浏览器内处理，或直接发送到你配置的目的地，来减少开发者接触数据
-的机会。你有责任保护自己的 Chrome 配置文件、API 密钥和所配置的服务。
+的机会。你有责任保护自己的浏览器配置文件或 Apple 设备、API 密钥和所配置的服务。
 
 远程 AI 地址应使用 HTTPS；请妥善保管 API 凭据。除非你信任所选处理方式和服务
 商，否则不要翻译或解释敏感信息。任何存储或传输方式都无法保证绝对安全。
@@ -207,7 +209,7 @@ Granoflow 地址发出有限的连接检查请求；这些检查不包含网页�
 
 你可以：
 
-- 在可用时选择 Chrome 内置 AI，而不是远程服务商
+- 在可用时选择设备端 AI，而不是远程服务商
 - 自行选择是否配置 AI 服务商和 Granoflow 实例
 - 不在敏感内容上调用相关功能
 - 修改或移除已保存的 API 密钥和地址
@@ -216,7 +218,7 @@ Granoflow 地址发出有限的连接检查请求；这些检查不包含网页�
 
 对于已经发送到你所选服务商的数据，请直接向该服务商提出查阅、更正或删除请求。
 对于由我们控制的信息，请联系
-[granoflow@anz.tv](mailto:granoflow@anz.tv)。请勿在公开 GitHub issues 中
+[hello@anz.tv](mailto:hello@anz.tv)。请勿在公开 GitHub issues 中
 发布 API 密钥、私人网页内容或其他敏感个人信息。
 
 ## 10. 儿童
@@ -226,7 +228,7 @@ Granoflow 地址发出有限的连接检查请求；这些检查不包含网页�
 
 ## 11. 本政策的更新
 
-我们可能为反映本扩展、Chrome 应用商店要求或适用法律的变化而更新本政策。如果
+我们可能为反映本扩展、应用商店要求或适用法律的变化而更新本政策。如果
 更新将实质改变本扩展处理用户数据的方式，我们会通过适当渠道提供通知，并更新
 上方日期。
 
@@ -234,7 +236,7 @@ Granoflow 地址发出有限的连接检查请求；这些检查不包含网页�
 
 如有隐私问题或请求，请通过以下方式联系：
 
-- 邮箱：[granoflow@anz.tv](mailto:granoflow@anz.tv)
+- 邮箱：[hello@anz.tv](mailto:hello@anz.tv)
 - 仅用于公开产品反馈：
   [Granoflow Docs Issues](https://github.com/granoflow/granoflow-docs/issues)
 

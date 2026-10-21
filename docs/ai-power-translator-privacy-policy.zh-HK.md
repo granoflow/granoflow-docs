@@ -1,20 +1,20 @@
-# AI達人瀏覽器翻譯擴充功能（AI Power Translator）私隱政策
+# AI Power Translator 私隱政策
 
-最後更新：2026-10-19
+最後更新：2026-10-21
 
 語言：[English](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.html)
 | [简体中文](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-CN.html)
 | 繁體中文（香港） |
 [繁體中文（台灣）](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-TW.html)
 
-本私隱政策適用於 **AI Power Translator** 瀏覽器擴充功能（包括 Chrome 和 Microsoft Edge）（下稱「本擴充
+本私隱政策適用於 **AI Power Translator** 的 Chrome、Microsoft Edge 瀏覽器擴充功能，以及 macOS 和 iOS 上的 Safari App（下稱「本擴充
 功能」）。本擴充功能由 **A New Zero Innovations Limited（Hong Kong）**
 （下稱「我們」）營運。
 
 這是針對本擴充功能的專項私隱政策。你另行選擇使用 Granoflow 服務時，亦適用
 [Granoflow 私隱政策](https://granoflow.github.io/granoflow-docs/privacy-policy.zh-HK.html)。
 
-本版本亦支援圖片及線上或本機 PDF 翻譯。處理這些功能時，所需圖片、PDF 文字或影像會傳送至你選擇的模型或服務，具體能力與私隱條件取決於該服務。
+本產品亦支援圖片及線上或本機 PDF 翻譯。選擇雲端模型時，所需圖片、PDF 文字或影像會直接傳送至你設定的模型服務；裝置端功能可用時則在本機處理。具體能力與私隱條件視乎所選處理方式。
 
 ## 1. 本擴充功能的單一用途
 
@@ -38,7 +38,7 @@
 - 你的跟進問題，以及回答問題所需的先前對話
 - 根據上述內容生成的譯文、解釋和閱讀卡片內容
 
-本擴充功能不會存取 Chrome 的瀏覽記錄資料庫，亦不會建立你曾瀏覽的所有網頁
+本擴充功能不會存取 瀏覽器的瀏覽記錄資料庫，亦不會建立你曾瀏覽的所有網頁
 記錄。目前頁面網址和內容只用於你主動啟用的功能、本機快取識別、來源標示，以及
 你選擇傳送到 Granoflow 的卡片。
 
@@ -51,8 +51,8 @@
 - 自動識別的 API 通訊協定資料
 - Granoflow 位址和可選的 Granoflow API 金鑰
 
-這些設定儲存在你的 瀏覽器設定檔內的 `chrome.storage.local`，不會儲存在
-我們營運的伺服器。本擴充功能不會為這部分本機儲存另加一層加密。
+這些設定透過 `chrome.storage.local` API 儲存在瀏覽器設定檔或 Safari App 的本機儲存空間，
+不會儲存在我們營運的伺服器。本擴充功能不會為這部分本機儲存另加一層加密。
 
 AI API 金鑰只會在驗證要求所必需時傳送到你設定的 AI 位址。Granoflow 金鑰只會
 傳送到你設定的 Granoflow 位址。
@@ -94,13 +94,15 @@ Google 基礎設施日誌按 Google 政策處理。由於沒有持續安裝身�
 
 ## 3. 資料在哪裏處理
 
-### 3.1 Chrome 內置 AI
+### 3.1 裝置端 AI
 
 當你選擇 Chrome 內置 AI 且瀏覽器支援該功能時，文字會由 Chrome 管理的裝置端
 模型處理。Chrome 可能需要先下載模型，但本擴充功能不會為這種處理把你的提示詞
 或網頁內容傳送到我們的伺服器。
 
 Chrome 自身軟件和服務的資料處理受 Google 的條款和私隱政策約束。
+
+在 macOS 和 iOS 的 Safari 中，裝置及語言支援時可使用 Apple 的 Translation 框架或 Foundation Models 在裝置上處理文字。系統可能下載所需模型；此處理不會把網頁內容或提示詞傳送到我們的伺服器。Apple 軟件和服務受 Apple 的條款及私隱政策約束。
 
 ### 3.2 你設定的 AI 服務供應商
 
@@ -135,7 +137,7 @@ Granoflow 位址發出有限的連線檢查要求；這些檢查不包含網頁�
 
 - 譯文、解釋和生成卡片的快取會在 72 小時內被重用。
 - 72 小時是快取有效期，不是保證刪除期限。過期記錄可能繼續保留在本機，直至被
-  新記錄取代、因快取容量限制被移除、從 瀏覽器設定檔清除，或本擴充功能被
+  新記錄取代、因快取容量限制被移除、從瀏覽器或 Safari App 清除，或本擴充功能被
   移除。
 - 本機生成的筆記和卡片記錄可能保留至擴充功能儲存空間被清除，或本擴充功能被
   移除。
@@ -144,21 +146,21 @@ Granoflow 位址發出有限的連線檢查要求；這些檢查不包含網頁�
 - 對話上下文只保留在目前擴充功能介面的對話過程；我們不會刻意把它加入由我們
   營運的獨立長期對話記錄服務。
 
-清除一般網頁 Cookie 或瀏覽記錄未必會清除擴充功能儲存空間。你可以透過 Chrome
+清除一般網頁 Cookie 或瀏覽記錄未必會清除擴充功能儲存空間。你可以透過瀏覽器或裝置
 清除本擴充功能的儲存空間，或移除本擴充功能，以刪除本機儲存的資料。
 
 已傳送到 AI 服務供應商或非本機 Granoflow 實例的內容，適用該接收方自己的保留
 和刪除規則。
 
-## 5. Chrome 權限
+## 5. 瀏覽器及 Safari 權限
 
-本擴充功能為已披露的功能申請以下權限：
+Chrome 和 Edge 申請下列權限；Safari 透過 Apple 的 App 和擴充功能權限設定授予相應存取權限。
 
 - **網站存取權限（`<all_urls>`）**：顯示劃詞工具列；讀取你要求翻譯或解釋的
   文字；插入全文譯文；取得目前頁面的來源資料；以及連接你設定的 AI 和
   Granoflow 位址。
 - **`activeTab`**：支援與目前使用中頁面有關的操作。
-- **`storage`**：在 瀏覽器設定檔中儲存設定、本機憑證、通訊協定識別結果、
+- **`storage`**：在本機儲存設定、本機憑證、通訊協定識別結果、
   快取結果和生成的卡片資料。
 - **`clipboardWrite`**：只在你選擇複製操作後寫入剪貼簿。
 
@@ -201,7 +203,7 @@ Granoflow 位址發出有限的連線檢查要求；這些檢查不包含網頁�
 ## 8. 安全
 
 本擴充功能盡量透過瀏覽器內處理，或直接傳送到你設定的目的地，以減少開發者接觸
-資料的機會。你有責任保護自己的 瀏覽器設定檔、API 金鑰和所設定的服務。
+資料的機會。你有責任保護自己的瀏覽器設定檔或 Apple 裝置、API 金鑰和所設定的服務。
 
 遙距 AI 位址應使用 HTTPS；請妥善保管 API 憑證。除非你信任所選處理方式和服務
 供應商，否則不要翻譯或解釋敏感資料。任何儲存或傳輸方式都無法保證絕對安全。
@@ -210,7 +212,7 @@ Granoflow 位址發出有限的連線檢查要求；這些檢查不包含網頁�
 
 你可以：
 
-- 在可用時選擇 Chrome 內置 AI，而不是遙距服務供應商
+- 在可用時選擇裝置端 AI，而不是遙距服務供應商
 - 自行選擇是否設定 AI 服務供應商和 Granoflow 實例
 - 不在敏感內容上啟用相關功能
 - 修改或移除已儲存的 API 金鑰和位址
@@ -219,7 +221,7 @@ Granoflow 位址發出有限的連線檢查要求；這些檢查不包含網頁�
 
 對於已傳送到你所選服務供應商的資料，請直接向該服務供應商提出查閱、更正或刪除
 要求。對於由我們控制的資料，請聯絡
-[granoflow@anz.tv](mailto:granoflow@anz.tv)。請勿在公開 GitHub issues
+[hello@anz.tv](mailto:hello@anz.tv)。請勿在公開 GitHub issues
 發佈 API 金鑰、私人網頁內容或其他敏感個人資料。
 
 ## 10. 兒童
@@ -230,7 +232,7 @@ Granoflow 位址發出有限的連線檢查要求；這些檢查不包含網頁�
 
 ## 11. 本政策的更新
 
-我們可能因應本擴充功能、Chrome 線上應用程式商店要求或適用法律的變化而更新本
+我們可能因應本擴充功能、應用程式商店要求或適用法律的變化而更新本
 政策。如果更新將實質改變本擴充功能處理用戶資料的方式，我們會透過適當渠道提供
 通知，並更新上方日期。
 
@@ -238,7 +240,7 @@ Granoflow 位址發出有限的連線檢查要求；這些檢查不包含網頁�
 
 如有私隱問題或要求，請透過以下方式聯絡：
 
-- 電郵：[granoflow@anz.tv](mailto:granoflow@anz.tv)
+- 電郵：[hello@anz.tv](mailto:hello@anz.tv)
 - 只供公開產品意見：
   [Granoflow Docs Issues](https://github.com/granoflow/granoflow-docs/issues)
 

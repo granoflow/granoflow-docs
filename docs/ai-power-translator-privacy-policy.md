@@ -1,13 +1,13 @@
 # AI Power Translator Privacy Policy
 
-Last Updated: October 19, 2026
+Last Updated: October 21, 2026
 
 Languages: English |
 [简体中文](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-CN.html)
 | [繁體中文（香港）](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-HK.html)
 | [繁體中文（台灣）](https://granoflow.github.io/granoflow-docs/ai-power-translator-privacy-policy.zh-TW.html)
 
-This Privacy Policy applies to the **AI Power Translator** browser extension (including Chrome and Microsoft Edge)
+This Privacy Policy applies to the **AI Power Translator** browser extension and Safari app (Chrome, Microsoft Edge, macOS, and iOS)
 (the "Extension"). The Extension is operated by **A New Zero Innovations
 Limited (Hong Kong)** ("we," "us," or "our").
 
@@ -44,7 +44,7 @@ Depending on the action you choose, the Extension may handle:
 - Translations, explanations, and reading-card content generated from that
   material
 
-The Extension does not access your Chrome browsing-history database or create
+The Extension does not access your browser browsing-history database or create
 a history of every page you visit. It uses the current page URL and content
 only for the feature you invoke, local cache identity, source attribution, and
 optional Granoflow card delivery.
@@ -58,7 +58,7 @@ The Extension may store the settings you enter, including:
 - Automatically detected API protocol information
 - Granoflow address and optional Granoflow API token
 
-These settings are stored in `chrome.storage.local` in your Chrome profile.
+These settings are stored locally through the extension's `chrome.storage.local` API in your browser profile or Safari app.
 They are not stored by us on a developer-operated server. The Extension does
 not add its own encryption layer to this local storage.
 
@@ -124,12 +124,15 @@ it does not automatically submit the current website or its content to Firebase.
 
 ### 3.1 Browser-managed on-device AI
 
-When you select browser-managed on-device AI and it is available in your
-browser, text is processed by that browser's on-device model. An initial model
-download may be managed by the browser, but the Extension does not send your prompt or webpage content to
-our server for this processing.
+When you select on-device AI and it is available, text is processed on your device.
+Chrome uses its browser-managed model. On macOS and iOS, Safari can use Apple's
+Translation framework or Foundation Models when the device, language, and model
+support the selected feature. A model download may be managed by the browser
+or operating system. The Extension does not send your prompt or webpage content
+to our server for this processing.
 
-Browser software and services are governed by the respective browser vendor's terms and privacy policy.
+Browser and operating-system software and services are governed by their
+respective vendors' terms and privacy policies.
 
 ### 3.2 An AI provider you configure
 
@@ -175,7 +178,7 @@ display, and delivery:
   up to 72 hours.
 - The 72-hour period is a cache-validity period, not a guaranteed deletion
   deadline. Expired entries may remain locally until they are replaced,
-  removed by the cache-size limit, cleared from the Chrome profile, or the
+  removed by the cache-size limit, cleared from the browser or Safari app, or the
   Extension is uninstalled.
 - Locally generated note and card records may remain until Extension storage
   is cleared or the Extension is uninstalled.
@@ -188,14 +191,15 @@ display, and delivery:
 
 Clearing ordinary webpage cookies or browser history may not clear Extension
 storage. You can remove locally stored Extension data by clearing the
-Extension's storage through Chrome or uninstalling the Extension.
+Extension's storage through your browser or device, or by uninstalling the Extension.
 
 Content already sent to an AI provider or a non-local Granoflow instance is
 subject to that recipient's retention and deletion practices.
 
-## 5. Chrome Permissions
+## 5. Browser and Safari Permissions
 
-The Extension requests the following permissions for its disclosed features:
+Chrome and Edge request the following permissions for their disclosed features.
+Safari grants corresponding access through Apple's app and extension permission controls:
 
 - **Website access (`<all_urls>`)**: displays the selection toolbar, reads text
   you ask it to translate or explain, inserts full-page translations, obtains
@@ -203,10 +207,10 @@ The Extension requests the following permissions for its disclosed features:
   Granoflow endpoints.
 - **`activeTab`**: supports actions involving the active page.
 - **`storage`**: stores settings, local credentials, protocol hints, cached
-  results, and generated card information in the Chrome profile.
+  results, and generated card information locally.
 - **`clipboardWrite`**: copies text only after you choose a copy action.
 
-The Extension does not request access to Chrome browsing history, bookmarks,
+The Extension does not request access to browser browsing history, bookmarks,
 contacts, precise location, camera, or microphone.
 
 ## 6. Sharing and Disclosure
@@ -248,7 +252,7 @@ for prohibited advertising, data sales, or unrelated purposes.
 
 We design the Extension to minimize developer access by processing data in the
 browser or sending it directly to destinations you configure. You are
-responsible for protecting your Chrome profile, API keys, and configured
+responsible for protecting your browser profile or Apple device, API keys, and configured
 services.
 
 Use HTTPS for remote AI endpoints, keep API credentials confidential, and
@@ -262,7 +266,7 @@ You can:
 
 - Turn off usage statistics in General settings; an installation or upgrade enables them again
 
-- Use Chrome built-in AI where available instead of a remote provider
+- Use on-device AI where available instead of a remote provider
 - Choose which AI provider and Granoflow instance, if any, to configure
 - Avoid invoking a feature on sensitive content
 - Change or remove stored API keys and endpoints
@@ -271,7 +275,7 @@ You can:
 
 For data already sent to a provider you selected, direct access, correction,
 or deletion requests to that provider. For information controlled by us,
-contact [granoflow@anz.tv](mailto:granoflow@anz.tv). Do not post API keys,
+contact [hello@anz.tv](mailto:hello@anz.tv). Do not post API keys,
 private webpage content, or other sensitive personal information in public
 GitHub issues.
 
@@ -284,7 +288,7 @@ parent or guardian where required.
 
 ## 11. Changes to This Policy
 
-We may update this policy to reflect changes to the Extension, Chrome Web Store
+We may update this policy to reflect changes to the Extension, store
 requirements, or applicable law. If an update materially changes how the
 Extension handles user data, we will provide notice through an appropriate
 channel and update the date above.
@@ -293,7 +297,7 @@ channel and update the date above.
 
 For privacy questions or requests:
 
-- Email: [granoflow@anz.tv](mailto:granoflow@anz.tv)
+- Email: [hello@anz.tv](mailto:hello@anz.tv)
 - Public product feedback only:
   [Granoflow Docs Issues](https://github.com/granoflow/granoflow-docs/issues)
 

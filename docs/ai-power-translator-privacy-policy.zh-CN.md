@@ -1,3 +1,9 @@
+---
+title: AI Power Translator 隐私政策
+description: 了解 AI Power Translator 在 Chrome、Edge 及 macOS 和 iOS 的 Safari 中如何处理内容、模型凭据和可选使用统计。
+locale: zh_CN
+---
+
 # AI Power Translator 隐私政策
 
 最后更新：2026-10-21

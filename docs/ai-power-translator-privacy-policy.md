@@ -1,3 +1,8 @@
+---
+title: AI Power Translator Privacy Policy
+description: How AI Power Translator handles content, model credentials, and optional usage statistics on Chrome, Edge, and Safari for macOS and iOS.
+---
+
 # AI Power Translator Privacy Policy
 
 Last Updated: October 21, 2026
